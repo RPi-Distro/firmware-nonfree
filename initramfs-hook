@@ -1,0 +1,26 @@
+#!/bin/sh
+
+PREREQ="udev"
+
+prereqs()
+{
+	echo "$PREREQ"
+}
+
+case $1 in
+prereqs)
+	prereqs
+	exit 0
+	;;
+esac
+
+. /usr/share/initramfs-tools/hook-functions
+
+if [ -d /lib/firmware/ ] ; then
+
+	copy_exec /lib/udev/firmware.agent /lib/udev/
+
+	mkdir -p $DESTDIR/lib/firmware
+	copy_exec /lib/firmware/@firmware@ /lib/firmware/
+fi
+

@@ -1,0 +1,103 @@
+Source: firmware
+Section: non-free/base
+Priority: optional
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Uploaders: Frederik Schüler <fs@debian.org>
+Build-Depends: debhelper (>= 4.2)
+Standards-Version: 3.7.1
+
+Package: firmware-ql2100
+Architecture: all
+Section: non-free/base
+Priority: optional
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2100 FC HBAs
+ This package contains the binary firmware blob for ql2100 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-ql2200
+Architecture: all
+Section: non-free/base
+Priority: optional
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2200 FC HBAs
+ This package contains the binary firmware blob for ql2200 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-ql2300
+Architecture: all
+Section: non-free/base
+Priority: optional
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2300 FC HBAs
+ This package contains the binary firmware blob for ql2300 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-ql2322
+Architecture: all
+Section: non-free/base
+Priority: optional
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2322 FC HBAs
+ This package contains the binary firmware blob for ql2322 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-ql2400
+Architecture: all
+Section: non-free/base
+Priority: optional
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2400 FC HBAs
+ This package contains the binary firmware blob for ql2400 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-di-ql2100
+XC-Package-Type: udeb
+Section: non-free/debian-installer
+Priority: optional
+Architecture: all
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2100 FC HBAs
+ This package contains the binary firmware blob for ql2100 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-di-ql2200
+XC-Package-Type: udeb
+Section: non-free/debian-installer
+Priority: optional
+Architecture: all
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2200 FC HBAs
+ This package contains the binary firmware blob for ql2200 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-di-ql2300
+XC-Package-Type: udeb
+Section: non-free/debian-installer
+Priority: optional
+Architecture: all
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2300 FC HBAs
+ This package contains the binary firmware blob for ql2300 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-di-ql2322
+XC-Package-Type: udeb
+Section: non-free/debian-installer
+Priority: optional
+Architecture: all
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2322 FC HBAs
+ This package contains the binary firmware blob for ql2322 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
+Package: firmware-di-ql2400
+XC-Package-Type: udeb
+Section: non-free/debian-installer
+Priority: optional
+Architecture: all
+Depends: debhelper (>= 4.2), initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
+Description: binary firmware for Qlogic ql2400 FC HBAs
+ This package contains the binary firmware blob for ql2400 fibre-channel
+ HBAs, and an udev hook to load the firmware into the initramfs.
+
