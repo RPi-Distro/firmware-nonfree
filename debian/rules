@@ -1,21 +1,25 @@
 #!/usr/bin/make -f
 
 BLOBS   = $(subst _fw,, $(basename $(notdir $(wildcard qlogic-fw/*bin))))
-PACKAGES = firmware firmware-di
+PACKAGE = firmware 
+PKGUDEB = firmware-di
 
 build: build-indep
 
-build-indep: debian/control
-	for pkg in $(PACKAGES) ; do \
+build-indep: 
+	dh_testdir
+	for pkg in $(PKGUDEB) $(PACKAGE) ; do \
 		for fw in $(BLOBS) ; do \
 			mkdir -p $(CURDIR)/debian/$$pkg-$$fw/lib/firmware/ ; \
 			mkdir -p $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/ ; \
-			mkdir -p $(CURDIR)/debian/$$pkg-$$fw/usr/share/doc/$$pkg-$$fw/ ; \
 			sed -e "s/@firmware@/$$fw/" < $(CURDIR)/initramfs-hook > $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/firmware-$$fw ; \
 			chmod 755 $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/firmware-$$fw ; \
 			install -o root -g root -m 644 $(CURDIR)/qlogic-fw/$$fw\_fw.bin $(CURDIR)/debian/$$pkg-$$fw/lib/firmware/ ; \
-			install -o root -g root -m 644 $(CURDIR)/qlogic-fw/LICENSE $(CURDIR)/debian/$$pkg-$$fw/usr/share/doc/$$pkg-$$fw/ ; \
 		done ; \
+	done ; \
+	for fw in $(BLOBS) ; do \
+		mkdir -p $(CURDIR)/debian/$$pkg-$$fw/usr/share/doc/$$pkg-$$fw/ ; \
+		install -o root -g root -m 644 $(CURDIR)/debian/copyright $(CURDIR)/debian/$$pkg-$$fw/usr/share/doc/$$pkg-$$fw/ ; \
 	done
 
 debian/control:
@@ -24,13 +28,15 @@ debian/control:
 	for fw in $(BLOBS);	do cat debian/templates/control.binary.udeb.in | sed "s/@controller@/$$fw/" ; done >> debian/control
 
 clean: debian/control
+	dh_testdir
 	dh_clean
 
 install: install-indep
 install-indep:
 
+binary-arch:
 
-binary-common:
+binary-indep:
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs
@@ -41,5 +47,5 @@ binary-common:
 	dh_md5sums
 	dh_builddeb
 	
-binary: binary-common
+binary: binary-indep
 
