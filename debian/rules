@@ -16,10 +16,6 @@ build-indep:
 			chmod 755 $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/firmware-$$fw ; \
 			install -o root -g root -m 644 $(CURDIR)/qlogic-fw/$$fw\_fw.bin $(CURDIR)/debian/$$pkg-$$fw/lib/firmware/ ; \
 		done ; \
-	done ; \
-	for fw in $(BLOBS) ; do \
-		mkdir -p $(CURDIR)/debian/$$pkg-$$fw/usr/share/doc/$$pkg-$$fw/ ; \
-		install -o root -g root -m 644 $(CURDIR)/debian/copyright $(CURDIR)/debian/$$pkg-$$fw/usr/share/doc/$$pkg-$$fw/ ; \
 	done
 
 debian/control:
@@ -40,6 +36,7 @@ binary-indep:
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs
+	dh_installdocs
 	dh_compress
 	dh_fixperms
 	dh_installdeb
