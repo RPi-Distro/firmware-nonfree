@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	configure)
+		if [ -x /usr/sbin/update-initramfs -a -e /etc/mkinitramfs/initramfs.conf ] ; then
+			update-initramfs -u
+		else
+			exit 0
+		fi
+		;;
+
+	*)
+		echo "postinst called with unknown argument \`$1'" 1>&2
+		exit 1
+		;;
+
+esac
+
+#DEBHELPER#
+

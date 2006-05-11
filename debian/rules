@@ -16,16 +16,20 @@ build-indep:
 			chmod 755 $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/firmware-$$fw ; \
 			install -o root -g root -m 644 $(CURDIR)/qlogic-fw/$$fw\_fw.bin $(CURDIR)/debian/$$pkg-$$fw/lib/firmware/ ; \
 		done ; \
-	done
+	done ; \
+	for fw in $(BLOBS) ; do \
+		cp $(CURDIR)/debian/templates/firmware.postinst.in $(CURDIR)/debian/$$pkg-$$fw.postinst ; \
+	done 
 
 debian/control:
 	cat debian/templates/control.source.in > debian/control
-	for fw in $(BLOBS);	do cat debian/templates/control.binary.in | sed "s/@controller@/$$fw/" ; done >> debian/control
-	for fw in $(BLOBS);	do cat debian/templates/control.binary.udeb.in | sed "s/@controller@/$$fw/" ; done >> debian/control
+	for fw in $(BLOBS);	do cat $(CURDIR)/debian/templates/control.binary.in | sed "s/@controller@/$$fw/" ; done >> $(CURDIR)/debian/control
+	for fw in $(BLOBS);	do cat $(CURDIR)/debian/templates/control.binary.udeb.in | sed "s/@controller@/$$fw/" ; done >> $(CURDIR)/debian/control
 
 clean: debian/control
 	dh_testdir
 	dh_clean
+	-rm $(CURDIR)/debian/*.postinst
 
 install: install-indep
 install-indep:
