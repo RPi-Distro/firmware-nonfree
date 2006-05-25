@@ -1,10 +1,8 @@
-Package: firmware-di-@controller@
+Package: firmware-@name@-di
 XC-Package-Type: udeb
 Section: non-free/debian-installer
 Priority: optional
 Architecture: all
-Depends: initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
-Description: binary firmware for Qlogic @controller@ FC HBAs
- This package contains the binary firmware blob for @controller@ fibre-channel
- HBAs, and an udev hook to load the firmware into the initramfs.
+Description: Binary firmware for @desc@
+ This package contains the binary firmware for @longdesc@.
 

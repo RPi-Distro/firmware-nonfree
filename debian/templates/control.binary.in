@@ -1,9 +1,8 @@
-Package: firmware-@controller@
+Package: firmware-@name@
 Architecture: all
 Section: non-free/base
 Priority: optional
-Depends: initramfs-tools, linux-image-2.6 (>= 2.6.16-1)
-Description: binary firmware for Qlogic @controller@ FC HBAs
- This package contains the binary firmware blob for @controller@ fibre-channel
- HBAs, and an udev hook to load the firmware into the initramfs.
+Suggests: initramfs-tools, linux-image
+Description: Binary firmware for @desc@
+ This package contains the binary firmware for @longdesc@.
 
