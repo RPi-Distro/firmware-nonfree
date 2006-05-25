@@ -1,4 +1,4 @@
-Source: firmware
+Source: firmware-nonfree
 Section: non-free/base
 Priority: optional
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
