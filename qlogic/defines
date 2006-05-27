@@ -1,0 +1,10 @@
+[base]
+desc: QLOGIC
+files:
+ ql2100_fw.bin
+ ql2200_fw.bin
+ ql2300_fw.bin
+ ql2322_fw.bin
+ ql2400_fw.bin
+longdesc: QLOGIC
+

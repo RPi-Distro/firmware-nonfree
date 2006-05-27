@@ -1,8 +1,8 @@
-Package: firmware-@name@-di
+Package: firmware-@package@-di
 XC-Package-Type: udeb
+Architecture: all
 Section: non-free/debian-installer
 Priority: optional
-Architecture: all
 Description: Binary firmware for @desc@
  This package contains the binary firmware for @longdesc@.
 

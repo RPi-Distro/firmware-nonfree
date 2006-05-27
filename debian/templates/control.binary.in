@@ -1,4 +1,4 @@
-Package: firmware-@name@
+Package: firmware-@package@
 Architecture: all
 Section: non-free/base
 Priority: optional

@@ -1,0 +1,6 @@
+[base]
+desc: IPW3945
+files:
+ ipw3945.ucode
+longdesc: IPW3945
+

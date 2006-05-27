@@ -1,52 +1,8 @@
 #!/usr/bin/make -f
+SHELL := sh -e
 
-BLOBS   = $(subst _fw,, $(basename $(notdir $(wildcard qlogic-fw/*bin))))
-PACKAGE = firmware 
-PKGUDEB = firmware-di
+include debian/rules.defs
+include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.include
 
-build: build-indep
-
-build-indep: 
-	dh_testdir
-	for pkg in $(PKGUDEB) $(PACKAGE) ; do \
-		for fw in $(BLOBS) ; do \
-			mkdir -p $(CURDIR)/debian/$$pkg-$$fw/lib/firmware/ ; \
-			mkdir -p $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/ ; \
-			sed -e "s/@firmware@/$$fw/" < $(CURDIR)/initramfs-hook > $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/firmware-$$fw ; \
-			chmod 755 $(CURDIR)/debian/$$pkg-$$fw/usr/share/initramfs-tools/hooks/firmware-$$fw ; \
-			install -o root -g root -m 644 $(CURDIR)/qlogic-fw/$$fw\_fw.bin $(CURDIR)/debian/$$pkg-$$fw/lib/firmware/ ; \
-		done ; \
-	done ; \
-	for fw in $(BLOBS) ; do \
-		cp $(CURDIR)/debian/templates/firmware.postinst.in $(CURDIR)/debian/$$pkg-$$fw.postinst ; \
-	done 
-
-debian/control:
-	cat debian/templates/control.source.in > debian/control
-	for fw in $(BLOBS);	do cat $(CURDIR)/debian/templates/control.binary.in | sed "s/@controller@/$$fw/" ; done >> $(CURDIR)/debian/control
-	for fw in $(BLOBS);	do cat $(CURDIR)/debian/templates/control.binary.udeb.in | sed "s/@controller@/$$fw/" ; done >> $(CURDIR)/debian/control
-
-clean: debian/control
-	dh_testdir
-	dh_clean
-	-rm $(CURDIR)/debian/*.postinst
-
-install: install-indep
-install-indep:
-
-binary-arch:
-
-binary-indep:
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs
-	dh_installdocs
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-	
-binary: binary-indep
+GENCONTROL = debian/bin/gencontrol.py /usr/src/linux-support-$(KERNELVERSION)
 
