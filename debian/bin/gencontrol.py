@@ -67,9 +67,12 @@ class gencontrol(object):
 
         file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
-        install = "%s /lib/firmware" % ' '.join(["%s/%s" % (package, i) for i in config_entry['files']])
-        file("debian/firmware-%s.install" % package, 'w').write(install)
-        file("debian/firmware-%s-di.install" % package, 'w').write(install)
+        install = []
+        install_deb = []
+        install.append("%s /lib/firmware" % ' '.join(["%s/%s" % (package, i) for i in config_entry['files']]))
+
+        file("debian/firmware-%s.install" % package, 'w').write('\n'.join(install + install_deb))
+        file("debian/firmware-%s-di.install" % package, 'w').write('\n'.join(install))
 
         packages.extend(packages_binary)
         packages.extend(packages_binary_udeb)
