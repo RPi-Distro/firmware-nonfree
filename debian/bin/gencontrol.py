@@ -59,8 +59,13 @@ class gencontrol(object):
 
         binary = self.templates["control.binary"]
         binary_udeb = self.templates["control.binary.udeb"]
+        copyright = self.templates["copyright.binary"]
         packages_binary = self.process_packages(binary, vars)
         packages_binary_udeb = self.process_packages(binary_udeb, vars)
+
+        vars['license'] = file("%s/LICENSE" % package).read()
+
+        file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
         packages.extend(packages_binary)
         packages.extend(packages_binary_udeb)
