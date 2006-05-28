@@ -54,7 +54,7 @@ class gencontrol(object):
 
         makeflags['PACKAGE'] = package
 
-        #self.do_package_setup(vars, makeflags, package)
+        self.do_package_setup(vars, makeflags, package)
         self.do_package_makefile(makefile, package, makeflags)
         self.do_package_packages(packages, makefile, package, vars, makeflags)
 
@@ -68,9 +68,11 @@ class gencontrol(object):
     def do_package_packages(self, packages, makefile, package, vars, makeflags):
         binary = self.templates["control.binary"]
         binary_udeb = self.templates["control.binary.udeb"]
-        packages_binary = self.process_packages(binary + binary_udeb, vars)
+        packages_binary = self.process_packages(binary, vars)
+        packages_binary_udeb = self.process_packages(binary_udeb, vars)
 
         packages.extend(packages_binary)
+        packages.extend(packages_binary_udeb)
 
     def process_relation(self, key, e, in_e, vars):
         in_dep = in_e[key]
