@@ -8,4 +8,5 @@ files:
  ql2400_fw.bin
 longdesc: QLOGIC
 support: initramfs-tools
+uri: ftp://ftp.qlogic.com/outgoing/linux/firmware/
 

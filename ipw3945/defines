@@ -3,4 +3,5 @@ desc: IPW3945
 files:
  ipw3945.ucode
 longdesc: IPW3945
+uri: http://bughost.org/ipw3945/
 
