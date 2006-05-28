@@ -7,4 +7,5 @@ files:
  ql2322_fw.bin
  ql2400_fw.bin
 longdesc: QLOGIC
+support: initramfs-tools
 
