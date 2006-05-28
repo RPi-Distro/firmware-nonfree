@@ -38,14 +38,11 @@ class gencontrol(object):
         vars.update(config_entry)
         makeflags = {}
 
-        self.do_main_makefile(makefile, makeflags)
+        for i in ('build', 'binary-arch', 'setup', 'source'):
+            makefile.append(("%s-%%:" % i, ["@true"]))
 
         for package in iter(self.config['base',]['packages']):
             self.do_package(packages, makefile, package, vars.copy(), makeflags.copy())
-
-    def do_main_makefile(self, makefile, makeflags):
-        for i in ('build', 'binary-arch', 'setup', 'source'):
-            makefile.append(("%s-%%:" % i, ["@true"]))
 
     def do_package(self, packages, makefile, package, vars, makeflags):
         config_entry = self.config['base', package]
@@ -54,18 +51,12 @@ class gencontrol(object):
 
         makeflags['PACKAGE'] = package
 
-        self.do_package_setup(vars, makeflags, package)
-        self.do_package_makefile(makefile, package, makeflags)
-        self.do_package_packages(packages, makefile, package, vars, makeflags)
-
-    def do_package_makefile(self, makefile, package, makeflags):
         makeflags_string = ' '.join(["%s='%s'" % i for i in makeflags.iteritems()])
 
         cmds_binary_indep = []
         cmds_binary_indep.append(("$(MAKE) -f debian/rules.real binary-indep %s" % makeflags_string))
         makefile.append(("binary-indep::", cmds_binary_indep))
 
-    def do_package_packages(self, packages, makefile, package, vars, makeflags):
         binary = self.templates["control.binary"]
         binary_udeb = self.templates["control.binary.udeb"]
         packages_binary = self.process_packages(binary, vars)
@@ -150,6 +141,7 @@ class gencontrol(object):
 class config_reader(debian_linux.config.config_reader):
     schema = {
         'packages': debian_linux.config.schema_item_list(),
+        'support': debian_linux.config.schema_item_list(),
     }
 
     def __init__(self):
