@@ -79,6 +79,9 @@ class gencontrol(object):
             file(hook_filename, 'w').write(self.substitute(hook, vars))
             install_deb.append("%s /usr/share/initramfs-tools/hooks" % hook_filename)
 
+            postinst = self.templates['postinst.initramfs-tools']
+            file("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
+
         file("debian/firmware-%s.install" % package, 'w').write('\n'.join(install + install_deb) + '\n')
         file("debian/firmware-%s-di.install" % package, 'w').write('\n'.join(install) + '\n')
 
