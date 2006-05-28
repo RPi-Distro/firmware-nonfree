@@ -67,6 +67,10 @@ class gencontrol(object):
 
         file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
+        install = "%s /lib/firmware" % ' '.join(["%s/%s" % (package, i) for i in config_entry['files']])
+        file("debian/firmware-%s.install" % package, 'w').write(install)
+        file("debian/firmware-%s-di.install" % package, 'w').write(install)
+
         packages.extend(packages_binary)
         packages.extend(packages_binary_udeb)
 
@@ -145,6 +149,7 @@ class gencontrol(object):
 
 class config_reader(debian_linux.config.config_reader):
     schema = {
+        'files': debian_linux.config.schema_item_list(),
         'packages': debian_linux.config.schema_item_list(),
         'support': debian_linux.config.schema_item_list(),
     }
