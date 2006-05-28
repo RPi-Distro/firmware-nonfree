@@ -71,8 +71,16 @@ class gencontrol(object):
         install_deb = []
         install.append("%s /lib/firmware" % ' '.join(["%s/%s" % (package, i) for i in config_entry['files']]))
 
-        file("debian/firmware-%s.install" % package, 'w').write('\n'.join(install + install_deb))
-        file("debian/firmware-%s-di.install" % package, 'w').write('\n'.join(install))
+        vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
+
+        if 'initramfs-tools' in config_entry.get('support', []):
+            hook = self.templates['hook.initramfs-tools']
+            hook_filename = "debian/firmware-%s.hook.initramfs-tools" % package
+            file(hook_filename, 'w').write(self.substitute(hook, vars))
+            install_deb.append("%s /usr/share/initramfs-tools/hooks" % hook_filename)
+
+        file("debian/firmware-%s.install" % package, 'w').write('\n'.join(install + install_deb) + '\n')
+        file("debian/firmware-%s-di.install" % package, 'w').write('\n'.join(install) + '\n')
 
         packages.extend(packages_binary)
         packages.extend(packages_binary_udeb)
