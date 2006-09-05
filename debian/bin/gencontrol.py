@@ -80,6 +80,7 @@ class gencontrol(object):
             hook = self.templates['hook.initramfs-tools']
             hook_filename = "debian/firmware_%s" % package
             file(hook_filename, 'w').write(self.substitute(hook, vars))
+            os.chmod(hook_filename, 0755)
             install_deb.append("%s /usr/share/initramfs-tools/hooks" % hook_filename)
 
             postinst = self.templates['postinst.initramfs-tools']
