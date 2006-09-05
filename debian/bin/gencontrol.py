@@ -78,7 +78,7 @@ class gencontrol(object):
 
         if 'initramfs-tools' in config_entry.get('support', []):
             hook = self.templates['hook.initramfs-tools']
-            hook_filename = "debian/firmware-%s.hook.initramfs-tools" % package
+            hook_filename = "debian/firmware_%s" % package
             file(hook_filename, 'w').write(self.substitute(hook, vars))
             install_deb.append("%s /usr/share/initramfs-tools/hooks" % hook_filename)
 

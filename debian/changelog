@@ -1,3 +1,9 @@
+firmware-nonfree (0.3) UNRELEASED; urgency=low
+
+  * Rename qlogic initramfs-tools hook, closes: #386175
+
+ -- Frederik Schüler <fs@debian.org>  Tue,  5 Sep 2006 22:32:05 +0200
+
 firmware-nonfree (0.2) unstable; urgency=low
 
   * Release into unstable.
