@@ -13,23 +13,23 @@ include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.real.include
 #
 binary-indep: install
 
-install-base:
-	dh_install
-	dh_installdirs
-	dh_installchangelogs
-	dh_installdocs
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol -- $(GENCONTROL_ARGS)
-	dh_md5sums
-	dh_builddeb
-
-install: PACKAGE_NAME = firmware-$(PACKAGE) -pfirmware-$(PACKAGE)-di
+install: PACKAGE_NAME = firmware-$(PACKAGE)
 install: PACKAGE_NAME_UDEB = firmware-$(PACKAGE)-di
 install: DH_OPTIONS = -p$(PACKAGE_NAME) -p$(PACKAGE_NAME_UDEB)
 install:
 	dh_testdir
 	dh_testroot
-	$(MAKE) -f debian/rules.real install-base
+	dh_installdirs
+	if [ -e debian/$(PACKAGE_NAME).hook.initramfs-tools ]; then \
+	  install -D debian/$(PACKAGE_NAME).hook.initramfs-tools debian/$(PACKAGE_NAME)/usr/share/initramfs-tools/hooks/firmware_$(PACKAGE); \
+	fi
+	dh_install
+	dh_installchangelogs
+	dh_installdocs
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
 

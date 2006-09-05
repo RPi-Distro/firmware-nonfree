@@ -71,22 +71,21 @@ class gencontrol(object):
         file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
         install = []
-        install_deb = []
         install.append("%s /lib/firmware" % ' '.join(["%s/%s" % (package, i) for i in config_entry['files']]))
 
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
 
         if 'initramfs-tools' in config_entry.get('support', []):
             hook = self.templates['hook.initramfs-tools']
-            hook_filename = "debian/firmware_%s" % package
+            hook_filename = "debian/firmware-%s.hook.initramfs-tools" % package
             file(hook_filename, 'w').write(self.substitute(hook, vars))
-            os.chmod(hook_filename, 0755)
-            install_deb.append("%s /usr/share/initramfs-tools/hooks" % hook_filename)
 
             postinst = self.templates['postinst.initramfs-tools']
             file("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
-        file("debian/firmware-%s.install" % package, 'w').write('\n'.join(install + install_deb) + '\n')
+            file("debian/firmware-%s.dirs" % package, 'w').write("/usr/share/initramfs-tools/hooks\n")
+
+        file("debian/firmware-%s.install" % package, 'w').write('\n'.join(install) + '\n')
         file("debian/firmware-%s-di.install" % package, 'w').write('\n'.join(install) + '\n')
 
         packages.extend(packages_binary)
