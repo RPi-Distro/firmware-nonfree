@@ -9,6 +9,7 @@ GENCONTROL = debian/bin/gencontrol.py $(KERNELVERSION)
 maintainerclean:
 	-rm debian/control debian/control.md5sum debian/rules.gen
 	-rm debian/*.copyright
+	-rm debian/*.dirs
 	-rm debian/*.hook.*
 	-rm debian/*.install
 	-rm debian/*.postinst
