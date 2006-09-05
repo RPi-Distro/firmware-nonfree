@@ -1,3 +1,10 @@
+firmware-nonfree (0.2) unstable; urgency=low
+
+  * Release into unstable.
+  * Build-depend on linux-support-2.6.17-2.
+
+ -- Frederik Schüler <fs@debian.org>  Tue,  5 Sep 2006 17:36:33 +0200
+
 firmware-nonfree (0.1) experimental; urgency=low
 
   [ Frederik Schüler ]
