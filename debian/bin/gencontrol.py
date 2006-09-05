@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.4
 import sys
-sys.path.append(sys.argv[1]+ "/lib/python")
+sys.path.append(sys.argv[2]+ "/lib/python")
 import debian_linux.config
 from debian_linux.debian import *
 from debian_linux.utils import *
@@ -14,9 +14,10 @@ class packages_list(sorted_dict):
             self[package['Package']] = package
 
 class gencontrol(object):
-    def __init__(self):
+    def __init__(self, kernelversion):
         self.config = config_reader()
         self.templates = templates()
+        self.kernelversion = kernelversion
 
     def __call__(self):
         packages = packages_list()
@@ -40,6 +41,8 @@ class gencontrol(object):
 
         for i in ('build', 'binary-arch', 'setup', 'source'):
             makefile.append(("%s-%%:" % i, ["@true"]))
+
+        packages['source']['Build-Depends'].append('linux-support-%s' % self.kernelversion)
 
         for package in iter(self.config['base',]['packages']):
             self.do_package(packages, makefile, package, vars.copy(), makeflags.copy())
@@ -203,4 +206,4 @@ class config_reader(debian_linux.config.config_reader):
             self[tuple(real)] = s
 
 if __name__ == '__main__':
-    gencontrol()()
+    gencontrol(sys.argv[1])()

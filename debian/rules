@@ -4,7 +4,7 @@ SHELL := sh -e
 include debian/rules.defs
 include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.include
 
-GENCONTROL = debian/bin/gencontrol.py /usr/src/linux-support-$(KERNELVERSION)
+GENCONTROL = debian/bin/gencontrol.py $(KERNELVERSION)
 
 maintainerclean:
 	-rm debian/control debian/control.md5sum debian/rules.gen
