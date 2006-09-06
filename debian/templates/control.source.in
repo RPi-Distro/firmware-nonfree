@@ -4,5 +4,5 @@ Priority: optional
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Uploaders: Bastian Blank <waldi@debian.org>, Frederik Schüler <fs@debian.org>
 Build-Depends: debhelper (>= 4.2)
-Standards-Version: 3.7.1
+Standards-Version: 3.7.2
 
