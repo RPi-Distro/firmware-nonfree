@@ -1,8 +1,9 @@
-firmware-nonfree (0.4) UNRELEASED; urgency=low
+firmware-nonfree (0.4) unstable; urgency=low
 
   * Build-depend on linux-support-2.6.18-4; closes: #414773.
+  * Add myself to uploaders.
 
- -- Steve Langasek <vorlon@debian.org>  Wed, 14 Mar 2007 02:15:13 -0700
+ -- Steve Langasek <vorlon@debian.org>  Wed, 14 Mar 2007 03:32:31 -0700
 
 firmware-nonfree (0.3) unstable; urgency=low
 
