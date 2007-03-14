@@ -1,3 +1,9 @@
+firmware-nonfree (0.4) UNRELEASED; urgency=low
+
+  * Build-depend on linux-support-2.6.18-4; closes: #414773.
+
+ -- Steve Langasek <vorlon@debian.org>  Wed, 14 Mar 2007 02:15:13 -0700
+
 firmware-nonfree (0.3) unstable; urgency=low
 
   * Rename qlogic initramfs-tools hook, closes: #386175
