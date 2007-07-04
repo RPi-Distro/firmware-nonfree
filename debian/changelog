@@ -1,3 +1,10 @@
+firmware-nonfree (0.5) UNRELEASED; urgency=low
+
+  * Building against 2.6.21-2.
+  * Added myself to uploaders.
+
+ -- Daniel Baumann <daniel@debian.org>  Thu,  5 Jul 2007 01:16:00 +0100
+
 firmware-nonfree (0.4) unstable; urgency=low
 
   * Build-depend on linux-support-2.6.18-4; closes: #414773.
