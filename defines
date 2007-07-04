@@ -2,4 +2,5 @@
 packages:
  ipw3945
  iwl3945
+ iwl4965
  qlogic

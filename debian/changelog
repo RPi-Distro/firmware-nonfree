@@ -4,6 +4,7 @@ firmware-nonfree (0.5) UNRELEASED; urgency=low
   * Added myself to uploaders.
   * Updated ipw3945.ucode to version 1.14.2.
   * Added iwl3945 firwmare, version 2.14.4.
+  * Added iwl4965 firmware, version 4.44.15.
 
  -- Daniel Baumann <daniel@debian.org>  Thu,  5 Jul 2007 01:16:00 +0100
 

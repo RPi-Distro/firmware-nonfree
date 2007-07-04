@@ -1,0 +1,7 @@
+[base]
+desc: IWL4965
+files:
+ iwlwifi-4965.ucode
+longdesc: IWL4965
+uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
+
