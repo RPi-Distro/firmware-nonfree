@@ -1,0 +1,7 @@
+[base]
+desc: IWL3945
+files:
+ iwlwifi-3945.ucode
+longdesc: IWL3945
+uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
+

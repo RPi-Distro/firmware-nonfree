@@ -1,4 +1,5 @@
 [base]
 packages:
  ipw3945
+ iwl3945
  qlogic
