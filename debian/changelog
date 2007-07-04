@@ -1,4 +1,4 @@
-firmware-nonfree (0.5) UNRELEASED; urgency=low
+firmware-nonfree (0.5) unstable; urgency=low
 
   * Building against 2.6.21-2.
   * Added myself to uploaders.
