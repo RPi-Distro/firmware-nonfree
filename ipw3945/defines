@@ -2,6 +2,6 @@
 desc: IPW3945
 files:
  ipw3945.ucode
-longdesc: IPW3945
+longdesc: IPW3945, version 1.14.2.
 uri: http://bughost.org/ipw3945/
 
