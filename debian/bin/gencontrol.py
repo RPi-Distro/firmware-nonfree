@@ -1,9 +1,40 @@
 #!/usr/bin/env python2.4
-import sys
+import os, sys
 sys.path.append(sys.argv[2]+ "/lib/python")
 import debian_linux.config
 from debian_linux.debian import *
 from debian_linux.utils import *
+
+class PackageDescription(object):
+    __slots__ = "short", "long"
+
+    _wrap = wrap(width = 74, fix_sentence_endings = True).wrap
+
+    def __init__(self, value = None):
+        self.long = []
+        if value is not None:
+            self.short, long = value.split("\n", 1)
+            self.append(long)
+        else:
+            self.short = None
+
+    def __str__(self):
+        ret = self.short + '\n'
+        pars = []
+        for  t in self.long:
+            pars.append('\n '.join(t))
+        return self.short + '\n ' + '\n .\n '.join(pars)
+
+    def append(self, str):
+        str = str.strip()
+        if str:
+            for t in str.split("\n.\n"):
+                self.long.append(self._wrap(t))
+
+    def append_pre(self, l):
+        self.long.append(l)
+
+package._fields['Description'] = PackageDescription
 
 class packages_list(sorted_dict):
     def append(self, package):
@@ -15,7 +46,7 @@ class packages_list(sorted_dict):
 
 class gencontrol(object):
     def __init__(self, kernelversion):
-        self.config = config_reader()
+        self.config = ConfigReader()
         self.templates = templates()
         self.kernelversion = kernelversion
 
@@ -54,26 +85,40 @@ class gencontrol(object):
 
         makeflags['PACKAGE'] = package
 
-        makeflags_string = ' '.join(["%s='%s'" % i for i in makeflags.iteritems()])
-
-        cmds_binary_indep = []
-        cmds_binary_indep.append(("$(MAKE) -f debian/rules.real binary-indep %s" % makeflags_string))
-        makefile.append(("binary-indep::", cmds_binary_indep))
-
         binary = self.templates["control.binary"]
         binary_udeb = self.templates["control.binary.udeb"]
         copyright = self.templates["copyright.binary"]
-        packages_binary = self.process_packages(binary, vars)
-        packages_binary_udeb = self.process_packages(binary_udeb, vars)
 
         vars['license'] = file("%s/LICENSE" % package).read()
 
         file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
-        install = []
-        install.append("%s /lib/firmware" % ' '.join(["%s/%s" % (package, i) for i in config_entry['files']]))
+        files_orig = set(config_entry['files'])
+        files = {}
+        for r in os.walk(package):
+            for t in r[2]:
+                t1 = t.rsplit('-', 1)
+                if len(t1) == 1:
+                    t1.append("unknown")
+                if t1[0] in files_orig:
+                    if t1[0] in files:
+                        raise RuntimeError("Multiple files for %s" % t1[0])
+                    files[t1[0]] = t, t1[1]
 
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
+
+        files_desc = ["Contents:"]
+
+        for f in config_entry['files']:
+            f_in, version = files[f]
+            c = self.config.get(('base', package, f), {})
+            desc = c.get('desc', f)
+            files_desc.append("* %s, version %s" % (desc, version))
+
+        packages_binary = self.process_packages(binary, vars)
+        packages_binary_udeb = self.process_packages(binary_udeb, vars)
+
+        packages_binary[0]['Description'].append_pre(files_desc)
 
         if 'initramfs-tools' in config_entry.get('support', []):
             hook = self.templates['hook.initramfs-tools']
@@ -85,11 +130,14 @@ class gencontrol(object):
 
             file("debian/firmware-%s.dirs" % package, 'w').write("/usr/share/initramfs-tools/hooks\n")
 
-        file("debian/firmware-%s.install" % package, 'w').write('\n'.join(install) + '\n')
-        file("debian/firmware-%s-di.install" % package, 'w').write('\n'.join(install) + '\n')
-
         packages.extend(packages_binary)
         packages.extend(packages_binary_udeb)
+
+        makeflags_string = ' '.join(["%s='%s'" % i for i in makeflags.iteritems()])
+
+        cmds_binary_indep = []
+        cmds_binary_indep.append(("$(MAKE) -f debian/rules.real binary-indep %s" % makeflags_string))
+        makefile.append(("binary-indep::", cmds_binary_indep))
 
     def process_relation(self, key, e, in_e, vars):
         in_dep = in_e[key]
@@ -110,8 +158,8 @@ class gencontrol(object):
         in_desc = in_e['Description']
         desc = in_desc.__class__()
         desc.short = self.substitute(in_desc.short, vars)
-        for i in in_desc.long:
-            desc.long.append(self.substitute(i, vars))
+        for l in in_desc.long:
+            desc.long.append([self.substitute(i, vars) for i in l])
         e['Description'] = desc
 
     def process_package(self, in_entry, vars):
@@ -164,7 +212,7 @@ class gencontrol(object):
                 f.write("%s: %s\n" % (key, value))
             f.write('\n')
 
-class config_reader(debian_linux.config.config_reader):
+class ConfigReader(debian_linux.config.config_reader):
     schema = {
         'files': debian_linux.config.schema_item_list(),
         'packages': debian_linux.config.schema_item_list(),
@@ -172,10 +220,10 @@ class config_reader(debian_linux.config.config_reader):
     }
 
     def __init__(self):
-        super(config_reader, self).__init__(['.'])
-        self._read_base()
+        super(ConfigReader, self).__init__(['.'])
+        self._readBase()
 
-    def _read_base(self):
+    def _readBase(self):
         files = self._get_files(self.config_name)
         config = debian_linux.config.config_parser(self.schema, files)
 
@@ -190,20 +238,20 @@ class config_reader(debian_linux.config.config_reader):
             self[tuple(real)] = config[section]
 
         for package in packages:
-            self._read_package(package)
+            self._readPackage(package)
 
-    def _read_package(self, package):
+    def _readPackage(self, package):
         files = self._get_files("%s/%s" % (package, self.config_name))
         config = debian_linux.config.config_parser(self.schema, files)
 
+        self['base', package] = config['base',]
+
+        files = config['base',].get('files', [])
+
         for section in iter(config):
-            real = list(section)
-            real[0:0] = [real.pop()]
-            real[1:1] = [package]
-            real = tuple(real)
-            s = self.get(real, {})
-            s.update(config[section])
-            self[tuple(real)] = s
+            real = ['_'.join(section)]
+            real[0:0] = ['base', package]
+            self[tuple(real)] = config[section]
 
 if __name__ == '__main__':
     gencontrol(sys.argv[1])()
