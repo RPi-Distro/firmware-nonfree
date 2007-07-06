@@ -1,7 +1,0 @@
-[base]
-desc: IWL3945
-files:
- iwlwifi-3945.ucode
-longdesc: IWL3945, version 2.14.4.
-uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
-
