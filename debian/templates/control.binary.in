@@ -5,4 +5,6 @@ Priority: optional
 Suggests: initramfs-tools, linux-image
 Description: Binary firmware for @desc@
  This package contains the binary firmware for @longdesc@.
+ .
+ URL: @uri@
 

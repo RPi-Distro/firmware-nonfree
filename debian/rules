@@ -11,6 +11,5 @@ maintainerclean:
 	-rm debian/*.copyright
 	-rm debian/*.dirs
 	-rm debian/*.hook.*
-	-rm debian/*.install
 	-rm debian/*.postinst
 
