@@ -1,6 +1,8 @@
 #!/usr/bin/make -f
 SHELL := sh -e
 
+CONTROL_FILES += defines $(wildcard */defines)
+
 include debian/rules.defs
 include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.include
 
