@@ -22,6 +22,8 @@ class PackageDescription(object):
         ret = self.short + '\n'
         pars = []
         for  t in self.long:
+            if isinstance(t, basestring):
+                t = self._wrap(t)
             pars.append('\n '.join(t))
         return self.short + '\n ' + '\n .\n '.join(pars)
 
@@ -29,7 +31,7 @@ class PackageDescription(object):
         str = str.strip()
         if str:
             for t in str.split("\n.\n"):
-                self.long.append(self._wrap(t))
+                self.long.append(t)
 
     def append_pre(self, l):
         self.long.append(l)
@@ -158,8 +160,8 @@ class gencontrol(object):
         in_desc = in_e['Description']
         desc = in_desc.__class__()
         desc.short = self.substitute(in_desc.short, vars)
-        for l in in_desc.long:
-            desc.long.append([self.substitute(i, vars) for i in l])
+        for i in in_desc.long:
+            desc.long.append(self.substitute(i, vars))
         e['Description'] = desc
 
     def process_package(self, in_entry, vars):
