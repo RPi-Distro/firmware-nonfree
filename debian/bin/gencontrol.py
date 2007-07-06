@@ -107,6 +107,7 @@ class gencontrol(object):
                         raise RuntimeError("Multiple files for %s" % t1[0])
                     files[t1[0]] = t, t1[1]
 
+        makeflags['FILES'] = ' '.join(["%s:%s" % (i[1][0], i[0]) for i in files.iteritems()])
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
 
         files_desc = ["Contents:"]
@@ -129,8 +130,6 @@ class gencontrol(object):
 
             postinst = self.templates['postinst.initramfs-tools']
             file("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
-
-            file("debian/firmware-%s.dirs" % package, 'w').write("/usr/share/initramfs-tools/hooks\n")
 
         packages.extend(packages_binary)
         packages.extend(packages_binary_udeb)

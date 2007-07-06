@@ -19,11 +19,18 @@ install: DH_OPTIONS = -p$(PACKAGE_NAME) -p$(PACKAGE_NAME_UDEB)
 install:
 	dh_testdir
 	dh_testroot
-	dh_installdirs
-	if [ -e debian/$(PACKAGE_NAME).hook.initramfs-tools ]; then \
+	@for i in $(FILES); do \
+	  s=$(PACKAGE)/"$${i%:*}"; \
+	  d=/lib/firmware/"$${i#*:}"; \
+	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
+	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
+	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME_UDEB)"$$d"; \
+	  install -m644 -D "$$s" debian/$(PACKAGE_NAME_UDEB)"$$d"; \
+	done
+	@if [ -e debian/$(PACKAGE_NAME).hook.initramfs-tools ]; then \
+	  echo install -D debian/$(PACKAGE_NAME).hook.initramfs-tools debian/$(PACKAGE_NAME)/usr/share/initramfs-tools/hooks/firmware_$(PACKAGE); \
 	  install -D debian/$(PACKAGE_NAME).hook.initramfs-tools debian/$(PACKAGE_NAME)/usr/share/initramfs-tools/hooks/firmware_$(PACKAGE); \
 	fi
-	dh_install
 	dh_installchangelogs
 	dh_installdocs
 	dh_compress
