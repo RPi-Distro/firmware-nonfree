@@ -13,19 +13,23 @@ class PackageDescription(object):
     def __init__(self, value = None):
         self.long = []
         if value is not None:
-            self.short, long = value.split("\n", 1)
-            self.append(long)
+            value = value.split("\n", 1)
+            self.short = value[0]
+            if len(value) > 1:
+                self.append(value[1])
         else:
             self.short = None
 
     def __str__(self):
-        ret = self.short + '\n'
-        pars = []
-        for  t in self.long:
-            if isinstance(t, basestring):
-                t = self._wrap(t)
-            pars.append('\n '.join(t))
-        return self.short + '\n ' + '\n .\n '.join(pars)
+        if self.long:
+            pars = []
+            for  t in self.long:
+                if isinstance(t, basestring):
+                    t = self._wrap(t)
+                pars.append('\n '.join(t))
+            return self.short + '\n ' + '\n .\n '.join(pars)
+        else:
+            return self.short
 
     def append(self, str):
         str = str.strip()
