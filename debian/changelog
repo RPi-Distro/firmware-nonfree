@@ -1,8 +1,9 @@
 firmware-nonfree (0.6) UNRELEASED; urgency=low
 
-  * Added version numbers to long-desc (Closes: #393469).
+  * Drop Daniel from Uploaders.
+  * Add content lists. (closes: #393469)
 
- -- Daniel Baumann <daniel@debian.org>  Thu,  5 Jul 2007 02:32:00 +0100
+ -- Bastian Blank <waldi@debian.org>  Sat, 07 Jul 2007 08:38:21 +0200
 
 firmware-nonfree (0.5) unstable; urgency=low
 
