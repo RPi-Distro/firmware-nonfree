@@ -3,7 +3,7 @@ desc: Intel Wireless
 files:
  iwlwifi-3945.ucode
  iwlwifi-4965.ucode
-longdesc: Intel Wireless 3945 and 4965
+longdesc: Intel Wireless 3945 and 4965 cards
 uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
 
 [iwlwifi-3945.ucode]
