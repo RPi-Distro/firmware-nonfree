@@ -4,5 +4,4 @@ Architecture: all
 Section: non-free/debian-installer
 Priority: optional
 Description: Binary firmware for @desc@
- This package contains the binary firmware for @longdesc@.
 
