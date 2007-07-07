@@ -116,7 +116,7 @@ class gencontrol(object):
             f_in, version = files[f]
             c = self.config.get(('base', package, f), {})
             desc = c.get('desc', f)
-            files_desc.append("* %s, version %s" % (desc, version))
+            files_desc.append(" * %s, version %s" % (desc, version))
 
         packages_binary = self.process_packages(binary, vars)
         packages_binary_udeb = self.process_packages(binary_udeb, vars)
