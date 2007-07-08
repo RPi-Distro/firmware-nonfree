@@ -2,6 +2,7 @@ firmware-nonfree (0.6) UNRELEASED; urgency=low
 
   * Drop Daniel from Uploaders.
   * Add content lists. (closes: #393469)
+  * Update qlogic firmwares.
 
  -- Bastian Blank <waldi@debian.org>  Sat, 07 Jul 2007 08:38:21 +0200
 
