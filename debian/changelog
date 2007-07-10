@@ -1,10 +1,11 @@
-firmware-nonfree (0.6) UNRELEASED; urgency=low
+firmware-nonfree (0.6) unstable; urgency=low
 
   * Drop Daniel from Uploaders.
   * Add content lists. (closes: #393469)
   * Update qlogic firmwares.
+  * Merge iwl3945 and iwl4965 into iwlwifi.
 
- -- Bastian Blank <waldi@debian.org>  Sat, 07 Jul 2007 08:38:21 +0200
+ -- Bastian Blank <waldi@debian.org>  Tue, 10 Jul 2007 22:52:06 +0200
 
 firmware-nonfree (0.5) unstable; urgency=low
 
