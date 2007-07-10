@@ -1,7 +1,5 @@
 Package: firmware-@package@
 Architecture: all
-Section: non-free/base
-Priority: optional
 Suggests: initramfs-tools, linux-image
 Description: Binary firmware for @desc@
  This package contains the binary firmware for @longdesc@.

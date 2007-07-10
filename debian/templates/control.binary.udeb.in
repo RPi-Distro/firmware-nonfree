@@ -2,6 +2,5 @@ Package: firmware-@package@-di
 XC-Package-Type: udeb
 Architecture: all
 Section: non-free/debian-installer
-Priority: optional
 Description: Binary firmware for @desc@
 
