@@ -1,8 +1,10 @@
 firmware-nonfree (0.7) UNRELEASED; urgency=low
 
   * Set section to non-free/admin.
+  * Added iwl3945 firwmare, version 2.14.1.5,
+    Added iwl4965 firmware, version 4.44.1.18. (closes: #435304)
 
- -- Bastian Blank <waldi@debian.org>  Tue, 10 Jul 2007 23:27:56 +0200
+ -- Bastian Blank <waldi@debian.org>  Thu, 02 Aug 2007 10:03:50 +0200
 
 firmware-nonfree (0.6) unstable; urgency=low
 
