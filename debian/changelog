@@ -1,4 +1,4 @@
-firmware-nonfree (0.9) UNRELEASED; urgency=low
+firmware-nonfree (0.9) unstable; urgency=low
 
   * Merging rt61 and rt73 to ralink as requested by Bastian.
 
