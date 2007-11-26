@@ -1,0 +1,23 @@
+[base]
+desc: rt61, rt61pci, rt73, rt73usb wireless network drivers
+files:
+ rt2561.bin
+ rt2561s.bin
+ rt2661.bin
+ rt73.bin
+longdesc: PCI, CardBus and USB wireless network cards with the Ralink
+ RT2501 [Turbo], RT2600, RT5201 [Turbo], RT5600 or RT5201USB chipset,
+ supported by the rt61, rt61pci, or rt73, rt73usb drivers.
+uri: http://www.ralinktech.com/ralink/Home/Support/Linux.html
+
+[rt2561.bin]
+desc: Ralink RT2561 (RT2501/RT5201 chipset) firmware
+
+[rt2561s.bin]
+desc: Ralink RT2561S (RT2501 Turbo/RT5201 Turbo chipset) firmware
+
+[rt2661.bin]
+desc: Ralink RT2661 (RT2600/RT5600 chipset) firmware
+
+[rt73.bin]
+desc: Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware

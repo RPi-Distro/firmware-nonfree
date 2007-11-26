@@ -1,3 +1,9 @@
+firmware-nonfree (0.9) UNRELEASED; urgency=low
+
+  * Merging rt61 and rt73 to ralink as requested by Bastian.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 26 Nov 2007 21:02:00 +0100
+
 firmware-nonfree (0.8) unstable; urgency=low
 
   * Applying patch from Ben Hutchings <ben@decadent.org.uk> to update
