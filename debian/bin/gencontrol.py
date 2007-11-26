@@ -8,7 +8,7 @@ from debian_linux.utils import *
 class PackageDescription(object):
     __slots__ = "short", "long"
 
-    _wrap = wrap(width = 74, fix_sentence_endings = True).wrap
+    _wrap = TextWrapper(width = 74, fix_sentence_endings = True).wrap
 
     def __init__(self, value = None):
         self.long = []
@@ -40,9 +40,9 @@ class PackageDescription(object):
     def append_pre(self, l):
         self.long.append(l)
 
-package._fields['Description'] = PackageDescription
+Package._fields['Description'] = PackageDescription
 
-class packages_list(sorted_dict):
+class PackagesList(SortedDict):
     def append(self, package):
         self[package['Package']] = package
 
@@ -50,14 +50,14 @@ class packages_list(sorted_dict):
         for package in packages:
             self[package['Package']] = package
 
-class gencontrol(object):
+class GenControl(object):
     def __init__(self, kernelversion):
         self.config = ConfigReader()
-        self.templates = templates()
+        self.templates = Templates()
         self.kernelversion = kernelversion
 
     def __call__(self):
-        packages = packages_list()
+        packages = PackagesList()
         makefile = []
 
         self.do_source(packages)
@@ -146,16 +146,11 @@ class gencontrol(object):
 
     def process_relation(self, key, e, in_e, vars):
         in_dep = in_e[key]
-        dep = package_relation_list()
+        dep = PackageRelation()
         for in_groups in in_dep:
-            groups = package_relation_group()
+            groups = PackageRelationGroup()
             for in_item in in_groups:
-                item = package_relation()
-                item.name = self.substitute(in_item.name, vars)
-                if in_item.version is not None:
-                    item.version = self.substitute(in_item.version, vars)
-                item.arches = in_item.arches
-                groups.append(item)
+                groups.append(PackageRelationEntry(str(in_item)))
             dep.append(groups)
         e[key] = dep
 
@@ -168,9 +163,9 @@ class gencontrol(object):
         e['Description'] = desc
 
     def process_package(self, in_entry, vars):
-        e = package()
+        e = Package()
         for key, value in in_entry.iteritems():
-            if isinstance(value, package_relation_list):
+            if isinstance(value, PackageRelation):
                 self.process_relation(key, e, in_entry, vars)
             elif key == 'Description':
                 self.process_description(e, in_entry, vars)
@@ -217,11 +212,11 @@ class gencontrol(object):
                 f.write("%s: %s\n" % (key, value))
             f.write('\n')
 
-class ConfigReader(debian_linux.config.config_reader):
+class ConfigReader(debian_linux.config.ConfigReaderCore):
     schema = {
-        'files': debian_linux.config.schema_item_list(),
-        'packages': debian_linux.config.schema_item_list(),
-        'support': debian_linux.config.schema_item_list(),
+        'files': debian_linux.config.SchemaItemList(),
+        'packages': debian_linux.config.SchemaItemList(),
+        'support': debian_linux.config.SchemaItemList(),
     }
 
     def __init__(self):
@@ -229,8 +224,8 @@ class ConfigReader(debian_linux.config.config_reader):
         self._readBase()
 
     def _readBase(self):
-        files = self._get_files(self.config_name)
-        config = debian_linux.config.config_parser(self.schema, files)
+        files = self.getFiles(self.config_name)
+        config = debian_linux.config.ConfigParser(self.schema, files)
 
         packages = config['base',]['packages']
 
@@ -246,8 +241,8 @@ class ConfigReader(debian_linux.config.config_reader):
             self._readPackage(package)
 
     def _readPackage(self, package):
-        files = self._get_files("%s/%s" % (package, self.config_name))
-        config = debian_linux.config.config_parser(self.schema, files)
+        files = self.getFiles("%s/%s" % (package, self.config_name))
+        config = debian_linux.config.ConfigParser(self.schema, files)
 
         self['base', package] = config['base',]
 
@@ -259,4 +254,4 @@ class ConfigReader(debian_linux.config.config_reader):
             self[tuple(real)] = config[section]
 
 if __name__ == '__main__':
-    gencontrol(sys.argv[1])()
+    GenControl(sys.argv[1])()

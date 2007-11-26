@@ -1,3 +1,10 @@
+firmware-nonfree (0.8) UNRELEASED; urgency=low
+
+  * Applying patch from Ben Hutchings <ben@decadent.org.uk> to update
+    gencontrol.py for linux-support-2.6.22-3.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 26 Nov 2007 15:58:00 +0100
+
 firmware-nonfree (0.7) unstable; urgency=low
 
   * Set section to non-free/admin.
