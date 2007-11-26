@@ -4,6 +4,8 @@ firmware-nonfree (0.8) UNRELEASED; urgency=low
     gencontrol.py for linux-support-2.6.22-3.
   * Check for already included firmware by initramfs-tools own functions
     (Closes: #440967).
+  * Applying patch from Ben Hutchings <ben@decadent.org.uk> to add
+    ralink rt61 firmware.
 
  -- Daniel Baumann <daniel@debian.org>  Mon, 26 Nov 2007 15:58:00 +0100
 
