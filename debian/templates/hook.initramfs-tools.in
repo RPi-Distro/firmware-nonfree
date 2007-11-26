@@ -19,5 +19,11 @@ esac
 copy_exec /lib/udev/firmware.agent /lib/udev/
 
 mkdir -p $DESTDIR/lib/firmware
-cp @files_real@ $DESTDIR/lib/firmware
 
+for FILE in @files_real@
+do
+	if [ ! -e $DESTDIR/lib/firmware/"`basename $FILE`" ]
+	then
+		cp "$FILE" $DESTDIR/lib/firmware
+	fi
+done
