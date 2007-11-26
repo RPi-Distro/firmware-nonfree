@@ -1,4 +1,4 @@
-firmware-nonfree (0.8) UNRELEASED; urgency=low
+firmware-nonfree (0.8) unstable; urgency=low
 
   * Applying patch from Ben Hutchings <ben@decadent.org.uk> to update
     gencontrol.py for linux-support-2.6.22-3.
