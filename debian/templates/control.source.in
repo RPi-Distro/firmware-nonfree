@@ -3,6 +3,6 @@ Section: non-free/admin
 Priority: optional
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Uploaders: Bastian Blank <waldi@debian.org>, Frederik Schüler <fs@debian.org>, Steve Langasek <vorlon@debian.org>
-Build-Depends: debhelper (>= 4.2)
+Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.2
 
