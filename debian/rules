@@ -13,4 +13,3 @@ maintainerclean:
 	-rm debian/*.copyright
 	-rm debian/*.hook.*
 	-rm debian/*.postinst
-

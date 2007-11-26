@@ -9,6 +9,7 @@ firmware-nonfree (0.8) UNRELEASED; urgency=low
   * Applying patch from Ben Hutchings <ben@decadent.org.uk> to add
     ralink rt73 firmware.
   * Bumping package to debhelper 5.
+  * Removed some useless whitespaces at EOL and EOF.
 
  -- Daniel Baumann <daniel@debian.org>  Mon, 26 Nov 2007 15:58:00 +0100
 
