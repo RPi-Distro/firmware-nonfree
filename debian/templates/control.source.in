@@ -7,4 +7,3 @@ Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.2
 Vcs-Browser: http://svn.debian.org/wsvn/kernel/dists/trunk/firmware-nonfree/
 Vcs-Svn: svn://svn.debian.org/kernel/dists/trunk/firmware-nonfree/
-
