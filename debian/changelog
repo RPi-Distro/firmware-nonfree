@@ -1,6 +1,7 @@
 firmware-nonfree (0.10) UNRELEASED; urgency=low
 
   * Adding Vcs fields in control.
+  * Updating to 2.6.23-1.
 
  -- Daniel Baumann <daniel@debian.org>  Sun,  2 Dec 2007 22:16:00 +0100
 
