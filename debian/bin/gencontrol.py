@@ -87,7 +87,6 @@ class GenControl(object):
         makeflags['PACKAGE'] = package
 
         binary = self.templates["control.binary"]
-        binary_udeb = self.templates["control.binary.udeb"]
         copyright = self.templates["copyright.binary"]
 
         vars['license'] = file("%s/LICENSE" % package).read()
@@ -118,7 +117,6 @@ class GenControl(object):
             files_desc.append(" * %s, version %s" % (desc, version))
 
         packages_binary = self.process_packages(binary, vars)
-        packages_binary_udeb = self.process_packages(binary_udeb, vars)
 
         packages_binary[0]['Description'].append_pre(files_desc)
 
@@ -131,7 +129,6 @@ class GenControl(object):
             file("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
         packages.extend(packages_binary)
-        packages.extend(packages_binary_udeb)
 
         makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
 

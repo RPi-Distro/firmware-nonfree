@@ -14,8 +14,7 @@ include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.real.include
 binary-indep: install
 
 install: PACKAGE_NAME = firmware-$(PACKAGE)
-install: PACKAGE_NAME_UDEB = firmware-$(PACKAGE)-di
-install: DH_OPTIONS = -p$(PACKAGE_NAME) -p$(PACKAGE_NAME_UDEB)
+install: DH_OPTIONS = -p$(PACKAGE_NAME)
 install:
 	dh_testdir
 	dh_testroot
@@ -24,8 +23,6 @@ install:
 	  d=/lib/firmware/"$${i#*:}"; \
 	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
-	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME_UDEB)"$$d"; \
-	  install -m644 -D "$$s" debian/$(PACKAGE_NAME_UDEB)"$$d"; \
 	done
 	@if [ -e debian/$(PACKAGE_NAME).hook.initramfs-tools ]; then \
 	  echo install -D debian/$(PACKAGE_NAME).hook.initramfs-tools debian/$(PACKAGE_NAME)/usr/share/initramfs-tools/hooks/firmware_$(PACKAGE); \
