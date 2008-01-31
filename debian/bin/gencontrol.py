@@ -1,9 +1,13 @@
 #!/usr/bin/env python2.4
-import os, sys
-sys.path.append(sys.argv[2]+ "/lib/python")
-import debian_linux.config
-from debian_linux.debian import *
-from debian_linux.utils import *
+
+import os, re, sys
+
+sys.path.append(sys.argv[2] + "/lib/python")
+
+from debian_linux.config import ConfigParser, SchemaItemList
+from debian_linux.debian import Package, PackageRelation
+from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
+from debian_linux.utils import Templates, TextWrapper
 
 class PackageDescription(object):
     __slots__ = "short", "long"
@@ -42,46 +46,37 @@ class PackageDescription(object):
 
 Package._fields['Description'] = PackageDescription
 
-class PackagesList(SortedDict):
-    def append(self, package):
-        self[package['Package']] = package
-
-    def extend(self, packages):
-        for package in packages:
-            self[package['Package']] = package
-
 class GenControl(object):
     def __init__(self, kernelversion):
-        self.config = ConfigReader()
+        self.config = Config()
         self.templates = Templates()
         self.kernelversion = kernelversion
 
     def __call__(self):
         packages = PackagesList()
-        makefile = []
+        makefile = Makefile()
 
         self.do_source(packages)
         self.do_main(packages, makefile)
 
-        self.write_control(packages.itervalues())
-        self.write_makefile(makefile)
+        self.write(packages, makefile)
 
     def do_source(self, packages):
         source = self.templates["control.source"]
         packages['source'] = self.process_package(source[0], ())
+        packages['source']['Build-Depends'].append('linux-support-%s' % self.kernelversion)
 
     def do_main(self, packages, makefile):
         config_entry = self.config['base',]
         vars = {}
         vars.update(config_entry)
-        makeflags = {}
 
-        for i in ('build', 'binary-arch', 'setup', 'source'):
-            makefile.append(("%s-%%:" % i, ["@true"]))
+        makeflags = MakeFlags()
 
-        packages['source']['Build-Depends'].append('linux-support-%s' % self.kernelversion)
+        for i in ('build', 'binary-arch', 'setup'):
+            makefile.add("%s_%%" % i, cmds = ["@true"])
 
-        for package in iter(self.config['base',]['packages']):
+        for package in config_entry['packages']:
             self.do_package(packages, makefile, package, vars.copy(), makeflags.copy())
 
     def do_package(self, packages, makefile, package, vars, makeflags):
@@ -138,11 +133,7 @@ class GenControl(object):
         packages.extend(packages_binary)
         packages.extend(packages_binary_udeb)
 
-        makeflags_string = ' '.join(["%s='%s'" % i for i in makeflags.iteritems()])
-
-        cmds_binary_indep = []
-        cmds_binary_indep.append(("$(MAKE) -f debian/rules.real binary-indep %s" % makeflags_string))
-        makefile.append(("binary-indep::", cmds_binary_indep))
+        makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
 
     def process_relation(self, key, e, in_e, vars):
         in_dep = in_e[key]
@@ -166,7 +157,8 @@ class GenControl(object):
         e = Package()
         for key, value in in_entry.iteritems():
             if isinstance(value, PackageRelation):
-                self.process_relation(key, e, in_entry, vars)
+                e[key] = in_entry[key]
+#                self.process_relation(key, e, in_entry, vars)
             elif key == 'Description':
                 self.process_description(e, in_entry, vars)
             elif key[:2] == 'X-':
@@ -190,21 +182,17 @@ class GenControl(object):
             return vars[match.group(1)]
         return re.sub(r'@([a-z_]+)@', subst, s)
 
+    def write(self, packages, makefile):
+        self.write_control(packages.itervalues())
+        self.write_makefile(makefile)
+
     def write_control(self, list):
         self.write_rfc822(file("debian/control", 'w'), list)
 
-    def write_makefile(self, out_list):
-        out = file("debian/rules.gen", 'w')
-        for item in out_list:
-            if isinstance(item, (list, tuple)):
-                out.write("%s\n" % item[0])
-                cmd_list = item[1]
-                if isinstance(cmd_list, basestring):
-                    cmd_list = cmd_list.split('\n')
-                for j in cmd_list:
-                    out.write("\t%s\n" % j)
-            else:
-                out.write("%s\n" % item)
+    def write_makefile(self, makefile):
+        f = file("debian/rules.gen", 'w')
+        makefile.write(f)
+        f.close()
 
     def write_rfc822(self, f, list):
         for entry in list:
@@ -212,46 +200,42 @@ class GenControl(object):
                 f.write("%s: %s\n" % (key, value))
             f.write('\n')
 
-class ConfigReader(debian_linux.config.ConfigReaderCore):
-    schema = {
-        'files': debian_linux.config.SchemaItemList(),
-        'packages': debian_linux.config.SchemaItemList(),
-        'support': debian_linux.config.SchemaItemList(),
+class Config(dict):
+    config_name = "defines"
+
+    schemas = {
+        'base': {
+            'files': SchemaItemList(),
+            'packages': SchemaItemList(),
+            'support': SchemaItemList(),
+        }
     }
 
     def __init__(self):
-        super(ConfigReader, self).__init__(['.'])
-        self._readBase()
+        self._read_base()
 
-    def _readBase(self):
-        files = self.getFiles(self.config_name)
-        config = debian_linux.config.ConfigParser(self.schema, files)
+    def _read_base(self):
+        config = ConfigParser(self.schemas)
+        config.read(self.config_name)
 
         packages = config['base',]['packages']
 
         for section in iter(config):
-            real = list(section)
-            if real[-1] in packages:
-                real.insert(0, 'base')
-            else:
-                real.insert(0, real.pop())
-            self[tuple(real)] = config[section]
+            real = (section[-1],) + section[1:]
+            self[real] = config[section]
 
         for package in packages:
-            self._readPackage(package)
+            self._read_package(package)
 
-    def _readPackage(self, package):
-        files = self.getFiles("%s/%s" % (package, self.config_name))
-        config = debian_linux.config.ConfigParser(self.schema, files)
-
-        self['base', package] = config['base',]
-
-        files = config['base',].get('files', [])
+    def _read_package(self, package):
+        config = ConfigParser(self.schemas)
+        config.read("%s/%s" % (package, self.config_name))
 
         for section in iter(config):
-            real = ['_'.join(section)]
-            real[0:0] = ['base', package]
-            self[tuple(real)] = config[section]
+            real = (section[-1], package)
+            s = self.get(real, {})
+            s.update(config[section])
+            self[real] = s
 
 if __name__ == '__main__':
     GenControl(sys.argv[1])()
