@@ -7,6 +7,7 @@ firmware-nonfree (0.10) UNRELEASED; urgency=low
   * Update iwl4965 firmware, version 4.44.1.20. (closes: #463052)
   * Updating to 2.6.24-1.
   * Drop udeb support.
+  * Drop old variants of iwlwifi firmwares.
 
  -- Bastian Blank <waldi@debian.org>  Thu, 31 Jan 2008 20:19:15 +0100
 
