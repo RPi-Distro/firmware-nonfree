@@ -1,7 +1,11 @@
 firmware-nonfree (0.10) UNRELEASED; urgency=low
 
+  [ Daniel Baumann ]
   * Adding Vcs fields in control.
   * Updating to 2.6.23-1.
+
+  [ Bastian Blank ]
+  * Update iwl4965 firmware, version 4.44.1.20. (closes: #463052)
 
  -- Daniel Baumann <daniel@debian.org>  Sun,  2 Dec 2007 22:16:00 +0100
 
