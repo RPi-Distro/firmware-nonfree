@@ -93,27 +93,33 @@ class GenControl(object):
 
         file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
-        files_orig = set(config_entry['files'])
-        files = {}
-        for r in os.walk(package):
-            for t in r[2]:
-                t1 = t.rsplit('-', 1)
-                if len(t1) == 1:
-                    t1.append("unknown")
-                if t1[0] in files_orig:
-                    if t1[0] in files:
-                        raise RuntimeError("Multiple files for %s" % t1[0])
-                    files[t1[0]] = t, t1[1]
+        files_orig = config_entry['files']
+        files_real = {}
 
-        makeflags['FILES'] = ' '.join(["%s:%s" % (i[1][0], i[0]) for i in files.iteritems()])
+        for root, dirs, files in os.walk(package):
+            del dirs[:]
+            for f in files:
+                f1  = f.rsplit('-', 1)
+                if f in files_orig:
+                    files_real[f] = f, f, None
+                elif len(f1) > 1:
+                    f_base, f_version = f1
+                    if f_base in files_orig:
+                        if f_base in files_real:
+                            raise RuntimeError("Multiple files for %s" % f_base)
+                        files_real[f_base] = f_base, f, f_version
+
+        makeflags['FILES'] = ' '.join(["%s:%s" % (i[1], i[0]) for i in files_real.itervalues()])
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
 
         files_desc = ["Contents:"]
 
         for f in config_entry['files']:
-            f_in, version = files[f]
+            base, f, version = files_real[f]
             c = self.config.get(('base', package, f), {})
             desc = c.get('desc', f)
+            if version is None:
+                version = c.get('version', 'unknown')
             files_desc.append(" * %s, version %s" % (desc, version))
 
         packages_binary = self.process_packages(binary, vars)
@@ -218,7 +224,7 @@ class Config(dict):
         packages = config['base',]['packages']
 
         for section in iter(config):
-            real = (section[-1],) + section[1:]
+            real = (section[-1],) + section[:-1]
             self[real] = config[section]
 
         for package in packages:
@@ -229,7 +235,7 @@ class Config(dict):
         config.read("%s/%s" % (package, self.config_name))
 
         for section in iter(config):
-            real = (section[-1], package)
+            real = (section[-1], package) + section[:-1]
             s = self.get(real, {})
             s.update(config[section])
             self[real] = s
