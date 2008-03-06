@@ -1,0 +1,15 @@
+[base]
+desc: Broadcom NetXtremeII
+files:
+ bnx2-06-4.0.5.fw
+ bnx2-09-4.0.5.fw
+longdesc: Broadcom NetXtremeII network adapters
+uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
+
+[bnx2-06-4.0.5.fw_base]
+desc: Broadcom NetXtremeII 5706 firmware
+version: Linux 2.6.25
+
+[bnx2-09-4.0.5.fw_base]
+desc: Broadcom NetXtremeII 5709 firmware
+version: Linux 2.6.25
