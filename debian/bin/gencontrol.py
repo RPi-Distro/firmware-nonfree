@@ -235,7 +235,10 @@ class Config(dict):
         config.read("%s/%s" % (package, self.config_name))
 
         for section in iter(config):
-            real = (section[-1], package) + section[:-1]
+            if len(section) > 1:
+                real = (section[-1], package, '_'.join(section[:-1]))
+            else:
+                real = (section[-1], package)
             s = self.get(real, {})
             s.update(config[section])
             self[real] = s
