@@ -115,7 +115,7 @@ class GenControl(object):
         files_desc = ["Contents:"]
 
         for f in config_entry['files']:
-            base, f, version = files_real[f]
+            f, f_real, version = files_real[f]
             c = self.config.get(('base', package, f), {})
             desc = c.get('desc', f)
             if version is None:
