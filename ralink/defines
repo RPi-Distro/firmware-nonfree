@@ -1,5 +1,5 @@
 [base]
-desc: rt61, rt61pci, rt73, rt73usb wireless network drivers
+desc: Ralink RT2561, RT2571, RT2661 and RT2671 wireless cards
 files:
  rt2561.bin
  rt2561s.bin
