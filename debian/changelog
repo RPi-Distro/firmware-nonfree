@@ -1,14 +1,12 @@
 firmware-nonfree (0.11) UNRELEASED; urgency=low
 
   [ Bastian Blank ]
-  * Update qla24xx firmware, version 4.04.00.
-  * Add qla25xx firmware, version 4.04.00.
+  * Update QLogic QLA24XX firmware, version 4.04.00.
+  * Add QLogic QLA25XX firmware, version 4.04.00.
+  * Add Broadcom NetXtremeII firmwares.
 
   [ dann frazier ]
   * Correct path to initramfs.conf file in postinst. (closes: #432042)
-
-  [ Bastian Blank ]
-  * Add Broadcom NetXtremeII firmwares.
 
  -- dann frazier <dannf@debian.org>  Thu, 28 Feb 2008 03:09:13 -0700
 
