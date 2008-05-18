@@ -1,5 +1,5 @@
 [base]
-desc: Intel Wireless
+desc: Intel Wireless 3945 and 4965
 files:
  iwlwifi-3945-1.ucode
  iwlwifi-4965-1.ucode

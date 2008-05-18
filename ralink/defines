@@ -7,7 +7,7 @@ files:
  rt73.bin
 longdesc: PCI, CardBus and USB wireless network cards with the Ralink
  RT2501 [Turbo], RT2600, RT5201 [Turbo], RT5600 or RT5201USB chipset,
- supported by the rt61, rt61pci, or rt73, rt73usb drivers.
+ supported by the rt61, rt61pci, or rt73, rt73usb drivers
 uri: http://www.ralinktech.com/ralink/Home/Support/Linux.html
 
 [rt2561.bin_base]
