@@ -1,4 +1,4 @@
-firmware-nonfree (0.11) UNRELEASED; urgency=low
+firmware-nonfree (0.11) unstable; urgency=low
 
   [ Bastian Blank ]
   * Update QLogic QLA24XX firmware, version 4.04.00.
@@ -8,7 +8,7 @@ firmware-nonfree (0.11) UNRELEASED; urgency=low
   [ dann frazier ]
   * Correct path to initramfs.conf file in postinst. (closes: #432042)
 
- -- dann frazier <dannf@debian.org>  Thu, 28 Feb 2008 03:09:13 -0700
+ -- Bastian Blank <waldi@debian.org>  Sun, 18 May 2008 14:26:49 +0200
 
 firmware-nonfree (0.10) unstable; urgency=low
 
