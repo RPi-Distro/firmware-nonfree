@@ -1,8 +1,8 @@
 firmware-nonfree (0.11) UNRELEASED; urgency=low
 
   [ Bastian Blank ]
-  * Update qla24xx firmware, version 4.03.00.
-  * Add qla25xx firmware, version 4.03.00.
+  * Update qla24xx firmware, version 4.04.00.
+  * Add qla25xx firmware, version 4.04.00.
 
   [ dann frazier ]
   * Correct path to initramfs.conf file in postinst. (closes: #432042)
