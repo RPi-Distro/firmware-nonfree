@@ -7,6 +7,9 @@ firmware-nonfree (0.11) UNRELEASED; urgency=low
   [ dann frazier ]
   * Correct path to initramfs.conf file in postinst. (closes: #432042)
 
+  [ Bastian Blank ]
+  * Add Broadcom NetXtremeII firmwares.
+
  -- dann frazier <dannf@debian.org>  Thu, 28 Feb 2008 03:09:13 -0700
 
 firmware-nonfree (0.10) unstable; urgency=low
