@@ -1,6 +1,0 @@
-[base]
-desc: Intel Wireless 3945 (old style)
-files:
- ipw3945.ucode
-longdesc: Intel Wireless 3945 cards with old style driver
-uri: http://bughost.org/ipw3945/

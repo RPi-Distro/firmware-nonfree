@@ -1,3 +1,9 @@
+firmware-nonfree (0.12) UNRELEASED; urgency=low
+
+  * Remove Intel Wireless 3945 (old style) firmware.
+
+ -- Bastian Blank <waldi@debian.org>  Sun, 18 May 2008 14:31:26 +0200
+
 firmware-nonfree (0.11) unstable; urgency=low
 
   [ Bastian Blank ]
