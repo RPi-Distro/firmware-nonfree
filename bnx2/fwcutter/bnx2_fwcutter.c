@@ -63,13 +63,15 @@ typedef uint32_t u32;
 #endif
 #define le32_to_be32(x) bswap_32(x)
 
-void set_firmware_image_part(struct bnx2_fw_file_section *s, uint32_t addr, uint32_t len)
+void set_firmware_image_part(struct bnx2_fw_file_section *s, const char *text, uint32_t addr, uint32_t len, uint32_t offset)
 {
-    s->addr = cpu_to_be32(addr);
-    s->len = cpu_to_be32(len);
+  printf("Setup %s segment. addr: %08x, len: %d, fileoffset: %u\n", text, addr, len, offset);
+  s->addr = cpu_to_be32(addr);
+  s->len = cpu_to_be32(len);
+  s->offset = cpu_to_be32(offset);
 }
 
-void write_firmware_flat(int fd, struct bnx2_fw_file_section *out, void *data, int len)
+void write_firmware_flat(int fd, struct bnx2_fw_file_section *out, const char *text, void *data, int len)
 {
   off_t offset = lseek(fd, 0, SEEK_CUR);
 
@@ -88,6 +90,8 @@ void write_firmware_flat(int fd, struct bnx2_fw_file_section *out, void *data, i
   assert(ret == Z_STREAM_END);
   unsigned int l = strm.total_out;
 
+  printf("Write %s firmware. len: %d, fileoffset: %d\n", text, l, offset);
+
   out->len = cpu_to_be32(l);
   out->offset = cpu_to_be32(offset);
 
@@ -98,14 +102,15 @@ void write_firmware_flat(int fd, struct bnx2_fw_file_section *out, void *data, i
   write(fd, buf, l);
 }
 
-void write_firmware_image(int fd, struct bnx2_fw_file_entry *out, struct fw_info *fw)
+void write_firmware_image(int fd, struct bnx2_fw_file_entry *out, const char *text, struct fw_info *fw)
 {
   off_t offset = lseek(fd, 0, SEEK_CUR);
 
+  printf("Write %s firmware\n", text);
+
   out->start_addr = cpu_to_be32(fw->start_addr);
 
-  set_firmware_image_part(&out->text, fw->text_addr, fw->text_len);
-  out->text.offset = cpu_to_be32(offset);
+  set_firmware_image_part(&out->text, "text", fw->text_addr, fw->text_len, offset);
 
   uint32_t buf[0x10000];
   struct z_stream_s strm;
@@ -128,23 +133,21 @@ void write_firmware_image(int fd, struct bnx2_fw_file_entry *out, struct fw_info
 
   if (fw->data_addr)
   {
-    set_firmware_image_part(&out->data, fw->data_addr, fw->data_len);
-    out->data.offset = cpu_to_be32(offset);
+    set_firmware_image_part(&out->data, "data", fw->data_addr, fw->data_len, offset);
     for (unsigned int j = 0; j < (fw->data_len / 4); j++)
       buf[j] = cpu_to_be32(fw->data[j]);
     offset += write(fd, buf, fw->data_len);
   }
 
   if (fw->sbss_len)
-    set_firmware_image_part(&out->sbss, fw->sbss_addr, fw->sbss_len);
+    set_firmware_image_part(&out->sbss, "sbss", fw->sbss_addr, fw->sbss_len, 0);
 
   if (fw->bss_len)
-    set_firmware_image_part(&out->bss, fw->bss_addr, fw->bss_len);
+    set_firmware_image_part(&out->bss, "bss", fw->bss_addr, fw->bss_len, 0);
 
   if (fw->rodata_addr)
   {
-    set_firmware_image_part(&out->rodata, fw->rodata_addr, fw->rodata_len);
-    out->rodata.offset = cpu_to_be32(offset);
+    set_firmware_image_part(&out->rodata, "rodata", fw->rodata_addr, fw->rodata_len, offset);
     for (unsigned int j = 0; j < (fw->rodata_len / 4); j++)
       buf[j] = cpu_to_be32(fw->rodata[j]);
     offset += write(fd, buf, fw->rodata_len);
@@ -156,17 +159,19 @@ void write_firmware(const char *filename, struct fw_info *com_fw, struct fw_info
   struct bnx2_fw_file out;
   memset(&out, 0, sizeof out);
 
+  printf("Write firmware file: %s\n", filename);
+
   int fd = open(filename, O_WRONLY | O_CREAT, 0666);
 
   lseek(fd, sizeof out, SEEK_SET);
 
-  write_firmware_image(fd, &out.com, com_fw);
-  write_firmware_image(fd, &out.cp, cp_fw);
-  write_firmware_image(fd, &out.rxp, rxp_fw);
-  write_firmware_image(fd, &out.tpat, tpat_fw);
-  write_firmware_image(fd, &out.txp, txp_fw);
-  write_firmware_flat(fd, &out.rv2p_proc1, rv2p_proc1, rv2p_proc1_len);
-  write_firmware_flat(fd, &out.rv2p_proc2, rv2p_proc2, rv2p_proc2_len);
+  write_firmware_image(fd, &out.com, "com", com_fw);
+  write_firmware_image(fd, &out.cp, "cp", cp_fw);
+  write_firmware_image(fd, &out.rxp, "rxp", rxp_fw);
+  write_firmware_image(fd, &out.tpat, "tpat", tpat_fw);
+  write_firmware_image(fd, &out.txp, "txp", txp_fw);
+  write_firmware_flat(fd, &out.rv2p_proc1, "rv2p-proc1", rv2p_proc1, rv2p_proc1_len);
+  write_firmware_flat(fd, &out.rv2p_proc2, "rv2p-proc2", rv2p_proc2, rv2p_proc2_len);
 
   lseek(fd, 0, SEEK_SET);
 
