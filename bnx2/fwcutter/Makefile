@@ -13,8 +13,8 @@ LDFLAGS += -lz
 
 all: bnx2_fwcutter_$(KERNEL_VERSION)
 
-bnx2_fwcutter_$(KERNEL_VERSION): bnx2_fwcutter_$(KERNEL_VERSION).c
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
+bnx2_fwcutter_$(KERNEL_VERSION): bnx2_fwcutter_$(KERNEL_VERSION).c bnx2_fwcutter.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
 else
 all:
 	$(error Please define KERNEL_SOURCE and KERNEL_VERSION)
