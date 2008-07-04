@@ -161,7 +161,7 @@ void write_firmware(const char *filename, struct fw_info *com_fw, struct fw_info
 
   printf("Write firmware file: %s\n", filename);
 
-  int fd = open(filename, O_WRONLY | O_CREAT, 0666);
+  int fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0666);
 
   lseek(fd, sizeof out, SEEK_SET);
 
