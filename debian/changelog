@@ -1,6 +1,9 @@
 firmware-nonfree (0.12) UNRELEASED; urgency=low
 
   * Remove Intel Wireless 3945 (old style) firmware.
+  * Update Intel Wireless 4965 firmware, version 228.57.1.21.
+    (closes: #489684)
+  * Add Intel Wireless 4965 firmware, version 228.57.2.21.
 
  -- Bastian Blank <waldi@debian.org>  Sun, 18 May 2008 14:31:26 +0200
 
