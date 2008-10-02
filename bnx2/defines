@@ -4,6 +4,7 @@ files:
  bnx2-06-4.0.5.fw
  bnx2-09-4.0.5.fw
 longdesc: Broadcom NetXtremeII network adapters
+support: initramfs-tools
 uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
 
 [bnx2-06-4.0.5.fw_base]
