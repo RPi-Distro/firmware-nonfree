@@ -1,8 +1,9 @@
 firmware-nonfree (0.13) UNRELEASED; urgency=low
 
   * Make firmware-bnx2 trigger update-initramfs (closes: #494936)
+  * Update to 2.6.26-1 (closes: #500692)
 
- -- dann frazier <dannf@debian.org>  Thu, 02 Oct 2008 10:16:07 -0600
+ -- dann frazier <dannf@debian.org>  Thu, 02 Oct 2008 10:19:19 -0600
 
 firmware-nonfree (0.12) unstable; urgency=low
 
