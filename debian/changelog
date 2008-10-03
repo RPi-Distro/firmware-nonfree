@@ -1,11 +1,11 @@
-firmware-nonfree (0.13) UNRELEASED; urgency=low
+firmware-nonfree (0.13) unstable; urgency=low
 
   * Make firmware-bnx2 trigger update-initramfs (closes: #494936)
   * Update to 2.6.26-1 (closes: #500692)
   * Update Intel Wireless 3945 firmware, version 15.28.1.6.
     (closes: #494703)
 
- -- dann frazier <dannf@debian.org>  Thu, 02 Oct 2008 11:48:12 -0600
+ -- dann frazier <dannf@debian.org>  Thu, 02 Oct 2008 11:58:37 -0600
 
 firmware-nonfree (0.12) unstable; urgency=low
 
