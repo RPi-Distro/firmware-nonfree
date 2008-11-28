@@ -6,45 +6,131 @@ sys.path.append(sys.argv[2] + "/lib/python")
 
 from debian_linux.config import ConfigParser, SchemaItemList
 from debian_linux.debian import Package, PackageRelation
+from debian_linux.debian import PackageDescription as PackageDescriptionBase
 from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
-from debian_linux.utils import Templates, TextWrapper
+from debian_linux.utils import SortedDict, TextWrapper
+from debian_linux.utils import Templates as TemplatesBase
 
-class PackageDescription(object):
-    __slots__ = "short", "long"
-
-    _wrap = TextWrapper(width = 74, fix_sentence_endings = True).wrap
+class PackageDescription(PackageDescriptionBase):
+    __slots__ = ()
 
     def __init__(self, value = None):
+        self.short = []
         self.long = []
         if value is not None:
             value = value.split("\n", 1)
-            self.short = value[0]
+            self.append_short(value[0])
             if len(value) > 1:
                 self.append(value[1])
-        else:
-            self.short = None
 
     def __str__(self):
-        if self.long:
-            pars = []
-            for  t in self.long:
-                if isinstance(t, basestring):
-                    t = self._wrap(t)
-                pars.append('\n '.join(t))
-            return self.short + '\n ' + '\n .\n '.join(pars)
-        else:
-            return self.short
-
-    def append(self, str):
-        str = str.strip()
-        if str:
-            for t in str.split("\n.\n"):
-                self.long.append(t)
+        wrap = TextWrapper(width = 74, fix_sentence_endings = True).wrap
+        short = ', '.join(self.short)
+        long_pars = []
+        for t in self.long:
+            if isinstance(t, basestring):
+                t = wrap(t)
+            long_pars.append('\n '.join(t))
+        long = '\n .\n '.join(long_pars)
+        return short + '\n ' + long
 
     def append_pre(self, l):
         self.long.append(l)
 
+    def extend(self, desc):
+        if isinstance(desc, PackageDescription):
+            self.short.extend(desc.short)
+            self.long.extend(desc.long)
+        elif isinstance(desc, (list, tuple)):
+            for i in desc:
+                self.append(i)
+
 Package._fields['Description'] = PackageDescription
+
+class Template(dict):
+    _fields = SortedDict((
+        ('Template', str),
+        ('Type', str),
+        ('Default', str),
+        ('Description', PackageDescription),
+    ))
+
+    def __setitem__(self, key, value):
+        try:
+            cls = self._fields[key]
+            if not isinstance(value, cls):
+                value = cls(value)
+        except KeyError: pass
+        super(Template, self).__setitem__(key, value)
+
+    def iterkeys(self):
+        keys = set(self.keys())
+        for i in self._fields.iterkeys():
+            if self.has_key(i):
+                keys.remove(i)
+                yield i
+        for i in keys:
+            yield i
+
+    def iteritems(self):
+        for i in self.iterkeys():
+            yield (i, self[i])
+
+    def itervalues(self):
+        for i in self.iterkeys():
+            yield self[i]
+
+
+class Templates(TemplatesBase):
+    # TODO
+    def _read(self, name):
+        prefix, id = name.split('.', 1)
+
+        for dir in self.dirs:
+            filename = "%s/%s.in" % (dir, name)
+            if os.path.exists(filename):
+                f = file(filename)
+                if prefix == 'control':
+                    return self._read_control(f)
+                elif prefix == 'templates':
+                    return self._read_templates(f)
+                return f.read()
+
+    def _read_templates(self, f):
+        entries = []
+
+        while True:
+            e = Template()
+            last = None
+            lines = []
+            while True:
+                line = f.readline()
+                if not line:
+                    break
+                line = line.strip('\n')
+                if not line:
+                    break
+                if line[0] in ' \t':
+                    if not last:
+                        raise ValueError('Continuation line seen before first header')
+                    lines.append(line.lstrip())
+                    continue
+                if last:
+                    e[last] = '\n'.join(lines)
+                i = line.find(':')
+                if i < 0:
+                    raise ValueError("Not a header, not a continuation: ``%s''" % line)
+                last = line[:i]
+                lines = [line[i+1:].lstrip()]
+            if last:
+                e[last] = '\n'.join(lines)
+            if not e:
+                break
+
+            entries.append(e)
+
+        return entries
+
 
 class GenControl(object):
     def __init__(self, kernelversion):
@@ -89,7 +175,7 @@ class GenControl(object):
         binary = self.templates["control.binary"]
         copyright = self.templates["copyright.binary"]
 
-        vars['license'] = file("%s/LICENSE" % package).read()
+        vars['license'] = license = file("%s/LICENSE" % package).read()
 
         file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
@@ -134,6 +220,17 @@ class GenControl(object):
             postinst = self.templates['postinst.initramfs-tools']
             file("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
+        if 'license-accept' in config_entry:
+            preinst = self.templates['preinst.license']
+            preinst_filename = "debian/firmware-%s.preinst" % package
+            file(preinst_filename, 'w').write(self.substitute(preinst, vars))
+
+            templates = self.process_templates(self.templates['templates.license'], vars)
+            license_split = re.split(r'\n\s*\n', license)
+            templates[0]['Description'].extend(license_split)
+            templates_filename = "debian/firmware-%s.templates" % package
+            self.write_rfc822(file(templates_filename, 'w'), templates)
+
         packages.extend(packages_binary)
 
         makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
@@ -148,13 +245,13 @@ class GenControl(object):
             dep.append(groups)
         e[key] = dep
 
-    def process_description(self, e, in_e, vars):
-        in_desc = in_e['Description']
+    def process_description(self, in_desc, vars):
         desc = in_desc.__class__()
-        desc.short = self.substitute(in_desc.short, vars)
+        for i in in_desc.short:
+            desc.short.append(self.substitute(i, vars))
         for i in in_desc.long:
             desc.long.append(self.substitute(i, vars))
-        e['Description'] = desc
+        return desc
 
     def process_package(self, in_entry, vars):
         e = Package()
@@ -162,8 +259,8 @@ class GenControl(object):
             if isinstance(value, PackageRelation):
                 e[key] = in_entry[key]
 #                self.process_relation(key, e, in_entry, vars)
-            elif key == 'Description':
-                self.process_description(e, in_entry, vars)
+            elif isinstance(value, PackageDescription):
+                e[key] = self.process_description(value, vars)
             elif key[:2] == 'X-':
                 pass
             else:
@@ -176,6 +273,23 @@ class GenControl(object):
             entries.append(self.process_package(i, vars))
         return entries
 
+    def process_template(self, in_entry, vars):
+        e = Template()
+        for key, value in in_entry.iteritems():
+            if isinstance(value, PackageDescription):
+                e[key] = self.process_description(value, vars)
+            elif key[:2] == 'X-':
+                pass
+            else:
+                e[key] = self.substitute(value, vars)
+        return e
+
+    def process_templates(self, in_entries, vars):
+        entries = []
+        for i in in_entries:
+            entries.append(self.process_template(i, vars))
+        return entries
+
     def substitute(self, s, vars):
         if isinstance(s, (list, tuple)):
             for i in xrange(len(s)):
@@ -183,7 +297,7 @@ class GenControl(object):
             return s
         def subst(match):
             return vars[match.group(1)]
-        return re.sub(r'@([a-z_]+)@', subst, s)
+        return re.sub(r'@([a-z_-]+)@', subst, s)
 
     def write(self, packages, makefile):
         self.write_control(packages.itervalues())
