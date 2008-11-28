@@ -1,6 +1,7 @@
 [base]
 packages:
  bnx2
+ ipw2x00
  iwlwifi
  qlogic
  ralink
