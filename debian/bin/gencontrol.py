@@ -231,6 +231,8 @@ class GenControl(object):
             templates_filename = "debian/firmware-%s.templates" % package
             self.write_rfc822(file(templates_filename, 'w'), templates)
 
+            packages_binary[0]['Depends'] = PackageRelation('debconf | debconf-2.0')
+
         packages.extend(packages_binary)
 
         makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
