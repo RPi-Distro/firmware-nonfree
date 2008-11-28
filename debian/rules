@@ -12,4 +12,6 @@ maintainerclean:
 	-rm debian/control debian/control.md5sum debian/rules.gen
 	-rm debian/*.copyright
 	-rm debian/*.hook.*
+	-rm debian/*.preinst
 	-rm debian/*.postinst
+	-rm debian/*.templates
