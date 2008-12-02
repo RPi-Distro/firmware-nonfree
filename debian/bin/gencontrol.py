@@ -233,11 +233,10 @@ class GenControl(object):
             self.write_rfc822(file(templates_filename, 'w'), templates)
 
             desc = packages_binary[0]['Description']
-            desc.extend([
-"""Those firmware are covered by the %s, which is available
-at /usr/share/doc/firmware-%s/copyright.""" % (vars['license-title'], package),
-"""By installing this package, you agree the terms of that license."""
-])
+            desc.append(
+"""Those firmware are covered by the %s.
+Prior to installing this package, you have to agree to the terms of that license."""
+% vars['license-title'])
             packages_binary[0]['Pre-Depends'] = PackageRelation('debconf | debconf-2.0')
 
         packages.extend(packages_binary)
