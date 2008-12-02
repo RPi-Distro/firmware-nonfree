@@ -31,6 +31,7 @@ install:
 	dh_installchangelogs
 	dh_installdocs
 	dh_installdebconf
+	dh_link
 	dh_compress
 	dh_fixperms
 	dh_installdeb
