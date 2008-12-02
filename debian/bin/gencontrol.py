@@ -175,7 +175,7 @@ class GenControl(object):
         binary = self.templates["control.binary"]
         copyright = self.templates["copyright.binary"]
 
-        vars['license'] = license = file("%s/LICENSE" % package).read()
+        vars['license'] = file("%s/LICENSE" % package).read()
 
         file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
@@ -221,6 +221,7 @@ class GenControl(object):
             file("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
         if 'license-accept' in config_entry:
+            license = file("%s/LICENSE.install" % package).read()
             preinst = self.templates['preinst.license']
             preinst_filename = "debian/firmware-%s.preinst" % package
             file(preinst_filename, 'w').write(self.substitute(preinst, vars))
