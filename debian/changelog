@@ -1,5 +1,6 @@
 firmware-nonfree (0.15) UNRELEASED; urgency=low
 
+  [ Ben Hutchings ]
   * Add 3Com Typhoon (3CR990) firmware.
   * Add ATI Rage 128 and Radeon firmware.
   * Add BayCom DAB-USB firmware.
@@ -8,6 +9,9 @@ firmware-nonfree (0.15) UNRELEASED; urgency=low
   * Add Matrox G20/G400/G550 firmware.
   * Add QLogic QLA1xxx firmware.
   * Add Tehuti network card firmware.
+
+  [ Bastian Blank ]
+  * Remove own initramfs-hook.
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 22 Feb 2009 21:54:10 +0000
 

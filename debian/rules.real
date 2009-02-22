@@ -24,10 +24,6 @@ install:
 	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	done
-	@if [ -e debian/$(PACKAGE_NAME).hook.initramfs-tools ]; then \
-	  echo install -D debian/$(PACKAGE_NAME).hook.initramfs-tools debian/$(PACKAGE_NAME)/usr/share/initramfs-tools/hooks/firmware_$(PACKAGE); \
-	  install -D debian/$(PACKAGE_NAME).hook.initramfs-tools debian/$(PACKAGE_NAME)/usr/share/initramfs-tools/hooks/firmware_$(PACKAGE); \
-	fi
 	dh_installchangelogs
 	dh_installdocs
 	dh_installdebconf

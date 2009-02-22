@@ -218,10 +218,6 @@ class GenControl(object):
         packages_binary[0]['Description'].append_pre(files_desc)
 
         if 'initramfs-tools' in config_entry.get('support', []):
-            hook = self.templates['hook.initramfs-tools']
-            hook_filename = "debian/firmware-%s.hook.initramfs-tools" % package
-            file(hook_filename, 'w').write(self.substitute(hook, vars))
-
             postinst = self.templates['postinst.initramfs-tools']
             file("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
