@@ -1,0 +1,13 @@
+[base]
+desc: BayCom DAB-USB receivers
+files:
+ dabusb/firmware.fw
+ dabusb/bitstream.bin
+longdesc: BayCom DAB-USB radio receivers supported by the dabusb driver
+uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
+
+[dabusb/firmware.fw_base]
+desc: DAB-USB firmware
+
+[dabusb/bitstream.bin_base]
+desc: DAB-USB FPGA bitfile

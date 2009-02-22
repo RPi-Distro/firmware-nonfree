@@ -1,0 +1,11 @@
+[base]
+desc: 3Com Typhoon (3CR990) network cards
+files:
+ 3com/typhoon.bin
+longdesc: 3Com Typhoon (3CR990) network cards supported by the typhoon driver
+support: initramfs-tools
+uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
+
+[3com/typhoon.bin_base]
+desc: 3Com Typhoon firmware
+version: 03.001.008

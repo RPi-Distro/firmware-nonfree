@@ -1,15 +1,30 @@
 [base]
-desc: QLogic QLA2XXX
+desc: QLogic QLA1XXX and QLA2XXX
 files:
+ qlogic/1040.bin
+ qlogic/1280.bin
+ qlogic/12160.bin
  ql2100_fw.bin
  ql2200_fw.bin
  ql2300_fw.bin
  ql2322_fw.bin
  ql2400_fw.bin
  ql2500_fw.bin
-longdesc: QLogic QLA2XXX Fibre Channel host adapters
+longdesc: QLogic QLA1XXX (SCSI) and QLA2XXX (Fibre Channel) host adapters
 support: initramfs-tools
 uri: ftp://ftp.qlogic.com/outgoing/linux/firmware/
+
+[qlogic/1040.bin_base]
+desc: QLogic QLA1040 firmware
+version: 7.65.06
+
+[qlogic/1280.bin_base]
+desc: QLogic QLA1080, 1240, 1280 firmware
+version: 8.15.11
+
+[qlogic/12160.bin_base]
+desc: QLogic QLA10160, 12160 firmware
+version: 10.04.42
 
 [ql2100_fw.bin_base]
 desc: QLogic QLA21XX firmware
