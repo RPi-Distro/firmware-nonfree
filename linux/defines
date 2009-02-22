@@ -22,6 +22,7 @@ files:
  radeon/R520_cp.bin
  radeon/RS690_cp.bin
  tehuti/bdx.bin
+support: initramfs-tools
 uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
 
 [3com/typhoon.bin_base]
