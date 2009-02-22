@@ -183,9 +183,14 @@ class GenControl(object):
         files_real = {}
 
         for root, dirs, files in os.walk(package):
-            del dirs[:]
+            try:
+                dirs.remove('.svn')
+            except ValueError:
+                pass
             for f in files:
                 f1  = f.rsplit('-', 1)
+                if root != package:
+                    f = root[len(package) + 1 : ] + '/' + f
                 if f in files_orig:
                     files_real[f] = f, f, None
                 elif len(f1) > 1:
