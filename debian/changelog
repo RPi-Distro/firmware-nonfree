@@ -1,16 +1,13 @@
 firmware-nonfree (0.15) UNRELEASED; urgency=low
 
-  * Add 3Com Typhoon (3CR990) firmware used by typhoon driver (firmware-3com)
-  * Add ATI Rage 128 and Radeon firmware used by r128 and radeon drivers
-    (firmware-ati)
-  * Add BayCom DAB-USB firmware used by dabusb driver (firmware-dabusb)
-  * Add Intel PRO/100 firmware used by e100 driver (firmware-e100)
-  * Add Kawasaki LSI KL5KUSB101 firmware used by kaweth driver
-    (firmware-kaweth)
-  * Add Matrox G20/G400/G550 firmware used by mga driver (firmware-matrox)
-  * Add QLogic QLA1xxx firmware used by qla1280 driver (firmware-qlogic)
-  * Add Tehuti network card firmware used by tehuti driver (firmware-tehuti)
-  * Include files from firmware-3com, -adaptec and -e100 in initramfs
+  * Add 3Com Typhoon (3CR990) firmware.
+  * Add ATI Rage 128 and Radeon firmware.
+  * Add BayCom DAB-USB firmware.
+  * Add Intel PRO/100 firmware.
+  * Add Kawasaki LSI KL5KUSB101 firmware.
+  * Add Matrox G20/G400/G550 firmware.
+  * Add QLogic QLA1xxx firmware.
+  * Add Tehuti network card firmware.
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 22 Feb 2009 21:54:10 +0000
 
