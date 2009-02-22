@@ -1,0 +1,74 @@
+[base]
+desc: Linux shipped firmwares
+longdesc: all firmwares which was formally shipped in the Linux image
+files:
+ 3com/typhoon.bin
+ dabusb/bitstream.bin
+ dabusb/firmware.fw
+ e100/d101m_ucode.bin
+ e100/d101s_ucode.bin
+ e100/d102e_ucode.bin
+ kaweth/new_code.bin
+ kaweth/new_code_fix.bin
+ kaweth/trigger_code.bin
+ kaweth/trigger_code_fix.bin
+ matrox/g200_warp.fw
+ matrox/g400_warp.fw
+ r128/r128_cce.bin
+ radeon/R100_cp.bin
+ radeon/R200_cp.bin
+ radeon/R300_cp.bin
+ radeon/R420_cp.bin
+ radeon/R520_cp.bin
+ radeon/RS690_cp.bin
+ tehuti/bdx.bin
+uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
+
+[3com/typhoon.bin_base]
+desc: 3Com Typhoon firmware
+version: 03.001.008
+
+[dabusb/firmware.fw_base]
+desc: DAB-USB firmware
+
+[dabusb/bitstream.bin_base]
+desc: DAB-USB FPGA bitfile
+
+[e100/d101m_ucode.bin_base]
+desc: Intel 82559 D101M microcode
+
+[e100/d101s_ucode.bin_base]
+desc: Intel 82559 D101S microcode
+
+[e100/d102e_ucode.bin_base]
+desc: Intel 82551-F and 82551-10 microcode
+
+[matrox/g200_warp.fw_base]
+desc: Matrox G200 WARP engine microcode
+
+[matrox/g400_warp.fw_base]
+desc: Matrox G400/G550 WARP engine microcode
+
+[r128/r128_cce.bin_base]
+desc: Rage 128 CCE microcode
+ 
+[radeon/R100_cp.bin_base]
+desc: Radeon R100-family CP microcode
+
+[radeon/R200_cp.bin_base]
+desc: Radeon R200-family CP microcode
+
+[radeon/R300_cp.bin_base]
+desc: Radeon R300-family CP microcode
+
+[radeon/R420_cp.bin_base]
+desc: Radeon R400-family CP microcode
+
+[radeon/R520_cp.bin_base]
+desc: Radeon R500-family CP microcode
+
+[radeon/RS690_cp.bin_base]
+desc: Radeon RS690 CP microcode
+
+[tehuti/bdx.bin_base]
+desc: Tehuti network card firmware
