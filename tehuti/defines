@@ -1,9 +1,0 @@
-[base]
-desc: Tehuti network cards
-files:
- tehuti/bdx.bin
-longdesc: Tehuti network cards supported by the tehuti driver
-uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
-
-[tehuti/bdx.bin_base]
-desc: Tehuti network card firmware

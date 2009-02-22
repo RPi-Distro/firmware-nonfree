@@ -1,14 +1,8 @@
 [base]
 packages:
- 3com
- ati
  bnx2
- dabusb
- e100
  ipw2x00
  iwlwifi
- kaweth
- matrox
+ linux
  qlogic
  ralink
- tehuti
