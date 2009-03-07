@@ -17,7 +17,7 @@ bnx2_fwcutter_$(KERNEL_VERSION): bnx2_fwcutter_$(KERNEL_VERSION).c bnx2_fwcutter
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
 
 bnx2_fwcutter_$(KERNEL_VERSION).h: $(KERNEL_SOURCE)/drivers/net/bnx2.h
-	grep "^#define BNX2" $^ > $@
+	sed "/^#define BNX2.*[^\\]$$/p; /^#define BNX2.*\\$$/,/[^\\]$$/p; d" $^ > $@
 else
 all:
 	$(error Please define KERNEL_SOURCE and KERNEL_VERSION)
