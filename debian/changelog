@@ -13,6 +13,9 @@ firmware-nonfree (0.15) UNRELEASED; urgency=low
   [ Bastian Blank ]
   * Remove own initramfs-hook.
 
+  [ maximilian attems ]
+  * Update iwlwifi-4965 to 228.57.2.23. (closes: #502326)
+
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 22 Feb 2009 21:54:10 +0000
 
 firmware-nonfree (0.14) unstable; urgency=low
