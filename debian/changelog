@@ -20,7 +20,10 @@ firmware-nonfree (0.15) UNRELEASED; urgency=low
   * Update iwlwifi-3945 to 15.28.2.8.
   * Bump standards to 3.8.1, no changes required.
 
- -- Ben Hutchings <ben@decadent.org.uk>  Sun, 22 Feb 2009 21:54:10 +0000
+  [ dann frazier ]
+  * Update linux-support build-dep to 2.6.28-1
+
+ -- dann frazier <dannf@debian.org>  Thu, 19 Mar 2009 09:57:44 -0600
 
 firmware-nonfree (0.14) unstable; urgency=low
 
