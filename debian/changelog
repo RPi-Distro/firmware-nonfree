@@ -18,6 +18,7 @@ firmware-nonfree (0.15) UNRELEASED; urgency=low
   * Add iwlwifi-5000-1.ucode. (closes: #497717)
     Thanks Frank Lin PIAT <fpiat@klabs.be> for patch.
   * Update iwlwifi-3945 to 15.28.2.8.
+  * Bump standards to 3.8.1, no changes required.
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 22 Feb 2009 21:54:10 +0000
 
