@@ -6,8 +6,7 @@ files:
  iwlwifi-4965-1.ucode
  iwlwifi-4965-2.ucode
  iwlwifi-5000-1.ucode
-longdesc: Intel Wireless 3945, 4965, 5100 and 5300 cards.
- The associated kernel modules are: iwl3945 and iwl4965/iwlagn
+longdesc: Intel Wireless 3945, 4965, 5100 and 5300 cards
 uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
 
 [iwlwifi-3945-1.ucode_base]
