@@ -1,10 +1,12 @@
 [base]
-desc: Intel Wireless 3945 and 4965
+desc: Intel Wireless 3945, 4965 and 5000-series cards
 files:
  iwlwifi-3945-1.ucode
  iwlwifi-4965-1.ucode
  iwlwifi-4965-2.ucode
-longdesc: Intel Wireless 3945 and 4965 cards
+ iwlwifi-5000-1.ucode
+longdesc: Intel Wireless 3945, 4965, 5100 and 5300 cards.
+ The associated kernel modules are: iwl3945 and iwl4965/iwlagn
 uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
 
 [iwlwifi-3945-1.ucode_base]
@@ -15,3 +17,6 @@ desc: Intel Wireless 4965 firmware
 
 [iwlwifi-4965-2.ucode_base]
 desc: Intel Wireless 4965 firmware
+
+[iwlwifi-5000-1.ucode_base]
+desc: Intel Wireless 5000 firmware
