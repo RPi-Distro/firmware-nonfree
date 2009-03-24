@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 SHELL := sh -e
 
-CONTROL_FILES += debian/bin/gencontrol.py defines $(wildcard */defines) $(wildcard */LICENSE)
+CONTROL_FILES += debian/bin/gencontrol.py defines $(wildcard */defines) $(wildcard */copyright) $(wildcard */LICENSE*)
 
 include debian/rules.defs
 include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.include
