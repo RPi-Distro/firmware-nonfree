@@ -175,9 +175,12 @@ class GenControl(object):
         binary = self.templates["control.binary"]
         copyright = self.templates["copyright.binary"]
 
-        vars['license'] = file("%s/LICENSE" % package).read()
-
-        file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
+        if os.path.exists('%s/copyright' % package):
+            f = open('%s/copyright' % package)
+            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
+        else:
+            vars['license'] = file("%s/LICENSE" % package).read()
+            file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
         files_orig = config_entry['files']
         files_real = {}
