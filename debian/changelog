@@ -21,7 +21,8 @@ firmware-nonfree (0.15) UNRELEASED; urgency=low
   * Bump standards to 3.8.1, no changes required.
 
   [ dann frazier ]
-  * Update linux-support build-dep to 2.6.29-1
+  * Update linux-support build-dep to 2.6.29-1.
+  * Update bnx2 firmware to 2.6.29.
 
  -- dann frazier <dannf@debian.org>  Thu, 19 Mar 2009 09:57:44 -0600
 
