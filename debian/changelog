@@ -21,7 +21,7 @@ firmware-nonfree (0.15) UNRELEASED; urgency=low
   * Bump standards to 3.8.1, no changes required.
 
   [ dann frazier ]
-  * Update linux-support build-dep to 2.6.28-1
+  * Update linux-support build-dep to 2.6.29-1
 
  -- dann frazier <dannf@debian.org>  Thu, 19 Mar 2009 09:57:44 -0600
 
