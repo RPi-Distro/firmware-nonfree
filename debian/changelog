@@ -1,4 +1,4 @@
-firmware-nonfree (0.15) UNRELEASED; urgency=low
+firmware-nonfree (0.15) unstable; urgency=low
 
   [ Ben Hutchings ]
   * Add 3Com Typhoon (3CR990) firmware.
@@ -24,7 +24,7 @@ firmware-nonfree (0.15) UNRELEASED; urgency=low
   * Update linux-support build-dep to 2.6.29-1.
   * Update bnx2 firmware to 2.6.29.
 
- -- dann frazier <dannf@debian.org>  Thu, 19 Mar 2009 09:57:44 -0600
+ -- maximilian attems <maks@debian.org>  Fri, 27 Mar 2009 12:34:17 +0100
 
 firmware-nonfree (0.14) unstable; urgency=low
 
