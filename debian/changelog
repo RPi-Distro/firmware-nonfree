@@ -1,6 +1,8 @@
 firmware-nonfree (0.16) UNRELEASED; urgency=low
 
   * Update Intel Pro 2200/2915 firwmare, version 3.1. (closes: #521531)
+  * Update qlogic firmwares: ql2300_fw.bin-3.03.27, ql2322_fw.bin-3.03.27,
+    ql2400_fw.bin-4.04.05, ql2500_fw.bin-4.04.05. (closes: #509693)
 
  -- maximilian attems <maks@debian.org>  Fri, 27 Mar 2009 17:23:44 +0100
 
