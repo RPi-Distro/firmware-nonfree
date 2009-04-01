@@ -1,5 +1,5 @@
 Source: firmware-nonfree
-Section: non-free/admin
+Section: non-free/kernel
 Priority: optional
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Uploaders: Bastian Blank <waldi@debian.org>, Frederik Schüler <fs@debian.org>, Steve Langasek <vorlon@debian.org>, dann frazier <dannf@debian.org>, maximilian attems <maks@debian.org>

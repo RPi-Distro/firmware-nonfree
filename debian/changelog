@@ -1,3 +1,9 @@
+firmware-nonfree (0.17) UNRELEASED; urgency=low
+
+  * templates/control.source.in: section non-free/kernel.
+
+ -- maximilian attems <maks@debian.org>  Wed, 01 Apr 2009 16:46:58 +0200
+
 firmware-nonfree (0.16) unstable; urgency=low
 
   * Update Intel Pro 2200/2915 firwmare, version 3.1. (closes: #521531)
