@@ -31,7 +31,7 @@ version: 11
 
 [rt2870.bin_base]
 desc: Ralink RT2870 (RT2800U[D] chipset) firmware
-version: 11
+version: 8
 
 [rt73.bin_base]
 desc: Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware
