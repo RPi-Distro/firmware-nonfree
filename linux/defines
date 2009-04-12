@@ -20,6 +20,7 @@ files:
  radeon/R300_cp.bin
  radeon/R420_cp.bin
  radeon/R520_cp.bin
+ radeon/RS600_cp.bin
  radeon/RS690_cp.bin
  tehuti/bdx.bin
 support: initramfs-tools
@@ -67,6 +68,9 @@ desc: Radeon R400-family CP microcode
 
 [radeon/R520_cp.bin_base]
 desc: Radeon R500-family CP microcode
+
+[radeon/RS600_cp.bin_base]
+desc: Radeon RS600 CP microcode
 
 [radeon/RS690_cp.bin_base]
 desc: Radeon RS690 CP microcode
