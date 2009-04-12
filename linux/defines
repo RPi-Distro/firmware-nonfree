@@ -20,8 +20,18 @@ files:
  radeon/R300_cp.bin
  radeon/R420_cp.bin
  radeon/R520_cp.bin
+ radeon/R600_cp.bin
  radeon/RS600_cp.bin
  radeon/RS690_cp.bin
+ radeon/RS780_cp.bin
+ radeon/RV610_cp.bin
+ radeon/RV620_cp.bin
+ radeon/RV630_cp.bin
+ radeon/RV635_cp.bin
+ radeon/RV670_cp.bin
+ radeon/RV710_cp.bin
+ radeon/RV730_cp.bin
+ radeon/RV770_cp.bin
  tehuti/bdx.bin
 support: initramfs-tools
 uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
@@ -69,11 +79,41 @@ desc: Radeon R400-family CP microcode
 [radeon/R520_cp.bin_base]
 desc: Radeon R500-family CP microcode
 
+[radeon/R600_cp.bin_base]
+desc: Radeon R600 CP/PFP microcode
+
 [radeon/RS600_cp.bin_base]
 desc: Radeon RS600 CP microcode
 
 [radeon/RS690_cp.bin_base]
 desc: Radeon RS690 CP microcode
+
+[radeon/RS780_cp.bin_base]
+desc: Radeon RS780 CP/PFP microcode
+
+[radeon/RV610_cp.bin_base]
+desc: Radeon RV610 CP/PFP microcode
+
+[radeon/RV620_cp.bin_base]
+desc: Radeon RV620 CP/PFP microcode
+
+[radeon/RV630_cp.bin_base]
+desc: Radeon RV630 CP/PFP microcode
+
+[radeon/RV635_cp.bin_base]
+desc: Radeon RV635 CP/PFP microcode
+
+[radeon/RV670_cp.bin_base]
+desc: Radeon RV670 CP/PFP microcode
+
+[radeon/RV710_cp.bin_base]
+desc: Radeon RV710 CP/PFP microcode
+
+[radeon/RV730_cp.bin_base]
+desc: Radeon RV730 CP/PFP microcode
+
+[radeon/RV770_cp.bin_base]
+desc: Radeon RV770 CP/PFP microcode
 
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
