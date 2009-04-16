@@ -7,6 +7,10 @@ firmware-nonfree (0.17) UNRELEASED; urgency=low
   * Add Radeon RS600, R600-family and R700-family firmware.
   * Add Ralink RT2860/RT2890 and RT2870 firmware.
 
+  [ dann frazier ]
+  * Fix subject-verb agreement problem in firmware-linux description.
+    (Closes: #524382)
+
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 12 Apr 2009 16:33:56 +0100
 
 firmware-nonfree (0.16) unstable; urgency=low
