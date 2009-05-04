@@ -34,7 +34,7 @@ files:
  radeon/RV770_cp.bin
  tehuti/bdx.bin
 support: initramfs-tools
-uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
+uri: http://ftp.kernel.org/pub/linux/kernel/
 
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware

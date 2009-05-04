@@ -3,6 +3,7 @@ firmware-nonfree (0.17) UNRELEASED; urgency=low
   [ maximilian attems ]
   * templates/control.source.in: section non-free/kernel.
   * Update iwlwifi-3945 to 15.32.2.9. (closes: #526114)
+  * linux/defines: Fix upstream url.
 
   [ Ben Hutchings ]
   * Add Radeon RS600, R600-family and R700-family firmware.
