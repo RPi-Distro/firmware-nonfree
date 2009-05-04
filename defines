@@ -2,6 +2,7 @@
 packages:
  bnx2
  ipw2x00
+ ivtv
  iwlwifi
  linux
  qlogic
