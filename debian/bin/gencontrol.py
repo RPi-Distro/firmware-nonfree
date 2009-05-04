@@ -238,8 +238,8 @@ class GenControl(object):
 
             desc = packages_binary[0]['Description']
             desc.append(
-"""Those firmware are covered by the %s.
-Prior to installing this package, you have to agree to the terms of that license."""
+"""This firmware is covered by the %s.
+You must agree to the terms of this license before it is installed."""
 % vars['license-title'])
             packages_binary[0]['Pre-Depends'] = PackageRelation('debconf | debconf-2.0')
 
