@@ -1,6 +1,8 @@
 [base]
-desc: Linux shipped firmware
-longdesc: all firmware which was formerly shipped in the Linux image
+desc: Collection of firmware for the Linux kernel
+longdesc:
+  A collection of firmware blobs for the Linux kernel which are not
+  individually large enough to warrant a standalone package.
 files:
  3com/typhoon.bin
  dabusb/bitstream.bin
