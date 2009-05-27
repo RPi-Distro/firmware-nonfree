@@ -1,6 +1,7 @@
 [base]
 packages:
  bnx2
+ bnx2x
  ipw2x00
  ivtv
  iwlwifi
