@@ -1,8 +1,8 @@
 [base]
-desc: Collection of firmware for the Linux kernel
+desc: various drivers in the Linux kernel
 longdesc:
-  A collection of firmware blobs for the Linux kernel which are not
-  individually large enough to warrant a standalone package.
+ various drivers in the Linux kernel. This is a collection of firmware blobs
+ which are not individually large enough to warrant a standalone package
 files:
  3com/typhoon.bin
  dabusb/bitstream.bin
