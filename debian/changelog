@@ -19,6 +19,7 @@ firmware-nonfree (0.17) UNRELEASED; urgency=low
   * Update firmware-linux description to clarify the reasoning for the
     bundled nature
   * Add new firmware-bnx2x package
+  * Add bnx2 firmware from Linux 2.6.30-rc7
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 12 Apr 2009 16:33:56 +0100
 
