@@ -6,7 +6,7 @@ firmware-nonfree (0.17) UNRELEASED; urgency=low
   * linux/defines: Fix upstream url.
 
   [ Ben Hutchings ]
-  * Add Radeon RS600, R600-family and R700-family firmware.
+  * Add Radeon RS600, R600-family and R700-family firmware (closes: #532040)
   * Add Ralink RT2860/RT2890 and RT2870 firmware.
   * Add firmware for use with ivtv and pvrusb2 drivers (closes: #524230),
     thanks to Ian Campbell <ijc@hellion.org.uk>.
