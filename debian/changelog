@@ -13,6 +13,7 @@ firmware-nonfree (0.17) UNRELEASED; urgency=low
   * Fix grammatical errors in the templates for package descriptions,
     copyright files and EULA prompts
   * Add myself to Uploaders
+  * Update linux-support build-dep to 2.6.30-1
 
   [ dann frazier ]
   * Fix subject-verb agreement problem in firmware-linux description.
