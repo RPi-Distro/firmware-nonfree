@@ -2,7 +2,7 @@ Source: firmware-nonfree
 Section: non-free/kernel
 Priority: optional
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
-Uploaders: Bastian Blank <waldi@debian.org>, Frederik Schüler <fs@debian.org>, Steve Langasek <vorlon@debian.org>, dann frazier <dannf@debian.org>, maximilian attems <maks@debian.org>
+Uploaders: Bastian Blank <waldi@debian.org>, Frederik Schüler <fs@debian.org>, Steve Langasek <vorlon@debian.org>, dann frazier <dannf@debian.org>, maximilian attems <maks@debian.org>, Ben Hutchings <ben@decadent.org.uk>
 Build-Depends: debhelper (>= 5)
 Standards-Version: 3.8.1
 Vcs-Browser: http://svn.debian.org/wsvn/kernel/dists/trunk/firmware-nonfree/

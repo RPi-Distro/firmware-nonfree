@@ -12,6 +12,7 @@ firmware-nonfree (0.17) UNRELEASED; urgency=low
     thanks to Ian Campbell <ijc@hellion.org.uk>.
   * Fix grammatical errors in the templates for package descriptions,
     copyright files and EULA prompts
+  * Add myself to Uploaders
 
   [ dann frazier ]
   * Fix subject-verb agreement problem in firmware-linux description.
