@@ -6,6 +6,7 @@ files:
  iwlwifi-4965-1.ucode
  iwlwifi-4965-2.ucode
  iwlwifi-5000-1.ucode
+ iwlwifi-5000-2.ucode
 longdesc: Intel Wireless 3945, 4965, 5100 and 5300 cards
 uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
 
@@ -22,4 +23,7 @@ desc: Intel Wireless 4965 firmware
 desc: Intel Wireless 4965 firmware
 
 [iwlwifi-5000-1.ucode_base]
+desc: Intel Wireless 5000 firmware
+
+[iwlwifi-5000-2.ucode_base]
 desc: Intel Wireless 5000 firmware

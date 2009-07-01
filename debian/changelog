@@ -1,3 +1,9 @@
+firmware-nonfree (0.18) unstable; urgency=low
+
+  * Add iwlwifi-5000-2.ucode. (closes: #532207)
+
+ -- maximilian attems <maks@debian.org>  Wed, 01 Jul 2009 11:11:48 +0200
+
 firmware-nonfree (0.17) unstable; urgency=low
 
   [ maximilian attems ]
