@@ -143,6 +143,7 @@ class GenControl(object):
         makefile = Makefile()
 
         self.do_source(packages)
+        self.do_meta(packages, makefile)
         self.do_main(packages, makefile)
 
         self.write(packages, makefile)
@@ -151,6 +152,26 @@ class GenControl(object):
         source = self.templates["control.source"]
         packages['source'] = self.process_package(source[0], ())
         packages['source']['Build-Depends'].append('linux-support-%s' % self.kernelversion)
+
+    def do_meta(self, packages, makefile):
+        config_entry = self.config['base',]
+        vars = {}
+        vars.update(config_entry)
+
+        for entry in self.templates["control.binary.meta"]:
+            package_binary = self.process_package(entry, {})
+            assert package_binary['Package'].startswith('firmware-')
+            package = package_binary['Package'].replace('firmware-', '')
+
+            f = open('debian/copyright.meta')
+            file("debian/firmware-%s.copyright" % package, 'w').write(f.read())
+
+            makeflags = MakeFlags()
+            makeflags['FILES'] = ''
+            makeflags['PACKAGE'] = package
+            makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
+
+            packages.append(package_binary)
 
     def do_main(self, packages, makefile):
         config_entry = self.config['base',]

@@ -7,6 +7,8 @@ firmware-nonfree (0.18) UNRELEASED; urgency=low
   
   [ Ben Hutchings ]
   * Fix Matrox G200/G400/G550 firmware image format (closes: #531367)
+  * Make firmware-linux a metapackage and move previous contents to
+    firmware-linux-nonfree
 
  -- maximilian attems <maks@debian.org>  Wed, 01 Jul 2009 11:11:48 +0200
 
