@@ -35,6 +35,9 @@ files:
  radeon/RV730_cp.bin
  radeon/RV770_cp.bin
  tehuti/bdx.bin
+ tigon/tg3_tso.bin
+ tigon/tg3.bin
+ tigon/tg3_tso5.bin
 support: initramfs-tools
 uri: http://ftp.kernel.org/pub/linux/kernel/
 
@@ -119,3 +122,12 @@ desc: Radeon RV770 CP/PFP microcode
 
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
+
+[tigon/tg3_tso.bin_base]
+desc: Broadcom BCM5703/BCM5704 TSO firmware
+
+[tigon/tg3.bin_base]
+desc: Broadcom BCM5701A0 firmware
+
+[tigon/tg3_tso5.bin_base]
+desc: Broadcom BCM5705 TSO firmware
