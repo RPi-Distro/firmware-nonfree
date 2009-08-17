@@ -1,9 +1,10 @@
 [base]
-desc: QLogic QLA1XXX and QLA2XXX
+desc: QLogic IBA7220, QLA1XXX and QLA2XXX
 files:
  qlogic/1040.bin
  qlogic/1280.bin
  qlogic/12160.bin
+ qlogic/sd7220.fw
  ql2100_fw.bin
  ql2200_fw.bin
  ql2300_fw.bin
@@ -25,6 +26,9 @@ version: 8.15.11
 [qlogic/12160.bin_base]
 desc: QLogic QLA10160, 12160 firmware
 version: 10.04.42
+
+[qlogic/sd7220.fw_base]
+desc: QLogic IBA7220 serdes firmware
 
 [ql2100_fw.bin_base]
 desc: QLogic QLA21XX firmware
