@@ -5,6 +5,12 @@ longdesc:
  which are not individually large enough to warrant a standalone package
 files:
  3com/typhoon.bin
+ cxgb3/ael2005_opt_edc.bin
+ cxgb3/ael2005_twx_edc.bin
+ cxgb3/ael2020_twx_edc.bin
+ cxgb3/t3b_psram-1.1.0.bin
+ cxgb3/t3c_psram-1.1.0.bin
+ cxgb3/t3fw-7.4.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  e100/d101m_ucode.bin
@@ -44,6 +50,27 @@ uri: http://ftp.kernel.org/pub/linux/kernel/
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware
 version: 03.001.008
+
+[cxgb3/ael2005_opt_edc.bin_base]
+desc: Chelsio T3 optical EDC firmware (AEL2005 PHY)
+
+[cxgb3/ael2005_twx_edc.bin_base]
+desc: Chelsio T3 twinax EDC firmware (AEL2005 PHY)
+
+[cxgb3/ael2020_twx_edc.bin_base]
+desc: Chelsio T3 twinax EDC firmware (AEL2020 PHY)
+
+[cxgb3/t3b_psram-1.1.0.bin_base]
+desc: Chelsio T3B protocol engine firmware
+version: 1.1.0
+
+[cxgb3/t3c_psram-1.1.0.bin_base]
+desc: Chelsio T3C protocol engine firmware
+version: 1.1.0
+
+[cxgb3/t3fw-7.4.0.bin_base]
+desc: Chelsio T3 main firmware
+version: 7.4.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
