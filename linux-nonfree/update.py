@@ -102,8 +102,8 @@ for inclusion in firmware-nonfree or linux-2.6.
 
 For firmware-nonfree, specify the linux-nonfree directory as <dest-dir>.
 
-For linux-2.6, use the '--main' option and specify the lib/firmware
-directory under the firmware-linux-free build directory as <dest-dir>.
+For linux-2.6, use the '--main' option and specify the
+debian/build/build-firmware/firmware directory as <dest-dir>.
 '''
         sys.exit(2)
     main(for_main, sys.argv[i], sys.argv[i + 1])
