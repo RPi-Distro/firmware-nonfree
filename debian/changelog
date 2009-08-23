@@ -9,7 +9,7 @@ firmware-nonfree (0.18) UNRELEASED; urgency=low
   * Fix Matrox G200/G400/G550 firmware image format (closes: #531367)
   * Make firmware-linux a metapackage and move previous contents to
     firmware-linux-nonfree
-  * Add Broadcom Tigon3 firmware for use with tg3 driver
+  * Add Broadcom Tigon3 firmware for use with tg3 driver (closes: 543233)
   * Add QLogic IBA7220 serdes firmware for use with ip_iband driver
   * Add Chelsio T3 firmware for use with cxgb3 driver
 
