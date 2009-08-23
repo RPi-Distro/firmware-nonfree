@@ -12,6 +12,8 @@ firmware-nonfree (0.18) UNRELEASED; urgency=low
   * Add Broadcom Tigon3 firmware for use with tg3 driver (closes: 543233)
   * Add QLogic IBA7220 serdes firmware for use with ip_iband driver
   * Add Chelsio T3 firmware for use with cxgb3 driver
+  * Add Ralink RT3071/RT3072/RT3090 firmware for use with rt3070sta driver
+  * Update rt2870.bin
 
  -- maximilian attems <maks@debian.org>  Wed, 01 Jul 2009 11:11:48 +0200
 
