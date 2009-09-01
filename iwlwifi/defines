@@ -24,10 +24,10 @@ desc: Intel Wireless 4965 firmware
 desc: Intel Wireless 4965 firmware
 
 [iwlwifi-5000-1.ucode_base]
-desc: Intel Wireless 5000 firmware
+desc: Intel Wireless 5100, 5300 and 5350 firmware
 
 [iwlwifi-5000-2.ucode_base]
-desc: Intel Wireless 5000 firmware
+desc: Intel Wireless 5100, 5300 and 5350 firmware
 
 [iwlwifi-5150-2.ucode_base]
 desc: Intel Wireless 5150 firmware
