@@ -1,4 +1,4 @@
-firmware-nonfree (0.18) UNRELEASED; urgency=low
+firmware-nonfree (0.18) unstable; urgency=low
 
   [ maximilian attems ]
   * Add iwlwifi-5000-2.ucode. (closes: #532207)
@@ -13,7 +13,7 @@ firmware-nonfree (0.18) UNRELEASED; urgency=low
   * Add Ralink RT3071/RT3072/RT3090 firmware for use with rt3070sta driver
   * Update rt2870.bin
 
- -- maximilian attems <maks@debian.org>  Wed, 01 Jul 2009 11:11:48 +0200
+ -- Bastian Blank <waldi@debian.org>  Wed, 02 Sep 2009 09:00:58 +0000
 
 firmware-nonfree (0.17) unstable; urgency=low
 
