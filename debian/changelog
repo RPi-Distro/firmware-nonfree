@@ -1,3 +1,10 @@
+firmware-nonfree (0.19) UNRELEASED; urgency=low
+
+  * Correct 'Homepage' control data for firmware-bnx2 and firmware-bnx2x
+    (closes: #546899)
+
+ -- dann frazier <dannf@debian.org>  Wed, 16 Sep 2009 16:34:59 -0600
+
 firmware-nonfree (0.18) unstable; urgency=low
 
   [ maximilian attems ]

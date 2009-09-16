@@ -5,7 +5,7 @@ files:
  bnx2x-e1h-4.8.53.0.fw
 longdesc: Broadcom NetXtreme II 10Gb network adapters
 support: initramfs-tools
-uri: http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree
+uri: http://ftp.kernel.org/pub/linux/kernel/
 
 [bnx2x-e1-4.8.53.0.fw_base]
 desc: Broadcom NetXtreme II 10Gb 57710
