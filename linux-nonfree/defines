@@ -5,6 +5,8 @@ longdesc:
  which are not individually large enough to warrant a standalone package
 files:
  3com/typhoon.bin
+ agere_ap_fw.bin
+ agere_sta_fw.bin
  cxgb3/ael2005_opt_edc.bin
  cxgb3/ael2005_twx_edc.bin
  cxgb3/ael2020_twx_edc.bin
@@ -50,6 +52,14 @@ uri: http://ftp.kernel.org/pub/linux/kernel/
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware
 version: 03.001.008
+
+[agere_ap_fw.bin_base]
+desc: Agere/Prism/Symbol Orinoco firmware (AP mode)
+version: 9.48 Hermes I
+
+[agere_sta_fw.bin_base]
+desc: Agere/Prism/Symbol Orinoco firmware (STA mode)
+version: 9.48 Hermes I
 
 [cxgb3/ael2005_opt_edc.bin_base]
 desc: Chelsio T3 optical EDC firmware (AEL2005 PHY)

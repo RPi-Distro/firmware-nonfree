@@ -7,6 +7,7 @@ firmware-nonfree (0.19) UNRELEASED; urgency=low
   [ Ben Hutchings ]
   * Make firmware-linux a metapackage and move previous contents to
     firmware-linux-nonfree
+  * Add Agere/Prism/Symbol Orinoco firmware for use with orinoco driver
 
  -- dann frazier <dannf@debian.org>  Wed, 16 Sep 2009 16:34:59 -0600
 
