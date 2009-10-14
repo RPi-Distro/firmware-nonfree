@@ -15,6 +15,7 @@ files:
  cxgb3/t3fw-7.4.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
+ dvb-fe-xc5000-1.6.114.fw
  e100/d101m_ucode.bin
  e100/d101s_ucode.bin
  e100/d102e_ucode.bin
@@ -87,6 +88,10 @@ desc: DAB-USB firmware
 
 [dabusb/bitstream.bin_base]
 desc: DAB-USB FPGA bitfile
+
+[dvb-fe-xc5000-1.6.114.fw_base]
+desc: Xceive 5000 tuner firmware
+version: 1.6.114
 
 [e100/d101m_ucode.bin_base]
 desc: Intel 82559 D101M microcode
