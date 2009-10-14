@@ -1,4 +1,4 @@
-firmware-nonfree (0.19) UNRELEASED; urgency=low
+firmware-nonfree (0.19) experimental; urgency=low
 
   [ dann frazier ]
   * Correct 'Homepage' control data for firmware-bnx2 and firmware-bnx2x
@@ -12,7 +12,7 @@ firmware-nonfree (0.19) UNRELEASED; urgency=low
   * Add DiBcom dib0700 USB DVB bridge firmware for use with
     dvb-usb-dib0700 driver
 
- -- dann frazier <dannf@debian.org>  Wed, 16 Sep 2009 16:34:59 -0600
+ -- Ben Hutchings <ben@decadent.org.uk>  Wed, 14 Oct 2009 03:25:41 +0100
 
 firmware-nonfree (0.18) unstable; urgency=low
 
