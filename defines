@@ -5,6 +5,6 @@ packages:
  ipw2x00
  ivtv
  iwlwifi
- linux
+ linux-nonfree
  qlogic
  ralink

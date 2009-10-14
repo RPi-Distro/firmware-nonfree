@@ -1,7 +1,12 @@
 firmware-nonfree (0.19) UNRELEASED; urgency=low
 
+  [ dann frazier ]
   * Correct 'Homepage' control data for firmware-bnx2 and firmware-bnx2x
     (closes: #546899)
+
+  [ Ben Hutchings ]
+  * Make firmware-linux a metapackage and move previous contents to
+    firmware-linux-nonfree
 
  -- dann frazier <dannf@debian.org>  Wed, 16 Sep 2009 16:34:59 -0600
 
