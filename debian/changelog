@@ -9,6 +9,8 @@ firmware-nonfree (0.19) UNRELEASED; urgency=low
     firmware-linux-nonfree
   * Add Agere/Prism/Symbol Orinoco firmware for use with orinoco driver
   * Add Xceive 5000 tuner firmware for use with xc5000 driver
+  * Add DiBcom dib0700 USB DVB bridge firmware for use with
+    dvb-usb-dib0700 driver
 
  -- dann frazier <dannf@debian.org>  Wed, 16 Sep 2009 16:34:59 -0600
 

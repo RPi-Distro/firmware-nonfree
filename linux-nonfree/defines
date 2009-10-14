@@ -16,6 +16,7 @@ files:
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc5000-1.6.114.fw
+ dvb-usb-dib0700-1.20.fw
  e100/d101m_ucode.bin
  e100/d101s_ucode.bin
  e100/d102e_ucode.bin
@@ -92,6 +93,10 @@ desc: DAB-USB FPGA bitfile
 [dvb-fe-xc5000-1.6.114.fw_base]
 desc: Xceive 5000 tuner firmware
 version: 1.6.114
+
+[dvb-usb-dib0700-1.20.fw_base]
+desc: DiBcom dib0700 USB DVB bridge firmware
+version: 1.20
 
 [e100/d101m_ucode.bin_base]
 desc: Intel 82559 D101M microcode
