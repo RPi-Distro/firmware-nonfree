@@ -11,6 +11,7 @@ firmware-nonfree (0.19) experimental; urgency=low
   * Add Xceive 5000 tuner firmware for use with xc5000 driver
   * Add DiBcom dib0700 USB DVB bridge firmware for use with
     dvb-usb-dib0700 driver
+  * Update linux-support build-dep to 2.6.31-trunk
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 14 Oct 2009 03:25:41 +0100
 
