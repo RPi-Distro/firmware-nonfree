@@ -52,7 +52,7 @@ def main(for_main, source_dir, dest_dir):
         elif keyword in ['Licence', 'License']:
             match = re.match(r'(BSD'
                              r'|GPLv2(?:\+| or later| or OpenIB\.org BSD)?'
-                             r'|Redistributable\.)\b',
+                             r'|Redistributable)\b',
                              value)
             if match:
                 section['licence'] = match.group(1)
