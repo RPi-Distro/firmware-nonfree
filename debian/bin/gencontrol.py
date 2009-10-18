@@ -286,6 +286,16 @@ You must agree to the terms of this license before it is installed."""
             entries.append(self.process_template(i, vars))
         return entries
 
+    def substitute(self, s, vars):
+        if isinstance(s, (list, tuple)):
+            return [self.substitute(i, vars) for i in s]
+        def subst(match):
+            if match.group(1):
+                return vars.get(match.group(2), '')
+            else:
+                return vars[match.group(2)]
+        return re.sub(r'@(\??)([-_a-z]+)@', subst, s)
+
     def write(self, packages, makefile):
         self.write_control(packages.itervalues())
         self.write_makefile(makefile)
