@@ -7,6 +7,7 @@ sys.path.append(sys.argv[2] + "/lib/python")
 from debian_linux.config import ConfigParser, SchemaItemList
 from debian_linux.debian import Package, PackageRelation
 from debian_linux.debian import PackageDescription as PackageDescriptionBase
+import debian_linux.gencontrol
 from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
 from debian_linux.utils import SortedDict, TextWrapper
 from debian_linux.utils import Templates as TemplatesBase
@@ -132,7 +133,7 @@ class Templates(TemplatesBase):
         return entries
 
 
-class GenControl(object):
+class GenControl(debian_linux.gencontrol.Gencontrol):
     def __init__(self, kernelversion):
         self.config = Config()
         self.templates = Templates()
@@ -268,44 +269,6 @@ You must agree to the terms of this license before it is installed."""
 
         makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
 
-    def process_relation(self, key, e, in_e, vars):
-        in_dep = in_e[key]
-        dep = PackageRelation()
-        for in_groups in in_dep:
-            groups = PackageRelationGroup()
-            for in_item in in_groups:
-                groups.append(PackageRelationEntry(str(in_item)))
-            dep.append(groups)
-        e[key] = dep
-
-    def process_description(self, in_desc, vars):
-        desc = in_desc.__class__()
-        for i in in_desc.short:
-            desc.short.append(self.substitute(i, vars))
-        for i in in_desc.long:
-            desc.long.append(self.substitute(i, vars))
-        return desc
-
-    def process_package(self, in_entry, vars):
-        e = Package()
-        for key, value in in_entry.iteritems():
-            if isinstance(value, PackageRelation):
-                e[key] = in_entry[key]
-#                self.process_relation(key, e, in_entry, vars)
-            elif isinstance(value, PackageDescription):
-                e[key] = self.process_description(value, vars)
-            elif key[:2] == 'X-':
-                pass
-            else:
-                e[key] = self.substitute(value, vars)
-        return e
-
-    def process_packages(self, in_entries, vars):
-        entries = []
-        for i in in_entries:
-            entries.append(self.process_package(i, vars))
-        return entries
-
     def process_template(self, in_entry, vars):
         e = Template()
         for key, value in in_entry.iteritems():
@@ -322,15 +285,6 @@ You must agree to the terms of this license before it is installed."""
         for i in in_entries:
             entries.append(self.process_template(i, vars))
         return entries
-
-    def substitute(self, s, vars):
-        if isinstance(s, (list, tuple)):
-            for i in xrange(len(s)):
-                s[i] = self.substitute(s[i], vars)
-            return s
-        def subst(match):
-            return vars[match.group(1)]
-        return re.sub(r'@([a-z_-]+)@', subst, s)
 
     def write(self, packages, makefile):
         self.write_control(packages.itervalues())
