@@ -1,3 +1,10 @@
+firmware-nonfree (0.20) UNRELEASED; urgency=low
+
+  * firmware-linux-nonfree Replaces and Conflicts with old firmware-linux
+    (Closes: #551146)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Fri, 16 Oct 2009 04:32:10 +0100
+
 firmware-nonfree (0.19) experimental; urgency=low
 
   [ dann frazier ]

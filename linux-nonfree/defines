@@ -3,6 +3,8 @@ desc: various drivers in the Linux kernel
 longdesc:
  various drivers in the Linux kernel. This is a collection of firmware blobs
  which are not individually large enough to warrant a standalone package
+replaces: firmware-linux (<< 0.19)
+conflicts: firmware-linux (<< 0.19)
 files:
  3com/typhoon.bin
  agere_ap_fw.bin
