@@ -1,0 +1,10 @@
+[base]
+desc: Intel WiMAX Connection
+files:
+ i2400m-fw-usb-1.4.sbcf
+longdesc: Intel WiMAX Connection devices supported by the i2400m-usb driver
+uri: http://linuxwimax.org/Download
+
+[i2400m-fw-usb-1.4.sbcf_base]
+desc: Intel WiMAX Connection 2400 USB firmware
+version: 1.4

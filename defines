@@ -2,6 +2,7 @@
 packages:
  bnx2
  bnx2x
+ intelwimax
  ipw2x00
  ivtv
  iwlwifi
