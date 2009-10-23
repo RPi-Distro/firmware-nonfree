@@ -2,6 +2,7 @@ firmware-nonfree (0.20) UNRELEASED; urgency=low
 
   * firmware-linux-nonfree Replaces and Conflicts with old firmware-linux
     (Closes: #551146)
+  * Update upstream URL for firmware-ralink (Closes: #551975)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 16 Oct 2009 04:32:10 +0100
 
