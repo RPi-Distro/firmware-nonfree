@@ -3,7 +3,8 @@ desc: Broadcom NetXtreme II 10Gb
 files:
  bnx2x-e1-4.8.53.0.fw
  bnx2x-e1h-4.8.53.0.fw
-longdesc: Broadcom NetXtreme II 10Gb network adapters
+longdesc: Broadcom NetXtreme II 10Gb network adapters supported by the
+ bnx2x driver
 support: initramfs-tools
 uri: http://ftp.kernel.org/pub/linux/kernel/
 
