@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import errno, filecmp, os.path, re, sys
+import errno, filecmp, glob, os.path, re, sys
 
 def main(for_main, source_dir, dest_dirs):
     sections = []
@@ -81,13 +81,12 @@ def update_file(source_dir, dest_dirs, filename):
     if not os.path.isfile(source_file):
         return
     for dest_dir in dest_dirs:
-        dest_file = os.path.join(dest_dir, filename)
-        if os.path.isfile(dest_file):
-            if not filecmp.cmp(os.path.join(source_dir, filename),
-                               os.path.join(dest_dir, filename),
-                               True):
-                print '%s: changed' % filename
-            return
+        for dest_file in ([os.path.join(dest_dir, filename)] +
+                          glob.glob(os.path.join(dest_dir, filename + '-*'))):
+            if os.path.isfile(dest_file):
+                if not filecmp.cmp(source_file, dest_file, True):
+                    print '%s: changed' % filename
+                return
     print '%s: could be added' % filename
 
 if __name__ == '__main__':
