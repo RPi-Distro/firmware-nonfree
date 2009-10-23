@@ -7,6 +7,10 @@ replaces: firmware-linux (<< 0.19)
 conflicts: firmware-linux (<< 0.19)
 files:
  3com/typhoon.bin
+ advansys/3550.bin
+ advansys/38C0800.bin
+ advansys/38C1600.bin
+ advansys/mcode.bin
  agere_ap_fw.bin
  agere_sta_fw.bin
  cxgb3/ael2005_opt_edc.bin
@@ -56,6 +60,18 @@ uri: http://ftp.kernel.org/pub/linux/kernel/
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware
 version: 03.001.008
+
+[advansys/3550.bin_base]
+desc: AdvanSys ASC-3550 firmware
+
+[advansys/38C0800.bin_base]
+desc: AdvanSys ASC-38C0800 firmware
+
+[advansys/38C1600.bin_base]
+desc: AdvanSys ASC-38C1600 firmware
+
+[advansys/mcode.bin_base]
+desc: AdvanSys SCSI controller microcode
 
 [agere_ap_fw.bin_base]
 desc: Agere/Prism/Symbol Orinoco firmware (AP mode)

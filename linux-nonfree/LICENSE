@@ -31,6 +31,20 @@ IMPLICATION, ESTOPPEL, OR OTHERWISE IN ANY INTELLECTUAL PROPERTY RIGHTS
 EMBODIED IN ANY OTHER 3COM HARDWARE OR SOFTWARE EITHER SOLELY OR IN
 COMBINATION WITH THE 3c990img.h MICROCODE SOFTWARE
 
+* advansys/3550.bin
+* advansys/38C0800.bin
+* advansys/38C1600.bin
+* advansys/mcode.bin
+
+Copyright (c) 1995-2000 Advanced System Products, Inc.
+Copyright (c) 2000-2001 ConnectCom Solutions, Inc.
+All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that redistributions of source
+code retain the above copyright notice and this comment without
+modification.
+
 * agere_ap_fw.bin
 * agere_sta_fw.bin
 
