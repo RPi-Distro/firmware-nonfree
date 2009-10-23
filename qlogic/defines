@@ -12,7 +12,7 @@ files:
  ql2400_fw.bin
  ql2500_fw.bin
 longdesc: QLogic IBA7220 (Infiniband), QLA1XXX (SCSI) and QLA2XXX
- (Fibre Channel) host adapters supported by the iba7220, qla1280 and
+ (Fibre Channel) host adapters supported by the ip_iband, qla1280 and
  qla2xxx drivers
 support: initramfs-tools
 uri: ftp://ftp.qlogic.com/outgoing/linux/firmware/
