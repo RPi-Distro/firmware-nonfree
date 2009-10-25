@@ -1,3 +1,10 @@
+firmware-nonfree (0.21) unstable; urgency=low
+
+  * Update to linux-support-2.6.31-1.
+  * Upload to unstable.
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 25 Oct 2009 18:44:41 +0000
+
 firmware-nonfree (0.20) experimental; urgency=low
 
   [ Ben Hutchings ]
