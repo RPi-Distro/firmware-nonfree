@@ -1,3 +1,9 @@
+firmware-nonfree (0.22) UNRELESEAD; urgency=low
+
+  * Add iwlwifi-1000-3.ucode.
+
+ -- maximilian attems <maks@debian.org>  Thu, 12 Nov 2009 11:38:02 +0200
+
 firmware-nonfree (0.21) unstable; urgency=low
 
   * Update to linux-support-2.6.31-1.
