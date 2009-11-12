@@ -1,6 +1,7 @@
 firmware-nonfree (0.22) UNRELESEAD; urgency=low
 
   * Add iwlwifi-1000-3.ucode.
+  * Add iwlwifi-6000-4.ucode.
 
  -- maximilian attems <maks@debian.org>  Thu, 12 Nov 2009 11:38:02 +0200
 
