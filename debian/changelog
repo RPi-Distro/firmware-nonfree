@@ -1,7 +1,11 @@
-firmware-nonfree (0.22) UNRELESEAD; urgency=low
+firmware-nonfree (0.22) UNRELEASED; urgency=low
 
+  [ maximilian attems ]
   * Add iwlwifi-1000-3.ucode.
   * Add iwlwifi-6000-4.ucode.
+  
+  [ Ben Hutchings ]
+  * Update Radeon firmware for use with Linux 2.6.32 (Closes: #558023)
 
  -- maximilian attems <maks@debian.org>  Thu, 12 Nov 2009 11:38:02 +0200
 

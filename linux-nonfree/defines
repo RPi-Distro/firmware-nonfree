@@ -38,18 +38,28 @@ files:
  radeon/R300_cp.bin
  radeon/R420_cp.bin
  radeon/R520_cp.bin
- radeon/R600_cp.bin
+ radeon/R600_me.bin
+ radeon/R600_pfp.bin
  radeon/RS600_cp.bin
  radeon/RS690_cp.bin
- radeon/RS780_cp.bin
- radeon/RV610_cp.bin
- radeon/RV620_cp.bin
- radeon/RV630_cp.bin
- radeon/RV635_cp.bin
- radeon/RV670_cp.bin
- radeon/RV710_cp.bin
- radeon/RV730_cp.bin
- radeon/RV770_cp.bin
+ radeon/RS780_me.bin
+ radeon/RS780_pfp.bin
+ radeon/RV610_me.bin
+ radeon/RV610_pfp.bin
+ radeon/RV620_me.bin
+ radeon/RV620_pfp.bin
+ radeon/RV630_me.bin
+ radeon/RV630_pfp.bin
+ radeon/RV635_me.bin
+ radeon/RV635_pfp.bin
+ radeon/RV670_me.bin
+ radeon/RV670_pfp.bin
+ radeon/RV710_me.bin
+ radeon/RV710_pfp.bin
+ radeon/RV730_me.bin
+ radeon/RV730_pfp.bin
+ radeon/RV770_me.bin
+ radeon/RV770_pfp.bin
  tehuti/bdx.bin
  tigon/tg3_tso.bin
  tigon/tg3.bin
