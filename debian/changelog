@@ -6,6 +6,8 @@ firmware-nonfree (0.22) UNRELEASED; urgency=low
   
   [ Ben Hutchings ]
   * Update Radeon firmware for use with Linux 2.6.32 (Closes: #558023)
+  * Change URI for firmware-linux-nonfree to refer to David Woodhouse's
+    linux-firmware.git repository (Closes: #558033)
 
  -- maximilian attems <maks@debian.org>  Thu, 12 Nov 2009 11:38:02 +0200
 

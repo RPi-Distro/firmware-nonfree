@@ -65,7 +65,7 @@ files:
  tigon/tg3.bin
  tigon/tg3_tso5.bin
 support: initramfs-tools
-uri: http://ftp.kernel.org/pub/linux/kernel/
+uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
 
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware
