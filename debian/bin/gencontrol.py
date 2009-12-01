@@ -233,10 +233,15 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         for f in config_entry['files']:
             f, f_real, version = files_real[f]
             c = self.config.get(('base', package, f), {})
-            desc = c.get('desc', f)
+            desc = c.get('desc')
             if version is None:
-                version = c.get('version', 'unknown')
-            files_desc.append(" * %s, version %s" % (desc, version))
+                version = c.get('version')
+            if desc and version:
+                files_desc.append(" * %s, version %s (%s)" % (desc, version, f))
+            elif desc:
+                files_desc.append(" * %s (%s)" % (desc, f))
+            else:
+                files_desc.append(" * %s" % f)
 
         packages_binary = self.process_packages(binary, vars)
 
