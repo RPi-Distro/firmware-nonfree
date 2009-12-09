@@ -7,10 +7,16 @@ def main(for_main, source_dir, dest_dirs):
     section = None
     keyword = None
     filename = None
+    licence = None
 
     for line in open(os.path.join(source_dir, 'WHENCE')):
         if line.startswith('----------'):
-            # New section
+            # Finish old section
+            if licence:
+                section['licence'] = licence
+                licence = None
+
+            # Start new section
             section = {
                 'driver': None,
                 'file': {},
@@ -30,42 +36,58 @@ def main(for_main, source_dir, dest_dirs):
             continue
 
         match = re.match(
-            r'(Driver|File|Info|Licen[cs]e|Source|Version):\s*(.*)\n',
+            r'(Driver|File|Info|Licen[cs]e|Source|Version'
+            r'|Original licen[cs]e info(?:rmation)?):\s*(.*)\n',
             line)
-        if not match:
-            continue
-        keyword, value = match.group(1, 2)
-        if keyword == 'Driver':
-            section['driver'] = value.split(' ')[0].lower()
-        elif keyword == 'File':
-            match = re.match(r'(\S+)\s+--\s+(.*)', value)
-            if match:
-                filename = match.group(1)
-                section['file'][filename] = {'info': match.group(2)}
+        if match:
+            keyword, value = match.group(1, 2)
+            if keyword == 'Driver':
+                section['driver'] = value.split(' ')[0].lower()
+            elif keyword == 'File':
+                match = re.match(r'(\S+)\s+--\s+(.*)', value)
+                if match:
+                    filename = match.group(1)
+                    section['file'][filename] = {'info': match.group(2)}
+                else:
+                    for filename in value.strip().split():
+                        section['file'][filename] = {}
+            elif keyword in ['Info', 'Version']:
+                section['file'][filename]['version'] = value
+            elif keyword == 'Source':
+                section['file'][filename]['source'] = value
             else:
-                for filename in value.strip().split():
-                    section['file'][filename] = {}
-        elif keyword in ['Info', 'Version']:
-            section['file'][filename]['version'] = value
-        elif keyword == 'Source':
-            section['file'][filename]['source'] = value
-        elif keyword in ['Licence', 'License']:
-            match = re.match(r'(BSD'
-                             r'|GPLv2(?:\+| or later| or OpenIB\.org BSD)?'
-                             r'|Redistributable)\b',
-                             value)
-            if match:
-                section['licence'] = match.group(1)
+                licence = value
+        elif licence is not None:
+            licence = (licence + '\n' +
+                       re.sub(r'^(?:[/ ]\*| \*/)?\s*(.*?)\s*$', r'\1', line))
+
+    # Finish last section; delete if empty
+    if not section['driver']:
+        sections.pop()
+    elif licence:
+        section['licence'] = licence
 
     for section in sections:
-        if section['licence'] in ['BSD', 'GPLv2 or OpenIB.org BSD']:
+        licence = section['licence']
+        if re.search(r'^BSD\b'
+                     r'|^GPLv2 or OpenIB\.org BSD\b'
+                     r'|\bPermission\s+is\s+hereby\s+granted\s+for\s+the\s+'
+                     r'distribution\s+of\s+this\s+firmware\s+(?:data|image)\b'
+                     r'(?!\s+as\s+part\s+of)'
+                     r'|\bRedistribution\s+and\s+use\s+in(?:\s+source\s+and)?'
+                     r'\s+binary\s+forms\b'
+                     r'|\bPermission\s+is\s+hereby\s+granted\b[^.]+\sto'
+                     r'\s+deal\s+in\s+the\s+Software\s+without'
+                     r'\s+restriction\b'
+                     r'|\bredistributable\s+in\s+binary\s+form\b',
+                     licence):
             # Suitable for main or non-free depending on source availability
             pass
-        elif section['licence'] == 'Redistributable':
+        elif re.match(r'^(?:D|Red)istributable\b', licence):
             # Only suitable for non-free
             if for_main:
                 continue
-        elif section['licence']:  # others are GPLv2 or GPLv2+
+        elif re.match(r'^GPL(?:v2|\+)?\b', licence):
             # Only suitable for main; source must be available
             if not for_main:
                 continue
