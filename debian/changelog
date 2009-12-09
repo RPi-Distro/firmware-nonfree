@@ -11,6 +11,8 @@ firmware-nonfree (0.22) UNRELEASED; urgency=low
   * Include names of all firmware files in package descriptions
     (Closes: #553710)
   * Do not include 'version unknown' in package descriptions
+  * Update Broadcom NetXtreme II firmware for use with Linux 2.6.32
+    (Closes: #560065)
 
  -- maximilian attems <maks@debian.org>  Thu, 12 Nov 2009 11:38:02 +0200
 
