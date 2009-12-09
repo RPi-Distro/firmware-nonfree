@@ -95,7 +95,8 @@ def main(for_main, source_dir, dest_dirs):
             # Probably not distributable
             continue
         for filename, file_info in section['file'].iteritems():
-            if file_info.get('source') or not for_main:
+            if (file_info.get('source') or filename.endswith('.cis') or
+                not for_main):
                 update_file(source_dir, dest_dirs, filename)
 
 def update_file(source_dir, dest_dirs, filename):
