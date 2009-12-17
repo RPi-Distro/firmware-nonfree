@@ -1,4 +1,4 @@
-firmware-nonfree (0.22) UNRELEASED; urgency=low
+firmware-nonfree (0.22) unstable; urgency=low
 
   [ maximilian attems ]
   * Add iwlwifi-1000-3.ucode.
@@ -14,7 +14,7 @@ firmware-nonfree (0.22) UNRELEASED; urgency=low
   * Update Broadcom NetXtreme II firmware for use with Linux 2.6.32
     (Closes: #560065)
 
- -- maximilian attems <maks@debian.org>  Thu, 12 Nov 2009 11:38:02 +0200
+ -- Ben Hutchings <ben@decadent.org.uk>  Thu, 17 Dec 2009 03:44:03 +0000
 
 firmware-nonfree (0.21) unstable; urgency=low
 
