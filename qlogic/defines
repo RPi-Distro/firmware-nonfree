@@ -1,5 +1,5 @@
 [base]
-desc: QLogic IBA7220, QLA1XXX and QLA2XXX
+desc: QLogic IBA7220, QLA1xxx, ISP2xxx and SP2x2
 files:
  qlogic/1040.bin
  qlogic/1280.bin
@@ -11,9 +11,9 @@ files:
  ql2322_fw.bin
  ql2400_fw.bin
  ql2500_fw.bin
-longdesc: QLogic IBA7220 (Infiniband), QLA1XXX (SCSI) and QLA2XXX
- (Fibre Channel) host adapters supported by the ip_iband, qla1280 and
- qla2xxx drivers
+longdesc: QLogic IBA7220 (Infiniband), QLA1xxx (SCSI), ISP2xxx- and
+ SP2x2-based (Fibre Channel/FCoE) host adapters supported by the ip_iband,
+ qla1280 and qla2xxx drivers
 support: initramfs-tools
 uri: ftp://ftp.qlogic.com/outgoing/linux/firmware/
 
@@ -33,19 +33,19 @@ version: 10.04.42
 desc: QLogic IBA7220 serdes firmware
 
 [ql2100_fw.bin_base]
-desc: QLogic QLA21XX firmware
+desc: QLogic QLA2100 firmware
 
 [ql2200_fw.bin_base]
-desc: QLogic QLA22XX firmware
+desc: QLogic QLA2200 firmware
 
 [ql2300_fw.bin_base]
-desc: QLogic QLA2300, 2312, 6312 firmware
+desc: QLogic QLA2300, ISP2312, SP202 firmware
 
 [ql2322_fw.bin_base]
-desc: QLogic QLA2322, 6322 firmware
+desc: QLogic ISP2322, SP212 firmware
 
 [ql2400_fw.bin_base]
-desc: QLogic QLA24XX firmware
+desc: QLogic ISP2422, ISP2432[M], SP222, SP232 firmware
 
 [ql2500_fw.bin_base]
-desc: QLogic QLA25XX firmware
+desc: QLogic ISP2532 firmware

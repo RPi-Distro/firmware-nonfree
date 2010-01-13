@@ -1,3 +1,11 @@
+firmware-nonfree (0.23) UNRELEASED; urgency=low
+
+  [ Ben Hutchings ]
+  * Update firmware-qlogic description to specify supported chips as
+    named in pci-ids (Closes: #513140)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Wed, 13 Jan 2010 04:11:02 +0000
+
 firmware-nonfree (0.22) unstable; urgency=low
 
   [ maximilian attems ]
