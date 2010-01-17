@@ -34,7 +34,7 @@ version: 11
 
 [rt2870.bin_base]
 desc: Ralink RT2870 (RT2800U[D] chipset) firmware
-version: 10
+version: 12
 
 [rt3071.bin_base]
 desc: Ralink RT3071 (RT3000U[D] chipset) firmware

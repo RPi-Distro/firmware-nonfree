@@ -6,6 +6,7 @@ firmware-nonfree (0.23) UNRELEASED; urgency=low
   * Update hardware list in firmware-ralink description
   * Correct some version numbers in firmware-ralink description
   * Add Ralink RT3000E[D] firmware (rt3090.bin) for use with rt3090sta
+  * Update Ralink RT2800U[D] firmware (rt2870.bin) from Linux 2.6.32
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 13 Jan 2010 04:11:02 +0000
 
