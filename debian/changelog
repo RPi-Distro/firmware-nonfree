@@ -1,6 +1,5 @@
-firmware-nonfree (0.23) UNRELEASED; urgency=low
+firmware-nonfree (0.23) unstable; urgency=low
 
-  [ Ben Hutchings ]
   * Update firmware-qlogic description to specify supported chips as
     named in pci-ids (Closes: #513140)
   * Update hardware list in firmware-ralink description
@@ -10,7 +9,7 @@ firmware-nonfree (0.23) UNRELEASED; urgency=low
   * Add Radeon R600/R700-family RLC firmware for use with Linux 2.6.33
     and Debian kernel package 2.6.32-10 (Closes: #565437)
 
- -- Ben Hutchings <ben@decadent.org.uk>  Wed, 13 Jan 2010 04:11:02 +0000
+ -- Ben Hutchings <ben@decadent.org.uk>  Thu, 04 Mar 2010 22:35:56 +0000
 
 firmware-nonfree (0.22) unstable; urgency=low
 
