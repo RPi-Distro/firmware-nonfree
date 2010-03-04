@@ -7,6 +7,8 @@ firmware-nonfree (0.23) UNRELEASED; urgency=low
   * Correct some version numbers in firmware-ralink description
   * Add Ralink RT3000E[D] firmware (rt3090.bin) for use with rt3090sta
   * Update Ralink RT2800U[D] firmware (rt2870.bin) from Linux 2.6.32
+  * Add Radeon R600/R700-family RLC firmware for use with Linux 2.6.33
+    and Debian kernel package 2.6.32-10 (Closes: #565437)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 13 Jan 2010 04:11:02 +0000
 

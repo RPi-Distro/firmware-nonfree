@@ -40,6 +40,8 @@ files:
  radeon/R520_cp.bin
  radeon/R600_me.bin
  radeon/R600_pfp.bin
+ radeon/R600_rlc.bin
+ radeon/R700_rlc.bin
  radeon/RS600_cp.bin
  radeon/RS690_cp.bin
  radeon/RS780_me.bin
@@ -164,6 +166,12 @@ desc: Radeon R600 ME microcode
 
 [radeon/R600_pfp.bin_base]
 desc: Radeon R600 PFP microcode
+
+[radeon/R600_rlc.bin_base]
+desc: Radeon R600-family RLC microcode
+
+[radeon/R700_rlc.bin_base]
+desc: Radeon R700-family RLC microcode
 
 [radeon/RS600_cp.bin_base]
 desc: Radeon RS600 CP microcode
