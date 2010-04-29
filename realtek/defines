@@ -1,0 +1,18 @@
+[base]
+desc: Realtek RTL8192 wireless cards
+files:
+ RTL8192E/boot.img
+ RTL8192E/data.img
+ RTL8192E/main.img
+longdesc: wireless network cards with the RTL8192 chips supported by the
+ rtl8192e driver
+uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+
+[RTL8192E/boot.img_base]
+desc: Realtek RTL8192E boot code
+
+[RTL8192E/data.img_base]
+desc: Realtek RTL8192E init data
+
+[RTL8192E/main.img_base]
+desc: Realtek RTL8192E main code
