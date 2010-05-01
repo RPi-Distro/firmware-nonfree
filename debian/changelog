@@ -1,9 +1,11 @@
 firmware-nonfree (0.24) UNRELEASED; urgency=low
 
   * Update to linux-support-2.6.32-3.
-  * Add firmware-realtek package, initially containing Realtek RTL8192E
-    firmware for use with rtl8192e driver, thanks to Geoff Simmons
-    (Closes: #573950)
+  * Add firmware-realtek package containing:
+    - Realtek RTL8192E firmware for use with rtl8192e driver, thanks to
+      Geoff Simmons (Closes: #573950)
+    - Realtek RTL8192SU firmware for use with rtl8192su driver, thanks to
+      Stefan Lippers-Hollmann (Closes: #579694)
   * Update iwlwifi-6000 to 9.193.4.1.
   * Add copyright and licence text for radeon/R{6,7}00_rlc.bin to
     firmware-linux-nonfree (Closes: #576104)
