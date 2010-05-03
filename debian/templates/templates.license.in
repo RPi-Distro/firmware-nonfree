@@ -5,7 +5,6 @@ Description: Do you agree to the "@license-title@"?
  In order to install this package, you must agree to the following terms,
  the "@license-title@".
  If you do not agree, the installation will be canceled.
- .
 
 Template: firmware-@package@/license/error
 Type: error
