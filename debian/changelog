@@ -1,4 +1,4 @@
-firmware-nonfree (0.24) UNRELEASED; urgency=low
+firmware-nonfree (0.24) unstable; urgency=low
 
   * Update to linux-support-2.6.32-5.
   * Add firmware-realtek package containing:
@@ -12,7 +12,7 @@ firmware-nonfree (0.24) UNRELEASED; urgency=low
   * Merge preinstallation license note and question (Closes: #574145)
   * Bump standards to 3.8.4, no changes required.
 
- -- Ben Hutchings <ben@decadent.org.uk>  Mon, 15 Mar 2010 13:50:12 +0000
+ -- Ben Hutchings <ben@decadent.org.uk>  Mon, 03 May 2010 23:19:05 +0100
 
 firmware-nonfree (0.23) unstable; urgency=low
 
