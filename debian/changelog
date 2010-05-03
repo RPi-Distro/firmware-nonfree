@@ -1,6 +1,6 @@
 firmware-nonfree (0.24) UNRELEASED; urgency=low
 
-  * Update to linux-support-2.6.32-3.
+  * Update to linux-support-2.6.32-5.
   * Add firmware-realtek package containing:
     - Realtek RTL8192E firmware for use with rtl8192e driver, thanks to
       Geoff Simmons (Closes: #573950)
