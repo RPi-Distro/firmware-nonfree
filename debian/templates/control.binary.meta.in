@@ -1,7 +1,7 @@
 Package: firmware-linux
 Architecture: all
 Depends: firmware-linux-free, firmware-linux-nonfree (= ${binary:Version})
-Description: Binary firmware for various drivers in the Linux kernel
+Description: Binary firmware for various drivers in the Linux kernel (meta-package)
  This package depends on both free and non-free firmware which was
  previously included in the Linux kernel.
 
