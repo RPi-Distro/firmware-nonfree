@@ -28,12 +28,6 @@ ask()
         1)  # present license
             db_get firmware-@package@/license/accepted
             if [ "$RET" != true -o "${license_accept}" = "no-preseed" ]; then
-                db_fset firmware-@package@/license/present seen false
-                if ! db_input critical firmware-@package@/license/present ; then
-                    errmsg "firmware-@package@ license could not be presented"
-                    exit 2
-                fi
-
                 db_fset firmware-@package@/license/accepted seen false
                 if ! db_input critical firmware-@package@/license/accepted ; then
                     errmsg "firmware-@package@ agree question could not be asked"

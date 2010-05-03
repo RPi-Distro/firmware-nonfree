@@ -1,14 +1,11 @@
-Template: firmware-@package@/license/present
-Type: note
-Description: @license-title@
-
 Template: firmware-@package@/license/accepted
 Type: boolean
 Default: false
 Description: Do you agree with the @license-title@ license terms?
- In order to install this package, you must agree to its license terms, the
- "@license-title@".
+ In order to install this package, you must agree to the following terms,
+ the "@license-title@".
  If you do not agree, the installation will be canceled.
+ .
 
 Template: firmware-@package@/license/error
 Type: error
