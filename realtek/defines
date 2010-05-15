@@ -20,4 +20,4 @@ desc: Realtek RTL8192E main code
 
 [RTL8192SU/rtl8192sfw.bin_base]
 desc: Realtek RTL8192SU firmware
-version: 703E
+version: 902B
