@@ -5,6 +5,8 @@ firmware-nonfree (0.25) UNRELEASED; urgency=low
     2.6.34
   * Add Radeon HD 'Evergreen' 5400/5500/5600/5700/5800-family firmware
     for use with Linux 2.6.34
+  * Add firmware-atheros package containing Atheros AR3011 firmware for
+    use with the ath3k driver added in Linux 2.6.34
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sat, 15 May 2010 15:52:47 +0100
 

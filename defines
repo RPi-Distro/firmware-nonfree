@@ -1,5 +1,6 @@
 [base]
 packages:
+ atheros
  bnx2
  bnx2x
  intelwimax
