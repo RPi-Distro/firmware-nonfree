@@ -33,6 +33,15 @@ files:
  matrox/g200_warp.fw
  matrox/g400_warp.fw
  r128/r128_cce.bin
+ radeon/CEDAR_me.bin
+ radeon/CEDAR_pfp.bin
+ radeon/CEDAR_rlc.bin
+ radeon/CYPRESS_me.bin
+ radeon/CYPRESS_pfp.bin
+ radeon/CYPRESS_rlc.bin
+ radeon/JUNIPER_me.bin
+ radeon/JUNIPER_pfp.bin
+ radeon/JUNIPER_rlc.bin
  radeon/R100_cp.bin
  radeon/R200_cp.bin
  radeon/R300_cp.bin
@@ -42,6 +51,9 @@ files:
  radeon/R600_pfp.bin
  radeon/R600_rlc.bin
  radeon/R700_rlc.bin
+ radeon/REDWOOD_me.bin
+ radeon/REDWOOD_pfp.bin
+ radeon/REDWOOD_rlc.bin
  radeon/RS600_cp.bin
  radeon/RS690_cp.bin
  radeon/RS780_me.bin
@@ -146,6 +158,33 @@ desc: Matrox G400/G550 WARP engine microcode
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
  
+[radeon/CEDAR_me.bin_base]
+desc: Radeon HD 5400-family ME microcode
+
+[radeon/CEDAR_pfp.bin_base]
+desc: Radeon HD 5400-family PFP microcode
+
+[radeon/CEDAR_rlc.bin_base]
+desc: Radeon HD 5400-family RLC microcode
+
+[radeon/CYPRESS_me.bin_base]
+desc: Radeon HD 5800/5900-family ME microcode
+
+[radeon/CYPRESS_pfp.bin_base]
+desc: Radeon HD 5800/5900-family PFP microcode
+
+[radeon/CYPRESS_rlc.bin_base]
+desc: Radeon HD 5800/5900-family RLC microcode
+
+[radeon/JUNIPER_me.bin_base]
+desc: Radeon HD 5700-family ME microcode
+
+[radeon/JUNIPER_pfp.bin_base]
+desc: Radeon HD 5700-family PFP microcode
+
+[radeon/JUNIPER_rlc.bin_base]
+desc: Radeon HD 5700-family RLC microcode
+
 [radeon/R100_cp.bin_base]
 desc: Radeon R100-family CP microcode
 
@@ -172,6 +211,15 @@ desc: Radeon R600-family RLC microcode
 
 [radeon/R700_rlc.bin_base]
 desc: Radeon R700-family RLC microcode
+
+[radeon/REDWOOD_me.bin_base]
+desc: Radeon HD 5500/5600-family ME microcode
+
+[radeon/REDWOOD_pfp.bin_base]
+desc: Radeon HD 5500/5600-family PFP microcode
+
+[radeon/REDWOOD_rlc.bin_base]
+desc: Radeon HD 5500/5600-family RLC microcode
 
 [radeon/RS600_cp.bin_base]
 desc: Radeon RS600 CP microcode
