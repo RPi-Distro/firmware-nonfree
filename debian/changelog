@@ -1,6 +1,8 @@
 firmware-nonfree (0.25) UNRELEASED; urgency=low
 
   * Update rtl8192su to version 902B (Closes: #581554)
+  * Add/update Ralink RT3070/RT3071/RT3072 firmware for use with Linux
+    2.6.34
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sat, 15 May 2010 15:52:47 +0100
 

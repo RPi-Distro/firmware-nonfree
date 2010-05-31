@@ -6,6 +6,7 @@ files:
  rt2661.bin
  rt2860.bin
  rt2870.bin
+ rt3070.bin
  rt3071.bin
  rt3090.bin
  rt73.bin
@@ -36,9 +37,13 @@ version: 11
 desc: Ralink RT2870 (RT2800U[D] chipset) firmware
 version: 12
 
+[rt3070.bin_base]
+desc: Ralink RT3070 firmware
+version: 17
+
 [rt3071.bin_base]
-desc: Ralink RT3071 (RT3000U[D] chipset) firmware
-version: 2
+desc: Ralink RT3071/RT3072 firmware
+version: 17
 
 [rt3090.bin_base]
 desc: Ralink RT3090 (RT3000E[D] chipset) firmware
