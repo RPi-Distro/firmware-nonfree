@@ -10,8 +10,9 @@ files:
  iwlwifi-5000-2.ucode
  iwlwifi-5150-2.ucode
  iwlwifi-6000-4.ucode
-longdesc: Intel Wireless 1000, 3945, 4965, 5100, 5300 and 6000 cards supported
- by the iwl3945 and iwlagn drivers
+ iwlwifi-6050-4.ucode
+longdesc: Intel Wireless 1000, 3945, 4965, 5100, 5300, 6000 and 6250 cards
+ supported by the iwl3945 and iwlagn drivers
 uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
 
 [iwlwifi-1000-3.ucode_base]
@@ -40,3 +41,6 @@ desc: Intel Wireless 5150 firmware
 
 [iwlwifi-6000-4.ucode_base]
 desc: Intel Wireless 6000 firmware
+
+[iwlwifi-6050-4.ucode_base]
+desc: Intel Wireless 6250 firmware
