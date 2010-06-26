@@ -32,6 +32,9 @@ files:
  kaweth/trigger_code_fix.bin
  matrox/g200_warp.fw
  matrox/g400_warp.fw
+ mts_cdma.fw
+ mts_edge.fw
+ mts_gsm.fw
  r128/r128_cce.bin
  radeon/CEDAR_me.bin
  radeon/CEDAR_pfp.bin
@@ -154,6 +157,15 @@ desc: Matrox G200 WARP engine microcode
 
 [matrox/g400_warp.fw_base]
 desc: Matrox G400/G550 WARP engine microcode
+
+[mts_cdma.fw_base]
+desc: Multi-Tech USB CDMA modem firmware
+
+[mts_edge.fw_base]
+desc: Multi-Tech USB EDGE modem firmware
+
+[mts_gsm.fw_base]
+desc: Multi-Tech USB GPRS modem firmware
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
