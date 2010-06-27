@@ -1,407 +1,347 @@
-* 3com/typhoon.bin
+Files: linux-nonfree/3com/typhoon.bin
+Copyright: 1999-2004, 3Com Corporation
+License: BSD (3Com)
+ All Rights Reserved.
+ .
+ Redistribution and use in source and binary forms of the 3c990img.h
+ microcode software are permitted provided that the following conditions
+ are met:
+ 1. Redistribution of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistribution in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of 3Com may not be used to endorse or promote products
+    derived from this software without specific prior written permission
+ .
+ THIS SOFTWARE IS PROVIDED BY 3COM ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ USER ACKNOWLEDGES AND AGREES THAT PURCHASE OR USE OF THE 3c990img.h
+ MICROCODE SOFTWARE WILL NOT CREATE OR GIVE GROUNDS FOR A LICENSE BY
+ IMPLICATION, ESTOPPEL, OR OTHERWISE IN ANY INTELLECTUAL PROPERTY RIGHTS
+ (PATENT, COPYRIGHT, TRADE SECRET, MASK WORK, OR OTHER PROPRIETARY RIGHT)
+ EMBODIED IN ANY OTHER 3COM HARDWARE OR SOFTWARE EITHER SOLELY OR IN
+ COMBINATION WITH THE 3c990img.h MICROCODE SOFTWARE
 
-Copyright 1999-2004 3Com Corporation.  All Rights Reserved.
+Files: linux-nonfree/advansys/*
+Copyright: 1995-2000, Advanced System Products, Inc.
+           2000-2001, ConnectCom Solutions, Inc.
+License: Permissive (Advansys)
+ All Rights Reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that redistributions of source
+ code retain the above copyright notice and this comment without
+ modification.
 
-Redistribution and use in source and binary forms of the 3c990img.h
-microcode software are permitted provided that the following conditions
-are met:
-1. Redistribution of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer.
-2. Redistribution in binary form must reproduce the above copyright
-   notice, this list of conditions and the following disclaimer in the
-   documentation and/or other materials provided with the distribution.
-3. The name of 3Com may not be used to endorse or promote products
-   derived from this software without specific prior written permission
-
-THIS SOFTWARE IS PROVIDED BY 3COM ``AS IS'' AND ANY EXPRESS OR
-IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-USER ACKNOWLEDGES AND AGREES THAT PURCHASE OR USE OF THE 3c990img.h
-MICROCODE SOFTWARE WILL NOT CREATE OR GIVE GROUNDS FOR A LICENSE BY
-IMPLICATION, ESTOPPEL, OR OTHERWISE IN ANY INTELLECTUAL PROPERTY RIGHTS
-(PATENT, COPYRIGHT, TRADE SECRET, MASK WORK, OR OTHER PROPRIETARY RIGHT)
-EMBODIED IN ANY OTHER 3COM HARDWARE OR SOFTWARE EITHER SOLELY OR IN
-COMBINATION WITH THE 3c990img.h MICROCODE SOFTWARE
-
-* advansys/3550.bin
-* advansys/38C0800.bin
-* advansys/38C1600.bin
-* advansys/mcode.bin
-
-Copyright (c) 1995-2000 Advanced System Products, Inc.
-Copyright (c) 2000-2001 ConnectCom Solutions, Inc.
-All Rights Reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that redistributions of source
-code retain the above copyright notice and this comment without
-modification.
-
-* agere_ap_fw.bin
-* agere_sta_fw.bin
-
-This software is provided subject to the following terms and conditions,
-which you should read carefully before using the software.  Using this
-software indicates your acceptance of these terms and conditions.  If you do
-not agree with these terms and conditions, do not use the software.
-
-COPYRIGHT © 1994 - 1995  by AT&T.                All Rights Reserved
-COPYRIGHT © 1996 - 2000 by Lucent Technologies.  All Rights Reserved
-COPYRIGHT © 2001 - 2004  by Agere Systems Inc.   All Rights Reserved
-All rights reserved.
-
-Redistribution and use in source or binary forms, with or without
-modifications, are permitted provided that the following conditions are met:
-
-. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following Disclaimer as comments in the code as
-   well as in the documentation and/or other materials provided with the
-   distribution.
-
-. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following Disclaimer in the documentation
-   and/or other materials provided with the distribution.
-
-. Neither the name of Agere Systems Inc. nor the names of the contributors
-   may be used to endorse or promote products derived from this software
-   without specific prior written permission.
-
-Disclaimer
-
-THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
-INCLUDING, BUT NOT LIMITED TO, INFRINGEMENT AND THE IMPLIED WARRANTIES OF
-MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  ANY
-USE, MODIFICATION OR DISTRIBUTION OF THIS SOFTWARE IS SOLELY AT THE USERS OWN
-RISK. IN NO EVENT SHALL AGERE SYSTEMS INC. OR CONTRIBUTORS BE LIABLE FOR ANY
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-ON ANY THEORY OF LIABILITY, INCLUDING, BUT NOT LIMITED TO, CONTRACT, STRICT
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
-OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
-DAMAGE.
-
-* cxgb3/ael2005_opt_edc.bin
-* cxgb3/ael2005_twx_edc.bin
-* cxgb3/ael2020_twx_edc.bin
-
-Copyright (c) 2007-2009 NetLogic Microsystems, Inc.
-
-Permission is hereby granted for the distribution of this firmware
-data in hexadecimal or equivalent format, provided this copyright
-notice is accompanying it.
-
-* cxgb3/t3b_psram-1.1.0.bin
-* cxgb3/t3c_psram-1.1.0.bin
-* cxgb3/t3fw-7.4.0.bin
-
-Copyright (c) 2003-2009 Chelsio, Inc. All rights reserved.
-
-Redistribution and use in source and binary forms, with or
-without modification, are permitted provided that the following
-conditions are met:
-
- - Redistributions of source code must retain the above
-   copyright notice, this list of conditions and the following
-   disclaimer.
-
- - Redistributions in binary form must reproduce the above
-   copyright notice, this list of conditions and the following
-   disclaimer in the documentation and/or other materials
-   provided with the distribution.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
-BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-* dabusb/bitstream.bin
-* dabusb/firmware.fw
-
-Copyright (C) 1999 BayCom GmbH
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that redistributions of source
-code retain the above copyright notice and this comment without
-modification.
-
-* dvb-fe-xc5000-1.6.114.fw
-
-Copyright (c) 2009, Xceive Corporation <info@xceive.com>
-
-Permission to use, copy, modify, and/or distribute this software, only
-for use with Xceive ICs, for any purpose with or without fee is hereby
-granted, provided that the above copyright notice and this permission
-notice appear in all source code copies.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
-WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
-MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
-ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
-WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
-ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
-OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-
-* dvb-usb-dib0700-1.20.fw
-
-Copyright (c) 2009, DiBcom
-
-Permission to use, copy, modify, and/or distribute this software for
-any purpose with or without fee is hereby granted, provided that the
-above copyright notice and this permission notice appear in all
-copies.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
-WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
-AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
-DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
-PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
-TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-
-* e100/d101m_ucode.bin
-* e100/d101s_ucode.bin
-* e100/d102e_ucode.bin
-
-Copyright (c) 1999-2001, Intel Corporation
-
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
- 1. Redistributions of source code must retain the above copyright notice,
-    this list of conditions and the following disclaimer.
-
- 2. Redistributions in binary form must reproduce the above copyright notice,
-    this list of conditions and the following disclaimer in the documentation
+Files: linux-nonfree/agere_ap_fw.bin, linux-nonfree/agere_sta_fw.bin
+Copyright: 1994-1995, AT&T
+           1996-2000, Lucent Technologies
+           2001-2004, Agere Systems Inc.
+License: BSD (Agere)
+ This software is provided subject to the following terms and conditions,
+ which you should read carefully before using the software.  Using this
+ software indicates your acceptance of these terms and conditions.  If you do
+ not agree with these terms and conditions, do not use the software.
+ .
+ All rights reserved.
+ .
+ Redistribution and use in source or binary forms, with or without
+ modifications, are permitted provided that the following conditions are met:
+ .
+ . Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following Disclaimer as comments in the code as
+    well as in the documentation and/or other materials provided with the
+    distribution.
+ .
+ . Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following Disclaimer in the documentation
     and/or other materials provided with the distribution.
-
- 3. Neither the name of Intel Corporation nor the names of its contributors
+ .
+ . Neither the name of Agere Systems Inc. nor the names of the contributors
     may be used to endorse or promote products derived from this software
     without specific prior written permission.
+ .
+ Disclaimer
+ .
+ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, INFRINGEMENT AND THE IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  ANY
+ USE, MODIFICATION OR DISTRIBUTION OF THIS SOFTWARE IS SOLELY AT THE USERS OWN
+ RISK. IN NO EVENT SHALL AGERE SYSTEMS INC. OR CONTRIBUTORS BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, INCLUDING, BUT NOT LIMITED TO, CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+ DAMAGE.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS''
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
-EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Files: linux-nonfree/cxgb3/ael*.bin
+Copyright: 2007-2009, NetLogic Microsystems, Inc.
+License: Binary redistribution
+ Permission is hereby granted for the distribution of this firmware
+ data in hexadecimal or equivalent format, provided this copyright
+ notice is accompanying it.
 
-* kaweth/new_code.bin
-* kaweth/new_code_fix.bin
-* kaweth/trigger_code.bin
-* kaweth/trigger_code_fix.bin
+Files: linux-nonfree/cxgb3/t3*.bin
+Copyright: 2003-2009, Chelsio, Inc.
+License: BSD 2-clause
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or
+ without modification, are permitted provided that the following
+ conditions are met:
+ .
+  - Redistributions of source code must retain the above
+    copyright notice, this list of conditions and the following
+    disclaimer.
+ .
+  - Redistributions in binary form must reproduce the above
+    copyright notice, this list of conditions and the following
+    disclaimer in the documentation and/or other materials
+    provided with the distribution.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
 
-Copyright 1999 Kawasaki LSI.
+Files: linux-nonfree/dabusb/*
+Copyright: 1999, BayCom GmbH
+License: Permissive (BayCom)
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that redistributions of source
+ code retain the above copyright notice and this comment without
+ modification.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:
-1. Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright
-   notice, this list of conditions and the following disclaimer in the
-   documentation and/or other materials provided with the distribution.
-3. All advertising materials mentioning features or use of this software
-   must display the following acknowledgement:
-	This product includes software developed by Kawasaki LSI.
-4. Neither the name of the company nor the names of its contributors
-   may be used to endorse or promote products derived from this software
-   without specific prior written permission.
+Files: linux-nonfree/dvb-fe-xc5000-1.6.114.fw
+Copyright: 2009, Xceive Corporation <info@xceive.com>
+License: Binary redistribution (Xceive)
+ Permission to use, copy, modify, and/or distribute this software, only
+ for use with Xceive ICs, for any purpose with or without fee is hereby
+ granted, provided that the above copyright notice and this permission
+ notice appear in all source code copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-THIS SOFTWARE IS PROVIDED BY KAWASAKI LSI ``AS IS'' AND ANY EXPRESS OR
-IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED.  IN NO EVENT SHALL KAWASAKI LSI BE LIABLE FOR ANY DIRECT,
-INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
-STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
-IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.
+Files: linux-nonfree/dvb-usb-dib0700-1.20.fw
+Copyright: 2009, DiBcom
+License: Binary redistribution (DiBcom)
+ Permission to use, copy, modify, and/or distribute this software for
+ any purpose with or without fee is hereby granted, provided that the
+ above copyright notice and this permission notice appear in all
+ copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+ WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+ AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
 
-* matrox/g200_warp.fw
-* matrox/g400_warp.fw
+Files: linux-nonfree/e100/*
+Copyright: 1999-2001, Intel Corporation
+License: BSD (Intel)
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+ .
+  2. Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+ .
+  3. Neither the name of Intel Corporation nor the names of its contributors
+     may be used to endorse or promote products derived from this software
+     without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS''
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Copyright 1999 Matrox Graphics Inc.
-All Rights Reserved.
+Files: linux-nonfree/kaweth/*
+Copyright: 1999, Kawasaki LSI.
+License: BSD 4-clause (Kawasaki LSI)
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+ 	This product includes software developed by Kawasaki LSI.
+ 4. Neither the name of the company nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY KAWASAKI LSI ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED.  IN NO EVENT SHALL KAWASAKI LSI BE LIABLE FOR ANY DIRECT,
+ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
 
-Permission is hereby granted, free of charge, to any person obtaining a
-copy of this software and associated documentation files (the "Software"),
-to deal in the Software without restriction, including without limitation
-the rights to use, copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following conditions:
+Files: linux-nonfree/matrox/*
+Copyright: 1999, Matrox Graphics Inc.
+License: Binary redistribution (Matrox)
+ All Rights Reserved.
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+ MATROX GRAPHICS INC., OR ANY OTHER CONTRIBUTORS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-The above copyright notice and this permission notice shall be included
-in all copies or substantial portions of the Software.
+Files: linux-nonfree/mts_*.fw
+Copyright: 2005, Multi-Tech Systems, Inc.
+License: Binary redistribution (MTS)
+ All firmware components are redistributable in binary form.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
-MATROX GRAPHICS INC., OR ANY OTHER CONTRIBUTORS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
-OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Files: linux-nonfree/r128/r128_cce.bin, linux-nonfree/radeon/*_cp.bin,
+ linux-nonfree/radeon/R600_me.bin, linux-nonfree/radeon/R600_pfp.bin,
+ linux-nonfree/radeon/RS780_*.bin, linux-nonfree/radeon/RV*.bin
+Copyright: 2000-2009, Advanced Micro Devices, Inc.
+License: Binary redistribution (AMD permissive)
+ All Rights Reserved.
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice (including the next
+ paragraph) shall be included in all copies or substantial portions of the
+ Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+ IN NO EVENT SHALL THE COPYRIGHT OWNER(S) AND/OR ITS SUPPLIERS BE
+ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-* mts_cdma.fw
-* mts_edge.fw
-* mts_gsm.fw
+Files: linux-nonfree/radeon/CEDAR_*.bin, linux-nonfree/radeon/CYPRESS_*.bin,
+ linux-nonfree/radeon/JUNIPER_*.bin, linux-nonfree/radeon/R600_rlc.bin,
+ linux-nonfree/radeon/R700_rlc.bin, linux-nonfree/radeon/REDWOOD_*.bin,
+Copyright: 2009-2010, Advanced Micro Devices, Inc.
+License: Binary redistribution (AMD restrictive)
+ All rights reserved.
+ .
+ REDISTRIBUTION: Permission is hereby granted, free of any license fees,
+ to any person obtaining a copy of this microcode (the "Software"), to
+ install, reproduce, copy and distribute copies, in binary form only, of
+ the Software and to permit persons to whom the Software is provided to
+ do the same, provided that the following conditions are met:
+ .
+ No reverse engineering, decompilation, or disassembly of this Software
+ is permitted.
+ .
+ Redistributions must reproduce the above copyright notice, this
+ permission notice, and the following disclaimers and notices in the
+ Software documentation and/or other materials provided with the
+ Software.
+ .
+ DISCLAIMER: THE USE OF THE SOFTWARE IS AT YOUR SOLE RISK.  THE SOFTWARE
+ IS PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND AND COPYRIGHT
+ HOLDER AND ITS LICENSORS EXPRESSLY DISCLAIM ALL WARRANTIES, EXPRESS AND
+ IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+ COPYRIGHT HOLDER AND ITS LICENSORS DO NOT WARRANT THAT THE SOFTWARE WILL
+ MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE
+ UNINTERRUPTED OR ERROR-FREE.  THE ENTIRE RISK ASSOCIATED WITH THE USE OF
+ THE SOFTWARE IS ASSUMED BY YOU.  FURTHERMORE, COPYRIGHT HOLDER AND ITS
+ LICENSORS DO NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE
+ OR THE RESULTS OF THE USE OF THE SOFTWARE IN TERMS OF ITS CORRECTNESS,
+ ACCURACY, RELIABILITY, CURRENTNESS, OR OTHERWISE.
+ .
+ DISCLAIMER: UNDER NO CIRCUMSTANCES INCLUDING NEGLIGENCE, SHALL COPYRIGHT
+ HOLDER AND ITS LICENSORS OR ITS DIRECTORS, OFFICERS, EMPLOYEES OR AGENTS
+ ("AUTHORIZED REPRESENTATIVES") BE LIABLE FOR ANY INCIDENTAL, INDIRECT,
+ SPECIAL OR CONSEQUENTIAL DAMAGES (INCLUDING DAMAGES FOR LOSS OF BUSINESS
+ PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, AND THE
+ LIKE) ARISING OUT OF THE USE, MISUSE OR INABILITY TO USE THE SOFTWARE,
+ BREACH OR DEFAULT, INCLUDING THOSE ARISING FROM INFRINGEMENT OR ALLEGED
+ INFRINGEMENT OF ANY PATENT, TRADEMARK, COPYRIGHT OR OTHER INTELLECTUAL
+ PROPERTY RIGHT EVEN IF COPYRIGHT HOLDER AND ITS AUTHORIZED
+ REPRESENTATIVES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  IN
+ NO EVENT SHALL COPYRIGHT HOLDER OR ITS AUTHORIZED REPRESENTATIVES TOTAL
+ LIABILITY FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION (WHETHER IN
+ CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE) EXCEED THE AMOUNT OF
+ US$10.
+ .
+ Notice:  The Software is subject to United States export laws and
+ regulations.  You agree to comply with all domestic and international
+ export laws and regulations that apply to the Software, including but
+ not limited to the Export Administration Regulations administered by the
+ U.S. Department of Commerce and International Traffic in Arm Regulations
+ administered by the U.S. Department of State.  These laws include
+ restrictions on destinations, end users and end use.
 
-Copyright (C) 2005 Multi-Tech Systems, Inc.
-All firmware components are redistributable in binary form.
+Files: linux-nonfree/tehuti/bdx.bin
+Copyright: 2007, Tehuti Networks Ltd.
+License: Binary redistribution
+ Permission is hereby granted for the distribution of this firmware
+ data in hexadecimal or equivalent format, provided this copyright
+ notice is accompanying it.
 
-* r128/r128_cce.bin
-* radeon/R100_cp.bin
-* radeon/R200_cp.bin
-* radeon/R300_cp.bin
-* radeon/R420_cp.bin
-* radeon/R520_cp.bin
-* radeon/R600_me.bin
-* radeon/R600_pfp.bin
-* radeon/RS600_cp.bin
-* radeon/RS690_cp.bin
-* radeon/RS780_me.bin
-* radeon/RS780_pfp.bin
-* radeon/RV610_me.bin
-* radeon/RV610_pfp.bin
-* radeon/RV620_me.bin
-* radeon/RV620_pfp.bin
-* radeon/RV630_me.bin
-* radeon/RV630_pfp.bin
-* radeon/RV635_me.bin
-* radeon/RV635_pfp.bin
-* radeon/RV670_me.bin
-* radeon/RV670_pfp.bin
-* radeon/RV710_me.bin
-* radeon/RV710_pfp.bin
-* radeon/RV730_me.bin
-* radeon/RV730_pfp.bin
-* radeon/RV770_me.bin
-* radeon/RV770_pfp.bin
-
-Copyright 2000-2009 Advanced Micro Devices, Inc.
-All Rights Reserved.
-
-Permission is hereby granted, free of charge, to any person obtaining a
-copy of this software and associated documentation files (the "Software"),
-to deal in the Software without restriction, including without limitation
-the rights to use, copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice (including the next
-paragraph) shall be included in all copies or substantial portions of the
-Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
-IN NO EVENT SHALL THE COPYRIGHT OWNER(S) AND/OR ITS SUPPLIERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-* radeon/CEDAR_me.bin
-* radeon/CEDAR_pfp.bin
-* radeon/CEDAR_rlc.bin
-* radeon/CYPRESS_me.bin
-* radeon/CYPRESS_pfp.bin
-* radeon/CYPRESS_rlc.bin
-* radeon/JUNIPER_me.bin
-* radeon/JUNIPER_pfp.bin
-* radeon/JUNIPER_rlc.bin
-* radeon/R600_rlc.bin
-* radeon/R700_rlc.bin
-* radeon/REDWOOD_me.bin
-* radeon/REDWOOD_pfp.bin
-* radeon/REDWOOD_rlc.bin
-
-Copyright (C) 2009, 2010  Advanced Micro Devices, Inc. All rights reserved.
-
-REDISTRIBUTION: Permission is hereby granted, free of any license fees,
-to any person obtaining a copy of this microcode (the "Software"), to
-install, reproduce, copy and distribute copies, in binary form only, of
-the Software and to permit persons to whom the Software is provided to
-do the same, provided that the following conditions are met:
-
-No reverse engineering, decompilation, or disassembly of this Software
-is permitted.
-
-Redistributions must reproduce the above copyright notice, this
-permission notice, and the following disclaimers and notices in the
-Software documentation and/or other materials provided with the
-Software.
-
-DISCLAIMER: THE USE OF THE SOFTWARE IS AT YOUR SOLE RISK.  THE SOFTWARE
-IS PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND AND COPYRIGHT
-HOLDER AND ITS LICENSORS EXPRESSLY DISCLAIM ALL WARRANTIES, EXPRESS AND
-IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
-COPYRIGHT HOLDER AND ITS LICENSORS DO NOT WARRANT THAT THE SOFTWARE WILL
-MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF THE SOFTWARE WILL BE
-UNINTERRUPTED OR ERROR-FREE.  THE ENTIRE RISK ASSOCIATED WITH THE USE OF
-THE SOFTWARE IS ASSUMED BY YOU.  FURTHERMORE, COPYRIGHT HOLDER AND ITS
-LICENSORS DO NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE
-OR THE RESULTS OF THE USE OF THE SOFTWARE IN TERMS OF ITS CORRECTNESS,
-ACCURACY, RELIABILITY, CURRENTNESS, OR OTHERWISE.
-
-DISCLAIMER: UNDER NO CIRCUMSTANCES INCLUDING NEGLIGENCE, SHALL COPYRIGHT
-HOLDER AND ITS LICENSORS OR ITS DIRECTORS, OFFICERS, EMPLOYEES OR AGENTS
-("AUTHORIZED REPRESENTATIVES") BE LIABLE FOR ANY INCIDENTAL, INDIRECT,
-SPECIAL OR CONSEQUENTIAL DAMAGES (INCLUDING DAMAGES FOR LOSS OF BUSINESS
-PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, AND THE
-LIKE) ARISING OUT OF THE USE, MISUSE OR INABILITY TO USE THE SOFTWARE,
-BREACH OR DEFAULT, INCLUDING THOSE ARISING FROM INFRINGEMENT OR ALLEGED
-INFRINGEMENT OF ANY PATENT, TRADEMARK, COPYRIGHT OR OTHER INTELLECTUAL
-PROPERTY RIGHT EVEN IF COPYRIGHT HOLDER AND ITS AUTHORIZED
-REPRESENTATIVES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  IN
-NO EVENT SHALL COPYRIGHT HOLDER OR ITS AUTHORIZED REPRESENTATIVES TOTAL
-LIABILITY FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION (WHETHER IN
-CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE) EXCEED THE AMOUNT OF
-US$10.
-
-Notice:  The Software is subject to United States export laws and
-regulations.  You agree to comply with all domestic and international
-export laws and regulations that apply to the Software, including but
-not limited to the Export Administration Regulations administered by the
-U.S. Department of Commerce and International Traffic in Arm Regulations
-administered by the U.S. Department of State.  These laws include
-restrictions on destinations, end users and end use.
-
-* tehuti/bdx.bin
-
-Copyright (C) 2007 Tehuti Networks Ltd.
-
-Permission is hereby granted for the distribution of this firmware data
-in hexadecimal or equivalent format, provided this copyright notice is
-accompanying it.
-
-* tigon/tg3.bin
-* tigon/tg3_tso.bin
-* tigon/tg3_tso5.bin
-
-Copyright (C) 2000-2003 Broadcom Corporation.
-
-Permission is hereby granted for the distribution of this firmware
-data in hexadecimal or equivalent format, provided this copyright
-notice is accompanying it.
+Files: linux-nonfree/tigon/tg3*.bin
+Copyright: 2000-2003, Broadcom Corporation.
+License: Binary redistribution
+ Permission is hereby granted for the distribution of this firmware
+ data in hexadecimal or equivalent format, provided this copyright
+ notice is accompanying it.
