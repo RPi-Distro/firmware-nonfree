@@ -1,10 +1,10 @@
-firmware-nonfree (0.26) UNRELEASED; urgency=low
+firmware-nonfree (0.26) unstable; urgency=low
 
   * Add Multi-Tech USB cellular modem firmware (Closes: #588097)
   * Change file listing in linux-nonfree/LICENSE to follow draft DEP-5
     for machine-readable copyright files
 
- -- Ben Hutchings <ben@decadent.org.uk>  Sun, 27 Jun 2010 00:08:19 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Tue, 06 Jul 2010 00:36:32 +0100
 
 firmware-nonfree (0.25) unstable; urgency=low
 
