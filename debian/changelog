@@ -1,6 +1,6 @@
 firmware-nonfree (0.26) UNRELEASED; urgency=low
 
-  * Add Multi-Tech USB cellular modem firmware
+  * Add Multi-Tech USB cellular modem firmware (Closes: #588097)
   * Change file listing in linux-nonfree/LICENSE to follow draft DEP-5
     for machine-readable copyright files
 
