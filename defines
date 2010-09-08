@@ -8,6 +8,7 @@ packages:
  ivtv
  iwlwifi
  linux-nonfree
+ netxen
  qlogic
  ralink
  realtek
