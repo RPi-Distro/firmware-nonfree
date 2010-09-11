@@ -213,9 +213,9 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             except ValueError:
                 pass
             for f in files:
-                f1  = f.rsplit('-', 1)
                 if root != package:
                     f = root[len(package) + 1 : ] + '/' + f
+                f1 = f.rsplit('-', 1)
                 if f in files_orig:
                     files_real[f] = f, f, None
                 elif len(f1) > 1:
