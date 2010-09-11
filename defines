@@ -3,6 +3,7 @@ packages:
  atheros
  bnx2
  bnx2x
+ brcm80211
  intelwimax
  ipw2x00
  ivtv

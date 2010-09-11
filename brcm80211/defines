@@ -1,0 +1,16 @@
+[base]
+desc: Broadcom 802.11 wireless cards
+files:
+ brcm/bcm43xx-0.fw
+ brcm/bcm43xx_hdr-0.fw
+longdesc: wireless network cards with the Broadcom BCM4314, BCM43224 or
+ BCM43225 chip, supported by the brcm80211 driver
+uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+
+[brcm/bcm43xx-0.fw_base]
+desc: Broadcom 802.11 firmware
+version: 610.809.0
+
+[brcm/bcm43xx_hdr-0.fw_base]
+desc: Broadcom 802.11 firmware header
+version: 610.809.0

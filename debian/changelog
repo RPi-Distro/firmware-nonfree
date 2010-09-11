@@ -5,6 +5,7 @@ firmware-nonfree (0.27) UNRELEASED; urgency=low
   * Refer to index pages for ipw2100 and ipw2200 firmware
   * Add bug presubj message directing users to report driver bugs against
     the appropriate package
+  * Add firmware-brcm80211 binary package for use with the brcm80211 driver
 
   [ dann frazier ]
   * Add firmware-netxen binary package
