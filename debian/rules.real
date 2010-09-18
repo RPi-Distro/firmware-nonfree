@@ -24,7 +24,6 @@ install:
 	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	done
-	ln -sf bug-presubj debian/$(PACKAGE_NAME).bug-presubj
 	dh_bugfiles
 	dh_installchangelogs
 	dh_installdocs

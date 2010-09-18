@@ -204,6 +204,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             vars['license'] = file("%s/LICENSE" % package).read()
             file("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
+        os.symlink('bug-presubj', 'debian/firmware-%s.bug-presubj' % package)
+
         files_orig = config_entry['files']
         files_real = {}
 
