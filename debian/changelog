@@ -6,6 +6,7 @@ firmware-nonfree (0.27) UNRELEASED; urgency=low
   * Add bug presubj message directing users to report driver bugs against
     the appropriate package
   * Add firmware-brcm80211 binary package for use with the brcm80211 driver
+    (Closes: #597034)
 
   [ dann frazier ]
   * Add firmware-netxen binary package
