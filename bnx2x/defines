@@ -25,3 +25,11 @@ version: 5.0.21.0
 [bnx2x-e1h-5.0.21.0.fw_base]
 desc: Broadcom NetXtreme II 10Gb 57711
 version: 5.0.21.0
+
+[bnx2x-e1-5.2.13.0.fw_base]
+desc: Broadcom NetXtreme II 10Gb 57710
+version: 5.2.13.0
+
+[bnx2x-e1h-5.2.13.0.fw_base]
+desc: Broadcom NetXtreme II 10Gb 57711
+version: 5.2.13.0
