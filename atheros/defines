@@ -1,10 +1,26 @@
 [base]
-desc: Atheros Bluetooth cards
+desc: Atheros wireless cards
 files:
+ ar7010.fw
+ ar7010_1_1.fw
+ ar9170.fw
+ ar9271.fw
  ath3k-1.fw
-longdesc: Bluetooth cards with the Atheros AR3011 chip, supported by the
- ath3k drivers
+longdesc: USB wireless network and Bluetooth cards supported by the ar9170,
+ ath3k or ath9k_htc drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+
+[ar7010.fw_base]
+desc: Atheros AR7010/AR7015/AR9018 (type 1) firmware
+
+[ar7010_1_1.fw_base]
+desc: Atheros AR7010/AR7015/AR9018 (type 2) firmware
+
+[ar9170.fw_base]
+desc: Atheros AR9170 firmware
+
+[ar9271.fw_base]
+desc: Atheros AR9271 firmware
 
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
