@@ -7,6 +7,9 @@ firmware-nonfree (0.28) UNRELEASED; urgency=low
   * Add firmware for devices supported by ar9170 and ath9k_htc to
     firmware-atheros (Closes: #558740)
 
+  [ dann frazier ]
+  * Update netxen firmware to 4.0.534 (Closes: #606289)
+
  -- Ben Hutchings <ben@decadent.org.uk>  Thu, 30 Sep 2010 01:32:05 +0100
 
 firmware-nonfree (0.27) unstable; urgency=low
