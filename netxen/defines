@@ -4,7 +4,7 @@ files:
  phanfw.bin
 
 longdesc: QLogic (formerly NetXen) Intelligent network adapters supported by
- the netxen_nic driver
+ the netxen_nic and qlcnic drivers
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
 
