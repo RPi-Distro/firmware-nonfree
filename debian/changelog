@@ -10,6 +10,8 @@ firmware-nonfree (0.28) UNRELEASED; urgency=low
     (Closes: #564628)
   * Add Realtek RTL8192SU/RTL8712U firmware for use with r8712u to
     firmware-realtek (Closes: #602450)
+  * Update Atheros AR3011 firmware (ath3k-1.fw):
+    - Fix EEPROM radio table issue and change PID to 3005
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.534 (Closes: #606289)
