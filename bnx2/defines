@@ -14,10 +14,11 @@ files:
  bnx2/bnx2-mips-09-5.0.0.j3.fw
  bnx2/bnx2-rv2p-09-5.0.0.j3.fw
  bnx2/bnx2-rv2p-09ax-5.0.0.j3.fw
- bnx2/bnx2-mips-06-5.0.0.j6.fw
- bnx2/bnx2-rv2p-09-5.0.0.j10.fw
- bnx2/bnx2-rv2p-09ax-5.0.0.j10.fw
- bnx2/bnx2-mips-09-5.0.0.j15.fw
+ bnx2/bnx2-mips-06-6.0.15.fw
+ bnx2/bnx2-rv2p-06-6.0.15.fw
+ bnx2/bnx2-mips-09-6.0.17.fw
+ bnx2/bnx2-rv2p-09-6.0.17.fw
+ bnx2/bnx2-rv2p-09ax-6.0.17.fw
 
 longdesc: Broadcom NetXtremeII network adapters supported by the bnx2 driver
 support: initramfs-tools
@@ -75,18 +76,22 @@ version: Linux 2.6.32
 desc: Broadcom NetXtremeII 5709 A0/A1 firmware (rv2p)
 version: Linux 2.6.32
 
-[bnx2/bnx2-mips-06-5.0.0.j6.fw_base]
+[bnx2/bnx2-mips-06-6.0.15.fw_base]
 desc: Broadcom NetXtremeII 5706/5708 firmware (mips)
-version: Linux 2.6.34
+version: Linux 2.6.37
 
-[bnx2/bnx2-rv2p-09-5.0.0.j10.fw_base]
-desc: Broadcom NetXtremeII 5709/5716 firmware (rv2p)
-version: Linux 2.6.34
+[bnx2/bnx2-rv2p-06-6.0.16.fw_base]
+desc: Broadcom NetXtremeII 5706/5708 firmware (mips)
+version: Linux 2.6.37
 
-[bnx2/bnx2-rv2p-09ax-5.0.0.j10.fw_base]
-desc: Broadcom NetXtremeII 5709 A0/A1 firmware (rv2p)
-version: Linux 2.6.34
-
-[bnx2/bnx2-mips-09-5.0.0.j15.fw_base]
+[bnx2/bnx2-mips-09-6.0.17.fw_base]
 desc: Broadcom NetXtremeII 5709/5716 firmware (mips)
-version: Linux 2.6.35
+version: Linux 2.6.37
+
+[bnx2/bnx2-rv2p-09-6.0.17.fw_base]
+desc: Broadcom NetXtremeII 5709/5716 firmware (rv2p)
+version: Linux 2.6.37
+
+[bnx2/bnx2-rv2p-09ax-6.0.17.fw_base]
+desc: Broadcom NetXtremeII 5709 A0/A1 firmware (rv2p)
+version: Linux 2.6.37
