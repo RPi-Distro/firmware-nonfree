@@ -8,6 +8,8 @@ firmware-nonfree (0.28) UNRELEASED; urgency=low
     firmware-atheros (Closes: #558740)
   * Add Realtek RTL8111D/RTL8168D firmware to firmware-realtek
     (Closes: #564628)
+  * Add Realtek RTL8192SU/RTL8712U firmware for use with r8712u to
+    firmware-realtek (Closes: #602450)
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.534 (Closes: #606289)
