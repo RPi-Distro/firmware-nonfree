@@ -2,7 +2,7 @@ firmware-nonfree (0.28) UNRELEASED; urgency=low
 
   [ Ben Hutchings ]
   * Update bnx2 firmware from Linux 2.6.35 (Closes: #598470)
-  * Update bnx2x firmware from Linux 2.6.35
+  * Update bnx2x firmware from Linux 2.6.37
   * Update intelwimax firmware from Linux 2.6.35
   * Add firmware for devices supported by ar9170 and ath9k_htc to
     firmware-atheros (Closes: #558740)
