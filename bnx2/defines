@@ -3,12 +3,6 @@ desc: Broadcom NetXtremeII
 files:
  bnx2-06-4.0.5.fw
  bnx2-09-4.0.5.fw
- bnx2-06-4.6.16.fw
- bnx2-09-4.6.15.fw
- bnx2/bnx2-mips-06-4.6.16.fw
- bnx2/bnx2-rv2p-06-4.6.16.fw
- bnx2/bnx2-mips-09-4.6.17.fw
- bnx2/bnx2-rv2p-09-4.6.15.fw
  bnx2/bnx2-mips-06-5.0.0.j3.fw
  bnx2/bnx2-rv2p-06-5.0.0.j3.fw
  bnx2/bnx2-mips-09-5.0.0.j3.fw
@@ -31,30 +25,6 @@ version: Linux 2.6.25
 [bnx2-09-4.0.5.fw_base]
 desc: Broadcom NetXtremeII 5709 firmware
 version: Linux 2.6.25
-
-[bnx2-06-4.6.16.fw_base]
-desc: Broadcom NetXtremeII 5706/5708 firmware
-version: Linux 2.6.29
-
-[bnx2-09-4.6.15.fw_base]
-desc: Broadcom NetXtremeII 5709/5716 firmware
-version: Linux 2.6.29
-
-[bnx2/bnx2-mips-06-4.6.16.fw_base]
-desc: Broadcom NetXtremeII 5706/5708 firmware (mips)
-version: Linux 2.6.30
-
-[bnx2/bnx2-rv2p-06-4.6.16.fw_base]
-desc: Broadcom NetXtremeII 5706/5708 firmware (rv2p)
-version: Linux 2.6.30
-
-[bnx2/bnx2-mips-09-4.6.17.fw_base]
-desc: Broadcom NetXtremeII 5709/5716 firmware (mips)
-version: Linux 2.6.30
-
-[bnx2/bnx2-rv2p-09-4.6.15.fw_base]
-desc: Broadcom NetXtremeII 5709/5716 firmware (rv2p)
-version: Linux 2.6.30
 
 [bnx2/bnx2-mips-06-5.0.0.j3.fw_base]
 desc: Broadcom NetXtremeII 5706/5708 firmware (mips)
