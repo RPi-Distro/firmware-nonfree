@@ -1,4 +1,4 @@
-firmware-nonfree (0.28) UNRELEASED; urgency=low
+firmware-nonfree (0.28) unstable; urgency=low
 
   [ Ben Hutchings ]
   * Add new versions of bnx2 firmware from Linux 2.6.37 (Closes: #598470)
@@ -19,7 +19,7 @@ firmware-nonfree (0.28) UNRELEASED; urgency=low
   [ dann frazier ]
   * Update netxen firmware to 4.0.534 (Closes: #606289)
 
- -- Ben Hutchings <ben@decadent.org.uk>  Thu, 30 Sep 2010 01:32:05 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Tue, 04 Jan 2011 02:40:16 +0000
 
 firmware-nonfree (0.27) unstable; urgency=low
 
