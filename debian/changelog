@@ -13,6 +13,8 @@ firmware-nonfree (0.28) UNRELEASED; urgency=low
     firmware-realtek (Closes: #602450)
   * Update Atheros AR3011 firmware (ath3k-1.fw):
     - Fix EEPROM radio table issue and change PID to 3005
+  * Add Intel Wireless 6005 and 6030 firmware
+  * Add new version of Intel Wireless 6250 firmware
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.534 (Closes: #606289)
