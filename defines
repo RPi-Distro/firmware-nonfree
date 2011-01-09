@@ -8,6 +8,7 @@ packages:
  ipw2x00
  ivtv
  iwlwifi
+ libertas
  linux-nonfree
  netxen
  qlogic
