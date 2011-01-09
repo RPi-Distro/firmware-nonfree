@@ -212,6 +212,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         files_orig = config_entry['files']
         files_real = {}
+        links = {}
 
         for root, dirs, files in os.walk(package):
             try:
@@ -219,8 +220,13 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             except ValueError:
                 pass
             for f in files:
+                cur_path = root + '/' + f
                 if root != package:
                     f = root[len(package) + 1 : ] + '/' + f
+                if os.path.islink(cur_path):
+                    if f in files_orig:
+                        links[f] = os.readlink(cur_path)
+                    continue
                 f1 = f.rsplit('-', 1)
                 if f in files_orig:
                     files_real[f] = f, f, None
@@ -234,9 +240,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         makeflags['FILES'] = ' '.join(["%s:%s" % (i[1], i[0]) for i in files_real.itervalues()])
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
 
+        makeflags['LINKS'] = ' '.join(["%s:%s" % (link, target)
+                                       for link, target in links.iteritems()])
+
         files_desc = ["Contents:"]
 
         for f in config_entry['files']:
+            if f in links:
+                continue
             f, f_real, version = files_real[f]
             c = self.config.get(('base', package, f), {})
             desc = c.get('desc')

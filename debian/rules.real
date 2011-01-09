@@ -24,6 +24,12 @@ install:
 	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	done
+	@for i in $(LINKS); do \
+	  link=debian/$(PACKAGE_NAME)/lib/firmware/"$${i%:*}"; \
+	  target="$${i#*:}"; \
+	  echo ln -s "$$target" "$$link"; \
+	  ln -s "$$target" "$$link"; \
+	done
 	dh_bugfiles
 	dh_installchangelogs
 	dh_installdocs
