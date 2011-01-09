@@ -22,6 +22,8 @@ files:
  libertas/usb8682.bin
  libertas_cs.fw
  libertas_cs_helper.fw
+ mwl8k/fmimage_8687.fw
+ mwl8k/helper_8687.fw
  sd8385.bin
  sd8385_helper.bin
  sd8686.bin
@@ -30,9 +32,9 @@ files:
  sd8688_helper.bin
  usb8388.bin
 longdesc: wireless network cards with the Marvell Libertas CF8385,
- GSPI8686, GSPI8688, SD8385, SD8686, SD8688, USB8388 and USB8682 chips,
- supported by the libertas_cs, libertas_sdio, libertas_spi and usb8xxx
- drivers
+ GSPI8686, GSPI8688, MWL8687, SD8385, SD8686, SD8688, USB8388 and USB8682
+ chips, supported by the libertas_cs, libertas_sdio, libertas_spi, mwl8k
+ and usb8xxx drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
 
 [libertas/cf8385.bin_base]
@@ -93,3 +95,9 @@ version: 9.x
 
 [libertas/usb8682.bin_base]
 desc: USB8682 firmware
+
+[mwl8k/fmimage_8687.fw]
+desc: MWL8687 main code
+
+[mwl8k/helper_8687.fw]
+desc: MWL8687 boot code
