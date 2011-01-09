@@ -22,7 +22,7 @@ install:
 	  s=$(PACKAGE)/"$${i%:*}"; \
 	  d=/lib/firmware/"$${i#*:}"; \
 	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
-	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d" || exit; \
+	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	done
 	dh_bugfiles
 	dh_installchangelogs
