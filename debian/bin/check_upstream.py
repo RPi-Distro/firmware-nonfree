@@ -120,7 +120,7 @@ if __name__ == '__main__':
         i += 1
     if len(sys.argv) < i + 2:
         print >>sys.stderr, '''\
-Usage: ./update.py [--main] <linux-firmware-dir> <dest-dir>...
+Usage: %s [--main] <linux-firmware-dir> <dest-dir>...
 
 Report changes or additions in linux-firmware.git that may be suitable
 for inclusion in firmware-nonfree or linux-2.6.
@@ -130,6 +130,6 @@ For firmware-nonfree, specify the per-package subdirectories as
 
 For linux-2.6, use the '--main' option and specify the
 debian/build/build-firmware/firmware directory as <dest-dir>.
-'''
+''' % sys.argv[0]
         sys.exit(2)
     main(for_main, sys.argv[i], sys.argv[i + 1 :])
