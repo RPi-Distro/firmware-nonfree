@@ -1,6 +1,9 @@
 firmware-nonfree (0.29) UNRELEASED; urgency=low
 
-  * 
+  [ Ben Hutchings ]
+  * Update Atheros AR9271 firmware (ar9271.fw):
+    - Enable bluetooth coexistence
+    - Fix disconnection issue with WEP and TKIP noticed in some APs
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 09 Jan 2011 02:34:14 +0000
 
