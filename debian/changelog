@@ -1,6 +1,5 @@
-firmware-nonfree (0.29) UNRELEASED; urgency=low
+firmware-nonfree (0.29) unstable; urgency=low
 
-  [ Ben Hutchings ]
   * Update Atheros AR9271 firmware (ar9271.fw):
     - Enable bluetooth coexistence
     - Fix disconnection issue with WEP and TKIP noticed in some APs
@@ -12,7 +11,7 @@ firmware-nonfree (0.29) UNRELEASED; urgency=low
   * Add AMD Fusion C-series GPU firmware for use with Linux 2.6.38
   * Add VIA VT6656 firmware for use with vt6656 driver
 
- -- Ben Hutchings <ben@decadent.org.uk>  Sun, 09 Jan 2011 02:34:14 +0000
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 06 Mar 2011 19:31:33 +0000
 
 firmware-nonfree (0.28) unstable; urgency=low
 
