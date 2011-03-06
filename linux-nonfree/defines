@@ -36,6 +36,17 @@ files:
  mts_edge.fw
  mts_gsm.fw
  r128/r128_cce.bin
+ radeon/BARTS_mc.bin
+ radeon/BARTS_me.bin
+ radeon/BARTS_pfp.bin
+ radeon/BTC_rlc.bin
+ radeon/CAICOS_mc.bin
+ radeon/CAICOS_me.bin
+ radeon/CAICOS_pfp.bin
+ radeon/CAYMAN_mc.bin
+ radeon/CAYMAN_me.bin
+ radeon/CAYMAN_pfp.bin
+ radeon/CAYMAN_rlc.bin
  radeon/CEDAR_me.bin
  radeon/CEDAR_pfp.bin
  radeon/CEDAR_rlc.bin
@@ -45,6 +56,8 @@ files:
  radeon/JUNIPER_me.bin
  radeon/JUNIPER_pfp.bin
  radeon/JUNIPER_rlc.bin
+ radeon/PALM_me.bin
+ radeon/PALM_pfp.bin
  radeon/R100_cp.bin
  radeon/R200_cp.bin
  radeon/R300_cp.bin
@@ -77,6 +90,10 @@ files:
  radeon/RV730_pfp.bin
  radeon/RV770_me.bin
  radeon/RV770_pfp.bin
+ radeon/SUMO_rlc.bin
+ radeon/TURKS_mc.bin
+ radeon/TURKS_me.bin
+ radeon/TURKS_pfp.bin
  tehuti/bdx.bin
  tigon/tg3_tso.bin
  tigon/tg3.bin
@@ -169,7 +186,40 @@ desc: Multi-Tech USB GPRS modem firmware
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
- 
+
+[radeon/BARTS_mc.bin_base]
+desc: Radeon HD 6800-family MC microcode
+
+[radeon/BARTS_me.bin_base]
+desc: Radeon HD 6800-family ME microcode
+
+[radeon/BARTS_pfp.bin_base]
+desc: Radeon HD 6800-family PFP microcode
+
+[radeon/BTC_rlc.bin_base]
+desc: Radeon HD 6300/6500/6800-family RLC microcode]
+
+[radeon/CAICOS_mc.bin_base]
+desc: Radeon HD 6300-family MC microcode]
+
+[radeon/CAICOS_me.bin_base]
+desc: Radeon HD 6300-family ME microcode]
+
+[radeon/CAICOS_pfp.bin_base]
+desc: Radeon HD 6300-family PFP microcode]
+
+[radeon/CAYMAN_mc.bin_base]
+desc: Radeon HD 6900-family MC microcode]
+
+[radeon/CAYMAN_me.bin_base]
+desc: Radeon HD 6900-family ME microcode]
+
+[radeon/CAYMAN_pfp.bin_base]
+desc: Radeon HD 6900-family PFP microcode]
+
+[radeon/CAYMAN_rlc.bin_base]
+desc: Radeon HD 6900-family RLC microcode]
+
 [radeon/CEDAR_me.bin_base]
 desc: Radeon HD 5400-family ME microcode
 
@@ -196,6 +246,12 @@ desc: Radeon HD 5700-family PFP microcode
 
 [radeon/JUNIPER_rlc.bin_base]
 desc: Radeon HD 5700-family RLC microcode
+
+[radeon/PALM_me.bin_base]
+desc: AMD Fusion C-series ME microcode
+
+[radeon/PALM_pfp.bin_base]
+desc: AMD Fusion C-series PFP microcode
 
 [radeon/R100_cp.bin_base]
 desc: Radeon R100-family CP microcode
@@ -292,6 +348,18 @@ desc: Radeon RV770 ME microcode
 
 [radeon/RV770_pfp.bin_base]
 desc: Radeon RV770 PFP microcode
+
+[radeon/SUMO_rlc.bin_base]
+desc: AMD Fusion C-series RLC microcode]
+
+[radeon/TURKS_mc.bin_base]
+desc: Radeon HD 6500-family MC microcode]
+
+[radeon/TURKS_me.bin_base]
+desc: Radeon HD 6500-family ME microcode]
+
+[radeon/TURKS_pfp.bin_base]
+desc: Radeon HD 6500-family PFP microcode]
 
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
