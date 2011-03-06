@@ -198,28 +198,28 @@ desc: Radeon HD 6800-family ME microcode
 desc: Radeon HD 6800-family PFP microcode
 
 [radeon/BTC_rlc.bin_base]
-desc: Radeon HD 6300/6500/6800-family RLC microcode]
+desc: Radeon HD 6300/6500/6800-family RLC microcode
 
 [radeon/CAICOS_mc.bin_base]
-desc: Radeon HD 6300-family MC microcode]
+desc: Radeon HD 6300-family MC microcode
 
 [radeon/CAICOS_me.bin_base]
-desc: Radeon HD 6300-family ME microcode]
+desc: Radeon HD 6300-family ME microcode
 
 [radeon/CAICOS_pfp.bin_base]
-desc: Radeon HD 6300-family PFP microcode]
+desc: Radeon HD 6300-family PFP microcode
 
 [radeon/CAYMAN_mc.bin_base]
-desc: Radeon HD 6900-family MC microcode]
+desc: Radeon HD 6900-family MC microcode
 
 [radeon/CAYMAN_me.bin_base]
-desc: Radeon HD 6900-family ME microcode]
+desc: Radeon HD 6900-family ME microcode
 
 [radeon/CAYMAN_pfp.bin_base]
-desc: Radeon HD 6900-family PFP microcode]
+desc: Radeon HD 6900-family PFP microcode
 
 [radeon/CAYMAN_rlc.bin_base]
-desc: Radeon HD 6900-family RLC microcode]
+desc: Radeon HD 6900-family RLC microcode
 
 [radeon/CEDAR_me.bin_base]
 desc: Radeon HD 5400-family ME microcode
@@ -351,16 +351,16 @@ desc: Radeon RV770 ME microcode
 desc: Radeon RV770 PFP microcode
 
 [radeon/SUMO_rlc.bin_base]
-desc: AMD Fusion C-series RLC microcode]
+desc: AMD Fusion C-series RLC microcode
 
 [radeon/TURKS_mc.bin_base]
-desc: Radeon HD 6500-family MC microcode]
+desc: Radeon HD 6500-family MC microcode
 
 [radeon/TURKS_me.bin_base]
-desc: Radeon HD 6500-family ME microcode]
+desc: Radeon HD 6500-family ME microcode
 
 [radeon/TURKS_pfp.bin_base]
-desc: Radeon HD 6500-family PFP microcode]
+desc: Radeon HD 6500-family PFP microcode
 
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
