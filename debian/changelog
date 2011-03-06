@@ -10,6 +10,7 @@ firmware-nonfree (0.29) UNRELEASED; urgency=low
   * Add Radeon HD 'Northern Islands' 6300/6500/6800/6900-family firmware
     for use with Linux 2.6.38
   * Add AMD Fusion C-series GPU firmware for use with Linux 2.6.38
+  * Add VIA VT6656 firmware for use with vt6656 driver
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 09 Jan 2011 02:34:14 +0000
 

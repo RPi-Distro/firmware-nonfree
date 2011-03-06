@@ -98,6 +98,7 @@ files:
  tigon/tg3_tso.bin
  tigon/tg3.bin
  tigon/tg3_tso5.bin
+ vntwusb.fw
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
 
@@ -372,3 +373,6 @@ desc: Broadcom BCM5701A0 firmware
 
 [tigon/tg3_tso5.bin_base]
 desc: Broadcom BCM5705 TSO firmware
+
+[vntwusb.fw_base]
+desc: VIA VT6656 firmware
