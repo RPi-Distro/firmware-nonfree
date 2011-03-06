@@ -1,8 +1,6 @@
 firmware-nonfree (0.29) UNRELEASED; urgency=low
 
-  [ Ben Hutchings ]
-  * Add firmware-libertas binary package for use with the libertas_cs,
-    libertas_sdio, libertas_spi, mwl8k and usb8xxx drivers
+  * 
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 09 Jan 2011 02:34:14 +0000
 
