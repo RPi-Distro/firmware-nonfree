@@ -8,7 +8,7 @@ sys.path.append('/usr/share/linux-support-%s/lib/python' %
                 rules_defs['KERNELVERSION'])
 from debian_linux.firmware import FirmwareWhence
 
-def main(for_main, source_dir, dest_dirs):
+def main(source_dir, dest_dirs):
     for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
         if re.search(r'^BSD\b'
                      r'|^GPLv2 or OpenIB\.org BSD\b'
@@ -22,22 +22,22 @@ def main(for_main, source_dir, dest_dirs):
                      r'\s+restriction\b'
                      r'|\bredistributable\s+in\s+binary\s+form\b',
                      section.licence):
-            # Suitable for main or non-free depending on source availability
+            # Suitable for main if source is available; non-free otherwise
+            maybe_free = True
             pass
         elif re.match(r'^(?:D|Red)istributable\b', section.licence):
             # Only suitable for non-free
-            if for_main:
-                continue
+            pass
         elif re.match(r'^GPL(?:v2|\+)?\b', section.licence):
-            # Only suitable for main; source must be available
-            if not for_main:
-                continue
+            # Suitable for main if source is available; not distributable
+            # otherwise
+            continue
         else:
             # Probably not distributable
             continue
         for file_info in section.files.values():
-            if (file_info.source or file_info.binary.endswith('.cis') or
-                not for_main):
+            if not (maybe_free and
+                    (file_info.source or file_info.binary.endswith('.cis'))):
                 update_file(source_dir, dest_dirs, file_info.binary)
 
 def update_file(source_dir, dest_dirs, filename):
@@ -54,23 +54,14 @@ def update_file(source_dir, dest_dirs, filename):
     print '%s: could be added' % filename
 
 if __name__ == '__main__':
-    for_main = False
-    i = 1
-    if len(sys.argv) > i and sys.argv[i] == '--main':
-        for_main = True
-        i += 1
-    if len(sys.argv) < i + 2:
+    if len(sys.argv) < 3:
         print >>sys.stderr, '''\
-Usage: %s [--main] <linux-firmware-dir> <dest-dir>...
+Usage: %s <linux-firmware-dir> <dest-dir>...
 
 Report changes or additions in linux-firmware.git that may be suitable
-for inclusion in firmware-nonfree or linux-2.6.
+for inclusion in firmware-nonfree.
 
-For firmware-nonfree, specify the per-package subdirectories as
-<dest-dir>...
-
-For linux-2.6, use the '--main' option and specify the
-debian/build/build-firmware/firmware directory as <dest-dir>.
+Specify the per-package subdirectories as <dest-dir>...
 ''' % sys.argv[0]
         sys.exit(2)
-    main(for_main, sys.argv[i], sys.argv[i + 1 :])
+    main(sys.argv[1], sys.argv[2:])
