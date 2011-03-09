@@ -32,6 +32,7 @@ def main(source_dir):
             pass
         elif re.match(r'^(?:D|Red)istributable\b', section.licence):
             # Only suitable for non-free
+            maybe_free = False
             pass
         elif re.match(r'^GPL(?:v2|\+)?\b', section.licence):
             # Suitable for main if source is available; not distributable
