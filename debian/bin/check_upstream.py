@@ -1,74 +1,15 @@
 #!/usr/bin/python
 
 import errno, filecmp, glob, os.path, re, sys
+rules_defs = dict((match.group(1), match.group(2))
+                  for line in file('debian/rules.defs')
+                  for match in [re.match(r'(\w+)\s*:=\s*(.*)\n', line)])
+sys.path.append('/usr/share/linux-support-%s/lib/python' %
+                rules_defs['KERNELVERSION'])
+from debian_linux.firmware import FirmwareWhence
 
 def main(for_main, source_dir, dest_dirs):
-    sections = []
-    section = None
-    keyword = None
-    filename = None
-    licence = None
-
-    for line in open(os.path.join(source_dir, 'WHENCE')):
-        if line.startswith('----------'):
-            # Finish old section
-            if licence:
-                section['licence'] = licence
-                licence = None
-
-            # Start new section
-            section = {
-                'driver': None,
-                'file': {},
-                'licence': None
-                }
-            sections.append(section)
-            continue
-
-        if not section:
-            # Skip header
-            continue
-
-        if line == '\n':
-            # End of field; end of file fields
-            keyword = None
-            filename = None
-            continue
-
-        match = re.match(
-            r'(Driver|File|Info|Licen[cs]e|Source|Version'
-            r'|Original licen[cs]e info(?:rmation)?):\s*(.*)\n',
-            line)
-        if match:
-            keyword, value = match.group(1, 2)
-            if keyword == 'Driver':
-                section['driver'] = value.split(' ')[0].lower()
-            elif keyword == 'File':
-                match = re.match(r'(\S+)\s+--\s+(.*)', value)
-                if match:
-                    filename = match.group(1)
-                    section['file'][filename] = {'info': match.group(2)}
-                else:
-                    for filename in value.strip().split():
-                        section['file'][filename] = {}
-            elif keyword in ['Info', 'Version']:
-                section['file'][filename]['version'] = value
-            elif keyword == 'Source':
-                section['file'][filename]['source'] = value
-            else:
-                licence = value
-        elif licence is not None:
-            licence = (licence + '\n' +
-                       re.sub(r'^(?:[/ ]\*| \*/)?\s*(.*?)\s*$', r'\1', line))
-
-    # Finish last section; delete if empty
-    if not section['driver']:
-        sections.pop()
-    elif licence:
-        section['licence'] = licence
-
-    for section in sections:
-        licence = section['licence']
+    for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
         if re.search(r'^BSD\b'
                      r'|^GPLv2 or OpenIB\.org BSD\b'
                      r'|\bPermission\s+is\s+hereby\s+granted\s+for\s+the\s+'
@@ -80,24 +21,24 @@ def main(for_main, source_dir, dest_dirs):
                      r'\s+deal\s+in\s+the\s+Software\s+without'
                      r'\s+restriction\b'
                      r'|\bredistributable\s+in\s+binary\s+form\b',
-                     licence):
+                     section.licence):
             # Suitable for main or non-free depending on source availability
             pass
-        elif re.match(r'^(?:D|Red)istributable\b', licence):
+        elif re.match(r'^(?:D|Red)istributable\b', section.licence):
             # Only suitable for non-free
             if for_main:
                 continue
-        elif re.match(r'^GPL(?:v2|\+)?\b', licence):
+        elif re.match(r'^GPL(?:v2|\+)?\b', section.licence):
             # Only suitable for main; source must be available
             if not for_main:
                 continue
         else:
             # Probably not distributable
             continue
-        for filename, file_info in section['file'].iteritems():
-            if (file_info.get('source') or filename.endswith('.cis') or
+        for file_info in section.files.values():
+            if (file_info.source or file_info.binary.endswith('.cis') or
                 not for_main):
-                update_file(source_dir, dest_dirs, filename)
+                update_file(source_dir, dest_dirs, file_info.binary)
 
 def update_file(source_dir, dest_dirs, filename):
     source_file = os.path.join(source_dir, filename)
