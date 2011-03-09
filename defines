@@ -17,3 +17,21 @@ packages:
 
 [upstream]
 exclude:
+# No Debian release references these; obsoleted by ar9170.fw
+ ar9170-[12].fw
+# These filenames are wrong!
+ brcm/bcm43xx*-0-610-809-0.fw
+# No Debian release references these versions
+ bnx2/bnx2-*-4.6.*.fw
+ bnx2/bnx2-*-5.0.0.j6.fw
+ bnx2/bnx2-*-5.0.0.j9.fw
+ bnx2/bnx2-*-5.0.0.j10.fw
+# No Debian release references these versions
+ bnx2x-e1*-5.2.7.0.fw
+ bnx2x-e1*-5.2.13.0.fw
+# No Debian release references these versions
+ cxgb3/t3fw-7.[01].0.bin
+# Currently (should be) packaged in libertas-firmware
+ libertas/*
+ mwl8k/*
+ mrvl/sd8787_uapsta.bin
