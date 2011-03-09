@@ -7,8 +7,13 @@ rules_defs = dict((match.group(1), match.group(2))
 sys.path.append('/usr/share/linux-support-%s/lib/python' %
                 rules_defs['KERNELVERSION'])
 from debian_linux.firmware import FirmwareWhence
+from debian_linux.config import ConfigParser, SchemaItemList
 
-def main(source_dir, dest_dirs):
+def main(source_dir):
+    config = ConfigParser({'base': {'packages': SchemaItemList()}})
+    config.read('defines')
+    dest_dirs = config['base',]['packages']
+
     for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
         if re.search(r'^BSD\b'
                      r'|^GPLv2 or OpenIB\.org BSD\b'
@@ -54,14 +59,12 @@ def update_file(source_dir, dest_dirs, filename):
     print '%s: could be added' % filename
 
 if __name__ == '__main__':
-    if len(sys.argv) < 3:
+    if len(sys.argv) != 2:
         print >>sys.stderr, '''\
-Usage: %s <linux-firmware-dir> <dest-dir>...
+Usage: %s <linux-firmware-dir>
 
 Report changes or additions in linux-firmware.git that may be suitable
 for inclusion in firmware-nonfree.
-
-Specify the per-package subdirectories as <dest-dir>...
 ''' % sys.argv[0]
         sys.exit(2)
-    main(sys.argv[1], sys.argv[2:])
+    main(sys.argv[1])
