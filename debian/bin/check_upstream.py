@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import errno, filecmp, glob, os.path, re, sys
+import errno, filecmp, fnmatch, glob, os.path, re, sys
 rules_defs = dict((match.group(1), match.group(2))
                   for line in file('debian/rules.defs')
                   for match in [re.match(r'(\w+)\s*:=\s*(.*)\n', line)])
@@ -10,9 +10,13 @@ from debian_linux.firmware import FirmwareWhence
 from debian_linux.config import ConfigParser, SchemaItemList
 
 def main(source_dir):
-    config = ConfigParser({'base': {'packages': SchemaItemList()}})
+    config = ConfigParser({
+            'base': {'packages': SchemaItemList()},
+            'upstream': {'exclude': SchemaItemList()},
+            })
     config.read('defines')
     dest_dirs = config['base',]['packages']
+    exclusions = config['upstream',]['exclude']
 
     for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
         if re.search(r'^BSD\b'
@@ -42,8 +46,10 @@ def main(source_dir):
             # Probably not distributable
             continue
         for file_info in section.files.values():
-            if not (maybe_free and
-                    (file_info.source or file_info.binary.endswith('.cis'))):
+            if (not (maybe_free and
+                     (file_info.source or file_info.binary.endswith('.cis')))
+                and not any(fnmatch.fnmatch(file_info.binary, exclusion)
+                            for exclusion in exclusions)):
                 update_file(source_dir, dest_dirs, file_info.binary)
 
 def update_file(source_dir, dest_dirs, filename):
