@@ -1,3 +1,9 @@
+firmware-nonfree (0.30) UNRELEASED; urgency=low
+
+  * Update to linux-support-2.6.38-rc8.
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Wed, 09 Mar 2011 03:35:05 +0000
+
 firmware-nonfree (0.29) unstable; urgency=low
 
   * Update Atheros AR9271 firmware (ar9271.fw):
