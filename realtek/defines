@@ -11,6 +11,7 @@ files:
 longdesc: Ethernet adapters with the RTL8111D/RTL8168D chips supported
  by the r8169 driver; and wireless network cards with the RTL8192 and
  RTL8712 chips supported by the r8192_pci, r8192s_usb and r8712u drivers
+support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
 
 [RTL8192E/boot.img_base]
