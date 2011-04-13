@@ -2,6 +2,7 @@ firmware-nonfree (0.30) UNRELEASED; urgency=low
 
   * Update to linux-support-2.6.38-2 (Closes: #620171)
   * Make firmware-realtek trigger update-initramfs (Closes: #617645)
+  * Correct list of chips supported by brcm80211, thanks to Jani Reunanen
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 09 Mar 2011 03:35:05 +0000
 
