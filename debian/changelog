@@ -8,6 +8,7 @@ firmware-nonfree (0.30) UNRELEASED; urgency=low
     - Update firmware for RT2860 and other PCI and PCIe chips to version 34
     - Update firmware for RT2870 and other USB chips to version 29
   * Add firmware for HTC devices using Atheros AR7010 and AR9271
+  * Add new version of bnx2 firmware from Linux 2.6.39
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.550
