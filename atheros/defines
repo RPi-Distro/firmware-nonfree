@@ -6,6 +6,8 @@ files:
  ar9170.fw
  ar9271.fw
  ath3k-1.fw
+ htc_7010.fw
+ htc_9271.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar9170,
  ath3k or ath9k_htc drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
@@ -24,3 +26,9 @@ desc: Atheros AR9271 firmware
 
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
+
+[htc_7010.fw_base]
+desc: Atheros AR7010 HTC firmware
+
+[htc_9271.fw_base]
+desc: Atheros AR9271 HTC firmware
