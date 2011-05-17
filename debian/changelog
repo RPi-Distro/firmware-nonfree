@@ -12,6 +12,8 @@ firmware-nonfree (0.30) UNRELEASED; urgency=low
   * Remove bnx2 firmware not referenced by Linux 2.6.32, 2.6.38 or 2.6.39
   * Update brcm80211 firmware to version 610.811
     - Unspecified stability fixes
+  * Add Realtek RTL8192CU/RTL8188CU firmware for use with rtl8192cu,
+    thanks to Geoff Simmons (Closes: #625614)
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.550

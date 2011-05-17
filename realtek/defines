@@ -7,10 +7,12 @@ files:
  RTL8192SU/rtl8192sfw.bin
  rtl_nic/rtl8168d-1.fw
  rtl_nic/rtl8168d-2.fw
+ rtlwifi/rtl8192cufw.bin
  rtlwifi/rtl8712u.bin
 longdesc: Ethernet adapters with the RTL8111D/RTL8168D chips supported
- by the r8169 driver; and wireless network cards with the RTL8192 and
- RTL8712 chips supported by the r8192_pci, r8192s_usb and r8712u drivers
+ by the r8169 driver; and wireless network cards with the RTL8188,
+ RTL8192 and RTL8712 chips supported by the r8192_pci, r8192s_usb,
+ r8712u and rtl8192cu drivers
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
 
@@ -32,6 +34,9 @@ desc: Realtek RTL8111D-1/RTL8168D-1 firmware
 
 [rtl_nic/rtl8168d-2.fw_base]
 desc: Realtek RTL8111D-2/RTL8168D-2 firmware
+
+[rtlwifi/rtl8192cufw.bin_base]
+desc: Realtek RTL8192CU/RTL8188CU firmware
 
 [rtlwifi/rtl8712u.bin_base]
 desc: Realtek RTL8192SU/RTL8712U firmware
