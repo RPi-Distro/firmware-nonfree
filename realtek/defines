@@ -5,8 +5,12 @@ files:
  RTL8192E/data.img
  RTL8192E/main.img
  RTL8192SU/rtl8192sfw.bin
+ rtl_nic/rtl8105e-1.fw
  rtl_nic/rtl8168d-1.fw
  rtl_nic/rtl8168d-2.fw
+ rtl_nic/rtl8168e-1.fw
+ rtl_nic/rtl8168e-2.fw
+ rtl_nic/rtl8168e-3.fw
  rtlwifi/rtl8192cfw.bin
  rtlwifi/rtl8192cufw.bin
  rtlwifi/rtl8712u.bin
@@ -30,11 +34,23 @@ desc: Realtek RTL8192E main code
 desc: Realtek RTL8192SU firmware
 version: 902B
 
+[rtl_nic/rtl8105e-1.fw_base]
+desc: Realtek RTL8105E-1 firmware
+
 [rtl_nic/rtl8168d-1.fw_base]
 desc: Realtek RTL8111D-1/RTL8168D-1 firmware
 
 [rtl_nic/rtl8168d-2.fw_base]
 desc: Realtek RTL8111D-2/RTL8168D-2 firmware
+
+[rtl_nic/rtl8168e-1.fw_base]
+desc: Realtek RTL8168E-1 firmware
+
+[rtl_nic/rtl8168e-2.fw_base]
+desc: Realtek RTL8168E-2 firmware
+
+[rtl_nic/rtl8168e-3.fw_base]
+desc: Realtek RTL8168E-3 firmware
 
 [rtlwifi/rtl8192cfw.bin_base]
 desc: Realtek RTL8192CE/RTL8188CE firmware
