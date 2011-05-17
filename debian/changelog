@@ -10,6 +10,8 @@ firmware-nonfree (0.30) UNRELEASED; urgency=low
   * Add firmware for HTC devices using Atheros AR7010 and AR9271
   * Add new version of bnx2 firmware from Linux 2.6.39
   * Remove bnx2 firmware not referenced by Linux 2.6.32, 2.6.38 or 2.6.39
+  * Update brcm80211 firmware to version 610.811
+    - Unspecified stability fixes
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.550
