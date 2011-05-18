@@ -7,6 +7,7 @@ firmware-nonfree (0.30) UNRELEASED; urgency=low
   * Update Ralink RT2800-family firmware (Closes: #601416):
     - Update firmware for RT2860 and other PCI and PCIe chips to version 34
     - Update firmware for RT2870 and other USB chips to version 29
+      (Closes: #616017)
   * Add firmware for HTC devices using Atheros AR7010 and AR9271
   * Add new version of bnx2 firmware from Linux 2.6.39
   * Remove bnx2 firmware not referenced by Linux 2.6.32, 2.6.38 or 2.6.39
@@ -15,6 +16,7 @@ firmware-nonfree (0.30) UNRELEASED; urgency=low
   * Add Realtek RTL8192CU/RTL8188CU firmware for use with rtl8192cu,
     thanks to Geoff Simmons (Closes: #625614)
   * Add Realtek RTL8192CE/RTL8188CE firmware for use with rtl8192ce
+    (Closes: #613536)
   * Add Realtek RTL8105E-1 and RTL8168E-1/2/3 firmware for use with r8169
 
   [ dann frazier ]
