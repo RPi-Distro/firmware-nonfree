@@ -213,6 +213,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         files_orig = config_entry['files']
         files_real = {}
         links = {}
+        links_rev = {}
 
         for root, dirs, files in os.walk(package):
             try:
@@ -226,6 +227,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 if os.path.islink(cur_path):
                     if f in files_orig:
                         links[f] = os.readlink(cur_path)
+                        links_rev.setdefault(links[f], []).append(f)
                     continue
                 f1 = f.rsplit('-', 1)
                 if f in files_orig:
@@ -253,6 +255,10 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             desc = c.get('desc')
             if version is None:
                 version = c.get('version')
+            try:
+                f = f + ', ' + ', '.join(links_rev[f])
+            except KeyError:
+                pass
             if desc and version:
                 files_desc.append(" * %s, version %s (%s)" % (desc, version, f))
             elif desc:
