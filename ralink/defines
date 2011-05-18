@@ -31,24 +31,16 @@ desc: Ralink RT2661 (RT2600/RT5600 chipset) firmware
 version: 1.2
 
 [rt2860.bin_base]
-desc: Ralink RT2760/RT2790/RT2860/RT2890 (RT2700P[D]/RT2700E[D]/RT2800P[D]/RT2800E[D] chipset) firmware
+desc: Ralink RT2760/RT2790/RT2860/RT2890/RT3090 (RT2700P[D]/RT2700E[D]/RT2800P[D]/RT2800E[D]/RT3000E[D] chipset) firmware
 version: 34
 
 [rt2870.bin_base]
-desc: Ralink RT2870 (RT2800U[D] chipset) firmware
-version: 29
-
-[rt3070.bin_base]
-desc: Ralink RT3070 firmware
+desc: Ralink RT2870/RT3070/RT3071/RT3072 (RT2800U[D] chipset) firmware
 version: 29
 
 [rt3071.bin_base]
 desc: Ralink RT3071/RT3072 firmware
 version: 29
-
-[rt3090.bin_base]
-desc: Ralink RT3090 (RT3000E[D] chipset) firmware
-version: 34
 
 [rt73.bin_base]
 desc: Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware
