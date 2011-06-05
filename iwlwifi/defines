@@ -3,6 +3,7 @@ desc: Intel Wireless 3945, 4965 and 5000-series cards
 files:
  iwlwifi-100-5.ucode
  iwlwifi-1000-3.ucode
+ iwlwifi-1000-5.ucode
  iwlwifi-3945-1.ucode
  iwlwifi-3945-2.ucode
  iwlwifi-4965-1.ucode
@@ -24,6 +25,9 @@ uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
 desc: Intel Wireless 100 firmware
 
 [iwlwifi-1000-3.ucode_base]
+desc: Intel Wireless 1000 firmware
+
+[iwlwifi-1000-5.ucode_base]
 desc: Intel Wireless 1000 firmware
 
 [iwlwifi-3945-1.ucode_base]
