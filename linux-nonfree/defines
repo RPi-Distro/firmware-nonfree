@@ -91,7 +91,11 @@ files:
  radeon/RV730_pfp.bin
  radeon/RV770_me.bin
  radeon/RV770_pfp.bin
+ radeon/SUMO_me.bin
+ radeon/SUMO_pfp.bin
  radeon/SUMO_rlc.bin
+ radeon/SUMO2_me.bin
+ radeon/SUMO2_pfp.bin
  radeon/TURKS_mc.bin
  radeon/TURKS_me.bin
  radeon/TURKS_pfp.bin
@@ -354,8 +358,20 @@ desc: Radeon RV770 ME microcode
 [radeon/RV770_pfp.bin_base]
 desc: Radeon RV770 PFP microcode
 
+[radeon/SUMO_me.bin_base]
+desc: AMD Fusion 'Brazos' family ME microcode
+
+[radeon/SUMO_pfp.bin_base]
+desc: AMD Fusion 'Brazos' family PFP microcode
+
 [radeon/SUMO_rlc.bin_base]
-desc: AMD Fusion C-series RLC microcode
+desc: AMD Fusion RLC microcode
+
+[radeon/SUMO2_me.bin_base]
+desc: AMD Fusion 'Llano' family ME microcode
+
+[radeon/SUMO2_pfp.bin_base]
+desc: AMD Fusion 'Llano' family PFP microcode
 
 [radeon/TURKS_mc.bin_base]
 desc: Radeon HD 6500-family MC microcode
