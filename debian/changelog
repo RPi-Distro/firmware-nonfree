@@ -6,6 +6,7 @@ firmware-nonfree (0.31) UNRELEASED; urgency=low
     - Fixes microcode crash in some configurations (Closes: #626965)
   * Add Realtek RTL8192SE/RTL8191SE firmware for use with rtl8192se
     (Closes: #609784)
+  * Add Chelsio T4 firmware for use with cxgb4
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 05 Jun 2011 05:50:45 +0100
 
