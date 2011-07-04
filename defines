@@ -10,6 +10,7 @@ packages:
  iwlwifi
 # libertas
  linux-nonfree
+ myricom
  netxen
  qlogic
  ralink

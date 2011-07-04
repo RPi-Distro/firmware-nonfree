@@ -12,6 +12,7 @@ firmware-nonfree (0.31) UNRELEASED; urgency=low
   * Add AMD Fusion GPU firmware for use with radeon
   * Update newer Atheros AR7010 and AR9271 firmware to version 1.3
     (Closes: #631394)
+  * Add firmware-myricom package for use with the myri10ge driver
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 05 Jun 2011 05:50:45 +0100
 
