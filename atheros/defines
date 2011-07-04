@@ -28,7 +28,9 @@ desc: Atheros AR9271 firmware
 desc: Atheros AR3011 firmware
 
 [htc_7010.fw_base]
-desc: Atheros AR7010 HTC firmware
+desc: Atheros AR7010 firmware
+version: 1.3
 
 [htc_9271.fw_base]
-desc: Atheros AR9271 HTC firmware
+desc: Atheros AR9271 firmware
+version: 1.3
