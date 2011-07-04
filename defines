@@ -37,3 +37,5 @@ exclude:
  libertas/*
  mwl8k/*
  mrvl/sd8787_uapsta.bin
+# Xframe hardware has been discontinued and no-one requested these
+ vxge/X3fw*.ncf
