@@ -13,10 +13,10 @@ longdesc: USB wireless network and Bluetooth cards supported by the ar9170,
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
 
 [ar7010.fw_base]
-desc: Atheros AR7010/AR7015/AR9018 (type 1) firmware
+desc: Atheros AR7010 rev 1.0 firmware
 
 [ar7010_1_1.fw_base]
-desc: Atheros AR7010/AR7015/AR9018 (type 2) firmware
+desc: Atheros AR7010 rev 1.1 firmware
 
 [ar9170.fw_base]
 desc: Atheros AR9170 firmware
