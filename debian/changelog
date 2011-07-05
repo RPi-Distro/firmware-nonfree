@@ -1,6 +1,8 @@
 firmware-nonfree (0.32) UNRELEASED; urgency=low
 
   * Update to linux-support-2.6.39-2
+  * Install Realtek RTL8192SE/RTL8191SE firmware for use with rtl8192se
+    (Really closes: #609784)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 05 Jul 2011 05:45:00 +0100
 
