@@ -212,6 +212,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         files_orig = config_entry['files']
         files_real = {}
+        files_unused = []
         links = {}
         links_rev = {}
 
@@ -232,12 +233,23 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 f1 = f.rsplit('-', 1)
                 if f in files_orig:
                     files_real[f] = f, f, None
-                elif len(f1) > 1:
+                    continue
+                if len(f1) > 1:
                     f_base, f_version = f1
                     if f_base in files_orig:
                         if f_base in files_real:
                             raise RuntimeError("Multiple files for %s" % f_base)
                         files_real[f_base] = f_base, f, f_version
+                        continue
+                # Whitelist files not expected to be installed as firmware
+                if f in ['copyright', 'defines', 'LICENSE', 'LICENSE.install',
+                         'update.py', 'update.sh']:
+                    continue
+                files_unused.append(f)
+
+        if files_unused:
+            print >>sys.stderr, 'W: %s: unused files:' % package, \
+                ' '.join(files_unused)
 
         makeflags['FILES'] = ' '.join(["%s:%s" % (i[1], i[0]) for i in files_real.itervalues()])
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
