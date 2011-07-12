@@ -1,6 +1,11 @@
 [base]
 desc: Atheros wireless cards
 files:
+ ar3k/AthrBT_0x01020001.dfu
+ ar3k/AthrBT_0x01020200.dfu
+ ar3k/ramps_0x01020001_26.dfu
+ ar3k/ramps_0x01020200_26.dfu
+ ar3k/ramps_0x01020200_40.dfu
  ar7010.fw
  ar7010_1_1.fw
  ar9170.fw
@@ -11,6 +16,21 @@ files:
 longdesc: USB wireless network and Bluetooth cards supported by the ar9170,
  ath3k or ath9k_htc drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+
+[ar3k/AthrBT_0x01020001.dfu_base]
+desc: Atheros AR3012 rev 1.2.0.1 patch
+
+[ar3k/AthrBT_0x01020200.dfu_base]
+desc: Atheros AR3012 rev 1.2.2.0 patch
+
+[ar3k/ramps_0x01020001_26.dfu_base]
+desc: Atheros AR3012 rev 1.2.0.1 config
+
+[ar3k/ramps_0x01020200_26.dfu_base]
+desc: Atheros AR3012 rev 1.2.2.0 26 MHz config
+
+[ar3k/ramps_0x01020200_40.dfu_base]
+desc: Atheros AR3012 rev 1.2.2.0 40 MHz config
 
 [ar7010.fw_base]
 desc: Atheros AR7010 rev 1.0 firmware
