@@ -1,5 +1,6 @@
 firmware-nonfree (0.33) UNRELEASED; urgency=low
 
+  * Update to linux-support-3.0.0-1
   * Add Atheros AR3012 firmware for use with ath3k
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 12 Jul 2011 04:59:36 +0100
