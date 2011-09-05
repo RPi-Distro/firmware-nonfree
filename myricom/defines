@@ -7,7 +7,7 @@ files:
  myri10ge_rss_eth_z8e.dat
 longdesc: Myricom Myri-10G Ethernet adapters supported by the myri10ge driver
 support: initramfs-tools
-uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [myri10ge_eth_z8e.dat_base]
 desc: Myri-10G firmware (aligned)

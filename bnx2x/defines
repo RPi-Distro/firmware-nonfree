@@ -14,7 +14,7 @@ files:
 longdesc: Broadcom NetXtreme II 10Gb network adapters supported by the
  bnx2x driver
 support: initramfs-tools
-uri: http://ftp.kernel.org/pub/linux/kernel/
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [bnx2x-e1-4.8.53.0.fw_base]
 desc: Broadcom NetXtreme II 10Gb 57710

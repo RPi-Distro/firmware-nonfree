@@ -20,7 +20,7 @@ longdesc: Ethernet adapters with the RTL8111D/RTL8168D chips supported
  RTL8192 and RTL8712 chips supported by the r8192_pci, r8192s_usb,
  r8712u, rtl8192ce, rtl8192cu and rtl8192se drivers
 support: initramfs-tools
-uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [RTL8192E/boot.img_base]
 desc: Realtek RTL8192E boot code

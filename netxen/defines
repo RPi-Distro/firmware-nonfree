@@ -6,7 +6,7 @@ files:
 longdesc: QLogic (formerly NetXen) Intelligent network adapters supported by
  the netxen_nic and qlcnic drivers
 support: initramfs-tools
-uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [phanfw.bin]
 desc: QLogic Intelligent Ethernet (3000 and 3100 Series)

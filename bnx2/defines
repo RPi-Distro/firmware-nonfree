@@ -15,7 +15,7 @@ files:
 
 longdesc: Broadcom NetXtremeII network adapters supported by the bnx2 driver
 support: initramfs-tools
-uri: http://ftp.kernel.org/pub/linux/kernel/
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [bnx2/bnx2-mips-06-5.0.0.j3.fw_base]
 desc: Broadcom NetXtremeII 5706/5708 firmware (mips)

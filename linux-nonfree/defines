@@ -105,7 +105,7 @@ files:
  tigon/tg3_tso5.bin
  vntwusb.fw
 support: initramfs-tools
-uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware

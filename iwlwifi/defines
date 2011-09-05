@@ -19,7 +19,7 @@ files:
  iwlwifi-6050-5.ucode
 longdesc: Intel Wireless 1000, 3945, 4965, 5100, 5300, 6000 and 6250 cards
  supported by the iwl3945 and iwlagn drivers
-uri: http://intellinuxwireless.org/?p=iwlwifi&n=downloads
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [iwlwifi-100-5.ucode_base]
 desc: Intel Wireless 100 firmware

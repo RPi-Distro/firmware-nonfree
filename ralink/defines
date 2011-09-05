@@ -16,7 +16,7 @@ longdesc: wireless network cards with the Ralink RT2501 [Turbo], RT2600,
  chips, supported by the
  rt61/rt61pci, rt73/rt73usb, rt2860sta, rt2870sta/rt2870, rt3070sta or
  rt3090sta drivers
-uri: http://www.ralinktech.com/support.php?s=2
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [rt2561.bin_base]
 desc: Ralink RT2561 (RT2501/RT5201 chipset) firmware

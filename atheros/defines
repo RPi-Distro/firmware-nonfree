@@ -15,7 +15,7 @@ files:
  htc_9271.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar9170,
  ath3k or ath9k_htc drivers
-uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [ar3k/AthrBT_0x01020001.dfu_base]
 desc: Atheros AR3012 rev 1.2.0.1 patch
