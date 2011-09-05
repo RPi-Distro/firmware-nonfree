@@ -1,3 +1,10 @@
+firmware-nonfree (0.34) UNRELEASED; urgency=low
+
+  * Add Marvell Libertas 8xxx firmware, replacing libertas-firmware package
+    (Closes: #609856)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Mon, 05 Sep 2011 01:50:01 +0100
+
 firmware-nonfree (0.33) unstable; urgency=low
 
   * Update to linux-support-3.0.0-1
