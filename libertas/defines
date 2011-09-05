@@ -39,6 +39,9 @@ files:
 longdesc: wireless network cards with Marvell Libertas 8xxx chips supported
  by the libertas_cs, libertas_sdio, libertas_spi, mwl8k and usb8xxx drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/dwmw2/linux-firmware.git
+replaces: libertas-firmware
+conflicts: libertas-firmware
+provides: libertas-firmware
 
 [libertas/cf8381.bin_base]
 desc: CF8381 main code
