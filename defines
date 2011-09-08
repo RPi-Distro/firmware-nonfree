@@ -35,9 +35,7 @@ exclude:
  cxgb3/t3fw-7.[01].0.bin
 # No Debian release references these versions
  libertas/gspi8682*.bin
- libertas/lbtf_*.bin
  libertas/sd8682*.bin
- libertas/usb8388_olpc.bin
  mrvl/sd8787_uapsta.bin
  mwl8k/fmimage_8366_ap-1.fw
 # Xframe hardware has been discontinued and no-one requested these

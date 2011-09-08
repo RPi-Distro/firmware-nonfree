@@ -1,6 +1,7 @@
 [base]
 desc: Marvell Libertas 8xxx wireless cards
 files:
+ lbtf_usb.bin
  libertas/cf8381.bin
  libertas/cf8381_helper.bin
  libertas/cf8385.bin
@@ -19,6 +20,7 @@ files:
  libertas/sd8686_v9_helper.bin
  libertas/sd8688.bin
  libertas/sd8688_helper.bin
+ libertas/usb8388_olpc.bin
  libertas/usb8388_v5.bin
  libertas/usb8388_v9.bin
  libertas/usb8682.bin
@@ -37,11 +39,15 @@ files:
  sd8688_helper.bin
  usb8388.bin
 longdesc: wireless network cards with Marvell Libertas 8xxx chips supported
- by the libertas_cs, libertas_sdio, libertas_spi, mwl8k and usb8xxx drivers
+ by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb, mwl8k and
+ usb8xxx drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 replaces: libertas-firmware
 conflicts: libertas-firmware
 provides: libertas-firmware
+
+[lbtf_usb.bin_base]
+desc: USB8388 'Thinfirm' firmware
 
 [libertas/cf8381.bin_base]
 desc: CF8381 main code
@@ -124,6 +130,10 @@ desc: SD8688 main code
 
 [libertas/sd8688_helper.bin_base]
 desc: SD8688 boot code
+
+[libertas/usb8388_olpc.bin_base]
+desc: USB8388 OLPC firmware
+version: 5.110.22.p23
 
 [libertas/usb8388_v5.bin_base]
 desc: USB8388 firmware
