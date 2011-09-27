@@ -10,4 +10,4 @@ uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [phanfw.bin]
 desc: QLogic Intelligent Ethernet (3000 and 3100 Series)
-version: 4.0.550
+version: 4.0.579
