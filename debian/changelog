@@ -13,6 +13,7 @@ firmware-nonfree (0.34) UNRELEASED; urgency=low
     - Add "low temperature" support
   * Update Realtek RTL8192SU/RTL8712U firmware to match vendor driver
     version 2.6.6
+  * Add Realtek RTL8192DE firmware for use with rtl8192de driver
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.579
