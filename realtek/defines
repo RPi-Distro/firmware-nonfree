@@ -13,7 +13,7 @@ files:
  rtl_nic/rtl8168e-3.fw
  rtlwifi/rtl8192cfw.bin
  rtlwifi/rtl8192cufw.bin
- rtlwifi/rtl8192de.bin
+ rtlwifi/rtl8192defw.bin
  rtlwifi/rtl8192sefw.bin
  rtlwifi/rtl8712u.bin
 longdesc: Ethernet adapters with the RTL8111D/RTL8168D chips supported
