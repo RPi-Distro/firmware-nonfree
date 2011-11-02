@@ -11,6 +11,8 @@ firmware-nonfree (0.34) UNRELEASED; urgency=low
   * Update Chelsio T4 firmware to version 1.3.10.0
   * Update Intel Wireless 6025 firmware to version 17.168.5.3
     - Add "low temperature" support
+  * Update Realtek RTL8192SU/RTL8712U firmware to match vendor driver
+    version 2.6.6
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.579

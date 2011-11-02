@@ -64,3 +64,4 @@ desc: Realtek RTL8192SE/RTL8191SE firmware
 
 [rtlwifi/rtl8712u.bin_base]
 desc: Realtek RTL8192SU/RTL8712U firmware
+version: 2.6.6
