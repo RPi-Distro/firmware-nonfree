@@ -1,4 +1,4 @@
-firmware-nonfree (0.34) UNRELEASED; urgency=low
+firmware-nonfree (0.34) unstable; urgency=low
 
   [ Ben Hutchings ]
   * Add Marvell Libertas 8xxx firmware, replacing libertas-firmware package
@@ -20,7 +20,7 @@ firmware-nonfree (0.34) UNRELEASED; urgency=low
   [ dann frazier ]
   * Update netxen firmware to 4.0.579
 
- -- Ben Hutchings <ben@decadent.org.uk>  Mon, 05 Sep 2011 01:50:01 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Wed, 02 Nov 2011 13:35:24 +0000
 
 firmware-nonfree (0.33) unstable; urgency=low
 
