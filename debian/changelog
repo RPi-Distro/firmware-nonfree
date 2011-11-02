@@ -5,8 +5,8 @@ firmware-nonfree (0.34) UNRELEASED; urgency=low
     (Closes: #609856)
   * Set the upstream homepage URL to the current gitweb page for
     linux-firmware.git (except for ipw2x00, ivtv and qlogic packages)
-  * Replace bnx2x firmware version 6.0.34.0 (for Linux 2.6.37) with
-    version 6.2.9.0 (for Linux 3.0)
+  * Replace bnx2x firmware versions 6.0.34.0 (for Linux 2.6.37) and
+    7.0.20.0 with versions 6.2.9.0 and 7.0.23.0 (for Linux 3.0 and 3.1)
 
   [ dann frazier ]
   * Update netxen firmware to 4.0.579
