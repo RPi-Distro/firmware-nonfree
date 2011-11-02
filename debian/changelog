@@ -5,7 +5,7 @@ firmware-nonfree (0.34) UNRELEASED; urgency=low
     (Closes: #609856)
   * Set the upstream homepage URL to the current gitweb page for
     linux-firmware.git (except for ipw2x00, ivtv and qlogic packages)
-  * Replace bnx2x firmware version 6.0.34.0 (for Linux 2.6.39) with
+  * Replace bnx2x firmware version 6.0.34.0 (for Linux 2.6.37) with
     version 6.2.9.0 (for Linux 3.0)
 
   [ dann frazier ]
