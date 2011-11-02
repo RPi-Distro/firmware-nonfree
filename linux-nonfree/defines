@@ -154,6 +154,7 @@ version: 7.4.0
 
 [cxgb4/t4fw.bin_base]
 desc: Chelsio T4 firmware
+version: 1.3.10.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
