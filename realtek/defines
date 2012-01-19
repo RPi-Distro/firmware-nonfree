@@ -55,6 +55,7 @@ desc: Realtek RTL8168E-2 firmware
 
 [rtl_nic/rtl8168e-3.fw_base]
 desc: Realtek RTL8168E-3 firmware
+version: 0.0.3
 
 [rtl_nic/rtl8168f-1.fw_base]
 desc: Realtek RTL8168F-1 firmware
