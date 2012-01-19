@@ -4,6 +4,8 @@ firmware-nonfree (0.35) UNRELEASED; urgency=low
     it can coexist with the current transitional package
   * Add Realtek RTL8168F firmware for use with r8169 driver
   * Update Realtek RTL8168E-3 firmware to version 0.0.3
+  * Replace Broadcom NetXtreme II 10Gb firmware version 6.2.9.0
+    (for Linux 3.0) with version 7.0.29.0 (for Linux 3.2)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 17 Jan 2012 13:52:30 +0000
 

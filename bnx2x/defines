@@ -5,12 +5,12 @@ files:
  bnx2x-e1h-4.8.53.0.fw
  bnx2x-e1-5.0.21.0.fw
  bnx2x-e1h-5.0.21.0.fw
- bnx2x/bnx2x-e1-6.2.9.0.fw
- bnx2x/bnx2x-e1h-6.2.9.0.fw
- bnx2x/bnx2x-e2-6.2.9.0.fw
  bnx2x/bnx2x-e1-7.0.23.0.fw
  bnx2x/bnx2x-e2-7.0.23.0.fw
  bnx2x/bnx2x-e1h-7.0.23.0.fw
+ bnx2x/bnx2x-e1-7.0.29.0.fw
+ bnx2x/bnx2x-e2-7.0.29.0.fw
+ bnx2x/bnx2x-e1h-7.0.29.0.fw
 longdesc: Broadcom NetXtreme II 10Gb network adapters supported by the
  bnx2x driver
 support: initramfs-tools
@@ -32,18 +32,6 @@ version: 5.0.21.0
 desc: Broadcom NetXtreme II 10Gb 57711
 version: 5.0.21.0
 
-[bnx2x/bnx2x-e1-6.2.9.0.fw_base]
-desc: Broadcom NetXtreme II 10Gb 57710
-version: 6.2.9.0
-
-[bnx2x/bnx2x-e1h-6.2.9.0.fw_base]
-desc: Broadcom NetXtreme II 10Gb 57711
-version: 6.2.9.0
-
-[bnx2x/bnx2x-e2-6.2.9.0.fw_base]
-desc: Broadcom NetXtreme II 10Gb 57712
-version: 6.2.9.0
-
 [bnx2x/bnx2x-e1-7.0.23.0.fw_base]
 desc: Broadcom NetXtreme II 10Gb 57710
 version: 7.0.23.0
@@ -55,3 +43,15 @@ version: 7.0.23.0
 [bnx2x/bnx2x-e1h-7.0.23.0.fw_base]
 desc: Broadcom NetXtreme II 10Gb 57712
 version: 7.0.23.0
+
+[bnx2x/bnx2x-e1-7.0.29.0.fw_base]
+desc: Broadcom NetXtreme II 10Gb 57710
+version: 7.0.29.0
+
+[bnx2x/bnx2x-e2-7.0.29.0.fw_base]
+desc: Broadcom NetXtreme II 10Gb 57711
+version: 7.0.29.0
+
+[bnx2x/bnx2x-e1h-7.0.29.0.fw_base]
+desc: Broadcom NetXtreme II 10Gb 57712
+version: 7.0.29.0
