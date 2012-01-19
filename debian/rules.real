@@ -5,9 +5,6 @@ DEB_BUILD_ARCH    := $(shell dpkg-architecture -a$(ARCH) -qDEB_BUILD_ARCH)
 
 export DH_OPTIONS
 
-include debian/rules.defs
-include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.real.include
-
 #
 # Targets
 #

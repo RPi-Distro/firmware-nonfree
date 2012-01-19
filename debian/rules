@@ -4,9 +4,46 @@ SHELL := sh -e
 CONTROL_FILES += debian/bin/gencontrol.py defines $(wildcard */defines) $(wildcard */copyright) $(wildcard */LICENSE*)
 
 include debian/rules.defs
-include /usr/src/linux-support-$(KERNELVERSION)/modules/rules.include
 
-GENCONTROL = debian/bin/gencontrol.py $(KERNELVERSION)
+GENCONTROL = debian/bin/gencontrol.py
+
+__BINNMU := $(shell dpkg-parsechangelog | sed -rne 's,^Version: .*\+b([0-9]+)$$,\1,p')
+
+build: debian/control
+
+clean: debian/control
+	dh_testdir
+	dh_clean
+
+binary-indep:
+	dh_testdir
+	$(MAKE) -f debian/rules.gen binary-indep
+
+binary-arch:
+
+binary:	binary-indep binary-arch
+
+debian/control debian/rules.gen: $(GENCONTROL) $(CONTROL_FILES)
+ifeq ($(wildcard debian/control.md5sum),)
+	$(MAKE) -f debian/rules debian/control-real
+else ifeq ($(__BINNMU),)
+	md5sum --check debian/control.md5sum --status || \
+		$(MAKE) -f debian/rules debian/control-real
+else
+	grep -v debian/changelog debian/control.md5sum | md5sum --check - --status || \
+		$(MAKE) -f debian/rules debian/control-real
+endif
+
+debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
+	$(GENCONTROL) /usr/src/linux-support-$(KERNELVERSION)
+	md5sum $^ > debian/control.md5sum
+	@echo
+	@echo This target is made to fail intentionally, to make sure
+	@echo that it is NEVER run during the automated build. Please
+	@echo ignore the following error, the debian/control file has
+	@echo been generated SUCCESSFULLY.
+	@echo
+	exit 1
 
 maintainerclean:
 	-rm debian/control debian/control.md5sum debian/rules.gen
@@ -16,3 +53,5 @@ maintainerclean:
 	-rm debian/*.preinst
 	-rm debian/*.postinst
 	-rm debian/*.templates
+
+.PHONY: clean build binary-indep binary-arch binary
