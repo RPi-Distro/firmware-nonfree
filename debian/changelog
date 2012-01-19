@@ -1,3 +1,10 @@
+firmware-nonfree (0.35) UNRELEASED; urgency=low
+
+  * Add version to firmware-libertas's conflict with libertas-firmware so
+    it can coexist with the current transitional package
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Tue, 17 Jan 2012 13:52:30 +0000
+
 firmware-nonfree (0.34) unstable; urgency=low
 
   [ Ben Hutchings ]
