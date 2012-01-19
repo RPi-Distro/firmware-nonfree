@@ -1,4 +1,4 @@
-firmware-nonfree (0.35) UNRELEASED; urgency=low
+firmware-nonfree (0.35) unstable; urgency=low
 
   * Add version to firmware-libertas's conflict with libertas-firmware so
     it can coexist with the current transitional package
@@ -8,7 +8,7 @@ firmware-nonfree (0.35) UNRELEASED; urgency=low
     (for Linux 3.0) with version 7.0.29.0 (for Linux 3.2)
   * Update to linux-support-3.2.0-1
 
- -- Ben Hutchings <ben@decadent.org.uk>  Tue, 17 Jan 2012 13:52:30 +0000
+ -- Ben Hutchings <ben@decadent.org.uk>  Thu, 19 Jan 2012 03:24:38 +0000
 
 firmware-nonfree (0.34) unstable; urgency=low
 
