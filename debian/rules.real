@@ -2,6 +2,7 @@ SHELL  := sh -e
 DEB_HOST_ARCH     := $(shell dpkg-architecture -a$(ARCH) -qDEB_HOST_ARCH)
 DEB_HOST_GNU_TYPE := $(shell dpkg-architecture -a$(ARCH) -qDEB_HOST_GNU_TYPE)
 DEB_BUILD_ARCH    := $(shell dpkg-architecture -a$(ARCH) -qDEB_BUILD_ARCH)
+HAVE_MULTIARCH    := $(shell dpkg-architecture -qDEB_HOST_MULTIARCH 2>/dev/null)
 
 export DH_OPTIONS
 
@@ -16,6 +17,11 @@ install:
 	dh_testdir
 	dh_testroot
 	dh_prep
+ifneq (,$(HAVE_MULTIARCH))
+	echo firmware:Multi-Arch=foreign >>debian/$(PACKAGE_NAME).substvars
+else
+	echo firmware:Multi-Arch= >>debian/$(PACKAGE_NAME).substvars
+endif
 	@for i in $(FILES); do \
 	  s=$(PACKAGE)/"$${i%:*}"; \
 	  d=/lib/firmware/"$${i#*:}"; \
