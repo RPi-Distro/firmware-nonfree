@@ -15,6 +15,7 @@ install: DH_OPTIONS = -p$(PACKAGE_NAME)
 install:
 	dh_testdir
 	dh_testroot
+	dh_prep
 	@for i in $(FILES); do \
 	  s=$(PACKAGE)/"$${i%:*}"; \
 	  d=/lib/firmware/"$${i#*:}"; \
