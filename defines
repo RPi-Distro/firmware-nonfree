@@ -36,7 +36,11 @@ exclude:
  bnx2x/bnx2x-e*-7.0.2[03].0.fw
 # No Debian release references these versions
  cxgb3/t3fw-7.[01].0.bin
-# No Debian release requires this version
+# No Debian release requires these versions
+ iwlwifi-1000-3.ucode
+ iwlwifi-3945-1.ucode
+ iwlwifi-4965-1.ucode
+ iwlwifi-5000-1.ucode
  iwlwifi-6000g2b-5.ucode
 # No Debian release references these versions
  libertas/gspi8682*.bin
