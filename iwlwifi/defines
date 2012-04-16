@@ -2,8 +2,12 @@
 desc: Intel Wireless 3945, 4965 and 5000-series cards
 files:
  iwlwifi-100-5.ucode
+ iwlwifi-105-6.ucode
+ iwlwifi-135-6.ucode
  iwlwifi-1000-3.ucode
  iwlwifi-1000-5.ucode
+ iwlwifi-2000-6.ucode
+ iwlwifi-2030-6.ucode
  iwlwifi-3945-1.ucode
  iwlwifi-3945-2.ucode
  iwlwifi-4965-1.ucode
@@ -14,7 +18,7 @@ files:
  iwlwifi-5150-2.ucode
  iwlwifi-6000-4.ucode
  iwlwifi-6000g2a-5.ucode
- iwlwifi-6000g2b-5.ucode
+ iwlwifi-6000g2b-6.ucode
  iwlwifi-6050-4.ucode
  iwlwifi-6050-5.ucode
 longdesc: Intel Wireless 1000, 3945, 4965, 5100, 5300, 6000 and 6250 cards
@@ -24,11 +28,23 @@ uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 [iwlwifi-100-5.ucode_base]
 desc: Intel Wireless 100 firmware
 
+[iwlwifi-105-6.ucode_base]
+desc: Intel Wireless 105 firmware
+
+[iwlwifi-135-6.ucode_base]
+desc: Intel Wireless 135 firmware
+
 [iwlwifi-1000-3.ucode_base]
 desc: Intel Wireless 1000 firmware
 
 [iwlwifi-1000-5.ucode_base]
 desc: Intel Wireless 1000 firmware
+
+[iwlwifi-2000-6.ucode_base]
+desc: Intel Wireless 2200 firmware
+
+[iwlwifi-2030-6.ucode_base]
+desc: Intel Wireless 2230 firmware
 
 [iwlwifi-3945-1.ucode_base]
 desc: Intel Wireless 3945 firmware
@@ -60,7 +76,7 @@ desc: Intel Wireless 6000 firmware
 [iwlwifi-6000g2a-5.ucode_base]
 desc: Intel Wireless 6005 firmware
 
-[iwlwifi-6000g2b-5.ucode_base]
+[iwlwifi-6000g2b-6.ucode_base]
 desc: Intel Wireless 6030 firmware
 
 [iwlwifi-6050-4.ucode_base]

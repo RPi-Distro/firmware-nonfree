@@ -4,6 +4,8 @@ firmware-nonfree (0.36) UNRELEASED; urgency=low
   * Update Chelsio T4 firmware to version 1.4.16.0
   * Update to linux-support-3.2.0-2
   * Add Chelsio T3 firmware version 7.10.0 (for Linux 2.6.36 onward)
+  * Add Intel Wireless 105, 135, 2200, 2230 firmware
+  * Update Intel Wireless 6030 firmware to version 18.168.6.1 (ABI 6)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sat, 11 Feb 2012 18:22:23 +0000
 
