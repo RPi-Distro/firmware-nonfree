@@ -7,6 +7,7 @@ firmware-nonfree (0.36) UNRELEASED; urgency=low
   * Add Intel Wireless 105, 135, 2200, 2230 firmware
   * Update Intel Wireless 6030 firmware to version 18.168.6.1 (ABI 6)
   * Update Broadcom NetXtreme II firmware for use with Linux 3.3
+    - Fixes iSCSI problems with some LeftHand targets
   * Remove Broadcom NetXtreme II firmware not referenced by Linux 2.6.32,
     3.2 or 3.3
   * Update Realtek RTL8168E-3 and RTL8168F firmware to version 0.0.4
