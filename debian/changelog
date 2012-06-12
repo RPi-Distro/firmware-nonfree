@@ -6,8 +6,10 @@ firmware-nonfree (0.36) UNRELEASED; urgency=low
   * Add Chelsio T3 firmware version 7.10.0 (for Linux 2.6.36 onward)
   * Add Intel Wireless 105, 135, 2200, 2230 firmware
   * Update Intel Wireless 6030 firmware to version 18.168.6.1 (ABI 6)
+    (Closes: #658123, #675425)
   * Remove Intel Wireless firmware not required by Linux 2.6.32, 3.2 or 3.3
   * Update Broadcom NetXtreme II firmware for use with Linux 3.3
+    (Closes: #664762)
     - Fixes iSCSI problems with some LeftHand targets
   * Remove Broadcom NetXtreme II firmware not referenced by Linux 2.6.32,
     3.2 or 3.3
