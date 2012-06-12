@@ -15,7 +15,7 @@ longdesc: QLogic IBA7220 (Infiniband), QLA1xxx (SCSI), ISP2xxx- and
  SP2x2-based (Fibre Channel/FCoE) host adapters supported by the ip_iband,
  qla1280 and qla2xxx drivers
 support: initramfs-tools
-uri: ftp://ftp.qlogic.com/outgoing/linux/firmware/
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [qlogic/1040.bin_base]
 desc: QLogic QLA1040 firmware
