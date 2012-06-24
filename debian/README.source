@@ -1,0 +1,82 @@
+firmware-nonfree
+================
+
+Source format
+-------------
+
+firmware-nonfree is a native package even though the installed files
+are neither Debian-specific nor developed by Debian.  This is done
+because it is built from multiple 'upstream' sources, most of which do
+not make tarball releases.
+
+Binary package definition
+-------------------------
+
+The binary package definitions are written in a format similar to INI
+files, parsed using the Python ConfigParser module
+<http://docs.python.org/release/2.7/library/configparser.html>,
+
+The [base] packages field in the top-level 'defines' file lists all
+the binary package names, without the fixed prefix 'firmware-'.
+
+For each binary package, there is a subdirectory with matching name
+(again without the prefix) containing the binary files that will be
+installed in it and another 'defines' file with metadata.
+
+Required metadata:
+
+[base] desc: Short description of related hardware, used in Description
+[base] files: List of files to be included, one per line
+[base] longdesc: Longer description of related hardware and drivers, used in
+                 Description.
+[base] uri: Upstream URL, used as Homepage and in copyright file
+
+Optional metadata:
+
+[base] license-accept: Set to 'required' if we must prompt the user to
+                       accept a EULA on installation
+[base] license-title: Title of the EULA
+[base] support: Set to 'initramfs-tools' if update-initramfs should be
+                invoked after installation
+[base] replaces: Used as Replaces field
+[base] conflicts: Used as Conflicts field
+[base] provides: Used as Provides field
+
+Optional per-file metadata:
+
+[<filename>_base] desc: One-line description for this file, used in
+                        package description
+[<filename>_base] version: Verson number for this file, used in package
+                           description
+
+To re-generate debian/control (and other files) based on these
+definitions:
+
+1. Install the current linux-support-<kernelversion> package
+2. Ensure debian/rules.defs has the right value of KERNELVERSION
+3. Run: debian/rules debian/control
+
+Upstream
+--------
+
+The main upstream source is the linux-firmware.git repository, but
+some binary packages are based on other sources as specified by the
+[base] uri field in the 'defines' file in the package subdirectory.
+
+You can compare the current files with a checkout of that repository
+using the script 'debian/bin/check_upstream.py'.  This ignores files
+with unclear or unrecognised licences, and as specified in the
+[upstream] exclude field of the top-level 'defines' file.
+
+Licences
+--------
+
+Each binary package is assumed to have a different licence(s).  The
+installed 'copyright' file is taken from the 'LICENSE' file in its
+subdirectory.
+
+Some firmware redistribution licences require us to prompt the user to
+accept an EULA.  In this case, put the EULA text in 'LICENSE.install'
+and set the [base] license-accept field to 'required'.
+
+ -- Ben Hutchings <ben@decadent.org.uk>, Sun, 24 Jun 2012 22:56:20 +0100
