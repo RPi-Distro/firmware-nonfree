@@ -1,15 +1,24 @@
+# These templates have been reviewed by the debian-l10n-english
+# team
+#
+# If modifications/additions/rewording are needed, please ask
+# debian-l10n-english@lists.debian.org for advice.
+#
+# Even minor modifications require translation updates and such
+# changes should be coordinated with translators and reviewers.
+
 Template: firmware-@package@/license/accepted
 Type: boolean
 Default: false
-Description: Do you agree to the "@license-title@"?
+_Description: Do you agree to the "@license-title@"?
  In order to install this package, you must agree to the following terms,
  the "@license-title@".
  If you do not agree, the installation will be canceled.
 
 Template: firmware-@package@/license/error
 Type: error
-Description: Declined @license-title@
- If you do not agree to the "@license-title@" 
+_Description: Declined @license-title@
+ If you do not agree to the "@license-title@"
  license terms you cannot install this software.
  .
  The installation of this package has been canceled.

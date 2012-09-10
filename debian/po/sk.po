@@ -1,0 +1,59 @@
+# Slovak translations for firmware-nonfree package
+# Slovenské preklady pre balík firmware-nonfree.
+# Copyright (C) 2012 THE firmware-nonfree'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the firmware-nonfree package.
+# Slavko <linux@slavino.sk>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: firmware-nonfree 0.37\n"
+"Report-Msgid-Bugs-To: firmware-nonfree@packages.debian.org\n"
+"POT-Creation-Date: 2012-09-05 07:12+0200\n"
+"PO-Revision-Date: 2012-09-04 18:13+0200\n"
+"Last-Translator: Slavko <linux@slavino.sk>\n"
+"Language-Team: slovenčina <debian-l10n-slovak@lists.debian.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-POFile-SpellExtra: license-title\n"
+
+#. Type: boolean
+#. Description
+#: ../templates/templates.license.in:2001
+msgid "Do you agree to the \"@license-title@\"?"
+msgstr "Súhlasíte s „@license-title@”?"
+
+#. Type: boolean
+#. Description
+#: ../templates/templates.license.in:2001
+msgid ""
+"In order to install this package, you must agree to the following terms, the "
+"\"@license-title@\". If you do not agree, the installation will be canceled."
+msgstr ""
+"Aby ste mohli nainštalovať tento balík, musíte súhlasiť s nasledujúcimi "
+"podmienkami, „@license-title@”. Ak nesúhlasíte, inštalácia bude zrušená."
+
+#. Type: error
+#. Description
+#: ../templates/templates.license.in:3001
+msgid "Declined @license-title@"
+msgstr "Odmietam @license-title@"
+
+#. Type: error
+#. Description
+#: ../templates/templates.license.in:3001
+msgid ""
+"If you do not agree to the \"@license-title@\" license terms you cannot "
+"install this software."
+msgstr ""
+"Ak nesúhlasíte s podmienkami licencie \"@license-title@\", nemôžete "
+"inštalovať tento softvér."
+
+#. Type: error
+#. Description
+#: ../templates/templates.license.in:3001
+msgid "The installation of this package has been canceled."
+msgstr "Inštalácia tohoto balíka bola zrušená."
+
