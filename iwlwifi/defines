@@ -1,5 +1,5 @@
 [base]
-desc: Intel Wireless 3945, 4965 and 5000-series cards
+desc: Intel PRO/Wireless 3945 and 802.11n cards
 files:
  iwlwifi-100-5.ucode
  iwlwifi-105-6.ucode
@@ -17,8 +17,12 @@ files:
  iwlwifi-6000g2b-6.ucode
  iwlwifi-6050-4.ucode
  iwlwifi-6050-5.ucode
-longdesc: Intel Wireless 1000, 3945, 4965, 5100, 5300, 6000 and 6250 cards
- supported by the iwl3945 and iwlagn drivers
+longdesc: Intel PRO/Wireless 3945ABG,
+ Intel Wireless WiFi Link 5100AGN/5300AGN/5350AGN,
+ Centrino Wireless-N 100/105/130/135/1000/1030/2200/2230/6150,
+ Centrino Advanced-N 6200/6205/6230/6235/6250 and
+ Centrino Ultimate-N 6300 cards supported by the iwlegacy/iwl3945 and
+ iwlwifi/iwlagn drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [iwlwifi-100-5.ucode_base]

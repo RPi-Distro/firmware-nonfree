@@ -1,6 +1,8 @@
 firmware-nonfree (0.37) UNRELEASED; urgency=low
 
   * debian/README.source: Document the oddities of this source package
+  * iwlwifi: Add new driver names and full Intel product names to package
+    description
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 24 Jun 2012 22:56:53 +0100
 
