@@ -242,7 +242,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                         continue
                 # Whitelist files not expected to be installed as firmware
                 if f in ['copyright', 'defines', 'LICENSE', 'LICENSE.install',
-                         'update.py', 'update.sh']:
+                         'modprobe.conf', 'update.py', 'update.sh']:
                     continue
                 files_unused.append(f)
 

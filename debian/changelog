@@ -5,6 +5,8 @@ firmware-nonfree (0.37) UNRELEASED; urgency=low
   * iwlwifi: Add new driver names and full Intel product names to package
     description
   * linux: Recommend intel-microcode, amd64-microcode (Closes: #692604)
+  * linux-nonfree: Install a modprobe configuration file to enable radeon
+    KMS, which will be disabled by default
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 24 Jun 2012 22:56:53 +0100
 
