@@ -34,10 +34,6 @@ endif
 	  echo ln -s "$$target" "$$link"; \
 	  ln -s "$$target" "$$link"; \
 	done
-	if [ -f $(PACKAGE)/modprobe.conf ]; then \
-	  install -m644 -D $(PACKAGE)/modprobe.conf \
-	    debian/$(PACKAGE_NAME)/etc/modprobe.d/$(PACKAGE_NAME).conf; \
-	fi
 	dh_bugfiles
 	dh_installchangelogs
 	dh_installdocs
