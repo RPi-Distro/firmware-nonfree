@@ -20,8 +20,9 @@ files:
  cxgb3/t3c_psram-1.1.0.bin
  cxgb3/t3fw-7.4.0.bin
  cxgb3/t3fw-7.10.0.bin
+ cxgb3/t3fw-7.12.0.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.4.16.0.bin
+ cxgb4/t4fw-1.6.2.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc5000-1.6.114.fw
@@ -158,9 +159,13 @@ version: 7.4.0
 desc: Chelsio T3 main firmware
 version: 7.10.0
 
-[cxgb4/t4fw-1.4.16.0.bin_base]
+[cxgb3/t3fw-7.12.0.bin_base]
+desc: Chelsio T3 main firmware
+version: 7.12.0
+
+[cxgb4/t4fw-1.6.2.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.4.16.0
+version: 1.6.2.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
