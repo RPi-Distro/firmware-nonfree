@@ -9,8 +9,6 @@ uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [brcm/bcm43xx-0.fw_base]
 desc: Broadcom 802.11 firmware
-version: 610.811
 
 [brcm/bcm43xx_hdr-0.fw_base]
 desc: Broadcom 802.11 firmware header
-version: 610.811
