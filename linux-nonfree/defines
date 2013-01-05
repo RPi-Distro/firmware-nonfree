@@ -30,6 +30,12 @@ files:
  e100/d101m_ucode.bin
  e100/d101s_ucode.bin
  e100/d102e_ucode.bin
+ ene-ub6250/msp_rdwr.bin
+ ene-ub6250/ms_init.bin
+ ene-ub6250/ms_rdwr.bin
+ ene-ub6250/sd_init1.bin
+ ene-ub6250/sd_init2.bin
+ ene-ub6250/sd_rdwr.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -207,6 +213,24 @@ desc: Intel 82559 D101S microcode
 
 [e100/d102e_ucode.bin_base]
 desc: Intel 82551-F and 82551-10 microcode
+
+[ene-ub6250/msp_rdwr.bin_base]
+desc: ENE UB6250 MS Pro read/write firmware
+
+[ene-ub6250/ms_init.bin_base]
+desc: ENE UB6250 MS init firmware
+
+[ene-ub6250/ms_rdwr.bin_base]
+desc: ENE UB6250 MS read/write firmware
+
+[ene-ub6250/sd_init1.bin_base]
+desc: ENE UB6250 SD init stage 1 firmware
+
+[ene-ub6250/sd_init2.bin_base]
+desc: ENE UB6250 SD init stage 2 firmware
+
+[ene-ub6250/sd_rdwr.bin_base]
+desc: ENE UB6250 SD read/write firmware
 
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode
