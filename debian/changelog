@@ -21,11 +21,11 @@ firmware-nonfree (0.37) UNRELEASED; urgency=low
     Radeon HD IGP 7500/7600 series firmware
   * brcm80211: Update firmware to version 601.812
     - Add support for BCM4313 iPA variant
-  * rtlwifi: Revert RTL8192SU/RTL8712U firmware to original version
+  * realtek: Revert RTL8192SU/RTL8712U firmware to original version
     - Fixes connection drops with ASUS WL-167G V3 and D-Link DWA131
-  * rtlwifi: Update RTL8192DE and RTL8192SE/RTL8191SE firmware to match
+  * realtek: Update RTL8192DE and RTL8192SE/RTL8191SE firmware to match
     vendor driver version 4.816.2011
-  * rtlwifi: Add RTL8192CE/RTL8188CE A-cut and B-cut firmware
+  * realtek: Add RTL8192CE/RTL8188CE A-cut and B-cut firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 24 Jun 2012 22:56:53 +0100
 
