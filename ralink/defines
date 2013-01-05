@@ -9,6 +9,7 @@ files:
  rt3070.bin
  rt3071.bin
  rt3090.bin
+ rt3290.bin
  rt73.bin
 longdesc: wireless network cards with the Ralink RT2501 [Turbo], RT2600,
  RT5201 [Turbo], RT5600, RT5201USB, RT2800P[D], RT2700P[D], RT2700E[D],
@@ -41,6 +42,10 @@ version: 29
 [rt3071.bin_base]
 desc: Ralink RT3071/RT3072 firmware
 version: 29
+
+[rt3290.bin_base]
+desc: Ralink RT3290 firmware
+version: 1
 
 [rt73.bin_base]
 desc: Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware
