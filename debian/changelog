@@ -11,6 +11,8 @@ firmware-nonfree (0.37) UNRELEASED; urgency=low
     onward)
   * linux-nonfree: Update Chelsio T4 firmware to version 1.6.2.0
   * libertas: Update SD8686 main code to version 9.70.20.p0
+  * iwlwifi: Add Intel Wireless 6005/6205 firmware version 18.168.6.1 (ABI 6)
+    - Add support for WoWLAN and P2P
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 24 Jun 2012 22:56:53 +0100
 
