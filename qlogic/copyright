@@ -1,6 +1,5 @@
-The files in this package was downloaded from
-ftp://ftp.qlogic.com/outgoing/linux/firmware/ and
-ftp://ftp.kernel.org/pub/linux/kernel/.
+The files in this package were downloaded from
+http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 The following notice applies to qlogic/1040.bin, qlogic/1280.bin,
 qlogic/12160.bin:
