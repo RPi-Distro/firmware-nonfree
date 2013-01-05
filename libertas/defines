@@ -91,7 +91,7 @@ version: 8.x
 
 [libertas/sd8686_v9.bin_base]
 desc: SD8686 main code
-version: 9.x
+version: 9.70.20.p0
 
 [libertas/sd8686_v9_helper.bin_base]
 desc: SD8686 boot code
