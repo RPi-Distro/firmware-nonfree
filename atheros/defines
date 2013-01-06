@@ -3,34 +3,94 @@ desc: Atheros wireless cards
 files:
  ar3k/AthrBT_0x01020001.dfu
  ar3k/AthrBT_0x01020200.dfu
+ ar3k/AthrBT_0x01020201.dfu
+ ar3k/AthrBT_0x11020000.dfu
+ ar3k/AthrBT_0x31010000.dfu
  ar3k/ramps_0x01020001_26.dfu
  ar3k/ramps_0x01020200_26.dfu
  ar3k/ramps_0x01020200_40.dfu
+ ar3k/ramps_0x01020201_26.dfu
+ ar3k/ramps_0x01020201_40.dfu
+ ar3k/ramps_0x11020000_40.dfu
+ ar3k/ramps_0x31010000_40.dfu
  ar7010.fw
  ar7010_1_1.fw
  ar9170.fw
  ar9271.fw
  ath3k-1.fw
+ ath6k/AR6003.1/hw2.1.1/athwlan.bin
+ ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
+ ath6k/AR6003.1/hw2.1.1/bdata.SD32.bin
+ ath6k/AR6003.1/hw2.1.1/bdata.WB31.bin
+ ath6k/AR6003.1/hw2.1.1/data.patch.bin
+ ath6k/AR6003.1/hw2.1.1/endpointping.bin
+ ath6k/AR6003.1/hw2.1.1/otp.bin
+ ath6k/AR6003/hw1.0/athwlan.bin.z77
+ ath6k/AR6003/hw1.0/bdata.SD31.bin
+ ath6k/AR6003/hw1.0/bdata.SD32.bin
+ ath6k/AR6003/hw1.0/bdata.WB31.bin
+ ath6k/AR6003/hw1.0/data.patch.bin
+ ath6k/AR6003/hw1.0/otp.bin.z77
+ ath6k/AR6003/hw2.0/athwlan.bin.z77
+ ath6k/AR6003/hw2.0/bdata.SD31.bin
+ ath6k/AR6003/hw2.0/bdata.SD32.bin
+ ath6k/AR6003/hw2.0/bdata.WB31.bin
+ ath6k/AR6003/hw2.0/data.patch.bin
+ ath6k/AR6003/hw2.0/otp.bin.z77
+ ath6k/AR6003/hw2.1.1/athwlan.bin
+ ath6k/AR6003/hw2.1.1/bdata.SD31.bin
+ ath6k/AR6003/hw2.1.1/bdata.SD32.bin
+ ath6k/AR6003/hw2.1.1/bdata.WB31.bin
+ ath6k/AR6003/hw2.1.1/data.patch.bin
+ ath6k/AR6003/hw2.1.1/endpointping.bin
+ ath6k/AR6003/hw2.1.1/fw-2.bin
+ ath6k/AR6003/hw2.1.1/fw-3.bin
+ ath6k/AR6003/hw2.1.1/otp.bin
+ ath6k/AR6004/hw1.2/bdata.bin
+ ath6k/AR6004/hw1.2/fw-2.bin
+ ath6k/AR6004/hw1.3/bdata.bin
+ ath6k/AR6004/hw1.3/fw-3.bin
  htc_7010.fw
  htc_9271.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar9170,
- ath3k or ath9k_htc drivers
+ ath3k, ath6kl_sdio, ath6kl_usb or ath9k_htc drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [ar3k/AthrBT_0x01020001.dfu_base]
-desc: Atheros AR3012 rev 1.2.0.1 patch
+desc: Atheros AR3012 rev 01020001 patch
 
 [ar3k/AthrBT_0x01020200.dfu_base]
-desc: Atheros AR3012 rev 1.2.2.0 patch
+desc: Atheros AR3012 rev 01020200 patch
+
+[ar3k/AthrBT_0x01020201.dfu_base]
+desc: Atheros AR3012 rev 01020201 patch
+
+[ar3k/AthrBT_0x11020000.dfu_base]
+desc: Atheros AR3012 rev 11020000 patch
+
+[ar3k/AthrBT_0x31010000.dfu_base]
+desc: Atheros AR3012 rev 31010000 patch
 
 [ar3k/ramps_0x01020001_26.dfu_base]
-desc: Atheros AR3012 rev 1.2.0.1 config
+desc: Atheros AR3012 rev 01020001 config
 
 [ar3k/ramps_0x01020200_26.dfu_base]
-desc: Atheros AR3012 rev 1.2.2.0 26 MHz config
+desc: Atheros AR3012 rev 01020200 26 MHz config
 
 [ar3k/ramps_0x01020200_40.dfu_base]
-desc: Atheros AR3012 rev 1.2.2.0 40 MHz config
+desc: Atheros AR3012 rev 01020200 40 MHz config
+
+[ar3k/ramps_0x01020201_26.dfu_base]
+desc: Atheros AR3012 rev 01020201 26 MHz config
+
+[ar3k/ramps_0x01020201_40.dfu_base]
+desc: Atheros AR3012 rev 01020201 40 MHz config
+
+[ar3k/ramps_0x11020000_40.dfu_base]
+desc: Atheros AR3012 rev 11020000 config
+
+[ar3k/ramps_0x31010000_40.dfu_base]
+desc: Atheros AR3012 rev 31010000 config
 
 [ar7010.fw_base]
 desc: Atheros AR7010 rev 1.0 firmware

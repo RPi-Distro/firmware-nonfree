@@ -20,6 +20,13 @@ packages:
 exclude:
 # No Debian release references these; obsoleted by ar9170.fw
  ar9170-[12].fw
+# These are said to be related to the hci_uart driver, but it doesn't
+# request them
+ ar3k/*/ar3kbdaddr.pst
+ ar3k/*/PS_ASIC*.pst
+ ar3k/*/RamPatch.txt
+# ath6k doesn't actually support this hardware
+ ath6k/AR6002/*
 # These filenames are wrong!
  brcm/bcm43xx*-0-610-809-0.fw
 # No Debian release references these versions
