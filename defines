@@ -1,5 +1,6 @@
 [base]
 packages:
+ adi
  atheros
  bnx2
  bnx2x
@@ -56,5 +57,14 @@ exclude:
  libertas/sd8682*.bin
  mrvl/sd8787_uapsta.bin
  mwl8k/fmimage_8366_ap-1.fw
+# Licenses for these are very unclear
+ ueagle-atm/930-fpga.bin
+ ueagle-atm/CMV*.bin    
+ ueagle-atm/DSP9p.bin
+ ueagle-atm/adi930.fw     
+ ueagle-atm/eagleI.fw
+ ueagle-atm/eagleII.fw
+ ueagle-atm/eagleIII.fw
+ ueagle-atm/DSP[e9][ip].bin
 # Xframe hardware has been discontinued and no-one requested these
  vxge/X3fw*.ncf

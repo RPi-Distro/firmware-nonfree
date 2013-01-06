@@ -1,0 +1,18 @@
+[base]
+desc: Analog Devices Inc. DSL modem chips
+files:
+ ueagle-atm/CMV4p.bin.v2
+ ueagle-atm/DSP4p.bin
+ ueagle-atm/eagleIV.fw
+longdesc: USB DSL modems with the Analog Devices Inc. Eagle IV chip,
+ supported by the ueagle-atm driver
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+
+[ueagle-atm/CMV4p.bin.v2_base]
+desc: Eagle IV ADSL configuration, generic
+
+[ueagle-atm/DSP4p.bin_base]
+desc: Eagle IV ADSL DSP firmware
+
+[ueagle-atm/eagleIV.fw_base]
+desc: Eagle IV firmware
