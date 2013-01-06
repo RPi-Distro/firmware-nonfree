@@ -12,13 +12,14 @@ firmware-nonfree (0.37) UNRELEASED; urgency=low
   * linux-nonfree: Update Chelsio T4 firmware to version 1.6.2.0
   * libertas: Update SD8686 main code to version 9.70.20.p0
   * iwlwifi: Add Intel Wireless 6005/6205 firmware version 18.168.6.1 (ABI 6)
+    (Closes: #697473)
     - Add support for WoWLAN and P2P
   * bnx2x: Add Broadcom NetXtreme II 10Gb firmware version 7.8.2.0 (for
     Linux 3.7 onward)
   * netxen: Update QLogic Intelligent Ethernet firmware to version 4.0.588
   * ralink: Add Ralink RT3290 firmware
   * linux-nonfree: Add Radeon HD 7700/7800/7900 series firmware and
-    Radeon HD IGP 7500/7600 series firmware
+    Radeon HD IGP 7500/7600 series firmware (Closes: #677813)
   * brcm80211: Update firmware to version 601.812
     - Add support for BCM4313 iPA variant
   * realtek: Revert RTL8192SU/RTL8712U firmware to original version
@@ -28,7 +29,8 @@ firmware-nonfree (0.37) UNRELEASED; urgency=low
   * realtek: Add RTL8192CE/RTL8188CE A-cut and B-cut firmware
   * realtek: Update RTL81868F-1 firmware to version 0.0.5
   * realtek: Add RTL8106E-1, RTL81868G-1, RTL8402-1 and RTL8411-1 firmware
-  * linux-nonfree: Add ENE UB6250 firmware
+    (Closes: #687927)
+  * linux-nonfree: Add ENE UB6250 firmware (Closes: #687737)
   * atheros: Add firmware for AR6003, AR6004 and newer AR3012 revisions
   * Add firmware-adi package containing Analog Devices Inc. Eagle IV
     firmware for use with the ueagle-atm driver
