@@ -130,7 +130,13 @@ files:
  tigon/tg3_tso.bin
  tigon/tg3.bin
  tigon/tg3_tso5.bin
+ v4l-cx231xx-avcore-01.fw
+ v4l-cx23418-apu.fw
+ v4l-cx23418-cpu.fw
+ v4l-cx23418-dig.fw
  v4l-cx25840.fw
+ v4l-cx23885-avcore-01.fw
+ v4l-cx23885-enc.fw
  vntwusb.fw
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
@@ -503,8 +509,26 @@ desc: Broadcom BCM5701A0 firmware
 [tigon/tg3_tso5.bin_base]
 desc: Broadcom BCM5705 TSO firmware
 
+[v4l-cx231xx-avcore-01.fw_base]
+desc: Conexant CX231xx core firmware
+
+[v4l-cx23418-apu.fw_base]
+desc: Conexant CX23418 APU firmware
+
+[v4l-cx23418-cpu.fw_base]
+desc: Conexant CX23418 CPU firmware
+
+[v4l-cx23418-dig.fw_base]
+desc: Conexant CX23418 ADEC firmware
+
 [v4l-cx25840.fw_base]
-desc: Conexant CX25840 MPEG codec
+desc: Conexant CX25840 firmware
+
+[v4l-cx23885-avcore-01.fw_base]
+desc: Conexant CX23885 core firmware
+
+[v4l-cx23885-enc.fw_base]
+desc: Conexant CX23885 encoder firmware
 
 [vntwusb.fw_base]
 desc: VIA VT6656 firmware
