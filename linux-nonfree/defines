@@ -3,8 +3,8 @@ desc: various drivers in the Linux kernel
 longdesc:
  various drivers in the Linux kernel. This is a collection of firmware blobs
  which are not individually large enough to warrant a standalone package
-replaces: firmware-linux (<< 0.19)
-conflicts: firmware-linux (<< 0.19)
+replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
+conflicts: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
 files:
  3com/typhoon.bin
  advansys/3550.bin
@@ -130,6 +130,7 @@ files:
  tigon/tg3_tso.bin
  tigon/tg3.bin
  tigon/tg3_tso5.bin
+ v4l-cx25840.fw
  vntwusb.fw
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
@@ -501,6 +502,9 @@ desc: Broadcom BCM5701A0 firmware
 
 [tigon/tg3_tso5.bin_base]
 desc: Broadcom BCM5705 TSO firmware
+
+[v4l-cx25840.fw_base]
+desc: Conexant CX25840 MPEG codec
 
 [vntwusb.fw_base]
 desc: VIA VT6656 firmware

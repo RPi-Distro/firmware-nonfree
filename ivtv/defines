@@ -4,7 +4,6 @@ files:
  v4l-cx2341x-dec.fw
  v4l-cx2341x-enc.fw
  v4l-cx2341x-init.mpg
- v4l-cx25840.fw
  v4l-pvrusb2-24xxx-01.fw
  v4l-pvrusb2-29xxx-01.fw
 license-accept: required
@@ -12,6 +11,8 @@ license-title: Hauppauge End-User Firmware License Agreement
 longdesc: TV cards with Conexant iTVC15-family MPEG codecs,
  supported by the ivtv and pvrusb2 drivers
 uri: http://dl.ivtvdriver.org/ivtv/firmware/
+# For v4l-cx25840.fw
+recommends: firmware-linux-nonfree (>= 0.38~)
 
 [v4l-cx2341x-dec.fw_base]
 desc: Conexant CX23415/CX23416 MPEG codec (decoder)
@@ -21,9 +22,6 @@ desc: Conexant CX23415/CX23416 MPEG codec (encoder)
 
 [v4l-cx2341x-init.mpg_base]
 desc: Conexant CX23415/CX23416 MPEG codec (initialization)
-
-[v4l-cx25840.fw_base]
-desc: Conexant CX25840 MPEG codec
 
 [v4l-pvrusb2-24xxx-01.fw_base]
 desc: Hauppauge PVR USB2 24xxx models

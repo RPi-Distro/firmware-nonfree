@@ -3,6 +3,7 @@ Architecture: all
 Replaces: @?replaces@
 Conflicts: @?conflicts@
 Provides: @?provides@
+Recommends: @?recommends@
 Suggests: initramfs-tools, linux-image
 Description: Binary firmware for @desc@
  This package contains the binary firmware for @longdesc@.

@@ -2,6 +2,8 @@ firmware-nonfree (0.38) UNRELEASED; urgency=low
 
   * linux-nonfree: Add licence information for ENE UB6250 firmware
     (Closes: #697535)
+  * ivtv, linux-nonfree: Replace Hauppauge's version of v4l-cx25840.fw with
+    a version licenced directly by Conexant, in firmware-linux-nonfree
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 06 Jan 2013 18:19:39 +0000
 
