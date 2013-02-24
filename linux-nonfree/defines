@@ -136,7 +136,6 @@ files:
  v4l-cx23418-dig.fw
  v4l-cx25840.fw
  v4l-cx23885-avcore-01.fw
- v4l-cx23885-enc.fw
  vntwusb.fw
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
@@ -526,9 +525,6 @@ desc: Conexant CX25840 firmware
 
 [v4l-cx23885-avcore-01.fw_base]
 desc: Conexant CX23885 core firmware
-
-[v4l-cx23885-enc.fw_base]
-desc: Conexant CX23885 encoder firmware
 
 [vntwusb.fw_base]
 desc: VIA VT6656 firmware
