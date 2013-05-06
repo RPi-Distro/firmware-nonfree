@@ -7,6 +7,7 @@ files:
  RTL8192SU/rtl8192sfw.bin
  rtl_nic/rtl8105e-1.fw
  rtl_nic/rtl8106e-1.fw
+ rtl_nic/rtl8106e-2.fw
  rtl_nic/rtl8168d-1.fw
  rtl_nic/rtl8168d-2.fw
  rtl_nic/rtl8168e-1.fw
@@ -15,6 +16,8 @@ files:
  rtl_nic/rtl8168f-1.fw
  rtl_nic/rtl8168f-2.fw
  rtl_nic/rtl8168g-1.fw
+ rtl_nic/rtl8168g-2.fw
+ rtl_nic/rtl8168g-3.fw
  rtl_nic/rtl8402-1.fw
  rtl_nic/rtl8411-1.fw
  rtlwifi/rtl8192cfw.bin
@@ -51,6 +54,10 @@ desc: Realtek RTL8105E-1 firmware
 desc: Realtek RTL8106E-1 firmware
 version: 0.0.1
 
+[rtl_nic/rtl8106e-2.fw_base]
+desc: Realtek RTL8106E-2 firmware
+version: 0.0.1
+
 [rtl_nic/rtl8168d-1.fw_base]
 desc: Realtek RTL8111D-1/RTL8168D-1 firmware
 
@@ -78,6 +85,14 @@ version: 0.0.4
 [rtl_nic/rtl8168g-1.fw_base]
 desc: Realtek RTL8168G-1 firmware
 version: 0.0.3
+
+[rtl_nic/rtl8168g-2.fw_base]
+desc: Realtek RTL8168G-2 firmware
+version: 0.0.1
+
+[rtl_nic/rtl8168g-3.fw_base]
+desc: Realtek RTL8168G-3 firmware
+version: 0.0.1
 
 [rtl_nic/rtl8402-1.fw_base]
 desc: Realtek RTL8402-1 firmware
