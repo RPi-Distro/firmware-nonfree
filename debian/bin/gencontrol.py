@@ -227,7 +227,9 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 if os.path.islink(cur_path):
                     if f in files_orig:
                         links[f] = os.readlink(cur_path)
-                        links_rev.setdefault(links[f], []).append(f)
+                        link_target = os.path.normpath(
+                            os.path.join(f, '..', links[f]))
+                        links_rev.setdefault(link_target, []).append(f)
                     continue
                 f1 = f.rsplit('-', 1)
                 if f in files_orig:
