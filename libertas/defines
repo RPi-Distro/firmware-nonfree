@@ -26,6 +26,8 @@ files:
  libertas/usb8682.bin
  libertas_cs.fw
  libertas_cs_helper.fw
+ mrvl/sd8688.bin
+ mrvl/sd8688_helper.bin
  mwl8k/fmimage_8366.fw
  mwl8k/fmimage_8366_ap-2.fw
  mwl8k/fmimage_8687.fw
@@ -125,12 +127,6 @@ version: 9.x
 desc: SD8686 boot code
 version: 9.x
 
-[libertas/sd8688.bin_base]
-desc: SD8688 main code
-
-[libertas/sd8688_helper.bin_base]
-desc: SD8688 boot code
-
 [libertas/usb8388_olpc.bin_base]
 desc: USB8388 OLPC firmware
 version: 5.110.22.p23
@@ -145,6 +141,12 @@ version: 9.x
 
 [libertas/usb8682.bin_base]
 desc: USB8682 firmware
+
+[mrvl/sd8688.bin_base]
+desc: SD8688 main code
+
+[mrvl/sd8688_helper.bin_base]
+desc: SD8688 boot code
 
 [mwl8k/fmimage_8366.fw_base]
 desc: MWL8366 main code

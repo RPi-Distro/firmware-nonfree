@@ -9,6 +9,8 @@ firmware-nonfree (0.38) UNRELEASED; urgency=low
   * Update to linux-support-3.8-1
   * realtek: Update copyright information for PHY firmware used with r8169
     (Closes: #706912)
+  * libertas: Move libertas/sd8688{,_helper}.bin into mrvl/ and add symlinks,
+    for compatibility with both btmrvl and libertas_sdio drivers
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 06 Jan 2013 18:19:39 +0000
 
