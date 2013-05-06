@@ -154,6 +154,10 @@ desc: MWL8366 main code
 [mwl8k/fmimage_8366_ap-2.fw_base]
 desc: MWL8366 AP-mode main code
 
+[mwl8k/fmimage_8366_ap-3.fw_base]
+desc: MWL8366 AP-mode main code
+version: 5.2.8.16
+
 [mwl8k/fmimage_8687.fw_base]
 desc: MWL8687 main code
 
