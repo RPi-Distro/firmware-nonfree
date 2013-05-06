@@ -18,6 +18,7 @@ firmware-nonfree (0.38) UNRELEASED; urgency=low
   * libertas: Add Marvell SD8787, SD8797 and USB8797 firmware for use with
     the mwifiex_sdio and mwifiex_usb drivers
   * netxen: Update QLogic Intelligent Ethernet firmware to version 4.0.590
+  * linux-nonfree: Add Radeon HD 8500/8600/8700 series firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 06 Jan 2013 18:19:39 +0000
 

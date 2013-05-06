@@ -69,6 +69,11 @@ files:
  radeon/JUNIPER_me.bin
  radeon/JUNIPER_pfp.bin
  radeon/JUNIPER_rlc.bin
+ radeon/OLAND_ce.bin
+ radeon/OLAND_mc.bin
+ radeon/OLAND_me.bin
+ radeon/OLAND_pfp.bin
+ radeon/OLAND_rlc.bin
  radeon/PALM_me.bin
  radeon/PALM_pfp.bin
  radeon/PITCAIRN_ce.bin
@@ -324,6 +329,21 @@ desc: Radeon HD 5700 series PFP microcode
 
 [radeon/JUNIPER_rlc.bin_base]
 desc: Radeon HD 5700 series RLC microcode
+
+[radeon/OLAND_ce.bin_base]
+desc: Radeon HD 8500/8600/8700 series CE microcode
+
+[radeon/OLAND_mc.bin_base]
+desc: Radeon HD 8500/8600/8700 series MC microcode
+
+[radeon/OLAND_me.bin_base]
+desc: Radeon HD 8500/8600/8700 series ME microcode
+
+[radeon/OLAND_pfp.bin_base]
+desc: Radeon HD 8500/8600/8700 series PFP microcode
+
+[radeon/OLAND_rlc.bin_base]
+desc: Radeon HD 8500/8600/8700 series RLC microcode
 
 [radeon/PALM_me.bin_base]
 desc: Radeon HD IGP 6200/6300/7300 series ME microcode
