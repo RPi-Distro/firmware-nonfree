@@ -33,6 +33,7 @@ files:
  mrvl/usb8797_uapsta.bin
  mwl8k/fmimage_8366.fw
  mwl8k/fmimage_8366_ap-2.fw
+ mwl8k/fmimage_8366_ap-3.fw
  mwl8k/fmimage_8687.fw
  mwl8k/helper_8366.fw
  mwl8k/helper_8687.fw
