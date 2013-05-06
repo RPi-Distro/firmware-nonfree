@@ -15,6 +15,8 @@ firmware-nonfree (0.38) UNRELEASED; urgency=low
     Linux 3.9 onward)
     - Add support for additional ampdu streams
     - Handle corresponding watchdog events to destroy ampdu streams
+  * libertas: Add Marvell SD8787, SD8797 and USB8797 firmware for use with
+    the mwifiex_sdio and mwifiex_usb drivers
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 06 Jan 2013 18:19:39 +0000
 

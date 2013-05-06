@@ -28,6 +28,9 @@ files:
  libertas_cs_helper.fw
  mrvl/sd8688.bin
  mrvl/sd8688_helper.bin
+ mrvl/sd8787_uapsta.bin
+ mrvl/sd8797_uapsta.bin
+ mrvl/usb8797_uapsta.bin
  mwl8k/fmimage_8366.fw
  mwl8k/fmimage_8366_ap-2.fw
  mwl8k/fmimage_8687.fw
@@ -41,8 +44,8 @@ files:
  sd8688_helper.bin
  usb8388.bin
 longdesc: wireless network cards with Marvell Libertas 8xxx chips supported
- by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb, mwl8k and
- usb8xxx drivers
+ by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb,
+ mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 replaces: libertas-firmware
 conflicts: libertas-firmware (<< 9.70.7.p0.0-2)
@@ -147,6 +150,18 @@ desc: SD8688 main code
 
 [mrvl/sd8688_helper.bin_base]
 desc: SD8688 boot code
+
+[mrvl/sd8787_uapsta.bin_base]
+desc: SD8787 firmware
+version: 14.66.9.p96
+
+[mrvl/sd8797_uapsta.bin_base]
+desc: SD8797 firmware
+version: 14.66.11.p151
+
+[mrvl/usb8797_uapsta.bin_base]
+desc: USB8797 firmware
+version: 14.69.11.p179
 
 [mwl8k/fmimage_8366.fw_base]
 desc: MWL8366 main code

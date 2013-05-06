@@ -55,7 +55,6 @@ exclude:
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
- mrvl/sd8787_uapsta.bin
  mwl8k/fmimage_8366_ap-1.fw
 # Licenses for these are very unclear
  ueagle-atm/930-fpga.bin
