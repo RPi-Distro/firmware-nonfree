@@ -7,6 +7,8 @@ firmware-nonfree (0.38) UNRELEASED; urgency=low
   * linux-nonfree: Add Conexant CX231xx, CX23418 (Closes: #697008) and
     CX23885 firmware
   * Update to linux-support-3.8-1
+  * realtek: Update copyright information for PHY firmware used with r8169
+    (Closes: #706912)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 06 Jan 2013 18:19:39 +0000
 

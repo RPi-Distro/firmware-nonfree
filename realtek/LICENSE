@@ -1,5 +1,5 @@
-Files: realtek/rtl_nic/rtl8168d-*.fw
-Copyright: 2010, Realtek Semiconductor Corporation 
+Files: realtek/rtl_nic/*
+Copyright: 2010-2013, Realtek Semiconductor Corporation 
 License: Binary redistribution (Realtek permissive)
  Permission is hereby granted for the distribution of this firmware
  data in hexadecimal or equivalent format, provided this copyright
