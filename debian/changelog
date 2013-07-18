@@ -5,6 +5,8 @@ firmware-nonfree (0.39) UNRELEASED; urgency=low
   * libertas: Add MWL8764 AP-mode firmware version 7.4.0.9 and PCIE8897
     firmware version 15.69.201.p52
   * iwlwifi: Remove list of model names from description
+  * iwlwifi: Add Intel Wireless 3160 and 7260 firmware version 22.0.7.0
+    (ABI 7) (Closes: #717005)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 05:03:12 +0100
 
