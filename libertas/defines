@@ -26,6 +26,7 @@ files:
  libertas/usb8682.bin
  libertas_cs.fw
  libertas_cs_helper.fw
+ mrvl/pcie8897_uapsta.bin
  mrvl/sd8688.bin
  mrvl/sd8688_helper.bin
  mrvl/sd8787_uapsta.bin
@@ -35,6 +36,7 @@ files:
  mwl8k/fmimage_8366_ap-2.fw
  mwl8k/fmimage_8366_ap-3.fw
  mwl8k/fmimage_8687.fw
+ mwl8k/fmimage_8764_ap-1.fw
  mwl8k/helper_8366.fw
  mwl8k/helper_8687.fw
  sd8385.bin
@@ -146,6 +148,10 @@ version: 9.x
 [libertas/usb8682.bin_base]
 desc: USB8682 firmware
 
+[mrvl/pcie8897_uapsta.bin]
+desc: PCIE8897 firmware
+version: 15.69.201.p52
+
 [mrvl/sd8688.bin_base]
 desc: SD8688 main code
 
@@ -176,6 +182,10 @@ version: 5.2.8.16
 
 [mwl8k/fmimage_8687.fw_base]
 desc: MWL8687 main code
+
+[mwl8k/fmimage_8764_ap-1.fw_base]
+desc: MWL8764 AP-mode firmware
+version: 7.4.0.9
 
 [mwl8k/helper_8366.fw_base]
 desc: MWL8366 boot code
