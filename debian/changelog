@@ -1,6 +1,7 @@
 firmware-nonfree (0.39) UNRELEASED; urgency=low
 
   * Update to linux-support-3.10-1
+  * linux-nonfree: Add Broadcom BCM57766 firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 05:03:12 +0100
 

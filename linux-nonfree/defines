@@ -135,6 +135,7 @@ files:
  tigon/tg3_tso.bin
  tigon/tg3.bin
  tigon/tg3_tso5.bin
+ tigon/tg357766.bin
  v4l-cx231xx-avcore-01.fw
  v4l-cx23418-apu.fw
  v4l-cx23418-cpu.fw
@@ -527,6 +528,9 @@ desc: Broadcom BCM5701A0 firmware
 
 [tigon/tg3_tso5.bin_base]
 desc: Broadcom BCM5705 TSO firmware
+
+[tigon/tg357766.bin_base]
+desc: Broadcom BCM57766 firmware
 
 [v4l-cx231xx-avcore-01.fw_base]
 desc: Conexant CX231xx core firmware
