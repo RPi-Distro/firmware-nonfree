@@ -1,4 +1,4 @@
-firmware-nonfree (0.39) UNRELEASED; urgency=low
+firmware-nonfree (0.39) unstable; urgency=low
 
   * Update to linux-support-3.10-1
   * linux-nonfree: Add Broadcom BCM57766 firmware for use with tg3 driver
@@ -23,7 +23,7 @@ firmware-nonfree (0.39) UNRELEASED; urgency=low
   * iwlwifi: Add Intel Wireless 7260 Bluetooth firmware patches for use
     with btusb driver
 
- -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 05:03:12 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 06:44:55 +0100
 
 firmware-nonfree (0.38) unstable; urgency=low
 
