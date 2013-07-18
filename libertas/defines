@@ -148,7 +148,7 @@ version: 9.x
 [libertas/usb8682.bin_base]
 desc: USB8682 firmware
 
-[mrvl/pcie8897_uapsta.bin]
+[mrvl/pcie8897_uapsta.bin_base]
 desc: PCIE8897 firmware
 version: 15.69.201.p52
 
