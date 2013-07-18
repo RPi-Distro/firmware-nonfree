@@ -67,6 +67,11 @@ files:
  radeon/CYPRESS_pfp.bin
  radeon/CYPRESS_rlc.bin
  radeon/CYPRESS_uvd.bin
+ radeon/HAINAN_ce.bin
+ radeon/HAINAN_mc.bin
+ radeon/HAINAN_me.bin
+ radeon/HAINAN_pfp.bin
+ radeon/HAINAN_rlc.bin
  radeon/JUNIPER_me.bin
  radeon/JUNIPER_pfp.bin
  radeon/JUNIPER_rlc.bin
@@ -328,6 +333,21 @@ desc: Radeon HD 5800/5900 series RLC microcode
 
 [radeon/CYPRESS_uvd.bin_base]
 desc: Radeon HD 5x00 series UVD microcode
+
+[radeon/HAINAN_ce.bin_base]
+desc: Radeon HD 8500/8600 series and R5 M200 CE microcode
+
+[radeon/HAINAN_mc.bin_base]
+desc: Radeon HD 8500/8600 series and R5 M200 MC microcode
+
+[radeon/HAINAN_me.bin_base]
+desc: Radeon HD 8500/8600 series and R5 M200 ME microcode
+
+[radeon/HAINAN_pfp.bin_base]
+desc: Radeon HD 8500/8600 series and R5 M200 PFP microcode
+
+[radeon/HAINAN_rlc.bin_base]
+desc: Radeon HD 8500/8600 series and R5 M200 RLC microcode
 
 [radeon/JUNIPER_me.bin_base]
 desc: Radeon HD 5700 series ME microcode

@@ -10,6 +10,7 @@ firmware-nonfree (0.39) UNRELEASED; urgency=low
   * bnx2x: Add Broadcom NetXtreme II 10Gb firmware version 7.8.17.0 (for
     Linux 3.10 onward)
   * linux-nonfree: Add Radeon UVD microcode (Closes: #704564)
+  * linux-nonfree: Add Radeon HD 8500/8600 series and R5 M200 microcode
 
  -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 05:03:12 +0100
 
