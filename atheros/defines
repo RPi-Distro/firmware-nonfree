@@ -6,6 +6,7 @@ files:
  ar3k/AthrBT_0x01020201.dfu
  ar3k/AthrBT_0x11020000.dfu
  ar3k/AthrBT_0x31010000.dfu
+ ar3k/AthrBT_0x41020000.dfu
  ar3k/ramps_0x01020001_26.dfu
  ar3k/ramps_0x01020200_26.dfu
  ar3k/ramps_0x01020200_40.dfu
@@ -13,6 +14,7 @@ files:
  ar3k/ramps_0x01020201_40.dfu
  ar3k/ramps_0x11020000_40.dfu
  ar3k/ramps_0x31010000_40.dfu
+ ar3k/ramps_0x41020000_40.dfu
  ar7010.fw
  ar7010_1_1.fw
  ar9170.fw
@@ -71,6 +73,9 @@ desc: Atheros AR3012 rev 11020000 patch
 [ar3k/AthrBT_0x31010000.dfu_base]
 desc: Atheros AR3012 rev 31010000 patch
 
+[ar3k/AthrBT_0x41020000.dfu_base]
+desc: Atheros AR3012 rev 41020000 patch
+
 [ar3k/ramps_0x01020001_26.dfu_base]
 desc: Atheros AR3012 rev 01020001 config
 
@@ -91,6 +96,9 @@ desc: Atheros AR3012 rev 11020000 config
 
 [ar3k/ramps_0x31010000_40.dfu_base]
 desc: Atheros AR3012 rev 31010000 config
+
+[ar3k/ramps_0x41020000_40.dfu_base]
+desc: Atheros AR3012 rev 41020000 config
 
 [ar7010.fw_base]
 desc: Atheros AR7010 rev 1.0 firmware
