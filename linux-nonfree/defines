@@ -66,6 +66,7 @@ files:
  radeon/CYPRESS_me.bin
  radeon/CYPRESS_pfp.bin
  radeon/CYPRESS_rlc.bin
+ radeon/CYPRESS_uvd.bin
  radeon/JUNIPER_me.bin
  radeon/JUNIPER_pfp.bin
  radeon/JUNIPER_rlc.bin
@@ -109,6 +110,7 @@ files:
  radeon/RV670_pfp.bin
  radeon/RV710_me.bin
  radeon/RV710_pfp.bin
+ radeon/RV710_uvd.bin
  radeon/RV730_me.bin
  radeon/RV730_pfp.bin
  radeon/RV770_me.bin
@@ -116,6 +118,7 @@ files:
  radeon/SUMO_me.bin
  radeon/SUMO_pfp.bin
  radeon/SUMO_rlc.bin
+ radeon/SUMO_uvd.bin
  radeon/SUMO2_me.bin
  radeon/SUMO2_pfp.bin
  radeon/TAHITI_ce.bin
@@ -123,6 +126,7 @@ files:
  radeon/TAHITI_me.bin
  radeon/TAHITI_pfp.bin
  radeon/TAHITI_rlc.bin
+ radeon/TAHITI_uvd.bin
  radeon/TURKS_mc.bin
  radeon/TURKS_me.bin
  radeon/TURKS_pfp.bin
@@ -322,6 +326,9 @@ desc: Radeon HD 5800/5900 series PFP microcode
 [radeon/CYPRESS_rlc.bin_base]
 desc: Radeon HD 5800/5900 series RLC microcode
 
+[radeon/CYPRESS_uvd.bin_base]
+desc: Radeon HD 5x00 series UVD microcode
+
 [radeon/JUNIPER_me.bin_base]
 desc: Radeon HD 5700 series ME microcode
 
@@ -451,6 +458,9 @@ desc: Radeon RV710 ME microcode
 [radeon/RV710_pfp.bin_base]
 desc: Radeon RV710 PFP microcode
 
+[radeon/RV710_uvd.bin_base]
+desc: Radeon RV710/RV730 UVD microcode
+
 [radeon/RV730_me.bin_base]
 desc: Radeon RV730 ME microcode
 
@@ -472,6 +482,9 @@ desc: Radeon HD IGP 6400/6500/6600 series PFP microcode
 [radeon/SUMO_rlc.bin_base]
 desc: Radeon HD IGP 6200/6300/6400/6500/6600/7300 series RLC microcode
 
+[radeon/SUMO_uvd.bin_base]
+desc: Radeon HD 6x00/7500 series and IGP 6x00/7300 series UVD microcode
+
 [radeon/SUMO2_me.bin_base]
 desc: Radeon HD 6370D/6380G/6410D ME microcode
 
@@ -492,6 +505,9 @@ desc: Radeon HD 7900 series PFP microcode
 
 [radeon/TAHITI_rlc.bin_base]
 desc: Radeon HD 7900 series RLC microcode
+
+[radeon/TAHITI_uvd.bin_base]
+desc: Radeon HD 7900 series UVD microcode
 
 [radeon/TURKS_mc.bin_base]
 desc: Radeon HD 6500/6600/7500 series MC microcode
