@@ -19,6 +19,8 @@ packages:
 
 [upstream]
 exclude:
+# Packaged in amd64-microcode
+ amd-ucode/*
 # No Debian release references these; obsoleted by ar9170.fw
  ar9170-[12].fw
 # These are said to be related to the hci_uart driver, but it doesn't
