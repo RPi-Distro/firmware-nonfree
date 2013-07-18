@@ -20,6 +20,7 @@ files:
  rtl_nic/rtl8168g-3.fw
  rtl_nic/rtl8402-1.fw
  rtl_nic/rtl8411-1.fw
+ rtl_nic/rtl8411-2.fw
  rtlwifi/rtl8188eefw.bin
  rtlwifi/rtl8192cfw.bin
  rtlwifi/rtl8192cfwU_B.bin
@@ -104,6 +105,10 @@ version: 0.0.1
 [rtl_nic/rtl8411-1.fw_base]
 desc: Realtek RTL8411-1 firmware
 version: 0.0.3
+
+[rtl_nic/rtl8411-2.fw_base]
+desc: Realtek RTL8411-2 firmware
+version: 0.0.1
 
 [rtlwifi/rtl8188efw.bin_base]
 desc: Realtek RTL8188EE firmware
