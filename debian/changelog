@@ -1,7 +1,7 @@
 firmware-nonfree (0.39) UNRELEASED; urgency=low
 
   * Update to linux-support-3.10-1
-  * linux-nonfree: Add Broadcom BCM57766 firmware
+  * linux-nonfree: Add Broadcom BCM57766 firmware for use with tg3 driver
   * libertas: Add MWL8764 AP-mode firmware version 7.4.0.9 and PCIE8897
     firmware version 15.69.201.p52
   * iwlwifi: Remove list of model names from description
@@ -13,14 +13,15 @@ firmware-nonfree (0.39) UNRELEASED; urgency=low
     to support it (Closes: #704564)
   * linux-nonfree: Add Radeon HD 8500/8600 series and R5 M200 microcode
     (Closes: #717145)
-  * realtek: Add RTL8723AE firmware for use with the rtl8723ae driver
+  * realtek: Add RTL8723AE firmware for use with rtl8723ae driver
     (Closes: #708346)
   * realtek: Add RTL8188EE firmware for use with rtl8188ee driver
   * realtek: Add RTL8411-2 firmware version 0.0.1 for use with r8169 driver
   * atheros: Add AR3012 rev 41020000 firmware for use with ath3k driver
   * atheros: Add AR5523 firmware for use with ar5523 driver
     (Closes: #700826)
-  * iwlwifi: Add Intel Wireless 7260 Bluetooth firmware patches
+  * iwlwifi: Add Intel Wireless 7260 Bluetooth firmware patches for use
+    with btusb driver
 
  -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 05:03:12 +0100
 
