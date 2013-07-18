@@ -19,6 +19,7 @@ firmware-nonfree (0.39) UNRELEASED; urgency=low
   * realtek: Add RTL8411-2 firmware version 0.0.1 for use with r8169 driver
   * atheros: Add AR3012 rev 41020000 firmware for use with ath3k driver
   * atheros: Add AR5523 firmware for use with ar5523 driver
+    (Closes: #700826)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 05:03:12 +0100
 
