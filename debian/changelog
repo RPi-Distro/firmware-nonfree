@@ -15,6 +15,7 @@ firmware-nonfree (0.39) UNRELEASED; urgency=low
     (Closes: #717145)
   * realtek: Add RTL8723AE firmware for use with the rtl8723ae driver
     (Closes: #708346)
+  * realtek: Add RTL8188EE firmware for use with rtl8188ee driver
 
  -- Ben Hutchings <ben@decadent.org.uk>  Thu, 18 Jul 2013 05:03:12 +0100
 
