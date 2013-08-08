@@ -367,22 +367,22 @@ desc: Radeon HD 5800/5900 series SMC microcode
 desc: Radeon HD 5x00 series UVD microcode
 
 [radeon/HAINAN_ce.bin_base]
-desc: Radeon HD 8500/8600 series and R5 M200 CE microcode
+desc: Radeon HD 8500M series and R5 M200 CE microcode
 
 [radeon/HAINAN_mc.bin_base]
-desc: Radeon HD 8500/8600 series and R5 M200 MC microcode
+desc: Radeon HD 8500M series and R5 M200 MC microcode
 
 [radeon/HAINAN_me.bin_base]
-desc: Radeon HD 8500/8600 series and R5 M200 ME microcode
+desc: Radeon HD 8500M series and R5 M200 ME microcode
 
 [radeon/HAINAN_pfp.bin_base]
-desc: Radeon HD 8500/8600 series and R5 M200 PFP microcode
+desc: Radeon HD 8500M series and R5 M200 PFP microcode
 
 [radeon/HAINAN_rlc.bin_base]
-desc: Radeon HD 8500/8600 series and R5 M200 RLC microcode
+desc: Radeon HD 8500M series and R5 M200 RLC microcode
 
 [radeon/HAINAN_smc.bin_base]
-desc: Radeon HD 8500/8600 series and R5 M200 SMC microcode
+desc: Radeon HD 8500M series and R5 M200 SMC microcode
 
 [radeon/JUNIPER_me.bin_base]
 desc: Radeon HD 5700 series ME microcode
@@ -529,13 +529,13 @@ desc: Radeon RV710 PFP microcode
 desc: Radeon RV710 SMC microcode
 
 [radeon/RV710_uvd.bin_base]
-desc: Radeon RV710/RV730 UVD microcode
+desc: Radeon RV710/RV730/RV740 UVD microcode
 
 [radeon/RV730_me.bin_base]
-desc: Radeon RV730 ME microcode
+desc: Radeon RV730/RV740 ME microcode
 
 [radeon/RV730_pfp.bin_base]
-desc: Radeon RV730 PFP microcode
+desc: Radeon RV730/RV740 PFP microcode
 
 [radeon/RV730_smc.bin_base]
 desc: Radeon RV730 SMC microcode
