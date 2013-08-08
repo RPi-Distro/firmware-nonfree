@@ -1,6 +1,7 @@
 firmware-nonfree (0.40) UNRELEASED; urgency=low
 
   * Update to linux-support-3.10-2
+  * linux-nonfree: Add Radeon SMC microcode (Closes: #717848)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 09 Aug 2013 00:28:02 +0200
 

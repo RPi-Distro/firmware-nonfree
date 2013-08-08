@@ -52,34 +52,42 @@ files:
  radeon/BARTS_mc.bin
  radeon/BARTS_me.bin
  radeon/BARTS_pfp.bin
+ radeon/BARTS_smc.bin
  radeon/BTC_rlc.bin
  radeon/CAICOS_mc.bin
  radeon/CAICOS_me.bin
  radeon/CAICOS_pfp.bin
+ radeon/CAICOS_smc.bin
  radeon/CAYMAN_mc.bin
  radeon/CAYMAN_me.bin
  radeon/CAYMAN_pfp.bin
  radeon/CAYMAN_rlc.bin
+ radeon/CAYMAN_smc.bin
  radeon/CEDAR_me.bin
  radeon/CEDAR_pfp.bin
  radeon/CEDAR_rlc.bin
+ radeon/CEDAR_smc.bin
  radeon/CYPRESS_me.bin
  radeon/CYPRESS_pfp.bin
  radeon/CYPRESS_rlc.bin
+ radeon/CYPRESS_smc.bin
  radeon/CYPRESS_uvd.bin
  radeon/HAINAN_ce.bin
  radeon/HAINAN_mc.bin
  radeon/HAINAN_me.bin
  radeon/HAINAN_pfp.bin
  radeon/HAINAN_rlc.bin
+ radeon/HAINAN_smc.bin
  radeon/JUNIPER_me.bin
  radeon/JUNIPER_pfp.bin
  radeon/JUNIPER_rlc.bin
+ radeon/JUNIPER_smc.bin
  radeon/OLAND_ce.bin
  radeon/OLAND_mc.bin
  radeon/OLAND_me.bin
  radeon/OLAND_pfp.bin
  radeon/OLAND_rlc.bin
+ radeon/OLAND_smc.bin
  radeon/PALM_me.bin
  radeon/PALM_pfp.bin
  radeon/PITCAIRN_ce.bin
@@ -87,6 +95,7 @@ files:
  radeon/PITCAIRN_me.bin
  radeon/PITCAIRN_pfp.bin
  radeon/PITCAIRN_rlc.bin
+ radeon/PITCAIRN_smc.bin
  radeon/R100_cp.bin
  radeon/R200_cp.bin
  radeon/R300_cp.bin
@@ -99,6 +108,7 @@ files:
  radeon/REDWOOD_me.bin
  radeon/REDWOOD_pfp.bin
  radeon/REDWOOD_rlc.bin
+ radeon/REDWOOD_smc.bin
  radeon/RS600_cp.bin
  radeon/RS690_cp.bin
  radeon/RS780_me.bin
@@ -115,11 +125,15 @@ files:
  radeon/RV670_pfp.bin
  radeon/RV710_me.bin
  radeon/RV710_pfp.bin
+ radeon/RV710_smc.bin
  radeon/RV710_uvd.bin
  radeon/RV730_me.bin
  radeon/RV730_pfp.bin
+ radeon/RV730_smc.bin
+ radeon/RV740_smc.bin
  radeon/RV770_me.bin
  radeon/RV770_pfp.bin
+ radeon/RV770_smc.bin
  radeon/SUMO_me.bin
  radeon/SUMO_pfp.bin
  radeon/SUMO_rlc.bin
@@ -131,15 +145,18 @@ files:
  radeon/TAHITI_me.bin
  radeon/TAHITI_pfp.bin
  radeon/TAHITI_rlc.bin
+ radeon/TAHITI_smc.bin
  radeon/TAHITI_uvd.bin
  radeon/TURKS_mc.bin
  radeon/TURKS_me.bin
  radeon/TURKS_pfp.bin
+ radeon/TURKS_smc.bin
  radeon/VERDE_ce.bin
  radeon/VERDE_mc.bin
  radeon/VERDE_me.bin
  radeon/VERDE_pfp.bin
  radeon/VERDE_rlc.bin
+ radeon/VERDE_smc.bin
  tehuti/bdx.bin
  tigon/tg3_tso.bin
  tigon/tg3.bin
@@ -289,6 +306,9 @@ desc: Radeon HD 6800 series ME microcode
 [radeon/BARTS_pfp.bin_base]
 desc: Radeon HD 6800 series PFP microcode
 
+[radeon/BARTS_smc.bin_base]
+desc: Radeon HD 6800 series SMC microcode
+
 [radeon/BTC_rlc.bin_base]
 desc: Radeon HD 6300/6500/6800 series RLC microcode
 
@@ -300,6 +320,9 @@ desc: Radeon HD 6300 series ME microcode
 
 [radeon/CAICOS_pfp.bin_base]
 desc: Radeon HD 6300 series PFP microcode
+
+[radeon/CAICOS_smc.bin_base]
+desc: Radeon HD 6300 series SMC microcode
 
 [radeon/CAYMAN_mc.bin_base]
 desc: Radeon HD 6900 series MC microcode
@@ -313,6 +336,9 @@ desc: Radeon HD 6900 series PFP microcode
 [radeon/CAYMAN_rlc.bin_base]
 desc: Radeon HD 6900 series RLC microcode
 
+[radeon/CAYMAN_smc.bin_base]
+desc: Radeon HD 6900 series SMC microcode
+
 [radeon/CEDAR_me.bin_base]
 desc: Radeon HD 5400 series ME microcode
 
@@ -322,6 +348,9 @@ desc: Radeon HD 5400 series PFP microcode
 [radeon/CEDAR_rlc.bin_base]
 desc: Radeon HD 5400 series RLC microcode
 
+[radeon/CEDAR_smc.bin_base]
+desc: Radeon HD 5400 series SMC microcode
+
 [radeon/CYPRESS_me.bin_base]
 desc: Radeon HD 5800/5900 series ME microcode
 
@@ -330,6 +359,9 @@ desc: Radeon HD 5800/5900 series PFP microcode
 
 [radeon/CYPRESS_rlc.bin_base]
 desc: Radeon HD 5800/5900 series RLC microcode
+
+[radeon/CYPRESS_smc.bin_base]
+desc: Radeon HD 5800/5900 series SMC microcode
 
 [radeon/CYPRESS_uvd.bin_base]
 desc: Radeon HD 5x00 series UVD microcode
@@ -349,6 +381,9 @@ desc: Radeon HD 8500/8600 series and R5 M200 PFP microcode
 [radeon/HAINAN_rlc.bin_base]
 desc: Radeon HD 8500/8600 series and R5 M200 RLC microcode
 
+[radeon/HAINAN_smc.bin_base]
+desc: Radeon HD 8500/8600 series and R5 M200 SMC microcode
+
 [radeon/JUNIPER_me.bin_base]
 desc: Radeon HD 5700 series ME microcode
 
@@ -357,6 +392,9 @@ desc: Radeon HD 5700 series PFP microcode
 
 [radeon/JUNIPER_rlc.bin_base]
 desc: Radeon HD 5700 series RLC microcode
+
+[radeon/JUNIPER_smc.bin_base]
+desc: Radeon HD 5700 series SMC microcode
 
 [radeon/OLAND_ce.bin_base]
 desc: Radeon HD 8500/8600/8700 series CE microcode
@@ -372,6 +410,9 @@ desc: Radeon HD 8500/8600/8700 series PFP microcode
 
 [radeon/OLAND_rlc.bin_base]
 desc: Radeon HD 8500/8600/8700 series RLC microcode
+
+[radeon/OLAND_smc.bin_base]
+desc: Radeon HD 8500/8600/8700 series SMC microcode
 
 [radeon/PALM_me.bin_base]
 desc: Radeon HD IGP 6200/6300/7300 series ME microcode
@@ -393,6 +434,9 @@ desc: Radeon HD 7800 series PFP microcode
 
 [radeon/PITCAIRN_rlc.bin_base]
 desc: Radeon HD 7800 series RLC microcode
+
+[radeon/PITCAIRN_smc.bin_base]
+desc: Radeon HD 7800 series SMC microcode
 
 [radeon/R100_cp.bin_base]
 desc: Radeon R100-family CP microcode
@@ -429,6 +473,9 @@ desc: Radeon HD 5500/5600 series PFP microcode
 
 [radeon/REDWOOD_rlc.bin_base]
 desc: Radeon HD 5500/5600 series RLC microcode
+
+[radeon/REDWOOD_smc.bin_base]
+desc: Radeon HD 5500/5600 series SMC microcode
 
 [radeon/RS600_cp.bin_base]
 desc: Radeon RS600 CP microcode
@@ -478,6 +525,9 @@ desc: Radeon RV710 ME microcode
 [radeon/RV710_pfp.bin_base]
 desc: Radeon RV710 PFP microcode
 
+[radeon/RV710_smc.bin_base]
+desc: Radeon RV710 SMC microcode
+
 [radeon/RV710_uvd.bin_base]
 desc: Radeon RV710/RV730 UVD microcode
 
@@ -487,11 +537,20 @@ desc: Radeon RV730 ME microcode
 [radeon/RV730_pfp.bin_base]
 desc: Radeon RV730 PFP microcode
 
+[radeon/RV730_smc.bin_base]
+desc: Radeon RV730 SMC microcode
+
+[radeon/RV740_smc.bin_base]
+desc: Radeon RV740 SMC microcode
+
 [radeon/RV770_me.bin_base]
 desc: Radeon RV770 ME microcode
 
 [radeon/RV770_pfp.bin_base]
 desc: Radeon RV770 PFP microcode
+
+[radeon/RV770_smc.bin_base]
+desc: Radeon RV770 SMC microcode
 
 [radeon/SUMO_me.bin_base]
 desc: Radeon HD IGP 6400/6500/6600 series ME microcode
@@ -526,6 +585,9 @@ desc: Radeon HD 7900 series PFP microcode
 [radeon/TAHITI_rlc.bin_base]
 desc: Radeon HD 7900 series RLC microcode
 
+[radeon/TAHITI_smc.bin_base]
+desc: Radeon HD 7900 series SMC microcode
+
 [radeon/TAHITI_uvd.bin_base]
 desc: Radeon HD 7900 series UVD microcode
 
@@ -537,6 +599,9 @@ desc: Radeon HD 6500/6600/7500 series ME microcode
 
 [radeon/TURKS_pfp.bin_base]
 desc: Radeon HD 6500/6600/7500 series PFP microcode
+
+[radeon/TURKS_smc.bin_base]
+desc: Radeon HD 6500/6600/7500 series SMC microcode
 
 [radeon/VERDE_ce.bin_base]
 desc: Radeon HD 7700 series CE microcode
@@ -552,6 +617,9 @@ desc: Radeon HD 7700 series PFP microcode
 
 [radeon/VERDE_rlc.bin_base]
 desc: Radeon HD 7700 series RLC microcode
+
+[radeon/VERDE_smc.bin_base]
+desc: Radeon HD 7700 series SMC microcode
 
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
