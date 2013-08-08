@@ -4,6 +4,8 @@ firmware-nonfree (0.40) UNRELEASED; urgency=low
   * linux-nonfree: Add Radeon SMC microcode (Closes: #717848)
   * linux-nonfree: Correct descriptions of Radeon chips using some
     microcode files
+  * linux-nonfree: Add Radeon HD 7790/8770/8950 and 8100/8200/8300/8400
+    series microcode
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 09 Aug 2013 00:28:02 +0200
 

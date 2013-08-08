@@ -53,6 +53,14 @@ files:
  radeon/BARTS_me.bin
  radeon/BARTS_pfp.bin
  radeon/BARTS_smc.bin
+ radeon/BONAIRE_ce.bin
+ radeon/BONAIRE_mc.bin
+ radeon/BONAIRE_me.bin
+ radeon/BONAIRE_mec.bin
+ radeon/BONAIRE_pfp.bin
+ radeon/BONAIRE_rlc.bin
+ radeon/BONAIRE_sdma.bin
+ radeon/BONAIRE_uvd.bin
  radeon/BTC_rlc.bin
  radeon/CAICOS_mc.bin
  radeon/CAICOS_me.bin
@@ -82,6 +90,12 @@ files:
  radeon/JUNIPER_pfp.bin
  radeon/JUNIPER_rlc.bin
  radeon/JUNIPER_smc.bin
+ radeon/KABINI_ce.bin
+ radeon/KABINI_me.bin
+ radeon/KABINI_mec.bin
+ radeon/KABINI_pfp.bin
+ radeon/KABINI_rlc.bin
+ radeon/KABINI_sdma.bin
  radeon/OLAND_ce.bin
  radeon/OLAND_mc.bin
  radeon/OLAND_me.bin
@@ -309,6 +323,30 @@ desc: Radeon HD 6800 series PFP microcode
 [radeon/BARTS_smc.bin_base]
 desc: Radeon HD 6800 series SMC microcode
 
+[radeon/BONAIRE_ce.bin_base]
+desc: Radeon HD 7790/8770/8950 CE microcode
+
+[radeon/BONAIRE_mc.bin_base]
+desc: Radeon HD 7790/8770/8950 MC microcode
+
+[radeon/BONAIRE_me.bin_base]
+desc: Radeon HD 7790/8770/8950 ME microcode
+
+[radeon/BONAIRE_mec.bin_base]
+desc: Radeon HD 7790/8770/8950 MEC microcode
+
+[radeon/BONAIRE_pfp.bin_base]
+desc: Radeon HD 7790/8770/8950 PFP microcode
+
+[radeon/BONAIRE_rlc.bin_base]
+desc: Radeon HD 7790/8770/8950 RLC microcode
+
+[radeon/BONAIRE_sdma.bin_base]
+desc: Radeon HD 7790/8770/8950 SDMA microcode
+
+[radeon/BONAIRE_uvd.bin_base]
+desc: Radeon HD 7790/8770/8950 and 8100/8200/8300/8400 series UVD microcode
+
 [radeon/BTC_rlc.bin_base]
 desc: Radeon HD 6300/6500/6800 series RLC microcode
 
@@ -395,6 +433,24 @@ desc: Radeon HD 5700 series RLC microcode
 
 [radeon/JUNIPER_smc.bin_base]
 desc: Radeon HD 5700 series SMC microcode
+
+[radeon/KABINI_ce.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series CE microcode
+
+[radeon/KABINI_me.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series ME microcode
+
+[radeon/KABINI_mec.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series MEC microcode
+
+[radeon/KABINI_pfp.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series PFP microcode
+
+[radeon/KABINI_rlc.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series RLC microcode
+
+[radeon/KABINI_sdma.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series SDMA microcode
 
 [radeon/OLAND_ce.bin_base]
 desc: Radeon HD 8500/8600/8700 series CE microcode
