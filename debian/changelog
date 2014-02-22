@@ -39,7 +39,7 @@ firmware-nonfree (0.41) unstable; urgency=medium
     ${misc:Depends}
   * ivtv, ipw2x00: Add one-line copyright notices above licence text
   * debian/control: Update Standards-Version to 3.9.5:
-    - linux: Move to the 'metapackages' section
+    - linux: Move to the 'non-free/metapackages' section
     - libertas, linux-nonfree: Use 'Breaks' relation rather than 'Conflicts'
       where files have been moved from another package
 
