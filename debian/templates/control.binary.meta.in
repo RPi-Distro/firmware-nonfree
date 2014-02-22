@@ -1,4 +1,5 @@
 Package: firmware-linux
+Section: metapackages
 Architecture: all
 Depends: firmware-linux-free, firmware-linux-nonfree (= ${binary:Version}),
  ${misc:Depends}
