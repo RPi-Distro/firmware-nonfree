@@ -6,6 +6,8 @@ firmware-nonfree (0.41) UNRELEASED; urgency=low
   * Fix wrapping of file lists in package description (Closes: #739798)
   * qlogic: Update QLogic ISP2422, ISP2432[M], SP222, SP232 and ISP2532
     firmware to version 7.01.00
+  * linux-nonfree: Update Chelsio T4 firmware to version 1.9.23.0;
+    add Chelsio T5 firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 25 Sep 2013 04:24:33 +0100
 
