@@ -31,6 +31,7 @@ files:
  mrvl/sd8688_helper.bin
  mrvl/sd8787_uapsta.bin
  mrvl/sd8797_uapsta.bin
+ mrvl/sd8897_uapsta.bin
  mrvl/usb8797_uapsta.bin
  mwl8k/fmimage_8366.fw
  mwl8k/fmimage_8366_ap-2.fw
@@ -150,7 +151,7 @@ desc: USB8682 firmware
 
 [mrvl/pcie8897_uapsta.bin_base]
 desc: PCIE8897 firmware
-version: 15.69.201.p52
+version: 15.69.2.p11 (WLAN) / 15.28.2.p11 (BT)
 
 [mrvl/sd8688.bin_base]
 desc: SD8688 main code
@@ -165,6 +166,10 @@ version: 14.66.9.p96
 [mrvl/sd8797_uapsta.bin_base]
 desc: SD8797 firmware
 version: 14.66.11.p151
+
+[mrvl/sd8897_uapsta.bin_base]
+desc: SD8897 firmware
+version: 15.69.2.p11 (WLAN) / 15.28.2.p11 (BT)
 
 [mrvl/usb8797_uapsta.bin_base]
 desc: USB8797 firmware
