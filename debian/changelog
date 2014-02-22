@@ -10,6 +10,8 @@ firmware-nonfree (0.41) UNRELEASED; urgency=low
     add Chelsio T5 firmware
   * libertas: Update PCIE8897 firmware to version 15.69.2.p11 (WLAN) /
     15.28.2.p11 (BT); add SD8897 firmware
+  * iwlwifi: Update Intel Wireless 3160 and 7260 firmware to version
+    22.1.7.0 (ABI 7) and version 22.15.8.0 (ABI 8) (Closes: #738615)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 25 Sep 2013 04:24:33 +0100
 
