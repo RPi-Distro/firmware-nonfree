@@ -23,7 +23,8 @@ firmware-nonfree (0.41) UNRELEASED; urgency=low
     - sometimes device doesn't response to HCI_reset after multiple reboot
     - issue with HCI stress testing
     - issue with some multi profile cases
-  * iwlwifi: Add Intel Wireless 3160 Bluetooth firmware
+  * iwlwifi: Add Intel Wireless 3160 Bluetooth firmware for use with
+    the btusb driver
   * Add firmware-ti-connectivity package containing firmware for the
     Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless network
     chips, for use with the wl1251, wl12xx and wl18xx drivers
