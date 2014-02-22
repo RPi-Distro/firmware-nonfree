@@ -2,6 +2,7 @@ Package: firmware-@package@
 Architecture: all
 Replaces: @?replaces@
 Conflicts: @?conflicts@
+Breaks: @?breaks@
 Provides: @?provides@
 Depends: ${misc:Depends}
 Recommends: @?recommends@

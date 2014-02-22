@@ -4,7 +4,7 @@ longdesc:
  various drivers in the Linux kernel. This is a collection of firmware blobs
  which are not individually large enough to warrant a standalone package
 replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
-conflicts: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
+breaks: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
 files:
  3com/typhoon.bin
  advansys/3550.bin
