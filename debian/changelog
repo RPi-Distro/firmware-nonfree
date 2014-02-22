@@ -16,8 +16,9 @@ firmware-nonfree (0.41) UNRELEASED; urgency=low
     Radeon R9 290 series and Radeon R5/R7 IGP 200 series microcode
   * brcm80211: Add Broadcom BCM43241, BCM4329, BCM4330, BCM4334 and
     BCM4335 firmware for use with brcmfmac driver
-  * realtek: Add RTL8188EU firmware for use with the rtl8188eu driver
-    and RTL8821AE firmware for use with the rtl8821ae driver
+  * realtek: Add RTL8188EU firmware for use with the rtl8188eu driver,
+    RTL8821AE firmware for use with the rtl8821ae driver and new
+    RTL8192CU firmware for use with the rtl8192cu driver
   * iwlwifi: Update Intel Wireless 7260 Bluetooth firmware, fixing:
     - sometimes device doesn't response to HCI_reset after multiple reboot
     - issue with HCI stress testing

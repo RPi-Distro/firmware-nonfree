@@ -26,6 +26,9 @@ files:
  rtlwifi/rtl8192cfw.bin
  rtlwifi/rtl8192cfwU_B.bin
  rtlwifi/rtl8192cfwU.bin
+ rtlwifi/rtl8192cufw_A.bin
+ rtlwifi/rtl8192cufw_B.bin
+ rtlwifi/rtl8192cufw_TMSC.bin
  rtlwifi/rtl8192cufw.bin
  rtlwifi/rtl8192defw.bin
  rtlwifi/rtl8192sefw.bin
@@ -131,8 +134,17 @@ version: 4.816.2011
 desc: Realtek RTL8188CE A-cut firmware
 version: 4.816.2011
 
+[rtlwifi/rtl8192cufw_A.bin_base]
+desc: Realtek RTL8192CU/RTL8188CU UMC A-cut firmware
+
+[rtlwifi/rtl8192cufw_B.bin_base]
+desc: Realtek RTL8192CU/RTL8188CU UMC B-cut firmware
+
+[rtlwifi/rtl8192cufw_TMSC.bin_base]
+desc: Realtek RTL8192CU/RTL8188CU TMSC firmware
+
 [rtlwifi/rtl8192cufw.bin_base]
-desc: Realtek RTL8192CU/RTL8188CU firmware
+desc: Realtek RTL8192CU/RTL8188CU fallback firmware
 
 [rtlwifi/rtl8192defw.bin_base]
 desc: Realtek RTL8192DE firmware
