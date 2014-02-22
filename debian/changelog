@@ -1,4 +1,4 @@
-firmware-nonfree (0.41) UNRELEASED; urgency=low
+firmware-nonfree (0.41) unstable; urgency=medium
 
   * To allow auto-removal of linux-image-* packages, do not suggest
     virtual package linux-image (Closes: #724560)
@@ -31,7 +31,7 @@ firmware-nonfree (0.41) UNRELEASED; urgency=low
     (Closes: #628676)
   * linux-nonfree: Update wildcards for files under the AMD licences
 
- -- Ben Hutchings <ben@decadent.org.uk>  Wed, 25 Sep 2013 04:24:33 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Sat, 22 Feb 2014 20:17:55 +0000
 
 firmware-nonfree (0.40) unstable; urgency=low
 
