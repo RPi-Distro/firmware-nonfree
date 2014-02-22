@@ -28,6 +28,7 @@ firmware-nonfree (0.41) UNRELEASED; urgency=low
     Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless network
     chips, for use with the wl1251, wl12xx and wl18xx drivers
     (Closes: #628676)
+  * linux-nonfree: Update wildcards for files under the AMD licences
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 25 Sep 2013 04:24:33 +0100
 

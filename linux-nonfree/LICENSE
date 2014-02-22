@@ -297,7 +297,8 @@ License: Binary redistribution (MTS)
 
 Files: linux-nonfree/r128/r128_cce.bin, linux-nonfree/radeon/*_cp.bin,
  linux-nonfree/radeon/R600_me.bin, linux-nonfree/radeon/R600_pfp.bin,
- linux-nonfree/radeon/RS780_*.bin, linux-nonfree/radeon/RV*.bin
+ linux-nonfree/radeon/RS780_*.bin, linux-nonfree/radeon/RV*_me.bin,
+ linux-nonfree/radeon/RV*_pfp.bin
 Copyright: 2000-2009, Advanced Micro Devices, Inc.
 License: Binary redistribution (AMD permissive)
  All Rights Reserved.
@@ -321,10 +322,8 @@ License: Binary redistribution (AMD permissive)
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Files: linux-nonfree/radeon/CEDAR_*.bin, linux-nonfree/radeon/CYPRESS_*.bin,
- linux-nonfree/radeon/JUNIPER_*.bin, linux-nonfree/radeon/R600_rlc.bin,
- linux-nonfree/radeon/R700_rlc.bin, linux-nonfree/radeon/REDWOOD_*.bin,
-Copyright: 2009-2010, Advanced Micro Devices, Inc.
+Files: linux-nonfree/radeon/*.bin
+Copyright: 2009-2014, Advanced Micro Devices, Inc.
 License: Binary redistribution (AMD restrictive)
  All rights reserved.
  .
