@@ -120,8 +120,8 @@ License: BSD 2-clause
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
 
-Files: linux-nonfree/cxgb4/t4fw.bin
-Copyright: 2011, Chelsio Communications
+Files: linux-nonfree/cxgb4/*.bin
+Copyright: 2011-2013, Chelsio Communications
 License: Binary redistribution (Chelsio)
  All rights reserved.
  .
