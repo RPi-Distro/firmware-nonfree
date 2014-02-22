@@ -1,0 +1,60 @@
+[base]
+desc: TI Connectivity wireless network adapters
+files:
+ ti-connectivity/wl1251-fw.bin
+ ti-connectivity/wl1251-nvs.bin
+ ti-connectivity/wl1271-nvs.bin
+ ti-connectivity/wl127x-fw-5-mr.bin
+ ti-connectivity/wl127x-fw-5-plt.bin
+ ti-connectivity/wl127x-fw-5-sr.bin
+ ti-connectivity/wl127x-nvs.bin
+ ti-connectivity/wl128x-fw-5-mr.bin
+ ti-connectivity/wl128x-fw-5-plt.bin
+ ti-connectivity/wl128x-fw-5-sr.bin
+ ti-connectivity/wl128x-nvs.bin
+ ti-connectivity/wl12xx-nvs.bin
+ ti-connectivity/wl18xx-conf.bin
+ ti-connectivity/wl18xx-fw-2.bin
+ ti-connectivity/wl18xx-fw-3.bin
+longdesc: Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless
+ network chips supported by the wl1251, wl12xx and wl18xx drivers
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+
+[ti-connectivity/wl1251-fw.bin_base]
+desc: TI WL1251 firmware
+
+[ti-connectivity/wl1251-nvs.bin_base]
+desc: TI WL1251 reference NVS
+
+[ti-connectivity/wl127x-fw-5-mr.bin_base]
+desc: TI WL127x multi-role firmware
+
+[ti-connectivity/wl127x-fw-5-plt.bin_base]
+desc: TI WL127x PLT (calibration) firmware
+
+[ti-connectivity/wl127x-fw-5-sr.bin_base]
+desc: TI WL127x single-role firmware
+
+[ti-connectivity/wl127x-nvs.bin_base]
+desc: TI WL127x reference NVS
+
+[ti-connectivity/wl128x-fw-5-mr.bin_base]
+desc: TI WL128x multi-role firmware
+
+[ti-connectivity/wl128x-fw-5-plt.bin_base]
+desc: TI WL128x PLT (calibration) firmware
+
+[ti-connectivity/wl128x-fw-5-sr.bin_base]
+desc: TI WL128x single-role firmware
+
+[ti-connectivity/wl128x-nvs.bin_base]
+desc: TI WL128x reference NVS
+
+[ti-connectivity/wl18xx-conf.bin_base]
+desc: TI WL18xx default configuration
+
+[ti-connectivity/wl18xx-fw-2.bin_base]
+desc: TI WL18xx firmware, ABI 2
+
+[ti-connectivity/wl18xx-fw-3.bin_base]
+desc: TI WL18xx firmware, ABI 3

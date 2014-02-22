@@ -24,6 +24,10 @@ firmware-nonfree (0.41) UNRELEASED; urgency=low
     - issue with HCI stress testing
     - issue with some multi profile cases
   * iwlwifi: Add Intel Wireless 3160 Bluetooth firmware
+  * Add firmware-ti-connectivity package containing firmware for the
+    Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless network
+    chips, for use with the wl1251, wl12xx and wl18xx drivers
+    (Closes: #628676)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 25 Sep 2013 04:24:33 +0100
 

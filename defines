@@ -16,6 +16,7 @@ packages:
  qlogic
  ralink
  realtek
+ ti-connectivity
 
 [upstream]
 exclude:
@@ -58,6 +59,12 @@ exclude:
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
  mwl8k/fmimage_8366_ap-1.fw
+# No Debian release requires these versions
+ ti-connectivity/wl1271-fw*.bin
+ ti-connectivity/wl128x-fw.bin
+ ti-connectivity/wl128x-fw-ap.bin
+ ti-connectivity/wl12[78]x-fw*-[34]*.bin
+ ti-connectivity/wl18xx-fw.bin
 # Licenses for these are very unclear
  ueagle-atm/930-fpga.bin
  ueagle-atm/CMV*.bin    
