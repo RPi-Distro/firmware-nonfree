@@ -35,6 +35,8 @@ firmware-nonfree (0.41) unstable; urgency=medium
     licence
   * Suppress lintian warnings and errors due to our unusual mixture of
     licences
+  * debian/control: Allow debhelper to add dependencies through
+    ${misc:Depends}
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sat, 22 Feb 2014 20:17:55 +0000
 

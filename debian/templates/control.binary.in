@@ -3,6 +3,7 @@ Architecture: all
 Replaces: @?replaces@
 Conflicts: @?conflicts@
 Provides: @?provides@
+Depends: ${misc:Depends}
 Recommends: @?recommends@
 Suggests: initramfs-tools
 Description: Binary firmware for @desc@
