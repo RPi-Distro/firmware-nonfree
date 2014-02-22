@@ -260,6 +260,9 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         files_desc = [u"Contents:"]
 
+        wrap = TextWrapper(width = 71, fix_sentence_endings = True,
+                           initial_indent = ' * ',
+                           subsequent_indent = '   ').wrap
         for f in config_entry['files']:
             if f in links:
                 continue
@@ -273,11 +276,12 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             except KeyError:
                 pass
             if desc and version:
-                files_desc.append(u" * %s, version %s (%s)" % (desc, version, f))
+                desc = "%s, version %s (%s)" % (desc, version, f)
             elif desc:
-                files_desc.append(u" * %s (%s)" % (desc, f))
+                desc = u"%s (%s)" % (desc, f)
             else:
-                files_desc.append(u" * %s" % f)
+                desc = u"%s" % f
+            files_desc.extend(wrap(desc))
 
         packages_binary = self.process_packages(binary, vars)
 
