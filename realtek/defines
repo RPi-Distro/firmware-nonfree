@@ -22,6 +22,7 @@ files:
  rtl_nic/rtl8411-1.fw
  rtl_nic/rtl8411-2.fw
  rtlwifi/rtl8188efw.bin
+ rtlwifi/rtl8188eufw.bin
  rtlwifi/rtl8192cfw.bin
  rtlwifi/rtl8192cfwU_B.bin
  rtlwifi/rtl8192cfwU.bin
@@ -31,10 +32,12 @@ files:
  rtlwifi/rtl8712u.bin
  rtlwifi/rtl8723fw_B.bin
  rtlwifi/rtl8723fw.bin
+ rtlwifi/rtl8821aefw.bin
 longdesc: some Ethernet adapters with the RTL8111/RTL8168 chips supported
  by the r8169 driver; and wireless network cards with the RTL8188,
- RTL8192, RTL8712 and RTL8723 chips supported by the r8192_pci, r8192s_usb,
- r8712u, rtl8192ce, rtl8192cu, rtl8192de, rtl8192se and rtl8723ae drivers
+ RTL8192, RTL8712, RTL8723 and RTL8821 chips supported by the r8192_pci,
+ r8192s_usb, r8712u, rtl8188eu, rtl8192ce, rtl8192cu, rtl8192de, rtl8192se,
+ rtl8723ae and rtl8821ae drivers
 support: initramfs-tools
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
@@ -113,6 +116,9 @@ version: 0.0.1
 [rtlwifi/rtl8188efw.bin_base]
 desc: Realtek RTL8188EE firmware
 
+[rtlwifi/rtl8188eufw.bin_base]
+desc: Realtek RTL8188EU firmware
+
 [rtlwifi/rtl8192cfw.bin_base]
 desc: Realtek RTL8192CE/RTL8188CE firmware
 version: 4.816.2011
@@ -144,3 +150,6 @@ desc: Realtek RTL8723AE rev B firmware
 
 [rtlwifi/rtl8723fw.bin_base]
 desc: Realtek RTL8723AE rev A firmware
+
+[rtlwifi/rtl8821aefw.bin_base]
+desc: Realtek RTL8821AE firmware
