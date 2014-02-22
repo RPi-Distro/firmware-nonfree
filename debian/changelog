@@ -33,6 +33,8 @@ firmware-nonfree (0.41) unstable; urgency=medium
     licences
   * linux-nonfree: Update wildcard and date for files under the Chelsio
     licence
+  * Suppress lintian warnings and errors due to our unusual mixture of
+    licences
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sat, 22 Feb 2014 20:17:55 +0000
 

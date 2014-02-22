@@ -1,0 +1,8 @@
+# There is a separate LICENSE file for each binary package
+firmware-nonfree source: no-debian-copyright
+# Can't translate clickwrap licence texts
+firmware-nonfree source: not-using-po-debconf
+firmware-nonfree source: untranslatable-debconf-templates firmware-ivtv.templates: 4
+firmware-nonfree source: untranslatable-debconf-templates firmware-ivtv.templates: 134
+firmware-nonfree source: untranslatable-debconf-templates firmware-ipw2x00.templates: 4
+firmware-nonfree source: untranslatable-debconf-templates firmware-ipw2x00.templates: 82
