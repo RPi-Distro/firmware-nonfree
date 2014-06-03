@@ -7,6 +7,8 @@ firmware-nonfree (0.42) UNRELEASED; urgency=medium
     Linux 3.15 onward)
   * bnx2x: Remove Broadcom NetXtreme II 10Gb firmware version 7.8.2.0 (for
     Linux 3.7-3.9)
+  * linux-nonfree: Add VCE microcode, MC microcode version 2 and
+    "Mullins"/"Beema" IGP microcode
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 03 Jun 2014 21:09:49 +0100
 
