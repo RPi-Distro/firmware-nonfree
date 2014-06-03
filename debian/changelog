@@ -1,4 +1,4 @@
-firmware-nonfree (0.42) UNRELEASED; urgency=medium
+firmware-nonfree (0.42) unstable; urgency=medium
 
   * Update to linux-support-3.14-1
   * iwlwifi: Update Intel Wireless 3160 and 7260 wifi firmware to version
@@ -21,7 +21,7 @@ firmware-nonfree (0.42) UNRELEASED; urgency=medium
     rtl8723au and rtl8723be drivers
   * myricom: Update Myri-10G firmware to version 1.4.57
 
- -- Ben Hutchings <ben@decadent.org.uk>  Tue, 03 Jun 2014 21:09:49 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Tue, 03 Jun 2014 23:31:13 +0100
 
 firmware-nonfree (0.41) unstable; urgency=medium
 
