@@ -6,9 +6,6 @@ files:
  bnx2x/bnx2x-e1-7.0.29.0.fw
  bnx2x/bnx2x-e2-7.0.29.0.fw
  bnx2x/bnx2x-e1h-7.0.29.0.fw
- bnx2x/bnx2x-e1-7.8.2.0.fw
- bnx2x/bnx2x-e2-7.8.2.0.fw
- bnx2x/bnx2x-e1h-7.8.2.0.fw
  bnx2x/bnx2x-e1-7.8.17.0.fw
  bnx2x/bnx2x-e2-7.8.17.0.fw
  bnx2x/bnx2x-e1h-7.8.17.0.fw
@@ -39,18 +36,6 @@ version: 7.0.29.0
 [bnx2x/bnx2x-e1h-7.0.29.0.fw_base]
 desc: Broadcom NetXtreme II 10Gb 57712
 version: 7.0.29.0
-
-[bnx2x/bnx2x-e1-7.8.2.0.fw_base]
-desc: Broadcom NetXtreme II 10Gb 57710
-version: 7.8.2.0
-
-[bnx2x/bnx2x-e2-7.8.2.0.fw_base]
-desc: Broadcom NetXtreme II 10Gb 57711
-version: 7.8.2.0
-
-[bnx2x/bnx2x-e1h-7.8.2.0.fw_base]
-desc: Broadcom NetXtreme II 10Gb 57712
-version: 7.8.2.0
 
 [bnx2x/bnx2x-e1-7.8.17.0.fw_base]
 desc: Broadcom NetXtreme II 10Gb 57710

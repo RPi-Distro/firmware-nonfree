@@ -46,6 +46,7 @@ exclude:
  bnx2x/bnx2x-e*-6.*.fw
  bnx2x/bnx2x-e*-7.0.2[03].0.fw
  bnx2x/bnx2x-e*-7.2.*.fw
+ bnx2x/bnx2x-e*-7.8.2.0.fw
 # No Debian release references these versions
  cxgb3/t3fw-7.[01].0.bin
 # No Debian release requires these versions
