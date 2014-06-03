@@ -1,8 +1,14 @@
 firmware-nonfree (0.42) UNRELEASED; urgency=medium
 
   * Update to linux-support-3.14-1
-  * iwlwifi: Update Intel Wireless 3160 and 7260 firmware to version
-    22.24.8.0 (ABI 8); add Intel Wireless 7265 firmware
+  * iwlwifi: Update Intel Wireless 3160 and 7260 wifi firmware to version
+    22.24.8.0 (ABI 8)
+  * iwlwifi: Update Intel Wireless 3160 and 7260 Bluetooth firmware, fixing:
+    - Issue with LED blinking
+    - Issue with USB
+    - No SCO data over EHCI
+  * iwlwifi: Add Intel Wireless 7265 wifi and Bluetooth firmware, and
+    Bluetooth firmware for a new revision of Intel Wireless 7260
   * bnx2x: Add Broadcom NetXtreme II 10Gb firmware version 7.8.19.0 (for
     Linux 3.15 onward)
   * bnx2x: Remove Broadcom NetXtreme II 10Gb firmware version 7.8.2.0 (for
