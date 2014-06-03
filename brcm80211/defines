@@ -3,12 +3,15 @@ desc: Broadcom 802.11 wireless cards
 files:
  brcm/bcm43xx-0.fw
  brcm/bcm43xx_hdr-0.fw
+ brcm/brcmfmac43143-sdio.bin
  brcm/brcmfmac43241b0-sdio.bin
  brcm/brcmfmac43241b4-sdio.bin
  brcm/brcmfmac4329-sdio.bin
  brcm/brcmfmac4330-sdio.bin
  brcm/brcmfmac4334-sdio.bin
  brcm/brcmfmac4335-sdio.bin
+ brcm/brcmfmac43362-sdio.bin
+ brcm/brcmfmac4354-sdio.bin
 longdesc: wireless network cards with the Broadcom BCM4313, BCM43224,
  BCM43225, BCM43241, BCM4329, BCM4330, BCM4334 or BCM4335 chips, supported
  by the brcmsmac or brcmfmac driver
@@ -19,6 +22,9 @@ desc: Broadcom 802.11 firmware
 
 [brcm/bcm43xx_hdr-0.fw_base]
 desc: Broadcom 802.11 firmware header
+
+[brcm/brcmfmac43143-sdio.bin_base]
+desc: Broadcom BCM43143 firmware
 
 [brcm/brcmfmac43241b0-sdio.bin_base]
 desc: Broadcom BCM43241 rev 0-3 firmware
@@ -35,5 +41,11 @@ desc: Broadcom BCM4330 firmware
 [brcm/brcmfmac4334-sdio.bin_base]
 desc: Broadcom BCM4334 firmware
 
+[brcm/brcmfmac43362-sdio.bin_base]
+desc: Broadcom BCM43362 firmware
+
 [brcm/brcmfmac4335-sdio.bin_base]
 desc: Broadcom BCM4335 firmware
+
+[brcm/brcmfmac4354-sdio.bin_base]
+desc: Broadcom BCM4354 firmware

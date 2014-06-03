@@ -9,6 +9,8 @@ firmware-nonfree (0.42) UNRELEASED; urgency=medium
     Linux 3.7-3.9)
   * linux-nonfree: Add Radeon VCE microcode, MC microcode version 2 and
     "Mullins"/"Beema" IGP microcode (Closes: #750463)
+  * brcm80211: Add Broadcom BCM43143, BCM43362 and BCM4354 firmware for
+    use with brcmfmac driver
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 03 Jun 2014 21:09:49 +0100
 
