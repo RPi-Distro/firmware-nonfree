@@ -13,6 +13,7 @@ firmware-nonfree (0.42) UNRELEASED; urgency=medium
     use with brcmfmac driver
   * realtek: Add RTL8723AU and RTL8723BE firmware for use with the
     rtl8723au and rtl8723be drivers
+  * myricom: Update Myri-10G firmware to version 1.4.57
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 03 Jun 2014 21:09:49 +0100
 

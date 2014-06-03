@@ -11,16 +11,16 @@ uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [myri10ge_eth_z8e.dat_base]
 desc: Myri-10G firmware (aligned)
-version: 1.4.52
+version: 1.4.57
 
 [myri10ge_ethp_z8e.dat_base]
 desc: Myri-10G firmware (unaligned)
-version: 1.4.52
+version: 1.4.57
 
 [myri10ge_rss_eth_z8e.dat_base]
 desc: Myri-10G firmware (aligned, RSS)
-version: 1.4.52
+version: 1.4.57
 
 [myri10ge_rss_ethp_z8e.dat_base]
 desc: Myri-10G firmware (unaligned, RSS)
-version: 1.4.52
+version: 1.4.57
