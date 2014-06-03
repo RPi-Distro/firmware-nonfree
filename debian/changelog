@@ -1,3 +1,9 @@
+firmware-nonfree (0.42) UNRELEASED; urgency=medium
+
+  * Update to linux-support-3.14-1
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Tue, 03 Jun 2014 21:09:49 +0100
+
 firmware-nonfree (0.41) unstable; urgency=medium
 
   * To allow auto-removal of linux-image-* packages, do not suggest
