@@ -16,6 +16,7 @@ packages:
  qlogic
  ralink
  realtek
+ samsung
  ti-connectivity
 
 [upstream]

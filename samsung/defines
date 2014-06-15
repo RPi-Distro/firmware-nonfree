@@ -1,0 +1,28 @@
+[base]
+desc: Samsung MFC video codecs
+files:
+ s5p-mfc.fw
+ s5p-mfc-v6.fw
+ s5p-mfc-v6-v2.fw
+ s5p-mfc-v7.fw
+ s5p-mfc-v8.fw
+longdesc: Samsung MFC video codecs used in Exynos SoCs and supported by the
+ s5p-mfc driver
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+
+[s5p-mfc.fw_base]
+desc: MFCv5 firmware
+
+[s5p-mfc-v6.fw_base]
+desc: MFCv6 firmware
+version: 1
+
+[s5p-mfc-v6-v2.fw_base]
+desc: MFCv6 firmware
+version: 2
+
+[s5p-mfc-v7.fw_base]
+desc: MFCv7 firmware
+
+[s5p-mfc-v8.fw_base]
+desc: MFCv8 firmware
