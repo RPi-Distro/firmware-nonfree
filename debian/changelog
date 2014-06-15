@@ -1,11 +1,11 @@
-firmware-nonfree (0.43) UNRELEASED; urgency=medium
+firmware-nonfree (0.43) unstable; urgency=medium
 
   * iwlwifi: Add Intel Wireless 3160, 7260 and 7265 firmware version
     23.214.9.0 (ABI 9)
   * samsung: New package containing firmware for Samsung MFC video codecs
     used in Exynos SoCs (Closes: #749423)
 
- -- Ben Hutchings <ben@decadent.org.uk>  Fri, 13 Jun 2014 04:00:26 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Mon, 16 Jun 2014 00:49:44 +0100
 
 firmware-nonfree (0.42) unstable; urgency=medium
 
