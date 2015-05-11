@@ -39,6 +39,7 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
     version 396
   * realtek: Update RTL8107E-1, RTL8107E-2, RTL8168H-1 and RTL8168H-2 firmware
     to version 0.0.2
+  * iwlwifi: Update Intel Wireless Bluetooth firmware patches again
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 

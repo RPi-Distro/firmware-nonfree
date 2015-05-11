@@ -44,24 +44,30 @@ uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
 desc: Intel Wireless 3160 (B6) Bluetooth firmware patch
+version: 24
 
 [intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq_base]
-desc: Intel Wireless 3160 rev 10 Bluetooth firmware patch
+desc: Intel Wireless 3160 (B4) Bluetooth firmware patch
+version: 72
 
 [intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq_base]
-desc: Intel Wireless 7260 rev 10 WP2 B5 Bluetooth firmware path
+desc: Intel Wireless 7260 (B5) Bluetooth firmware path
+version: 24
 
 [intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq_base]
-desc: Intel Wireless 7260 rev 10 Bluetooth firmware patch
+desc: Intel Wireless 7260 (B3) Bluetooth firmware patch
+version: 72
 
 [intel/ibt-hw-37.7.bseq_base]
 desc: Intel Wireless 7260 Bluetooth firmware generic patch
 
 [intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq_base]
-desc: Intel Wireless 7265 rev 10 Bluetooth firmware generic patch
+desc: Intel Wireless 7265 (C0) Bluetooth firmware patch
+version: 40
 
 [intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq_base]
-desc: Intel Wireless 7265 (B0) Bluetooth firmware patch
+desc: Intel Wireless 7265 (D0) Bluetooth firmware patch
+version: 09
 
 [intel/ibt-hw-37.8.bseq_base]
 desc: Intel Wireless 7265 Bluetooth firmware generic patch
