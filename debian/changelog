@@ -1,7 +1,7 @@
 firmware-nonfree (0.44) UNRELEASED; urgency=medium
 
-  [ Ben Hutchings ]
-  * Switch to linux-support-4.0.0-1
+  [ Raphaël Hertzog ]
+  * Switch to linux-support-3.16.0-4.
 
   [ Sophie Brun ]
   * iwlwifi: Add Intel Wireless 3160, 7260 7265 and 7265D firmware version
@@ -30,6 +30,9 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
     driver
   * iwlwifi: Update Intel Wireless Bluetooth firmware patches; add Intel
     Wireless 3160 (B6) and 7265 (B0) Bluetooth firmware patches
+
+  [ Ben Hutchings ]
+  * Switch to linux-support-4.0.0-1
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
