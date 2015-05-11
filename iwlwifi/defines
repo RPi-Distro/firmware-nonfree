@@ -16,6 +16,7 @@ files:
  iwlwifi-3160-7.ucode
  iwlwifi-3160-8.ucode
  iwlwifi-3160-9.ucode
+ iwlwifi-3160-10.ucode
  iwlwifi-3945-2.ucode
  iwlwifi-4965-2.ucode
  iwlwifi-5000-2.ucode
@@ -30,8 +31,10 @@ files:
  iwlwifi-7260-7.ucode
  iwlwifi-7260-8.ucode
  iwlwifi-7260-9.ucode
+ iwlwifi-7260-10.ucode
  iwlwifi-7265-8.ucode
  iwlwifi-7265-9.ucode
+ iwlwifi-7265-10.ucode
 longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
  iwlwifi/iwlagn drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
@@ -81,6 +84,9 @@ desc: Intel Wireless 3160 firmware
 [iwlwifi-3160-9.ucode_base]
 desc: Intel Wireless 3160 firmware
 
+[iwlwifi-3160-10.ucode_base]
+desc: Intel Wireless 3160 firmware
+
 [iwlwifi-3945-2.ucode_base]
 desc: Intel Wireless 3945 firmware
 
@@ -123,8 +129,14 @@ desc: Intel Wireless 7260 firmware
 [iwlwifi-7260-9.ucode_base]
 desc: Intel Wireless 7260 firmware
 
+[iwlwifi-7260-10.ucode_base]
+desc: Intel Wireless 7260 firmware
+
 [iwlwifi-7265-8.ucode_base]
 desc: Intel Wireless 7265 firmware
 
 [iwlwifi-7265-9.ucode_base]
+desc: Intel Wireless 7265 firmware
+
+[iwlwifi-7265-10.ucode_base]
 desc: Intel Wireless 7265 firmware
