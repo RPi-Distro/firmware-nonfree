@@ -67,6 +67,7 @@ desc: Atheros AR3012 rev 01020200 patch
 
 [ar3k/AthrBT_0x01020201.dfu_base]
 desc: Atheros AR3012 rev 01020201 patch
+version: 170
 
 [ar3k/AthrBT_0x11020000.dfu_base]
 desc: Atheros AR3012 rev 11020000 patch
