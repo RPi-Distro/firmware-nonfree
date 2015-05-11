@@ -1,7 +1,7 @@
 firmware-nonfree (0.44) UNRELEASED; urgency=medium
 
-  [ Raphaël Hertzog ]
-  * Switch to linux-support-3.16.0-4.
+  [ Ben Hutchings ]
+  * Switch to linux-support-4.0.0-1
 
   [ Sophie Brun ]
   * iwlwifi: Add Intel Wireless 3160, 7260 7265 and 7265D firmware version
