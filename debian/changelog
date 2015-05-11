@@ -33,6 +33,8 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
 
   [ Ben Hutchings ]
   * Switch to linux-support-4.0.0-1
+  * iwlwifi: Update Intel Wireless 3160, 7260 7265 and 7265D firmware to
+    version 23.15.10.0 (ABI 10)
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
