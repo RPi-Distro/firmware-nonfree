@@ -8,6 +8,10 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
     23.11.10.0 (ABI 10)
   * iwlwifi: Update Intel Wireless 3160, 7260 and 7265 firmware to version
     25.228.9.0 (ABI 9)
+  * realtek: Add RTL8192EE, RTL8723AU rev A with-Bluetooth and RTL8821AE
+    WoWLAN firmware for use with the rtl8192ee, r8723au and rtl8821ae drivers
+  * realtek: Update RTL8192CE/RTL8188CE, RTL8192CE/RTL8188CE B-cut and
+    RTL8192DE firmware
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
