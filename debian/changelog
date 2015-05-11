@@ -13,6 +13,8 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
   * realtek: Update RTL8192CE/RTL8188CE, RTL8192CE/RTL8188CE B-cut and
     RTL8192DE firmware
   * realtek: Add RTL8107E-1, RTL8107E-2, RTL8168H-1 and RTL8168H-2 firmware
+  * qlogic: Update QLogic ISP2422, ISP2432[M], SP222, SP232 and ISP2532
+    firmware to version 7.03.00
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
