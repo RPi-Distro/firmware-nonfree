@@ -1,1 +1,34 @@
-- find better package name
+Remaining firmwares that are referenced either in Linux 3.16 or Linux 3.18
+that we don't know where to put:
+
+ctefx.bin
+go7007/lr192.fw
+go7007/s2250-1.fw
+go7007/s2250-2.fw
+go7007/px-tv402u.fw
+go7007/go7007tv.bin
+go7007/go7007fw.bin
+go7007/px-m402u.fw
+go7007/wis-startrek.fw
+ct2fw-3.2.3.0.bin
+ctfw-3.2.3.0.bin
+cbfw-3.2.3.0.bin
+intel/fw_sst_0f28.bin-48kHz_i2s_master
+as102_data1_st.hex
+as102_data2_st.hex
+intel/IntcSST2.bin
+intel/fw_sst_0f28.bin
+
+Remaining firmwares that were (apparently) not referenced in either Linux 3.16
+or 3.18:
+
+brcm/bcm4329-fullmac-4.bin
+TDA7706_OM_v2.5.1_boot.txt
+TDA7706_OM_v3.0.2_boot.txt
+ctspeq.bin
+mt7650.bin
+ctfw-3.2.1.1.bin
+ct2fw-3.2.1.1.bin
+cbfw-3.2.1.1.bin
+qat_895xcc.bin
+r8a779x_usb3_v1.dlmem
