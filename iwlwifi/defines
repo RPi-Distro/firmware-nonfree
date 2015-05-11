@@ -1,11 +1,13 @@
 [base]
 desc: Intel Wireless cards
 files:
+ intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq
  intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq
  intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq
  intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq
  intel/ibt-hw-37.7.bseq
  intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq
+ intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq
  intel/ibt-hw-37.8.bseq
  iwlwifi-100-5.ucode
  iwlwifi-105-6.ucode
@@ -40,6 +42,9 @@ longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
  iwlwifi/iwlagn drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
+[intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
+desc: Intel Wireless 3160 (B6) Bluetooth firmware patch
+
 [intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq_base]
 desc: Intel Wireless 3160 rev 10 Bluetooth firmware patch
 
@@ -54,6 +59,9 @@ desc: Intel Wireless 7260 Bluetooth firmware generic patch
 
 [intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq_base]
 desc: Intel Wireless 7265 rev 10 Bluetooth firmware generic patch
+
+[intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq_base]
+desc: Intel Wireless 7265 (B0) Bluetooth firmware patch
 
 [intel/ibt-hw-37.8.bseq_base]
 desc: Intel Wireless 7265 Bluetooth firmware generic patch

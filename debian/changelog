@@ -28,6 +28,8 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
     series, HD 7900 series, HD 7700 series
   * brcm80211: Add BCM43236 and BCM43143 USB firmware for use with brcmfmac
     driver
+  * iwlwifi: Update Intel Wireless Bluetooth firmware patches; add Intel
+    Wireless 3160 (B6) and 7265 (B0) Bluetooth firmware patches
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
