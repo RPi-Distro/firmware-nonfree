@@ -21,6 +21,11 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
   * linux-nonfree: Add dvb-* firmwares. Xceive 4000 tuner firmware version
     1.4.1, Xceive 5000c tuner firmware version 4.1.30.7, DiBcom dib9135 DVB-T
     USB firmware and DiBcom dib9135 DVB-T USB firmware
+  * linux-nonfree: Add UVD microcode for Radeon R600, RS780 and RV770
+  * linux-nonfree: Add Radeon firmwares for kernel 3.17 and newer for HD 7790/
+    8770/8950, HD 8500M series and R5 M200, R9 290 series, HD 8100/8200/8300/
+    8400, R5/R7 IGP 200, "Mullins"/"Beema", HD 8500/8600/8700 series, HD 7800
+    series, HD 7900 series, HD 7700 series
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
