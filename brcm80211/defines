@@ -57,3 +57,4 @@ desc: Broadcom BCM4335 firmware
 
 [brcm/brcmfmac4354-sdio.bin_base]
 desc: Broadcom BCM4354 firmware
+version: 7.35.79.57
