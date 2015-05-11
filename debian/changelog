@@ -26,6 +26,8 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
     8770/8950, HD 8500M series and R5 M200, R9 290 series, HD 8100/8200/8300/
     8400, R5/R7 IGP 200, "Mullins"/"Beema", HD 8500/8600/8700 series, HD 7800
     series, HD 7900 series, HD 7700 series
+  * brcm80211: Add BCM43236 and BCM43143 USB firmware for use with brcmfmac
+    driver
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 

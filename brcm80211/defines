@@ -3,7 +3,9 @@ desc: Broadcom 802.11 wireless cards
 files:
  brcm/bcm43xx-0.fw
  brcm/bcm43xx_hdr-0.fw
+ brcm/brcmfmac43143.bin
  brcm/brcmfmac43143-sdio.bin
+ brcm/brcmfmac43236b.bin
  brcm/brcmfmac43241b0-sdio.bin
  brcm/brcmfmac43241b4-sdio.bin
  brcm/brcmfmac4329-sdio.bin
@@ -12,9 +14,9 @@ files:
  brcm/brcmfmac4335-sdio.bin
  brcm/brcmfmac43362-sdio.bin
  brcm/brcmfmac4354-sdio.bin
-longdesc: wireless network cards with the Broadcom BCM4313, BCM43224,
- BCM43225, BCM43241, BCM4329, BCM4330, BCM4334 or BCM4335 chips, supported
- by the brcmsmac or brcmfmac driver
+longdesc: wireless network cards with the Broadcom BCM4313, BCM43143, BCM43224,
+ BCM43225, BCM43236, BCM43241, BCM4329, BCM4330, BCM4334 or BCM4335 chips,
+ supported by the brcmsmac or brcmfmac driver
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [brcm/bcm43xx-0.fw_base]
@@ -23,8 +25,14 @@ desc: Broadcom 802.11 firmware
 [brcm/bcm43xx_hdr-0.fw_base]
 desc: Broadcom 802.11 firmware header
 
+[brcm/brcmfmac43143.bin_base]
+desc: Broadcom BCM43143 USB firmware
+
 [brcm/brcmfmac43143-sdio.bin_base]
-desc: Broadcom BCM43143 firmware
+desc: Broadcom BCM43143 SDIO firmware
+
+[brcm/brcmfmac43236b.bin_base]
+desc: Broadcom BCM43236 firmware
 
 [brcm/brcmfmac43241b0-sdio.bin_base]
 desc: Broadcom BCM43241 rev 0-3 firmware
