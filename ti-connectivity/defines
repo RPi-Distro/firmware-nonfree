@@ -13,7 +13,6 @@ files:
  ti-connectivity/wl128x-fw-5-sr.bin
  ti-connectivity/wl128x-nvs.bin
  ti-connectivity/wl12xx-nvs.bin
- ti-connectivity/wl18xx-conf.bin
  ti-connectivity/wl18xx-fw-2.bin
  ti-connectivity/wl18xx-fw-3.bin
 longdesc: Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless
@@ -49,9 +48,6 @@ desc: TI WL128x single-role firmware
 
 [ti-connectivity/wl128x-nvs.bin_base]
 desc: TI WL128x reference NVS
-
-[ti-connectivity/wl18xx-conf.bin_base]
-desc: TI WL18xx default configuration
 
 [ti-connectivity/wl18xx-fw-2.bin_base]
 desc: TI WL18xx firmware, ABI 2

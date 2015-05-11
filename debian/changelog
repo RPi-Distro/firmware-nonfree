@@ -44,6 +44,8 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
   * libertas: Update Marvell PCIE8897, SD8787, SD8897 and USB8797 firmware
   * brcm80211: Update Broadcom BCM4354 firmware to version 7.35.79.57
   * atheros: Update Atheros AR3012 rev 01020201 patch to version 170
+  * ti-connectivity: Remove TI WL18xx default configuration, as TI now
+    recommends letting the driver use its built-in defaults
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
