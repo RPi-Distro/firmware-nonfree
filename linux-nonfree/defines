@@ -29,8 +29,12 @@ files:
  cxgb4/t5fw-1.12.25.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
+ dvb-fe-xc4000-1.4.1.fw
  dvb-fe-xc5000-1.6.114.fw
+ dvb-fe-xc5000c-4.1.30.7.fw
  dvb-usb-dib0700-1.20.fw
+ dvb-usb-it9135-01.fw
+ dvb-usb-it9135-02.fw
  e100/d101m_ucode.bin
  e100/d101s_ucode.bin
  e100/d102e_ucode.bin
@@ -294,13 +298,27 @@ desc: DAB-USB firmware
 [dabusb/bitstream.bin_base]
 desc: DAB-USB FPGA bitfile
 
+[dvb-fe-xc4000-1.4.1.fw_base]
+desc: Xceive 4000 tuner firmware
+version: 1.4.1
+
 [dvb-fe-xc5000-1.6.114.fw_base]
 desc: Xceive 5000 tuner firmware
 version: 1.6.114
 
+[dvb-fe-xc5000c-4.1.30.7.fw_base]
+desc: Xceive 5000c tuner firmware
+version: 4.1.30.7
+
 [dvb-usb-dib0700-1.20.fw_base]
 desc: DiBcom dib0700 USB DVB bridge firmware
 version: 1.20
+
+[dvb-usb-it9135-01.fw_base]
+desc: DiBcom dib9135 DVB-T USB firmware
+
+[dvb-usb-it9135-02.fw_base]
+desc: DiBcom dib9135 DVB-T USB firmware
 
 [e100/d101m_ucode.bin_base]
 desc: Intel 82559 D101M microcode
