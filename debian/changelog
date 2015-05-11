@@ -16,6 +16,8 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
   * qlogic: Update QLogic ISP2422, ISP2432[M], SP222, SP232 and ISP2532
     firmware to version 7.03.00
   * linux-nonfree: Update Chelsio T4 and T5 firmware to version 1.12.25.0
+  * bnx2x: Add Broadcom NetXtreme II 10Gb 57710, 57711 and 57712 firmware
+    version 7.10.51.0
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
