@@ -1,4 +1,4 @@
-firmware-nonfree (0.44) UNRELEASED; urgency=medium
+firmware-nonfree (0.44) unstable; urgency=medium
 
   [ Raphaël Hertzog ]
   * Switch to linux-support-3.16.0-4.
@@ -47,7 +47,7 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
   * ti-connectivity: Remove TI WL18xx default configuration, as TI now
     recommends letting the driver use its built-in defaults
 
- -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Mon, 11 May 2015 20:25:28 +0100
 
 firmware-nonfree (0.43) unstable; urgency=medium
 
