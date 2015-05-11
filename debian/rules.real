@@ -17,11 +17,6 @@ install:
 	dh_testdir
 	dh_testroot
 	dh_prep
-ifneq (,$(HAVE_MULTIARCH))
-	echo firmware:Multi-Arch=foreign >>debian/$(PACKAGE_NAME).substvars
-else
-	echo firmware:Multi-Arch= >>debian/$(PACKAGE_NAME).substvars
-endif
 	@for i in $(FILES); do \
 	  s=$(PACKAGE)/"$${i%:*}"; \
 	  d=/lib/firmware/"$${i#*:}"; \

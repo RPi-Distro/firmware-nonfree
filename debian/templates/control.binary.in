@@ -10,5 +10,5 @@ Suggests: initramfs-tools
 Description: Binary firmware for @desc@
  This package contains the binary firmware for @longdesc@.
 Homepage: @uri@
-Multi-Arch: ${firmware:Multi-Arch}
+Multi-Arch: foreign
 
