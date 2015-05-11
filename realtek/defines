@@ -80,11 +80,11 @@ version: 0.0.1
 
 [rtl_nic/rtl8107e-1.fw_base]
 desc: Realtek RTL8107E-1 firmware
-version: 0.0.1
+version: 0.0.2
 
 [rtl_nic/rtl8107e-2.fw_base]
 desc: Realtek RTL8107E-2 firmware
-version: 0.0.1
+version: 0.0.2
 
 [rtl_nic/rtl8168d-1.fw_base]
 desc: Realtek RTL8111D-1/RTL8168D-1 firmware
@@ -124,11 +124,11 @@ version: 0.0.1
 
 [rtl_nic/rtl8168h-1.fw_base]
 desc: Realtek RTL8168H-1 firmware
-version: 0.0.1
+version: 0.0.2
 
 [rtl_nic/rtl8168h-2.fw_base]
 desc: Realtek RTL8168H-2 firmware
-version: 0.0.1
+version: 0.0.2
 
 [rtl_nic/rtl8402-1.fw_base]
 desc: Realtek RTL8402-1 firmware

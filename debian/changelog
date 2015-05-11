@@ -37,6 +37,8 @@ firmware-nonfree (0.44) UNRELEASED; urgency=medium
     version 23.15.10.0 (ABI 10)
   * linux-nonfree: Update Radeon R5/R7 IGP 200 series MEC microcode to
     version 396
+  * realtek: Update RTL8107E-1, RTL8107E-2, RTL8168H-1 and RTL8168H-2 firmware
+    to version 0.0.2
 
  -- Raphaël Hertzog <hertzog@debian.org>  Fri, 23 Jan 2015 18:33:50 +0100
 
