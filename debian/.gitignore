@@ -1,0 +1,7 @@
+/build/
+/control
+/control.md5sum
+/files
+/firmware-*
+/rules.gen
+/stamps/
