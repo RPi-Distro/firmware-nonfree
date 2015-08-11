@@ -4,6 +4,7 @@ firmware-nonfree (0.45) UNRELEASED; urgency=medium
     r8192s_usb was replaced by r8172u (Closes: #793874)
   * Adjust for migration to git:
     - Add .gitignore file
+    - debian/control: Update Vcs-* fields
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 28 Jul 2015 23:32:01 +0100
 
