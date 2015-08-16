@@ -5,3 +5,4 @@
 /firmware-*
 /rules.gen
 /stamps/
+!/*.lintian-overrides
