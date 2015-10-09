@@ -1,5 +1,6 @@
 firmware-nonfree (0.45) UNRELEASED; urgency=medium
 
+  [ Ben Hutchings ]
   * realtek: Remove RTL8192SU/rtl8192sfw.bin, which has not been needed since
     r8192s_usb was replaced by r8172u (Closes: #793874)
   * Adjust for migration to git:
@@ -12,6 +13,11 @@ firmware-nonfree (0.45) UNRELEASED; urgency=medium
   * debian/control: Update Standards-Version to 3.9.6; no changes needed
   * Update to linux-support 4.1.0-2
   * debian/control: Drop Frederik Schüler and dann frazier from Uploaders
+
+  [ maximilian attems ]
+  * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
+    25.30.14.0 (ABI 14)
+  * iwlwifi: Add Intel Wireless 8260 firmware version 25.30.14.0 (ABI 14)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 28 Jul 2015 23:32:01 +0100
 
