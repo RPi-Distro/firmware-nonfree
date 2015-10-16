@@ -112,28 +112,6 @@ desc: SD8688 main code
 [libertas/sd8688_helper.bin_base]
 desc: SD8688 boot code
 
-[libertas/sd8385.bin_base]
-desc: SD8385 main code
-
-[libertas/sd8385_helper.bin_base]
-desc: SD8385 boot code
-
-[libertas/sd8686_v8.bin_base]
-desc: SD8686 main code
-version: 8.x
-
-[libertas/sd8686_v8_helper.bin_base]
-desc: SD8686 boot code
-version: 8.x
-
-[libertas/sd8686_v9.bin_base]
-desc: SD8686 main code
-version: 9.x
-
-[libertas/sd8686_v9_helper.bin_base]
-desc: SD8686 boot code
-version: 9.x
-
 [libertas/usb8388_olpc.bin_base]
 desc: USB8388 OLPC firmware
 version: 5.110.22.p23
