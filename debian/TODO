@@ -22,9 +22,6 @@ intel/fw_sst_0f28.bin
 Remaining firmwares that were (apparently) not referenced in either Linux 3.16
 or 3.18:
 
-brcm/bcm4329-fullmac-4.bin
-TDA7706_OM_v2.5.1_boot.txt
-TDA7706_OM_v3.0.2_boot.txt
 ctspeq.bin
 mt7650.bin
 ctfw-3.2.1.1.bin

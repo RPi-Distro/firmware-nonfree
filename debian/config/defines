@@ -70,13 +70,12 @@ exclude:
  ar9170-[12].fw
 # These are said to be related to the hci_uart driver, but it doesn't
 # request them
- ar3k/*/ar3kbdaddr.pst
- ar3k/*/PS_ASIC*.pst
- ar3k/*/RamPatch.txt
+ ar3k/*/*
 # ath6k doesn't actually support this hardware
  ath6k/AR6002/*
 # These filenames are wrong!
  brcm/bcm43xx*-0-610-809-0.fw
+ brcm/bcm4329-fullmac-4.bin
 # No Debian release references these versions
  bnx2/bnx2-*-4.6.*.fw
  bnx2/bnx2-*-5.0.0.j6.fw
@@ -104,6 +103,8 @@ exclude:
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
  mwl8k/fmimage_8366_ap-1.fw
+# Driver never went upstream
+ TDA7706*
 # No Debian release requires these versions
  ti-connectivity/wl1271-fw*.bin
  ti-connectivity/wl128x-fw.bin
