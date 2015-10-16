@@ -20,6 +20,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * debian/control: Set the upstream homepage URL to the current cgit page
     for linux-firmware.git (except for ipw2x00 and ivtv packages)
   * linux-nonfree: Split into firmware-{amd-graphics,misc-nonfree} packages
+  * amd-graphics: Include Radeon HD 7900 series VCE microcode
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version

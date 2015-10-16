@@ -208,6 +208,7 @@ files:
  radeon/tahiti_smc.bin
  radeon/TAHITI_smc.bin
  radeon/TAHITI_uvd.bin
+ radeon/TAHITI_vce.bin
  radeon/TURKS_mc.bin
  radeon/TURKS_me.bin
  radeon/TURKS_pfp.bin
@@ -858,6 +859,9 @@ desc: Radeon HD 7900 series SMC microcode
 
 [radeon/TAHITI_uvd.bin_base]
 desc: Radeon HD 7900 series UVD microcode
+
+[radeon/TAHITI_vce.bin_base]
+desc: Radeon HD 7900 series VCE microcode
 
 [radeon/TURKS_mc.bin_base]
 desc: Radeon HD 6500/6600/7500 series MC microcode
