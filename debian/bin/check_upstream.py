@@ -1,8 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import errno, filecmp, fnmatch, glob, os.path, re, sys
 rules_defs = dict((match.group(1), match.group(2))
-                  for line in file('debian/rules.defs')
+                  for line in open('debian/rules.defs')
                   for match in [re.match(r'(\w+)\s*:=\s*(.*)\n', line)])
 sys.path.append('/usr/share/linux-support-%s/lib/python' %
                 rules_defs['KERNELVERSION'])
@@ -61,17 +61,18 @@ def update_file(source_dir, dest_dirs, filename):
                           glob.glob(os.path.join(dest_dir, filename + '-*'))):
             if os.path.isfile(dest_file):
                 if not filecmp.cmp(source_file, dest_file, True):
-                    print '%s: changed' % filename
+                    print('%s: changed' % filename)
                 return
-    print '%s: could be added' % filename
+    print('%s: could be added' % filename)
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print >>sys.stderr, '''\
+        print('''\
 Usage: %s <linux-firmware-dir>
 
 Report changes or additions in linux-firmware.git that may be suitable
 for inclusion in firmware-nonfree.
-''' % sys.argv[0]
+''' % sys.argv[0],
+              file=sys.stderr)
         sys.exit(2)
     main(sys.argv[1])
