@@ -19,6 +19,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * check_upstream.py: Reimplement check for unpackaged firmware
   * debian/control: Set the upstream homepage URL to the current cgit page
     for linux-firmware.git (except for ipw2x00 and ivtv packages)
+  * linux-nonfree: Split into firmware-{amd-graphics,misc-nonfree} packages
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version

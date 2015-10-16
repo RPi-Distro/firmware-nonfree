@@ -1,6 +1,7 @@
 [base]
 packages:
  adi
+ amd-graphics
  atheros
  bnx2
  bnx2x
@@ -10,7 +11,7 @@ packages:
  ivtv
  iwlwifi
  libertas
- linux-nonfree
+ misc-nonfree
  myricom
  netxen
  qlogic

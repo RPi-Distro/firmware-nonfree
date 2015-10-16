@@ -1,0 +1,234 @@
+[base]
+desc: various drivers in the Linux kernel
+longdesc:
+ various drivers in the Linux kernel. This is a collection of firmware blobs
+ which are not individually large enough to warrant a standalone package
+replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
+breaks: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
+files:
+ 3com/typhoon.bin
+ advansys/3550.bin
+ advansys/38C0800.bin
+ advansys/38C1600.bin
+ advansys/mcode.bin
+ agere_ap_fw.bin
+ agere_sta_fw.bin
+ cxgb3/ael2005_opt_edc.bin
+ cxgb3/ael2005_twx_edc.bin
+ cxgb3/ael2020_twx_edc.bin
+ cxgb3/t3b_psram-1.1.0.bin
+ cxgb3/t3c_psram-1.1.0.bin
+ cxgb3/t3fw-7.4.0.bin
+ cxgb3/t3fw-7.10.0.bin
+ cxgb3/t3fw-7.12.0.bin
+ cxgb4/t4fw.bin
+ cxgb4/t4fw-1.12.25.0.bin
+ cxgb4/t5fw.bin
+ cxgb4/t5fw-1.12.25.0.bin
+ dabusb/bitstream.bin
+ dabusb/firmware.fw
+ dvb-fe-xc4000-1.4.1.fw
+ dvb-fe-xc5000-1.6.114.fw
+ dvb-fe-xc5000c-4.1.30.7.fw
+ dvb-usb-dib0700-1.20.fw
+ dvb-usb-it9135-01.fw
+ dvb-usb-it9135-02.fw
+ e100/d101m_ucode.bin
+ e100/d101s_ucode.bin
+ e100/d102e_ucode.bin
+ ene-ub6250/msp_rdwr.bin
+ ene-ub6250/ms_init.bin
+ ene-ub6250/ms_rdwr.bin
+ ene-ub6250/sd_init1.bin
+ ene-ub6250/sd_init2.bin
+ ene-ub6250/sd_rdwr.bin
+ kaweth/new_code.bin
+ kaweth/new_code_fix.bin
+ kaweth/trigger_code.bin
+ kaweth/trigger_code_fix.bin
+ matrox/g200_warp.fw
+ matrox/g400_warp.fw
+ mts_cdma.fw
+ mts_edge.fw
+ mts_gsm.fw
+ tehuti/bdx.bin
+ tigon/tg3_tso.bin
+ tigon/tg3.bin
+ tigon/tg3_tso5.bin
+ tigon/tg357766.bin
+ v4l-cx231xx-avcore-01.fw
+ v4l-cx23418-apu.fw
+ v4l-cx23418-cpu.fw
+ v4l-cx23418-dig.fw
+ v4l-cx25840.fw
+ v4l-cx23885-avcore-01.fw
+ vntwusb.fw
+support: initramfs-tools
+uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
+
+[3com/typhoon.bin_base]
+desc: 3Com Typhoon firmware
+version: 03.001.008
+
+[advansys/3550.bin_base]
+desc: AdvanSys ASC-3550 firmware
+
+[advansys/38C0800.bin_base]
+desc: AdvanSys ASC-38C0800 firmware
+
+[advansys/38C1600.bin_base]
+desc: AdvanSys ASC-38C1600 firmware
+
+[advansys/mcode.bin_base]
+desc: AdvanSys SCSI controller microcode
+
+[agere_ap_fw.bin_base]
+desc: Agere/Prism/Symbol Orinoco firmware (AP mode)
+version: 9.48 Hermes I
+
+[agere_sta_fw.bin_base]
+desc: Agere/Prism/Symbol Orinoco firmware (STA mode)
+version: 9.48 Hermes I
+
+[cxgb3/ael2005_opt_edc.bin_base]
+desc: Chelsio T3 optical EDC firmware (AEL2005 PHY)
+
+[cxgb3/ael2005_twx_edc.bin_base]
+desc: Chelsio T3 twinax EDC firmware (AEL2005 PHY)
+
+[cxgb3/ael2020_twx_edc.bin_base]
+desc: Chelsio T3 twinax EDC firmware (AEL2020 PHY)
+
+[cxgb3/t3b_psram-1.1.0.bin_base]
+desc: Chelsio T3B protocol engine firmware
+version: 1.1.0
+
+[cxgb3/t3c_psram-1.1.0.bin_base]
+desc: Chelsio T3C protocol engine firmware
+version: 1.1.0
+
+[cxgb3/t3fw-7.4.0.bin_base]
+desc: Chelsio T3 main firmware
+version: 7.4.0
+
+[cxgb3/t3fw-7.10.0.bin_base]
+desc: Chelsio T3 main firmware
+version: 7.10.0
+
+[cxgb3/t3fw-7.12.0.bin_base]
+desc: Chelsio T3 main firmware
+version: 7.12.0
+
+[cxgb4/t4fw-1.12.25.0.bin_base]
+desc: Chelsio T4 firmware
+version: 1.12.25.0
+
+[cxgb4/t5fw-1.12.25.0.bin_base]
+desc: Chelsio T5 firmware
+version: 1.12.25.0
+
+[dabusb/firmware.fw_base]
+desc: DAB-USB firmware
+
+[dabusb/bitstream.bin_base]
+desc: DAB-USB FPGA bitfile
+
+[dvb-fe-xc4000-1.4.1.fw_base]
+desc: Xceive 4000 tuner firmware
+version: 1.4.1
+
+[dvb-fe-xc5000-1.6.114.fw_base]
+desc: Xceive 5000 tuner firmware
+version: 1.6.114
+
+[dvb-fe-xc5000c-4.1.30.7.fw_base]
+desc: Xceive 5000c tuner firmware
+version: 4.1.30.7
+
+[dvb-usb-dib0700-1.20.fw_base]
+desc: DiBcom dib0700 USB DVB bridge firmware
+version: 1.20
+
+[dvb-usb-it9135-01.fw_base]
+desc: DiBcom dib9135 DVB-T USB firmware
+
+[dvb-usb-it9135-02.fw_base]
+desc: DiBcom dib9135 DVB-T USB firmware
+
+[e100/d101m_ucode.bin_base]
+desc: Intel 82559 D101M microcode
+
+[e100/d101s_ucode.bin_base]
+desc: Intel 82559 D101S microcode
+
+[e100/d102e_ucode.bin_base]
+desc: Intel 82551-F and 82551-10 microcode
+
+[ene-ub6250/msp_rdwr.bin_base]
+desc: ENE UB6250 MS Pro read/write firmware
+
+[ene-ub6250/ms_init.bin_base]
+desc: ENE UB6250 MS init firmware
+
+[ene-ub6250/ms_rdwr.bin_base]
+desc: ENE UB6250 MS read/write firmware
+
+[ene-ub6250/sd_init1.bin_base]
+desc: ENE UB6250 SD init stage 1 firmware
+
+[ene-ub6250/sd_init2.bin_base]
+desc: ENE UB6250 SD init stage 2 firmware
+
+[ene-ub6250/sd_rdwr.bin_base]
+desc: ENE UB6250 SD read/write firmware
+
+[matrox/g200_warp.fw_base]
+desc: Matrox G200 WARP engine microcode
+
+[matrox/g400_warp.fw_base]
+desc: Matrox G400/G550 WARP engine microcode
+
+[mts_cdma.fw_base]
+desc: Multi-Tech USB CDMA modem firmware
+
+[mts_edge.fw_base]
+desc: Multi-Tech USB EDGE modem firmware
+
+[mts_gsm.fw_base]
+desc: Multi-Tech USB GPRS modem firmware
+
+[tehuti/bdx.bin_base]
+desc: Tehuti network card firmware
+
+[tigon/tg3_tso.bin_base]
+desc: Broadcom BCM5703/BCM5704 TSO firmware
+
+[tigon/tg3.bin_base]
+desc: Broadcom BCM5701A0 firmware
+
+[tigon/tg3_tso5.bin_base]
+desc: Broadcom BCM5705 TSO firmware
+
+[tigon/tg357766.bin_base]
+desc: Broadcom BCM57766 firmware
+
+[v4l-cx231xx-avcore-01.fw_base]
+desc: Conexant CX231xx core firmware
+
+[v4l-cx23418-apu.fw_base]
+desc: Conexant CX23418 APU firmware
+
+[v4l-cx23418-cpu.fw_base]
+desc: Conexant CX23418 CPU firmware
+
+[v4l-cx23418-dig.fw_base]
+desc: Conexant CX23418 ADEC firmware
+
+[v4l-cx25840.fw_base]
+desc: Conexant CX25840 firmware
+
+[v4l-cx23885-avcore-01.fw_base]
+desc: Conexant CX23885 core firmware
+
+[vntwusb.fw_base]
+desc: VIA VT6656 firmware
