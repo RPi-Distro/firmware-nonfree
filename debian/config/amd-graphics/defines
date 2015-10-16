@@ -1,7 +1,51 @@
 [base]
 desc: AMD/ATI graphics chips
-longdesc: AMD/ATI graphics chips supported by the radeon and r128 drivers
+longdesc: AMD/ATI graphics chips supported by the radeon, amdgpu and r128 drivers
 files:
+ amdgpu/carrizo_ce.bin
+ amdgpu/carrizo_me.bin
+ amdgpu/carrizo_mec.bin
+ amdgpu/carrizo_mec2.bin
+ amdgpu/carrizo_pfp.bin
+ amdgpu/carrizo_rlc.bin
+ amdgpu/carrizo_sdma.bin
+ amdgpu/carrizo_sdma1.bin
+ amdgpu/carrizo_uvd.bin
+ amdgpu/carrizo_vce.bin
+ amdgpu/fiji_ce.bin
+ amdgpu/fiji_mc.bin
+ amdgpu/fiji_me.bin
+ amdgpu/fiji_mec.bin
+ amdgpu/fiji_mec2.bin
+ amdgpu/fiji_pfp.bin
+ amdgpu/fiji_rlc.bin
+ amdgpu/fiji_sdma.bin
+ amdgpu/fiji_sdma1.bin
+ amdgpu/fiji_smc.bin
+ amdgpu/fiji_uvd.bin
+ amdgpu/fiji_vce.bin
+ amdgpu/tonga_ce.bin
+ amdgpu/tonga_mc.bin
+ amdgpu/tonga_me.bin
+ amdgpu/tonga_mec.bin
+ amdgpu/tonga_mec2.bin
+ amdgpu/tonga_pfp.bin
+ amdgpu/tonga_rlc.bin
+ amdgpu/tonga_sdma.bin
+ amdgpu/tonga_sdma1.bin
+ amdgpu/tonga_smc.bin
+ amdgpu/tonga_uvd.bin
+ amdgpu/tonga_vce.bin
+ amdgpu/topaz_ce.bin
+ amdgpu/topaz_mc.bin
+ amdgpu/topaz_me.bin
+ amdgpu/topaz_mec.bin
+ amdgpu/topaz_mec2.bin
+ amdgpu/topaz_pfp.bin
+ amdgpu/topaz_rlc.bin
+ amdgpu/topaz_sdma.bin
+ amdgpu/topaz_sdma1.bin
+ amdgpu/topaz_smc.bin
  r128/r128_cce.bin
  radeon/ARUBA_me.bin
  radeon/ARUBA_pfp.bin
