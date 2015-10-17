@@ -18,7 +18,6 @@ files:
  ar5523.bin
  ar7010.fw
  ar7010_1_1.fw
- ar9170.fw
  ar9271.fw
  ath3k-1.fw
  ath6k/AR6003.1/hw2.1.1/athwlan.bin
@@ -56,7 +55,7 @@ files:
  htc_7010.fw
  htc_9271.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
- ar9170, ath3k, ath6kl_sdio, ath6kl_usb or ath9k_htc drivers
+ ath3k, ath6kl_sdio, ath6kl_usb or ath9k_htc drivers
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [ar3k/AthrBT_0x01020001.dfu_base]
@@ -110,9 +109,6 @@ desc: Atheros AR7010 rev 1.0 firmware
 
 [ar7010_1_1.fw_base]
 desc: Atheros AR7010 rev 1.1 firmware
-
-[ar9170.fw_base]
-desc: Atheros AR9170 firmware
 
 [ar9271.fw_base]
 desc: Atheros AR9271 firmware
