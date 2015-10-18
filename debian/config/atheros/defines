@@ -21,7 +21,15 @@ files:
  ar7010.fw
  ar7010_1_1.fw
  ar9271.fw
+ ath10k/QCA6174/hw2.1/board.bin
+ ath10k/QCA6174/hw2.1/firmware-5.bin
+ ath10k/QCA6174/hw3.0/board.bin
+ ath10k/QCA6174/hw3.0/firmware-4.bin
+ ath10k/QCA988X/hw2.0/board.bin
  ath10k/QCA988X/hw2.0/firmware-4.bin
+ ath10k/QCA988X/hw2.0/firmware-5.bin
+ ath10k/QCA99X0/hw2.0/board.bin
+ ath10k/QCA99X0/hw2.0/firmware-5.bin
  ath3k-1.fw
  ath6k/AR6003.1/hw2.1.1/athwlan.bin
  ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
@@ -121,8 +129,37 @@ desc: Atheros AR7010 rev 1.1 firmware
 [ar9271.fw_base]
 desc: Atheros AR9271 firmware
 
-[ath10k/QCA988X/hw2.0/firmware-4.bin]
+[ath10k/QCA6174/hw2.1/board.bin_base]
+desc: Qualcomm Atheros QCA6174 rev 2.1 board configuration
+
+[ath10k/QCA6174/hw2.1/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA6174 rev 2.1 firmware
+version: WLAN.RM.1.1-00141
+
+[ath10k/QCA6174/hw3.0/board.bin_base]
+desc: Qualcomm Atheros QCA6174 rev 3.0 board configuration
+
+[ath10k/QCA6174/hw3.0/firmware-4.bin_base]
+desc: Qualcomm Atheros QCA6174 rev 3.0 firmware
+version: WLAN.RM.2.0-00180-QCARMSWPZ-1
+
+[ath10k/QCA988X/hw2.0/board.bin_base]
+desc: Qualcomm Atheros QCA988X board configuration
+
+[ath10k/QCA988X/hw2.0/firmware-4.bin_base]
 desc: Qualcomm Atheros QCA988X firmware
+version: 10.2.4.45
+
+[ath10k/QCA988X/hw2.0/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA988X firmware
+version: 10.2.4.70.9-2
+
+[ath10k/QCA99X0/hw2.0/board.bin_base]
+desc: Qualcomm Atheros QCA99X0 board configuration
+
+[ath10k/QCA99X0/hw2.0/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA99X0 firmware
+version: 10.4.1.00030-1
 
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
