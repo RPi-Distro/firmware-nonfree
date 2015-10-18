@@ -6,6 +6,7 @@ packages:
  bnx2x
  brcm80211
  intelwimax
+ intel-sound
  ipw2x00
  ivtv
  iwlwifi

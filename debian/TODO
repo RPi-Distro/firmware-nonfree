@@ -1,10 +1,3 @@
-Remaining firmwares that are referenced either in Linux 3.16 or Linux 3.18
-that we don't know where to put:
-
-intel/fw_sst_0f28.bin-48kHz_i2s_master
-intel/IntcSST2.bin
-intel/fw_sst_0f28.bin
-
 Remaining firmwares that were (apparently) not referenced in either Linux 3.16
 or 3.18:
 

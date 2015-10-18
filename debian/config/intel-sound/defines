@@ -1,0 +1,23 @@
+[base]
+desc: Intel sound DSPs
+files:
+ intel/IntcSST2.bin
+ intel/fw_sst_0f28.bin-48kHz_i2s_master
+ intel/fw_sst_0f28.bin
+ intel/fw_sst_22a8.bin
+longdesc: Intel SST sound DSPs supported by the snd-soc-sst-acpi or
+ snd-intel-sst-acpi driver
+
+[intel/IntcSST2.bin_base]
+desc: Intel "Broadwell" SST DSP firmware
+version: 8.4.1.77
+
+[intel/fw_sst_0f28.bin-48kHz_i2s_master_base]
+desc: Intel "Bay Trail" SST DSP firmware
+
+[intel/fw_sst_0f28.bin_base]
+desc: Intel "Bay Trail" SST DSP firmware
+
+[intel/fw_sst_22a8.bin_base]
+desc: Intel "Cherry Trail"/"Braswell" SST DSP firmware
+version: 01.0B.02.01
