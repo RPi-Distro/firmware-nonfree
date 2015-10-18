@@ -2,6 +2,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
 
   [ Ben Hutchings ]
   * Convert to a non-native package with linux-firmware.git as upstream
+    (Closes: #790061)
     - Upstream version is commit 66d3d8d7607c9a3a7d083f81990f6523f5842065,
       dated 2015-10-18
     - iwlwifi: Bluetooth firmware patches updated as noted in the package
@@ -24,7 +25,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * debian/control: Set the upstream homepage URL to the current cgit page
     for linux-firmware.git (except for ipw2x00 and ivtv packages)
   * linux-nonfree: Split into firmware-{amd-graphics,misc-nonfree} packages
-  * amd-graphics: Include Radeon HD 7900 series VCE microcode
+  * amd-graphics: Include Radeon HD 7900 series VCE microcode (Closes: #800090)
   * amd-graphics: Include microcode for "Carrizo", "Fiji", "Tonga" and "Topaz"
     chips supported by the amdgpu driver
   * misc-nonfree: Update Chelsio T4 and T5 firmware to version 1.14.4.0
@@ -34,15 +35,15 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * bnx2x: Include Broadcom NetXtreme II 10Gb 57710, 57711 and 57712 firmware
     version 7.12.30.0 (for Linux 4.3 onward)
   * brcm80211: Include firmware for many more chips supported by the
-    brcmfmac driver
+    brcmfmac driver (Closes: #795303, #800440)
   * qlogic: Convert copyright file to structured format
   * qlogic: Include firmware for QLogic (formerly Brocade) Fibre Channel
     adapters and Converged Network Adapters supported by the bfa and bna
-    drivers
+    drivers (Closes: #620066)
   * iwlwifi: Include firmware for Intel Wireless 8000C and 8260, Bluetooth
     firmware patch for Intel Wireless 7265 (D1), and firmware versions
     25.17.12.0 (ABI 12) and 25.30.13.0 (ABI 13) for Intel Wireless 3160,
-    7260, 7265 and 7265D
+    7260, 7265 and 7265D (Closes:  #769633, #793544)
   * misc-nonfree: Include firmware for Abilis Systems AS102 DVB front-end,
     Creative CA0132 audio codec, Chelsio T4 10GBASE-T adapters, Micronas
     GO7007SB video encoder, Intel "Skylake" and "Broxton" video
@@ -53,11 +54,12 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
     TV receivers supported by the smsmdtv driver
   * Add firmware-intel-sound package containing firmware for Intel SST sound
     DSPs supported by the snd-soc-sst-acpi or snd-intel-sst-acpi driver
+    (Closes: #774914)
   * myricom: Include Myri-10G firmware variants supporting big RX rings
   * libertas: Include firmware for SD8887, USB8766 and USB8897
   * Add firmware-cavium package containing firmware for Cavium LiquidIO
     Ethernet cards
-  * realtek: Include firmware for various Bluetooth adapters
+  * realtek: Include firmware for various Bluetooth adapters (Closes: #801514)
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
