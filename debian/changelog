@@ -26,6 +26,8 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * misc-nonfree: Update Chelsio T4 and T5 firmware to version 1.14.4.0
   * atheros: Include firmware for Atheros AR3012 rev 11020100 and
     Qualcomm Atheros QCA988X
+  * bnx2x: Include Broadcom NetXtreme II 10Gb 57710, 57711 and 57712 firmware
+    version 7.12.30.0 (for Linux 4.3 onward)
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
