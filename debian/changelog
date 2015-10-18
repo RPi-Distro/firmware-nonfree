@@ -31,6 +31,9 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * brcm80211: Include firmware for many more chips supported by the
     brcmfmac driver
   * qlogic: Convert copyright file to structured format
+  * qlogic: Include firmware for QLogic (formerly Brocade) Fibre Channel
+    adapters and Converged Network Adapters supported by the bfa and bna
+    drivers
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version

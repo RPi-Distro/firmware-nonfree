@@ -10,9 +10,6 @@ go7007/go7007tv.bin
 go7007/go7007fw.bin
 go7007/px-m402u.fw
 go7007/wis-startrek.fw
-ct2fw-3.2.3.0.bin
-ctfw-3.2.3.0.bin
-cbfw-3.2.3.0.bin
 intel/fw_sst_0f28.bin-48kHz_i2s_master
 as102_data1_st.hex
 as102_data2_st.hex
@@ -24,8 +21,5 @@ or 3.18:
 
 ctspeq.bin
 mt7650.bin
-ctfw-3.2.1.1.bin
-ct2fw-3.2.1.1.bin
-cbfw-3.2.1.1.bin
 qat_895xcc.bin
 r8a779x_usb3_v1.dlmem

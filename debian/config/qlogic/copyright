@@ -89,3 +89,19 @@ License: Binary redistribution (QLogic 2)
  TRADE SECRET, MASK WORK, OR OTHER PROPRIETARY RIGHT) EMBODIED IN
  ANY OTHER QLOGIC HARDWARE OR SOFTWARE EITHER SOLELY OR IN
  COMBINATION WITH THIS PROGRAM.
+
+Files: cbfw-*.bin, ct2fw-*.bin, ctfw-*.bin
+Copyright: 2013-2014, Brocade Communications Systems, Inc.
+ 2014-2015, QLogic Corporation.
+License: Binary redistribution (QLogic BR-series)
+ Permission is hereby granted for the distribution of this firmware data
+ in hexadecimal or equivalent format, provided this copyright notice is
+ accompanying it.
+ .
+ QLogic grants permission to use and redistribute these firmware files
+ for use with QLogic BR-series devices, but not as a part of the Linux
+ kernel or in any other form which would require these files themselves
+ to be covered by the terms of the GNU General Public License.
+ These firmware files are distributed in the hope that they will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
