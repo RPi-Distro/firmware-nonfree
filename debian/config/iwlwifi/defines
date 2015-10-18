@@ -1,6 +1,8 @@
 [base]
 desc: Intel Wireless cards
 files:
+ intel/ibt-11-5.ddc
+ intel/ibt-11-5.sfi
  intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq
  intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq
  intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq
@@ -8,6 +10,7 @@ files:
  intel/ibt-hw-37.7.bseq
  intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq
  intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq
+ intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq
  intel/ibt-hw-37.8.bseq
  iwlwifi-100-5.ucode
  iwlwifi-105-6.ucode
@@ -19,6 +22,8 @@ files:
  iwlwifi-3160-8.ucode
  iwlwifi-3160-9.ucode
  iwlwifi-3160-10.ucode
+ iwlwifi-3160-12.ucode
+ iwlwifi-3160-13.ucode
  iwlwifi-3945-2.ucode
  iwlwifi-4965-2.ucode
  iwlwifi-5000-2.ucode
@@ -34,12 +39,25 @@ files:
  iwlwifi-7260-8.ucode
  iwlwifi-7260-9.ucode
  iwlwifi-7260-10.ucode
+ iwlwifi-7260-12.ucode
+ iwlwifi-7260-13.ucode
  iwlwifi-7265-8.ucode
  iwlwifi-7265-9.ucode
  iwlwifi-7265-10.ucode
+ iwlwifi-7265-12.ucode
+ iwlwifi-7265-13.ucode
  iwlwifi-7265D-10.ucode
+ iwlwifi-7265D-12.ucode
+ iwlwifi-7265D-13.ucode
+ iwlwifi-8000C-13.ucode
 longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
  iwlwifi/iwlagn drivers
+
+[intel/ibt-11-5.ddc_base]
+desc: Intel Wireless 8260 Bluetooth configuration
+
+[intel/ibt-11-5.sfi_base]
+desc: Intel Wireless 8260 Bluetooth firmware
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
 desc: Intel Wireless 3160 (B6) Bluetooth firmware patch
@@ -66,6 +84,10 @@ version: 40
 
 [intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq_base]
 desc: Intel Wireless 7265 (D0) Bluetooth firmware patch
+version: 09
+
+[intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq_base]
+desc: Intel Wireless 7265 (D1) Bluetooth firmware patch
 version: 09
 
 [intel/ibt-hw-37.8.bseq_base]
@@ -110,6 +132,14 @@ version: 25.228.9.0
 [iwlwifi-3160-10.ucode_base]
 desc: Intel Wireless 3160 firmware
 version: 23.15.10.0
+
+[iwlwifi-3160-12.ucode_base]
+desc: Intel Wireless 3160 firmware
+version: 25.17.12.0
+
+[iwlwifi-3160-13.ucode_base]
+desc: Intel Wireless 3160 firmware
+version: 25.30.13.0
 
 [iwlwifi-3945-2.ucode_base]
 desc: Intel Wireless 3945 firmware
@@ -171,6 +201,14 @@ version: 25.228.9.0
 desc: Intel Wireless 7260 firmware
 version: 23.15.10.0
 
+[iwlwifi-7260-12.ucode_base]
+desc: Intel Wireless 7260 firmware
+version: 25.17.12.0
+
+[iwlwifi-7260-13.ucode_base]
+desc: Intel Wireless 7260 firmware
+version: 25.30.13.0
+
 [iwlwifi-7265-8.ucode_base]
 desc: Intel Wireless 7265 firmware
 version: 22.24.8.0
@@ -183,6 +221,26 @@ version: 25.228.9.0
 desc: Intel Wireless 7265 firmware
 version: 23.15.10.0
 
+[iwlwifi-7265-12.ucode_base]
+desc: Intel Wireless 7265 firmware
+version: 25.17.12.0
+
+[iwlwifi-7265-13.ucode_base]
+desc: Intel Wireless 7265 firmware
+version: 25.30.13.0
+
 [iwlwifi-7265D-10.ucode_base]
 desc: Intel Wireless 7265D firmware
 version: 23.15.10.0
+
+[iwlwifi-7265D-12.ucode_base]
+desc: Intel Wireless 7265D firmware
+version: 25.17.12.0
+
+[iwlwifi-7265D-13.ucode_base]
+desc: Intel Wireless 7265D firmware
+version: 25.30.13.0
+
+[iwlwifi-8000C-13.ucode_base]
+desc: Intel Wireless 8000C firmware
+version: 25.30.13.0
