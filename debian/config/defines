@@ -1,6 +1,5 @@
 [base]
 packages:
- adi
  amd-graphics
  atheros
  bnx2
@@ -15,7 +14,6 @@ packages:
  myricom
  netxen
  qlogic
- ralink
  realtek
  samsung
  ti-connectivity

@@ -3,8 +3,10 @@ desc: various drivers in the Linux kernel
 longdesc:
  various drivers in the Linux kernel. This is a collection of firmware blobs
  which are not individually large enough to warrant a standalone package
-replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
+replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~), firmware-adi, firmware-ralink
+conflicts: firmware-adi, firmware-ralink
 breaks: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~)
+provides: firmware-adi, firmware-ralink
 files:
  3com/typhoon.bin
  advansys/3550.bin
@@ -89,6 +91,16 @@ files:
  nvidia/tegra210/xusb.bin
  qat_895xcc.bin
  qat_mmp.bin
+ rt2561.bin
+ rt2561s.bin
+ rt2661.bin
+ rt2860.bin
+ rt2870.bin
+ rt3070.bin
+ rt3071.bin
+ rt3090.bin
+ rt3290.bin
+ rt73.bin
  s2250.fw
  s2250_loader.fw
  tehuti/bdx.bin
@@ -96,6 +108,9 @@ files:
  tigon/tg3.bin
  tigon/tg3_tso5.bin
  tigon/tg357766.bin
+ ueagle-atm/CMV4p.bin.v2
+ ueagle-atm/DSP4p.bin
+ ueagle-atm/eagleIV.fw
  v4l-cx231xx-avcore-01.fw
  v4l-cx23418-apu.fw
  v4l-cx23418-cpu.fw
@@ -348,6 +363,38 @@ desc: Intel QAT DH895xCC UOF firmware
 [qat_mmp.bin_base]
 desc: Intel QAT DH895xCC MMP firmware
 
+[rt2561.bin_base]
+desc: Ralink RT2561 (RT2501/RT5201 chipset) firmware
+version: 1.2
+
+[rt2561s.bin_base]
+desc: Ralink RT2561S (RT2501 Turbo/RT5201 Turbo chipset) firmware
+version: 1.2
+
+[rt2661.bin_base]
+desc: Ralink RT2661 (RT2600/RT5600 chipset) firmware
+version: 1.2
+
+[rt2860.bin_base]
+desc: Ralink RT2760/RT2790/RT2860/RT2890/RT3090 (RT2700P[D]/RT2700E[D]/RT2800P[D]/RT2800E[D]/RT3000E[D] chipset) firmware
+version: 34
+
+[rt2870.bin_base]
+desc: Ralink RT2870/RT3070/RT3071/RT3072 (RT2800U[D] chipset) firmware
+version: 29
+
+[rt3071.bin_base]
+desc: Ralink RT3071/RT3072 firmware
+version: 29
+
+[rt3290.bin_base]
+desc: Ralink RT3290 firmware
+version: 1
+
+[rt73.bin_base]
+desc: Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware
+version: 1.8
+
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
 
@@ -362,6 +409,15 @@ desc: Broadcom BCM5705 TSO firmware
 
 [tigon/tg357766.bin_base]
 desc: Broadcom BCM57766 firmware
+
+[ueagle-atm/CMV4p.bin.v2_base]
+desc: ADI Eagle IV ADSL configuration, generic
+
+[ueagle-atm/DSP4p.bin_base]
+desc: ADI Eagle IV ADSL DSP firmware
+
+[ueagle-atm/eagleIV.fw_base]
+desc: ADI Eagle IV firmware
 
 [v4l-cx231xx-avcore-01.fw_base]
 desc: Conexant CX231xx core firmware
