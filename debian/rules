@@ -13,6 +13,7 @@ build: debian/control
 
 clean: debian/control
 	dh_testdir
+	rm -rf debian/lib/python/__pycache__
 	dh_clean
 
 binary-indep:

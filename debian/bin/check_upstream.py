@@ -2,13 +2,15 @@
 
 import errno, filecmp, fnmatch, glob, os.path, re, sys
 from enum import Enum
+
+sys.path.insert(0, "debian/lib/python")
 rules_defs = dict((match.group(1), match.group(2))
                   for line in open('debian/rules.defs')
                   for match in [re.match(r'(\w+)\s*:=\s*(.*)\n', line)])
 sys.path.append('/usr/share/linux-support-%s/lib/python' %
                 rules_defs['KERNELVERSION'])
 from debian_linux.firmware import FirmwareWhence
-from debian_linux.config import ConfigParser, SchemaItemList
+from config import Config
 
 class DistState(Enum):
     undistributable = 1
@@ -46,11 +48,7 @@ def check_section(section):
         return DistState.undistributable
 
 def main(source_dir):
-    config = ConfigParser({
-            'base': {'packages': SchemaItemList()},
-            'upstream': {'exclude': SchemaItemList()},
-            })
-    config.read('defines')
+    config = Config()
     dest_dirs = config['base',]['packages']
     exclusions = config['upstream',]['exclude']
 
