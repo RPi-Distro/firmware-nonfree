@@ -1,0 +1,16 @@
+[base]
+desc: Cavium Ethernet adapters
+files:
+ liquidio/lio_210nv_nic.bin
+ liquidio/lio_210sv_nic.bin
+ liquidio/lio_410nv_nic.bin
+longdesc: Cavium LiquidIO Ethernet adapters supported by the liquidio driver
+
+[liquidio/lio_210nv_nic.bin_base]
+desc: Cavium LiquidIO 210Nv firmware
+
+[liquidio/lio_210sv_nic.bin_base]
+desc: Cavium LiquidIO 210Sv firmware
+
+[liquidio/lio_410nv_nic.bin_base]
+desc: Cavium LiquidIO 410Nv firmware

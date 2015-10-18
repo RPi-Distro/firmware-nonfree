@@ -50,6 +50,8 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
     DSPs supported by the snd-soc-sst-acpi or snd-intel-sst-acpi driver
   * myricom: Include Myri-10G firmware variants supporting big RX rings
   * libertas: Include firmware for SD8887, USB8766 and USB8897
+  * Add firmware-cavium package containing firmware for Cavium LiquidIO
+    Ethernet cards
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
