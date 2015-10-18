@@ -23,6 +23,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * amd-graphics: Include Radeon HD 7900 series VCE microcode
   * amd-graphics: Include microcode for "Carrizo", "Fiji", "Tonga" and "Topaz"
     chips supported by the amdgpu driver
+  * misc-nonfree: Update Chelsio T4 and T5 firmware to version 1.14.4.0
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version

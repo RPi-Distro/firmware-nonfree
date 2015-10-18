@@ -22,9 +22,9 @@ files:
  cxgb3/t3fw-7.10.0.bin
  cxgb3/t3fw-7.12.0.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.12.25.0.bin
+ cxgb4/t4fw-1.14.4.0.bin
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.12.25.0.bin
+ cxgb4/t5fw-1.14.4.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
