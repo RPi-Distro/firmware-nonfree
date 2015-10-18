@@ -287,7 +287,6 @@ files:
  v4l-cx23885-avcore-01.fw
  vntwusb.fw
 support: initramfs-tools
-uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware

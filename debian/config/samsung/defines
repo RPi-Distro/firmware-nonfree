@@ -8,7 +8,6 @@ files:
  s5p-mfc-v8.fw
 longdesc: Samsung MFC video codecs used in Exynos SoCs and supported by the
  s5p-mfc driver
-uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [s5p-mfc.fw_base]
 desc: MFCv5 firmware

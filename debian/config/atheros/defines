@@ -56,7 +56,6 @@ files:
  htc_9271.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
  ath3k, ath6kl_sdio, ath6kl_usb or ath9k_htc drivers
-uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [ar3k/AthrBT_0x01020001.dfu_base]
 desc: Atheros AR3012 rev 01020001 patch

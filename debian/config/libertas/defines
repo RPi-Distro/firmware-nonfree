@@ -50,7 +50,6 @@ files:
 longdesc: wireless network cards with Marvell Libertas 8xxx chips supported
  by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb,
  mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers
-uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 replaces: libertas-firmware
 breaks: libertas-firmware (<< 9.70.7.p0.0-2)
 provides: libertas-firmware

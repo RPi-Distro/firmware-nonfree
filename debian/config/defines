@@ -18,6 +18,7 @@ packages:
  realtek
  samsung
  ti-connectivity
+uri: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 
 [upstream]
 exclude:
