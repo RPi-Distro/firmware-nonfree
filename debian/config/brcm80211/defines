@@ -8,15 +8,22 @@ files:
  brcm/brcmfmac43236b.bin
  brcm/brcmfmac43241b0-sdio.bin
  brcm/brcmfmac43241b4-sdio.bin
+ brcm/brcmfmac43241b5-sdio.bin
+ brcm/brcmfmac43242a.bin
  brcm/brcmfmac4329-sdio.bin
  brcm/brcmfmac4330-sdio.bin
  brcm/brcmfmac4334-sdio.bin
+ brcm/brcmfmac43340-sdio.bin
  brcm/brcmfmac4335-sdio.bin
  brcm/brcmfmac43362-sdio.bin
+ brcm/brcmfmac4339-sdio.bin
+ brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac4354-sdio.bin
-longdesc: wireless network cards with the Broadcom BCM4313, BCM43143, BCM43224,
- BCM43225, BCM43236, BCM43241, BCM4329, BCM4330, BCM4334 or BCM4335 chips,
- supported by the brcmsmac or brcmfmac driver
+ brcm/brcmfmac4356-pcie.bin
+ brcm/brcmfmac43569.bin
+ brcm/brcmfmac43570-pcie.bin
+ brcm/brcmfmac43602-pcie.bin
+longdesc: wireless network cards supported by the brcmsmac or brcmfmac driver
 
 [brcm/bcm43xx-0.fw_base]
 desc: Broadcom 802.11 firmware
@@ -39,7 +46,13 @@ desc: Broadcom BCM43236 firmware
 desc: Broadcom BCM43241 rev 0-3 firmware
 
 [brcm/brcmfmac43241b4-sdio.bin_base]
-desc: Broadcom BCM43241 rev 4+ firmware
+desc: Broadcom BCM43241 rev 4 firmware
+
+[brcm/brcmfmac43241b5-sdio.bin_base]
+desc: Broadcom BCM43241 rev 5+ firmware
+
+[brcm/brcmfmac43242a.bin_base]
+desc: Broadcom BCM43242 firmware
 
 [brcm/brcmfmac4329-sdio.bin_base]
 desc: Broadcom BCM4329 firmware
@@ -50,12 +63,33 @@ desc: Broadcom BCM4330 firmware
 [brcm/brcmfmac4334-sdio.bin_base]
 desc: Broadcom BCM4334 firmware
 
+[brcm/brcmfmac43340-sdio.bin_base]
+desc: Broadcom BCM43340 firmware
+
 [brcm/brcmfmac43362-sdio.bin_base]
 desc: Broadcom BCM43362 firmware
 
 [brcm/brcmfmac4335-sdio.bin_base]
 desc: Broadcom BCM4335 firmware
 
+[brcm/brcmfmac4339-sdio.bin_base]
+desc: Broadcom BCM4339 firmware
+
+[brcm/brcmfmac43455-sdio.bin_base]
+desc: Broadcom BCM43455 firmware
+
 [brcm/brcmfmac4354-sdio.bin_base]
 desc: Broadcom BCM4354 firmware
 version: 7.35.79.57
+
+[brcm/brcmfmac4356-pcie.bin_base]
+desc: Broadcom BCM4356 firmware
+
+[brcm/brcmfmac43569.bin_base]
+desc: Broadcom BCM43569 firmware
+
+[brcm/brcmfmac43570-pcie.bin_base]
+desc: Broadcom BCM43570 firmware]
+
+[brcm/brcmfmac43602-pcie.bin_base]
+desc: Broadcom BCM43602 firmware]

@@ -28,6 +28,8 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
     Qualcomm Atheros QCA988X
   * bnx2x: Include Broadcom NetXtreme II 10Gb 57710, 57711 and 57712 firmware
     version 7.12.30.0 (for Linux 4.3 onward)
+  * brcm80211: Include firmware for many more chips supported by the
+    brcmfmac driver
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
