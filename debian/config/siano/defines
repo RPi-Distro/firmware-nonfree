@@ -1,0 +1,17 @@
+[base]
+desc: Siano MDTV receivers
+files:
+ cmmb_vega_12mhz.inp
+ cmmb_venice_12mhz.inp
+ dvb_nova_12mhz.inp
+ dvb_nova_12mhz_b0.inp
+ isdbt_nova_12mhz.inp
+ isdbt_nova_12mhz_b0.inp
+ isdbt_rio.inp
+ sms1xxx-hcw-55xxx-dvbt-02.fw
+ sms1xxx-hcw-55xxx-isdbt-02.fw
+ sms1xxx-nova-a-dvbt-01.fw
+ sms1xxx-nova-b-dvbt-01.fw
+ sms1xxx-stellar-dvbt-01.fw
+ tdmb_nova_12mhz.inp
+longdesc: Siano Mobile Digital TV receivers supported by the smsmdtv driver

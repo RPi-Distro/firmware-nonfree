@@ -16,6 +16,7 @@ packages:
  qlogic
  realtek
  samsung
+ siano
  ti-connectivity
 uri: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 

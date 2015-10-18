@@ -44,6 +44,8 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
     interfaces, MediaTek MT7630/MT7650 Bluetooth adapters, Nvidia Tegra
     GPU and XHCI interfaces, and Intel QAT DH895xCC crypto-accelerators
   * adi, ralink: Merge into the firmware-misc-nonfree package
+  * Add firmware-siano package containing firmware for Siano Mobile Digital
+    TV receivers supported by the smsmdtv driver
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
