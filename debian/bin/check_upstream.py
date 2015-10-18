@@ -40,7 +40,7 @@ def check_section(section):
                 else DistState.non_free)
     elif re.match(r'^(?:D|Red)istributable\b', section.licence):
         return DistState.non_free
-    elif re.match(r'^GPL(?:v2|\+)?\b', section.licence):
+    elif re.match(r'^GPL(?:v[23]|\+)?\b|^Dual GPL(?:v[23])?/', section.licence):
         return (DistState.free if is_source_available(section)
                 else DistState.undistributable)
     else:
