@@ -49,6 +49,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * Add firmware-intel-sound package containing firmware for Intel SST sound
     DSPs supported by the snd-soc-sst-acpi or snd-intel-sst-acpi driver
   * myricom: Include Myri-10G firmware variants supporting big RX rings
+  * libertas: Include firmware for SD8887, USB8766 and USB8897
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
