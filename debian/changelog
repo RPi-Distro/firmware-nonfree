@@ -2,6 +2,10 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
 
   [ Ben Hutchings ]
   * Convert to a non-native package with linux-firmware.git as upstream
+    - Upstream version is commit 66d3d8d7607c9a3a7d083f81990f6523f5842065,
+      dated 2015-10-18
+    - iwlwifi: Bluetooth firmware patches updated as noted in the package
+      description
   * realtek: Remove RTL8192SU/rtl8192sfw.bin, which has not been needed since
     r8192s_usb was replaced by r8172u (Closes: #793874)
   * Adjust for migration to git:
