@@ -38,6 +38,11 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
     firmware patch for Intel Wireless 7265 (D1), and firmware versions
     25.17.12.0 (ABI 12) and 25.30.13.0 (ABI 13) for Intel Wireless 3160,
     7260, 7265 and 7265D
+  * misc-nonfree: Include firmware for Abilis Systems AS102 DVB front-end,
+    Creative CA0132 audio codec, Chelsio T4 10GBASE-T adapters, Micronas
+    GO7007SB video encoder, Intel "Skylake" and "Broxton" video
+    interfaces, MediaTek MT7630/MT7650 Bluetooth adapters, Nvidia Tegra
+    GPU and XHCI interfaces, and Intel QAT DH895xCC crypto-accelerators
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version

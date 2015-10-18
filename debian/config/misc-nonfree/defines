@@ -13,6 +13,10 @@ files:
  advansys/mcode.bin
  agere_ap_fw.bin
  agere_sta_fw.bin
+ as102_data1_st.hex
+ as102_data2_st.hex
+ ctefx.bin
+ ctspeq.bin
  cxgb3/ael2005_opt_edc.bin
  cxgb3/ael2005_twx_edc.bin
  cxgb3/ael2020_twx_edc.bin
@@ -21,6 +25,8 @@ files:
  cxgb3/t3fw-7.4.0.bin
  cxgb3/t3fw-7.10.0.bin
  cxgb3/t3fw-7.12.0.bin
+ cxgb4/aq1202_fw.cld
+ cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
  cxgb4/t4fw-1.14.4.0.bin
  cxgb4/t5fw.bin
@@ -42,15 +48,49 @@ files:
  ene-ub6250/sd_init1.bin
  ene-ub6250/sd_init2.bin
  ene-ub6250/sd_rdwr.bin
+ go7007/go7007fw.bin
+ go7007/go7007tv.bin
+ go7007/lr192.fw
+ go7007/px-m402u.fw
+ go7007/px-tv402u.fw
+ go7007/s2250-1.fw
+ go7007/s2250-2.fw
+ go7007/wis-startrek.fw
+ i915/bxt_dmc_ver1.bin
+ i915/bxt_dmc_ver1_04.bin
+ i915/bxt_dmc_ver1_05.bin
+ i915/bxt_dmc_ver1_06.bin
+ i915/skl_dmc_ver1.bin
+ i915/skl_dmc_ver1_21.bin
+ i915/skl_dmc_ver1_22.bin
+ i915/skl_guc_ver1.bin
+ i915/skl_guc_ver1_1059.bin
+ i915/skl_guc_ver4.bin
+ i915/skl_guc_ver4_3.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
  kaweth/trigger_code_fix.bin
  matrox/g200_warp.fw
  matrox/g400_warp.fw
+ mt7650.bin
  mts_cdma.fw
  mts_edge.fw
  mts_gsm.fw
+ nvidia/gk20a/fecs_data.bin
+ nvidia/gk20a/fecs_inst.bin
+ nvidia/gk20a/gpccs_data.bin
+ nvidia/gk20a/gpccs_inst.bin
+ nvidia/gk20a/sw_bundle_init.bin
+ nvidia/gk20a/sw_ctx.bin
+ nvidia/gk20a/sw_method_init.bin
+ nvidia/gk20a/sw_nonctx.bin
+ nvidia/tegra124/xusb.bin
+ nvidia/tegra210/xusb.bin
+ qat_895xcc.bin
+ qat_mmp.bin
+ s2250.fw
+ s2250_loader.fw
  tehuti/bdx.bin
  tigon/tg3_tso.bin
  tigon/tg3.bin
@@ -90,6 +130,18 @@ version: 9.48 Hermes I
 desc: Agere/Prism/Symbol Orinoco firmware (STA mode)
 version: 9.48 Hermes I
 
+[as102_data1_st.hex_base]
+desc: Abilis Systems AS102 stage 1 firmware
+
+[as102_data2_st.hex_base]
+desc: Abilis Systems AS102 stage 2 firmware
+
+[ctefx.bin_base]
+desc: Creative CA0132 DSP firmware
+
+[ctspeq.bin_base]
+desc: Creative CA0132 SpeakerEQ firmware
+
 [cxgb3/ael2005_opt_edc.bin_base]
 desc: Chelsio T3 optical EDC firmware (AEL2005 PHY)
 
@@ -118,6 +170,12 @@ version: 7.10.0
 [cxgb3/t3fw-7.12.0.bin_base]
 desc: Chelsio T3 main firmware
 version: 7.12.0
+
+[cxgb4/aq1202_fw.cld_base]
+desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
+
+[cxgb4/bcm8483.bin_base]
+desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
 [cxgb4/t4fw-1.14.4.0.bin_base]
 desc: Chelsio T4 firmware
@@ -182,11 +240,66 @@ desc: ENE UB6250 SD init stage 2 firmware
 [ene-ub6250/sd_rdwr.bin_base]
 desc: ENE UB6250 SD read/write firmware
 
+[go7007/go7007fw.bin_base]
+desc: Micronas GO7007SB encoder stage 1 firmware
+
+[go7007/go7007tv.bin_base]
+desc: Micronas GO7007SB encoder stage 2 firmware
+
+[go7007/lr192.fw_base]
+desc: WISchip WinFast WalkieTV firmware
+
+[go7007/px-m402u.fw_base]
+desc: Plextor ConvertX M402U firmware
+
+[go7007/px-tv402u.fw_base]
+desc: Plextor ConvertX TV402U firmware
+
+[go7007/s2250-1.fw_base]
+desc: Sensoray S2250 stage 1 firmware
+
+[go7007/s2250-2.fw_base]
+desc: Sensoray S2250 stage 2 firmware
+
+[go7007/wis-startrek.fw_base]
+desc: WISchip WinFast WalkieTV firmware
+
+[i915/bxt_dmc_ver1_04.bin_base]
+desc: Intel "Broxton" DMC firmware
+version: 1.04
+
+[i915/bxt_dmc_ver1_05.bin_base]
+desc: Intel "Broxton" DMC firmware
+version: 1.05
+
+[i915/bxt_dmc_ver1_06.bin_base]
+desc: Intel "Broxton" DMC firmware
+version: 1.06
+
+[i915/skl_dmc_ver1_21.bin_base]
+desc: Intel "Skylake" DMC firmware
+version: 1.21
+
+[i915/skl_dmc_ver1_22.bin_base]
+desc: Intel "Skylake" DMC firmware
+version: 1.22
+
+[i915/skl_guc_ver1_1059.bin_base]
+desc: Intel "Skylake" GuC firmware
+version: 1.1059
+
+[i915/skl_guc_ver4_3.bin_base]
+desc: Intel "Skylake" GuC firmware
+version: 4.3
+
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode
 
 [matrox/g400_warp.fw_base]
 desc: Matrox G400/G550 WARP engine microcode
+
+[mt7650.bin_base]
+desc: MediaTek MT7630/MT7650 Bluetooth firmware
 
 [mts_cdma.fw_base]
 desc: Multi-Tech USB CDMA modem firmware
@@ -196,6 +309,44 @@ desc: Multi-Tech USB EDGE modem firmware
 
 [mts_gsm.fw_base]
 desc: Multi-Tech USB GPRS modem firmware
+
+[nvidia/gk20a/fecs_data.bin_base]
+desc: Nvidia GK20A FECS firmware data
+
+[nvidia/gk20a/fecs_inst.bin_base]
+desc: Nvidia GK20A FECS firmware instructions
+
+[nvidia/gk20a/gpccs_data.bin_base]
+desc: Nvidia GK20A GPCCS firmware data
+
+[nvidia/gk20a/gpccs_inst.bin_base]
+desc: Nvidia GK20A GPCCS firmware instructions
+
+[nvidia/gk20a/sw_bundle_init.bin_base]
+desc: Nvidia GK20A bundle init data
+
+[nvidia/gk20a/sw_ctx.bin_base]
+desc: Nvidia GK20A ctx init data
+
+[nvidia/gk20a/sw_method_init.bin_base]
+desc: Nvidia GK20A method init data
+
+[nvidia/gk20a/sw_nonctx.bin_base]
+desc: Nvidia GK20A non-ctx init data
+
+[nvidia/tegra124/xusb.bin_base]
+desc: Nvidia Tegra 124 XHCI firmware
+version: 45.46
+
+[nvidia/tegra210/xusb.bin_base]
+desc: Nvidia Tegra 210 XHCI firmware
+version: 50.10
+
+[qat_895xcc.bin_base]
+desc: Intel QAT DH895xCC UOF firmware
+
+[qat_mmp.bin_base]
+desc: Intel QAT DH895xCC MMP firmware
 
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
