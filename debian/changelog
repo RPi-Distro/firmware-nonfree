@@ -30,6 +30,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
     version 7.12.30.0 (for Linux 4.3 onward)
   * brcm80211: Include firmware for many more chips supported by the
     brcmfmac driver
+  * qlogic: Convert copyright file to structured format
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
