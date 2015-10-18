@@ -54,11 +54,16 @@ def main(source_dir='.'):
     exclusions = config['upstream',]['exclude']
 
     for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
-        if check_section(section) == DistState.non_free:
-            for file_info in section.files.values():
+        dist_state = check_section(section)
+        for file_info in section.files.values():
+            if dist_state == DistState.non_free:
                 if not any(fnmatch.fnmatch(file_info.binary, exclusion)
                            for exclusion in exclusions):
                     update_file(source_dir, over_dirs, file_info.binary)
+            elif dist_state == DistState.undistributable:
+                if os.path.isfile(file_info.binary):
+                    print('W: %s appears to be undistributable' %
+                          file_info.binary)
 
 def update_file(source_dir, over_dirs, filename):
     source_file = os.path.join(source_dir, filename)
@@ -67,10 +72,10 @@ def update_file(source_dir, over_dirs, filename):
                           glob.glob(os.path.join(over_dir, filename + '-*'))):
             if os.path.isfile(over_file):
                 if not filecmp.cmp(source_file, over_file, True):
-                    print('%s: changed' % filename)
+                    print('I: %s: changed' % filename)
                 return
     if not os.path.isfile(filename):
-        print('%s: could be added' % filename)
+        print('I: %s: could be added' % filename)
         return
 
 if __name__ == '__main__':
