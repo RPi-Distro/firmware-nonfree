@@ -12,7 +12,6 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * Adjust for migration to git:
     - Add .gitignore file
     - debian/control: Update Vcs-* fields
-  * samsung: Suppress lintian warning about reference to GNU GPL
   * samsung: Add copyright holder to copyright file
   * debian/control: Update Standards-Version to 3.9.6; no changes needed
   * Update to linux-support 4.1.0-2
@@ -60,6 +59,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * Add firmware-cavium package containing firmware for Cavium LiquidIO
     Ethernet cards
   * realtek: Include firmware for various Bluetooth adapters (Closes: #801514)
+  * qlogic, samsung: Suppress lintian warning about reference to GNU GPL
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version

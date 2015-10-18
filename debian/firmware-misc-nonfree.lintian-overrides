@@ -1,0 +1,2 @@
+# False positive; nothing here is actually under the GPL
+firmware-misc-nonfree: copyright-should-refer-to-common-license-file-for-gpl
