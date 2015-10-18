@@ -73,7 +73,7 @@ desc: Intel Wireless 3160 (B4) Bluetooth firmware patch
 version: 83
 
 [intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq_base]
-desc: Intel Wireless 7260 (B5) Bluetooth firmware path
+desc: Intel Wireless 7260 (B5) Bluetooth firmware patch
 version: 34
 
 [intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq_base]
@@ -239,6 +239,9 @@ version: 25.17.12.0
 [iwlwifi-7265-13.ucode_base]
 desc: Intel Wireless 7265 firmware
 version: 25.30.13.0
+
+[iwlwifi-7265-14.ucode_base]
+desc: Intel Wireless 7265 firmware
 
 [iwlwifi-7265D-10.ucode_base]
 desc: Intel Wireless 7265D firmware
