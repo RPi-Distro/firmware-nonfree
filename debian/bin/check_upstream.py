@@ -52,6 +52,10 @@ def main(source_dir='.'):
     over_dirs = ['debian/config/' + package for
                  package in config['base',]['packages']]
     exclusions = config['upstream',]['exclude']
+    packaged_files = {}
+    for package in config['base',]['packages']:
+        for filename in config['base', package]['files']:
+            packaged_files[filename] = package
 
     for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
         dist_state = check_section(section)
@@ -59,7 +63,13 @@ def main(source_dir='.'):
             if dist_state == DistState.non_free:
                 if not any(fnmatch.fnmatch(file_info.binary, exclusion)
                            for exclusion in exclusions):
-                    update_file(source_dir, over_dirs, file_info.binary)
+                    if file_info.binary in packaged_files:
+                        update_file(source_dir, over_dirs, file_info.binary)
+                    elif os.path.isfile(filename):
+                        print('I: %s is not included in any binary package' %
+                              file_info.binary)
+                    else:
+                        print('I: %s: could be added' % file_info.binary)
             elif dist_state == DistState.undistributable:
                 if os.path.isfile(file_info.binary):
                     print('W: %s appears to be undistributable' %
@@ -74,9 +84,6 @@ def update_file(source_dir, over_dirs, filename):
                 if not filecmp.cmp(source_file, over_file, True):
                     print('I: %s: changed' % filename)
                 return
-    if not os.path.isfile(filename):
-        print('I: %s: could be added' % filename)
-        return
 
 if __name__ == '__main__':
     main(*sys.argv[1:])

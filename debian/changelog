@@ -16,6 +16,7 @@ firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
   * check_upstream.py: Report possibly undistributable files that are not
     excluded
   * check_upstream.py: Recognise GPLv3 and GPL dual-licenced files
+  * check_upstream.py: Reimplement check for unpackaged firmware
 
   [ maximilian attems ]
   * iwlwifi: Update Intel Wireless 3160, 7260, 7265 and 7265D firmware version
