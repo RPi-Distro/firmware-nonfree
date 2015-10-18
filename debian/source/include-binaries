@@ -1,0 +1,16 @@
+debian/config/ipw2x00/ipw2100-1.3-i.fw
+debian/config/ipw2x00/ipw2100-1.3-p.fw
+debian/config/ipw2x00/ipw2100-1.3.fw
+debian/config/ipw2x00/ipw2200-bss.fw
+debian/config/ipw2x00/ipw2200-ibss.fw
+debian/config/ipw2x00/ipw2200-sniffer.fw
+debian/config/ivtv/v4l-cx2341x-dec.fw
+debian/config/ivtv/v4l-cx2341x-enc.fw
+debian/config/ivtv/v4l-cx2341x-init.mpg
+debian/config/ivtv/v4l-pvrusb2-24xxx-01.fw
+debian/config/ivtv/v4l-pvrusb2-29xxx-01.fw
+debian/config/iwlwifi/iwlwifi-3160-14.ucode-25.30.14.0
+debian/config/iwlwifi/iwlwifi-7260-14.ucode-25.30.14.0
+debian/config/iwlwifi/iwlwifi-7265-14.ucode-25.30.14.0
+debian/config/iwlwifi/iwlwifi-7265D-14.ucode-25.30.14.0
+debian/config/iwlwifi/iwlwifi-8000C-14.ucode-25.30.14.0
