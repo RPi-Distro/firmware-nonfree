@@ -20,9 +20,11 @@ longdesc: wireless network cards with the Broadcom BCM4313, BCM43143, BCM43224,
 
 [brcm/bcm43xx-0.fw_base]
 desc: Broadcom 802.11 firmware
+version: 610.812
 
 [brcm/bcm43xx_hdr-0.fw_base]
 desc: Broadcom 802.11 firmware header
+version: 610.812
 
 [brcm/brcmfmac43143.bin_base]
 desc: Broadcom BCM43143 USB firmware
