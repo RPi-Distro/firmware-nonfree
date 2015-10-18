@@ -19,7 +19,7 @@ class Config(dict):
 
     def _read_base(self):
         config = ConfigParser(self.schemas)
-        config.read(self.config_name)
+        config.read("debian/config/%s" % self.config_name)
 
         packages = config['base',]['packages']
 
@@ -32,7 +32,7 @@ class Config(dict):
 
     def _read_package(self, package):
         config = ConfigParser(self.schemas)
-        config.read("%s/%s" % (package, self.config_name))
+        config.read("debian/config/%s/%s" % (package, self.config_name))
 
         for section in iter(config):
             if len(section) > 1:

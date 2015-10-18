@@ -47,9 +47,10 @@ def check_section(section):
         # Unrecognised and probably undistributable
         return DistState.undistributable
 
-def main(source_dir):
+def main(source_dir='.'):
     config = Config()
-    dest_dirs = config['base',]['packages']
+    over_dirs = ['debian/config/' + package for
+                 package in config['base',]['packages']]
     exclusions = config['upstream',]['exclude']
 
     for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
@@ -57,29 +58,20 @@ def main(source_dir):
             for file_info in section.files.values():
                 if not any(fnmatch.fnmatch(file_info.binary, exclusion)
                            for exclusion in exclusions):
-                    update_file(source_dir, dest_dirs, file_info.binary)
+                    update_file(source_dir, over_dirs, file_info.binary)
 
-def update_file(source_dir, dest_dirs, filename):
+def update_file(source_dir, over_dirs, filename):
     source_file = os.path.join(source_dir, filename)
-    if not os.path.isfile(source_file):
-        return
-    for dest_dir in dest_dirs:
-        for dest_file in ([os.path.join(dest_dir, filename)] +
-                          glob.glob(os.path.join(dest_dir, filename + '-*'))):
-            if os.path.isfile(dest_file):
-                if not filecmp.cmp(source_file, dest_file, True):
+    for over_dir in over_dirs:
+        for over_file in ([os.path.join(over_dir, filename)] +
+                          glob.glob(os.path.join(over_dir, filename + '-*'))):
+            if os.path.isfile(over_file):
+                if not filecmp.cmp(source_file, over_file, True):
                     print('%s: changed' % filename)
                 return
-    print('%s: could be added' % filename)
+    if not os.path.isfile(filename):
+        print('%s: could be added' % filename)
+        return
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print('''\
-Usage: %s <linux-firmware-dir>
-
-Report changes or additions in linux-firmware.git that may be suitable
-for inclusion in firmware-nonfree.
-''' % sys.argv[0],
-              file=sys.stderr)
-        sys.exit(2)
-    main(sys.argv[1])
+    main(*sys.argv[1:])

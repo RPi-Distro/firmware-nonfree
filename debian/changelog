@@ -1,13 +1,12 @@
-firmware-nonfree (0.45) UNRELEASED; urgency=medium
+firmware-nonfree (20151018-1) UNRELEASED; urgency=medium
 
   [ Ben Hutchings ]
+  * Convert to a non-native package with linux-firmware.git as upstream
   * realtek: Remove RTL8192SU/rtl8192sfw.bin, which has not been needed since
     r8192s_usb was replaced by r8172u (Closes: #793874)
   * Adjust for migration to git:
     - Add .gitignore file
     - debian/control: Update Vcs-* fields
-  * Change source format to 3.0 (native) so that .git directory is excluded
-    by default
   * samsung: Suppress lintian warning about reference to GNU GPL
   * samsung: Add copyright holder to copyright file
   * debian/control: Update Standards-Version to 3.9.6; no changes needed

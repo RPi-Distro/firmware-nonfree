@@ -1,7 +1,10 @@
 #!/usr/bin/make -f
 SHELL := sh -e
+SOURCE := $(shell dpkg-parsechangelog -SSource)
+VERSION := $(shell dpkg-parsechangelog -SVersion)
+VERSION_UPSTREAM := $(shell echo "$(VERSION)" | sed -e 's,-[^-]*$$,,')
 
-CONTROL_FILES += debian/bin/gencontrol.py defines $(wildcard */defines) $(wildcard */copyright) $(wildcard */LICENSE*)
+CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) $(wildcard debian/config/*/copyright) $(wildcard debian/config/*/LICENSE*)
 
 include debian/rules.defs
 
@@ -45,6 +48,22 @@ debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
 	@echo been generated SUCCESSFULLY.
 	@echo
 	exit 1
+
+DIR_ORIG = ../orig/$(SOURCE)-$(VERSION_UPSTREAM)
+TAR_ORIG_NAME = $(SOURCE)_$(VERSION_UPSTREAM).orig.tar.xz
+TAR_ORIG = $(firstword $(wildcard ../$(TAR_ORIG_NAME)) $(wildcard ../orig/$(TAR_ORIG_NAME)))
+
+orig: $(DIR_ORIG)
+	rsync --delete --exclude /debian --exclude /.git --link-dest=$(DIR_ORIG)/ -a $(DIR_ORIG)/ .
+	QUILT_PATCHES='$(CURDIR)/debian/patches' QUILT_PC=.pc quilt push --quiltrc - -a -q --fuzz=0
+
+$(DIR_ORIG):
+ifeq ($(TAR_ORIG),)
+	$(error Cannot find orig tarball $(TAR_ORIG_NAME))
+else
+	mkdir -p ../orig
+	tar -C ../orig -xaf $(TAR_ORIG)
+endif
 
 maintainerclean:
 	-rm debian/control debian/control.md5sum debian/rules.gen

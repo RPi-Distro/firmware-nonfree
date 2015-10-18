@@ -197,11 +197,13 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         binary = self.templates["control.binary"]
         copyright = self.templates["copyright.binary"]
 
-        if os.path.exists('%s/copyright' % package):
-            f = open('%s/copyright' % package)
+        package_dir = "debian/config/%s" % package
+
+        if os.path.exists('%s/copyright' % package_dir):
+            f = open('%s/copyright' % package_dir)
             open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
         else:
-            vars['license'] = codecs.open("%s/LICENSE" % package, 'r', 'utf-8').read()
+            vars['license'] = codecs.open("%s/LICENSE" % package_dir, 'r', 'utf-8').read()
             codecs.open("debian/firmware-%s.copyright" % package, 'w', 'utf-8').write(self.substitute(copyright, vars))
 
         try:
@@ -216,38 +218,49 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         links = {}
         links_rev = {}
 
-        for root, dirs, files in os.walk(package):
+        # Look for additional and replacement files in binary package config
+        for root, dirs, files in os.walk(package_dir):
             try:
                 dirs.remove('.svn')
             except ValueError:
                 pass
             for f in files:
                 cur_path = root + '/' + f
-                if root != package:
-                    f = root[len(package) + 1 : ] + '/' + f
+                if root != package_dir:
+                    f = root[len(package_dir) + 1 : ] + '/' + f
                 if os.path.islink(cur_path):
                     if f in files_orig:
                         links[f] = os.readlink(cur_path)
-                        link_target = os.path.normpath(
-                            os.path.join(f, '..', links[f]))
-                        links_rev.setdefault(link_target, []).append(f)
                     continue
                 f1 = f.rsplit('-', 1)
                 if f in files_orig:
-                    files_real[f] = f, f, None
+                    files_real[f] = f, cur_path, None
                     continue
                 if len(f1) > 1:
                     f_base, f_version = f1
                     if f_base in files_orig:
                         if f_base in files_real:
                             raise RuntimeError("Multiple files for %s" % f_base)
-                        files_real[f_base] = f_base, f, f_version
+                        files_real[f_base] = f_base, package_dir + '/' + f, \
+                                             f_version
                         continue
                 # Whitelist files not expected to be installed as firmware
                 if f in ['copyright', 'defines', 'LICENSE', 'LICENSE.install',
                          'update.py', 'update.sh']:
                     continue
                 files_unused.append(f)
+
+        # Take all the other files from upstream
+        for f in files_orig:
+            if f not in files_real and f not in links:
+                if os.path.islink(f):
+                    links[f] = os.readlink(f)
+                elif os.path.isfile(f):
+                    files_real[f] = f, f, None
+
+        for f in links:
+            link_target = os.path.normpath(os.path.join(f, '..', links[f]))
+            links_rev.setdefault(link_target, []).append(f)
 
         if files_unused:
             print('W: %s: unused files:' % package, ' '.join(files_unused),
@@ -293,7 +306,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             codecs.open("debian/firmware-%s.postinst" % package, 'w', 'utf-8').write(self.substitute(postinst, vars))
 
         if 'license-accept' in config_entry:
-            license = codecs.open("%s/LICENSE.install" % package, 'r', 'utf-8').read()
+            license = codecs.open("%s/LICENSE.install" % package_dir, 'r', 'utf-8').read()
             preinst = self.templates['preinst.license']
             preinst_filename = "debian/firmware-%s.preinst" % package
             codecs.open(preinst_filename, 'w', 'utf-8').write(self.substitute(preinst, vars))
