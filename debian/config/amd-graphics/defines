@@ -1,6 +1,8 @@
 [base]
 desc: AMD/ATI graphics chips
 longdesc: AMD/ATI graphics chips supported by the radeon, amdgpu and r128 drivers
+replaces: firmware-linux-nonfree (<< 20151018-1~)
+breaks: firmware-linux-nonfree (<< 20151018-1~)
 files:
  amdgpu/carrizo_ce.bin
  amdgpu/carrizo_me.bin
