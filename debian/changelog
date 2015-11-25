@@ -11,6 +11,9 @@ firmware-nonfree (20151120-1) UNRELEASED; urgency=medium
     (Closes: #591775, #615112, #729542)
   * debian/README.source: Update for the conversion to a non-native package
   * atheros: Include Atheros AR7010 and AR9271 firmware version 1.4.0
+  * iwlwifi: Include Intel Wireless 3160, 7260, 7265, 7265D and 8000C
+    firmware version 16.242414.0 (Closes: #802970, #803920)
+    - The version numbering scheme has changed to put the ABI version first
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 20 Oct 2015 22:09:15 +0100
 

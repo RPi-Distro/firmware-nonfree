@@ -25,6 +25,7 @@ files:
  iwlwifi-3160-12.ucode
  iwlwifi-3160-13.ucode
  iwlwifi-3160-14.ucode
+ iwlwifi-3160-16.ucode
  iwlwifi-3945-2.ucode
  iwlwifi-4965-2.ucode
  iwlwifi-5000-2.ucode
@@ -43,18 +44,22 @@ files:
  iwlwifi-7260-12.ucode
  iwlwifi-7260-13.ucode
  iwlwifi-7260-14.ucode
+ iwlwifi-7260-16.ucode
  iwlwifi-7265-8.ucode
  iwlwifi-7265-9.ucode
  iwlwifi-7265-10.ucode
  iwlwifi-7265-12.ucode
  iwlwifi-7265-13.ucode
  iwlwifi-7265-14.ucode
+ iwlwifi-7265-16.ucode
  iwlwifi-7265D-10.ucode
  iwlwifi-7265D-12.ucode
  iwlwifi-7265D-13.ucode
  iwlwifi-7265D-14.ucode
+ iwlwifi-7265D-16.ucode
  iwlwifi-8000C-13.ucode
  iwlwifi-8000C-14.ucode
+ iwlwifi-8000C-16.ucode
 longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
  iwlwifi/iwlagn drivers
 
@@ -149,6 +154,10 @@ version: 25.30.13.0
 [iwlwifi-3160-14.ucode_base]
 desc: Intel Wireless 3160 firmware
 
+[iwlwifi-3160-16.ucode_base]
+desc: Intel Wireless 3160 firmware
+version: 16.242414.0
+
 [iwlwifi-3945-2.ucode_base]
 desc: Intel Wireless 3945 firmware
 version: 15.32.2.9
@@ -220,6 +229,10 @@ version: 25.30.13.0
 [iwlwifi-7260-14.ucode_base]
 desc: Intel Wireless 7260 firmware
 
+[iwlwifi-7260-16.ucode_base]
+desc: Intel Wireless 7260 firmware
+version: 16.242414.0
+
 [iwlwifi-7265-8.ucode_base]
 desc: Intel Wireless 7265 firmware
 version: 22.24.8.0
@@ -243,6 +256,10 @@ version: 25.30.13.0
 [iwlwifi-7265-14.ucode_base]
 desc: Intel Wireless 7265 firmware
 
+[iwlwifi-7265-16.ucode_base]
+desc: Intel Wireless 7265 firmware
+version: 16.242414.0
+
 [iwlwifi-7265D-10.ucode_base]
 desc: Intel Wireless 7265D firmware
 version: 23.15.10.0
@@ -258,9 +275,17 @@ version: 25.30.13.0
 [iwlwifi-7265D-14.ucode_base]
 desc: Intel Wireless 7265D firmware
 
+[iwlwifi-7265D-16.ucode_base]
+desc: Intel Wireless 7265D firmware
+version: 16.242414.0
+
 [iwlwifi-8000C-13.ucode_base]
 desc: Intel Wireless 8000C firmware
 version: 25.30.13.0
 
 [iwlwifi-8000C-14.ucode_base]
 desc: Intel Wireless 8000C firmware
+
+[iwlwifi-8000C-16.ucode_base]
+desc: Intel Wireless 8000C firmware
+version: 16.242414.0
