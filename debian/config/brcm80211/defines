@@ -18,10 +18,12 @@ files:
  brcm/brcmfmac43362-sdio.bin
  brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43455-sdio.bin
+ brcm/brcmfmac4350-pcie.bin
  brcm/brcmfmac4354-sdio.bin
  brcm/brcmfmac4356-pcie.bin
  brcm/brcmfmac43569.bin
  brcm/brcmfmac43570-pcie.bin
+ brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
 longdesc: wireless network cards supported by the brcmsmac or brcmfmac driver
 
@@ -78,6 +80,9 @@ desc: Broadcom BCM4339 firmware
 [brcm/brcmfmac43455-sdio.bin_base]
 desc: Broadcom BCM43455 firmware
 
+[brcm/brcmfmac4350-pcie.bin_base]
+desc: Broadcom BCM4350 firmware
+
 [brcm/brcmfmac4354-sdio.bin_base]
 desc: Broadcom BCM4354 firmware
 version: 7.35.79.57
@@ -90,6 +95,9 @@ desc: Broadcom BCM43569 firmware
 
 [brcm/brcmfmac43570-pcie.bin_base]
 desc: Broadcom BCM43570 firmware
+
+[brcm/brcmfmac43602-pcie.ap.bin_base]
+desc: Broadcom BCM43602 AP-mode firmware
 
 [brcm/brcmfmac43602-pcie.bin_base]
 desc: Broadcom BCM43602 firmware
