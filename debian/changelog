@@ -21,6 +21,8 @@ firmware-nonfree (20151120-1) UNRELEASED; urgency=medium
   * bnx2: Exclude obsolete firmware (version 5.0.0.j3)
   * amd-graphics: Include microcode for "Stoney" chip supported by the amdgpu
     driver and new microcode for several other chips
+  * misc-nonfree: Include Intel "Skylake" video interface firmware
+    version 1.23, replacing earlier versions
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 20 Oct 2015 22:09:15 +0100
 
