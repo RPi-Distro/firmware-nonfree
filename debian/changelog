@@ -18,6 +18,7 @@ firmware-nonfree (20151120-1) UNRELEASED; urgency=medium
   * bnx2x: Include Broadcom NetXtreme II 10Gb 57710, 57711 and 57712 firmware
     version 7.13.1.0 (for Linux 4.5 onward)
   * bnx2x: Exclude obsolete firmware (version 7.8.17.0)
+  * bnx2: Exclude obsolete firmware (version 5.0.0.j3)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 20 Oct 2015 22:09:15 +0100
 

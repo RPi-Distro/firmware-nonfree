@@ -78,11 +78,9 @@ exclude:
 # These filenames are wrong!
  brcm/bcm43xx*-0-610-809-0.fw
  brcm/bcm4329-fullmac-4.bin
-# No Debian release references these versions
+# No Debian release newer than squeeze references these versions
  bnx2/bnx2-*-4.6.*.fw
- bnx2/bnx2-*-5.0.0.j6.fw
- bnx2/bnx2-*-5.0.0.j9.fw
- bnx2/bnx2-*-5.0.0.j10.fw
+ bnx2/bnx2-*-5.0.*.fw
  bnx2/bnx2-mips-*-6.0.*.fw
  bnx2/bnx2-mips-09-6.2.1.fw
 # No Debian release references these versions
