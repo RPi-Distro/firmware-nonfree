@@ -1,27 +1,56 @@
 firmware-nonfree
 ================
 
-Source format
--------------
+Upstream
+--------
 
-firmware-nonfree is a native package even though the installed files
-are neither Debian-specific nor developed by Debian.  This is done
-because it is built from multiple 'upstream' sources, most of which do
-not make tarball releases.
+firmware-nonfree is based on the linux-firmware.git repository, which
+does not currently make tarball (or tagged) releases.  Also, some of
+its contents are not clearly redistributable, and some are obsolete
+for Debian's purposes.
+
+We set the upstream version to the date of the last commit and use the
+'debian/bin/genorig.py' script to generate a tarball from a git
+repository.  The [upstream] excluded field in 'debian/config/defines'
+lists file patterns that should be excluded from the tarball.
+
+Licences
+--------
+
+The upstream source includes the file 'WHENCE' which lists the licence
+and any source code for each file.  The script
+'debian/bin/check_upstream.py' will warn about any files that aren't
+recognised to be distributable based on the information in 'WHENCE'
+and that haven't been excluded.
+
+Each binary package is assumed to have a different licence(s).  The
+installed 'copyright' file is taken from the 'LICENSE' file in its
+subdirectory.
+
+Some firmware redistribution licences require us to prompt the user to
+accept an EULA.  In this case, put the EULA text in 'LICENSE.install'
+and set the [base] license-accept field to 'required'.  There is no
+upstream provision for EULAs.
 
 Binary package definition
 -------------------------
 
-The binary package definitions are written in a format similar to INI
-files, parsed using the Python ConfigParser module
+The binary package definitions are placed under 'debian/config' and
+written in a format similar to INI files, parsed using the Python
+ConfigParser module
 <http://docs.python.org/release/2.7/library/configparser.html>,
 
 The [base] packages field in the top-level 'defines' file lists all
 the binary package names, without the fixed prefix 'firmware-'.
 
 For each binary package, there is a subdirectory with matching name
-(again without the prefix) containing the binary files that will be
-installed in it and another 'defines' file with metadata.
+(again without the prefix) containing another 'defines' file with
+metadata.  Any non-upstream firmware files are also included in
+these subdirectories.
+
+The script 'debian/bin/check_upstream.py' will list the upstream
+firmware files that are non-free but not assigned to any binary
+package.
 
 Required metadata:
 
@@ -29,10 +58,11 @@ Required metadata:
 [base] files: List of files to be included, one per line
 [base] longdesc: Longer description of related hardware and drivers, used in
                  Description.
-[base] uri: Upstream URL, used as Homepage and in copyright file
 
 Optional metadata:
 
+[base] uri: Upstream URL, used as Homepage and in copyright file.  Not
+            needed if the contents come from linux-firmware.git.
 [base] license-accept: Set to 'required' if we must prompt the user to
                        accept a EULA on installation
 [base] license-title: Title of the EULA
@@ -56,27 +86,4 @@ definitions:
 2. Ensure debian/rules.defs has the right value of KERNELVERSION
 3. Run: debian/rules debian/control
 
-Upstream
---------
-
-The main upstream source is the linux-firmware.git repository, but
-some binary packages are based on other sources as specified by the
-[base] uri field in the 'defines' file in the package subdirectory.
-
-You can compare the current files with a checkout of that repository
-using the script 'debian/bin/check_upstream.py'.  This ignores files
-with unclear or unrecognised licences, and as specified in the
-[upstream] exclude field of the top-level 'defines' file.
-
-Licences
---------
-
-Each binary package is assumed to have a different licence(s).  The
-installed 'copyright' file is taken from the 'LICENSE' file in its
-subdirectory.
-
-Some firmware redistribution licences require us to prompt the user to
-accept an EULA.  In this case, put the EULA text in 'LICENSE.install'
-and set the [base] license-accept field to 'required'.
-
- -- Ben Hutchings <ben@decadent.org.uk>, Sun, 24 Jun 2012 22:56:20 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>, Wed, 25 Nov 2015 22:41:15 +0000

@@ -2,6 +2,7 @@ firmware-nonfree (20151018-3) UNRELEASED; urgency=medium
 
   * ipw2x00: Downgrade Intel Pro 2200/2915 firwmare to version 3.0
     (Closes: #591775, #615112, #729542)
+  * debian/README.source: Update for the conversion to a non-native package
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 20 Oct 2015 22:09:15 +0100
 
