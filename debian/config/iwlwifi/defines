@@ -85,11 +85,11 @@ desc: Intel Wireless 7260 Bluetooth firmware generic patch
 
 [intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq_base]
 desc: Intel Wireless 7265 (C0) Bluetooth firmware patch
-version: 54
+version: 55
 
 [intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq_base]
 desc: Intel Wireless 7265 (D0) Bluetooth firmware patch
-version: 28
+version: 32
 
 [intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq_base]
 desc: Intel Wireless 7265 (D1) Bluetooth firmware patch

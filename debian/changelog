@@ -1,5 +1,12 @@
-firmware-nonfree (20151018-3) UNRELEASED; urgency=medium
+firmware-nonfree (20151120-1) UNRELEASED; urgency=medium
 
+  * New upstream version
+    - Upstream version is commit bb818e53175cce9967cdfd8d8155c438e7ba099f,
+      dated 2015-11-20
+    - iwlwifi: Bluetooth firmware patches updated as noted in the package
+      description
+    - qlogic: QLogic ISP2422, ISP2432[M], SP222, SP232 and ISP2532 firmware
+      updated to version 8.03.00
   * ipw2x00: Downgrade Intel Pro 2200/2915 firwmare to version 3.0
     (Closes: #591775, #615112, #729542)
   * debian/README.source: Update for the conversion to a non-native package
