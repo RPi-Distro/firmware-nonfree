@@ -104,6 +104,10 @@ exclude:
  iwlwifi-4965-1.ucode
  iwlwifi-5000-1.ucode
  iwlwifi-6000g2b-5.ucode
+ iwlwifi-*-7.ucode
+ iwlwifi-*-8.ucode
+ iwlwifi-*-10.ucode
+ iwlwifi-*-13.ucode
 # No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
