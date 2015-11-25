@@ -26,6 +26,14 @@ files:
  amdgpu/fiji_smc.bin
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
+ amdgpu/stoney_ce.bin
+ amdgpu/stoney_me.bin
+ amdgpu/stoney_mec.bin
+ amdgpu/stoney_pfp.bin
+ amdgpu/stoney_rlc.bin
+ amdgpu/stoney_sdma.bin
+ amdgpu/stoney_vce.bin
+ amdgpu/stoney_uvd.bin
  amdgpu/tonga_ce.bin
  amdgpu/tonga_mc.bin
  amdgpu/tonga_me.bin
@@ -71,10 +79,13 @@ files:
  radeon/BONAIRE_rlc.bin
  radeon/bonaire_sdma.bin
  radeon/BONAIRE_sdma.bin
+ radeon/bonaire_sdma1.bin
  radeon/bonaire_smc.bin
  radeon/BONAIRE_smc.bin
  radeon/BONAIRE_uvd.bin
+ radeon/bonaire_uvd.bin
  radeon/BONAIRE_vce.bin
+ radeon/bonaire_vce.bin
  radeon/BTC_rlc.bin
  radeon/CAICOS_mc.bin
  radeon/CAICOS_me.bin
@@ -122,8 +133,11 @@ files:
  radeon/HAWAII_rlc.bin
  radeon/hawaii_sdma.bin
  radeon/HAWAII_sdma.bin
+ radeon/hawaii_sdma1.bin
  radeon/HAWAII_smc.bin
  radeon/hawaii_smc.bin
+ radeon/hawaii_uvd.bin
+ radeon/hawaii_vce.bin
  radeon/JUNIPER_me.bin
  radeon/JUNIPER_pfp.bin
  radeon/JUNIPER_rlc.bin
@@ -140,6 +154,9 @@ files:
  radeon/KABINI_rlc.bin
  radeon/kabini_sdma.bin
  radeon/KABINI_sdma.bin
+ radeon/kabini_sdma1.bin
+ radeon/kabini_uvd.bin
+ radeon/kabini_vce.bin
  radeon/kaveri_ce.bin
  radeon/KAVERI_ce.bin
  radeon/kaveri_me.bin
@@ -153,6 +170,9 @@ files:
  radeon/KAVERI_rlc.bin
  radeon/kaveri_sdma.bin
  radeon/KAVERI_sdma.bin
+ radeon/kaveri_sdma1.bin
+ radeon/kaveri_uvd.bin
+ radeon/kaveri_vce.bin
  radeon/mullins_ce.bin
  radeon/MULLINS_ce.bin
  radeon/mullins_me.bin
@@ -165,6 +185,9 @@ files:
  radeon/MULLINS_rlc.bin
  radeon/mullins_sdma.bin
  radeon/MULLINS_sdma.bin
+ radeon/mullins_sdma1.bin
+ radeon/mullins_uvd.bin
+ radeon/mullins_vce.bin
  radeon/oland_ce.bin
  radeon/OLAND_ce.bin
  radeon/oland_mc.bin
@@ -345,6 +368,9 @@ desc: Radeon HD 7790/8770/8950 SDMA microcode
 [radeon/BONAIRE_sdma.bin_base]
 desc: Radeon HD 7790/8770/8950 SDMA microcode
 
+[radeon/bonaire_sdma1.bin_base]
+desc: Radeon HD 7790/8770/8950 SDMA1 microcode
+
 [radeon/bonaire_smc.bin_base]
 desc: Radeon HD 7790/8770/8950 series SMC microcode
 
@@ -354,8 +380,14 @@ desc: Radeon HD 7790/8770/8950 series SMC microcode
 [radeon/BONAIRE_uvd.bin_base]
 desc: Radeon HD 7790/8770/8950, 8100/8200/8300/8400 series, and "Mullins"/"Beema" IGP UVD microcode
 
+[radeon/bonaire_uvd.bin_base]
+desc: Radeon HD 7790/8770/8950 UVD microcode
+
 [radeon/BONAIRE_vce.bin_base]
 desc: Radeon HD VCE microcode
+
+[radeon/bonaire_vce.bin_base]
+desc: Radeon HD 7790/8770/8950 VCE microcode
 
 [radeon/BTC_rlc.bin_base]
 desc: Radeon HD 6300/6500/6800 series RLC microcode
@@ -502,8 +534,17 @@ desc: Radeon R9 290 series SDMA microcode
 [radeon/HAWAII_sdma.bin_base]
 desc: Radeon R9 290 series SDMA microcode
 
+[radeon/hawaii_sdma1.bin_base]
+desc: Radeon R9 290 series SDMA microcode
+
 [radeon/hawaii_smc.bin_base]
 desc: Radeon R9 290 series SMC microcode
+
+[radeon/hawaii_uvd.bin_base]
+desc: Radeon R9 290 series UVD microcode
+
+[radeon/hawaii_vce.bin_base]
+desc: Radeon R9 290 series VCE microcode
 
 [radeon/HAWAII_smc.bin_base]
 desc: Radeon R9 290 series SMC microcode
@@ -556,6 +597,15 @@ desc: Radeon HD 8100/8200/8300/8400 series SDMA microcode
 [radeon/KABINI_sdma.bin_base]
 desc: Radeon HD 8100/8200/8300/8400 series SDMA microcode
 
+[radeon/kabini_sdma1.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series SDMA1 microcode
+
+[radeon/kabini_uvd.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series UVD microcode
+
+[radeon/kabini_vce.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series VCE microcode
+
 [radeon/kaveri_ce.bin_base]
 desc: Radeon R5/R7 IGP 200 series CE microcode
 
@@ -597,6 +647,15 @@ desc: Radeon R5/R7 IGP 200 series SDMA microcode
 [radeon/KAVERI_sdma.bin_base]
 desc: Radeon R5/R7 IGP 200 series SDMA microcode 
 
+[radeon/kaveri_sdma1.bin_base]
+desc: Radeon R5/R7 IGP 200 series SDMA1 microcode
+
+[radeon/kaveri_uvd.bin_base]
+desc: Radeon R5/R7 IGP 200 series UVD microcode
+
+[radeon/kaveri_vce.bin_base]
+desc: Radeon R5/R7 IGP 200 series VCE microcode
+
 [radeon/mullins_ce.bin_base]
 desc: Radeon "Mullins"/"Beema" IGP CE microcode
 
@@ -632,6 +691,15 @@ desc: Radeon "Mullins"/"Beema" IGP SDMA microcode
 
 [radeon/MULLINS_sdma.bin_base]
 desc: Radeon "Mullins"/"Beema" IGP SDMA microcode
+
+[radeon/mullins_sdma1.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP SDMA1 microcode
+
+[radeon/mullins_uvd.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP UVD microcode
+
+[radeon/mullins_vce.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP VCE microcode
 
 [radeon/oland_ce.bin_base]
 desc: Radeon HD 8500/8600/8700 series CE microcode

@@ -19,6 +19,8 @@ firmware-nonfree (20151120-1) UNRELEASED; urgency=medium
     version 7.13.1.0 (for Linux 4.5 onward)
   * bnx2x: Exclude obsolete firmware (version 7.8.17.0)
   * bnx2: Exclude obsolete firmware (version 5.0.0.j3)
+  * amd-graphics: Include microcode for "Stoney" chip supported by the amdgpu
+    driver and new microcode for several other chips
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 20 Oct 2015 22:09:15 +0100
 
