@@ -7,6 +7,7 @@ files:
  ct2fw-3.2.5.1.bin
  ctfw-3.2.3.0.bin
  ctfw-3.2.5.1.bin
+ qed/qed_init_values_zipped-8.4.2.0.bin
  qlogic/1040.bin
  qlogic/1280.bin
  qlogic/12160.bin
@@ -18,8 +19,8 @@ files:
  ql2400_fw.bin
  ql2500_fw.bin
 longdesc: QLogic Infiniband, SCSI, Fibre Channel/FCoE adapters and
- Converged Network Adapters supported by the bfa, bna, ip_iband, qla1280 and
- qla2xxx drivers
+ Converged Network Adapters supported by the bfa, bna, ip_iband, qed, qla1280
+ and qla2xxx drivers
 support: initramfs-tools
 
 [cbfw-3.2.3.0.bin_base]
@@ -45,6 +46,10 @@ version: 3.2.3.0
 [ctfw-3.2.5.1.bin_base]
 desc: Brocade 1010/1020/1007/1741/804 firmware
 version: 3.2.5.1
+
+[qed/qed_init_values_zipped-8.4.2.0.bin_base]
+desc: QLogic QL45000 series firmware
+version: 8.4.2.0
 
 [qlogic/1040.bin_base]
 desc: QLogic QLA1040 firmware

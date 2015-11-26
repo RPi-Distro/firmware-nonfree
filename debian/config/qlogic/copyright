@@ -105,3 +105,10 @@ License: Binary redistribution (QLogic BR-series)
  These firmware files are distributed in the hope that they will be
  useful, but WITHOUT ANY WARRANTY; without even the implied warranty
  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Files: qed/qed_init_values_zipped-8.4.2.0.bin
+Copyright: 2015, QLogic Corporation
+License: Binary redistribution (QLogic 3)
+ Permission is hereby granted for the distribution of this firmware data
+ in hexadecimal or equivalent format, provided this copyright notice is
+ accompanying it.
