@@ -89,7 +89,7 @@ desc: Broadcom BCM4356 firmware
 desc: Broadcom BCM43569 firmware
 
 [brcm/brcmfmac43570-pcie.bin_base]
-desc: Broadcom BCM43570 firmware]
+desc: Broadcom BCM43570 firmware
 
 [brcm/brcmfmac43602-pcie.bin_base]
-desc: Broadcom BCM43602 firmware]
+desc: Broadcom BCM43602 firmware
