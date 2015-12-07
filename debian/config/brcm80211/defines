@@ -25,6 +25,7 @@ files:
  brcm/brcmfmac43570-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
+ brcm/brcmfmac4371-pcie.bin
 longdesc: wireless network cards supported by the brcmsmac or brcmfmac driver
 
 [brcm/bcm43xx-0.fw_base]
@@ -101,3 +102,6 @@ desc: Broadcom BCM43602 AP-mode firmware
 
 [brcm/brcmfmac43602-pcie.bin_base]
 desc: Broadcom BCM43602 firmware
+
+[brcm/brcmfmac4371-pcie.bin_base]
+desc: Broadcom BCM4371 firmware
