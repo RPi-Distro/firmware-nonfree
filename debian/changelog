@@ -30,6 +30,7 @@ firmware-nonfree (20151207-1) UNRELEASED; urgency=medium
   * brcm80211: Include Broadcom BCM4350 firmware, BCM43602 AP-mode firmware
     and BCM4371 firmware
   * qlogic: Include QLogic QL45000 series firmware for use with the qed driver
+  * misc-nonfree: Include MediaTek MT7601U firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 20 Oct 2015 22:09:15 +0100
 

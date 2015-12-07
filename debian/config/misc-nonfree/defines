@@ -73,6 +73,7 @@ files:
  kaweth/trigger_code_fix.bin
  matrox/g200_warp.fw
  matrox/g400_warp.fw
+ mt7601u.bin
  mt7650.bin
  mts_cdma.fw
  mts_edge.fw
@@ -306,6 +307,10 @@ desc: Matrox G200 WARP engine microcode
 
 [matrox/g400_warp.fw_base]
 desc: Matrox G400/G550 WARP engine microcode
+
+[mt7601u.bin_base]
+desc: MediaTek MT7601U firmware
+version: 34
 
 [mt7650.bin_base]
 desc: MediaTek MT7630/MT7650 Bluetooth firmware
