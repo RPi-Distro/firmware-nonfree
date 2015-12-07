@@ -1,12 +1,16 @@
-firmware-nonfree (20151120-1) UNRELEASED; urgency=medium
+firmware-nonfree (20151207-1) UNRELEASED; urgency=medium
 
   * New upstream version
-    - Upstream version is commit bb818e53175cce9967cdfd8d8155c438e7ba099f,
-      dated 2015-11-20
+    - Upstream version is commit bbe4917c054eb0a73e250c6363341e3bf6725839
+      dated 2015-12-07
     - iwlwifi: Bluetooth firmware patches updated as noted in the package
       description
     - qlogic: QLogic ISP2422, ISP2432[M], SP222, SP232 and ISP2532 firmware
       updated to version 8.03.00
+    - brcm80211: Broadcom BCM43602 firmware updated:
+      + fixing WoWLAN
+      + fixing problems with hibernate
+      + support for dma error checking
   * ipw2x00: Downgrade Intel Pro 2200/2915 firwmare to version 3.0
     (Closes: #591775, #615112, #729542)
   * debian/README.source: Update for the conversion to a non-native package
