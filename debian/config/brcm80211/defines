@@ -19,6 +19,7 @@ files:
  brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac4350-pcie.bin
+ brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4354-sdio.bin
  brcm/brcmfmac4356-pcie.bin
  brcm/brcmfmac43569.bin
@@ -82,7 +83,10 @@ desc: Broadcom BCM4339 firmware
 desc: Broadcom BCM43455 firmware
 
 [brcm/brcmfmac4350-pcie.bin_base]
-desc: Broadcom BCM4350 firmware
+desc: Broadcom BCM4350 rev 0-4 firmware
+
+[brcm/brcmfmac4350c2-pcie.bin_base]
+desc: Broadcom BCM4350 rev 5+ firmware
 
 [brcm/brcmfmac4354-sdio.bin_base]
 desc: Broadcom BCM4354 firmware

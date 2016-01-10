@@ -16,6 +16,8 @@ firmware-nonfree (20160110-1) UNRELEASED; urgency=medium
     and mwifiex_usb drivers
   * misc-nonfree: Include Intel QAT C3xxx and C62x firmware for use with the
     intel_qat driver
+  * brcm80211: Include Broadcom BCM4350 rev 5+ firmware for use with the
+    brcmfmac driver
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 10 Jan 2016 17:58:39 +0000
 
