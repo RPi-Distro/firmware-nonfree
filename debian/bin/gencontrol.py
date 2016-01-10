@@ -273,11 +273,15 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                                        for link, target in links.items()])
 
         files_desc = ["Contents:"]
+        firmware_meta_temp = self.templates["metainfo.xml.firmware"]
+        firmware_meta_list = []
 
         wrap = TextWrapper(width = 71, fix_sentence_endings = True,
                            initial_indent = ' * ',
                            subsequent_indent = '   ').wrap
         for f in config_entry['files']:
+            firmware_meta_list.append(self.substitute(firmware_meta_temp,
+                                                      {'filename': f}))
             if f in links:
                 continue
             f, f_real, version = files_real[f]
@@ -327,6 +331,11 @@ You must agree to the terms of this license before it is installed."""
         packages.extend(packages_binary)
 
         makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
+
+        vars['firmware-list'] = ''.join(firmware_meta_list)
+        package_meta_temp = self.templates["metainfo.xml"]
+        # XXX Might need to escape some characters
+        codecs.open("debian/firmware-%s.metainfo.xml" % package, 'w', 'utf-8').write(self.substitute(package_meta_temp, vars))
 
     def process_template(self, in_entry, vars):
         e = Template()

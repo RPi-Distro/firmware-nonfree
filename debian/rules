@@ -70,6 +70,7 @@ maintainerclean:
 	rm -f debian/*.bug-presubj
 	-rm debian/*.copyright
 	-rm debian/*.hook.*
+	rm -f debian/*.metainfo.xml
 	-rm debian/*.preinst
 	-rm debian/*.postinst
 	-rm debian/*.templates
