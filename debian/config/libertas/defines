@@ -131,7 +131,7 @@ desc: USB8682 firmware
 
 [mrvl/pcie8897_uapsta.bin_base]
 desc: PCIE8897 firmware
-version: 15.68.4.p112 (WLAN) / 15.28.4.p112 (BT)
+version: 15.68.7.p53
 
 [mrvl/sd8688.bin_base]
 desc: SD8688 main code
@@ -153,7 +153,7 @@ version: 15.68.7.p5 (WLAN) / 15.29.7.p5 (BT)
 
 [mrvl/sd8897_uapsta.bin_base]
 desc: SD8897 firmware
-version: 15.68.4.p112 (WLAN) / 15.28.4.p112 (BT)
+version: 15.68.7.p53
 
 [mrvl/usb8766_uapsta.bin_base]
 desc: USB8766 firmware
@@ -161,7 +161,7 @@ version: 14.68.22.p16 (WLAN) / 14.28.22.p16 (BT)
 
 [mrvl/usb8797_uapsta.bin_base]
 desc: USB8797 firmware
-version: 14.68.29.p38
+version: 14.68.29.p49
 
 [mrvl/usb8897_uapsta.bin_base]
 desc: USB8897 firmware

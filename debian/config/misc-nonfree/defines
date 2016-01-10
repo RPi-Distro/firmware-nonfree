@@ -89,6 +89,7 @@ files:
  nvidia/tegra124/xusb.bin
  nvidia/tegra210/xusb.bin
  qat_895xcc.bin
+ qat_895xcc_mmp.bin
  qat_mmp.bin
  rt2561.bin
  rt2561s.bin
@@ -359,7 +360,7 @@ version: 50.10
 [qat_895xcc.bin_base]
 desc: Intel QAT DH895xCC UOF firmware
 
-[qat_mmp.bin_base]
+[qat_895xcc_mmp.bin_base]
 desc: Intel QAT DH895xCC MMP firmware
 
 [rt2561.bin_base]

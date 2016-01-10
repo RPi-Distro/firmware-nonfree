@@ -1,5 +1,13 @@
-firmware-nonfree (20151207-2) UNRELEASED; urgency=medium
+firmware-nonfree (20160110-1) UNRELEASED; urgency=medium
 
+  * New upstream version
+    - Upstream version is commit 73b07a93ed6c0cdb2f96dae8387b04cbb7b75643,
+      dated 2016-01-10
+    - libertas: Marvell PCIE8897 and SD8897 firmware updated to version
+      15.68.7.p53
+    - libertas: Marvell USB8797 firmware updated to version 14.68.29.p49
+    - misc-nonfree: Intel QAT DH895xCC firmware updated
+    - atheros: Clarified licensing terms for the current ath9k_htc firmware
   * Add AppStream metadata to all packages containing firmware blobs
   * genorig.py: Make orig tarballs really reproducible:
     - Override umask while extracting/exporting files
