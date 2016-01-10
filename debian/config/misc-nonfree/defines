@@ -90,6 +90,10 @@ files:
  nvidia/tegra210/xusb.bin
  qat_895xcc.bin
  qat_895xcc_mmp.bin
+ qat_c3xxx.bin
+ qat_c3xxx_mmp.bin
+ qat_c62x.bin
+ qat_c62x_mmp.bin
  qat_mmp.bin
  rt2561.bin
  rt2561s.bin
@@ -362,6 +366,18 @@ desc: Intel QAT DH895xCC UOF firmware
 
 [qat_895xcc_mmp.bin_base]
 desc: Intel QAT DH895xCC MMP firmware
+
+[qat_c3xxx.bin_base]
+desc: Intel QAT C3xxx UOF firmware
+
+[qat_c3xxx_mmp.bin_base]
+desc: Intel QAT C3xxx MMP firmware
+
+[qat_c62x.bin_base]
+desc: Intel QAT C62x UOF firmware
+
+[qat_c62x_mmp.bin_base]
+desc: Intel QAT C62x MMP firmware
 
 [rt2561.bin_base]
 desc: Ralink RT2561 (RT2501/RT5201 chipset) firmware
