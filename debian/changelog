@@ -12,6 +12,8 @@ firmware-nonfree (20160110-1) UNRELEASED; urgency=medium
   * genorig.py: Make orig tarballs really reproducible:
     - Override umask while extracting/exporting files
     - Override user and group names in tarball
+  * libertas: Include SD8801 and USB8801 firmware for use with the mwifiex_sdio
+    and mwifiex_usb drivers
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 10 Jan 2016 17:58:39 +0000
 

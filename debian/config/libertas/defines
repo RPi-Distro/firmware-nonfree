@@ -31,10 +31,12 @@ files:
  mrvl/sd8688_helper.bin
  mrvl/sd8787_uapsta.bin
  mrvl/sd8797_uapsta.bin
+ mrvl/sd8801_uapsta.bin
  mrvl/sd8887_uapsta.bin
  mrvl/sd8897_uapsta.bin
  mrvl/usb8766_uapsta.bin
  mrvl/usb8797_uapsta.bin
+ mrvl/usb8801_uapsta.bin
  mrvl/usb8897_uapsta.bin
  mwl8k/fmimage_8366.fw
  mwl8k/fmimage_8366_ap-2.fw
@@ -147,6 +149,10 @@ version: 14.66.35.p52
 desc: SD8797 firmware
 version: 14.66.11.p151
 
+[mrvl/sd8801_uapsta.bin_base]
+desc: SD8801 firmware
+version: 14.68.36.p60
+
 [mrvl/sd8887_uapsta.bin_base]
 desc: SD8887 firmware
 version: 15.68.7.p5 (WLAN) / 15.29.7.p5 (BT)
@@ -162,6 +168,10 @@ version: 14.68.22.p16 (WLAN) / 14.28.22.p16 (BT)
 [mrvl/usb8797_uapsta.bin_base]
 desc: USB8797 firmware
 version: 14.68.29.p49
+
+[mrvl/usb8801_uapsta.bin_base]
+desc: USB8801 firmware
+version: 14.68.36.p60
 
 [mrvl/usb8897_uapsta.bin_base]
 desc: USB8897 firmware
