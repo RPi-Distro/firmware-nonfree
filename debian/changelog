@@ -1,6 +1,9 @@
 firmware-nonfree (20151207-2) UNRELEASED; urgency=medium
 
   * Add AppStream metadata to all packages containing firmware blobs
+  * genorig.py: Make orig tarballs really reproducible:
+    - Override umask while extracting/exporting files
+    - Override user and group names in tarball
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 10 Jan 2016 17:58:39 +0000
 
