@@ -29,9 +29,9 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.14.4.0.bin
+ cxgb4/t4fw-1.15.37.0.bin
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.14.4.0.bin
+ cxgb4/t5fw-1.15.37.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
@@ -58,15 +58,12 @@ files:
  go7007/s2250-2.fw
  go7007/wis-startrek.fw
  i915/bxt_dmc_ver1.bin
- i915/bxt_dmc_ver1_04.bin
- i915/bxt_dmc_ver1_05.bin
- i915/bxt_dmc_ver1_06.bin
+ i915/bxt_dmc_ver1_07.bin
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
+ i915/skl_dmc_ver1_26.bin
  i915/skl_guc_ver1.bin
- i915/skl_guc_ver1_1059.bin
  i915/skl_guc_ver4.bin
- i915/skl_guc_ver4_3.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -196,13 +193,13 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.14.4.0.bin_base]
+[cxgb4/t4fw-1.15.37.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.14.4.0
+version: 1.15.37.0
 
-[cxgb4/t5fw-1.14.4.0.bin_base]
+[cxgb4/t5fw-1.15.37.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.14.4.0
+version: 1.15.37.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
@@ -283,27 +280,23 @@ desc: Sensoray S2250 stage 2 firmware
 [go7007/wis-startrek.fw_base]
 desc: WISchip WinFast WalkieTV firmware
 
-[i915/bxt_dmc_ver1_04.bin_base]
+[i915/bxt_dmc_ver1_07.bin_base]
 desc: Intel "Broxton" DMC firmware
-version: 1.04
-
-[i915/bxt_dmc_ver1_05.bin_base]
-desc: Intel "Broxton" DMC firmware
-version: 1.05
-
-[i915/bxt_dmc_ver1_06.bin_base]
-desc: Intel "Broxton" DMC firmware
-version: 1.06
+version: 1.07
 
 [i915/skl_dmc_ver1_23.bin_base]
 desc: Intel "Skylake" DMC firmware
 version: 1.23
 
-[i915/skl_guc_ver1_1059.bin_base]
+[i915/skl_dmc_ver1_26.bin_base]
+desc: Intel "Skylake" DMC firmware
+version: 1.26
+
+[i915/skl_guc_ver1.bin_base]
 desc: Intel "Skylake" GuC firmware
 version: 1.1059
 
-[i915/skl_guc_ver4_3.bin_base]
+[i915/skl_guc_ver4.bin_base]
 desc: Intel "Skylake" GuC firmware
 version: 4.3
 
@@ -393,11 +386,11 @@ version: 1.2
 
 [rt2860.bin_base]
 desc: Ralink RT2760/RT2790/RT2860/RT2890/RT3090 (RT2700P[D]/RT2700E[D]/RT2800P[D]/RT2800E[D]/RT3000E[D] chipset) firmware
-version: 34
+version: 0.40
 
 [rt2870.bin_base]
 desc: Ralink RT2870/RT3070/RT3071/RT3072 (RT2800U[D] chipset) firmware
-version: 29
+version: 0.36
 
 [rt3071.bin_base]
 desc: Ralink RT3071/RT3072 firmware

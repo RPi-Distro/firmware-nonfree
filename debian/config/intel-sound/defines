@@ -20,4 +20,4 @@ desc: Intel "Bay Trail" SST DSP firmware
 
 [intel/fw_sst_22a8.bin_base]
 desc: Intel "Cherry Trail"/"Braswell" SST DSP firmware
-version: 01.0B.02.01
+version: 01.0B.02.02
