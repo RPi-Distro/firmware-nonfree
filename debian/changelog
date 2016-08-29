@@ -19,6 +19,7 @@ firmware-nonfree (20160824-1) UNRELEASED; urgency=medium
   * iwlwifi: Include new firmware for Intel Wireless 3160, 7260 and 7265
     (ABI 17); 7265D (ABI 17, 21 and 22); 3168, 8000C and 8265 (ABI 21 and 22)
     (Closes: #808792, #823402, #833355, #833876)
+  * amdgpu: Include new firmware for "Polaris" chips (Closes: #838038)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 28 Aug 2016 22:31:16 +0100
 
