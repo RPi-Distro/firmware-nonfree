@@ -15,6 +15,7 @@ files:
  ti-connectivity/wl12xx-nvs.bin
  ti-connectivity/wl18xx-fw-2.bin
  ti-connectivity/wl18xx-fw-3.bin
+ ti-connectivity/wl18xx-fw-4.bin
 longdesc: Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless
  network chips supported by the wl1251, wl12xx and wl18xx drivers
 
@@ -53,3 +54,6 @@ desc: TI WL18xx firmware, ABI 2
 
 [ti-connectivity/wl18xx-fw-3.bin_base]
 desc: TI WL18xx firmware, ABI 3
+
+[ti-connectivity/wl18xx-fw-4.bin_base]
+desc: TI WL18xx firmware, ABI 4
