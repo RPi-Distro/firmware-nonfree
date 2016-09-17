@@ -275,6 +275,18 @@ License: Binary redistribution (ITEtech)
  TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  PERFORMANCE OF THIS SOFTWARE.
 
+Files: dvb-usb-terratec-h5-drxk.fw
+Copyright: Terratec
+License: Binary redistribution (Terratec)
+ TERRATEC grants permission to use and redistribute these firmware
+ files for use with TERRATEC devices, but not as part of the Linux
+ kernel or in any other form which would require these files themselves
+ to be covered by the terms of the GNU General Public License.
+ .
+ These firmware files are distributed in the hope that they will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 Files: e100/*
 Copyright: 1999-2001, Intel Corporation
 License: BSD (Intel)

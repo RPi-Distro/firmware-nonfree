@@ -40,6 +40,7 @@ files:
  dvb-usb-dib0700-1.20.fw
  dvb-usb-it9135-01.fw
  dvb-usb-it9135-02.fw
+ dvb-usb-terratec-h5-drxk.fw
  e100/d101m_ucode.bin
  e100/d101s_ucode.bin
  e100/d102e_ucode.bin
@@ -229,6 +230,9 @@ desc: DiBcom dib9135 DVB-T USB firmware
 
 [dvb-usb-it9135-02.fw_base]
 desc: DiBcom dib9135 DVB-T USB firmware
+
+[dvb-usb-terratec-h5-drxk.fw_base]
+desc: Terratec H5 DRX-K firmware
 
 [e100/d101m_ucode.bin_base]
 desc: Intel 82559 D101M microcode
