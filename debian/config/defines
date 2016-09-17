@@ -122,6 +122,8 @@ exclude:
  ti-connectivity/wl128x-fw-ap.bin
  ti-connectivity/wl12[78]x-fw*-[34]*.bin
  ti-connectivity/wl18xx-fw.bin
+# Driver requesting this was removed upstream before we added the firmware
+ tlg2300_firmware.bin
 # Licenses for these are very unclear
  ueagle-atm/930-fpga.bin
  ueagle-atm/CMV*.bin    
