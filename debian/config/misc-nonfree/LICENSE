@@ -634,6 +634,18 @@ Files: qat_*.bin
 Copyright: 2014, Intel Corporation.
 License: Binary redistribution (Intel)
 
+Files: rp2.fw
+Copyright: 2013, Comtrol Corporation
+License: Binary redistribution (Comtrol)
+ Comtrol grants permission to use and redistribute these firmware
+ files for use with Comtrol devices, but not as part of the Linux
+ kernel or in any other form which would require these files themselves
+ to be covered by the terms of the GNU General Public License.
+ .
+ These firmware files are distributed in the hope that they will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 Files: rt*.bin
 Copyright: 2007, Ralink Technology Corporation
 License: Binary redistribution (Ralink)

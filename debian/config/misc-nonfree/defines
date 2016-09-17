@@ -94,6 +94,7 @@ files:
  qat_c62x.bin
  qat_c62x_mmp.bin
  qat_mmp.bin
+ rp2.fw
  rt2561.bin
  rt2561s.bin
  rt2661.bin
@@ -379,6 +380,9 @@ desc: Intel QAT C62x UOF firmware
 
 [qat_c62x_mmp.bin_base]
 desc: Intel QAT C62x MMP firmware
+
+[rp2.fw_base]
+desc: Comtrol RocketPort 2 firmware
 
 [rt2561.bin_base]
 desc: Ralink RT2561 (RT2501/RT5201 chipset) firmware
