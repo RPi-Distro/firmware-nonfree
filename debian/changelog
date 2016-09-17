@@ -28,6 +28,10 @@ firmware-nonfree (20160824-1) UNRELEASED; urgency=medium
   * ti-connectivity: Include new TI WL18xx firmware (ABI 4) (Closes: #816350)
   * ti-connectivity: Include "ti-connectivity/TIInit_7.2.31.bts" for use with
     the st_drv driver
+  * atheros: Include firmware for Atheros AR3012 rev 31010100 and Qualcomm
+    Atheros QCA4019, QCA9377, QCA9887, QCA9888, and QCA9984 adapters, and
+    new board configurations for Qualcomm Atheros QCA6174 adapters
+    (Closes: #800820, #832925)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 28 Aug 2016 22:31:16 +0100
 

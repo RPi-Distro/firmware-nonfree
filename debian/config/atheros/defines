@@ -7,6 +7,7 @@ files:
  ar3k/AthrBT_0x11020000.dfu
  ar3k/AthrBT_0x11020100.dfu
  ar3k/AthrBT_0x31010000.dfu
+ ar3k/AthrBT_0x31010100.dfu
  ar3k/AthrBT_0x41020000.dfu
  ar3k/ramps_0x01020001_26.dfu
  ar3k/ramps_0x01020200_26.dfu
@@ -16,18 +17,32 @@ files:
  ar3k/ramps_0x11020000_40.dfu
  ar3k/ramps_0x11020100_40.dfu
  ar3k/ramps_0x31010000_40.dfu
+ ar3k/ramps_0x31010100_40.dfu
  ar3k/ramps_0x41020000_40.dfu
  ar5523.bin
  ar7010.fw
  ar7010_1_1.fw
  ar9271.fw
+ ath10k/QCA4019/hw1.0/board-2.bin
+ ath10k/QCA4019/hw1.0/firmware-5.bin
  ath10k/QCA6174/hw2.1/board.bin
+ ath10k/QCA6174/hw2.1/board-2.bin
  ath10k/QCA6174/hw2.1/firmware-5.bin
  ath10k/QCA6174/hw3.0/board.bin
+ ath10k/QCA6174/hw3.0/board-2.bin
  ath10k/QCA6174/hw3.0/firmware-4.bin
+ ath10k/QCA9377/hw1.0/board.bin
+ ath10k/QCA9377/hw1.0/board-2.bin
+ ath10k/QCA9377/hw1.0/firmware-5.bin
+ ath10k/QCA9887/hw1.0/board.bin
+ ath10k/QCA9887/hw1.0/firmware-5.bin
+ ath10k/QCA9888/hw2.0/board-2.bin
+ ath10k/QCA9888/hw2.0/firmware-5.bin
  ath10k/QCA988X/hw2.0/board.bin
  ath10k/QCA988X/hw2.0/firmware-4.bin
  ath10k/QCA988X/hw2.0/firmware-5.bin
+ ath10k/QCA9984/hw1.0/board-2.bin
+ ath10k/QCA9984/hw1.0/firmware-5.bin
  ath10k/QCA99X0/hw2.0/board.bin
  ath10k/QCA99X0/hw2.0/firmware-5.bin
  ath3k-1.fw
@@ -89,6 +104,9 @@ desc: Atheros AR3012 rev 11020100 patch
 [ar3k/AthrBT_0x31010000.dfu_base]
 desc: Atheros AR3012 rev 31010000 patch
 
+[ar3k/AthrBT_0x31010100.dfu_base]
+desc: Atheros AR3012 rev 31010100 patch
+
 [ar3k/AthrBT_0x41020000.dfu_base]
 desc: Atheros AR3012 rev 41020000 patch
 
@@ -116,6 +134,9 @@ desc: Atheros AR3012 rev 11020100 config
 [ar3k/ramps_0x31010000_40.dfu_base]
 desc: Atheros AR3012 rev 31010000 config
 
+[ar3k/ramps_0x31010100_40.dfu_base]
+desc: Atheros AR3012 rev 31010100 config
+
 [ar3k/ramps_0x41020000_40.dfu_base]
 desc: Atheros AR3012 rev 41020000 config
 
@@ -131,8 +152,21 @@ desc: Atheros AR7010 rev 1.1 firmware
 [ar9271.fw_base]
 desc: Atheros AR9271 firmware
 
+[ath10k/QCA4019/hw1.0/board-2.bin_base]
+desc: Qualcomm Atheros QCA4019 rev 1.0 board configuration
+version: 2
+
+[ath10k/QCA4019/hw1.0/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA4019 rev 1.0 firmware
+version: 10.4-3.2.1-00028
+
 [ath10k/QCA6174/hw2.1/board.bin_base]
 desc: Qualcomm Atheros QCA6174 rev 2.1 board configuration
+version: 1
+
+[ath10k/QCA6174/hw2.1/board-2.bin_base]
+desc: Qualcomm Atheros QCA6174 rev 2.1 board configuration
+version: 2
 
 [ath10k/QCA6174/hw2.1/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA6174 rev 2.1 firmware
@@ -140,13 +174,47 @@ version: SW_RM.1.1.1-00157-QCARMSWPZ-1
 
 [ath10k/QCA6174/hw3.0/board.bin_base]
 desc: Qualcomm Atheros QCA6174 rev 3.0 board configuration
+version: 1
+
+[ath10k/QCA6174/hw3.0/board-2.bin_base]
+desc: Qualcomm Atheros QCA6174 rev 3.0 board configuration
+version: 2
 
 [ath10k/QCA6174/hw3.0/firmware-4.bin_base]
 desc: Qualcomm Atheros QCA6174 rev 3.0 firmware
 version: WLAN.RM.2.0-00180-QCARMSWPZ-1
 
+[ath10k/QCA9377/hw1.0/board.bin_base]
+desc: Qualcomm Atheros QCA9377 rev 1.0 board configuration
+version: 1
+
+[ath10k/QCA9377/hw1.0/board-2.bin_base]
+desc: Qualcomm Atheros QCA9377 rev 1.0 board configuration
+version: 2
+
+[ath10k/QCA9377/hw1.0/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA9377 rev 1.0 firmware
+version: WLAN.TF.1.0-00267-1
+
+[ath10k/QCA9887/hw1.0/board.bin_base]
+desc: Qualcomm Atheros QCA9987 rev 1.0 board configuration
+version: 1
+
+[ath10k/QCA9887/hw1.0/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA9987 rev 1.0 firmware
+version: 10.2.4-1.0-00013.
+
+[ath10k/QCA9888/hw2.0/board-2.bin_base]
+desc: Qualcomm Atheros QCA9988 rev 2.0 board configuration
+version: 2
+
+[ath10k/QCA9888/hw2.0/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA9988 rev 2.0 firmware
+version: 10.4-3.2-00072
+
 [ath10k/QCA988X/hw2.0/board.bin_base]
 desc: Qualcomm Atheros QCA988X board configuration
+version: 1
 
 [ath10k/QCA988X/hw2.0/firmware-4.bin_base]
 desc: Qualcomm Atheros QCA988X firmware
@@ -156,8 +224,17 @@ version: 10.2.4.45
 desc: Qualcomm Atheros QCA988X firmware
 version: 10.2.4.70.54
 
+[ath10k/QCA9984/hw1.0/board-2.bin_base]
+desc: Qualcomm Atheros QCA9984 rev 1.0 board configuration
+version: 2
+
+[ath10k/QCA9984/hw1.0/firmware-5.bin_base]
+desc: Qualcomm Atheros QCA9984 rev 1.0 firmware
+version: 10.4-3.2-00072
+
 [ath10k/QCA99X0/hw2.0/board.bin_base]
 desc: Qualcomm Atheros QCA99X0 board configuration
+version: 1
 
 [ath10k/QCA99X0/hw2.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA99X0 firmware
