@@ -321,7 +321,7 @@ License: Binary redistribution (ENE)
  NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
  WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-Files: go7007/s2250-?.fw
+Files: f2255usb.bin, go7007/s2250-?.fw
 Copyright: Sensoray
 License: Redistributable (Sensoray)
  Sensoray grants permission to use and redistribute these firmware

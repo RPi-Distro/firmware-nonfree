@@ -49,6 +49,7 @@ files:
  ene-ub6250/sd_init1.bin
  ene-ub6250/sd_init2.bin
  ene-ub6250/sd_rdwr.bin
+ f2255usb.bin
  go7007/go7007fw.bin
  go7007/go7007tv.bin
  go7007/lr192.fw
@@ -255,6 +256,9 @@ desc: ENE UB6250 SD init stage 2 firmware
 
 [ene-ub6250/sd_rdwr.bin_base]
 desc: ENE UB6250 SD read/write firmware
+
+[f2255usb.bin_base]
+desc: Sensoray 2255 firmware
 
 [go7007/go7007fw.bin_base]
 desc: Micronas GO7007SB encoder stage 1 firmware
