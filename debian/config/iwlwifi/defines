@@ -3,6 +3,8 @@ desc: Intel Wireless cards
 files:
  intel/ibt-11-5.ddc
  intel/ibt-11-5.sfi
+ intel/ibt-12-16.ddc
+ intel/ibt-12-16.sfi
  intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq
  intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq
  intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq
@@ -68,6 +70,14 @@ version: REL0330
 [intel/ibt-11-5.sfi_base]
 desc: Intel Wireless 8260 Bluetooth firmware
 version: REL0330
+
+[intel/ibt-12-16.ddc_base]
+desc: Intel Wireless 8264 Bluetooth configuration
+version: REL0060
+
+[intel/ibt-12-16.sfi_base]
+desc: Intel Wireless 8264 Bluetooth firmware
+version: REL0060
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
 desc: Intel Wireless 3160 (B6) Bluetooth firmware patch

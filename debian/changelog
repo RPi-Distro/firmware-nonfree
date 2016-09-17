@@ -34,6 +34,7 @@ firmware-nonfree (20160824-1) UNRELEASED; urgency=medium
     (Closes: #800820, #832925)
   * misc-nonfree: Include Terratec H5 DRX-K firmware for use with the
     em28xx-dvb driver
+  * iwlwifi: Include Intel Wireless 8264 Bluetooth firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 28 Aug 2016 22:31:16 +0100
 
