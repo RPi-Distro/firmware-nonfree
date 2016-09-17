@@ -72,6 +72,20 @@ files:
  kaweth/trigger_code_fix.bin
  matrox/g200_warp.fw
  matrox/g400_warp.fw
+ moxa/moxa-1110.fw
+ moxa/moxa-1130.fw
+ moxa/moxa-1131.fw
+ moxa/moxa-1150.fw
+ moxa/moxa-1151.fw
+ moxa/moxa-1250.fw
+ moxa/moxa-1251.fw
+ moxa/moxa-1410.fw
+ moxa/moxa-1450.fw
+ moxa/moxa-1451.fw
+ moxa/moxa-1613.fw
+ moxa/moxa-1618.fw
+ moxa/moxa-1653.fw
+ moxa/moxa-1658.fw
  mt7601u.bin
  mt7650.bin
  mts_cdma.fw
@@ -314,6 +328,48 @@ desc: Matrox G200 WARP engine microcode
 
 [matrox/g400_warp.fw_base]
 desc: Matrox G400/G550 WARP engine microcode
+
+[moxa/moxa-1110.fw_base]
+desc: MOXA UPort 1110 firmware
+
+[moxa/moxa-1130.fw_base]
+desc: MOXA UPort 1130 firmware
+
+[moxa/moxa-1131.fw_base]
+desc: MOXA UPort 1130I firmware
+
+[moxa/moxa-1150.fw_base]
+desc: MOXA UPort 1150 firmware
+
+[moxa/moxa-1151.fw_base]
+desc: MOXA UPort 1150I firmware
+
+[moxa/moxa-1250.fw_base]
+desc: MOXA UPort 1250 firmware
+
+[moxa/moxa-1251.fw_base]
+desc: MOXA UPort 1250I firmware
+
+[moxa/moxa-1410.fw_base]
+desc: MOXA UPort 1410 firmware
+
+[moxa/moxa-1450.fw_base]
+desc: MOXA UPort 1450 firmware
+
+[moxa/moxa-1451.fw_base]
+desc: MOXA UPort 1450I firmware
+
+[moxa/moxa-1613.fw_base]
+desc: MOXA UPort 1610-16 firmware
+
+[moxa/moxa-1618.fw_base]
+desc: MOXA UPort 1610-8 firmware
+
+[moxa/moxa-1653.fw_base]
+desc: MOXA UPort 1650-16 firmware
+
+[moxa/moxa-1658.fw_base]
+desc: MOXA UPort 1650-8 firmware
 
 [mt7601u.bin_base]
 desc: MediaTek MT7601U firmware
