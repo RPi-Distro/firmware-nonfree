@@ -39,6 +39,8 @@ firmware-nonfree (20160824-1) UNRELEASED; urgency=medium
     rp2 driver
   * misc-nonfree: Include MOXA UPort firmware for use with the mxuport and
     ti_usb_3410_5052 drivers
+  * intel-sound: Include Intel "Broxton", "Kabylake", and "Skylake" SST DSP
+    firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Sun, 28 Aug 2016 22:31:16 +0100
 
