@@ -22,6 +22,7 @@ install:
 	@for i in $(LINKS); do \
 	  link=debian/$(PACKAGE_NAME)/lib/firmware/"$${i%:*}"; \
 	  target="$${i#*:}"; \
+	  install -d "$${link%/*}"; \
 	  echo ln -s "$$target" "$$link"; \
 	  ln -s "$$target" "$$link"; \
 	done
