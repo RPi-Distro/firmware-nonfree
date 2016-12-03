@@ -65,23 +65,23 @@ longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
 
 [intel/ibt-11-5.ddc_base]
 desc: Intel Wireless 8260 Bluetooth configuration
-version: REL0330
+version: REL0351
 
 [intel/ibt-11-5.sfi_base]
 desc: Intel Wireless 8260 Bluetooth firmware
-version: REL0330
+version: REL0351
 
 [intel/ibt-12-16.ddc_base]
 desc: Intel Wireless 8264 Bluetooth configuration
-version: REL0060
+version: REL0082
 
 [intel/ibt-12-16.sfi_base]
 desc: Intel Wireless 8264 Bluetooth firmware
-version: REL0060
+version: REL0082
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
 desc: Intel Wireless 3160 (B6) Bluetooth firmware patch
-version: 38
+version: 39
 
 [intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq_base]
 desc: Intel Wireless 3160 (B4) Bluetooth firmware patch
@@ -89,7 +89,7 @@ version: 86
 
 [intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq_base]
 desc: Intel Wireless 7260 (B5) Bluetooth firmware patch
-version: 38
+version: 39
 
 [intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq_base]
 desc: Intel Wireless 7260 (B3) Bluetooth firmware patch
@@ -100,7 +100,7 @@ desc: Intel Wireless 7260 Bluetooth firmware generic patch
 
 [intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq_base]
 desc: Intel Wireless 7265 (C0) Bluetooth firmware patch
-version: 58
+version: 59
 
 [intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq_base]
 desc: Intel Wireless 7265 (D0) Bluetooth firmware patch

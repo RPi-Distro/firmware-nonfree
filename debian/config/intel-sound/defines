@@ -35,6 +35,7 @@ desc: Intel "Bay Trail" SST DSP firmware
 
 [intel/fw_sst_0f28.bin_base]
 desc: Intel "Bay Trail" SST DSP firmware
+version: 01.0C.00.01
 
 [intel/fw_sst_22a8.bin_base]
 desc: Intel "Cherry Trail"/"Braswell" SST DSP firmware

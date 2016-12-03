@@ -323,6 +323,24 @@ files:
  radeon/VERDE_smc.bin
 uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
+[amdgpu/carrizo_uvd.bin_base]
+version: 1.87
+
+[amdgpu/fiji_uvd.bin_base]
+version: 1.87.12
+
+[amdgpu/fiji_vce.bin_base]
+version: 52.8.3
+
+[amdgpu/stoney_uvd.bin_base]
+version: 1.38.15
+
+[amdgpu/tonga_uvd.bin_base]
+version: 1.65.10
+
+[amdgpu/tonga_vce.bin_base]
+version: 52.8.3
+
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
 
