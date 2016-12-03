@@ -61,11 +61,15 @@ files:
  go7007/wis-startrek.fw
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
+ i915/kbl_dmc_ver1.bin
+ i915/kbl_dmc_ver1_01.bin
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
  i915/skl_dmc_ver1_26.bin
  i915/skl_guc_ver1.bin
  i915/skl_guc_ver4.bin
+ i915/skl_guc_ver6.bin
+ i915/skl_guc_ver6_1.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -379,6 +383,10 @@ desc: WISchip WinFast WalkieTV firmware
 desc: Intel "Broxton" DMC firmware
 version: 1.07
 
+[i915/kbl_dmc_ver1_01.bin_base]
+desc: Intel "Kabylake" DMC firmware
+version: 1.01
+
 [i915/skl_dmc_ver1_23.bin_base]
 desc: Intel "Skylake" DMC firmware
 version: 1.23
@@ -394,6 +402,10 @@ version: 1.1059
 [i915/skl_guc_ver4.bin_base]
 desc: Intel "Skylake" GuC firmware
 version: 4.3
+
+[i915/skl_guc_ver6_1.bin_base]
+desc: Intel "Skylake" GuC firmware
+version: 6.1
 
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode

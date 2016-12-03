@@ -24,6 +24,8 @@ firmware-nonfree (20161130-1) UNRELEASED; urgency=medium
     signed firmware (Closes: #823637, #826996)
   * atheros: Include Bluetooth firmware for QCA61x4 (thanks to Mario
     Limonciello) (Closes: #841092)
+  * misc-nonfree: Include Intel "Kabylake" DMC firmware and Intel
+    "Skylake" GuC firmware version 6.1 (Closes: #838476, #842762)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 02 Dec 2016 22:53:26 +0000
 
