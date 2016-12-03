@@ -82,6 +82,18 @@ files:
  ath9k_htc/htc_9271-1.4.0.fw
  htc_7010.fw
  htc_9271.fw
+ qca/nvm_00130300.bin
+ qca/nvm_00130302.bin
+ qca/nvm_usb_00000200.bin
+ qca/nvm_usb_00000201.bin
+ qca/nvm_usb_00000300.bin
+ qca/nvm_usb_00000302.bin
+ qca/rampatch_00130300.bin
+ qca/rampatch_00130302.bin
+ qca/rampatch_usb_00000200.bin
+ qca/rampatch_usb_00000201.bin
+ qca/rampatch_usb_00000300.bin
+ qca/rampatch_usb_00000302.bin
 longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
  ath3k, ath6kl_sdio, ath6kl_usb, ath9k_htc or ath10k drivers
 
@@ -258,3 +270,39 @@ version: 1.3.1
 [htc_9271.fw_base]
 desc: Atheros AR9271 firmware
 version: 1.3.1
+
+[qca/nvm_00130300.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration
+
+[qca/nvm_00130302.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.2 UART BT NVM configuration
+
+[qca/nvm_usb_00000200.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT NVM configuration
+
+[qca/nvm_usb_00000201.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 2.1 USB BT NVM configuration
+
+[qca/nvm_usb_00000300.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.0 USB BT NVM configuration
+
+[qca/nvm_usb_00000302.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.2 USB BT NVM configuration
+
+[qca/rampatch_00130300.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT rampatch
+
+[qca/rampatch_00130302.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.2 UART BT rampatch
+
+[qca/rampatch_usb_00000200.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT rampatch
+
+[qca/rampatch_usb_00000201.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 2.1 USB BT rampatch
+
+[qca/rampatch_usb_00000300.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.0 USB BT rampatch
+
+[qca/rampatch_usb_00000302.bin_base]
+desc: Qualcomm Atheros QCA61x4 version 3.2 USB BT rampatch
