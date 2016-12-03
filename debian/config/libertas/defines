@@ -27,6 +27,8 @@ files:
  libertas_cs.fw
  libertas_cs_helper.fw
  mrvl/pcie8897_uapsta.bin
+ mrvl/pcieuart8997_combo_v4.bin
+ mrvl/pcieusb8997_combo_v4.bin
  mrvl/sd8688.bin
  mrvl/sd8688_helper.bin
  mrvl/sd8787_uapsta.bin
@@ -54,7 +56,7 @@ files:
  usb8388.bin
 longdesc: wireless network cards with Marvell Libertas 8xxx chips supported
  by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb,
- mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers
+ mwifiex_pcie, mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers
 replaces: libertas-firmware
 breaks: libertas-firmware (<< 9.70.7.p0.0-2)
 provides: libertas-firmware
@@ -134,6 +136,14 @@ desc: USB8682 firmware
 [mrvl/pcie8897_uapsta.bin_base]
 desc: PCIE8897 firmware
 version: 15.68.7.p53
+
+[mrvl/pcieuart8997_combo_v4.bin_base]
+desc: Avastar 88W8997-PCIe-UART firmware
+version: 16.68.1.p70
+
+[mrvl/pcieusb8997_combo_v4.bin_base]
+desc: Avastar 88W8997-PCIe-USB firmware
+version: 16.68.1.p70
 
 [mrvl/sd8688.bin_base]
 desc: SD8688 main code
