@@ -99,6 +99,16 @@ exclude:
  cbfw-3.2.1.1.bin
  ct2fw-3.2.1.1.bin
  ctfw-3.2.1.1.bin
+# Nothing seems to reference these versions
+ intel/dsp_fw_bxtn_v430.bin
+ intel/dsp_fw_bxtn_v702.bin
+ intel/dsp_fw_kbl_v701.bin
+ intel/dsp_fw_release_v827.bin
+ intel/dsp_fw_release_v869.bin
+ intel/dsp_fw_release_v896.bin
+ intel/dsp_fw_release_v927.bin
+ intel/dsp_fw_release_v948.bin
+ intel/dsp_fw_release_v951.bin
 # No Debian release requires these versions
  iwlwifi-1000-3.ucode
  iwlwifi-3945-1.ucode
