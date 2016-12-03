@@ -1,3 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linux-firmware
+Upstream-Contact: linux-firmware@kernel.org
+Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+
 Files: qlogic/1040.bin, qlogic/1280.bin, qlogic/12160.bin
 Copyright: 1995, 1996, 1997, 1998, 1999, 2000, QLogic, Inc.
 License: Binary redistribution (QLogic 1)

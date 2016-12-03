@@ -1,3 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linux-firmware
+Upstream-Contact: linux-firmware@kernel.org
+Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+
 Files: libertas/*, mwl8k/*
 Copyright: Marvell International Ltd.
 License: Binary redistribution (Marvell 1)

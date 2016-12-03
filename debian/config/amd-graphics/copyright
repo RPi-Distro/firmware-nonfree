@@ -1,3 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linux-firmware
+Upstream-Contact: linux-firmware@kernel.org
+Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+
 Files: r128/r128_cce.bin, radeon/*_cp.bin,
  radeon/R600_me.bin, radeon/R600_pfp.bin,
  radeon/RS780_*.bin, radeon/RV*_me.bin,

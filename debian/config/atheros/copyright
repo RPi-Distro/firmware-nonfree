@@ -1,3 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linux-firmware
+Upstream-Contact: linux-firmware@kernel.org
+Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+
 Files: ar3k/*, ar5523.bin, ar7010.fw, ar7010_1_1.fw, ar9271.fw, ath3k-1.fw,
  ath6k/*/*/*, htc_7010.fw, htc_9271.fw
 Copyright: 2008-2010, Atheros Communications, Inc.
@@ -172,6 +177,12 @@ Copyright: 1986, Gary S. Brown
            2011-2015, Qualcomm Atheros, Inc.
            2013, Synopsys, Inc.
 License: Binary redistribution (Qualcomm Atheros)
+
+Files: ath10k/QCA*/hw*/board.bin qca/nvm_*.bin qca/rampatch_*.bin
+Copyright: 2015, Qualcomm Atheros, Inc.
+License: Binary redistribution (Qualcomm Atheros)
+
+License: Binary redistribution (Qualcomm Atheros)
  All rights reserved.
  .
  Redistribution. Reproduction and redistribution in binary form, without
@@ -218,11 +229,3 @@ License: Binary redistribution (Qualcomm Atheros)
  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Files: ath10k/QCA*/hw*/board.bin
-Copyright: 2015, Qualcomm Atheros, Inc.
-License: Binary redistribution (Qualcomm Atheros)
-
-Files: qca/nvm_*.bin qca/rampatch_*.bin
-Copyright: 2015, Qualcomm Atheros, Inc.
-License: Binary redistribution (Qualcomm Atheros)
