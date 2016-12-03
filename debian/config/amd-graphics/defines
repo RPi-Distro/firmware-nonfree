@@ -61,6 +61,7 @@ files:
  amdgpu/stoney_vce.bin
  amdgpu/stoney_uvd.bin
  amdgpu/tonga_ce.bin
+ amdgpu/tonga_k_smc.bin
  amdgpu/tonga_mc.bin
  amdgpu/tonga_me.bin
  amdgpu/tonga_mec.bin
@@ -73,6 +74,7 @@ files:
  amdgpu/tonga_uvd.bin
  amdgpu/tonga_vce.bin
  amdgpu/topaz_ce.bin
+ amdgpu/topaz_k_smc.bin
  amdgpu/topaz_mc.bin
  amdgpu/topaz_me.bin
  amdgpu/topaz_mec.bin
@@ -92,6 +94,7 @@ files:
  radeon/BARTS_smc.bin
  radeon/bonaire_ce.bin
  radeon/BONAIRE_ce.bin
+ radeon/bonaire_k_smc.bin
  radeon/bonaire_mc.bin
  radeon/BONAIRE_mc.bin
  radeon/BONAIRE_mc2.bin
@@ -133,6 +136,7 @@ files:
  radeon/CYPRESS_uvd.bin
  radeon/hainan_ce.bin
  radeon/HAINAN_ce.bin
+ radeon/hainan_k_smc.bin
  radeon/hainan_mc.bin
  radeon/HAINAN_mc.bin
  radeon/HAINAN_mc2.bin
@@ -146,6 +150,7 @@ files:
  radeon/HAINAN_smc.bin
  radeon/hawaii_ce.bin
  radeon/HAWAII_ce.bin
+ radeon/hawaii_k_smc.bin
  radeon/hawaii_mc.bin
  radeon/HAWAII_mc.bin
  radeon/HAWAII_mc2.bin
@@ -216,6 +221,7 @@ files:
  radeon/mullins_vce.bin
  radeon/oland_ce.bin
  radeon/OLAND_ce.bin
+ radeon/oland_k_smc.bin
  radeon/oland_mc.bin
  radeon/OLAND_mc.bin
  radeon/OLAND_mc2.bin
@@ -231,6 +237,7 @@ files:
  radeon/PALM_pfp.bin
  radeon/pitcairn_ce.bin
  radeon/PITCAIRN_ce.bin
+ radeon/pitcairn_k_smc.bin
  radeon/pitcairn_mc.bin
  radeon/PITCAIRN_mc.bin
  radeon/PITCAIRN_mc2.bin
@@ -291,6 +298,7 @@ files:
  radeon/SUMO2_pfp.bin
  radeon/tahiti_ce.bin
  radeon/TAHITI_ce.bin
+ radeon/tahiti_k_smc.bin
  radeon/tahiti_mc.bin
  radeon/TAHITI_mc.bin
  radeon/TAHITI_mc2.bin
@@ -310,6 +318,7 @@ files:
  radeon/TURKS_smc.bin
  radeon/verde_ce.bin
  radeon/VERDE_ce.bin
+ radeon/verde_k_smc.bin
  radeon/verde_mc.bin
  radeon/VERDE_mc.bin
  radeon/VERDE_mc2.bin
