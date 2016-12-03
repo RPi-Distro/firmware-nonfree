@@ -1,4 +1,4 @@
-firmware-nonfree (20161130-1) UNRELEASED; urgency=medium
+firmware-nonfree (20161130-1) unstable; urgency=medium
 
   * New upstream version
     - Upstream version is commit 87941021a622c882b1921df85d6115940a4e568a,
@@ -37,7 +37,7 @@ firmware-nonfree (20161130-1) UNRELEASED; urgency=medium
     readable debian/copyright format version 1.0
   * Update to linux-support 4.8.0-1
 
- -- Ben Hutchings <ben@decadent.org.uk>  Fri, 02 Dec 2016 22:53:26 +0000
+ -- Ben Hutchings <ben@decadent.org.uk>  Sat, 03 Dec 2016 21:20:01 +0000
 
 firmware-nonfree (20160824-1) unstable; urgency=medium
 
