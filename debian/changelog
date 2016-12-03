@@ -28,6 +28,7 @@ firmware-nonfree (20161130-1) UNRELEASED; urgency=medium
     "Skylake" GuC firmware version 6.1 (Closes: #838476, #842762)
   * brcm80211: Include Broadcom BCM43430 firmware
   * libertas: Include Marvell Avastar 88W8997 firmware
+  * libertas: Update descriptions of supported chips
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 02 Dec 2016 22:53:26 +0000
 

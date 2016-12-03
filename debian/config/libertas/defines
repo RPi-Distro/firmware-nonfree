@@ -1,5 +1,5 @@
 [base]
-desc: Marvell Libertas 8xxx wireless cards
+desc: Marvell wireless cards
 files:
  lbtf_usb.bin
  libertas/cf8381.bin
@@ -54,7 +54,7 @@ files:
  sd8688.bin
  sd8688_helper.bin
  usb8388.bin
-longdesc: wireless network cards with Marvell Libertas 8xxx chips supported
+longdesc: wireless network cards with Marvell 88W8xxx chips supported
  by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb,
  mwifiex_pcie, mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers
 replaces: libertas-firmware
@@ -62,79 +62,73 @@ breaks: libertas-firmware (<< 9.70.7.p0.0-2)
 provides: libertas-firmware
 
 [lbtf_usb.bin_base]
-desc: USB8388 'Thinfirm' firmware
+desc: Libertas 88W8388 'Thinfirm' firmware
 
 [libertas/cf8381.bin_base]
-desc: CF8381 main code
+desc: Libertas 88W8381 main code
 
 [libertas/cf8381_helper.bin_base]
-desc: CF8381 boot code
+desc: Libertas 88W8381 boot code
 
 [libertas/cf8385.bin_base]
-desc: CF8385 main code
+desc: Libertas 88W8385-CF main code
 
 [libertas/cf8385_helper.bin_base]
-desc: CF8385 boot code
+desc: Libertas 88W8385-CF boot code
 
 [libertas/gspi8686_v9.bin_base]
-desc: GSPI8686 main code
+desc: 88W8686-GSPI main code
 version: 9.x
 
 [libertas/gspi8686_v9_helper.bin_base]
-desc: GSPI8686 boot code
+desc: 88W8686-GSPI boot code
 version: 9.x
 
 [libertas/gspi8688.bin_base]
-desc: GSPI8688 main code
+desc: 88W8688-GSPI main code
 
 [libertas/gspi8688_helper.bin_base]
-desc: GSPI8688 boot code
+desc: 88W8688-GSPI boot code
 
 [libertas/sd8385.bin_base]
-desc: SD8385 main code
+desc: Libertas 88W8385-SDIO main code
 
 [libertas/sd8385_helper.bin_base]
-desc: SD8385 boot code
+desc: Libertas 88W8385-SDIO boot code
 
 [libertas/sd8686_v8.bin_base]
-desc: SD8686 main code
+desc: 88W8686-SDIO main code
 version: 8.x
 
 [libertas/sd8686_v8_helper.bin_base]
-desc: SD8686 boot code
+desc: 88W8686-SDIO boot code
 version: 8.x
 
 [libertas/sd8686_v9.bin_base]
-desc: SD8686 main code
+desc: 88W8686-SDIO main code
 version: 9.70.20.p0
 
 [libertas/sd8686_v9_helper.bin_base]
-desc: SD8686 boot code
+desc: 88W8686-SDIO boot code
 version: 9.x
 
-[libertas/sd8688.bin_base]
-desc: SD8688 main code
-
-[libertas/sd8688_helper.bin_base]
-desc: SD8688 boot code
-
 [libertas/usb8388_olpc.bin_base]
-desc: USB8388 OLPC firmware
+desc: Libertas 88W8388 OLPC firmware
 version: 5.110.22.p23
 
 [libertas/usb8388_v5.bin_base]
-desc: USB8388 firmware
+desc: Libertas 88W8388 firmware
 version: 5.x
 
 [libertas/usb8388_v9.bin_base]
-desc: USB8388 firmware
+desc: Libertas 88W8388 firmware
 version: 9.x
 
 [libertas/usb8682.bin_base]
-desc: USB8682 firmware
+desc: 88W8682 firmware
 
 [mrvl/pcie8897_uapsta.bin_base]
-desc: PCIE8897 firmware
+desc: Avastar 88W8897-PCIe firmware
 version: 15.68.7.p53
 
 [mrvl/pcieuart8997_combo_v4.bin_base]
@@ -146,66 +140,66 @@ desc: Avastar 88W8997-PCIe-USB firmware
 version: 16.68.1.p70
 
 [mrvl/sd8688.bin_base]
-desc: SD8688 main code
+desc: 88W8688-SDIO main code
 
 [mrvl/sd8688_helper.bin_base]
-desc: SD8688 boot code
+desc: 88W8688-SDIO boot code
 
 [mrvl/sd8787_uapsta.bin_base]
-desc: SD8787 firmware
+desc: Avastar 88W8787 firmware
 version: 14.66.35.p52
 
 [mrvl/sd8797_uapsta.bin_base]
-desc: SD8797 firmware
+desc: Avastar 88W8797-SDIO firmware
 version: 14.66.11.p151
 
 [mrvl/sd8801_uapsta.bin_base]
-desc: SD8801 firmware
+desc: Avastar 88W8801-SDIO firmware
 version: 14.68.36.p60
 
 [mrvl/sd8887_uapsta.bin_base]
-desc: SD8887 firmware
+desc: Avastar 88W8887 firmware
 version: 15.68.7.p5 (WLAN) / 15.29.7.p5 (BT)
 
 [mrvl/sd8897_uapsta.bin_base]
-desc: SD8897 firmware
+desc: Avastar 88W8897-SDIO firmware
 version: 15.68.7.p53
 
 [mrvl/usb8766_uapsta.bin_base]
-desc: USB8766 firmware
+desc: Avastar 88W8766 firmware
 version: 14.68.22.p16 (WLAN) / 14.28.22.p16 (BT)
 
 [mrvl/usb8797_uapsta.bin_base]
-desc: USB8797 firmware
+desc: Avastar 88W8797-USB firmware
 version: 14.68.29.p49
 
 [mrvl/usb8801_uapsta.bin_base]
-desc: USB8801 firmware
+desc: Avastar 88W8801-USB firmware
 version: 14.68.36.p60
 
 [mrvl/usb8897_uapsta.bin_base]
-desc: USB8897 firmware
+desc: Avastar 88W8897-USB firmware
 version: 15.68.4.p103 (WLAN) / 15.28.4.p103 (BT)
 
 [mwl8k/fmimage_8366.fw_base]
-desc: MWL8366 main code
+desc: TopDog 88W8366 main code
 
 [mwl8k/fmimage_8366_ap-2.fw_base]
-desc: MWL8366 AP-mode main code
+desc: TopDog 88W8366 AP-mode main code
 
 [mwl8k/fmimage_8366_ap-3.fw_base]
-desc: MWL8366 AP-mode main code
+desc: TopDog 88W8366 AP-mode main code
 version: 5.2.8.16
 
 [mwl8k/fmimage_8687.fw_base]
-desc: MWL8687 main code
+desc: TopDog 88W8687 main code
 
 [mwl8k/fmimage_8764_ap-1.fw_base]
-desc: MWL8764 AP-mode firmware
+desc: TopDog 88W8764 AP-mode firmware
 version: 7.4.0.9
 
 [mwl8k/helper_8366.fw_base]
-desc: MWL8366 boot code
+desc: TopDog 88W8366 boot code
 
 [mwl8k/helper_8687.fw_base]
-desc: MWL8687 boot code
+desc: TopDog 88W8687 boot code
