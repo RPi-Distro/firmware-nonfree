@@ -495,6 +495,75 @@ desc: Nvidia GK20A method init data
 [nvidia/gk20a/sw_nonctx.bin_base]
 desc: Nvidia GK20A non-ctx init data
 
+[nvidia/gm204/acr/bl.bin_base]
+copy: True
+
+[nvidia/gm204/acr/ucode_load.bin_base]
+copy: True
+
+[nvidia/gm204/acr/ucode_unload.bin_base]
+copy: True
+
+[nvidia/gm204/gr/fecs_bl.bin_base]
+copy: True
+
+[nvidia/gm204/gr/fecs_inst.bin_base]
+copy: True
+
+[nvidia/gm204/gr/gpccs_bl.bin_base]
+copy: True
+
+[nvidia/gm204/gr/gpccs_inst.bin_base]
+copy: True
+
+[nvidia/gm204/gr/sw_bundle_init.bin_base]
+copy: True
+
+[nvidia/gm204/gr/sw_ctx.bin_base]
+copy: True
+
+[nvidia/gm204/gr/sw_method_init.bin_base]
+copy: True
+
+[nvidia/gm204/gr/sw_nonctx.bin_base]
+copy: True
+
+[nvidia/gm206/acr/bl.bin_base]
+copy: True
+
+[nvidia/gm206/gr/fecs_bl.bin_base]
+copy: True
+
+[nvidia/gm206/gr/fecs_inst.bin_base]
+copy: True
+
+[nvidia/gm206/gr/gpccs_bl.bin_base]
+copy: True
+
+[nvidia/gm206/gr/gpccs_inst.bin_base]
+copy: True
+
+[nvidia/gm206/gr/sw_bundle_init.bin_base]
+copy: True
+
+[nvidia/gm206/gr/sw_ctx.bin_base]
+copy: True
+
+[nvidia/gm206/gr/sw_method_init.bin_base]
+copy: True
+
+[nvidia/gm206/gr/sw_nonctx.bin_base]
+copy: True
+
+[nvidia/gm20b/gr/sw_method_init.bin_base]
+copy: True
+
+[nvidia/gp100/gr/fecs_bl.bin_base]
+copy: True
+
+[nvidia/gp100/gr/gpccs_bl.bin_base]
+copy: True
+
 [nvidia/tegra124/xusb.bin_base]
 desc: Nvidia Tegra 124 XHCI firmware
 version: 45.46

@@ -1,6 +1,8 @@
 firmware-nonfree (20161130-2) UNRELEASED; urgency=medium
 
   * debian/control: Add XS-Autobuild field
+  * misc-nonfree: Replace Nvidia firmware symlinks with copies, to avoid a
+    bug in initramfs-tools (Closes: #847343)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 07 Dec 2016 02:04:02 +0000
 
