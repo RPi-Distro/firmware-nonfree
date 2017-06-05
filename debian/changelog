@@ -5,6 +5,7 @@ firmware-nonfree (20161130-3) UNRELEASED; urgency=medium
     Intel "Kabylake" GuC firmware version 9.14 (Closes: #854695)
   * iwlwifi: Fix DDC file format for Intel Bluetooth 8260/8265
     (Closes: #854907)
+  * amd-graphics: Add radeon/si58_mc.bin (Closes: #856853)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Mon, 05 Jun 2017 23:46:11 +0100
 

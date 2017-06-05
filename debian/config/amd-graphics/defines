@@ -290,6 +290,7 @@ files:
  radeon/RV770_pfp.bin
  radeon/RV770_smc.bin
  radeon/RV770_uvd.bin
+ radeon/si58_mc.bin
  radeon/SUMO_me.bin
  radeon/SUMO_pfp.bin
  radeon/SUMO_rlc.bin
