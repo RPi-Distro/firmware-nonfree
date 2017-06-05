@@ -14,3 +14,5 @@ debian/config/iwlwifi/iwlwifi-7260-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-7265-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-7265D-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-8000C-14.ucode-25.30.14.0
+debian/config/misc-nonfree/i915/bxt_guc_ver8_7.bin
+debian/config/misc-nonfree/i915/kbl_guc_ver9_14.bin
