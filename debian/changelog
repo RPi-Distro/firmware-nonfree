@@ -3,6 +3,8 @@ firmware-nonfree (20161130-3) UNRELEASED; urgency=medium
   * misc-nonfree: Include Intel OPA Gen1 firmware (Closes: #862458)
   * misc-nonfree: Add Intel "Broxton" GuC firmware version 8.7 and
     Intel "Kabylake" GuC firmware version 9.14 (Closes: #854695)
+  * iwlwifi: Fix DDC file format for Intel Bluetooth 8260/8265
+    (Closes: #854907)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Mon, 05 Jun 2017 23:46:11 +0100
 
