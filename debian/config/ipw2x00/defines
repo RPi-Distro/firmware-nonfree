@@ -27,13 +27,13 @@ version: 1.3
 
 [ipw2200-bss.fw_base]
 desc: Intel Pro Wireless 2200/2915 firmware (bss)
-version: 3.0
+version: 3.1
 
 [ipw2200-ibss.fw_base]
 desc: Intel Pro Wireless 2200/2915 firmware (ibss)
-version: 3.0
+version: 3.1
 
 [ipw2200-sniffer.fw_base]
 desc: Intel Pro Wireless 2200/2915 firmware (snf)
-version: 3.0
+version: 3.1
 
