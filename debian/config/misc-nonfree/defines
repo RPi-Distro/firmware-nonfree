@@ -387,19 +387,22 @@ desc: Sensoray S2250 stage 2 firmware
 desc: WISchip WinFast WalkieTV firmware
 
 [hfi1_dc8051.fw_base]
-desc: Intel OPA Gen1 8051 firmware
+desc: Intel OPA Gen1 DC firmware
+version: 0.45
 
 [hfi1_fabric.fw_base]
 desc: Intel OPA Gen1 fabric firmware
+version: 0x1055
 
 [hfi1_pcie.fw_base]
-desc: Intel OPA Gen1 PCIe firmware
+desc: Intel OPA Gen1 PCIe serdes firmware
 
 [hfi1_platform.dat_base]
 desc: Intel OPA Gen1 platform config
 
 [hfi1_sbus.fw_base]
 desc: Intel OPA Gen1 SBus firmware
+version: 0x10130001
 
 [i915/bxt_dmc_ver1_07.bin_base]
 desc: Intel "Broxton" DMC firmware
