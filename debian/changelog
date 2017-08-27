@@ -50,6 +50,7 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
   * atheros: Update copyright information for ath10k/QCA*/hw*/firmware-*.bin
   * atheros: Include Qualcomm Atheros QCA6174 rev 3.0 firmware version
     WLAN.RM.4.4-00022-QCARMSWPZ-2
+  * brcm80211: Include Broadcom BCM4356-SDIO and BCM4358 firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 
