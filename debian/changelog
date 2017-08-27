@@ -67,6 +67,7 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
     - RTL8723BE firmware version 36
     - RTL8723BS firmware
     - RTL8821AE firmware version 29
+  * Move AppStream metainfo to /usr/share/metainfo
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 

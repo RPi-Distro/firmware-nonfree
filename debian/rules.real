@@ -27,8 +27,8 @@ install:
 	  ln -s "$$target" "$$link"; \
 	done
 ifneq ($(FILES),)
-	dh_installdirs /usr/share/appdata
-	dh_install debian/$(PACKAGE_NAME).metainfo.xml /usr/share/appdata
+	dh_installdirs /usr/share/metainfo
+	dh_install debian/$(PACKAGE_NAME).metainfo.xml /usr/share/metainfo
 endif
 	dh_bugfiles
 	dh_installchangelogs
