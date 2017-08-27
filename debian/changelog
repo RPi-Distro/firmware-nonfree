@@ -62,7 +62,11 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
   * misc-nonfree: Include MediaTek MT76x2 firmware and ROM patch
   * misc-nonfree: Include new Nvidia GPU firmware (Closes: #872641)
   * qlogic: Include QLogic QL45000 series firmware versions 8.15.3.0, 8.20.0.0
-  * realtek: Include Realtek RTL8723BS firmware
+  * realtek: Include new firmware:
+    - RTL8192EU, RTL8723BU WoWLAN firmware
+    - RTL8723BE firmware version 36
+    - RTL8723BS firmware
+    - RTL8821AE firmware version 29
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 

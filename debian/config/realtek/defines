@@ -45,19 +45,23 @@ files:
  rtlwifi/rtl8192defw.bin
  rtlwifi/rtl8192eefw.bin
  rtlwifi/rtl8192eu_nic.bin
+ rtlwifi/rtl8192eu_wowlan.bin
  rtlwifi/rtl8192sefw.bin
  rtlwifi/rtl8712u.bin
  rtlwifi/rtl8723aufw_A.bin
  rtlwifi/rtl8723aufw_B.bin
  rtlwifi/rtl8723aufw_B_NoBT.bin
+ rtlwifi/rtl8723befw_36.bin
  rtlwifi/rtl8723befw.bin
  rtlwifi/rtl8723bs_ap_wowlan.bin
  rtlwifi/rtl8723bs_bt.bin
  rtlwifi/rtl8723bs_nic.bin
  rtlwifi/rtl8723bs_wowlan.bin
  rtlwifi/rtl8723bu_nic.bin
+ rtlwifi/rtl8723bu_wowlan.bin
  rtlwifi/rtl8723fw_B.bin
  rtlwifi/rtl8723fw.bin
+ rtlwifi/rtl8821aefw_29.bin
  rtlwifi/rtl8821aefw_wowlan.bin
  rtlwifi/rtl8821aefw.bin
 longdesc: Realtek Ethernet, wifi and Bluetooth adapters supported by various
@@ -210,7 +214,10 @@ desc: Realtek RTL8192DE firmware
 desc: Realtek RTL8192EE wifi firmware
 
 [rtlwifi/rtl8192eu_nic.bin_base]
-desc: Realtek RTl8192EU firmware
+desc: Realtek RTl8192EU non-WoWLAN firmware
+
+[rtlwifi/rtl8192eu_wowlan.bin_base]
+desc: Realtek RTl8192EU WoWLAN firmware
 
 [rtlwifi/rtl8192sefw.bin_base]
 desc: Realtek RTL8192SE/RTL8191SE firmware
@@ -228,6 +235,10 @@ desc: Realtek RTL8723AU rev B wifi-with-BT firmware
 [rtlwifi/rtl8723aufw_B_NoBT.bin_base]
 desc: Realtek RTL8723AU rev B wifi-only firmware
 
+[rtlwifi/rtl8723befw_36.bin_base]
+desc: Realtek RTL8723BE firmware
+version: 36
+
 [rtlwifi/rtl8723befw.bin_base]
 desc: Realtek RTL8723BE firmware
 
@@ -244,13 +255,20 @@ desc: Realtek RTL8723BS wifi non-WoWLAN firmware
 desc: Realtek RTL8723BS wifi WoWLAN firmware
 
 [rtlwifi/rtl8723bu_nic.bin_base]
-desc: Realtek RTl8723BU firmware
+desc: Realtek RTl8723BU non-WoWLAN firmware
+
+[rtlwifi/rtl8723bu_wowlan.bin_base]
+desc: Realtek RTl8723BU WoWLAN firmware
 
 [rtlwifi/rtl8723fw_B.bin_base]
 desc: Realtek RTL8723AE rev B firmware
 
 [rtlwifi/rtl8723fw.bin_base]
 desc: Realtek RTL8723AE rev A firmware
+
+[rtlwifi/rtl8821aefw_29.bin_base]
+desc: Realtek RTL8821AE firmware
+version: 29
 
 [rtlwifi/rtl8821aefw_wowlan.bin_base]
 desc: Realtek RTL8821AE firmware
