@@ -27,6 +27,7 @@ files:
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
  amdgpu/polaris10_ce.bin
+ amdgpu/polaris10_k_smc.bin
  amdgpu/polaris10_mc.bin
  amdgpu/polaris10_me.bin
  amdgpu/polaris10_mec.bin
@@ -40,6 +41,7 @@ files:
  amdgpu/polaris10_uvd.bin
  amdgpu/polaris10_vce.bin
  amdgpu/polaris11_ce.bin
+ amdgpu/polaris11_k_smc.bin
  amdgpu/polaris11_mc.bin
  amdgpu/polaris11_me.bin
  amdgpu/polaris11_mec.bin
@@ -52,6 +54,18 @@ files:
  amdgpu/polaris11_smc_sk.bin
  amdgpu/polaris11_uvd.bin
  amdgpu/polaris11_vce.bin
+ amdgpu/polaris12_ce.bin
+ amdgpu/polaris12_mc.bin
+ amdgpu/polaris12_me.bin
+ amdgpu/polaris12_mec.bin
+ amdgpu/polaris12_mec2.bin
+ amdgpu/polaris12_pfp.bin
+ amdgpu/polaris12_rlc.bin
+ amdgpu/polaris12_sdma.bin
+ amdgpu/polaris12_sdma1.bin
+ amdgpu/polaris12_smc.bin
+ amdgpu/polaris12_uvd.bin
+ amdgpu/polaris12_vce.bin
  amdgpu/stoney_ce.bin
  amdgpu/stoney_me.bin
  amdgpu/stoney_mec.bin
@@ -84,10 +98,26 @@ files:
  amdgpu/topaz_sdma.bin
  amdgpu/topaz_sdma1.bin
  amdgpu/topaz_smc.bin
+ amdgpu/vega10_acg_smc.bin
+ amdgpu/vega10_asd.bin
+ amdgpu/vega10_ce.bin
+ amdgpu/vega10_gpu_info.bin
+ amdgpu/vega10_me.bin
+ amdgpu/vega10_mec.bin
+ amdgpu/vega10_mec2.bin
+ amdgpu/vega10_pfp.bin
+ amdgpu/vega10_rlc.bin
+ amdgpu/vega10_sdma.bin
+ amdgpu/vega10_sdma1.bin
+ amdgpu/vega10_smc.bin
+ amdgpu/vega10_sos.bin
+ amdgpu/vega10_uvd.bin
+ amdgpu/vega10_vce.bin
  r128/r128_cce.bin
  radeon/ARUBA_me.bin
  radeon/ARUBA_pfp.bin
  radeon/ARUBA_rlc.bin
+ radeon/banks_k_2_smc.bin
  radeon/BARTS_mc.bin
  radeon/BARTS_me.bin
  radeon/BARTS_pfp.bin

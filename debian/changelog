@@ -44,6 +44,9 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
   * misc-nonfree: Update Intel OPA Gen1 firmware type and version information
   * iwlwifi: Fix Intel Wireless 8265 Bluetooth file descriptions
   * atheros: Fix Qualcomm Atheros QCA9887 and QCA9888 file descriptions
+  * amd-graphics: Include firmware for "Polaris" 1.2 and "Vega" 1.0 chips, and
+    K SMC firmware for "Polaris" 1.0 and 1.1 and new "Hainan" chips
+    (Closes: #864529, #868152)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 
