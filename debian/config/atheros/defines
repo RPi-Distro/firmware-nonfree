@@ -31,6 +31,7 @@ files:
  ath10k/QCA6174/hw3.0/board.bin
  ath10k/QCA6174/hw3.0/board-2.bin
  ath10k/QCA6174/hw3.0/firmware-4.bin
+ ath10k/QCA6174/hw3.0/firmware-6.bin
  ath10k/QCA9377/hw1.0/board.bin
  ath10k/QCA9377/hw1.0/board-2.bin
  ath10k/QCA9377/hw1.0/firmware-5.bin
@@ -195,6 +196,10 @@ version: 2
 [ath10k/QCA6174/hw3.0/firmware-4.bin_base]
 desc: Qualcomm Atheros QCA6174 rev 3.0 firmware
 version: WLAN.RM.2.0-00180-QCARMSWPZ-1
+
+[ath10k/QCA6174/hw3.0/firmware-6.bin_base]
+desc: Qualcomm Atheros QCA6174 rev 3.0 firmware
+version: WLAN.RM.4.4-00022-QCARMSWPZ-2
 
 [ath10k/QCA9377/hw1.0/board.bin_base]
 desc: Qualcomm Atheros QCA9377 rev 1.0 board configuration
