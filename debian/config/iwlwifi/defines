@@ -27,6 +27,7 @@ files:
  iwlwifi-3160-17.ucode
  iwlwifi-3168-21.ucode
  iwlwifi-3168-22.ucode
+ iwlwifi-3168-29.ucode
  iwlwifi-3945-2.ucode
  iwlwifi-4965-2.ucode
  iwlwifi-5000-2.ucode
@@ -54,12 +55,17 @@ files:
  iwlwifi-7265D-17.ucode
  iwlwifi-7265D-21.ucode
  iwlwifi-7265D-22.ucode
+ iwlwifi-7265D-29.ucode
  iwlwifi-8000C-14.ucode
  iwlwifi-8000C-16.ucode
  iwlwifi-8000C-21.ucode
  iwlwifi-8000C-22.ucode
+ iwlwifi-8000C-27.ucode
+ iwlwifi-8000C-31.ucode
  iwlwifi-8265-21.ucode
  iwlwifi-8265-22.ucode
+ iwlwifi-8265-27.ucode
+ iwlwifi-8265-31.ucode
 longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
  iwlwifi/iwlagn drivers
 
@@ -163,6 +169,10 @@ version: 21.302800.0
 [iwlwifi-3168-22.ucode_base]
 desc: Intel Wireless 3168 firmware
 version: 22.391740.0
+
+[iwlwifi-3168-29.ucode_base]
+desc: Intel Wireless 3168 firmware
+version: 29.541020.0
 
 [iwlwifi-3945-2.ucode_base]
 desc: Intel Wireless 3945 firmware
@@ -269,6 +279,10 @@ version: 21.302800.0
 desc: Intel Wireless 7265D firmware
 version: 22.391740.0
 
+[iwlwifi-7265D-29.ucode_base]
+desc: Intel Wireless 7265D firmware
+version: 29.541020.0
+
 [iwlwifi-8000C-14.ucode_base]
 desc: Intel Wireless 8000C firmware
 
@@ -284,6 +298,14 @@ version: 21.302800.0
 desc: Intel Wireless 8000C firmware
 version: 22.391740.0
 
+[iwlwifi-8000C-27.ucode_base]
+desc: Intel Wireless 8000C firmware
+version: 27.541033.0
+
+[iwlwifi-8000C-31.ucode_base]
+desc: Intel Wireless 8000C firmware
+version: 31.532993.0
+
 [iwlwifi-8265-21.ucode_base]
 desc: Intel Wireless 8265 firmware
 version: 21.302800.0
@@ -291,3 +313,11 @@ version: 21.302800.0
 [iwlwifi-8265-22.ucode_base]
 desc: Intel Wireless 8265 firmware
 version: 22.391740.0
+
+[iwlwifi-8265-27.ucode_base]
+desc: Intel Wireless 8265 firmware
+version: 27.541033.0
+
+[iwlwifi-8265-31.ucode_base]
+desc: Intel Wireless 8265 firmware
+version: 31.532993.0
