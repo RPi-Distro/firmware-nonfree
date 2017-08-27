@@ -137,7 +137,7 @@ version: 16.68.1.p70
 
 [mrvl/pcieusb8997_combo_v4.bin_base]
 desc: Avastar 88W8997-PCIe-USB firmware
-version: 16.68.1.p70
+version: 16.68.1.p97
 
 [mrvl/sd8688.bin_base]
 desc: 88W8688-SDIO main code
@@ -159,11 +159,11 @@ version: 14.68.36.p60
 
 [mrvl/sd8887_uapsta.bin_base]
 desc: Avastar 88W8887 firmware
-version: 15.68.7.p5 (WLAN) / 15.29.7.p5 (BT)
+version: 15.68.1.p71
 
 [mrvl/sd8897_uapsta.bin_base]
 desc: Avastar 88W8897-SDIO firmware
-version: 15.68.7.p53
+version: 15.68.7.p112
 
 [mrvl/usb8766_uapsta.bin_base]
 desc: Avastar 88W8766 firmware

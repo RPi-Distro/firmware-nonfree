@@ -29,9 +29,9 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.15.37.0.bin
+ cxgb4/t4fw-1.16.45.0.bin
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.15.37.0.bin
+ cxgb4/t5fw-1.16.45.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
@@ -62,7 +62,6 @@ files:
  hfi1_dc8051.fw
  hfi1_fabric.fw
  hfi1_pcie.fw
- hfi1_platform.dat
  hfi1_sbus.fw
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
@@ -293,13 +292,13 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.15.37.0.bin_base]
+[cxgb4/t4fw-1.16.45.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.15.37.0
+version: 1.16.45.0
 
-[cxgb4/t5fw-1.15.37.0.bin_base]
+[cxgb4/t5fw-1.16.45.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.15.37.0
+version: 1.16.45.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
@@ -388,7 +387,7 @@ desc: WISchip WinFast WalkieTV firmware
 
 [hfi1_dc8051.fw_base]
 desc: Intel OPA Gen1 DC firmware
-version: 0.45
+version: 0.47
 
 [hfi1_fabric.fw_base]
 desc: Intel OPA Gen1 fabric firmware
@@ -396,9 +395,7 @@ version: 0x1055
 
 [hfi1_pcie.fw_base]
 desc: Intel OPA Gen1 PCIe serdes firmware
-
-[hfi1_platform.dat_base]
-desc: Intel OPA Gen1 platform config
+version: 0x4755
 
 [hfi1_sbus.fw_base]
 desc: Intel OPA Gen1 SBus firmware

@@ -29,24 +29,30 @@ desc: TI WL1251 reference NVS
 
 [ti-connectivity/wl127x-fw-5-mr.bin_base]
 desc: TI WL127x multi-role firmware
+version: 6.5.7.0.49
 
 [ti-connectivity/wl127x-fw-5-plt.bin_base]
 desc: TI WL127x PLT (calibration) firmware
+version: 6.3.10.0.141
 
 [ti-connectivity/wl127x-fw-5-sr.bin_base]
 desc: TI WL127x single-role firmware
+version: 6.3.10.0.141
 
 [ti-connectivity/wl127x-nvs.bin_base]
 desc: TI WL127x reference NVS
 
 [ti-connectivity/wl128x-fw-5-mr.bin_base]
 desc: TI WL128x multi-role firmware
+version: 7.5.7.0.49
 
 [ti-connectivity/wl128x-fw-5-plt.bin_base]
 desc: TI WL128x PLT (calibration) firmware
+version: 7.3.10.2.141
 
 [ti-connectivity/wl128x-fw-5-sr.bin_base]
 desc: TI WL128x single-role firmware
+version: 7.3.10.0.141
 
 [ti-connectivity/wl128x-nvs.bin_base]
 desc: TI WL128x reference NVS

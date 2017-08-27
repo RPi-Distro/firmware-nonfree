@@ -1,4 +1,3 @@
-debian/config/amd-graphics/radeon/si58_mc.bin
 debian/config/ipw2x00/ipw2100-1.3-i.fw
 debian/config/ipw2x00/ipw2100-1.3-p.fw
 debian/config/ipw2x00/ipw2100-1.3.fw
@@ -15,7 +14,3 @@ debian/config/iwlwifi/iwlwifi-7260-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-7265-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-7265D-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-8000C-14.ucode-25.30.14.0
-debian/config/iwlwifi/intel/ibt-11-5.ddc
-debian/config/iwlwifi/intel/ibt-12-16.ddc
-debian/config/misc-nonfree/i915/bxt_guc_ver8_7.bin
-debian/config/misc-nonfree/i915/kbl_guc_ver9_14.bin

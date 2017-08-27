@@ -8,9 +8,12 @@ longdesc: Cavium LiquidIO Ethernet adapters supported by the liquidio driver
 
 [liquidio/lio_210nv_nic.bin_base]
 desc: Cavium LiquidIO 210Nv firmware
+version: 1.6.1
 
 [liquidio/lio_210sv_nic.bin_base]
 desc: Cavium LiquidIO 210Sv firmware
+version: 1.6.1
 
 [liquidio/lio_410nv_nic.bin_base]
 desc: Cavium LiquidIO 410Nv firmware
+version: 1.6.1
