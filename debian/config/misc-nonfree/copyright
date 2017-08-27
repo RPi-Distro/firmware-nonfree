@@ -479,7 +479,7 @@ License: Binary redistribution (Moxa)
     business, using any other license.
  5. Moxa(r) is worldwide registered trademark.
 
-Files: mt7650.bin
+Files: mt76*.bin
 Copyright: 2013, Ralink, A MediaTek Company
 License: Binary redistribution (MediaTek)
  All rights reserved.

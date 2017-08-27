@@ -103,6 +103,8 @@ files:
  moxa/moxa-1658.fw
  mt7601u.bin
  mt7650.bin
+ mt7662.bin
+ mt7662_rom_patch.bin
  mts_cdma.fw
  mts_edge.fw
  mts_gsm.fw
@@ -512,6 +514,14 @@ version: 34
 
 [mt7650.bin_base]
 desc: MediaTek MT7630/MT7650 Bluetooth firmware
+
+[mt7662.bin_base]
+desc: MediaTek MT76x2 firmware
+version: 1.9
+
+[mt7662_rom_patch.bin_base]
+desc: MediaTek MT76x2 ROM patch
+version: 0.0.2_P69
 
 [mts_cdma.fw_base]
 desc: Multi-Tech USB CDMA modem firmware
