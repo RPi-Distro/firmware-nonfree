@@ -32,6 +32,8 @@ files:
  cxgb4/t4fw-1.16.45.0.bin
  cxgb4/t5fw.bin
  cxgb4/t5fw-1.16.45.0.bin
+ cxgb4/t6fw.bin
+ cxgb4/t6fw-1.16.45.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
@@ -298,6 +300,10 @@ version: 1.16.45.0
 
 [cxgb4/t5fw-1.16.45.0.bin_base]
 desc: Chelsio T5 firmware
+version: 1.16.45.0
+
+[cxgb4/t6fw-1.16.45.0.bin_base]
+desc: Chelsio T6 firmware
 version: 1.16.45.0
 
 [dabusb/firmware.fw_base]
