@@ -60,6 +60,7 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
     8000C and 8265 (ABI 27, 31)
   * libertas: Include Avastar 88W8997-PCIe and 88W8997-USB firmware
   * misc-nonfree: Include MediaTek MT76x2 firmware and ROM patch
+  * misc-nonfree: Include new Nvidia GPU firmware (Closes: #872641)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 
