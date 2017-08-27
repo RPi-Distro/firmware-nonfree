@@ -51,7 +51,8 @@ exclude:
  whiteheat_loader.fw
  yamaha/yss225_registers.bin
 # - licence is GPL, but source is elsewhere
- atusb/atusb-0.2.dfu
+ atusb/atusb-*.dfu
+ atusb/rzusb-*.bin
 # - licence is unknown
  acenic/tg[12].bin
  ess/maestro3_*.fw
