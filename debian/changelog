@@ -47,6 +47,7 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
   * amd-graphics: Include firmware for "Polaris" 1.2 and "Vega" 1.0 chips, and
     K SMC firmware for "Polaris" 1.0 and 1.1 and new "Hainan" chips
     (Closes: #864529, #868152)
+  * atheros: Update copyright information for ath10k/QCA*/hw*/firmware-*.bin
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 
