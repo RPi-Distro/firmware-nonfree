@@ -68,6 +68,8 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
     - RTL8723BS firmware
     - RTL8821AE firmware version 29
   * Move AppStream metainfo to /usr/share/metainfo
+  * Update Standards-Version to 4.0.1:
+    - Use https scheme in copyright format URL
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 
