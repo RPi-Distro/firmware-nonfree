@@ -55,6 +55,7 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
   * misc-nonfree: Include Chelsio T6 firmware
   * misc-nonfree: Include Intel "Broxton", "Kabylake", "Skylake" HuC firmware
     (Closes: #864601)
+  * intel-sound: Include Intel "Geminilake" SST DSP firmware
 
  -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
 
