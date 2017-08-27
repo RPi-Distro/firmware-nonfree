@@ -1,4 +1,4 @@
-firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
+firmware-nonfree (20170823-1) unstable; urgency=medium
 
   * New upstream version:
     - Upstream version is commit b78acc9f0e26459ce2bb586bb00d28bcc14b2c26
@@ -71,7 +71,7 @@ firmware-nonfree (20170823-1) UNRELEASED; urgency=medium
   * Update Standards-Version to 4.0.1:
     - Use https scheme in copyright format URL
 
- -- Ben Hutchings <ben@decadent.org.uk>  Wed, 16 Aug 2017 16:23:01 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 27 Aug 2017 15:21:48 +0100
 
 firmware-nonfree (20161130-3) unstable; urgency=medium
 
