@@ -1,6 +1,7 @@
 firmware-nonfree (20170823-2) UNRELEASED; urgency=medium
 
   * debian/bin/gencontrol.py: Set encoding to UTF-8 globally
+  * debian/bin/gencontrol.py: Sort list of symlink names for each blob
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 20 Oct 2017 02:37:42 +0100
 

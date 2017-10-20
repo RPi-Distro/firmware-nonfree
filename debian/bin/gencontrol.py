@@ -292,7 +292,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             if version is None:
                 version = c.get('version')
             try:
-                f = f + ', ' + ', '.join(links_rev[f])
+                f = f + ', ' + ', '.join(sorted(links_rev[f]))
             except KeyError:
                 pass
             if desc and version:
