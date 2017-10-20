@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-import os, re, sys, codecs
+import os, re, sys, locale
 
 sys.path.insert(0, "debian/lib/python")
 sys.path.append(sys.argv[1] + "/lib/python")
+locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config
 from debian_linux.debian import Package, PackageRelation
@@ -92,7 +93,7 @@ class Templates(TemplatesBase):
         for dir in self.dirs:
             filename = "%s/%s.in" % (dir, name)
             if os.path.exists(filename):
-                f = codecs.open(filename, 'r', 'utf-8')
+                f = open(filename, 'r')
                 if prefix == 'control':
                     return read_control(f)
                 elif prefix == 'templates':
@@ -203,8 +204,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             f = open('%s/copyright' % package_dir)
             open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
         else:
-            vars['license'] = codecs.open("%s/LICENSE" % package_dir, 'r', 'utf-8').read()
-            codecs.open("debian/firmware-%s.copyright" % package, 'w', 'utf-8').write(self.substitute(copyright, vars))
+            vars['license'] = open("%s/LICENSE" % package_dir, 'r').read()
+            open("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
         try:
             os.unlink('debian/firmware-%s.bug-presubj' % package)
@@ -308,19 +309,19 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         if 'initramfs-tools' in config_entry.get('support', []):
             postinst = self.templates['postinst.initramfs-tools']
-            codecs.open("debian/firmware-%s.postinst" % package, 'w', 'utf-8').write(self.substitute(postinst, vars))
+            open("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
         if 'license-accept' in config_entry:
-            license = codecs.open("%s/LICENSE.install" % package_dir, 'r', 'utf-8').read()
+            license = open("%s/LICENSE.install" % package_dir, 'r').read()
             preinst = self.templates['preinst.license']
             preinst_filename = "debian/firmware-%s.preinst" % package
-            codecs.open(preinst_filename, 'w', 'utf-8').write(self.substitute(preinst, vars))
+            open(preinst_filename, 'w').write(self.substitute(preinst, vars))
 
             templates = self.process_templates(self.templates['templates.license'], vars)
             license_split = re.split(r'\n\s*\n', license)
             templates[0]['Description'].extend(license_split)
             templates_filename = "debian/firmware-%s.templates" % package
-            self.write_rfc822(codecs.open(templates_filename, 'w', 'utf-8'), templates)
+            self.write_rfc822(open(templates_filename, 'w'), templates)
 
             desc = packages_binary[0]['Description']
             desc.append(
@@ -336,7 +337,7 @@ You must agree to the terms of this license before it is installed."""
         vars['firmware-list'] = ''.join(firmware_meta_list)
         package_meta_temp = self.templates["metainfo.xml"]
         # XXX Might need to escape some characters
-        codecs.open("debian/firmware-%s.metainfo.xml" % package, 'w', 'utf-8').write(self.substitute(package_meta_temp, vars))
+        open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))
 
     def process_template(self, in_entry, vars):
         e = Template()
@@ -370,10 +371,10 @@ You must agree to the terms of this license before it is installed."""
         self.write_makefile(makefile)
 
     def write_control(self, list):
-        self.write_rfc822(codecs.open("debian/control", 'w', 'utf-8'), list)
+        self.write_rfc822(open("debian/control", 'w'), list)
 
     def write_makefile(self, makefile):
-        f = codecs.open("debian/rules.gen", 'w', 'utf-8')
+        f = open("debian/rules.gen", 'w')
         makefile.write(f)
         f.close()
 
