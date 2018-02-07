@@ -1,3 +1,24 @@
+firmware-nonfree (1:20161130-3+rpi2) stretch; urgency=medium
+
+  * Bump epoch to prevent being replaced by raspbian.org
+  * Update brcmfmac43430-sdio.txt and brcmfmac43430-sdio.bin
+    - CVE-2017-9417: "Broadpwn" issue fix
+    - Add "CY" string in the version string
+    - AMPDU sequence number deadlock fix (potential fix for this issue)
+    - CLM version upgrade
+    - CVE-2017-0572: memory corruption fix
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 09 Aug 2017 12:10:08 +0100
+
+firmware-nonfree (20161130-3+rpi1) stretch; urgency=medium
+
+  * Non-maintainer upload.
+  * Add brcmfmac43430-sdio.txt
+  * Update to linux-support 4.9.0-3
+  * debian/bin/gencontrol.py: force UTF8 on copyright files
+
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 12 Jun 2017 15:40:15 +0000
+
 firmware-nonfree (20161130-3) unstable; urgency=medium
 
   * misc-nonfree: Include Intel OPA Gen1 firmware (Closes: #862458)

@@ -200,8 +200,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         package_dir = "debian/config/%s" % package
 
         if os.path.exists('%s/copyright' % package_dir):
-            f = open('%s/copyright' % package_dir)
-            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
+            f = open('%s/copyright' % package_dir, encoding="utf8")
+            open("debian/firmware-%s.copyright" % package, 'w', encoding="utf8").write(f.read())
         else:
             vars['license'] = codecs.open("%s/LICENSE" % package_dir, 'r', 'utf-8').read()
             codecs.open("debian/firmware-%s.copyright" % package, 'w', 'utf-8').write(self.substitute(copyright, vars))
