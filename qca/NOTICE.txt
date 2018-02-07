@@ -1,0 +1,506 @@
+
+This Notice.txt file contains certain notices of software components included
+with the software that Qualcomm Atheros, Inc. ("Qualcomm Atheros") is required
+to provide you. Notwithstanding anything in the notices in this file, your use
+of these software components together with the Qualcomm Atheros software
+(Qualcomm Atheros software hereinafter referred to as "Software") is subject to
+the terms of your license from Qualcomm Atheros. Compliance with all copyright
+laws and software license agreements included in the notice section of this
+file are the responsibility of the user. Except as may be granted by separate
+express written agreement, this file provides no license to any Qualcomm
+Atheros patents, trademarks, copyrights, or other intellectual property.
+
+Copyright (c) 2014 Qualcomm Atheros, Inc.  All rights reserved.
+
+Qualcomm is a trademark of Qualcomm Incorporated, registered in the United
+States and other countries.  All Qualcomm Incorporated trademarks are used with
+permission. Atheros is a trademark of Qualcomm Atheros, Inc., registered in the
+United States and other countries.  Other products and brand names may be
+trademarks or registered trademarks of their respective owners.
+
+NOTICES:
+
+===============================================================================
+
+ 1.
+
+/*
+ * FILE:    sha2.c
+ * AUTHOR:    Aaron D. Gifford <me@aarongifford.com>
+ *
+ * Copyright (c) 2000-2001, Aaron D. Gifford
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. Neither the name of the copyright holder nor the names of contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTOR(S) ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTOR(S) BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ * $Id: sha2.c,v 1.1 2001/11/08 00:01:51 adg Exp adg $
+ */
+File: LLM_sp_sha2.c
+
+
+/*
+ * FILE:    sha2.h
+ * AUTHOR:    Aaron D. Gifford <me@aarongifford.com>
+ *
+ * Copyright (c) 2000-2001, Aaron D. Gifford
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. Neither the name of the copyright holder nor the names of contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTOR(S) ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTOR(S) BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ * $Id: sha2.h,v 1.1 2001/11/08 00:02:01 adg Exp adg $
+ */
+File: LLM_sp_sha2.h
+
+===============================================================================
+
+ 2.
+
+/* utility to create the register check tables
+* this includes inlined list.h safe for userspace.
+*
+* Copyright 2009 Jerome Glisse
+* Copyright 2009 Red Hat Inc.
+*
+* Authors:
+*    Jerome Glisse
+*    Dave Airlie
+*/
+/*All rights reserved.
+Redistribution and use in source and binary forms, with or without modification
+are permitted provided that the following conditions are met:
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+  3. Neither the name of the <ORGANIZATION> nor the names of its contributors
+     may be used to endorse or promote products derived from this software
+     without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+File: comm_lib.h
+
+===============================================================================
+
+ 3.
+
+/* crypto/aes/aes.h -*- mode:C; c-file-style: "eay" -*- */
+/* ====================================================================
+ * Copyright (c) 1998-2002 The OpenSSL Project.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the
+ *    distribution.
+ *
+ * 3. All advertising materials mentioning features or use of this
+ *    software must display the following acknowledgment:
+ *    "This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+ *
+ * 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
+ *    endorse or promote products derived from this software without
+ *    prior written permission. For written permission, please contact
+ *    openssl-core@openssl.org.
+ *
+ * 5. Products derived from this software may not be called "OpenSSL"
+ *    nor may "OpenSSL" appear in their names without prior written
+ *    permission of the OpenSSL Project.
+ *
+ * 6. Redistributions of any form whatsoever must retain the following
+ *    acknowledgment:
+ *    "This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit (http://www.openssl.org/)"
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
+ * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
+ * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ * ====================================================================
+ *
+ */
+File Name list: aes.h, aes_locl.h
+
+===============================================================================
+
+ 4.
+
+/* crypto/aes/aes_core.c -*- mode:C; c-file-style: "eay" -*- */
+/**
+ * rijndael-alg-fst.c
+ *
+ * @version 3.0 (December 2000)
+ *
+ * Optimised ANSI C code for the Rijndael cipher (now AES)
+ *
+ * @author Vincent Rijmen <vincent.rijmen@esat.kuleuven.ac.be>
+ * @author Antoon Bosselaers <antoon.bosselaers@esat.kuleuven.ac.be>
+ * @author Paulo Barreto <paulo.barreto@terra.com.br>
+ *
+ * This code is hereby placed in the public domain.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHORS ''AS IS'' AND ANY EXPRESS
+ * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+File: aes_core.c
+
+===============================================================================
+
+ 5.
+
+/*===========================================================================
+
+                      EDIT HISTORY FOR FILE
+
+  $Header: //depot/asic/msmshared/sec/sec/MSM_SEC.03.03.08.xx/aes.h#1 $
+  $DateTime: 2006/12/11 00:43:21 $ $Author: davidf $
+
+when       who     what, where, why
+--------   ---     ----------------------------------------------------------
+11/12/04   rv      changes to correct LINT errors
+02/02/04   rwh     Small mods to open source.
+
+===========================================================================*/
+
+ /*
+   I retain copyright in this code but I encourage its free use provided
+   that I don't carry any responsibility for the results. I am especially
+   happy to see it used in free and open source software. If you do use
+   it I would appreciate an acknowledgement of its origin in the code or
+   the product that results and I would also appreciate knowing a liitle
+   about the use to which it is being put.
+
+   Dr B. R. Gladman <brg@gladman.uk.net> 1st June 2001.
+
+   This is an implementation of the AES encryption algorithm (Rijndael)
+   designed by Joan Daemen and Vincent Rijmen. This version is designed
+   to provide both fixed and dynamic block and key lengths and can also
+   run with either big or little endian internal byte order.
+
+   NOTE: Input block and key lengths are given in terms of the lengths of
+   the byte arrays involved, the legal values being 16, 24 and 32.
+
+   A. THE CIPHER INTERFACE
+
+   byte                    (an unsigned 8-bit type)
+   word                    (an unsigned 32-bit type)
+   aes_ret:                (a signed 16 bit type for function return values)
+        aes_good            (value != 0, a good return)
+        aes_bad             (value == 0, an error return)
+   enum aes_key:           (encryption direction)
+        enc                 (set key for encryption)
+        dec                 (set key for decryption)
+        both                (set key for both)
+   class or struct aes     (structure for context)
+
+   C subroutine calls:
+
+   aes_ret set_blk(const word block_length, aes *cx)  (variable block size)
+   aes_ret set_key(const byte key[], const word key_length,
+                   const enum aes_key direction, aes *cx)
+   aes_ret encrypt(const byte input_blk[], byte output_blk[], const aes *cx)
+   aes_ret decrypt(const byte input_blk[], byte output_blk[], const aes *cx)
+
+   IMPORTANT NOTE: If you are using this C interface and your compiler does
+   not set the memory used for objects to zero before use, you will need to
+   ensure that cx.mode is set to zero before using the C subroutine calls.
+
+   C++ aes class subroutines:
+
+   aes_ret set_blk(const word block_length)  (variable block size)
+   aes_ret set_key(const byte key[], const word key_length,
+                   const aes_key direction)
+   aes_ret encrypt(const byte input_blk[], byte output_blk[]) const
+   aes_ret decrypt(const byte input_blk[], byte output_blk[]) const
+
+   The block length inputs to set_block and set_key are in numbers of
+   BYTES, not bits.  The calls to subroutines must be made in the above
+   order but multiple calls can be made without repeating earlier calls
+   if their parameters have not changed. If the cipher block length is
+   variable but set_blk has not been called before cipher operations a
+   value of 16 is assumed (that is, the AES block size). In contrast to
+   earlier versions the block and key length parameters are now checked
+   for correctness and the encryption and decryption routines check to
+   ensure that an appropriate key has been set before they are called.
+
+   B. BYTE ORDER WITHIN 32 BIT WORDS
+
+   The fundamental data processing units in Rijndael are 8-bit bytes. The
+   input, the output and the key input are all enumerated arrays of bytes
+   in which bytes are numbered starting at zero and increasing to one less
+   than the number of bytes in the array in question.  When these inputs
+   and outputs are considered as bit sequences, the n'th byte contains
+   bits 8n to 8n+7 of the sequence with the lower numbered bit mapped to
+   the most significant bit within the  byte (i.e. that having a numeric
+   value of 128).  However, Rijndael can be implemented more efficiently
+   using 32-bit words to process 4 bytes at a time provided that the order
+   of bytes within words is known.  This order is called big-endian if the
+   lowest numbered bytes in words have the highest numeric significance
+   and little-endian if the opposite applies. This code can work in either
+   order irrespective of the native order of the machine on which it runs.
+   The byte order used internally is set by defining INTERNAL_BYTE_ORDER
+   whereas the order for all inputs and outputs is specified by defining
+   EXTERNAL_BYTE_ORDER, the only purpose of the latter being to determine
+   if a byte order change is needed immediately after input and immediately
+   before output to account for the use of a different internal byte order.
+   In almost all situations both of these defines will be set to the native
+   order of the processor on which the code is to run but other settings
+   may somtimes be useful in special circumstances.
+
+#define INTERNAL_BYTE_ORDER LITTLE_ENDIAN
+#define EXTERNAL_BYTE_ORDER LITTLE_ENDIAN
+
+   C. COMPILATION
+
+   To compile AES (Rijndael) for use in C code
+    a. Exclude the AES_DLL define in aes.h
+    b. Exclude the AES_IN_CPP define in aes.h
+
+   To compile AES (Rijndael) for use in in C++ code
+    a. Exclude the AES_DLL define in aes.h
+    b. Include the AES_IN_CPP define in aes.h
+
+   To compile AES (Rijndael) in C as a Dynamic Link Library
+    a. Include the AES_DLL define in aes.h
+    b. Compile the DLL.  If using the test files, exclude aes.c from
+       the test build project and compile it with the same defines
+       as used for the DLL (ensure that the DLL path is correct)
+
+   D. CONFIGURATION OPTIONS (see also aes.c)
+
+   1. define BLOCK_SIZE to set the cipher block size (16, 24 or 32) or
+      leave this undefined for dynamically variable block size (this will
+      result in much slower code).
+   2. set AES_IN_CPP to use the code from C++ rather than C
+   3. set AES_DLL if AES (Rijndael) is to be compiled to a DLL
+   4. set INTERNAL_BYTE_ORDER to one of the above constants to set the
+      internal byte order (the order used within the algorithm code)
+   5. set EXTERNAL_BYTE_ORDER to one of the above constants to set the byte
+      order used at the external interfaces for the input, output and key
+      byte arrays.
+
+   IMPORTANT NOTE: BLOCK_SIZE is in BYTES: 16, 24, 32 or undefined for aes.c
+   and 16, 20, 24, 28, 32 or undefined for aes++.c.  If left undefined a
+   slower version providing variable block length is compiled
+
+#define BLOCK_SIZE  16
+
+   Define AES_IN_CPP if you intend to use the AES C++ class rather than the
+   C code directly.
+
+#define AES_IN_CPP
+
+   Define AES_DLL if you wish to compile the code to produce a Windows DLL
+
+#define AES_DLL
+
+*/
+File: aes.h
+
+/*===========================================================================
+
+                      EDIT HISTORY FOR FILE
+
+  $Header: //depot/asic/msmshared/sec/sec/MSM_SEC.03.03.08.xx/aes_tab.h#1 $
+  $DateTime: 2006/12/11 00:43:21 $ $Author: davidf $
+
+when       who     what, where, why
+--------   ---     ----------------------------------------------------------
+11/12/04   rv      changes to correct LINT errors
+02/02/04   rwh     Small mods to open source.
+
+===========================================================================*/
+/*lint -e146 -e303 */
+/* 146: Assuming a binary constant */
+/* 303: String too long (try +macros) */
+
+
+ /*
+   I retain copyright in this code but I encourage its free use provided
+   that I don't carry any responsibility for the results. I am especially
+   happy to see it used in free and open source software. If you do use
+   it I would appreciate an acknowledgement of its origin in the code or
+   the product that results and I would also appreciate knowing a liitle
+   about the use to which it is being put.
+
+   Dr B. R. Gladman <brg@gladman.uk.net> 1st June 2001.
+ */
+File: aes_tab.h
+
+===============================================================================
+6.
+===============================================================================
+#FILE:Conftest.py
+# Copyright (c) 2003 Stichting NLnet Labs
+# Copyright (c) 2001, 2002, 2003 Steven Knight
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+# KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+# WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+
+#
+# The purpose of this module is to define how a check is to be performed.
+# Use one of the Check...() functions below.
+#
+
+#
+# A context class is used that defines functions for carrying out the tests,
+# logging and messages.  The following methods and members must be present:
+#
+# context.Display(msg)  Function called to print messages that are normally
+#                       displayed for the user.  Newlines are explicitly used.
+#                       The text should also be written to the logfile!
+#
+# context.Log(msg)      Function called to write to a log file.
+#
+# context.BuildProg(text, ext)
+#                       Function called to build a program, using "ext" for the
+#                       file extention.  Must return an empty string for
+#                       success, an error message for failure.
+#                       For reliable test results building should be done just
+#                       like an actual program would be build, using the same
+#                       command and arguments (including configure results so
+#                       far).
+#
+# context.CompileProg(text, ext)
+#                       Function called to compile a program, using "ext" for
+#                       the file extention.  Must return an empty string for
+#                       success, an error message for failure.
+#                       For reliable test results compiling should be done just
+#                       like an actual source file would be compiled, using the
+#                       same command and arguments (including configure results
+#                       so far).
+#
+# context.AppendLIBS(lib_name_list)
+#                       Append "lib_name_list" to the value of LIBS.
+#                       "lib_namelist" is a list of strings.
+#                       Return the value of LIBS before changing it (any type
+#                       can be used, it is passed to SetLIBS() later.)
+#
+# context.PrependLIBS(lib_name_list)
+#                       Prepend "lib_name_list" to the value of LIBS.
+#                       "lib_namelist" is a list of strings.
+#                       Return the value of LIBS before changing it (any type
+#                       can be used, it is passed to SetLIBS() later.)
+#
+# context.SetLIBS(value)
+#                       Set LIBS to "value".  The type of "value" is what
+#                       AppendLIBS() returned.
+#                       Return the value of LIBS before changing it (any type
+#                       can be used, it is passed to SetLIBS() later.)
+#
+# context.headerfilename
+#                       Name of file to append configure results to, usually
+#                       "confdefs.h".
+#                       The file must not exist or be empty when starting.
+#                       Empty or None to skip this (some tests will not work!).
+#
+# context.config_h      (may be missing). If present, must be a string, which
+#                       will be filled with the contents of a config_h file.
+#
+# context.vardict       Dictionary holding variables used for the tests and
+#                       stores results from the tests, used for the build
+#                       commands.
+#                       Normally contains "CC", "LIBS", "CPPFLAGS", etc.
+#
+# context.havedict      Dictionary holding results from the tests that are to
+#                       be used inside a program.
+#                       Names often start with "HAVE_".  These are zero
+#                       (feature not present) or one (feature present).  Other
+#                       variables may have any value, e.g., "PERLVERSION" can
+#
+===============================================================================
