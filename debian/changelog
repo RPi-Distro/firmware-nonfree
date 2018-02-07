@@ -1,3 +1,10 @@
+firmware-nonfree (1:20161130-3+rpt1) stretch; urgency=medium
+
+  * Update brcmfmac43430-sdio.bin
+    - See https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=203508
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 07 Feb 2018 11:46:05 +0000
+
 firmware-nonfree (1:20161130-3+rpi2) stretch; urgency=medium
 
   * Bump epoch to prevent being replaced by raspbian.org
