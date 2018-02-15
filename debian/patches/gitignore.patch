@@ -1,9 +1,0 @@
---- /dev/null
-+++ b/.gitignore
-@@ -0,0 +1,6 @@
-+#
-+# Debian packaging: ignore everything at the top level, since it isn't
-+# included in our repository
-+#
-+/*
-+!/debian/
