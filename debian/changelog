@@ -1,3 +1,9 @@
+firmware-nonfree (1:20161130-3+rpt2) stretch; urgency=medium
+
+  * Revert brcmfmac43430-sdio.bin to previous version
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 28 Feb 2018 13:53:07 +0000
+
 firmware-nonfree (1:20161130-3+rpt1) stretch; urgency=medium
 
   * Update brcmfmac43430-sdio.bin
