@@ -96,7 +96,7 @@ desc: NVRAM file for BCM43455
 
 [brcm/brcmfmac43430-sdio.bin_base]
 desc: Broadcom BCM43430 firmware
-version: 7.45.41.46
+version: 7.45.98.38
 
 [brcm/brcmfmac43430-sdio.txt_base]
 desc: NVRAM file for BCM943430

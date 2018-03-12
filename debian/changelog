@@ -1,9 +1,10 @@
 firmware-nonfree (1:20161130-3+rpt3) stretch; urgency=medium
 
-  * brcm43455 support
+  * Add brcmfmac43455-sdio version 7.45.154
+  * Update brcmfmac43430-sdio to 7.45.98.38
   * Add version numbers
 
- -- Serge Schneider <serge@raspberrypi.org>  Wed, 28 Feb 2018 14:42:05 +0000
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 12 Mar 2018 11:08:27 +0000
 
 firmware-nonfree (1:20161130-3+rpt2) stretch; urgency=medium
 
