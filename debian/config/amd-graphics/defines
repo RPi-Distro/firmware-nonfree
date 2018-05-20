@@ -81,6 +81,16 @@ files:
  amdgpu/polaris12_smc.bin
  amdgpu/polaris12_uvd.bin
  amdgpu/polaris12_vce.bin
+ amdgpu/raven_asd.bin
+ amdgpu/raven_ce.bin
+ amdgpu/raven_gpu_info.bin
+ amdgpu/raven_me.bin
+ amdgpu/raven_mec.bin
+ amdgpu/raven_mec2.bin
+ amdgpu/raven_pfp.bin
+ amdgpu/raven_rlc.bin
+ amdgpu/raven_sdma.bin
+ amdgpu/raven_vcn.bin
  amdgpu/stoney_ce.bin
  amdgpu/stoney_me.bin
  amdgpu/stoney_mec.bin
@@ -617,6 +627,36 @@ version: 1.130
 [amdgpu/polaris12_vce.bin_base]
 desc: "Polaris 12" VCE firmware
 version: 53.26
+
+[amdgpu/raven_asd.bin_base]
+desc: "Raven" ASD firmware
+
+[amdgpu/raven_ce.bin_base]
+desc: "Raven" CE firmware
+
+[amdgpu/raven_gpu_info.bin_base]
+desc: "Raven" GPU info
+
+[amdgpu/raven_me.bin_base]
+desc: "Raven" ME firmware
+
+[amdgpu/raven_mec.bin_base]
+desc: "Raven" MEC firmware
+
+[amdgpu/raven_mec2.bin_base]
+desc: "Raven" MEC2 firmware
+
+[amdgpu/raven_pfp.bin_base]
+desc: "Raven" PFP firmware
+
+[amdgpu/raven_rlc.bin_base]
+desc: "Raven" RLC firmware
+
+[amdgpu/raven_sdma.bin_base]
+desc: "Raven" SDMA firmware
+
+[amdgpu/raven_vcn.bin_base]
+desc: "Raven" VCN firmware
 
 [amdgpu/stoney_ce.bin_base]
 desc: "Stoney" CE firmware
