@@ -1,5 +1,5 @@
 [base]
-desc: Broadcom 802.11 wireless cards
+desc: Broadcom/Cypress 802.11 wireless cards
 files:
  brcm/bcm43xx-0.fw
  brcm/bcm43xx_hdr-0.fw

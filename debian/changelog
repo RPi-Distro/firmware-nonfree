@@ -76,6 +76,7 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
     Debian release
   * brcm80211: Add Broadcom BCM43430 rev 0 firmware
   * brcm80211: Add Cypress CYW4373 firmware
+  * brcm80211: Add Cypress to the package description
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 20 Oct 2017 02:37:42 +0100
 
