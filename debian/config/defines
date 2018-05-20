@@ -133,6 +133,13 @@ exclude:
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
  mwl8k/fmimage_8366_ap-1.fw
+# No Debian release references these versions
+ qed/qed_init_values-*.bin
+ qed/qed_init_values_zipped-8.4.2.0.bin
+ qed/qed_init_values_zipped-8.7.3.0.bin
+ qed/qed_init_values_zipped-8.10.5.0.bin
+ qed/qed_init_values_zipped-8.15.3.0.bin
+ qed/qed_init_values_zipped-8.20.0.0.bin
 # Driver never went upstream
  TDA7706*
 # No Debian release requires these versions

@@ -72,6 +72,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * iwlwifi: Update driver list in package description
   * iwlwifi: Remove old firmware versions not used in any active Debian release
   * qlogic: Add QLogic QL45000 series firmware versions 8.33.1.0 and 8.33.11.0
+  * qlogic: Remove old QLogic QL4500 firmware versions not used in any active
+    Debian release
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 20 Oct 2017 02:37:42 +0100
 
