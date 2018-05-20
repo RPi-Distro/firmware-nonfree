@@ -72,8 +72,8 @@ files:
  iwlwifi-9000-pu-b0-jf-b0-38.ucode
  iwlwifi-9260-th-b0-jf-b0-34.ucode
  iwlwifi-9260-th-b0-jf-b0-38.ucode
-longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
- iwlwifi/iwlagn drivers
+longdesc: Intel Wireless cards supported by the iwl3945, iwl4965, and
+ iwlwifi drivers
 
 [intel/ibt-11-5.ddc_base]
 desc: Intel Wireless 8260 Bluetooth configuration
