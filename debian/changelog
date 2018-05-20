@@ -62,6 +62,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * debian/bin/gencontrol.py: Sort list of symlink names for each blob
   * debian/control: Point Vcs URLs to Salsa
   * amd-graphics: Add basic descriptions of all files
+  * amd-graphics: Add "Polaris" new CE, ME, MEC, MEC2, PFP firmware
+    (Closes: #891364)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 20 Oct 2017 02:37:42 +0100
 
