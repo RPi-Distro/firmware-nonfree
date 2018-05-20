@@ -68,6 +68,10 @@ files:
  iwlwifi-8265-27.ucode
  iwlwifi-8265-31.ucode
  iwlwifi-8265-36.ucode
+ iwlwifi-9000-pu-b0-jf-b0-34.ucode
+ iwlwifi-9000-pu-b0-jf-b0-38.ucode
+ iwlwifi-9260-th-b0-jf-b0-34.ucode
+ iwlwifi-9260-th-b0-jf-b0-38.ucode
 longdesc: Intel Wireless cards supported by the iwlegacy/iwl3945 and
  iwlwifi/iwlagn drivers
 
@@ -331,3 +335,19 @@ version: 31.560484.0
 [iwlwifi-8265-36.ucode_base]
 desc: Intel Wireless 8265 firmware
 version: 36.e91976c0.0
+
+[iwlwifi-9000-pu-b0-jf-b0-34.ucode_base]
+desc: Intel Wireless 9000 firmware
+version: 34.ba501b11.0
+
+[iwlwifi-9000-pu-b0-jf-b0-38.ucode_base]
+desc: Intel Wireless 9000 firmware
+version: 38.c0e03d94.0
+
+[iwlwifi-9260-th-b0-jf-b0-34.ucode_base]
+desc: Intel Wireless 9260 firmware
+version: 34.ba501b11.0
+
+[iwlwifi-9260-th-b0-jf-b0-38.ucode_base]
+desc: Intel Wireless 9260 firmware
+version: 38.c0e03d94.0

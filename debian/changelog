@@ -67,6 +67,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * amd-graphics: Add "Raven" firmware (Closes: #891042)
   * iwlwifi: Add Intel Wireless 8000C and 8265 firmware version 36.e91976c0.0
     (ABI 36) (Closes: #893952, #892408)
+  * iwlwifi: Add Intel Wireless 9000 and 9260 firmware versions 34.ba501b11.0
+    (ABI 34) and 38.c0e03d94.0 (ABI 38) (Closes: #899101)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 20 Oct 2017 02:37:42 +0100
 
