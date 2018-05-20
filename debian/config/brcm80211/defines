@@ -32,6 +32,8 @@ files:
  brcm/brcmfmac43602-pcie.bin
  brcm/brcmfmac4366b-pcie.bin
  brcm/brcmfmac4371-pcie.bin
+ brcm/brcmfmac4373.bin
+ brcm/brcmfmac4373-sdio.bin
 longdesc: wireless network cards supported by the brcmsmac or brcmfmac driver
 
 [brcm/bcm43xx-0.fw_base]
@@ -128,3 +130,9 @@ desc: Broadcom BCM4366 firmware
 
 [brcm/brcmfmac4371-pcie.bin_base]
 desc: Broadcom BCM4371 firmware
+
+[brcm/brcmfmac4373.bin_base]
+desc: Cypress CYW4373-USB firmware
+
+[brcm/brcmfmac4373-sdio.bin_base]
+desc: Cypress CYW4373-SDIO firmware
