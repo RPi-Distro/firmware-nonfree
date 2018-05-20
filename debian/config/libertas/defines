@@ -131,7 +131,7 @@ desc: 88W8682 firmware
 
 [mrvl/pcie8897_uapsta.bin_base]
 desc: Avastar 88W8897-PCIe firmware
-version: 15.68.7.p53
+version: V15.68.7.p154 (WLAN) / 15.28.7.p154 (BT)
 
 [mrvl/pcie8997_wlan_v4.bin_base]
 desc: Avastar 88W8997-PCIe firmware
@@ -143,7 +143,7 @@ version: 16.68.1.p70
 
 [mrvl/pcieusb8997_combo_v4.bin_base]
 desc: Avastar 88W8997-PCIe-USB firmware
-version: 16.68.1.p97
+version: V16.68.1.p162 (WLAN) / 16.26.1.p162 (BT)
 
 [mrvl/sd8688.bin_base]
 desc: 88W8688-SDIO main code
@@ -169,7 +169,7 @@ version: 15.68.1.p71
 
 [mrvl/sd8897_uapsta.bin_base]
 desc: Avastar 88W8897-SDIO firmware
-version: 15.68.7.p112
+version: V15.68.7.p154 (WLAN) / 15.68.7.p154 (BT)
 
 [mrvl/usb8766_uapsta.bin_base]
 desc: Avastar 88W8766 firmware
@@ -189,7 +189,7 @@ version: 15.68.4.p103 (WLAN) / 15.28.4.p103 (BT)
 
 [mrvl/usbusb8997_combo_v4.bin_base]
 desc: Avastar 88W8997-USB firmware
-version: 16.68.1.p113 (WLAN) / 16.26.1.p113 (BT)
+version: V16.68.1.p162 (WLAN) / 16.26.1.p162 (BT)
 
 [mwl8k/fmimage_8366.fw_base]
 desc: TopDog 88W8366 main code

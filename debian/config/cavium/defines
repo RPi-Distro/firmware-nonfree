@@ -15,16 +15,16 @@ version: 07
 
 [liquidio/lio_210nv_nic.bin_base]
 desc: Cavium LiquidIO 210Nv firmware
-version: 1.6.1
+version: 1.7.2
 
 [liquidio/lio_210sv_nic.bin_base]
 desc: Cavium LiquidIO 210Sv firmware
-version: 1.6.1
+version: 1.7.2
 
 [liquidio/lio_23xx_nic.bin_base]
 desc: Cavium LiquidIO 23xx firmware
-version: 1.6.1
+version: 1.7.2
 
 [liquidio/lio_410nv_nic.bin_base]
 desc: Cavium LiquidIO 410Nv firmware
-version: 1.6.1
+version: 1.7.2

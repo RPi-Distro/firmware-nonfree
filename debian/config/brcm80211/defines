@@ -97,7 +97,6 @@ desc: Broadcom BCM4350 rev 5+ firmware
 
 [brcm/brcmfmac4354-sdio.bin_base]
 desc: Broadcom BCM4354 firmware
-version: 7.35.79.57
 
 [brcm/brcmfmac4356-pcie.bin_base]
 desc: Broadcom BCM4356-PCIe firmware

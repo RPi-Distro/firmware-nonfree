@@ -1,5 +1,63 @@
-firmware-nonfree (20170823-2) UNRELEASED; urgency=medium
+firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
 
+  * New upstream version:
+    - Upstream version is commit 2a9b2cf50fb32e36e4fc1586c2f6f1421913b553
+      dated 2018-05-18
+    - amd-graphics:
+      + "Fiji" VCE firmware version 53.20
+      + "Polaris" UVD firmware version 1.130
+      + "Polaris" VCE firmware version 53.26
+      + "Vega 10" UVD firmware version 1.87
+      + "Vega 10" VCE firmware version 53.45
+      + "Carrizo", "Fiji", "Polaris", "Tonga", "Topaz", "Vega 10" firmware
+        updates to sync with 18.10 release
+    - atheros:
+      + QCA4019 rev 1.0 board configuration update
+      + QCA4019 rev 1.0 firmware version 10.4-3.5.3-00053
+      + QCA6174 rev 3.0 board configuration update
+      + QCA6174 rev 3.0 firmware version WLAN.RM.4.4.1-00079-QCARMSWPZ-1
+      + QCA9377 rev 1.0 firmware version WLAN.TF.1.0-00002-QCATFSWPZ-5
+      + QCA9887 rev 1.0 firmware version 10.2.4-1.0-00037
+      + QCA9888 rev 2.0 firmware version 10.4-3.5.3-00053
+      + QCA988X firmware version 10.2.4-1.0-00037
+      + QCA9984 rev 1.0 firmware version 10.4-3.5.3-00053
+    - brcm80211 (Closes: #869639):
+      + BCM4339 firmware update (CVE-2016-0801)
+      + BCM4354 firmware update (CVE-2016-0801, CVE-2017-0561, CVE-2017-9417)
+      + BCM4356-PCIe firmware update (CVE-2016-0801, CVE-2017-0561,
+        CVE-2017-9417)
+      + BCM4358 firmware update (CVE-2016-0801, CVE-2017-0561, CVE-2017-9417)
+    - cavium: Update Cavium LiquidIO 210Nv, 210Sv, 23xx, 410Nv firmware to
+      version 1.7.2
+    - intel-sound:
+      + "Broxton", "Geminilake" firmware version 9.22.01.3366_157
+      + "Kabylake", "Skylake" firmware version 9.21.00.3402_161
+    - iwlwifi:
+      + 3160, 7260, 7265 firmware (ABI 17) version 17.388f111f.0
+      + 3160 (B4), 7260 (B3) Bluetooth firmware patch version 87
+      + 3160 (B6), 7260 (B5) Bluetooth firmware patch version 42
+      + 3168, 7265D firmware (ABI 29) version 29.3e3b4de5.0
+      + 7265 (D1) Bluetooth firmware patch version 52
+      + 8000C, 8265 firmware (ABI 31) version 31.560484.0
+      + 8260 Bluetooth configuration and firmware version REL0458
+      + 8265 Bluetooth configuration and firmware version REL0226
+    - libertas: Update Avastar firmware to include WPA2 vulnerability fix:
+      + 88W8897-PCIe firmware version V15.68.7.p154 (WLAN) / 15.28.7.p154 (BT)
+      + 88W8897-SDIO firmware version V15.68.7.p154 (WLAN) / 15.68.7.p154 (BT)
+      + 88W8997-PCIe-USB firmware version V16.68.1.p145 (WLAN) /
+        16.26.1.p145 (BT)
+      + 88W8997-USB firmware version V16.68.1.p162 (WLAN) / 16.26.1.p162 (BT)
+    - misc-nonfree: Update Chelsio T4, T5, and T6 firmware to version 1.19.1.0
+    - misc-nonfree: Update Intel OPA Gen1 DC firmware to version 1.26.1
+    - misc-nonfree: Update Sensoray 2255 firmware to version 1.2.8
+    - ti-connectivity:
+      + WL127x multi-role firmware version 6.5.7.0.50
+      + WL127x PLT (calibration) firmware version 6.3.10.0.142
+      + WL127x single-role firmware version 6.3.10.0.142
+      + WL128x multi-role firmware version 7.5.7.0.50
+      + WL128x PLT (calibration) firmware version 7.3.10.2.142
+      + WL128x single-role firmware version 7.3.10.0.142
+      + WL18xx firmware version 8.9.0.0.76, includes WPA2 KRACK fix
   * debian/bin/gencontrol.py: Set encoding to UTF-8 globally
   * debian/bin/gencontrol.py: Sort list of symlink names for each blob
   * debian/control: Point Vcs URLs to Salsa

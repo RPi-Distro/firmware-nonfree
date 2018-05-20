@@ -370,7 +370,32 @@ version: 1.87
 version: 1.87.12
 
 [amdgpu/fiji_vce.bin_base]
-version: 52.8.3
+desc: "Fiji" VCE firmware
+version: 53.20
+
+[amdgpu/polaris10_uvd.bin_base]
+desc: "Polaris 10" UVD firmware
+version: 1.130
+
+[amdgpu/polaris10_vce.bin_base]
+desc: "Polaris 10" VCE firmware
+version: 53.26
+
+[amdgpu/polaris11_uvd.bin_base]
+desc: "Polaris 11" UVD firmware
+version: 1.130
+
+[amdgpu/polaris11_vce.bin_base]
+desc: "Polaris 11" VCE firmware
+version: 53.26
+
+[amdgpu/polaris12_uvd.bin_base]
+desc: "Polaris 12" UVD firmware
+version: 1.130
+
+[amdgpu/polaris12_vce.bin_base]
+desc: "Polaris 12" VCE firmware
+version: 53.26
 
 [amdgpu/stoney_uvd.bin_base]
 version: 1.38.15
@@ -380,6 +405,14 @@ version: 1.65.10
 
 [amdgpu/tonga_vce.bin_base]
 version: 52.8.3
+
+[amdgpu/vega10_uvd.bin_base]
+desc: "Vega 10" UVD firmware
+version: 1.87
+
+[amdgpu/vega10_vce.bin_base]
+desc: "Vega 10" VCE firmware
+version: 53.45
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
