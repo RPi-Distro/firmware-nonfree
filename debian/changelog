@@ -65,6 +65,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * amd-graphics: Add "Polaris" new CE, ME, MEC, MEC2, PFP firmware
     (Closes: #891364)
   * amd-graphics: Add "Raven" firmware (Closes: #891042)
+  * iwlwifi: Add Intel Wireless 8000C and 8265 firmware version 36.e91976c0.0
+    (ABI 36) (Closes: #893952, #892408)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Fri, 20 Oct 2017 02:37:42 +0100
 
