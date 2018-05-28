@@ -1,5 +1,6 @@
 firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
 
+  [ Ben Hutchings ]
   * New upstream version:
     - Upstream version is commit 2a9b2cf50fb32e36e4fc1586c2f6f1421913b553
       dated 2018-05-18
@@ -78,7 +79,10 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * brcm80211: Add Cypress CYW4373 firmware
   * brcm80211: Add Cypress to the package description
 
- -- Ben Hutchings <ben@decadent.org.uk>  Fri, 20 Oct 2017 02:37:42 +0100
+  [ Romain Perier ]
+  * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
+
+ -- Romain Perier <romain.perier@gmail.com>  Mon, 21 May 2018 12:34:21 +0200
 
 firmware-nonfree (20170823-1) unstable; urgency=medium
 

@@ -71,6 +71,7 @@ files:
  i915/bxt_huc_ver01_07_1398.bin
  i915/kbl_dmc_ver1.bin
  i915/kbl_dmc_ver1_01.bin
+ i915/kbl_dmc_ver1_04.bin
  i915/kbl_guc_ver9_14.bin
  i915/kbl_huc_ver02_00_1810.bin
  i915/skl_dmc_ver1.bin
@@ -531,6 +532,10 @@ version: 1.07.1398
 [i915/kbl_dmc_ver1_01.bin_base]
 desc: Intel "Kabylake" DMC firmware
 version: 1.01
+
+[i915/kbl_dmc_ver1_04.bin_base]
+desc: Intel "Kabylake" DMC firmware
+version: 1.04
 
 [i915/kbl_guc_ver9_14.bin_base]
 desc: Intel "Kabylake" GuC firmware
