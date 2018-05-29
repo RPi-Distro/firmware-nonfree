@@ -81,6 +81,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
+  * misc-nonfree: Add SDMA firmware for Freescale i.MX6/7 SoCs
+    (Closes: #900266)
 
  -- Romain Perier <romain.perier@gmail.com>  Mon, 21 May 2018 12:34:21 +0200
 

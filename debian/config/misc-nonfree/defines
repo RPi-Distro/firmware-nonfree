@@ -65,6 +65,8 @@ files:
  hfi1_fabric.fw
  hfi1_pcie.fw
  hfi1_sbus.fw
+ imx/sdma/sdma-imx6q.bin
+ imx/sdma/sdma-imx7d.bin
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
  i915/bxt_guc_ver8_7.bin
@@ -516,6 +518,14 @@ version: 0x4755
 [hfi1_sbus.fw_base]
 desc: Intel OPA Gen1 SBus firmware
 version: 0x10130001
+
+[imx/sdma/sdma-imx6q.bin_base]
+desc: Freescale i.MX6 SDMA firmware
+version: 3.3
+
+[imx/sdma/sdma-imx7d.bin_base]
+desc: Freescale i.MX7 SDMA firmware
+version: 4.2
 
 [i915/bxt_dmc_ver1_07.bin_base]
 desc: Intel "Broxton" DMC firmware
