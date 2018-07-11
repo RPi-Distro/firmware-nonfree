@@ -79,6 +79,7 @@ files:
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
  i915/skl_dmc_ver1_26.bin
+ i915/skl_dmc_ver1_27.bin
  i915/skl_guc_ver1.bin
  i915/skl_guc_ver4.bin
  i915/skl_guc_ver6.bin
@@ -562,6 +563,10 @@ version: 1.23
 [i915/skl_dmc_ver1_26.bin_base]
 desc: Intel "Skylake" DMC firmware
 version: 1.26
+
+[i915/skl_dmc_ver1_27.bin_base]
+desc: Intel "Skylake" DMC firmware
+version: 1.27
 
 [i915/skl_guc_ver1.bin_base]
 desc: Intel "Skylake" GuC firmware
