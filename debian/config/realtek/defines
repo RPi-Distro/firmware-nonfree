@@ -11,6 +11,10 @@ files:
  rtl_bt/rtl8192eu_fw.bin
  rtl_bt/rtl8723a_fw.bin
  rtl_bt/rtl8723b_fw.bin
+ rtl_bt/rtl8723d_config.bin
+ rtl_bt/rtl8723d_fw.bin
+ rtl_bt/rtl8821c_config.bin
+ rtl_bt/rtl8821c_fw.bin
  rtl_bt/rtl8822b_config.bin
  rtl_bt/rtl8822b_fw.bin
  rtl_nic/rtl8105e-1.fw
@@ -98,6 +102,18 @@ desc: Realtek RTL8723AU rev A Bluetooth firmware
 
 [rtl_bt/rtl8723b_fw.bin_base]
 desc: Realtek RTL8723BU rev B Bluetooth firmware
+
+[rtl_bt/rtl8723d_config.bin_base]
+desc: Realtek RTL8723D Bluetooth config
+
+[rtl_bt/rtl8723d_fw.bin_base]
+desc: Realtek RTL8723D Bluetooth firmware
+
+[rtl_bt/rtl8821c_config.bin_base]
+desc: Realtek RTL8821C Bluetooth config
+
+[rtl_bt/rtl8821c_fw.bin_base]
+desc: Realtek RTL8821C Bluetooth firmware
 
 [rtl_bt/rtl8822b_config.bin_base]
 desc: Realtek RTL8822B Bluetooth config
