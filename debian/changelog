@@ -101,6 +101,7 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
     firmware
   * Add firmware-qcom-media package containing Qualcomm graphics/video
     firmware
+  * misc-nonfree: Fill in copyright for nvidia/*
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)

@@ -527,7 +527,7 @@ License: Binary redistribution (MTS)
  All firmware components are redistributable in binary form.
 
 Files: nvidia/*
-Copyright:
+Copyright: 2014-2017, NVIDIA Corporation
 License: License For Customer Use of NVIDIA Software
  IMPORTANT NOTICE -- READ CAREFULLY: This License For Customer Use of
  NVIDIA Software ("LICENSE") is the agreement which governs use of
