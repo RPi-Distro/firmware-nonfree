@@ -1,6 +1,7 @@
 *~
 .#*
 *.pyc
+/.debhelper/
 /build/
 /control
 /control.md5sum
