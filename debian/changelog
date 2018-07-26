@@ -105,6 +105,7 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * ivtv: Remove Homepage field, as the old URL is now domain-squatted
   * Set a default Homepage for all packages other than firmware-ivtv and
     firmware-ipw2x00
+  * misc-nonfree: Fill in copyright and license text for imx/sdma/*
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
