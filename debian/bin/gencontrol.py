@@ -254,8 +254,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         # Take all the other files from upstream
         for f in files_orig:
             if f not in files_real and f not in links:
-                if os.path.islink(f) and \
-                   not self.config.get(('base', package, f), {}).get('copy'):
+                if os.path.islink(f):
                     links[f] = os.readlink(f)
                 elif os.path.isfile(f):
                     files_real[f] = f, f, None

@@ -93,6 +93,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
     - "Kabylake" GuC firmware version 9.39
     - "Skylake" GuC firmware version 9.33
   * Revert "misc-nonfree: Replace Nvidia firmware symlinks with copies"
+  * Revert "Add per-file copy flag, allowing replacement of upstream symlinks
+    with copies"
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
