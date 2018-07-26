@@ -5,6 +5,7 @@ files:
  liquidio/lio_210nv_nic.bin
  liquidio/lio_210sv_nic.bin
  liquidio/lio_23xx_nic.bin
+ liquidio/lio_23xx_vsw.bin
  liquidio/lio_410nv_nic.bin
 longdesc: Cavium crypto and Ethernet adapters supported by the nitrox and
  liquidio drivers
@@ -23,6 +24,10 @@ version: 1.7.2
 
 [liquidio/lio_23xx_nic.bin_base]
 desc: Cavium LiquidIO 23xx firmware
+version: 1.7.2
+
+[liquidio/lio_23xx_vsw.bin_base]
+desc: Cavium LiquidIO 23xx vswitch firmware
 version: 1.7.2
 
 [liquidio/lio_410nv_nic.bin_base]
