@@ -99,6 +99,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * misc-nonfree: Rockchip cdn DisplayPort controller firmware
   * Add firmware-netronome package containing Netronome network adapter
     firmware
+  * Add firmware-qcom-media package containing Qualcomm graphics/video
+    firmware
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
