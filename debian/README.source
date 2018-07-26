@@ -38,7 +38,7 @@ Binary package definition
 The binary package definitions are placed under 'debian/config' and
 written in a format similar to INI files, parsed using the Python
 ConfigParser module
-<http://docs.python.org/release/2.7/library/configparser.html>,
+<https://docs.python.org/3/library/configparser.html>,
 
 The [base] packages field in the top-level 'defines' file lists all
 the binary package names, without the fixed prefix 'firmware-'.
