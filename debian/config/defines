@@ -103,9 +103,16 @@ exclude:
  ct2fw-3.2.1.1.bin
  ctfw-3.2.1.1.bin
 # Nothing seems to reference these versions
+ intel/dsp_fw_bxtn_v2219.bin
+ intel/dsp_fw_glk_v1814.bin
+ intel/dsp_fw_glk_v2880.bin
+ intel/dsp_fw_glk_v2768.bin
  intel/dsp_fw_kbl_v701.bin
  intel/dsp_fw_kbl_v1037.bin
  intel/dsp_fw_kbl_v2042.bin
+ intel/dsp_fw_kbl_v2630.bin
+ intel/dsp_fw_kbl_v3266.bin
+ intel/dsp_fw_release_v969.bin
 # No Debian release requires these versions
  intel/ibt-17-1.ddc
  intel/ibt-17-1.sfi
