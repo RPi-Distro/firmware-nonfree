@@ -107,6 +107,14 @@ exclude:
  intel/dsp_fw_kbl_v1037.bin
  intel/dsp_fw_kbl_v2042.bin
 # No Debian release requires these versions
+ intel/ibt-17-1.ddc
+ intel/ibt-17-1.sfi
+ intel/ibt-17-2.ddc
+ intel/ibt-17-2.sfi
+ intel/ibt-18-1.ddc
+ intel/ibt-18-1.sfi
+ intel/ibt-18-2.ddc
+ intel/ibt-18-2.sfi
  iwlwifi-1000-3.ucode
  iwlwifi-3945-1.ucode
  iwlwifi-4965-1.ucode
