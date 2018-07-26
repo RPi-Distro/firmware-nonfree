@@ -154,6 +154,8 @@ exclude:
  mwl8k/fmimage_8366_ap-1.fw
  mwlwifi/88W8864.bin
  mwlwifi/88W8897.bin
+# This is for hardware only found in Mellanox switch appliances
+ mellanox/mlxsw_spectrum-*
 # No Debian release references these versions
  qed/qed_init_values-*.bin
  qed/qed_init_values_zipped-8.4.2.0.bin
