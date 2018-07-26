@@ -80,6 +80,7 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * brcm80211: Add Broadcom BCM43430 rev 0 firmware
   * brcm80211: Add Cypress CYW4373 firmware
   * brcm80211: Add Cypress to the package description
+  * realtek: Add Realtek RTL8723DE and RTL8822BE firmware
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)

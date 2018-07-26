@@ -58,11 +58,13 @@ files:
  rtlwifi/rtl8723bs_wowlan.bin
  rtlwifi/rtl8723bu_nic.bin
  rtlwifi/rtl8723bu_wowlan.bin
+ rtlwifi/rtl8723defw.bin
  rtlwifi/rtl8723fw_B.bin
  rtlwifi/rtl8723fw.bin
  rtlwifi/rtl8821aefw_29.bin
  rtlwifi/rtl8821aefw_wowlan.bin
  rtlwifi/rtl8821aefw.bin
+ rtlwifi/rtl8822befw.bin
 longdesc: Realtek Ethernet, wifi and Bluetooth adapters supported by various
  drivers
 support: initramfs-tools
@@ -256,6 +258,9 @@ desc: Realtek RTl8723BU non-WoWLAN firmware
 [rtlwifi/rtl8723bu_wowlan.bin_base]
 desc: Realtek RTl8723BU WoWLAN firmware
 
+[rtlwifi/rtl8723defw.bin_base]
+desc: Realtek RTL8723DE firmware
+
 [rtlwifi/rtl8723fw_B.bin_base]
 desc: Realtek RTL8723AE rev B firmware
 
@@ -271,3 +276,6 @@ desc: Realtek RTL8821AE firmware
 
 [rtlwifi/rtl8821aefw.bin_base]
 desc: Realtek RTL8821AE firmware
+
+[rtlwifi/rtl8822befw.bin_base]
+desc: Realtek RTL8822BE firmware
