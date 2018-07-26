@@ -85,6 +85,7 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
     and firmware
   * realtek: Add Realtek RTL8723D and RTL8821C Bluetooth configurations and
     firmware
+  * intel-sound: Add Intel "Cannonlake" SST DSP firmware
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
