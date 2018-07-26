@@ -1,4 +1,4 @@
-firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
+firmware-nonfree (20180518-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
   * New upstream version:
@@ -116,7 +116,7 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
     (Closes: #900266)
   * misc-nonfree: Add DMC firmware for "Skylake" v1.27 (Closes: #900871)
 
- -- Romain Perier <romain.perier@gmail.com>  Mon, 21 May 2018 12:34:21 +0200
+ -- Ben Hutchings <ben@decadent.org.uk>  Fri, 27 Jul 2018 00:56:57 +0800
 
 firmware-nonfree (20170823-1) unstable; urgency=medium
 
