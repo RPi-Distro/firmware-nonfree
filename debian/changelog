@@ -75,12 +75,13 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * iwlwifi: Update driver list in package description
   * iwlwifi: Remove old firmware versions not used in any active Debian release
   * qlogic: Add QLogic QL45000 series firmware versions 8.33.1.0 and 8.33.11.0
+    (Closes: #900036)
   * qlogic: Remove old QLogic QL4500 firmware versions not used in any active
     Debian release
   * brcm80211: Add Broadcom BCM43430 rev 0 firmware
   * brcm80211: Add Cypress CYW4373 firmware
   * brcm80211: Add Cypress to the package description
-  * realtek: Add Realtek RTL8723DE and RTL8822BE firmware
+  * realtek: Add Realtek RTL8723DE and RTL8822BE firmware (Closes: #885016)
   * iwlwifi: Add Intel Wireless 9160/9260/9460/9650 Bluetooth configurations
     and firmware
   * realtek: Add Realtek RTL8723D and RTL8821C Bluetooth configurations and
