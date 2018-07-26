@@ -59,6 +59,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
       + WL128x PLT (calibration) firmware version 7.3.10.2.142
       + WL128x single-role firmware version 7.3.10.0.142
       + WL18xx firmware version 8.9.0.0.76, includes WPA2 KRACK fix
+
+  [ Ben Hutchings ]
   * debian/bin/gencontrol.py: Set encoding to UTF-8 globally
   * debian/bin/gencontrol.py: Sort list of symlink names for each blob
   * debian/control: Point Vcs URLs to Salsa
