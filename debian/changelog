@@ -102,7 +102,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * Add firmware-qcom-media package containing Qualcomm graphics/video
     firmware
   * misc-nonfree: Fill in copyright for nvidia/*
-  * ivtv: Remove Homepage field, as the old URL is now domain-squatted
+  * ivtv: Change Homepage field to archive.org version, as the old site is now
+    domain-squatted
   * Set a default Homepage for all packages other than firmware-ivtv and
     firmware-ipw2x00
   * misc-nonfree: Fill in copyright and license text for imx/sdma/*

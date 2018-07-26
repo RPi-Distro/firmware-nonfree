@@ -12,7 +12,7 @@ longdesc: TV cards with Conexant iTVC15-family MPEG codecs,
  supported by the ivtv and pvrusb2 drivers
 # ivtvdriver.org is domain-squatted as of July 2018
 #uri: http://dl.ivtvdriver.org/ivtv/firmware/
-uri:
+uri: https://web.archive.org/web/20150508162618/http://dl.ivtvdriver.org:80/ivtv/firmware/
 # For v4l-cx25840.fw
 recommends: firmware-linux-nonfree (>= 0.38~)
 
