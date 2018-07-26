@@ -95,6 +95,7 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
   * Revert "misc-nonfree: Replace Nvidia firmware symlinks with copies"
   * Revert "Add per-file copy flag, allowing replacement of upstream symlinks
     with copies"
+  * misc-nonfree: Add new Nvidia GPU firmware
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
