@@ -386,7 +386,6 @@ files:
  radeon/verde_smc.bin
  radeon/VERDE_smc.bin
  radeon/verde_k_smc.bin
-uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [amdgpu/carrizo_ce.bin_base]
 desc: "Carrizo" CE firmware

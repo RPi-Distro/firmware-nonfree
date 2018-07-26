@@ -158,6 +158,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
     def do_meta(self, packages, makefile):
         config_entry = self.config['base',]
         vars = {}
+        vars['uri'] = 'https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git'
         vars.update(config_entry)
 
         for entry in self.templates["control.binary.meta"]:

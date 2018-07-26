@@ -103,6 +103,8 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
     firmware
   * misc-nonfree: Fill in copyright for nvidia/*
   * ivtv: Remove Homepage field, as the old URL is now domain-squatted
+  * Set a default Homepage for all packages other than firmware-ivtv and
+    firmware-ipw2x00
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
