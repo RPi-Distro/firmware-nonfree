@@ -70,11 +70,15 @@ files:
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
  i915/bxt_guc_ver8_7.bin
+ i915/bxt_guc_ver9_29.bin
  i915/bxt_huc_ver01_07_1398.bin
+ i915/cnl_dmc_ver1_07.bin
+ i915/glk_dmc_ver1_04.bin
  i915/kbl_dmc_ver1.bin
  i915/kbl_dmc_ver1_01.bin
  i915/kbl_dmc_ver1_04.bin
  i915/kbl_guc_ver9_14.bin
+ i915/kbl_guc_ver9_39.bin
  i915/kbl_huc_ver02_00_1810.bin
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
@@ -84,6 +88,7 @@ files:
  i915/skl_guc_ver4.bin
  i915/skl_guc_ver6.bin
  i915/skl_guc_ver6_1.bin
+ i915/skl_guc_ver9_33.bin
  i915/skl_huc_ver01_07_1398.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
@@ -532,13 +537,25 @@ version: 4.2
 desc: Intel "Broxton" DMC firmware
 version: 1.07
 
+[i915/cnl_dmc_ver1_07.bin_base]
+desc: Intel "Cannonlake" DMC firmware
+version: 1.07
+
 [i915/bxt_guc_ver8_7.bin_base]
 desc: Intel "Broxton" GuC firmware
 version: 8.7
 
+[i915/bxt_guc_ver9_29.bin_base]
+desc: Intel "Broxton" GuC firmware
+version: 9.29
+
 [i915/bxt_huc_ver01_07_1398.bin_base]
 desc: Intel "Broxton" HuC firmware
 version: 1.07.1398
+
+[i915/glk_dmc_ver1_04.bin_base]
+desc: Intel "Geminilake" DMC firmware
+version: 1.04
 
 [i915/kbl_dmc_ver1_01.bin_base]
 desc: Intel "Kabylake" DMC firmware
@@ -551,6 +568,10 @@ version: 1.04
 [i915/kbl_guc_ver9_14.bin_base]
 desc: Intel "Kabylake" GuC firmware
 version: 9.14
+
+[i915/kbl_guc_ver9_39.bin_base]
+desc: Intel "Kabylake" GuC firmware
+version: 9.39
 
 [i915/kbl_huc_ver02_00_1810.bin_base]
 desc: Intel "Kabylake" HuC firmware
@@ -579,6 +600,10 @@ version: 4.3
 [i915/skl_guc_ver6_1.bin_base]
 desc: Intel "Skylake" GuC firmware
 version: 6.1
+
+[i915/skl_guc_ver9_33.bin_base]
+desc: Intel "Skylake" GuC firmware
+version: 9.33
 
 [i915/skl_huc_ver01_07_1398.bin_base]
 desc: Intel "Skylake" HuC firmware

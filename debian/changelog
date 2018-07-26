@@ -87,6 +87,11 @@ firmware-nonfree (20180518-1) UNRELEASED; urgency=medium
     firmware
   * intel-sound: Add Intel "Cannonlake" SST DSP firmware
   * cavium: Add Cavium LiquidIO 23xx vswitch firmware
+  * misc-nonfree: Add new Intel GPU firmware:
+    - "Cannonlake" and "Geminilake" DMC firmware
+    - "Broxton" GuC firmware version 9.29
+    - "Kabylake" GuC firmware version 9.39
+    - "Skylake" GuC firmware version 9.33
 
   [ Romain Perier ]
   * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
