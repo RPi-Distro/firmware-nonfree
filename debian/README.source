@@ -86,4 +86,13 @@ definitions:
 2. Ensure debian/rules.defs has the right value of KERNELVERSION
 3. Run: debian/rules debian/control
 
+To update the current package's changelog with the new upstream version:
+1. Run: debian/bin/release-update /path/to/linux-firmware-repository
+
+   This will update debian/changelog with the changes added between
+   the commit of the current package version and the HEAD commit found in the
+   linux firmware repository, passed as argument.
+
+2. Remove entries regarding firmwares files not packaged
+
  -- Ben Hutchings <ben@decadent.org.uk>, Wed, 25 Nov 2015 22:41:15 +0000
