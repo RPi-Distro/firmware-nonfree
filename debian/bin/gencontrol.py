@@ -146,7 +146,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         makefile = Makefile()
 
         self.do_source(packages)
-        self.do_meta(packages, makefile)
+        self.do_extra(packages, makefile)
         self.do_main(packages, makefile)
 
         self.write(packages, makefile)
@@ -155,17 +155,17 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         source = self.templates["control.source"]
         packages['source'] = self.process_package(source[0], ())
 
-    def do_meta(self, packages, makefile):
+    def do_extra(self, packages, makefile):
         config_entry = self.config['base',]
         vars = {}
         vars.update(config_entry)
 
-        for entry in self.templates["control.binary.meta"]:
+        for entry in self.templates["control.extra"]:
             package_binary = self.process_package(entry, {})
             assert package_binary['Package'].startswith('firmware-')
             package = package_binary['Package'].replace('firmware-', '')
 
-            f = open('debian/copyright.meta')
+            f = open('debian/copyright.debian')
             open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
 
             makeflags = MakeFlags()
