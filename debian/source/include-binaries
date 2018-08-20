@@ -22,4 +22,3 @@ debian/config/misc-nonfree/i915/kbl_guc_ver9_14.bin
 brcm/brcmfmac43430-sdio.bin
 brcm/brcmfmac43455-sdio.bin
 brcm/brcmfmac43455-sdio.clm_blob
-brcm/brcmfmac43455-sdio.txt
