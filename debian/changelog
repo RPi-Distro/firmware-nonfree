@@ -1,3 +1,9 @@
+firmware-nonfree (1:20161130-3+rpt4) stretch; urgency=medium
+
+  * Improved brcmfmac BT coexistence parameters
+
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 20 Aug 2018 10:53:55 +0100
+
 firmware-nonfree (1:20161130-3+rpt3) stretch; urgency=medium
 
   * Add brcmfmac43455-sdio version 7.45.154
