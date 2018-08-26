@@ -3,15 +3,11 @@ firmware-nonfree (20180727-1) UNRELEASED; urgency=medium
   * New upstream version:
     - Upstream version is commit b01151bc9e4e4238bdf18ab28561e1c05a35e76c
       dated 2018-07-27
-    - cavium: update liquidio vswitch firmware to v1.7.2
-    - qlogic: Add qed firmware 8.37.2.0
+    - cavium: LiquidIO 23xx vswitch firmware version 1.7.2
     - iwlwifi:
-      + Update firmware for Intel Bluetooth 8260 to release version
-        20.60.0.2
-      + Update firmware for Intel Bluetooth 7265 (D1) to release version
-        20.60.0.4
-      + Update firmware patch for Intel Bluetooth 7265 (D0) to release
-        version 20.60.0.2
+      + 8260 Bluetooth firmware version 20.60.0.2
+      + 7265 (D1) Bluetooth firmware patch version 20.60.0.4
+      + 7265 (D0) Bluetooth firmware patch version 20.60.0.2
     - amd-graphics:
       + "Vega 10" VCE firmware version 55.3
       + "Bonaire", "Hawaii", "Kabini", "Mullins", "Kaveri", "Hainan",
@@ -30,12 +26,12 @@ firmware-nonfree (20180727-1) UNRELEASED; urgency=medium
         CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
       + BCM4356 pcie firmware update (CVE-2017-13077, CVE-2017-13078,
         CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
-    - misc-nonfree: Update Chelsio T4, T5, and T6 firmware to
-      version 1.20.8.0
+    - misc-nonfree: Chelsio T4, T5, and T6 firmware version 1.20.8.0
     - libertas: Marvell USB8801 B0 firmware update
 
   [ Romain Perier ]
   * Add a new script for generating debian changelog
+  * qlogic: Add QLogic QL45000 series firmware version 8.37.2.0
 
   [ Ben Hutchings ]
   * Add back firmware-{adi,ralink} as transitional packages (Closes: #907320)
