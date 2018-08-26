@@ -10,6 +10,7 @@ files:
  qed/qed_init_values_zipped-8.10.10.0.bin
  qed/qed_init_values_zipped-8.33.1.0.bin
  qed/qed_init_values_zipped-8.33.11.0.bin
+ qed/qed_init_values_zipped-8.37.2.0.bin
  qlogic/1040.bin
  qlogic/1280.bin
  qlogic/12160.bin
@@ -60,6 +61,10 @@ version: 8.33.1.0
 [qed/qed_init_values_zipped-8.33.11.0.bin_base]
 desc: QLogic QL45000 series firmware
 version: 8.33.11.0
+
+[qed/qed_init_values_zipped-8.37.2.0.bin_base]
+desc: QLogic QL45000 series firmware
+version: 8.37.2.0
 
 [qlogic/1040.bin_base]
 desc: QLogic QLA1040 firmware
