@@ -87,7 +87,9 @@ definitions:
 3. Run: debian/rules debian/control
 
 To update the current package's changelog with the new upstream version:
-1. Run: debian/bin/release-update /path/to/linux-firmware-repository
+
+1. Run: PYTHONPATH=/usr/share/linux-support-<version>/lib/python \
+            debian/bin/release-update /path/to/linux-firmware-repository
 
    This will update debian/changelog with the changes added between
    the commit of the current package version and the HEAD commit found in the
