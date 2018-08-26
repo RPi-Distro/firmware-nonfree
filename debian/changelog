@@ -31,7 +31,7 @@ firmware-nonfree (20180825-1) UNRELEASED; urgency=medium
       + BCM4356 pcie firmware update (CVE-2017-13077, CVE-2017-13078,
         CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
     - misc-nonfree: Chelsio T4, T5, and T6 firmware version 1.20.8.0
-    - libertas: Marvell USB8801 B0 firmware update
+    - libertas: Marvell Avastar 88W8801-USB firmware version 14.68.36.p131
     - ti-connectivity: TI WL18xx firmware, ABI 4, version 8.9.0.0.79
     - netronome: Agilio CX flower firmware version AOTC-2.9.A.31
 

@@ -181,7 +181,7 @@ version: 14.68.29.p49
 
 [mrvl/usb8801_uapsta.bin_base]
 desc: Avastar 88W8801-USB firmware
-version: 14.68.36.p60
+version: 14.68.36.p131
 
 [mrvl/usb8897_uapsta.bin_base]
 desc: Avastar 88W8897-USB firmware
