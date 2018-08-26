@@ -98,8 +98,11 @@ exclude:
  cxgb3/t3fw-7.[01].0.bin
  cxgb4/t4fw-1.14.4.0.bin
  cxgb4/t4fw-1.15.37.0.bin
+ cxgb4/t4fw-1.19.1.0.bin
  cxgb4/t5fw-1.14.4.0.bin
  cxgb4/t5fw-1.15.37.0.bin
+ cxgb4/t5fw-1.19.1.0.bin
+ cxgb4/t6fw-1.19.1.0.bin
 # No Debian release references this version
  cbfw-3.2.1.1.bin
  ct2fw-3.2.1.1.bin
