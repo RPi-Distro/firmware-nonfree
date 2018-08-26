@@ -64,7 +64,7 @@ version: 20.10.0.8
 
 [intel/ibt-11-5.sfi_base]
 desc: Intel Wireless 8260 Bluetooth firmware
-version: 20.60.0.2
+version: 20.70.0.4
 
 [intel/ibt-12-16.ddc_base]
 desc: Intel Wireless 8265 Bluetooth configuration
@@ -72,7 +72,7 @@ version: 20.30.0.1
 
 [intel/ibt-12-16.sfi_base]
 desc: Intel Wireless 8265 Bluetooth firmware
-version: 20.60.0.2
+version: 20.70.0.4
 
 [intel/ibt-17-0-1.ddc_base]
 desc: Intel Wireless 9460/9650 (var 0 rev 1) Bluetooth configuration
@@ -88,7 +88,7 @@ version: 20.60.0.2
 
 [intel/ibt-17-16-1.sfi_base]
 desc: Intel Wireless 9460/9650 (var 16 rev 1) Bluetooth firmware
-version: 20.60.0.2
+version: 20.70.0.4
 
 [intel/ibt-18-0-1.ddc_base]
 desc: Intel Wireless 9160/9260 (var 0 rev 1) Bluetooth configuration
@@ -104,7 +104,7 @@ version: 20.60.0.2
 
 [intel/ibt-18-16-1.sfi_base]
 desc: Intel Wireless 9160/9260 (var 16 rev 1) Bluetooth firmware
-version: 20.60.0.2
+version: 20.70.0.4
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
 desc: Intel Wireless 3160 (B6) Bluetooth firmware patch
@@ -135,7 +135,7 @@ version: 20.60.0.2
 
 [intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq_base]
 desc: Intel Wireless 7265 (D1) Bluetooth firmware patch
-version: 20.60.0.4
+version: 20.70.0.4
 
 [intel/ibt-hw-37.8.bseq_base]
 desc: Intel Wireless 7265 Bluetooth firmware generic patch

@@ -1,19 +1,23 @@
-firmware-nonfree (20180727-1) UNRELEASED; urgency=medium
+firmware-nonfree (20180825-1) UNRELEASED; urgency=medium
 
   * New upstream version:
-    - Upstream version is commit b01151bc9e4e4238bdf18ab28561e1c05a35e76c
-      dated 2018-07-27
+    - Upstream version is commit fea76a04f25fd0a217c0d566ff5ff8f23ad3e648
+      dated 2018-08-25
     - cavium: LiquidIO 23xx vswitch firmware version 1.7.2
     - iwlwifi:
-      + 8260 Bluetooth firmware version 20.60.0.2
-      + 7265 (D1) Bluetooth firmware patch version 20.60.0.4
       + 7265 (D0) Bluetooth firmware patch version 20.60.0.2
+      + 7265 (D1) Bluetooth firmware patch version 20.70.0.4
+      + 8260 Bluetooth firmware version 20.70.0.4
+      + 8265 Bluetooth firmware version 20.70.0.4
+      + 9160/9260 (var 16 rev 1) Bluetooth firmware version 20.70.0.4
+      + 9460/9650 (var 16 rev 1) Bluetooth firmware version 20.70.0.4
     - amd-graphics:
       + "Vega 10" VCE firmware version 55.3
       + "Bonaire", "Hawaii", "Kabini", "Mullins", "Kaveri", "Hainan",
-        "Oland", "Tahiti", "Pitcairn", "Verde",  "Polaris10",
-        "Polaris11", "Polaris12", "Raven", "Vega10" firmware updates to
-        sync with 18.20 release.
+        "Oland", "Tahiti", "Pitcairn", "Verde" firmware updates to
+        sync with 18.20 release
+      + "Fiji", "Polaris10", "Polaris11", "Polaris12", "Raven", "Tonga",
+        "Vega10" firmware updates to sync with 18.30 release
       + Update copyright date
     - brcm80211:
       + BCM43430 firmware update (CVE-2017-13077, CVE-2017-13078,
@@ -28,6 +32,8 @@ firmware-nonfree (20180727-1) UNRELEASED; urgency=medium
         CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
     - misc-nonfree: Chelsio T4, T5, and T6 firmware version 1.20.8.0
     - libertas: Marvell USB8801 B0 firmware update
+    - ti-connectivity: TI WL18xx firmware, ABI 4, version 8.9.0.0.79
+    - netronome: Agilio CX flower firmware version AOTC-2.9.A.31
 
   [ Romain Perier ]
   * Add a new script for generating debian changelog

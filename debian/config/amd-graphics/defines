@@ -454,7 +454,6 @@ version: 1.87.12
 
 [amdgpu/fiji_vce.bin_base]
 desc: "Fiji" VCE firmware
-version: 53.20
 
 [amdgpu/polaris10_ce.bin_base]
 desc: "Polaris 10" old CE firmware
@@ -801,7 +800,6 @@ version: 1.87
 
 [amdgpu/vega10_vce.bin_base]
 desc: "Vega 10" VCE firmware
-version: 53.45
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
