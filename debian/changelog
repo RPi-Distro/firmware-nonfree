@@ -36,6 +36,8 @@ firmware-nonfree (20180727-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * Add back firmware-{adi,ralink} as transitional packages (Closes: #907320)
   * Update to linux-support 4.17.0-3
+  * iwlwifi: Use "release" rather than "build" or "patch" version strings for
+    all Bluetooth firmware files
 
  -- Romain Perier <romain.perier@gmail.com>  Sun, 29 Jul 2018 16:06:56 +0200
 
