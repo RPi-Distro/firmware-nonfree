@@ -44,6 +44,7 @@ firmware-nonfree (20180825-1) UNRELEASED; urgency=medium
   * Update to linux-support 4.17.0-3
   * iwlwifi: Use "release" rather than "build" or "patch" version strings for
     all Bluetooth firmware files
+  * intel-sound: Add Intel "Kabylake" SST DSP firmware version 9.21.00.3420_163
 
  -- Romain Perier <romain.perier@gmail.com>  Sun, 29 Jul 2018 16:06:56 +0200
 
