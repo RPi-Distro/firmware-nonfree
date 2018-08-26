@@ -45,6 +45,8 @@ firmware-nonfree (20180825-1) UNRELEASED; urgency=medium
   * iwlwifi: Use "release" rather than "build" or "patch" version strings for
     all Bluetooth firmware files
   * intel-sound: Add Intel "Kabylake" SST DSP firmware version 9.21.00.3420_163
+  * atheros: Add Wil62x0 default board parameters and firmware for use
+    with the wil6210 driver
 
  -- Romain Perier <romain.perier@gmail.com>  Sun, 29 Jul 2018 16:06:56 +0200
 
