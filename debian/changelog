@@ -1,3 +1,10 @@
+firmware-nonfree (20180825+dfsg-1) unstable; urgency=medium
+
+  * Exclude Cavium LiquidIO 23xx vswitch firmware, which contains a Linux
+    kernel image (Closes: #907585)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Wed, 29 Aug 2018 21:14:09 +0100
+
 firmware-nonfree (20180825-1) unstable; urgency=medium
 
   * New upstream version:
