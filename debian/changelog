@@ -1,4 +1,14 @@
-firmware-nonfree (20180825+dfsg-2) UNRELEASED; urgency=medium
+firmware-nonfree (20180913-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - Upstream version is commit 44d4fca9922a252a0bd81f6307bcc072a78da54a
+      dated 2018-09-13
+    - misc-nonfree:
+      + NVIDIA GP102 firmware update
+      + NVIDIA GP104 firmware update
+      + NVIDIA GP106 firmware update
+      + NVIDIA GP107 firmware update
+    - brcm80211: BCM43362 firmware update
 
   * amd-graphics: Add AMD Vega M firmware (Closes #907598)
 
