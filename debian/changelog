@@ -1,3 +1,9 @@
+firmware-nonfree (20180825+dfsg-2) UNRELEASED; urgency=medium
+
+  * amd-graphics: Add AMD Vega M firmware (Closes #907598)
+
+ -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
+
 firmware-nonfree (20180825+dfsg-1) unstable; urgency=medium
 
   * Exclude Cavium LiquidIO 23xx vswitch firmware, which contains a Linux

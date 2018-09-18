@@ -138,6 +138,17 @@ files:
  amdgpu/vega10_sos.bin
  amdgpu/vega10_uvd.bin
  amdgpu/vega10_vce.bin
+ amdgpu/vegam_ce.bin
+ amdgpu/vegam_me.bin
+ amdgpu/vegam_mec.bin
+ amdgpu/vegam_mec2.bin
+ amdgpu/vegam_pfp.bin
+ amdgpu/vegam_rlc.bin
+ amdgpu/vegam_sdma.bin
+ amdgpu/vegam_sdma1.bin
+ amdgpu/vegam_smc.bin
+ amdgpu/vegam_uvd.bin
+ amdgpu/vegam_vce.bin
  r128/r128_cce.bin
  radeon/ARUBA_me.bin
  radeon/ARUBA_pfp.bin
@@ -800,6 +811,39 @@ version: 1.87
 
 [amdgpu/vega10_vce.bin_base]
 desc: "Vega 10" VCE firmware
+
+[amdgpu/vegam_ce.bin_base]
+desc: "Vega M CE firmware"
+
+[amdgpu/vegam_me.bin_base]
+desc: "Vega M ME firmware"
+
+[amdgpu/vegam_mec.bin_base]
+desc: "Vega M MEC firmware"
+
+[amdgpu/vegam_mec2.bin_base]
+desc: "Vega M MEC2 firmware"
+
+[amdgpu/vegam_pfp.bin_base]
+desc: "Vega M PFP firmware"
+
+[amdgpu/vegam_rlc.bin_base]
+desc: "Vega M RLC firmware"
+
+[amdgpu/vegam_sdma.bin_base]
+desc: "Vega M SDMA firmware"
+
+[amdgpu/vegam_sdma1.bin_base]
+desc: "Vega M SDMA1 firmware"
+
+[amdgpu/vegam_smc.bin_base]
+desc: "Vega M SMC firmware"
+
+[amdgpu/vegam_uvd.bin_base]
+desc: "Vega M UVD firmware"
+
+[amdgpu/vegam_vce.bin_base]
+desc: "Vega M VCE firmware"
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
