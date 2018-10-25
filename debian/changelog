@@ -11,7 +11,10 @@ firmware-nonfree (20181001-1) UNRELEASED; urgency=medium
     - brcm80211: BCM43362 firmware update
     - atheros: firmware update for QCA61x4 version 3.2 USB BT (CVE-2018-5383)
 
-  * amd-graphics: Add AMD Vega M firmware (Closes #907598)
+  * amd-graphics:
+      + Add AMD Vega M firmware (Closes #907598)
+      + Add Radeon HD 7800 series firmware to /lib/firmware/amdgpu
+        (Closes #908632)
 
  -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
 

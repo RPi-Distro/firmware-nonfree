@@ -26,6 +26,12 @@ files:
  amdgpu/fiji_smc.bin
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
+ amdgpu/pitcairn_ce.bin
+ amdgpu/pitcairn_mc.bin
+ amdgpu/pitcairn_me.bin
+ amdgpu/pitcairn_pfp.bin
+ amdgpu/pitcairn_rlc.bin
+ amdgpu/pitcairn_smc.bin
  amdgpu/polaris10_ce.bin
  amdgpu/polaris10_ce_2.bin
  amdgpu/polaris10_mc.bin
@@ -465,6 +471,24 @@ version: 1.87.12
 
 [amdgpu/fiji_vce.bin_base]
 desc: "Fiji" VCE firmware
+
+[amdgpu/pitcairn_ce.bin_base]
+desc: Radeon HD 7800 series CE microcode
+
+[amdgpu/pitcairn_mc.bin_base]
+desc: Radeon HD 7800 series MC microcode
+
+[amdgpu/pitcairn_me.bin_base]
+desc: Radeon HD 7800 series ME microcode
+
+[amdgpu/pitcairn_pfp.bin_base]
+desc: Radeon HD 7800 series PFP microcode
+
+[amdgpu/pitcairn_rlc.bin_base]
+desc: Radeon HD 7800 series RLC microcode
+
+[amdgpu/pitcairn_smc.bin_base]
+desc: Radeon HD 7800 series SMC microcode
 
 [amdgpu/polaris10_ce.bin_base]
 desc: "Polaris 10" old CE firmware
