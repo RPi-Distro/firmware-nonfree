@@ -1,15 +1,39 @@
-firmware-nonfree (20181001-1) UNRELEASED; urgency=medium
+firmware-nonfree (20181018-1) UNRELEASED; urgency=medium
 
   * New upstream version:
-    - Upstream version is commit 7c81f23ad903f72e87e2102d8f52408305c0f7a2
-      dated 2018-10-01
+    - Upstream version is commit d87753369b82c5f362250c197d04a1e1ef5bf698
+      dated 2018-10-18
     - misc-nonfree:
       + NVIDIA GP102 firmware update
       + NVIDIA GP104 firmware update
       + NVIDIA GP106 firmware update
       + NVIDIA GP107 firmware update
+      + Intel OPA Gen1 DC firmware update version 1.27.0
     - brcm80211: BCM43362 firmware update
-    - atheros: firmware update for QCA61x4 version 3.2 USB BT (CVE-2018-5383)
+    - atheros:
+      + firmware update for QCA61x4 version 3.2 USB BT (CVE-2018-5383)
+      + Qualcomm Atheros QCA9984 rev 1.0 board configuration update
+      + Qualcomm Atheros QCA9984 rev 1.0 firmware update version
+        10.4-3.6.0.1-00003
+      + Qualcomm Atheros QCA988X firmware update version 10.2.4-1.0-00041
+      + Qualcomm Atheros QCA9888 rev 2.0 board configuration update
+      + Qualcomm Atheros QCA9888 rev 2.0 firmware update version 10.4-3.6-00140
+      + Qualcomm Atheros QCA9887 rev 1.0 firmware update version
+        10.2.4-1.0-00041
+      + Qualcomm Atheros QCA4019 rev 1.0 board configuration update
+      + Qualcomm Atheros QCA4019 rev 1.0 firmware update version 10.4-3.6-00140
+    - netronome:
+      + Agilio CX 2x10GbE flower firmware update version AOTC-2.9.A.37
+      + Agilio SmartNIC firmware update version 2.1.13
+    - iwlwifi:
+      + 9460/9650 (var 16 rev 1) Bluetooth firmware version 20.90.0.3
+      + 9160/9260 (var 16 rev 1) Bluetooth firmware version 20.90.0.3
+      + 8260/8265 Bluetooth firmware version 20.90.0.3
+      + Add Intel Wireless 9000 firmware version 38.1f1e8d4a.0
+      + Add Intel Wireless 9260 firmware version 41.1f1e8d4a.0
+      + Intel Wireless 9000/9260 firmware update version 38.755cfdd8.0
+      + Intel Wireless 3160,7260,7265 firmware update version 17.bfb58538.0
+      + Intel Wireless 8000C,8265 firmware update version 36.7596afd4.0
 
   * amd-graphics:
       + Add AMD Vega M firmware (Closes #907598)

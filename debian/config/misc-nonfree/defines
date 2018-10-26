@@ -531,7 +531,7 @@ desc: WISchip WinFast WalkieTV firmware
 
 [hfi1_dc8051.fw_base]
 desc: Intel OPA Gen1 DC firmware
-version: 1.26.1
+version: 1.27.0
 
 [hfi1_fabric.fw_base]
 desc: Intel OPA Gen1 fabric firmware
