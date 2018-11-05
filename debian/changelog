@@ -1,8 +1,8 @@
-firmware-nonfree (20181018-1) UNRELEASED; urgency=medium
+firmware-nonfree (20181026-1) UNRELEASED; urgency=medium
 
   * New upstream version:
-    - Upstream version is commit d87753369b82c5f362250c197d04a1e1ef5bf698
-      dated 2018-10-18
+    - Upstream version is commit 1baa34868b2c0a004dc595b20678145e3fff83e7
+      dated 2018-10-26
     - misc-nonfree:
       + NVIDIA GP102 firmware update
       + NVIDIA GP104 firmware update
@@ -34,6 +34,9 @@ firmware-nonfree (20181018-1) UNRELEASED; urgency=medium
       + Intel Wireless 9000/9260 firmware update version 38.755cfdd8.0
       + Intel Wireless 3160,7260,7265 firmware update version 17.bfb58538.0
       + Intel Wireless 8000C,8265 firmware update version 36.7596afd4.0
+    - amd-graphics:
+      + "Fiji", "Polaris10", "Raven", "Tonga", "Vega10", "Carrizo" firmware
+        updates to sync with 18.40 release
 
   * amd-graphics:
       + Add AMD Vega M firmware (Closes #907598)
