@@ -46,6 +46,7 @@ firmware-nonfree (20181026-1) UNRELEASED; urgency=medium
 
   [ Yves-Alexis Perez ]
   * firmware-linux: fix typo in short description
+  * firmware-atheros: remove unused lintian override
 
  -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
 
