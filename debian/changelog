@@ -1,5 +1,6 @@
 firmware-nonfree (20181026-1) UNRELEASED; urgency=medium
 
+  [ Romain Perier ]
   * New upstream version:
     - Upstream version is commit 1baa34868b2c0a004dc595b20678145e3fff83e7
       dated 2018-10-26
@@ -42,6 +43,9 @@ firmware-nonfree (20181026-1) UNRELEASED; urgency=medium
       + Add AMD Vega M firmware (Closes: #907598)
       + Add Radeon HD 7800 series firmware to /lib/firmware/amdgpu
         (Closes: #908632)
+
+  [ Yves-Alexis Perez ]
+  * firmware-linux: fix typo in short description
 
  -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
 
