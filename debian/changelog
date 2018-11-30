@@ -39,9 +39,9 @@ firmware-nonfree (20181026-1) UNRELEASED; urgency=medium
         updates to sync with 18.40 release
 
   * amd-graphics:
-      + Add AMD Vega M firmware (Closes #907598)
+      + Add AMD Vega M firmware (Closes: #907598)
       + Add Radeon HD 7800 series firmware to /lib/firmware/amdgpu
-        (Closes #908632)
+        (Closes: #908632)
 
  -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
 
