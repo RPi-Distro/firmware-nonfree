@@ -5,7 +5,7 @@ files:
  intel/dsp_fw_bxtn.bin
  intel/dsp_fw_bxtn_v3366.bin
  intel/dsp_fw_cnl.bin
- intel/dsp_fw_cnl_v1191.bin
+ intel/dsp_fw_cnl_v1858.bin
  intel/dsp_fw_glk.bin
  intel/dsp_fw_glk_v3366.bin
  intel/dsp_fw_kbl.bin
@@ -23,9 +23,9 @@ longdesc: Intel SST sound DSPs supported by the snd-soc-sst-acpi or
 desc: Intel "Broxton" SST DSP firmware
 version: 9.22.01.3366_157
 
-[intel/dsp_fw_cnl_v1191.bin_base]
+[intel/dsp_fw_cnl_v1858.bin_base]
 desc: Intel "Cannonlake" SST DSP firmware
-version: 10.00.00.1191
+version: 10.23.00.1858
 
 [intel/dsp_fw_glk_v3366.bin_base]
 desc: Intel "Geminilake" SST DSP firmware

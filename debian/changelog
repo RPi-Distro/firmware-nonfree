@@ -1,10 +1,14 @@
-firmware-nonfree (20181026-1) UNRELEASED; urgency=medium
+firmware-nonfree (20181218-1) UNRELEASED; urgency=medium
 
   [ Romain Perier ]
   * New upstream version:
-    - Upstream version is commit 1baa34868b2c0a004dc595b20678145e3fff83e7
-      dated 2018-10-26
+    - Upstream version is commit 0f22c8527439eaaf5c3fcf87b31c89445b6fa84d
+      dated 2018-12-18
+    - cavium: Cavium CNN55XX crypto firmware update version v10
+    - intel-sound: Intel Cannonlake SST DSP firmware update version
+      10.23.00.1858
     - misc-nonfree:
+      + Chelsio T4, T5, and T6 firmware version 1.21.5.0
       + NVIDIA GP102 firmware update
       + NVIDIA GP104 firmware update
       + NVIDIA GP106 firmware update
@@ -24,20 +28,23 @@ firmware-nonfree (20181026-1) UNRELEASED; urgency=medium
       + Qualcomm Atheros QCA4019 rev 1.0 board configuration update
       + Qualcomm Atheros QCA4019 rev 1.0 firmware update version 10.4-3.6-00140
     - netronome:
-      + Agilio CX 2x10GbE flower firmware update version AOTC-2.9.A.37
-      + Agilio SmartNIC firmware update version 2.1.13
+      + Agilio CX 2x10GbE,2x40GbE,2x25GbE flower firmware update version
+        AOTC-2.10.A.13
+      + Agilio SmartNIC firmware update version 2.1.16
     - iwlwifi:
       + 9460/9650 (var 16 rev 1) Bluetooth firmware version 20.90.0.3
       + 9160/9260 (var 16 rev 1) Bluetooth firmware version 20.90.0.3
       + 8260/8265 Bluetooth firmware version 20.90.0.3
-      + Add Intel Wireless 9000 firmware version 38.1f1e8d4a.0
-      + Add Intel Wireless 9260 firmware version 41.1f1e8d4a.0
+      + Add Intel Wireless 9000 firmware version 41.fc1a7aea.0
+      + Add Intel Wireless 9260 firmware version 41.fc1a7aea.0
       + Intel Wireless 9000/9260 firmware update version 38.755cfdd8.0
       + Intel Wireless 3160,7260,7265 firmware update version 17.bfb58538.0
-      + Intel Wireless 8000C,8265 firmware update version 36.7596afd4.0
+      + Intel Wireless 8000C,8265 firmware update version 36.9f0a2d68.0
     - amd-graphics:
-      + "Fiji", "Polaris10", "Raven", "Tonga", "Vega10", "Carrizo" firmware
-        updates to sync with 18.40 release
+      + "Polaris10", "Polaris11", "Raven" firmware updates to sync with
+        18.50 release
+      + "Fiji", "Tonga", "Vega10", "Carrizo" firmware updates to sync with
+        18.40 release
 
   * amd-graphics:
       + Add AMD Vega M firmware (Closes: #907598)
