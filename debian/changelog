@@ -50,6 +50,7 @@ firmware-nonfree (20181218-1) UNRELEASED; urgency=medium
       + Add AMD Vega M firmware (Closes: #907598)
       + Add Radeon HD 7800 series firmware to /lib/firmware/amdgpu
         (Closes: #908632)
+      + Update to linux-support 4.19.0-1
 
   [ Yves-Alexis Perez ]
   * firmware-linux: fix typo in short description
