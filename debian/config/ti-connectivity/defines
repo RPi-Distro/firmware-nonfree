@@ -1,6 +1,8 @@
 [base]
 desc: TI Connectivity wifi and BT/FM/GPS adapters
 files:
+ ti-connectivity/TIInit_6.2.31.bts
+ ti-connectivity/TIInit_6.6.15.bts
  ti-connectivity/TIInit_7.2.31.bts
  ti-connectivity/wl1251-fw.bin
  ti-connectivity/wl1251-nvs.bin
