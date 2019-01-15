@@ -64,6 +64,8 @@ firmware-nonfree (20190114-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * debian/README.source: Document the genorig.py --commit option
   * amd-graphics: Add firmware for "Picasso", "Raven 2", and "Vega 12" chips
+  * amd-graphics: Add additional firmware for Radeon HD 7800 series,
+    "Polaris", and "Raven" chips
 
  -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
 

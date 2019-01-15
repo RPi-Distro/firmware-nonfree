@@ -38,6 +38,7 @@ files:
  amdgpu/picasso_sdma.bin
  amdgpu/picasso_vcn.bin
  amdgpu/pitcairn_ce.bin
+ amdgpu/pitcairn_k_smc.bin
  amdgpu/pitcairn_mc.bin
  amdgpu/pitcairn_me.bin
  amdgpu/pitcairn_pfp.bin
@@ -45,6 +46,8 @@ files:
  amdgpu/pitcairn_smc.bin
  amdgpu/polaris10_ce.bin
  amdgpu/polaris10_ce_2.bin
+ amdgpu/polaris10_k2_smc.bin
+ amdgpu/polaris10_k_mc.bin
  amdgpu/polaris10_k_smc.bin
  amdgpu/polaris10_mc.bin
  amdgpu/polaris10_me.bin
@@ -64,6 +67,8 @@ files:
  amdgpu/polaris10_vce.bin
  amdgpu/polaris11_ce.bin
  amdgpu/polaris11_ce_2.bin
+ amdgpu/polaris11_k2_smc.bin
+ amdgpu/polaris11_k_mc.bin
  amdgpu/polaris11_k_smc.bin
  amdgpu/polaris11_mc.bin
  amdgpu/polaris11_me.bin
@@ -83,6 +88,8 @@ files:
  amdgpu/polaris11_vce.bin
  amdgpu/polaris12_ce.bin
  amdgpu/polaris12_ce_2.bin
+ amdgpu/polaris12_k_mc.bin
+ amdgpu/polaris12_k_smc.bin
  amdgpu/polaris12_mc.bin
  amdgpu/polaris12_me.bin
  amdgpu/polaris12_mec.bin
@@ -111,6 +118,7 @@ files:
  amdgpu/raven2_vcn.bin
  amdgpu/raven_asd.bin
  amdgpu/raven_ce.bin
+ amdgpu/raven_dmcu.bin
  amdgpu/raven_gpu_info.bin
  amdgpu/raven_me.bin
  amdgpu/raven_mec.bin
@@ -544,6 +552,9 @@ desc: "Picasso" VCN firmware
 [amdgpu/pitcairn_ce.bin_base]
 desc: Radeon HD 7800 series CE microcode
 
+[amdgpu/pitcairn_k_smc.bin_base]
+desc: Radeon HD 7800 series K SMC microcode
+
 [amdgpu/pitcairn_mc.bin_base]
 desc: Radeon HD 7800 series MC microcode
 
@@ -564,6 +575,12 @@ desc: "Polaris 10" old CE firmware
 
 [amdgpu/polaris10_ce_2.bin_base]
 desc: "Polaris 10" new CE firmware
+
+[amdgpu/polaris10_k2_smc.bin_base]
+desc: "Polaris 10" K2 SMC firmware
+
+[amdgpu/polaris10_k_mc.bin_base]
+desc: "Polaris 10" K MC firmware
 
 [amdgpu/polaris10_k_smc.bin_base]
 desc: "Polaris 10" K SMC firmware
@@ -624,6 +641,12 @@ desc: "Polaris 11" old CE firmware
 [amdgpu/polaris11_ce_2.bin_base]
 desc: "Polaris 11" new CE firmware
 
+[amdgpu/polaris11_k2_smc.bin_base]
+desc: "Polaris 11" K2 SMC firmware
+
+[amdgpu/polaris11_k_mc.bin_base]
+desc: "Polaris 11" K MC firmware
+
 [amdgpu/polaris11_k_smc.bin_base]
 desc: "Polaris 11" K SMC firmware
 
@@ -682,6 +705,12 @@ desc: "Polaris 12" old CE firmware
 
 [amdgpu/polaris12_ce_2.bin_base]
 desc: "Polaris 12" new CE firmware
+
+[amdgpu/polaris12_k_mc.bin_base]
+desc: "Polaris 12" K MC firmware
+
+[amdgpu/polaris12_k_smc.bin_base]
+desc: "Polaris 12" K SMC firmware
 
 [amdgpu/polaris12_mc.bin_base]
 desc: "Polaris 12" MC firmware
@@ -768,6 +797,9 @@ desc: "Raven" ASD firmware
 
 [amdgpu/raven_ce.bin_base]
 desc: "Raven" CE firmware
+
+[amdgpu/raven_dmcu.bin_base]
+desc: "Raven" DMCU firmware
 
 [amdgpu/raven_gpu_info.bin_base]
 desc: "Raven" GPU info
