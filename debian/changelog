@@ -61,6 +61,9 @@ firmware-nonfree (20190114-1) UNRELEASED; urgency=medium
   * ti-connectivity: include TIInit_6.2.31.bts and TIInit_6.6.15.bts for
     CC2560(A) Bluetooth
 
+  [ Ben Hutchings ]
+  * debian/README.source: Document the genorig.py --commit option
+
  -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
 
 firmware-nonfree (20180825+dfsg-1) unstable; urgency=medium
