@@ -4,6 +4,19 @@ longdesc: AMD/ATI graphics chips supported by the radeon, amdgpu and r128 driver
 replaces: firmware-linux-nonfree (<< 20151018-1~)
 breaks: firmware-linux-nonfree (<< 20151018-1~)
 files:
+ amdgpu/banks_k_2_smc.bin
+ amdgpu/bonaire_ce.bin
+ amdgpu/bonaire_k_smc.bin
+ amdgpu/bonaire_mc.bin
+ amdgpu/bonaire_me.bin
+ amdgpu/bonaire_mec.bin
+ amdgpu/bonaire_pfp.bin
+ amdgpu/bonaire_rlc.bin
+ amdgpu/bonaire_sdma.bin
+ amdgpu/bonaire_sdma1.bin
+ amdgpu/bonaire_smc.bin
+ amdgpu/bonaire_uvd.bin
+ amdgpu/bonaire_vce.bin
  amdgpu/carrizo_ce.bin
  amdgpu/carrizo_me.bin
  amdgpu/carrizo_mec.bin
@@ -26,6 +39,60 @@ files:
  amdgpu/fiji_smc.bin
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
+ amdgpu/hainan_ce.bin
+ amdgpu/hainan_k_smc.bin
+ amdgpu/hainan_mc.bin
+ amdgpu/hainan_me.bin
+ amdgpu/hainan_pfp.bin
+ amdgpu/hainan_rlc.bin
+ amdgpu/hainan_smc.bin
+ amdgpu/hawaii_ce.bin
+ amdgpu/hawaii_k_smc.bin
+ amdgpu/hawaii_mc.bin
+ amdgpu/hawaii_me.bin
+ amdgpu/hawaii_mec.bin
+ amdgpu/hawaii_pfp.bin
+ amdgpu/hawaii_rlc.bin
+ amdgpu/hawaii_sdma.bin
+ amdgpu/hawaii_sdma1.bin
+ amdgpu/hawaii_smc.bin
+ amdgpu/hawaii_uvd.bin
+ amdgpu/hawaii_vce.bin
+ amdgpu/kabini_ce.bin
+ amdgpu/kabini_me.bin
+ amdgpu/kabini_mec.bin
+ amdgpu/kabini_pfp.bin
+ amdgpu/kabini_rlc.bin
+ amdgpu/kabini_sdma.bin
+ amdgpu/kabini_sdma1.bin
+ amdgpu/kabini_uvd.bin
+ amdgpu/kabini_vce.bin
+ amdgpu/kaveri_ce.bin
+ amdgpu/kaveri_me.bin
+ amdgpu/kaveri_mec.bin
+ amdgpu/kaveri_mec2.bin
+ amdgpu/kaveri_pfp.bin
+ amdgpu/kaveri_rlc.bin
+ amdgpu/kaveri_sdma.bin
+ amdgpu/kaveri_sdma1.bin
+ amdgpu/kaveri_uvd.bin
+ amdgpu/kaveri_vce.bin
+ amdgpu/mullins_ce.bin
+ amdgpu/mullins_me.bin
+ amdgpu/mullins_mec.bin
+ amdgpu/mullins_pfp.bin
+ amdgpu/mullins_rlc.bin
+ amdgpu/mullins_sdma.bin
+ amdgpu/mullins_sdma1.bin
+ amdgpu/mullins_uvd.bin
+ amdgpu/mullins_vce.bin
+ amdgpu/oland_ce.bin
+ amdgpu/oland_k_smc.bin
+ amdgpu/oland_mc.bin
+ amdgpu/oland_me.bin
+ amdgpu/oland_pfp.bin
+ amdgpu/oland_rlc.bin
+ amdgpu/oland_smc.bin
  amdgpu/picasso_asd.bin
  amdgpu/picasso_ce.bin
  amdgpu/picasso_gpu_info.bin
@@ -127,6 +194,7 @@ files:
  amdgpu/raven_rlc.bin
  amdgpu/raven_sdma.bin
  amdgpu/raven_vcn.bin
+ amdgpu/si58_mc.bin
  amdgpu/stoney_ce.bin
  amdgpu/stoney_me.bin
  amdgpu/stoney_mec.bin
@@ -135,6 +203,13 @@ files:
  amdgpu/stoney_sdma.bin
  amdgpu/stoney_uvd.bin
  amdgpu/stoney_vce.bin
+ amdgpu/tahiti_ce.bin
+ amdgpu/tahiti_k_smc.bin
+ amdgpu/tahiti_mc.bin
+ amdgpu/tahiti_me.bin
+ amdgpu/tahiti_pfp.bin
+ amdgpu/tahiti_rlc.bin
+ amdgpu/tahiti_smc.bin
  amdgpu/tonga_ce.bin
  amdgpu/tonga_k_smc.bin
  amdgpu/tonga_mc.bin
@@ -199,6 +274,13 @@ files:
  amdgpu/vegam_smc.bin
  amdgpu/vegam_uvd.bin
  amdgpu/vegam_vce.bin
+ amdgpu/verde_ce.bin
+ amdgpu/verde_k_smc.bin
+ amdgpu/verde_mc.bin
+ amdgpu/verde_me.bin
+ amdgpu/verde_pfp.bin
+ amdgpu/verde_rlc.bin
+ amdgpu/verde_smc.bin
  r128/r128_cce.bin
  radeon/ARUBA_me.bin
  radeon/ARUBA_pfp.bin
@@ -448,6 +530,45 @@ files:
  radeon/VERDE_smc.bin
  radeon/verde_smc.bin
 
+[amdgpu/banks_k_2_smc.bin_base]
+desc: "Banks" K-2 SMC microcode
+
+[amdgpu/bonaire_ce.bin_base]
+desc: Radeon HD 7790/8770/8950 CE microcode
+
+[amdgpu/bonaire_k_smc.bin_base]
+desc: Radeon HD 7790/8770/8950 K SMC microcode
+
+[amdgpu/bonaire_mc.bin_base]
+desc: Radeon HD 7790/8770/8950 MC microcode
+
+[amdgpu/bonaire_me.bin_base]
+desc: Radeon HD 7790/8770/8950 ME microcode
+
+[amdgpu/bonaire_mec.bin_base]
+desc: Radeon HD 7790/8770/8950 MEC microcode
+
+[amdgpu/bonaire_pfp.bin_base]
+desc: Radeon HD 7790/8770/8950 PFP microcode
+
+[amdgpu/bonaire_rlc.bin_base]
+desc: Radeon HD 7790/8770/8950 RLC microcode
+
+[amdgpu/bonaire_sdma.bin_base]
+desc: Radeon HD 7790/8770/8950 SDMA microcode
+
+[amdgpu/bonaire_sdma1.bin_base]
+desc: Radeon HD 7790/8770/8950 SDMA1 microcode
+
+[amdgpu/bonaire_smc.bin_base]
+desc: Radeon HD 7790/8770/8950 series SMC microcode
+
+[amdgpu/bonaire_uvd.bin_base]
+desc: Radeon HD 7790/8770/8950 UVD microcode
+
+[amdgpu/bonaire_vce.bin_base]
+desc: Radeon HD 7790/8770/8950 VCE microcode
+
 [amdgpu/carrizo_ce.bin_base]
 desc: "Carrizo" CE firmware
 
@@ -515,6 +636,168 @@ version: 1.87.12
 
 [amdgpu/fiji_vce.bin_base]
 desc: "Fiji" VCE firmware
+
+[amdgpu/hainan_ce.bin_base]
+desc: Radeon HD 8500M series and R5 M200 CE microcode
+
+[amdgpu/hainan_k_smc.bin_base]
+desc: Radeon HD 8500M series and R5 M200 K SMC microcode
+
+[amdgpu/hainan_mc.bin_base]
+desc: Radeon HD 8500M series and R5 M200 MC microcode
+
+[amdgpu/hainan_me.bin_base]
+desc: Radeon HD 8500M series and R5 M200 ME microcode
+
+[amdgpu/hainan_pfp.bin_base]
+desc: Radeon HD 8500M series and R5 M200 PFP microcode
+
+[amdgpu/hainan_rlc.bin_base]
+desc: Radeon HD 8500M series and R5 M200 RLC microcode
+
+[amdgpu/hainan_smc.bin_base]
+desc: Radeon HD 8500M series and R5 M200 SMC microcode
+
+[amdgpu/hawaii_ce.bin_base]
+desc: Radeon R9 290 series CE microcode
+
+[amdgpu/hawaii_k_smc.bin_base]
+desc: Radeon R9 290 series K SMC microcode
+
+[amdgpu/hawaii_mc.bin_base]
+desc: Radeon R9 290 series MC microcode
+
+[amdgpu/hawaii_me.bin_base]
+desc: Radeon R9 290 series ME microcode
+
+[amdgpu/hawaii_mec.bin_base]
+desc: Radeon R9 290 series MEC microcode
+
+[amdgpu/hawaii_pfp.bin_base]
+desc: Radeon R9 290 series PFP microcode
+
+[amdgpu/hawaii_rlc.bin_base]
+desc: Radeon R9 290 series RLC microcode
+
+[amdgpu/hawaii_sdma.bin_base]
+desc: Radeon R9 290 series SDMA microcode
+
+[amdgpu/hawaii_sdma1.bin_base]
+desc: Radeon R9 290 series SDMA microcode
+
+[amdgpu/hawaii_smc.bin_base]
+desc: Radeon R9 290 series SMC microcode
+
+[amdgpu/hawaii_uvd.bin_base]
+desc: Radeon R9 290 series UVD microcode
+
+[amdgpu/hawaii_vce.bin_base]
+desc: Radeon R9 290 series VCE microcode
+
+[amdgpu/kabini_ce.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series CE microcode
+
+[amdgpu/kabini_me.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series ME microcode
+
+[amdgpu/kabini_mec.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series MEC microcode
+
+[amdgpu/kabini_pfp.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series PFP microcode
+
+[amdgpu/kabini_rlc.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series RLC microcode
+
+[amdgpu/kabini_sdma.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series SDMA microcode
+
+[amdgpu/kabini_sdma1.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series SDMA1 microcode
+
+[amdgpu/kabini_uvd.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series UVD microcode
+
+[amdgpu/kabini_vce.bin_base]
+desc: Radeon HD 8100/8200/8300/8400 series VCE microcode
+
+[amdgpu/kaveri_ce.bin_base]
+desc: Radeon R5/R7 IGP 200 series CE microcode
+
+[amdgpu/kaveri_me.bin_base]
+desc: Radeon R5/R7 IGP 200 series ME microcode
+
+[amdgpu/kaveri_mec.bin_base]
+desc: Radeon R5/R7 IGP 200 series MEC microcode
+
+[amdgpu/kaveri_mec2.bin_base]
+desc: Radeon R5/R7 IGP 200 series MEC microcode
+
+[amdgpu/kaveri_pfp.bin_base]
+desc: Radeon R5/R7 IGP 200 series PFP microcode
+
+[amdgpu/kaveri_rlc.bin_base]
+desc: Radeon R5/R7 IGP 200 series RLC microcode
+
+[amdgpu/kaveri_sdma.bin_base]
+desc: Radeon R5/R7 IGP 200 series SDMA microcode
+
+[amdgpu/kaveri_sdma1.bin_base]
+desc: Radeon R5/R7 IGP 200 series SDMA1 microcode
+
+[amdgpu/kaveri_uvd.bin_base]
+desc: Radeon R5/R7 IGP 200 series UVD microcode
+
+[amdgpu/kaveri_vce.bin_base]
+desc: Radeon R5/R7 IGP 200 series VCE microcode
+
+[amdgpu/mullins_ce.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP CE microcode
+
+[amdgpu/mullins_me.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP ME microcode
+
+[amdgpu/mullins_mec.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP MEC microcode
+
+[amdgpu/mullins_pfp.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP PFP microcode
+
+[amdgpu/mullins_rlc.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP RLC microcode
+
+[amdgpu/mullins_sdma.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP SDMA microcode
+
+[amdgpu/mullins_sdma1.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP SDMA1 microcode
+
+[amdgpu/mullins_uvd.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP UVD microcode
+
+[amdgpu/mullins_vce.bin_base]
+desc: Radeon "Mullins"/"Beema" IGP VCE microcode
+
+[amdgpu/oland_ce.bin_base]
+desc: Radeon HD 8500/8600/8700 series CE microcode
+
+[amdgpu/oland_k_smc.bin_base]
+desc: Radeon HD 8500/8600/8700 series K SMC microcode
+
+[amdgpu/oland_mc.bin_base]
+desc: Radeon HD 8500/8600/8700 series MC microcode
+
+[amdgpu/oland_me.bin_base]
+desc: Radeon HD 8500/8600/8700 series ME microcode
+
+[amdgpu/oland_pfp.bin_base]
+desc: Radeon HD 8500/8600/8700 series PFP microcode
+
+[amdgpu/oland_rlc.bin_base]
+desc: Radeon HD 8500/8600/8700 series RLC microcode
+
+[amdgpu/oland_smc.bin_base]
+desc: Radeon HD 8500/8600/8700 series SMC microcode
 
 [amdgpu/picasso_asd.bin_base]
 desc: "Picasso" ASD firmware
@@ -825,6 +1108,9 @@ desc: "Raven" SDMA firmware
 [amdgpu/raven_vcn.bin_base]
 desc: "Raven" VCN firmware
 
+[amdgpu/si58_mc.bin_base]
+desc: Radeon "SI58" MC microcode
+
 [amdgpu/stoney_ce.bin_base]
 desc: "Stoney" CE firmware
 
@@ -849,6 +1135,27 @@ version: 1.38.15
 
 [amdgpu/stoney_vce.bin_base]
 desc: "Stoney" VCE firmware
+
+[amdgpu/tahiti_ce.bin_base]
+desc: Radeon HD 7900 series CE microcode
+
+[amdgpu/tahiti_k_smc.bin_base]
+desc: Radeon HD 7900 series K SMC microcode
+
+[amdgpu/tahiti_mc.bin_base]
+desc: Radeon HD 7900 series MC microcode
+
+[amdgpu/tahiti_me.bin_base]
+desc: Radeon HD 7900 series ME microcode
+
+[amdgpu/tahiti_pfp.bin_base]
+desc: Radeon HD 7900 series PFP microcode
+
+[amdgpu/tahiti_rlc.bin_base]
+desc: Radeon HD 7900 series RLC microcode
+
+[amdgpu/tahiti_smc.bin_base]
+desc: Radeon HD 7900 series SMC microcode
 
 [amdgpu/tonga_ce.bin_base]
 desc: "Tonga" CE firmware
@@ -1044,6 +1351,27 @@ desc: "Vega M UVD firmware"
 
 [amdgpu/vegam_vce.bin_base]
 desc: "Vega M VCE firmware"
+
+[amdgpu/verde_ce.bin_base]
+desc: Radeon HD 7700 series CE microcode
+
+[amdgpu/verde_k_smc.bin_base]
+desc: Radeon HD 7700 series K SMC microcode
+
+[amdgpu/verde_mc.bin_base]
+desc: Radeon HD 7700 series MC microcode
+
+[amdgpu/verde_me.bin_base]
+desc: Radeon HD 7700 series ME microcode
+
+[amdgpu/verde_pfp.bin_base]
+desc: Radeon HD 7700 series PFP microcode
+
+[amdgpu/verde_rlc.bin_base]
+desc: Radeon HD 7700 series RLC microcode
+
+[amdgpu/verde_smc.bin_base]
+desc: Radeon HD 7700 series SMC microcode
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
