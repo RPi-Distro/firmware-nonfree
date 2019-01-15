@@ -1320,37 +1320,37 @@ desc: "Vega 12" UVD firmware
 desc: "Vega 12" VCE firmware
 
 [amdgpu/vegam_ce.bin_base]
-desc: "Vega M CE firmware"
+desc: "Vega M" CE firmware
 
 [amdgpu/vegam_me.bin_base]
-desc: "Vega M ME firmware"
+desc: "Vega M" ME firmware
 
 [amdgpu/vegam_mec.bin_base]
-desc: "Vega M MEC firmware"
+desc: "Vega M" MEC firmware
 
 [amdgpu/vegam_mec2.bin_base]
-desc: "Vega M MEC2 firmware"
+desc: "Vega M" MEC2 firmware
 
 [amdgpu/vegam_pfp.bin_base]
-desc: "Vega M PFP firmware"
+desc: "Vega M" PFP firmware
 
 [amdgpu/vegam_rlc.bin_base]
-desc: "Vega M RLC firmware"
+desc: "Vega M" RLC firmware
 
 [amdgpu/vegam_sdma.bin_base]
-desc: "Vega M SDMA firmware"
+desc: "Vega M" SDMA firmware
 
 [amdgpu/vegam_sdma1.bin_base]
-desc: "Vega M SDMA1 firmware"
+desc: "Vega M" SDMA1 firmware
 
 [amdgpu/vegam_smc.bin_base]
-desc: "Vega M SMC firmware"
+desc: "Vega M" SMC firmware
 
 [amdgpu/vegam_uvd.bin_base]
-desc: "Vega M UVD firmware"
+desc: "Vega M" UVD firmware
 
 [amdgpu/vegam_vce.bin_base]
-desc: "Vega M VCE firmware"
+desc: "Vega M" VCE firmware
 
 [amdgpu/verde_ce.bin_base]
 desc: Radeon HD 7700 series CE microcode

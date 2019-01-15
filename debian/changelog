@@ -68,6 +68,7 @@ firmware-nonfree (20190114-1) UNRELEASED; urgency=medium
     "Polaris", and "Raven" chips
   * amd-graphics: Add firmware for older chips supported by amdgpu to
     /l/f/amdgpu
+  * amd-graphics: Fix quoting in descriptions of Vega M firmware
 
  -- Romain Perier <romain.perier@gmail.com>  Thu, 30 Aug 2018 13:52:45 +0200
 
