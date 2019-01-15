@@ -1,14 +1,14 @@
-firmware-nonfree (20181218-1) UNRELEASED; urgency=medium
+firmware-nonfree (20190114-1) UNRELEASED; urgency=medium
 
   [ Romain Perier ]
   * New upstream version:
-    - Upstream version is commit 0f22c8527439eaaf5c3fcf87b31c89445b6fa84d
-      dated 2018-12-18
+    - Upstream version is commit bc656509a3cfb60fcdfc905d7e23c18873e4e7b9
+      dated 2019-01-14
     - cavium: Cavium CNN55XX crypto firmware update version v10
     - intel-sound: Intel Cannonlake SST DSP firmware update version
       10.23.00.1858
     - misc-nonfree:
-      + Chelsio T4, T5, and T6 firmware version 1.21.5.0
+      + Chelsio T4, T5, and T6 firmware version 1.22.9.0
       + NVIDIA GP102 firmware update
       + NVIDIA GP104 firmware update
       + NVIDIA GP106 firmware update
@@ -32,9 +32,9 @@ firmware-nonfree (20181218-1) UNRELEASED; urgency=medium
         AOTC-2.10.A.13
       + Agilio SmartNIC firmware update version 2.1.16
     - iwlwifi:
-      + 9460/9650 (var 16 rev 1) Bluetooth firmware version 20.90.0.3
-      + 9160/9260 (var 16 rev 1) Bluetooth firmware version 20.90.0.3
-      + 8260/8265 Bluetooth firmware version 20.90.0.3
+      + 9460/9650 (var 16 rev 1) Bluetooth firmware version 20.100.0.3
+      + 9160/9260 (var 16 rev 1) Bluetooth firmware version 20.100.0.3
+      + 8260/8265 Bluetooth firmware version 20.100.0.3
       + Add Intel Wireless 9000 firmware version 41.fc1a7aea.0
       + Add Intel Wireless 9260 firmware version 41.fc1a7aea.0
       + Intel Wireless 9000/9260 firmware update version 38.755cfdd8.0
@@ -45,6 +45,7 @@ firmware-nonfree (20181218-1) UNRELEASED; urgency=medium
         18.50 release
       + "Fiji", "Tonga", "Vega10", "Carrizo" firmware updates to sync with
         18.40 release
+    - libertas: Marvell Avastar 88W8801-USB firmware version 14.68.36.p138
   * amd-graphics:
     - Add AMD Vega M firmware (Closes: #907598)
     - Add Radeon HD 7800 series firmware to /lib/firmware/amdgpu
