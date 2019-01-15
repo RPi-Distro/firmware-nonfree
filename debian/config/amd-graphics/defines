@@ -26,6 +26,17 @@ files:
  amdgpu/fiji_smc.bin
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
+ amdgpu/picasso_asd.bin
+ amdgpu/picasso_ce.bin
+ amdgpu/picasso_gpu_info.bin
+ amdgpu/picasso_me.bin
+ amdgpu/picasso_mec.bin
+ amdgpu/picasso_mec2.bin
+ amdgpu/picasso_pfp.bin
+ amdgpu/picasso_rlc.bin
+ amdgpu/picasso_rlc_am4.bin
+ amdgpu/picasso_sdma.bin
+ amdgpu/picasso_vcn.bin
  amdgpu/pitcairn_ce.bin
  amdgpu/pitcairn_mc.bin
  amdgpu/pitcairn_me.bin
@@ -87,6 +98,17 @@ files:
  amdgpu/polaris12_smc.bin
  amdgpu/polaris12_uvd.bin
  amdgpu/polaris12_vce.bin
+ amdgpu/raven2_asd.bin
+ amdgpu/raven2_ce.bin
+ amdgpu/raven2_gpu_info.bin
+ amdgpu/raven2_me.bin
+ amdgpu/raven2_mec.bin
+ amdgpu/raven2_mec2.bin
+ amdgpu/raven2_pfp.bin
+ amdgpu/raven2_rlc.bin
+ amdgpu/raven2_sdma.bin
+ amdgpu/raven2_sdma1.bin
+ amdgpu/raven2_vcn.bin
  amdgpu/raven_asd.bin
  amdgpu/raven_ce.bin
  amdgpu/raven_gpu_info.bin
@@ -144,6 +166,20 @@ files:
  amdgpu/vega10_sos.bin
  amdgpu/vega10_uvd.bin
  amdgpu/vega10_vce.bin
+ amdgpu/vega12_asd.bin
+ amdgpu/vega12_ce.bin
+ amdgpu/vega12_gpu_info.bin
+ amdgpu/vega12_me.bin
+ amdgpu/vega12_mec.bin
+ amdgpu/vega12_mec2.bin
+ amdgpu/vega12_pfp.bin
+ amdgpu/vega12_rlc.bin
+ amdgpu/vega12_sdma.bin
+ amdgpu/vega12_sdma1.bin
+ amdgpu/vega12_smc.bin
+ amdgpu/vega12_sos.bin
+ amdgpu/vega12_uvd.bin
+ amdgpu/vega12_vce.bin
  amdgpu/vegam_ce.bin
  amdgpu/vegam_me.bin
  amdgpu/vegam_mec.bin
@@ -472,6 +508,39 @@ version: 1.87.12
 [amdgpu/fiji_vce.bin_base]
 desc: "Fiji" VCE firmware
 
+[amdgpu/picasso_asd.bin_base]
+desc: "Picasso" ASD firmware
+
+[amdgpu/picasso_ce.bin_base]
+desc: "Picasso" CE firmware
+
+[amdgpu/picasso_gpu_info.bin_base]
+desc: "Picasso" GPU info
+
+[amdgpu/picasso_me.bin_base]
+desc: "Picasso" ME firmware
+
+[amdgpu/picasso_mec.bin_base]
+desc: "Picasso" MEC firmware
+
+[amdgpu/picasso_mec2.bin_base]
+desc: "Picasso" MEC2 firmware
+
+[amdgpu/picasso_pfp.bin_base]
+desc: "Picasso" PFP firmware
+
+[amdgpu/picasso_rlc.bin_base]
+desc: "Picasso" RLC firmware
+
+[amdgpu/picasso_rlc_am4.bin_base]
+desc: "Picasso" RLC AM4 firmware
+
+[amdgpu/picasso_sdma.bin_base]
+desc: "Picasso" SDMA firmware
+
+[amdgpu/picasso_vcn.bin_base]
+desc: "Picasso" VCN firmware
+
 [amdgpu/pitcairn_ce.bin_base]
 desc: Radeon HD 7800 series CE microcode
 
@@ -661,6 +730,39 @@ version: 1.130
 desc: "Polaris 12" VCE firmware
 version: 53.26
 
+[amdgpu/raven2_asd.bin_base]
+desc: "Raven 2" ASD firmware
+
+[amdgpu/raven2_ce.bin_base]
+desc: "Raven 2" CE firmware
+
+[amdgpu/raven2_gpu_info.bin_base]
+desc: "Raven 2" GPU info
+
+[amdgpu/raven2_me.bin_base]
+desc: "Raven 2" ME firmware
+
+[amdgpu/raven2_mec.bin_base]
+desc: "Raven 2" MEC firmware
+
+[amdgpu/raven2_mec2.bin_base]
+desc: "Raven 2" MEC2 firmware
+
+[amdgpu/raven2_pfp.bin_base]
+desc: "Raven 2" PFP firmware
+
+[amdgpu/raven2_rlc.bin_base]
+desc: "Raven 2" RLC firmware
+
+[amdgpu/raven2_sdma.bin_base]
+desc: "Raven 2" SDMA firmware
+
+[amdgpu/raven2_sdma1.bin_base]
+desc: "Raven 2" SDMA1 firmware
+
+[amdgpu/raven2_vcn.bin_base]
+desc: "Raven 2" VCN firmware
+
 [amdgpu/raven_asd.bin_base]
 desc: "Raven" ASD firmware
 
@@ -835,6 +937,48 @@ version: 1.87
 
 [amdgpu/vega10_vce.bin_base]
 desc: "Vega 10" VCE firmware
+
+[amdgpu/vega12_asd.bin_base]
+desc: "Vega 12" ASD firmware
+
+[amdgpu/vega12_ce.bin_base]
+desc: "Vega 12" CE firmware
+
+[amdgpu/vega12_gpu_info.bin_base]
+desc: "Vega 12" GPU info
+
+[amdgpu/vega12_me.bin_base]
+desc: "Vega 12" ME firmware
+
+[amdgpu/vega12_mec.bin_base]
+desc: "Vega 12" MEC firmware
+
+[amdgpu/vega12_mec2.bin_base]
+desc: "Vega 12" MEC2 firmware
+
+[amdgpu/vega12_pfp.bin_base]
+desc: "Vega 12" PFP firmware
+
+[amdgpu/vega12_rlc.bin_base]
+desc: "Vega 12" RLC firmware
+
+[amdgpu/vega12_sdma.bin_base]
+desc: "Vega 12" SDMA firmware
+
+[amdgpu/vega12_sdma1.bin_base]
+desc: "Vega 12" SDMA1 firmware
+
+[amdgpu/vega12_smc.bin_base]
+desc: "Vega 12" SMC firmware
+
+[amdgpu/vega12_sos.bin_base]
+desc: "Vega 12" SOS firmware
+
+[amdgpu/vega12_uvd.bin_base]
+desc: "Vega 12" UVD firmware
+
+[amdgpu/vega12_vce.bin_base]
+desc: "Vega 12" VCE firmware
 
 [amdgpu/vegam_ce.bin_base]
 desc: "Vega M CE firmware"
