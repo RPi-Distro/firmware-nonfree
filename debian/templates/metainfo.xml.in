@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="firmware">
-  <id>org.debian.packages.firmware-@package@</id>
+  <id>org.debian.packages.firmware_@package-metainfo@</id>
   <name>Binary firmware for @desc@</name>
   <summary>Binary firmware for @longdesc-metainfo@.</summary>
   <metadata_license>CC0-1.0</metadata_license>
