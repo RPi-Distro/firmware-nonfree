@@ -334,6 +334,8 @@ You must agree to the terms of this license before it is installed."""
         makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
 
         vars['firmware-list'] = ''.join(firmware_meta_list)
+        # Summary must not contain line breaks
+        vars['longdesc-metainfo'] = re.sub(r'\s+', ' ', vars['longdesc'])
         package_meta_temp = self.templates["metainfo.xml"]
         # XXX Might need to escape some characters
         open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))

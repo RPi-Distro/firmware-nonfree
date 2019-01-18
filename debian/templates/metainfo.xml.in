@@ -2,9 +2,7 @@
 <component type="firmware">
   <id>org.debian.packages.firmware-@package@</id>
   <name>Binary firmware for @desc@</name>
-  <summary>
-Binary firmware for @longdesc@.
-  </summary>
+  <summary>Binary firmware for @longdesc-metainfo@.</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <provides>
 @firmware-list@
