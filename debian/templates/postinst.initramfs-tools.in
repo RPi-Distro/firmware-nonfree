@@ -4,9 +4,7 @@ set -e
 
 case "$1" in
 	configure)
-		if [ -x /usr/sbin/update-initramfs -a -e /etc/initramfs-tools/initramfs.conf ] ; then
-			update-initramfs -u
-		fi
+		dpkg-trigger --no-await update-initramfs
 	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)

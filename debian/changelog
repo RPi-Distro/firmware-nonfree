@@ -3,6 +3,7 @@ firmware-nonfree (20190114-2) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * debian/*.metainfo.xml: Remove line breaks from summary
   * debian/*.metainfo.xml: Replace hyphens with underscores in id
+  * Use dpkg-trigger directly to trigger update-initramfs
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
