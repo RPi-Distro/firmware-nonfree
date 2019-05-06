@@ -575,7 +575,7 @@ version: 1.07
 desc: Intel "Cannonlake" DMC firmware
 version: 1.07
 
-[i915/bxt_guc_32.0.3.bin_base
+[i915/bxt_guc_32.0.3.bin_base]
 desc: Intel "Broxton" GuC firmware
 version: 32.0.3
 
