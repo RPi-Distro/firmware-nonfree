@@ -56,6 +56,7 @@ firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
     - Intel "Geminilake" HuC firmware version 3.1.2893
     - Intel "Icelake" HuC firmware version 8.4.3238
   * Update to linux-support 4.19.0-5
+  * iwlwifi: Add Intel Wireless 22161 Bluetooth configurations and firmware
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
