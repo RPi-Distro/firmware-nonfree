@@ -60,6 +60,7 @@ firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
   * netronome: Add Agilio LX flower firmware
   * atheros: Add Qualcomm WCN3990 and Qualcomm Atheros QCA6174 Bluetooth
     firmware
+  * realtek: Add Realtek RTL8822CU Bluetooth firmware
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
