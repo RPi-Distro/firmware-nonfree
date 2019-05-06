@@ -8,6 +8,7 @@ files:
  liquidio/lio_410nv_nic.bin
 longdesc: Cavium crypto and Ethernet adapters supported by the nitrox and
  liquidio drivers
+support: initramfs-tools
 
 [cavium/cnn55xx_se.fw_base]
 desc: Cavium CNN55XX firmware

@@ -46,6 +46,7 @@ firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
   * debian/*.metainfo.xml: Replace hyphens with underscores in id
   * Use dpkg-trigger directly to trigger update-initramfs
   * amd-graphics: Trigger update-initramfs when installed (Closes: #928510)
+  * cavium, netronome: Trigger update-initramfs when installed
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
