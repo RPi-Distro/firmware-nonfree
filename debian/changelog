@@ -50,6 +50,11 @@ firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
   * atheros: Add Qualcomm Atheros QCA9377 rev 1.0 firmware version
     WLAN.TF.2.1-00021-QCARMSWP-1 (Closes: #903437, #919632, #927917)
   * amd-graphics: Add "Vega 20" firmware (Closes: #927286)
+  * misc-nonfree: Add new Intel GuC and HuC firmware:
+    - Intel "Broxton", "Geminilake", "Icelake", "Kabylake", and "Skylake" GuC
+      firmware version 32.0.3
+    - Intel "Geminilake" HuC firmware version 3.1.2893
+    - Intel "Icelake" HuC firmware version 8.4.3238
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
