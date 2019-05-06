@@ -1,6 +1,47 @@
-firmware-nonfree (20190114-2) UNRELEASED; urgency=medium
+firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
 
   [ Ben Hutchings ]
+  * New upstream version:
+    - Upstream version is commit 92e17d0dd2437140fab044ae62baf69b35d7d1fa
+      dated 2019-05-02
+    - amd-graphics:
+      + "Polaris 12" firmware: latest from 18.50 branch
+      + "Picasso", "Polaris 10", "Polaris 11", "Raven", "Raven 2", "Vega 10",
+        and "Vega 12" firmware: latest 19.10 firmware
+    - atheros:
+      + Qualcomm Atheros QCA6174 rev 3.0 board configuration
+      + Qualcomm Atheros QCA9888 rev 2.0 firmware version 10.4-3.9.0.2-00024
+      + Qualcomm Atheros QCA988X firmware version 10.2.4-1.0-00043
+      + Qualcomm Atheros QCA9984 rev 1.0 firmware version 10.4-3.9.0.2-00021
+    - iwlwifi: Intel Wireless 8265, 9460/9650 (var 16 rev 1), and 9160/9260
+      (var 16 rev 1) Bluetooth firmware version 21.0.0.4
+    - libertas:
+      + Avastar 88W8787 firmware version 14.68.35.p66
+      + Avastar 88W8797-SDIO firmware version 14.68.29.p59
+      + Avastar 88W8797-USB firmware version 14.68.29.p60
+      + Avastar 88W8801-SDIO firmware version 14.68.36.p204
+      + Avastar 88W8887 firmware version 15.68.7.p189 (WLAN) /
+        15.26.7.p189 (BT)
+      + Avastar 88W8897-PCIe firmware version 15.68.19.p21 (WLAN) /
+        15.28.19.p21 (BT)
+      + Avastar 88W8897-SDIO firmware version 15.68.19.17 (WLAN) /
+        15.26.19.17 (BT)
+      + Avastar 88W8997-PCIe firmware version 16.68.1.p195
+      + Avastar 88W8997-PCIe-UART firmware version 16.68.1.p179 (WLAN) /
+        16.26.1.p179 (BT)
+      * Avastar 88W8997-PCIe-USB firmware version 16.68.1.p195 (WLAN) /
+        16.26.1.p195 (BT)
+      + Avastar 88W8997-USB firmware version 16.68.1.p183 (WLAN) /
+        16.26.1.p183 (BT)
+    - misc-nonfree:
+      + Chelsio T4, T5, and T6 firmware version 1.23.3.0
+      + Intel QAT C3xxx, C62x, and DH895xCC UOF firmware
+    - netronome:
+      + Agilio CX and LX firmware version 2.1.16.1
+        * Fixes DMAR errors that occurred when using the firmware with DPDK
+          applications
+      + Agilio CX flower firmware version AOTC-2.10.A.23
+        * Improve tunnel setup time in low traffic rate scenarios
   * debian/*.metainfo.xml: Remove line breaks from summary
   * debian/*.metainfo.xml: Replace hyphens with underscores in id
   * Use dpkg-trigger directly to trigger update-initramfs

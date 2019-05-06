@@ -31,7 +31,7 @@ License: Binary redistribution (AMD permissive)
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Files: amdgpu/*.bin, radeon/*.bin
-Copyright: 2009-2016, Advanced Micro Devices, Inc.
+Copyright: 2009-2019, Advanced Micro Devices, Inc.
 License: Binary redistribution (AMD restrictive)
  All rights reserved.
  .

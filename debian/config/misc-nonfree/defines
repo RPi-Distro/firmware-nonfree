@@ -438,17 +438,17 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.22.9.0.bin_base]
+[cxgb4/t4fw-1.23.3.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.22.9.0
+version: 1.23.3.0
 
-[cxgb4/t5fw-1.22.9.0.bin_base]
+[cxgb4/t5fw-1.23.3.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.22.9.0
+version: 1.23.3.0
 
-[cxgb4/t6fw-1.22.9.0.bin_base]
+[cxgb4/t6fw-1.23.3.0.bin_base]
 desc: Chelsio T6 firmware
-version: 1.22.9.0
+version: 1.23.3.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware

@@ -181,7 +181,6 @@ files:
  amdgpu/raven2_pfp.bin
  amdgpu/raven2_rlc.bin
  amdgpu/raven2_sdma.bin
- amdgpu/raven2_sdma1.bin
  amdgpu/raven2_vcn.bin
  amdgpu/raven_asd.bin
  amdgpu/raven_ce.bin
@@ -1070,9 +1069,6 @@ desc: "Raven 2" RLC firmware
 [amdgpu/raven2_sdma.bin_base]
 desc: "Raven 2" SDMA firmware
 
-[amdgpu/raven2_sdma1.bin_base]
-desc: "Raven 2" SDMA1 firmware
-
 [amdgpu/raven2_vcn.bin_base]
 desc: "Raven 2" VCN firmware
 
@@ -1273,7 +1269,6 @@ desc: "Vega 10" SOS firmware
 
 [amdgpu/vega10_uvd.bin_base]
 desc: "Vega 10" UVD firmware
-version: 1.87
 
 [amdgpu/vega10_vce.bin_base]
 desc: "Vega 10" VCE firmware

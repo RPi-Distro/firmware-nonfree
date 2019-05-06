@@ -227,7 +227,7 @@ version: 2
 
 [ath10k/QCA9888/hw2.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA9888 rev 2.0 firmware
-version: 10.4-3.6-00140
+version: 10.4-3.9.0.2-00024
 
 [ath10k/QCA988X/hw2.0/board.bin_base]
 desc: Qualcomm Atheros QCA988X board configuration
@@ -239,7 +239,7 @@ version: 10.2.4.45
 
 [ath10k/QCA988X/hw2.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA988X firmware
-version: 10.2.4-1.0-00041
+version: 10.2.4-1.0-00043
 
 [ath10k/QCA9984/hw1.0/board-2.bin_base]
 desc: Qualcomm Atheros QCA9984 rev 1.0 board configuration
@@ -247,7 +247,7 @@ version: 2
 
 [ath10k/QCA9984/hw1.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA9984 rev 1.0 firmware
-version: 10.4-3.6.0.1-00003
+version: 10.4-3.9.0.2-00021
 
 [ath10k/QCA99X0/hw2.0/board.bin_base]
 desc: Qualcomm Atheros QCA99X0 board configuration
