@@ -1,4 +1,4 @@
-firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
+firmware-nonfree (20190502-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
   * New upstream version:
@@ -68,7 +68,7 @@ firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
     (Closes: #919452)
   * misc-nonfree: Add firmware for MediaTek MT7622/MT7668 bluetooth chips
 
- -- Ben Hutchings <ben@decadent.org.uk>  Fri, 18 Jan 2019 23:00:07 +0000
+ -- Ben Hutchings <ben@decadent.org.uk>  Mon, 06 May 2019 22:02:45 +0100
 
 firmware-nonfree (20190114-1) unstable; urgency=medium
 
