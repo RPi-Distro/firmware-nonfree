@@ -4,6 +4,7 @@ firmware-nonfree (20190114-2) UNRELEASED; urgency=medium
   * debian/*.metainfo.xml: Remove line breaks from summary
   * debian/*.metainfo.xml: Replace hyphens with underscores in id
   * Use dpkg-trigger directly to trigger update-initramfs
+  * amd-graphics: Trigger update-initramfs when installed (Closes: #928510)
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
