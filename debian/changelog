@@ -3,6 +3,7 @@ firmware-nonfree (20190114-2) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * Update to linux-support 4.19.0-5
   * amd-graphics: Trigger update-initramfs when installed (Closes: #928510)
+  * cavium, netronome: Trigger update-initramfs when installed
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
