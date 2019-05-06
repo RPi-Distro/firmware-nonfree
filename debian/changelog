@@ -55,6 +55,7 @@ firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
       firmware version 32.0.3
     - Intel "Geminilake" HuC firmware version 3.1.2893
     - Intel "Icelake" HuC firmware version 8.4.3238
+  * Update to linux-support 4.19.0-5
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
