@@ -1,5 +1,5 @@
 [base]
-desc: Atheros wireless cards
+desc: Qualcomm Atheros wireless cards
 files:
  ar3k/AthrBT_0x01020001.dfu
  ar3k/AthrBT_0x01020200.dfu
