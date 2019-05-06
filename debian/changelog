@@ -58,6 +58,8 @@ firmware-nonfree (20190502-1) UNRELEASED; urgency=medium
   * Update to linux-support 4.19.0-5
   * iwlwifi: Add Intel Wireless 22161 Bluetooth configurations and firmware
   * netronome: Add Agilio LX flower firmware
+  * atheros: Add Qualcomm WCN3990 and Qualcomm Atheros QCA6174 Bluetooth
+    firmware
 
   [ Raphaël Hertzog ]
   * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips

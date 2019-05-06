@@ -195,7 +195,8 @@ Copyright: 1988, 1990-1991, 1993, The Regents of the University of California
            2015-2016, The Android Open Source Project
 License: Binary redistribution (Qualcomm Atheros)
 
-Files: ath10k/QCA*/hw*/board.bin qca/nvm_*.bin qca/rampatch_*.bin
+Files: ath10k/QCA*/hw*/board.bin, qca/nvm_*.bin, qca/rampatch_*.bin,
+ qca/crbtfw*.tlv, qca/crnv*.bin
 Copyright: 2015, Qualcomm Atheros, Inc.
 License: Binary redistribution (Qualcomm Atheros)
 

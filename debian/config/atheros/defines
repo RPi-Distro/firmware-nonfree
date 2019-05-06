@@ -84,14 +84,18 @@ files:
  ath9k_htc/htc_9271-1.4.0.fw
  htc_7010.fw
  htc_9271.fw
+ qca/crbtfw21.tlv
+ qca/crnv21.bin
  qca/nvm_00130300.bin
  qca/nvm_00130302.bin
+ qca/nvm_00440302.bin
  qca/nvm_usb_00000200.bin
  qca/nvm_usb_00000201.bin
  qca/nvm_usb_00000300.bin
  qca/nvm_usb_00000302.bin
  qca/rampatch_00130300.bin
  qca/rampatch_00130302.bin
+ qca/rampatch_00440302.bin
  qca/rampatch_usb_00000200.bin
  qca/rampatch_usb_00000201.bin
  qca/rampatch_usb_00000300.bin
@@ -281,11 +285,20 @@ version: 1.3.1
 desc: Atheros AR9271 firmware
 version: 1.3.1
 
+[qca/crbtfw21.tlv_base]
+desc: Qualcomm WCN3990 Bluetooth firmware
+
+[qca/crnv21.bin_base]
+desc: Qualcomm WCN3990 Bluetooth NVM configuration
+
 [qca/nvm_00130300.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration
 
 [qca/nvm_00130302.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.2 UART BT NVM configuration
+
+[qca/nvm_00440302.bin_base]
+desc: Qualcomm Atheros QCA6174 BT NVM configuration
 
 [qca/nvm_usb_00000200.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT NVM configuration
@@ -304,6 +317,9 @@ desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT rampatch
 
 [qca/rampatch_00130302.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.2 UART BT rampatch
+
+[qca/rampatch_00440302.bin_base]
+desc: Qualcomm Atheros QCA6174 BT rampatch
 
 [qca/rampatch_usb_00000200.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT rampatch
