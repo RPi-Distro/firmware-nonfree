@@ -212,7 +212,7 @@ version: 2
 
 [ath10k/QCA9377/hw1.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA9377 rev 1.0 firmware
-version: WLAN.TF.1.0-00002-QCATFSWPZ-5
+version: WLAN.TF.1.0-00267-1
 
 [ath10k/QCA9377/hw1.0/firmware-6.bin_base]
 desc: Qualcomm Atheros QCA9377 rev 1.0 firmware
