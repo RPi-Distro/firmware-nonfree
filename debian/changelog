@@ -1,7 +1,10 @@
 firmware-nonfree (20190502-2) UNRELEASED; urgency=medium
 
+  [ Ben Hutchings ]
   * atheros: Revert change of QCA9377 rev 1.0 firmware in 20180518-1
     (Closes: #919632)
+  [ Romain Perier ]
+  * misc-nonfree: Add GV100 signed firmware (Closes: #928672)
 
  -- Ben Hutchings <ben@decadent.org.uk>  Tue, 07 May 2019 16:39:23 +0100
 
