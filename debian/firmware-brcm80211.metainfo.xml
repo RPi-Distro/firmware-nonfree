@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-brcm80211</id>
+  <name>Binary firmware for Broadcom/Cypress 802.11 wireless cards</name>
+  <summary>
+Binary firmware for wireless network cards supported by the brcmsmac or brcmfmac driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">brcm/bcm43xx-0.fw</firmware>
+    <firmware type="runtime">brcm/bcm43xx_hdr-0.fw</firmware>
+    <firmware type="runtime">brcm/brcmfmac43143.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43143-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43236b.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43241b0-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43241b4-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43241b5-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43242a.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4329-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4330-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4334-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43340-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4335-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43362-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4339-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43455-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43455-sdio.clm_blob</firmware>
+    <firmware type="runtime">brcm/brcmfmac43455-sdio.txt</firmware>
+    <firmware type="runtime">brcm/brcmfmac43430a0-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43430-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43430-sdio.txt</firmware>
+    <firmware type="runtime">brcm/brcmfmac4350-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4350c2-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4354-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4356-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4356-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43569.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43570-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4358-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43602-pcie.ap.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43602-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4366b-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4371-pcie.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4373.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac4373-sdio.bin</firmware>
+
+  </provides>
+</component>

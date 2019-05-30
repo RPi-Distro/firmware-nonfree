@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-libertas</id>
+  <name>Binary firmware for Marvell wireless cards</name>
+  <summary>
+Binary firmware for wireless network cards with Marvell 88W8xxx chips supported
+by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb,
+mwifiex_pcie, mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">lbtf_usb.bin</firmware>
+    <firmware type="runtime">libertas/cf8381.bin</firmware>
+    <firmware type="runtime">libertas/cf8381_helper.bin</firmware>
+    <firmware type="runtime">libertas/cf8385.bin</firmware>
+    <firmware type="runtime">libertas/cf8385_helper.bin</firmware>
+    <firmware type="runtime">libertas/gspi8686.bin</firmware>
+    <firmware type="runtime">libertas/gspi8686_hlp.bin</firmware>
+    <firmware type="runtime">libertas/gspi8686_v9.bin</firmware>
+    <firmware type="runtime">libertas/gspi8686_v9_helper.bin</firmware>
+    <firmware type="runtime">libertas/gspi8688.bin</firmware>
+    <firmware type="runtime">libertas/gspi8688_helper.bin</firmware>
+    <firmware type="runtime">libertas/sd8385.bin</firmware>
+    <firmware type="runtime">libertas/sd8385_helper.bin</firmware>
+    <firmware type="runtime">libertas/sd8686_v8.bin</firmware>
+    <firmware type="runtime">libertas/sd8686_v8_helper.bin</firmware>
+    <firmware type="runtime">libertas/sd8686_v9.bin</firmware>
+    <firmware type="runtime">libertas/sd8686_v9_helper.bin</firmware>
+    <firmware type="runtime">libertas/sd8688.bin</firmware>
+    <firmware type="runtime">libertas/sd8688_helper.bin</firmware>
+    <firmware type="runtime">libertas/usb8388_olpc.bin</firmware>
+    <firmware type="runtime">libertas/usb8388_v5.bin</firmware>
+    <firmware type="runtime">libertas/usb8388_v9.bin</firmware>
+    <firmware type="runtime">libertas/usb8682.bin</firmware>
+    <firmware type="runtime">libertas_cs.fw</firmware>
+    <firmware type="runtime">libertas_cs_helper.fw</firmware>
+    <firmware type="runtime">mrvl/pcie8897_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/pcie8997_wlan_v4.bin</firmware>
+    <firmware type="runtime">mrvl/pcieuart8997_combo_v4.bin</firmware>
+    <firmware type="runtime">mrvl/pcieusb8997_combo_v4.bin</firmware>
+    <firmware type="runtime">mrvl/sd8688.bin</firmware>
+    <firmware type="runtime">mrvl/sd8688_helper.bin</firmware>
+    <firmware type="runtime">mrvl/sd8787_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/sd8797_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/sd8801_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/sd8887_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/sd8897_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/usb8766_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/usb8797_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/usb8801_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/usb8897_uapsta.bin</firmware>
+    <firmware type="runtime">mrvl/usbusb8997_combo_v4.bin</firmware>
+    <firmware type="runtime">mwl8k/fmimage_8366.fw</firmware>
+    <firmware type="runtime">mwl8k/fmimage_8366_ap-2.fw</firmware>
+    <firmware type="runtime">mwl8k/fmimage_8366_ap-3.fw</firmware>
+    <firmware type="runtime">mwl8k/fmimage_8687.fw</firmware>
+    <firmware type="runtime">mwl8k/fmimage_8764_ap-1.fw</firmware>
+    <firmware type="runtime">mwl8k/helper_8366.fw</firmware>
+    <firmware type="runtime">mwl8k/helper_8687.fw</firmware>
+    <firmware type="runtime">sd8385.bin</firmware>
+    <firmware type="runtime">sd8385_helper.bin</firmware>
+    <firmware type="runtime">sd8686.bin</firmware>
+    <firmware type="runtime">sd8686_helper.bin</firmware>
+    <firmware type="runtime">sd8688.bin</firmware>
+    <firmware type="runtime">sd8688_helper.bin</firmware>
+    <firmware type="runtime">usb8388.bin</firmware>
+
+  </provides>
+</component>

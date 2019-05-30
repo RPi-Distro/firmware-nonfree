@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-cavium</id>
+  <name>Binary firmware for Cavium Ethernet adapters</name>
+  <summary>
+Binary firmware for Cavium crypto and Ethernet adapters supported by the nitrox and
+liquidio drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">cavium/cnn55xx_se.fw</firmware>
+    <firmware type="runtime">liquidio/lio_210nv_nic.bin</firmware>
+    <firmware type="runtime">liquidio/lio_210sv_nic.bin</firmware>
+    <firmware type="runtime">liquidio/lio_23xx_nic.bin</firmware>
+    <firmware type="runtime">liquidio/lio_410nv_nic.bin</firmware>
+
+  </provides>
+</component>

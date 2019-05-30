@@ -12,7 +12,7 @@ express written agreement, this file provides no license to any patents,
 trademarks, copyrights, or other intellectual property of Qualcomm Incorporated
 or any of its subsidiaries. 
 
-Copyright (c) 2015 Qualcomm Atheros, Inc. All rights reserved.
+Copyright (c) 2017 Qualcomm Atheros, Inc. All rights reserved.
 
 Qualcomm is a trademark of Qualcomm Incorporated, registered in the
 United States and other countries. All Qualcomm Incorporated trademarks

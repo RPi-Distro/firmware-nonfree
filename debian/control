@@ -1,0 +1,2069 @@
+Source: firmware-nonfree
+Section: non-free/kernel
+Priority: optional
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Uploaders: Bastian Blank <waldi@debian.org>, Steve Langasek <vorlon@debian.org>, maximilian attems <maks@debian.org>, Ben Hutchings <ben@decadent.org.uk>
+Standards-Version: 4.0.1
+Build-Depends: debhelper (>= 9)
+Vcs-Browser: https://salsa.debian.org/kernel-team/firmware-nonfree
+Vcs-Git: https://salsa.debian.org/kernel-team/firmware-nonfree.git
+XS-Autobuild: yes
+
+Package: firmware-linux
+Architecture: all
+Section: non-free/metapackages
+Depends: firmware-linux-free, firmware-linux-nonfree (= ${binary:Version}), ${misc:Depends}
+Recommends: intel-microcode, amd64-microcode
+Description: Binary firmware for various drivers in the Linux kernel (metapackage)
+ This package depends on both free and non-free firmware which may be used
+ with drivers in the Linux kernel.
+
+Package: firmware-linux-nonfree
+Architecture: all
+Section: non-free/metapackages
+Depends: firmware-misc-nonfree (= ${binary:Version}), firmware-amd-graphics (= ${binary:Version}), ${misc:Depends}
+Recommends: intel-microcode, amd64-microcode
+Description: Binary firmware for various drivers in the Linux kernel (meta-package)
+ This package depends on non-free firmware which may be used with drivers
+ in the Linux kernel.
+
+Package: firmware-adi
+Architecture: all
+Section: non-free/oldlibs
+Depends: firmware-misc-nonfree, ${misc:Depends}
+Description: Binary firmware for Analog Devices Inc. DSL modem chips (dummmy package)
+ This is a dummy transitional package.  It can be safely removed.
+Multi-Arch: foreign
+
+Package: firmware-ralink
+Architecture: all
+Section: non-free/oldlibs
+Depends: firmware-misc-nonfree, ${misc:Depends}
+Description: Binary firmware for Ralink wireless cards (dummmy package)
+ This is a dummy transitional package.  It can be safely removed.
+Multi-Arch: foreign
+
+Package: firmware-amd-graphics
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: firmware-linux-nonfree (<< 20151018-1~)
+Breaks: firmware-linux-nonfree (<< 20151018-1~)
+Conflicts: 
+Description: Binary firmware for AMD/ATI graphics chips
+ This package contains the binary firmware for AMD/ATI graphics chips
+ supported by the radeon, amdgpu and r128 drivers.
+ .
+ Contents:
+  * "Banks" K-2 SMC microcode (amdgpu/banks_k_2_smc.bin)
+  * Radeon HD 7790/8770/8950 CE microcode (amdgpu/bonaire_ce.bin)
+  * Radeon HD 7790/8770/8950 K SMC microcode (amdgpu/bonaire_k_smc.bin)
+  * Radeon HD 7790/8770/8950 MC microcode (amdgpu/bonaire_mc.bin)
+  * Radeon HD 7790/8770/8950 ME microcode (amdgpu/bonaire_me.bin)
+  * Radeon HD 7790/8770/8950 MEC microcode (amdgpu/bonaire_mec.bin)
+  * Radeon HD 7790/8770/8950 PFP microcode (amdgpu/bonaire_pfp.bin)
+  * Radeon HD 7790/8770/8950 RLC microcode (amdgpu/bonaire_rlc.bin)
+  * Radeon HD 7790/8770/8950 SDMA microcode (amdgpu/bonaire_sdma.bin)
+  * Radeon HD 7790/8770/8950 SDMA1 microcode (amdgpu/bonaire_sdma1.bin)
+  * Radeon HD 7790/8770/8950 series SMC microcode
+    (amdgpu/bonaire_smc.bin)
+  * Radeon HD 7790/8770/8950 UVD microcode (amdgpu/bonaire_uvd.bin)
+  * Radeon HD 7790/8770/8950 VCE microcode (amdgpu/bonaire_vce.bin)
+  * "Carrizo" CE firmware (amdgpu/carrizo_ce.bin)
+  * "Carrizo" ME firmware (amdgpu/carrizo_me.bin)
+  * "Carrizo" MEC firmware (amdgpu/carrizo_mec.bin)
+  * "Carrizo" MEC2 firmware (amdgpu/carrizo_mec2.bin)
+  * "Carrizo" PFP firmware (amdgpu/carrizo_pfp.bin)
+  * "Carrizo" RLC firmware (amdgpu/carrizo_rlc.bin)
+  * "Carrizo" SDMA firmware (amdgpu/carrizo_sdma.bin)
+  * "Carrizo" SDMA1 firmware (amdgpu/carrizo_sdma1.bin)
+  * "Carrizo" UVD firmware, version 1.87 (amdgpu/carrizo_uvd.bin)
+  * "Carrizo" VCE firmware (amdgpu/carrizo_vce.bin)
+  * "Fiji" CE firmware (amdgpu/fiji_ce.bin)
+  * "Fiji" MC firmware (amdgpu/fiji_mc.bin)
+  * "Fiji" ME firmware (amdgpu/fiji_me.bin)
+  * "Fiji" MEC firmware (amdgpu/fiji_mec.bin)
+  * "Fiji" MEC2 firmware (amdgpu/fiji_mec2.bin)
+  * "Fiji" PFP firmware (amdgpu/fiji_pfp.bin)
+  * "Fiji" RLC firmware (amdgpu/fiji_rlc.bin)
+  * "Fiji" SDMA firmware (amdgpu/fiji_sdma.bin)
+  * "Fiji" SDMA1 firmware (amdgpu/fiji_sdma1.bin)
+  * "Fiji" SMC firmware (amdgpu/fiji_smc.bin)
+  * "Fiji" UVD firmware, version 1.87.12 (amdgpu/fiji_uvd.bin)
+  * "Fiji" VCE firmware (amdgpu/fiji_vce.bin)
+  * Radeon HD 8500M series and R5 M200 CE microcode
+    (amdgpu/hainan_ce.bin)
+  * Radeon HD 8500M series and R5 M200 K SMC microcode
+    (amdgpu/hainan_k_smc.bin)
+  * Radeon HD 8500M series and R5 M200 MC microcode
+    (amdgpu/hainan_mc.bin)
+  * Radeon HD 8500M series and R5 M200 ME microcode
+    (amdgpu/hainan_me.bin)
+  * Radeon HD 8500M series and R5 M200 PFP microcode
+    (amdgpu/hainan_pfp.bin)
+  * Radeon HD 8500M series and R5 M200 RLC microcode
+    (amdgpu/hainan_rlc.bin)
+  * Radeon HD 8500M series and R5 M200 SMC microcode
+    (amdgpu/hainan_smc.bin)
+  * Radeon R9 290 series CE microcode (amdgpu/hawaii_ce.bin)
+  * Radeon R9 290 series K SMC microcode (amdgpu/hawaii_k_smc.bin)
+  * Radeon R9 290 series MC microcode (amdgpu/hawaii_mc.bin)
+  * Radeon R9 290 series ME microcode (amdgpu/hawaii_me.bin)
+  * Radeon R9 290 series MEC microcode (amdgpu/hawaii_mec.bin)
+  * Radeon R9 290 series PFP microcode (amdgpu/hawaii_pfp.bin)
+  * Radeon R9 290 series RLC microcode (amdgpu/hawaii_rlc.bin)
+  * Radeon R9 290 series SDMA microcode (amdgpu/hawaii_sdma.bin)
+  * Radeon R9 290 series SDMA microcode (amdgpu/hawaii_sdma1.bin)
+  * Radeon R9 290 series SMC microcode (amdgpu/hawaii_smc.bin)
+  * Radeon R9 290 series UVD microcode (amdgpu/hawaii_uvd.bin)
+  * Radeon R9 290 series VCE microcode (amdgpu/hawaii_vce.bin)
+  * Radeon HD 8100/8200/8300/8400 series CE microcode
+    (amdgpu/kabini_ce.bin)
+  * Radeon HD 8100/8200/8300/8400 series ME microcode
+    (amdgpu/kabini_me.bin)
+  * Radeon HD 8100/8200/8300/8400 series MEC microcode
+    (amdgpu/kabini_mec.bin)
+  * Radeon HD 8100/8200/8300/8400 series PFP microcode
+    (amdgpu/kabini_pfp.bin)
+  * Radeon HD 8100/8200/8300/8400 series RLC microcode
+    (amdgpu/kabini_rlc.bin)
+  * Radeon HD 8100/8200/8300/8400 series SDMA microcode
+    (amdgpu/kabini_sdma.bin)
+  * Radeon HD 8100/8200/8300/8400 series SDMA1 microcode
+    (amdgpu/kabini_sdma1.bin)
+  * Radeon HD 8100/8200/8300/8400 series UVD microcode
+    (amdgpu/kabini_uvd.bin)
+  * Radeon HD 8100/8200/8300/8400 series VCE microcode
+    (amdgpu/kabini_vce.bin)
+  * Radeon R5/R7 IGP 200 series CE microcode (amdgpu/kaveri_ce.bin)
+  * Radeon R5/R7 IGP 200 series ME microcode (amdgpu/kaveri_me.bin)
+  * Radeon R5/R7 IGP 200 series MEC microcode (amdgpu/kaveri_mec.bin)
+  * Radeon R5/R7 IGP 200 series MEC microcode (amdgpu/kaveri_mec2.bin)
+  * Radeon R5/R7 IGP 200 series PFP microcode (amdgpu/kaveri_pfp.bin)
+  * Radeon R5/R7 IGP 200 series RLC microcode (amdgpu/kaveri_rlc.bin)
+  * Radeon R5/R7 IGP 200 series SDMA microcode (amdgpu/kaveri_sdma.bin)
+  * Radeon R5/R7 IGP 200 series SDMA1 microcode
+    (amdgpu/kaveri_sdma1.bin)
+  * Radeon R5/R7 IGP 200 series UVD microcode (amdgpu/kaveri_uvd.bin)
+  * Radeon R5/R7 IGP 200 series VCE microcode (amdgpu/kaveri_vce.bin)
+  * Radeon "Mullins"/"Beema" IGP CE microcode (amdgpu/mullins_ce.bin)
+  * Radeon "Mullins"/"Beema" IGP ME microcode (amdgpu/mullins_me.bin)
+  * Radeon "Mullins"/"Beema" IGP MEC microcode (amdgpu/mullins_mec.bin)
+  * Radeon "Mullins"/"Beema" IGP PFP microcode (amdgpu/mullins_pfp.bin)
+  * Radeon "Mullins"/"Beema" IGP RLC microcode (amdgpu/mullins_rlc.bin)
+  * Radeon "Mullins"/"Beema" IGP SDMA microcode
+    (amdgpu/mullins_sdma.bin)
+  * Radeon "Mullins"/"Beema" IGP SDMA1 microcode
+    (amdgpu/mullins_sdma1.bin)
+  * Radeon "Mullins"/"Beema" IGP UVD microcode (amdgpu/mullins_uvd.bin)
+  * Radeon "Mullins"/"Beema" IGP VCE microcode (amdgpu/mullins_vce.bin)
+  * Radeon HD 8500/8600/8700 series CE microcode (amdgpu/oland_ce.bin)
+  * Radeon HD 8500/8600/8700 series K SMC microcode
+    (amdgpu/oland_k_smc.bin)
+  * Radeon HD 8500/8600/8700 series MC microcode (amdgpu/oland_mc.bin)
+  * Radeon HD 8500/8600/8700 series ME microcode (amdgpu/oland_me.bin)
+  * Radeon HD 8500/8600/8700 series PFP microcode (amdgpu/oland_pfp.bin)
+  * Radeon HD 8500/8600/8700 series RLC microcode (amdgpu/oland_rlc.bin)
+  * Radeon HD 8500/8600/8700 series SMC microcode (amdgpu/oland_smc.bin)
+  * "Picasso" ASD firmware (amdgpu/picasso_asd.bin)
+  * "Picasso" CE firmware (amdgpu/picasso_ce.bin)
+  * "Picasso" GPU info (amdgpu/picasso_gpu_info.bin)
+  * "Picasso" ME firmware (amdgpu/picasso_me.bin)
+  * "Picasso" MEC firmware (amdgpu/picasso_mec.bin)
+  * "Picasso" MEC2 firmware (amdgpu/picasso_mec2.bin)
+  * "Picasso" PFP firmware (amdgpu/picasso_pfp.bin)
+  * "Picasso" RLC firmware (amdgpu/picasso_rlc.bin)
+  * "Picasso" RLC AM4 firmware (amdgpu/picasso_rlc_am4.bin)
+  * "Picasso" SDMA firmware (amdgpu/picasso_sdma.bin)
+  * "Picasso" VCN firmware (amdgpu/picasso_vcn.bin)
+  * Radeon HD 7800 series CE microcode (amdgpu/pitcairn_ce.bin)
+  * Radeon HD 7800 series K SMC microcode (amdgpu/pitcairn_k_smc.bin)
+  * Radeon HD 7800 series MC microcode (amdgpu/pitcairn_mc.bin)
+  * Radeon HD 7800 series ME microcode (amdgpu/pitcairn_me.bin)
+  * Radeon HD 7800 series PFP microcode (amdgpu/pitcairn_pfp.bin)
+  * Radeon HD 7800 series RLC microcode (amdgpu/pitcairn_rlc.bin)
+  * Radeon HD 7800 series SMC microcode (amdgpu/pitcairn_smc.bin)
+  * "Polaris 10" old CE firmware (amdgpu/polaris10_ce.bin)
+  * "Polaris 10" new CE firmware (amdgpu/polaris10_ce_2.bin)
+  * "Polaris 10" K2 SMC firmware (amdgpu/polaris10_k2_smc.bin)
+  * "Polaris 10" K MC firmware (amdgpu/polaris10_k_mc.bin)
+  * "Polaris 10" K SMC firmware (amdgpu/polaris10_k_smc.bin)
+  * "Polaris 10" MC firmware (amdgpu/polaris10_mc.bin)
+  * "Polaris 10" old ME firmware (amdgpu/polaris10_me.bin)
+  * "Polaris 10" old MEC firmware (amdgpu/polaris10_mec.bin)
+  * "Polaris 10" old MEC2 firmware (amdgpu/polaris10_mec2.bin)
+  * "Polaris 10" new MEC2 firmware (amdgpu/polaris10_mec2_2.bin)
+  * "Polaris 10" new MEC firmware (amdgpu/polaris10_mec_2.bin)
+  * "Polaris 10" new ME firmware (amdgpu/polaris10_me_2.bin)
+  * "Polaris 10" old PFP firmware (amdgpu/polaris10_pfp.bin)
+  * "Polaris 10" new PFP firmware (amdgpu/polaris10_pfp_2.bin)
+  * "Polaris 10" RLC firmware (amdgpu/polaris10_rlc.bin)
+  * "Polaris 10" SDMA firmware (amdgpu/polaris10_sdma.bin)
+  * "Polaris 10" SDMA1 firmware (amdgpu/polaris10_sdma1.bin)
+  * "Polaris 10" SMC firmware (amdgpu/polaris10_smc.bin)
+  * "Polaris 10" SMC-SK firmware (amdgpu/polaris10_smc_sk.bin)
+  * "Polaris 10" UVD firmware, version 1.130 (amdgpu/polaris10_uvd.bin)
+  * "Polaris 10" VCE firmware, version 53.26 (amdgpu/polaris10_vce.bin)
+  * "Polaris 11" old CE firmware (amdgpu/polaris11_ce.bin)
+  * "Polaris 11" new CE firmware (amdgpu/polaris11_ce_2.bin)
+  * "Polaris 11" K2 SMC firmware (amdgpu/polaris11_k2_smc.bin)
+  * "Polaris 11" K MC firmware (amdgpu/polaris11_k_mc.bin)
+  * "Polaris 11" K SMC firmware (amdgpu/polaris11_k_smc.bin)
+  * "Polaris 11" MC firmware (amdgpu/polaris11_mc.bin)
+  * "Polaris 11" old ME firmware (amdgpu/polaris11_me.bin)
+  * "Polaris 11" old MEC firmware (amdgpu/polaris11_mec.bin)
+  * "Polaris 11" old MEC2 firmware (amdgpu/polaris11_mec2.bin)
+  * "Polaris 11" new MEC2 firmware (amdgpu/polaris11_mec2_2.bin)
+  * "Polaris 11" new MEC firmware (amdgpu/polaris11_mec_2.bin)
+  * "Polaris 11" new ME firmware (amdgpu/polaris11_me_2.bin)
+  * "Polaris 11" old PFP firmware (amdgpu/polaris11_pfp.bin)
+  * "Polaris 11" new PFP firmware (amdgpu/polaris11_pfp_2.bin)
+  * "Polaris 11" RLC firmware (amdgpu/polaris11_rlc.bin)
+  * "Polaris 11" SDMA firmware (amdgpu/polaris11_sdma.bin)
+  * "Polaris 11" SDMA1 firmware (amdgpu/polaris11_sdma1.bin)
+  * "Polaris 11" SMC firmware (amdgpu/polaris11_smc.bin)
+  * "Polaris 11" SMC-SK firmware (amdgpu/polaris11_smc_sk.bin)
+  * "Polaris 11" UVD firmware, version 1.130 (amdgpu/polaris11_uvd.bin)
+  * "Polaris 11" VCE firmware, version 53.26 (amdgpu/polaris11_vce.bin)
+  * "Polaris 12" old CE firmware (amdgpu/polaris12_ce.bin)
+  * "Polaris 12" new CE firmware (amdgpu/polaris12_ce_2.bin)
+  * "Polaris 12" K MC firmware (amdgpu/polaris12_k_mc.bin)
+  * "Polaris 12" K SMC firmware (amdgpu/polaris12_k_smc.bin)
+  * "Polaris 12" MC firmware (amdgpu/polaris12_mc.bin)
+  * "Polaris 12" old ME firmware (amdgpu/polaris12_me.bin)
+  * "Polaris 12" old MEC firmware (amdgpu/polaris12_mec.bin)
+  * "Polaris 12" old MEC2 firmware (amdgpu/polaris12_mec2.bin)
+  * "Polaris 12" new MEC2 firmware (amdgpu/polaris12_mec2_2.bin)
+  * "Polaris 12" new MEC firmware (amdgpu/polaris12_mec_2.bin)
+  * "Polaris 12" new ME firmware (amdgpu/polaris12_me_2.bin)
+  * "Polaris 12" old PFP firmware (amdgpu/polaris12_pfp.bin)
+  * "Polaris 12" new PFP firmware (amdgpu/polaris12_pfp_2.bin)
+  * "Polaris 12" RLC firmware (amdgpu/polaris12_rlc.bin)
+  * "Polaris 12" SDMA firmware (amdgpu/polaris12_sdma.bin)
+  * "Polaris 12" SDMA1 firmware (amdgpu/polaris12_sdma1.bin)
+  * "Polaris 12" SMC firmware (amdgpu/polaris12_smc.bin)
+  * "Polaris 12" UVD firmware, version 1.130 (amdgpu/polaris12_uvd.bin)
+  * "Polaris 12" VCE firmware, version 53.26 (amdgpu/polaris12_vce.bin)
+  * "Raven 2" ASD firmware (amdgpu/raven2_asd.bin)
+  * "Raven 2" CE firmware (amdgpu/raven2_ce.bin)
+  * "Raven 2" GPU info (amdgpu/raven2_gpu_info.bin)
+  * "Raven 2" ME firmware (amdgpu/raven2_me.bin)
+  * "Raven 2" MEC firmware (amdgpu/raven2_mec.bin)
+  * "Raven 2" MEC2 firmware (amdgpu/raven2_mec2.bin)
+  * "Raven 2" PFP firmware (amdgpu/raven2_pfp.bin)
+  * "Raven 2" RLC firmware (amdgpu/raven2_rlc.bin)
+  * "Raven 2" SDMA firmware (amdgpu/raven2_sdma.bin)
+  * "Raven 2" SDMA1 firmware (amdgpu/raven2_sdma1.bin)
+  * "Raven 2" VCN firmware (amdgpu/raven2_vcn.bin)
+  * "Raven" ASD firmware (amdgpu/raven_asd.bin)
+  * "Raven" CE firmware (amdgpu/raven_ce.bin)
+  * "Raven" DMCU firmware (amdgpu/raven_dmcu.bin)
+  * "Raven" GPU info (amdgpu/raven_gpu_info.bin)
+  * "Raven" ME firmware (amdgpu/raven_me.bin)
+  * "Raven" MEC firmware (amdgpu/raven_mec.bin)
+  * "Raven" MEC2 firmware (amdgpu/raven_mec2.bin)
+  * "Raven" PFP firmware (amdgpu/raven_pfp.bin)
+  * "Raven" RLC firmware (amdgpu/raven_rlc.bin)
+  * "Raven" SDMA firmware (amdgpu/raven_sdma.bin)
+  * "Raven" VCN firmware (amdgpu/raven_vcn.bin)
+  * Radeon "SI58" MC microcode (amdgpu/si58_mc.bin)
+  * "Stoney" CE firmware (amdgpu/stoney_ce.bin)
+  * "Stoney" ME firmware (amdgpu/stoney_me.bin)
+  * "Stoney" MEC firmware (amdgpu/stoney_mec.bin)
+  * "Stoney" PFP firmware (amdgpu/stoney_pfp.bin)
+  * "Stoney" RLC firmware (amdgpu/stoney_rlc.bin)
+  * "Stoney" SDMA firmware (amdgpu/stoney_sdma.bin)
+  * "Stoney" UVD firmware, version 1.38.15 (amdgpu/stoney_uvd.bin)
+  * "Stoney" VCE firmware (amdgpu/stoney_vce.bin)
+  * Radeon HD 7900 series CE microcode (amdgpu/tahiti_ce.bin)
+  * Radeon HD 7900 series K SMC microcode (amdgpu/tahiti_k_smc.bin)
+  * Radeon HD 7900 series MC microcode (amdgpu/tahiti_mc.bin)
+  * Radeon HD 7900 series ME microcode (amdgpu/tahiti_me.bin)
+  * Radeon HD 7900 series PFP microcode (amdgpu/tahiti_pfp.bin)
+  * Radeon HD 7900 series RLC microcode (amdgpu/tahiti_rlc.bin)
+  * Radeon HD 7900 series SMC microcode (amdgpu/tahiti_smc.bin)
+  * "Tonga" CE firmware (amdgpu/tonga_ce.bin)
+  * "Tonga" K SMC firmware (amdgpu/tonga_k_smc.bin)
+  * "Tonga" MC firmware (amdgpu/tonga_mc.bin)
+  * "Tonga" ME firmware (amdgpu/tonga_me.bin)
+  * "Tonga" MEC firmware (amdgpu/tonga_mec.bin)
+  * "Tonga" MEC2 firmware (amdgpu/tonga_mec2.bin)
+  * "Tonga" PFP firmware (amdgpu/tonga_pfp.bin)
+  * "Tonga" RLC firmware (amdgpu/tonga_rlc.bin)
+  * "Tonga" SDMA firmware (amdgpu/tonga_sdma.bin)
+  * "Tonga" SDMA1 firmware (amdgpu/tonga_sdma1.bin)
+  * "Tonga" SMC firmware (amdgpu/tonga_smc.bin)
+  * "Tonga" UVD firmware, version 1.65.10 (amdgpu/tonga_uvd.bin)
+  * "Tonga" VCE firmware, version 52.8.3 (amdgpu/tonga_vce.bin)
+  * "Topaz" CE firmware (amdgpu/topaz_ce.bin)
+  * "Topaz" K SMC firmware (amdgpu/topaz_k_smc.bin)
+  * "Topaz" MC firmware (amdgpu/topaz_mc.bin)
+  * "Topaz" ME firmware (amdgpu/topaz_me.bin)
+  * "Topaz" MEC firmware (amdgpu/topaz_mec.bin)
+  * "Topaz" MEC2 firmware (amdgpu/topaz_mec2.bin)
+  * "Topaz" PFP firmware (amdgpu/topaz_pfp.bin)
+  * "Topaz" RLC firmware (amdgpu/topaz_rlc.bin)
+  * "Topaz" SDMA firmware (amdgpu/topaz_sdma.bin)
+  * "Topaz" SDMA1 firmware (amdgpu/topaz_sdma1.bin)
+  * "Topaz" SMC firmware (amdgpu/topaz_smc.bin)
+  * "Vega 10" ACG-SMC firmware (amdgpu/vega10_acg_smc.bin)
+  * "Vega 10" ASD firmware (amdgpu/vega10_asd.bin)
+  * "Vega 10" CE firmware (amdgpu/vega10_ce.bin)
+  * "Vega 10" GPU info (amdgpu/vega10_gpu_info.bin)
+  * "Vega 10" ME firmware (amdgpu/vega10_me.bin)
+  * "Vega 10" MEC firmware (amdgpu/vega10_mec.bin)
+  * "Vega 10" MEC2 firmware (amdgpu/vega10_mec2.bin)
+  * "Vega 10" PFP firmware (amdgpu/vega10_pfp.bin)
+  * "Vega 10" RLC firmware (amdgpu/vega10_rlc.bin)
+  * "Vega 10" SDMA firmware (amdgpu/vega10_sdma.bin)
+  * "Vega 10" SDMA1 firmware (amdgpu/vega10_sdma1.bin)
+  * "Vega 10" SMC firmware (amdgpu/vega10_smc.bin)
+  * "Vega 10" SOS firmware (amdgpu/vega10_sos.bin)
+  * "Vega 10" UVD firmware, version 1.87 (amdgpu/vega10_uvd.bin)
+  * "Vega 10" VCE firmware (amdgpu/vega10_vce.bin)
+  * "Vega 12" ASD firmware (amdgpu/vega12_asd.bin)
+  * "Vega 12" CE firmware (amdgpu/vega12_ce.bin)
+  * "Vega 12" GPU info (amdgpu/vega12_gpu_info.bin)
+  * "Vega 12" ME firmware (amdgpu/vega12_me.bin)
+  * "Vega 12" MEC firmware (amdgpu/vega12_mec.bin)
+  * "Vega 12" MEC2 firmware (amdgpu/vega12_mec2.bin)
+  * "Vega 12" PFP firmware (amdgpu/vega12_pfp.bin)
+  * "Vega 12" RLC firmware (amdgpu/vega12_rlc.bin)
+  * "Vega 12" SDMA firmware (amdgpu/vega12_sdma.bin)
+  * "Vega 12" SDMA1 firmware (amdgpu/vega12_sdma1.bin)
+  * "Vega 12" SMC firmware (amdgpu/vega12_smc.bin)
+  * "Vega 12" SOS firmware (amdgpu/vega12_sos.bin)
+  * "Vega 12" UVD firmware (amdgpu/vega12_uvd.bin)
+  * "Vega 12" VCE firmware (amdgpu/vega12_vce.bin)
+  * "Vega M" CE firmware (amdgpu/vegam_ce.bin)
+  * "Vega M" ME firmware (amdgpu/vegam_me.bin)
+  * "Vega M" MEC firmware (amdgpu/vegam_mec.bin)
+  * "Vega M" MEC2 firmware (amdgpu/vegam_mec2.bin)
+  * "Vega M" PFP firmware (amdgpu/vegam_pfp.bin)
+  * "Vega M" RLC firmware (amdgpu/vegam_rlc.bin)
+  * "Vega M" SDMA firmware (amdgpu/vegam_sdma.bin)
+  * "Vega M" SDMA1 firmware (amdgpu/vegam_sdma1.bin)
+  * "Vega M" SMC firmware (amdgpu/vegam_smc.bin)
+  * "Vega M" UVD firmware (amdgpu/vegam_uvd.bin)
+  * "Vega M" VCE firmware (amdgpu/vegam_vce.bin)
+  * Radeon HD 7700 series CE microcode (amdgpu/verde_ce.bin)
+  * Radeon HD 7700 series K SMC microcode (amdgpu/verde_k_smc.bin)
+  * Radeon HD 7700 series MC microcode (amdgpu/verde_mc.bin)
+  * Radeon HD 7700 series ME microcode (amdgpu/verde_me.bin)
+  * Radeon HD 7700 series PFP microcode (amdgpu/verde_pfp.bin)
+  * Radeon HD 7700 series RLC microcode (amdgpu/verde_rlc.bin)
+  * Radeon HD 7700 series SMC microcode (amdgpu/verde_smc.bin)
+  * Rage 128 CCE microcode (r128/r128_cce.bin)
+  * Radeon HD IGP 7500/7600 series ME microcode (radeon/ARUBA_me.bin)
+  * Radeon HD IGP 7500/7600 series PFP microcode (radeon/ARUBA_pfp.bin)
+  * Radeon HD IGP 7500/7600 series RLC microcode (radeon/ARUBA_rlc.bin)
+  * "Banks" K-2 SMC microcode (radeon/banks_k_2_smc.bin)
+  * Radeon HD 6800 series MC microcode (radeon/BARTS_mc.bin)
+  * Radeon HD 6800 series ME microcode (radeon/BARTS_me.bin)
+  * Radeon HD 6800 series PFP microcode (radeon/BARTS_pfp.bin)
+  * Radeon HD 6800 series SMC microcode (radeon/BARTS_smc.bin)
+  * Radeon HD 7790/8770/8950 CE microcode (radeon/BONAIRE_ce.bin)
+  * Radeon HD 7790/8770/8950 CE microcode (radeon/bonaire_ce.bin)
+  * Radeon HD 7790/8770/8950 K SMC microcode (radeon/bonaire_k_smc.bin)
+  * Radeon HD 7790/8770/8950 MC microcode, version 1
+    (radeon/BONAIRE_mc.bin)
+  * Radeon HD 7790/8770/8950 MC microcode (radeon/bonaire_mc.bin)
+  * Radeon HD 7790/8770/8950 MC microcode, version 2
+    (radeon/BONAIRE_mc2.bin)
+  * Radeon HD 7790/8770/8950 ME microcode (radeon/BONAIRE_me.bin)
+  * Radeon HD 7790/8770/8950 ME microcode (radeon/bonaire_me.bin)
+  * Radeon HD 7790/8770/8950 MEC microcode (radeon/BONAIRE_mec.bin)
+  * Radeon HD 7790/8770/8950 MEC microcode (radeon/bonaire_mec.bin)
+  * Radeon HD 7790/8770/8950 PFP microcode (radeon/BONAIRE_pfp.bin)
+  * Radeon HD 7790/8770/8950 PFP microcode (radeon/bonaire_pfp.bin)
+  * Radeon HD 7790/8770/8950 RLC microcode (radeon/BONAIRE_rlc.bin)
+  * Radeon HD 7790/8770/8950 RLC microcode (radeon/bonaire_rlc.bin)
+  * Radeon HD 7790/8770/8950 SDMA microcode (radeon/BONAIRE_sdma.bin)
+  * Radeon HD 7790/8770/8950 SDMA microcode (radeon/bonaire_sdma.bin)
+  * Radeon HD 7790/8770/8950 SDMA1 microcode (radeon/bonaire_sdma1.bin)
+  * Radeon HD 7790/8770/8950 series SMC microcode
+    (radeon/BONAIRE_smc.bin)
+  * Radeon HD 7790/8770/8950 series SMC microcode
+    (radeon/bonaire_smc.bin)
+  * Radeon HD 7790/8770/8950, 8100/8200/8300/8400 series, and
+    "Mullins"/"Beema" IGP UVD microcode (radeon/BONAIRE_uvd.bin)
+  * Radeon HD 7790/8770/8950 UVD microcode (radeon/bonaire_uvd.bin)
+  * Radeon HD VCE microcode (radeon/BONAIRE_vce.bin)
+  * Radeon HD 7790/8770/8950 VCE microcode (radeon/bonaire_vce.bin)
+  * Radeon HD 6300/6500/6800 series RLC microcode (radeon/BTC_rlc.bin)
+  * Radeon HD 6300 series MC microcode (radeon/CAICOS_mc.bin)
+  * Radeon HD 6300 series ME microcode (radeon/CAICOS_me.bin)
+  * Radeon HD 6300 series PFP microcode (radeon/CAICOS_pfp.bin)
+  * Radeon HD 6300 series SMC microcode (radeon/CAICOS_smc.bin)
+  * Radeon HD 6900 series MC microcode (radeon/CAYMAN_mc.bin)
+  * Radeon HD 6900 series ME microcode (radeon/CAYMAN_me.bin)
+  * Radeon HD 6900 series PFP microcode (radeon/CAYMAN_pfp.bin)
+  * Radeon HD 6900 series RLC microcode (radeon/CAYMAN_rlc.bin)
+  * Radeon HD 6900 series SMC microcode (radeon/CAYMAN_smc.bin)
+  * Radeon HD 5400 series ME microcode (radeon/CEDAR_me.bin)
+  * Radeon HD 5400 series PFP microcode (radeon/CEDAR_pfp.bin)
+  * Radeon HD 5400 series RLC microcode (radeon/CEDAR_rlc.bin)
+  * Radeon HD 5400 series SMC microcode (radeon/CEDAR_smc.bin)
+  * Radeon HD 5800/5900 series ME microcode (radeon/CYPRESS_me.bin)
+  * Radeon HD 5800/5900 series PFP microcode (radeon/CYPRESS_pfp.bin)
+  * Radeon HD 5800/5900 series RLC microcode (radeon/CYPRESS_rlc.bin)
+  * Radeon HD 5800/5900 series SMC microcode (radeon/CYPRESS_smc.bin)
+  * Radeon HD 5x00 series UVD microcode (radeon/CYPRESS_uvd.bin)
+  * Radeon HD 8500M series and R5 M200 CE microcode
+    (radeon/HAINAN_ce.bin)
+  * Radeon HD 8500M series and R5 M200 CE microcode
+    (radeon/hainan_ce.bin)
+  * Radeon HD 8500M series and R5 M200 K SMC microcode
+    (radeon/hainan_k_smc.bin)
+  * Radeon HD 8500M series and R5 M200 MC microcode, version 1
+    (radeon/HAINAN_mc.bin)
+  * Radeon HD 8500M series and R5 M200 MC microcode
+    (radeon/hainan_mc.bin)
+  * Radeon HD 8500M series and R5 M200 MC microcode, version 2
+    (radeon/HAINAN_mc2.bin)
+  * Radeon HD 8500M series and R5 M200 ME microcode
+    (radeon/HAINAN_me.bin)
+  * Radeon HD 8500M series and R5 M200 ME microcode
+    (radeon/hainan_me.bin)
+  * Radeon HD 8500M series and R5 M200 PFP microcode
+    (radeon/HAINAN_pfp.bin)
+  * Radeon HD 8500M series and R5 M200 PFP microcode
+    (radeon/hainan_pfp.bin)
+  * Radeon HD 8500M series and R5 M200 RLC microcode
+    (radeon/HAINAN_rlc.bin)
+  * Radeon HD 8500M series and R5 M200 RLC microcode
+    (radeon/hainan_rlc.bin)
+  * Radeon HD 8500M series and R5 M200 SMC microcode
+    (radeon/HAINAN_smc.bin)
+  * Radeon HD 8500M series and R5 M200 SMC microcode
+    (radeon/hainan_smc.bin)
+  * Radeon R9 290 series CE microcode (radeon/HAWAII_ce.bin)
+  * Radeon R9 290 series CE microcode (radeon/hawaii_ce.bin)
+  * Radeon R9 290 series K SMC microcode (radeon/hawaii_k_smc.bin)
+  * Radeon R9 290 series MC microcode, version 1 (radeon/HAWAII_mc.bin)
+  * Radeon R9 290 series MC microcode (radeon/hawaii_mc.bin)
+  * Radeon R9 290 series MC microcode, version 2 (radeon/HAWAII_mc2.bin)
+  * Radeon R9 290 series ME microcode (radeon/HAWAII_me.bin)
+  * Radeon R9 290 series ME microcode (radeon/hawaii_me.bin)
+  * Radeon R9 290 series MEC microcode (radeon/HAWAII_mec.bin)
+  * Radeon R9 290 series MEC microcode (radeon/hawaii_mec.bin)
+  * Radeon R9 290 series PFP microcode (radeon/HAWAII_pfp.bin)
+  * Radeon R9 290 series PFP microcode (radeon/hawaii_pfp.bin)
+  * Radeon R9 290 series RLC microcode (radeon/HAWAII_rlc.bin)
+  * Radeon R9 290 series RLC microcode (radeon/hawaii_rlc.bin)
+  * Radeon R9 290 series SDMA microcode (radeon/HAWAII_sdma.bin)
+  * Radeon R9 290 series SDMA microcode (radeon/hawaii_sdma.bin)
+  * Radeon R9 290 series SDMA microcode (radeon/hawaii_sdma1.bin)
+  * Radeon R9 290 series SMC microcode (radeon/HAWAII_smc.bin)
+  * Radeon R9 290 series SMC microcode (radeon/hawaii_smc.bin)
+  * Radeon R9 290 series UVD microcode (radeon/hawaii_uvd.bin)
+  * Radeon R9 290 series VCE microcode (radeon/hawaii_vce.bin)
+  * Radeon HD 5700 series ME microcode (radeon/JUNIPER_me.bin)
+  * Radeon HD 5700 series PFP microcode (radeon/JUNIPER_pfp.bin)
+  * Radeon HD 5700 series RLC microcode (radeon/JUNIPER_rlc.bin)
+  * Radeon HD 5700 series SMC microcode (radeon/JUNIPER_smc.bin)
+  * Radeon HD 8100/8200/8300/8400 series CE microcode
+    (radeon/KABINI_ce.bin)
+  * Radeon HD 8100/8200/8300/8400 series CE microcode
+    (radeon/kabini_ce.bin)
+  * Radeon HD 8100/8200/8300/8400 series ME microcode
+    (radeon/KABINI_me.bin)
+  * Radeon HD 8100/8200/8300/8400 series ME microcode
+    (radeon/kabini_me.bin)
+  * Radeon HD 8100/8200/8300/8400 series MEC microcode
+    (radeon/KABINI_mec.bin)
+  * Radeon HD 8100/8200/8300/8400 series MEC microcode
+    (radeon/kabini_mec.bin)
+  * Radeon HD 8100/8200/8300/8400 series PFP microcode
+    (radeon/KABINI_pfp.bin)
+  * Radeon HD 8100/8200/8300/8400 series PFP microcode
+    (radeon/kabini_pfp.bin)
+  * Radeon HD 8100/8200/8300/8400 series RLC microcode
+    (radeon/KABINI_rlc.bin)
+  * Radeon HD 8100/8200/8300/8400 series RLC microcode
+    (radeon/kabini_rlc.bin)
+  * Radeon HD 8100/8200/8300/8400 series SDMA microcode
+    (radeon/KABINI_sdma.bin)
+  * Radeon HD 8100/8200/8300/8400 series SDMA microcode
+    (radeon/kabini_sdma.bin)
+  * Radeon HD 8100/8200/8300/8400 series SDMA1 microcode
+    (radeon/kabini_sdma1.bin)
+  * Radeon HD 8100/8200/8300/8400 series UVD microcode
+    (radeon/kabini_uvd.bin)
+  * Radeon HD 8100/8200/8300/8400 series VCE microcode
+    (radeon/kabini_vce.bin)
+  * Radeon R5/R7 IGP 200 series CE microcode (radeon/KAVERI_ce.bin)
+  * Radeon R5/R7 IGP 200 series CE microcode (radeon/kaveri_ce.bin)
+  * Radeon R5/R7 IGP 200 series ME microcode (radeon/KAVERI_me.bin)
+  * Radeon R5/R7 IGP 200 series ME microcode (radeon/kaveri_me.bin)
+  * Radeon R5/R7 IGP 200 series MEC microcode (radeon/KAVERI_mec.bin)
+  * Radeon R5/R7 IGP 200 series MEC microcode, version 396
+    (radeon/kaveri_mec.bin)
+  * Radeon R5/R7 IGP 200 series MEC microcode, version 396
+    (radeon/kaveri_mec2.bin)
+  * Radeon R5/R7 IGP 200 series PFP microcode (radeon/KAVERI_pfp.bin)
+  * Radeon R5/R7 IGP 200 series PFP microcode (radeon/kaveri_pfp.bin)
+  * Radeon R5/R7 IGP 200 series RLC microcode (radeon/KAVERI_rlc.bin)
+  * Radeon R5/R7 IGP 200 series RLC microcode (radeon/kaveri_rlc.bin)
+  * Radeon R5/R7 IGP 200 series SDMA microcode (radeon/KAVERI_sdma.bin)
+  * Radeon R5/R7 IGP 200 series SDMA microcode (radeon/kaveri_sdma.bin)
+  * Radeon R5/R7 IGP 200 series SDMA1 microcode
+    (radeon/kaveri_sdma1.bin)
+  * Radeon R5/R7 IGP 200 series UVD microcode (radeon/kaveri_uvd.bin)
+  * Radeon R5/R7 IGP 200 series VCE microcode (radeon/kaveri_vce.bin)
+  * Radeon "Mullins"/"Beema" IGP CE microcode (radeon/MULLINS_ce.bin)
+  * Radeon "Mullins"/"Beema" IGP CE microcode (radeon/mullins_ce.bin)
+  * Radeon "Mullins"/"Beema" IGP ME microcode (radeon/MULLINS_me.bin)
+  * Radeon "Mullins"/"Beema" IGP ME microcode (radeon/mullins_me.bin)
+  * Radeon "Mullins"/"Beema" IGP MEC microcode (radeon/MULLINS_mec.bin)
+  * Radeon "Mullins"/"Beema" IGP MEC microcode (radeon/mullins_mec.bin)
+  * Radeon "Mullins"/"Beema" IGP PFP microcode (radeon/MULLINS_pfp.bin)
+  * Radeon "Mullins"/"Beema" IGP PFP microcode (radeon/mullins_pfp.bin)
+  * Radeon "Mullins"/"Beema" IGP RLC microcode (radeon/MULLINS_rlc.bin)
+  * Radeon "Mullins"/"Beema" IGP RLC microcode (radeon/mullins_rlc.bin)
+  * Radeon "Mullins"/"Beema" IGP SDMA microcode
+    (radeon/MULLINS_sdma.bin)
+  * Radeon "Mullins"/"Beema" IGP SDMA microcode
+    (radeon/mullins_sdma.bin)
+  * Radeon "Mullins"/"Beema" IGP SDMA1 microcode
+    (radeon/mullins_sdma1.bin)
+  * Radeon "Mullins"/"Beema" IGP UVD microcode (radeon/mullins_uvd.bin)
+  * Radeon "Mullins"/"Beema" IGP VCE microcode (radeon/mullins_vce.bin)
+  * Radeon HD 8500/8600/8700 series CE microcode (radeon/OLAND_ce.bin)
+  * Radeon HD 8500/8600/8700 series CE microcode (radeon/oland_ce.bin)
+  * Radeon HD 8500/8600/8700 series K SMC microcode
+    (radeon/oland_k_smc.bin)
+  * Radeon HD 8500/8600/8700 series MC microcode, version 1
+    (radeon/OLAND_mc.bin)
+  * Radeon HD 8500/8600/8700 series MC microcode (radeon/oland_mc.bin)
+  * Radeon HD 8500/8600/8700 series MC microcode, version 2
+    (radeon/OLAND_mc2.bin)
+  * Radeon HD 8500/8600/8700 series ME microcode (radeon/OLAND_me.bin)
+  * Radeon HD 8500/8600/8700 series ME microcode (radeon/oland_me.bin)
+  * Radeon HD 8500/8600/8700 series PFP microcode (radeon/OLAND_pfp.bin)
+  * Radeon HD 8500/8600/8700 series PFP microcode (radeon/oland_pfp.bin)
+  * Radeon HD 8500/8600/8700 series RLC microcode (radeon/OLAND_rlc.bin)
+  * Radeon HD 8500/8600/8700 series RLC microcode (radeon/oland_rlc.bin)
+  * Radeon HD 8500/8600/8700 series SMC microcode (radeon/OLAND_smc.bin)
+  * Radeon HD 8500/8600/8700 series SMC microcode (radeon/oland_smc.bin)
+  * Radeon HD IGP 6200/6300/7300 series ME microcode
+    (radeon/PALM_me.bin)
+  * Radeon HD IGP 6200/6300/7300 series PFP microcode
+    (radeon/PALM_pfp.bin)
+  * Radeon HD 7800 series CE microcode (radeon/PITCAIRN_ce.bin)
+  * Radeon HD 7800 series CE microcode (radeon/pitcairn_ce.bin)
+  * Radeon HD 7800 series K SMC microcode (radeon/pitcairn_k_smc.bin)
+  * Radeon HD 7800 series MC microcode, version 1
+    (radeon/PITCAIRN_mc.bin)
+  * Radeon HD 7800 series MC microcode (radeon/pitcairn_mc.bin)
+  * Radeon HD 7800 series MC microcode, version 2
+    (radeon/PITCAIRN_mc2.bin)
+  * Radeon HD 7800 series ME microcode (radeon/PITCAIRN_me.bin)
+  * Radeon HD 7800 series ME microcode (radeon/pitcairn_me.bin)
+  * Radeon HD 7800 series PFP microcode (radeon/PITCAIRN_pfp.bin)
+  * Radeon HD 7800 series PFP microcode (radeon/pitcairn_pfp.bin)
+  * Radeon HD 7800 series RLC microcode (radeon/PITCAIRN_rlc.bin)
+  * Radeon HD 7800 series RLC microcode (radeon/pitcairn_rlc.bin)
+  * Radeon HD 7800 series SMC microcode (radeon/PITCAIRN_smc.bin)
+  * Radeon HD 7800 series SMC microcode (radeon/pitcairn_smc.bin)
+  * Radeon R100-family CP microcode (radeon/R100_cp.bin)
+  * Radeon R200-family CP microcode (radeon/R200_cp.bin)
+  * Radeon R300-family CP microcode (radeon/R300_cp.bin)
+  * Radeon R400-family CP microcode (radeon/R420_cp.bin)
+  * Radeon R500-family CP microcode (radeon/R520_cp.bin)
+  * Radeon R600 ME microcode (radeon/R600_me.bin)
+  * Radeon R600 PFP microcode (radeon/R600_pfp.bin)
+  * Radeon R600-family RLC microcode (radeon/R600_rlc.bin)
+  * Radeon R600 UVD microcode (radeon/R600_uvd.bin)
+  * Radeon R700-family RLC microcode (radeon/R700_rlc.bin)
+  * Radeon HD 5500/5600 series ME microcode (radeon/REDWOOD_me.bin)
+  * Radeon HD 5500/5600 series PFP microcode (radeon/REDWOOD_pfp.bin)
+  * Radeon HD 5500/5600 series RLC microcode (radeon/REDWOOD_rlc.bin)
+  * Radeon HD 5500/5600 series SMC microcode (radeon/REDWOOD_smc.bin)
+  * Radeon RS600 CP microcode (radeon/RS600_cp.bin)
+  * Radeon RS690 CP microcode (radeon/RS690_cp.bin)
+  * Radeon RS780 ME microcode (radeon/RS780_me.bin)
+  * Radeon RS780 PFP microcode (radeon/RS780_pfp.bin)
+  * Radeon RS780 UVD microcode (radeon/RS780_uvd.bin)
+  * Radeon RV610 ME microcode (radeon/RV610_me.bin)
+  * Radeon RV610 PFP microcode (radeon/RV610_pfp.bin)
+  * Radeon RV620 ME microcode (radeon/RV620_me.bin)
+  * Radeon RV620 PFP microcode (radeon/RV620_pfp.bin)
+  * Radeon RV630 ME microcode (radeon/RV630_me.bin)
+  * Radeon RV630 PFP microcode (radeon/RV630_pfp.bin)
+  * Radeon RV635 ME microcode (radeon/RV635_me.bin)
+  * Radeon RV635 PFP microcode (radeon/RV635_pfp.bin)
+  * Radeon RV670 ME microcode (radeon/RV670_me.bin)
+  * Radeon RV670 PFP microcode (radeon/RV670_pfp.bin)
+  * Radeon RV710 ME microcode (radeon/RV710_me.bin)
+  * Radeon RV710 PFP microcode (radeon/RV710_pfp.bin)
+  * Radeon RV710 SMC microcode (radeon/RV710_smc.bin)
+  * Radeon RV710/RV730/RV740 UVD microcode (radeon/RV710_uvd.bin)
+  * Radeon RV730/RV740 ME microcode (radeon/RV730_me.bin)
+  * Radeon RV730/RV740 PFP microcode (radeon/RV730_pfp.bin)
+  * Radeon RV730 SMC microcode (radeon/RV730_smc.bin)
+  * Radeon RV740 SMC microcode (radeon/RV740_smc.bin)
+  * Radeon RV770 ME microcode (radeon/RV770_me.bin)
+  * Radeon RV770 PFP microcode (radeon/RV770_pfp.bin)
+  * Radeon RV770 SMC microcode (radeon/RV770_smc.bin)
+  * Radeon RV770 UVD microcode (radeon/RV770_uvd.bin)
+  * Radeon "SI58" MC microcode (radeon/si58_mc.bin)
+  * Radeon HD 6370D/6380G/6410D ME microcode (radeon/SUMO2_me.bin)
+  * Radeon HD 6370D/6380G/6410D PFP microcode (radeon/SUMO2_pfp.bin)
+  * Radeon HD IGP 6400/6500/6600 series ME microcode
+    (radeon/SUMO_me.bin)
+  * Radeon HD IGP 6400/6500/6600 series PFP microcode
+    (radeon/SUMO_pfp.bin)
+  * Radeon HD IGP 6200/6300/6400/6500/6600/7300 series RLC microcode
+    (radeon/SUMO_rlc.bin)
+  * Radeon HD 6x00/7500 series and IGP 6x00/7300 series UVD microcode
+    (radeon/SUMO_uvd.bin)
+  * Radeon HD 7900 series CE microcode (radeon/TAHITI_ce.bin)
+  * Radeon HD 7900 series CE microcode (radeon/tahiti_ce.bin)
+  * Radeon HD 7900 series K SMC microcode (radeon/tahiti_k_smc.bin)
+  * Radeon HD 7900 series MC microcode, version 1 (radeon/TAHITI_mc.bin)
+  * Radeon HD 7900 series MC microcode (radeon/tahiti_mc.bin)
+  * Radeon HD 7900 series MC microcode, version 2
+    (radeon/TAHITI_mc2.bin)
+  * Radeon HD 7900 series ME microcode (radeon/TAHITI_me.bin)
+  * Radeon HD 7900 series ME microcode (radeon/tahiti_me.bin)
+  * Radeon HD 7900 series PFP microcode (radeon/TAHITI_pfp.bin)
+  * Radeon HD 7900 series PFP microcode (radeon/tahiti_pfp.bin)
+  * Radeon HD 7900 series RLC microcode (radeon/TAHITI_rlc.bin)
+  * Radeon HD 7900 series RLC microcode (radeon/tahiti_rlc.bin)
+  * Radeon HD 7900 series SMC microcode (radeon/TAHITI_smc.bin)
+  * Radeon HD 7900 series SMC microcode (radeon/tahiti_smc.bin)
+  * Radeon HD 7900 series UVD microcode (radeon/TAHITI_uvd.bin)
+  * Radeon HD 7900 series VCE microcode (radeon/TAHITI_vce.bin)
+  * Radeon HD 6500/6600/7500 series MC microcode (radeon/TURKS_mc.bin)
+  * Radeon HD 6500/6600/7500 series ME microcode (radeon/TURKS_me.bin)
+  * Radeon HD 6500/6600/7500 series PFP microcode (radeon/TURKS_pfp.bin)
+  * Radeon HD 6500/6600/7500 series SMC microcode (radeon/TURKS_smc.bin)
+  * Radeon HD 7700 series CE microcode (radeon/VERDE_ce.bin)
+  * Radeon HD 7700 series CE microcode (radeon/verde_ce.bin)
+  * Radeon HD 7700 series K SMC microcode (radeon/verde_k_smc.bin)
+  * Radeon HD 7700 series MC microcode, version 1 (radeon/VERDE_mc.bin)
+  * Radeon HD 7700 series MC microcode (radeon/verde_mc.bin)
+  * Radeon HD 7700 series MC microcode, version 2 (radeon/VERDE_mc2.bin)
+  * Radeon HD 7700 series ME microcode (radeon/VERDE_me.bin)
+  * Radeon HD 7700 series ME microcode (radeon/verde_me.bin)
+  * Radeon HD 7700 series PFP microcode (radeon/VERDE_pfp.bin)
+  * Radeon HD 7700 series PFP microcode (radeon/verde_pfp.bin)
+  * Radeon HD 7700 series RLC microcode (radeon/VERDE_rlc.bin)
+  * Radeon HD 7700 series RLC microcode (radeon/verde_rlc.bin)
+  * Radeon HD 7700 series SMC microcode (radeon/VERDE_smc.bin)
+  * Radeon HD 7700 series SMC microcode (radeon/verde_smc.bin)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-atheros
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Atheros wireless cards
+ This package contains the binary firmware for USB wireless network and
+ Bluetooth cards supported by the ar5523, ath3k, ath6kl_sdio, ath6kl_usb,
+ ath9k_htc, ath10k, or wilc6210 drivers.
+ .
+ Contents:
+  * Atheros AR3012 rev 01020001 patch (ar3k/AthrBT_0x01020001.dfu)
+  * Atheros AR3012 rev 01020200 patch (ar3k/AthrBT_0x01020200.dfu)
+  * Atheros AR3012 rev 01020201 patch, version 170
+    (ar3k/AthrBT_0x01020201.dfu)
+  * Atheros AR3012 rev 11020000 patch (ar3k/AthrBT_0x11020000.dfu)
+  * Atheros AR3012 rev 11020100 patch (ar3k/AthrBT_0x11020100.dfu)
+  * Atheros AR3012 rev 31010000 patch (ar3k/AthrBT_0x31010000.dfu)
+  * Atheros AR3012 rev 31010100 patch (ar3k/AthrBT_0x31010100.dfu)
+  * Atheros AR3012 rev 41020000 patch (ar3k/AthrBT_0x41020000.dfu)
+  * Atheros AR3012 rev 01020001 config (ar3k/ramps_0x01020001_26.dfu)
+  * Atheros AR3012 rev 01020200 26 MHz config
+    (ar3k/ramps_0x01020200_26.dfu)
+  * Atheros AR3012 rev 01020200 40 MHz config
+    (ar3k/ramps_0x01020200_40.dfu)
+  * Atheros AR3012 rev 01020201 26 MHz config
+    (ar3k/ramps_0x01020201_26.dfu)
+  * Atheros AR3012 rev 01020201 40 MHz config
+    (ar3k/ramps_0x01020201_40.dfu)
+  * Atheros AR3012 rev 11020000 config (ar3k/ramps_0x11020000_40.dfu)
+  * Atheros AR3012 rev 11020100 config (ar3k/ramps_0x11020100_40.dfu)
+  * Atheros AR3012 rev 31010000 config (ar3k/ramps_0x31010000_40.dfu)
+  * Atheros AR3012 rev 31010100 config (ar3k/ramps_0x31010100_40.dfu)
+  * Atheros AR3012 rev 41020000 config (ar3k/ramps_0x41020000_40.dfu)
+  * Atheros AR5523 firmware (ar5523.bin)
+  * Atheros AR7010 rev 1.0 firmware (ar7010.fw)
+  * Atheros AR7010 rev 1.1 firmware (ar7010_1_1.fw)
+  * Atheros AR9271 firmware (ar9271.fw)
+  * Qualcomm Atheros QCA4019 rev 1.0 board configuration
+    (ath10k/QCA4019/hw1.0/board-2.bin)
+  * Qualcomm Atheros QCA4019 rev 1.0 firmware, version 10.4-3.6-00140
+    (ath10k/QCA4019/hw1.0/firmware-5.bin)
+  * Qualcomm Atheros QCA6174 rev 2.1 board configuration, version 1
+    (ath10k/QCA6174/hw2.1/board.bin)
+  * Qualcomm Atheros QCA6174 rev 2.1 board configuration, version 2
+    (ath10k/QCA6174/hw2.1/board-2.bin)
+  * Qualcomm Atheros QCA6174 rev 2.1 firmware, version
+    SW_RM.1.1.1-00157-QCARMSWPZ-1 (ath10k/QCA6174/hw2.1/firmware-5.bin)
+  * Qualcomm Atheros QCA6174 rev 3.0 board configuration, version 1
+    (ath10k/QCA6174/hw3.0/board.bin)
+  * Qualcomm Atheros QCA6174 rev 3.0 board configuration
+    (ath10k/QCA6174/hw3.0/board-2.bin)
+  * Qualcomm Atheros QCA6174 rev 3.0 firmware, version
+    WLAN.RM.2.0-00180-QCARMSWPZ-1 (ath10k/QCA6174/hw3.0/firmware-4.bin)
+  * Qualcomm Atheros QCA6174 rev 3.0 firmware, version
+    WLAN.RM.4.4.1-00079-QCARMSWPZ-1
+    (ath10k/QCA6174/hw3.0/firmware-6.bin)
+  * Qualcomm Atheros QCA9377 rev 1.0 board configuration, version 1
+    (ath10k/QCA9377/hw1.0/board.bin)
+  * Qualcomm Atheros QCA9377 rev 1.0 board configuration, version 2
+    (ath10k/QCA9377/hw1.0/board-2.bin)
+  * Qualcomm Atheros QCA9377 rev 1.0 firmware, version
+    WLAN.TF.1.0-00002-QCATFSWPZ-5 (ath10k/QCA9377/hw1.0/firmware-5.bin)
+  * Qualcomm Atheros QCA9887 rev 1.0 board configuration, version 1
+    (ath10k/QCA9887/hw1.0/board.bin)
+  * Qualcomm Atheros QCA9887 rev 1.0 firmware, version 10.2.4-1.0-00041
+    (ath10k/QCA9887/hw1.0/firmware-5.bin)
+  * Qualcomm Atheros QCA9888 rev 2.0 board configuration, version 2
+    (ath10k/QCA9888/hw2.0/board-2.bin)
+  * Qualcomm Atheros QCA9888 rev 2.0 firmware, version 10.4-3.6-00140
+    (ath10k/QCA9888/hw2.0/firmware-5.bin)
+  * Qualcomm Atheros QCA988X board configuration, version 1
+    (ath10k/QCA988X/hw2.0/board.bin)
+  * Qualcomm Atheros QCA988X firmware, version 10.2.4.45
+    (ath10k/QCA988X/hw2.0/firmware-4.bin)
+  * Qualcomm Atheros QCA988X firmware, version 10.2.4-1.0-00041
+    (ath10k/QCA988X/hw2.0/firmware-5.bin)
+  * Qualcomm Atheros QCA9984 rev 1.0 board configuration, version 2
+    (ath10k/QCA9984/hw1.0/board-2.bin)
+  * Qualcomm Atheros QCA9984 rev 1.0 firmware, version
+    10.4-3.6.0.1-00003 (ath10k/QCA9984/hw1.0/firmware-5.bin)
+  * Qualcomm Atheros QCA99X0 board configuration, version 1
+    (ath10k/QCA99X0/hw2.0/board.bin)
+  * Qualcomm Atheros QCA99X0 firmware, version 10.4.1.00030-1
+    (ath10k/QCA99X0/hw2.0/firmware-5.bin)
+  * Atheros AR3011 firmware (ath3k-1.fw)
+  * ath6k/AR6003.1/hw2.1.1/athwlan.bin
+  * ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
+  * ath6k/AR6003.1/hw2.1.1/bdata.SD32.bin
+  * ath6k/AR6003.1/hw2.1.1/bdata.WB31.bin
+  * ath6k/AR6003.1/hw2.1.1/data.patch.bin
+  * ath6k/AR6003.1/hw2.1.1/endpointping.bin
+  * ath6k/AR6003.1/hw2.1.1/otp.bin
+  * ath6k/AR6003/hw1.0/athwlan.bin.z77
+  * ath6k/AR6003/hw1.0/bdata.SD31.bin
+  * ath6k/AR6003/hw1.0/bdata.SD32.bin
+  * ath6k/AR6003/hw1.0/bdata.WB31.bin
+  * ath6k/AR6003/hw1.0/data.patch.bin
+  * ath6k/AR6003/hw1.0/otp.bin.z77
+  * ath6k/AR6003/hw2.0/athwlan.bin.z77
+  * ath6k/AR6003/hw2.0/bdata.SD31.bin
+  * ath6k/AR6003/hw2.0/bdata.SD32.bin
+  * ath6k/AR6003/hw2.0/bdata.WB31.bin
+  * ath6k/AR6003/hw2.0/data.patch.bin
+  * ath6k/AR6003/hw2.0/otp.bin.z77
+  * ath6k/AR6003/hw2.1.1/athwlan.bin
+  * ath6k/AR6003/hw2.1.1/bdata.SD31.bin
+  * ath6k/AR6003/hw2.1.1/bdata.SD32.bin
+  * ath6k/AR6003/hw2.1.1/bdata.WB31.bin
+  * ath6k/AR6003/hw2.1.1/data.patch.bin
+  * ath6k/AR6003/hw2.1.1/endpointping.bin
+  * ath6k/AR6003/hw2.1.1/fw-2.bin
+  * ath6k/AR6003/hw2.1.1/fw-3.bin
+  * ath6k/AR6003/hw2.1.1/otp.bin
+  * ath6k/AR6004/hw1.2/bdata.bin
+  * ath6k/AR6004/hw1.2/fw-2.bin
+  * ath6k/AR6004/hw1.3/bdata.bin
+  * ath6k/AR6004/hw1.3/fw-3.bin
+  * Atheros AR7010 firmware, version 1.4.0 (ath9k_htc/htc_7010-1.4.0.fw)
+  * Atheros AR9271 firmware, version 1.4.0 (ath9k_htc/htc_9271-1.4.0.fw)
+  * Atheros AR7010 firmware, version 1.3.1 (htc_7010.fw)
+  * Atheros AR9271 firmware, version 1.3.1 (htc_9271.fw)
+  * Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration
+    (qca/nvm_00130300.bin)
+  * Qualcomm Atheros QCA61x4 version 3.2 UART BT NVM configuration
+    (qca/nvm_00130302.bin)
+  * Qualcomm Atheros QCA61x4 version 2.0 USB BT NVM configuration
+    (qca/nvm_usb_00000200.bin)
+  * Qualcomm Atheros QCA61x4 version 2.1 USB BT NVM configuration
+    (qca/nvm_usb_00000201.bin)
+  * Qualcomm Atheros QCA61x4 version 3.0 USB BT NVM configuration
+    (qca/nvm_usb_00000300.bin)
+  * Qualcomm Atheros QCA61x4 version 3.2 USB BT NVM configuration
+    (qca/nvm_usb_00000302.bin)
+  * Qualcomm Atheros QCA61x4 version 3.0 UART BT rampatch
+    (qca/rampatch_00130300.bin)
+  * Qualcomm Atheros QCA61x4 version 3.2 UART BT rampatch
+    (qca/rampatch_00130302.bin)
+  * Qualcomm Atheros QCA61x4 version 2.0 USB BT rampatch
+    (qca/rampatch_usb_00000200.bin)
+  * Qualcomm Atheros QCA61x4 version 2.1 USB BT rampatch
+    (qca/rampatch_usb_00000201.bin)
+  * Qualcomm Atheros QCA61x4 version 3.0 USB BT rampatch
+    (qca/rampatch_usb_00000300.bin)
+  * Qualcomm Atheros QCA61x4 version 3.2 USB BT rampatch
+    (qca/rampatch_usb_00000302.bin)
+  * Qualcomm Atheros Wil62x0 default board parameters, version 5.2.0.18
+    (wil6210.brd)
+  * Qualcomm Atheros Wil62x0 firmware, version 5.2.0.18 (wil6210.fw)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-bnx2
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Broadcom NetXtremeII
+ This package contains the binary firmware for Broadcom NetXtremeII network
+ adapters supported by the bnx2 driver.
+ .
+ Contents:
+  * bnx2/bnx2-rv2p-06-6.0.15.fw
+  * Broadcom NetXtremeII 5709/5716 firmware (rv2p), version Linux 2.6.37
+    (bnx2/bnx2-rv2p-09-6.0.17.fw)
+  * Broadcom NetXtremeII 5709 A0/A1 firmware (rv2p), version Linux
+    2.6.37 (bnx2/bnx2-rv2p-09ax-6.0.17.fw)
+  * Broadcom NetXtremeII 5706/5708 firmware (mips), version Linux 2.6.38
+    (bnx2/bnx2-mips-06-6.2.1.fw)
+  * Broadcom NetXtremeII 5706/5708 firmware (mips), version Linux 3.3
+    (bnx2/bnx2-mips-06-6.2.3.fw)
+  * Broadcom NetXtremeII 5709/5716 firmware (mips), version Linux 2.6.39
+    (bnx2/bnx2-mips-09-6.2.1a.fw)
+  * Broadcom NetXtremeII 5709/5716 firmware (mips), version Linux 3.3
+    (bnx2/bnx2-mips-09-6.2.1b.fw)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-bnx2x
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Broadcom NetXtreme II 10Gb
+ This package contains the binary firmware for Broadcom NetXtreme II 10Gb
+ network adapters supported by the bnx2x driver.
+ .
+ Contents:
+  * Broadcom NetXtreme II 10Gb 57710, version 7.0.29.0
+    (bnx2x/bnx2x-e1-7.0.29.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.0.29.0
+    (bnx2x/bnx2x-e2-7.0.29.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.0.29.0
+    (bnx2x/bnx2x-e1h-7.0.29.0.fw)
+  * Broadcom NetXtreme II 10Gb 57710, version 7.8.19.0
+    (bnx2x/bnx2x-e1-7.8.19.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.8.19.0
+    (bnx2x/bnx2x-e2-7.8.19.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.8.19.0
+    (bnx2x/bnx2x-e1h-7.8.19.0.fw)
+  * Broadcom NetXtreme II 10Gb 57710, version 7.10.51.0
+    (bnx2x/bnx2x-e1-7.10.51.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.10.51.0
+    (bnx2x/bnx2x-e2-7.10.51.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.10.51.0
+    (bnx2x/bnx2x-e1h-7.10.51.0.fw)
+  * Broadcom NetXtreme II 10Gb 57710, version 7.12.30.0
+    (bnx2x/bnx2x-e1-7.12.30.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.12.30.0
+    (bnx2x/bnx2x-e1h-7.12.30.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.12.30.0
+    (bnx2x/bnx2x-e2-7.12.30.0.fw)
+  * Broadcom NetXtreme II 10Gb 57710, version 7.13.1.0
+    (bnx2x/bnx2x-e1-7.13.1.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.13.1.0
+    (bnx2x/bnx2x-e1h-7.13.1.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.13.1.0
+    (bnx2x/bnx2x-e2-7.13.1.0.fw)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-brcm80211
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Broadcom/Cypress 802.11 wireless cards
+ This package contains the binary firmware for wireless network cards
+ supported by the brcmsmac or brcmfmac driver.
+ .
+ Contents:
+  * Broadcom 802.11 firmware, version 610.812 (brcm/bcm43xx-0.fw)
+  * Broadcom 802.11 firmware header, version 610.812
+    (brcm/bcm43xx_hdr-0.fw)
+  * Broadcom BCM43143 USB firmware (brcm/brcmfmac43143.bin)
+  * Broadcom BCM43143 SDIO firmware (brcm/brcmfmac43143-sdio.bin)
+  * Broadcom BCM43236 firmware (brcm/brcmfmac43236b.bin)
+  * Broadcom BCM43241 rev 0-3 firmware (brcm/brcmfmac43241b0-sdio.bin)
+  * Broadcom BCM43241 rev 4 firmware (brcm/brcmfmac43241b4-sdio.bin)
+  * Broadcom BCM43241 rev 5+ firmware (brcm/brcmfmac43241b5-sdio.bin)
+  * Broadcom BCM43242 firmware (brcm/brcmfmac43242a.bin)
+  * Broadcom BCM4329 firmware (brcm/brcmfmac4329-sdio.bin)
+  * Broadcom BCM4330 firmware (brcm/brcmfmac4330-sdio.bin)
+  * Broadcom BCM4334 firmware (brcm/brcmfmac4334-sdio.bin)
+  * Broadcom BCM43340 firmware (brcm/brcmfmac43340-sdio.bin)
+  * Broadcom BCM4335 firmware (brcm/brcmfmac4335-sdio.bin)
+  * Broadcom BCM43362 firmware (brcm/brcmfmac43362-sdio.bin)
+  * Broadcom BCM4339 firmware (brcm/brcmfmac4339-sdio.bin)
+  * Broadcom BCM43455 firmware, version 7.45.154
+    (brcm/brcmfmac43455-sdio.bin)
+  * brcm/brcmfmac43455-sdio.clm_blob
+  * NVRAM file for BCM43455 (brcm/brcmfmac43455-sdio.txt)
+  * Broadcom BCM43430 rev 0 firmware (brcm/brcmfmac43430a0-sdio.bin)
+  * Broadcom BCM43430 rev 1+ firmware, version 7.45.98.38
+    (brcm/brcmfmac43430-sdio.bin)
+  * NVRAM file for BCM943430 (brcm/brcmfmac43430-sdio.txt)
+  * Broadcom BCM4350 rev 0-4 firmware (brcm/brcmfmac4350-pcie.bin)
+  * Broadcom BCM4350 rev 5+ firmware (brcm/brcmfmac4350c2-pcie.bin)
+  * Broadcom BCM4354 firmware, version 7.35.79.57
+    (brcm/brcmfmac4354-sdio.bin)
+  * Broadcom BCM4356-PCIe firmware (brcm/brcmfmac4356-pcie.bin)
+  * Broadcom BCM4356-SDIO firmware] (brcm/brcmfmac4356-sdio.bin)
+  * Broadcom BCM43569 firmware (brcm/brcmfmac43569.bin)
+  * Broadcom BCM43570 firmware (brcm/brcmfmac43570-pcie.bin)
+  * Broadcom BCM4358 firmware (brcm/brcmfmac4358-pcie.bin)
+  * Broadcom BCM43602 AP-mode firmware (brcm/brcmfmac43602-pcie.ap.bin)
+  * Broadcom BCM43602 firmware (brcm/brcmfmac43602-pcie.bin)
+  * Broadcom BCM4366 firmware (brcm/brcmfmac4366b-pcie.bin)
+  * Broadcom BCM4371 firmware (brcm/brcmfmac4371-pcie.bin)
+  * Cypress CYW4373-USB firmware (brcm/brcmfmac4373.bin)
+  * Cypress CYW4373-SDIO firmware (brcm/brcmfmac4373-sdio.bin)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-cavium
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Cavium Ethernet adapters
+ This package contains the binary firmware for Cavium crypto and Ethernet
+ adapters supported by the nitrox and liquidio drivers.
+ .
+ Contents:
+  * Cavium CNN55XX firmware, version 10 (cavium/cnn55xx_se.fw)
+  * Cavium LiquidIO 210Nv firmware, version 1.7.2
+    (liquidio/lio_210nv_nic.bin)
+  * Cavium LiquidIO 210Sv firmware, version 1.7.2
+    (liquidio/lio_210sv_nic.bin)
+  * Cavium LiquidIO 23xx firmware, version 1.7.2
+    (liquidio/lio_23xx_nic.bin)
+  * Cavium LiquidIO 410Nv firmware, version 1.7.2
+    (liquidio/lio_410nv_nic.bin)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-intelwimax
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Intel WiMAX Connection
+ This package contains the binary firmware for Intel WiMAX Connection
+ devices supported by the i2400m-usb driver.
+ .
+ Contents:
+  * Intel WiMAX Connection 2400 USB firmware, version 1.4
+    (i2400m-fw-usb-1.4.sbcf)
+  * Intel WiMAX Connection 2400 USB firmware, version 1.5
+    (i2400m-fw-usb-1.5.sbcf)
+  * Intel WiMAX/WiFi Link 6050 USB firmware, version 1.5
+    (i6050-fw-usb-1.5.sbcf)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-intel-sound
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Intel sound DSPs
+ This package contains the binary firmware for Intel SST sound DSPs
+ supported by the snd-soc-sst-acpi or snd-intel-sst-acpi driver.
+ .
+ Contents:
+  * Intel "Broadwell" SST DSP firmware, version 8.4.1.77
+    (intel/IntcSST2.bin)
+  * Intel "Broxton" SST DSP firmware, version 9.22.01.3366_157
+    (intel/dsp_fw_bxtn_v3366.bin, intel/dsp_fw_bxtn.bin)
+  * Intel "Cannonlake" SST DSP firmware, version 10.23.00.1858
+    (intel/dsp_fw_cnl_v1858.bin, intel/dsp_fw_cnl.bin)
+  * Intel "Geminilake" SST DSP firmware, version 9.22.01.3366_157
+    (intel/dsp_fw_glk_v3366.bin, intel/dsp_fw_glk.bin)
+  * Intel "Kabylake" SST DSP firmware, version 9.21.00.3402_161
+    (intel/dsp_fw_kbl_v3402.bin, intel/dsp_fw_kbl.bin)
+  * Intel "Kabylake" SST DSP firmware, version 9.21.00.3420_163
+    (intel/dsp_fw_kbl_v3420.bin)
+  * Intel "Skylake" SST DSP firmware, version 9.21.00.3402_161
+    (intel/dsp_fw_release_v3402.bin, intel/dsp_fw_release.bin)
+  * Intel "Bay Trail" SST DSP firmware
+    (intel/fw_sst_0f28.bin-48kHz_i2s_master)
+  * Intel "Bay Trail" SST DSP firmware, version 01.0C.00.01
+    (intel/fw_sst_0f28.bin)
+  * Intel "Cherry Trail"/"Braswell" SST DSP firmware, version
+    01.0B.02.02 (intel/fw_sst_22a8.bin)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-ipw2x00
+Architecture: all
+Provides: 
+Pre-Depends: debconf | debconf-2.0
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Intel Pro Wireless 2100, 2200 and 2915
+ This package contains the binary firmware for Intel Pro Wireless 2100,
+ 2200 and 2915 cards supported by the ipw2100 and ipw2200 drivers.
+ .
+ Contents:
+  * Intel Pro Wireless 2100 firmware (bootstrap), version 1.3
+    (ipw2100-1.3.fw)
+  * Intel Pro Wireless 2100 firmware (ibss mode), version 1.3
+    (ipw2100-1.3-i.fw)
+  * Intel Pro Wireless 2100 firmware (monitor mode), version 1.3
+    (ipw2100-1.3-p.fw)
+  * Intel Pro Wireless 2200/2915 firmware (bss), version 3.1
+    (ipw2200-bss.fw)
+  * Intel Pro Wireless 2200/2915 firmware (ibss), version 3.1
+    (ipw2200-ibss.fw)
+  * Intel Pro Wireless 2200/2915 firmware (snf), version 3.1
+    (ipw2200-sniffer.fw)
+ .
+ This firmware is covered by the Intel Pro Wireless 2100 and 2200/2915
+ License.  You must agree to the terms of this license before it is
+ installed.
+Homepage: http://ipw2100.sourceforge.net/firmware.php, http://ipw2200.sourceforge.net/firmware.php
+Multi-Arch: foreign
+
+Package: firmware-ivtv
+Architecture: all
+Provides: 
+Pre-Depends: debconf | debconf-2.0
+Depends: ${misc:Depends}
+Recommends: firmware-linux-nonfree (>= 0.38~)
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for iTVC15-family MPEG codecs (ivtv and pvrusb2 drivers)
+ This package contains the binary firmware for TV cards with Conexant
+ iTVC15-family MPEG codecs, supported by the ivtv and pvrusb2 drivers.
+ .
+ Contents:
+  * Conexant CX23415/CX23416 MPEG codec (decoder) (v4l-cx2341x-dec.fw)
+  * Conexant CX23415/CX23416 MPEG codec (encoder) (v4l-cx2341x-enc.fw)
+  * Conexant CX23415/CX23416 MPEG codec (initialization)
+    (v4l-cx2341x-init.mpg)
+  * Hauppauge PVR USB2 24xxx models (v4l-pvrusb2-24xxx-01.fw)
+  * Hauppauge PVR USB2 29xxx models (v4l-pvrusb2-29xxx-01.fw)
+ .
+ This firmware is covered by the Hauppauge End-User Firmware License
+ Agreement.  You must agree to the terms of this license before it is
+ installed.
+Homepage: https://web.archive.org/web/20150508162618/http://dl.ivtvdriver.org:80/ivtv/firmware/
+Multi-Arch: foreign
+
+Package: firmware-iwlwifi
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Intel Wireless cards
+ This package contains the binary firmware for Intel Wireless cards
+ supported by the iwl3945, iwl4965, and iwlwifi drivers.
+ .
+ Contents:
+  * Intel Wireless 8260 Bluetooth configuration, version 20.10.0.8
+    (intel/ibt-11-5.ddc)
+  * Intel Wireless 8260 Bluetooth firmware, version 20.100.0.3
+    (intel/ibt-11-5.sfi)
+  * Intel Wireless 8265 Bluetooth configuration, version 20.30.0.1
+    (intel/ibt-12-16.ddc)
+  * Intel Wireless 8265 Bluetooth firmware, version 20.100.0.3
+    (intel/ibt-12-16.sfi)
+  * Intel Wireless 9460/9650 (var 0 rev 1) Bluetooth configuration,
+    version 20.10 (intel/ibt-17-0-1.ddc)
+  * Intel Wireless 9460/9650 (var 0 rev 1) Bluetooth firmware, version
+    20.30.0.1 (intel/ibt-17-0-1.sfi)
+  * Intel Wireless 9460/9650 (var 16 rev 1) Bluetooth configuration,
+    version 20.60.0.2 (intel/ibt-17-16-1.ddc)
+  * Intel Wireless 9460/9650 (var 16 rev 1) Bluetooth firmware, version
+    20.100.0.3 (intel/ibt-17-16-1.sfi)
+  * Intel Wireless 9160/9260 (var 0 rev 1) Bluetooth configuration,
+    version 20.10 (intel/ibt-18-0-1.ddc)
+  * Intel Wireless 9160/9260 (var 0 rev 1) Bluetooth firmware, version
+    20.30.0.1 (intel/ibt-18-0-1.sfi)
+  * Intel Wireless 9160/9260 (var 16 rev 1) Bluetooth configuration,
+    version 20.60.0.2 (intel/ibt-18-16-1.ddc)
+  * Intel Wireless 9160/9260 (var 16 rev 1) Bluetooth firmware, version
+    20.100.0.3 (intel/ibt-18-16-1.sfi)
+  * Intel Wireless 3160 (B6) Bluetooth firmware patch, version 19.30
+    (intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq)
+  * Intel Wireless 3160 (B4) Bluetooth firmware patch, version 19.01
+    (intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq)
+  * Intel Wireless 7260 (B5) Bluetooth firmware patch, version 20.60.0.2
+    (intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq)
+  * Intel Wireless 7260 (B3) Bluetooth firmware patch, version 20.60.0.2
+    (intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq)
+  * Intel Wireless 7260 Bluetooth firmware generic patch
+    (intel/ibt-hw-37.7.bseq)
+  * Intel Wireless 7265 (C0) Bluetooth firmware patch, version 19.30
+    (intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq)
+  * Intel Wireless 7265 (D0) Bluetooth firmware patch, version 20.60.0.2
+    (intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq)
+  * Intel Wireless 7265 (D1) Bluetooth firmware patch, version 20.70.0.4
+    (intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq)
+  * Intel Wireless 7265 Bluetooth firmware generic patch
+    (intel/ibt-hw-37.8.bseq)
+  * Intel Wireless 100 firmware, version 39.31.5.1 (iwlwifi-100-5.ucode)
+  * Intel Wireless 105 firmware, version 18.168.6.1
+    (iwlwifi-105-6.ucode)
+  * Intel Wireless 135 firmware, version 18.168.6.1
+    (iwlwifi-135-6.ucode)
+  * Intel Wireless 1000 firmware, version 39.31.5.1
+    (iwlwifi-1000-5.ucode)
+  * Intel Wireless 2200 firmware, version 18.168.6.1
+    (iwlwifi-2000-6.ucode)
+  * Intel Wireless 2230 firmware, version 18.168.6.1
+    (iwlwifi-2030-6.ucode)
+  * Intel Wireless 3160 firmware, version 25.228.9.0
+    (iwlwifi-3160-9.ucode)
+  * Intel Wireless 3160 firmware, version 17.bfb58538.0
+    (iwlwifi-3160-17.ucode)
+  * Intel Wireless 3168 firmware, version 22.391740.0
+    (iwlwifi-3168-22.ucode)
+  * Intel Wireless 3168 firmware, version 29.3e3b4de5.0
+    (iwlwifi-3168-29.ucode)
+  * Intel Wireless 3945 firmware, version 15.32.2.9
+    (iwlwifi-3945-2.ucode)
+  * Intel Wireless 4965 firmware, version 228.61.2.24
+    (iwlwifi-4965-2.ucode)
+  * Intel Wireless 5100, 5300 and 5350 firmware, version 8.83.5.1
+    (iwlwifi-5000-5.ucode)
+  * Intel Wireless 5150 firmware, version 8.24.2.2
+    (iwlwifi-5150-2.ucode)
+  * Intel Wireless 6000 firmware, version 9.221.4.1
+    (iwlwifi-6000-4.ucode)
+  * Intel Wireless 6005/6205 firmware, version 17.168.5.3
+    (iwlwifi-6000g2a-5.ucode)
+  * Intel Wireless 6005/6205 firmware, version 18.168.6.1
+    (iwlwifi-6000g2a-6.ucode)
+  * Intel Wireless 6030 firmware, version 18.168.6.1
+    (iwlwifi-6000g2b-6.ucode)
+  * Intel Wireless 6250 firmware, version 41.28.5.1
+    (iwlwifi-6050-5.ucode)
+  * Intel Wireless 7260 firmware, version 25.228.9.0
+    (iwlwifi-7260-9.ucode)
+  * Intel Wireless 7260 firmware, version 17.bfb58538.0
+    (iwlwifi-7260-17.ucode)
+  * Intel Wireless 7265 firmware, version 25.228.9.0
+    (iwlwifi-7265-9.ucode)
+  * Intel Wireless 7265 firmware, version 17.bfb58538.0
+    (iwlwifi-7265-17.ucode)
+  * Intel Wireless 7265D firmware, version 22.391740.0
+    (iwlwifi-7265D-22.ucode)
+  * Intel Wireless 7265D firmware, version 29.3e3b4de5.0
+    (iwlwifi-7265D-29.ucode)
+  * Intel Wireless 8000C firmware, version 22.391740.0
+    (iwlwifi-8000C-22.ucode)
+  * Intel Wireless 8000C firmware, version 36.9f0a2d68.0
+    (iwlwifi-8000C-36.ucode)
+  * Intel Wireless 8265 firmware, version 22.391740.0
+    (iwlwifi-8265-22.ucode)
+  * Intel Wireless 8265 firmware, version 36.9f0a2d68.0
+    (iwlwifi-8265-36.ucode)
+  * Intel Wireless 9000 firmware, version 34.ba501b11.0
+    (iwlwifi-9000-pu-b0-jf-b0-34.ucode)
+  * Intel Wireless 9000 firmware, version 38.755cfdd8.0
+    (iwlwifi-9000-pu-b0-jf-b0-38.ucode)
+  * Intel Wireless 9000 firmware, version 41.fc1a7aea.0
+    (iwlwifi-9000-pu-b0-jf-b0-41.ucode)
+  * Intel Wireless 9260 firmware, version 34.ba501b11.0
+    (iwlwifi-9260-th-b0-jf-b0-34.ucode)
+  * Intel Wireless 9260 firmware, version 38.755cfdd8.0
+    (iwlwifi-9260-th-b0-jf-b0-38.ucode)
+  * Intel Wireless 9260 firmware, version 41.fc1a7aea.0
+    (iwlwifi-9260-th-b0-jf-b0-41.ucode)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-libertas
+Architecture: all
+Provides: libertas-firmware
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: libertas-firmware
+Breaks: libertas-firmware (<< 9.70.7.p0.0-2)
+Conflicts: 
+Description: Binary firmware for Marvell wireless cards
+ This package contains the binary firmware for wireless network cards with
+ Marvell 88W8xxx chips supported by the libertas_cs, libertas_sdio,
+ libertas_spi, libertas_tf_usb, mwifiex_pcie, mwifiex_sdio, mwifiex_usb,
+ mwl8k and usb8xxx drivers.
+ .
+ Contents:
+  * Libertas 88W8388 'Thinfirm' firmware (lbtf_usb.bin)
+  * Libertas 88W8381 main code (libertas/cf8381.bin)
+  * Libertas 88W8381 boot code (libertas/cf8381_helper.bin)
+  * Libertas 88W8385-CF main code (libertas/cf8385.bin, libertas_cs.fw)
+  * Libertas 88W8385-CF boot code (libertas/cf8385_helper.bin,
+    libertas_cs_helper.fw)
+  * 88W8686-GSPI main code, version 9.x (libertas/gspi8686_v9.bin,
+    libertas/gspi8686.bin)
+  * 88W8686-GSPI boot code, version 9.x
+    (libertas/gspi8686_v9_helper.bin, libertas/gspi8686_hlp.bin)
+  * 88W8688-GSPI main code (libertas/gspi8688.bin)
+  * 88W8688-GSPI boot code (libertas/gspi8688_helper.bin)
+  * Libertas 88W8385-SDIO main code (libertas/sd8385.bin, sd8385.bin)
+  * Libertas 88W8385-SDIO boot code (libertas/sd8385_helper.bin,
+    sd8385_helper.bin)
+  * 88W8686-SDIO main code, version 8.x (libertas/sd8686_v8.bin,
+    sd8686.bin)
+  * 88W8686-SDIO boot code, version 8.x (libertas/sd8686_v8_helper.bin,
+    sd8686_helper.bin)
+  * 88W8686-SDIO main code, version 9.70.20.p0 (libertas/sd8686_v9.bin)
+  * 88W8686-SDIO boot code, version 9.x (libertas/sd8686_v9_helper.bin)
+  * Libertas 88W8388 OLPC firmware, version 5.110.22.p23
+    (libertas/usb8388_olpc.bin)
+  * Libertas 88W8388 firmware, version 5.x (libertas/usb8388_v5.bin,
+    usb8388.bin)
+  * Libertas 88W8388 firmware, version 9.x (libertas/usb8388_v9.bin)
+  * 88W8682 firmware (libertas/usb8682.bin)
+  * Avastar 88W8897-PCIe firmware, version V15.68.7.p154 (WLAN) /
+    15.28.7.p154 (BT) (mrvl/pcie8897_uapsta.bin)
+  * Avastar 88W8997-PCIe firmware, version 16.68.1.p97
+    (mrvl/pcie8997_wlan_v4.bin)
+  * Avastar 88W8997-PCIe-UART firmware, version 16.68.1.p70
+    (mrvl/pcieuart8997_combo_v4.bin)
+  * Avastar 88W8997-PCIe-USB firmware, version V16.68.1.p162 (WLAN) /
+    16.26.1.p162 (BT) (mrvl/pcieusb8997_combo_v4.bin)
+  * 88W8688-SDIO main code (mrvl/sd8688.bin, libertas/sd8688.bin,
+    sd8688.bin)
+  * 88W8688-SDIO boot code (mrvl/sd8688_helper.bin,
+    libertas/sd8688_helper.bin, sd8688_helper.bin)
+  * Avastar 88W8787 firmware, version 14.66.35.p52
+    (mrvl/sd8787_uapsta.bin)
+  * Avastar 88W8797-SDIO firmware, version 14.66.11.p151
+    (mrvl/sd8797_uapsta.bin)
+  * Avastar 88W8801-SDIO firmware, version 14.68.36.p60
+    (mrvl/sd8801_uapsta.bin)
+  * Avastar 88W8887 firmware, version 15.68.1.p71
+    (mrvl/sd8887_uapsta.bin)
+  * Avastar 88W8897-SDIO firmware, version V15.68.7.p154 (WLAN) /
+    15.68.7.p154 (BT) (mrvl/sd8897_uapsta.bin)
+  * Avastar 88W8766 firmware, version 14.68.22.p16 (WLAN) / 14.28.22.p16
+    (BT) (mrvl/usb8766_uapsta.bin)
+  * Avastar 88W8797-USB firmware, version 14.68.29.p49
+    (mrvl/usb8797_uapsta.bin)
+  * Avastar 88W8801-USB firmware, version 14.68.36.p138
+    (mrvl/usb8801_uapsta.bin)
+  * Avastar 88W8897-USB firmware, version 15.68.4.p103 (WLAN) /
+    15.28.4.p103 (BT) (mrvl/usb8897_uapsta.bin)
+  * Avastar 88W8997-USB firmware, version V16.68.1.p162 (WLAN) /
+    16.26.1.p162 (BT) (mrvl/usbusb8997_combo_v4.bin)
+  * TopDog 88W8366 main code (mwl8k/fmimage_8366.fw)
+  * TopDog 88W8366 AP-mode main code (mwl8k/fmimage_8366_ap-2.fw)
+  * TopDog 88W8366 AP-mode main code, version 5.2.8.16
+    (mwl8k/fmimage_8366_ap-3.fw)
+  * TopDog 88W8687 main code (mwl8k/fmimage_8687.fw)
+  * TopDog 88W8764 AP-mode firmware, version 7.4.0.9
+    (mwl8k/fmimage_8764_ap-1.fw)
+  * TopDog 88W8366 boot code (mwl8k/helper_8366.fw)
+  * TopDog 88W8687 boot code (mwl8k/helper_8687.fw)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-misc-nonfree
+Architecture: all
+Provides: firmware-adi, firmware-ralink
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~), firmware-linux-nonfree (<< 20151018-1~), firmware-adi (<< 20151018-1~), firmware-ralink (<< 20151018-1~)
+Breaks: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~), firmware-linux-nonfree (<< 20151018-1~), firmware-adi (<< 20151018-1~), firmware-ralink (<< 20151018-1~)
+Conflicts: 
+Description: Binary firmware for various drivers in the Linux kernel
+ This package contains the binary firmware for  various drivers in the
+ Linux kernel.  This is a collection of firmware blobs which are not
+ individually large enough to warrant a standalone package.
+ .
+ Contents:
+  * 3Com Typhoon firmware, version 03.001.008 (3com/typhoon.bin)
+  * AdvanSys ASC-3550 firmware (advansys/3550.bin)
+  * AdvanSys ASC-38C0800 firmware (advansys/38C0800.bin)
+  * AdvanSys ASC-38C1600 firmware (advansys/38C1600.bin)
+  * AdvanSys SCSI controller microcode (advansys/mcode.bin)
+  * Agere/Prism/Symbol Orinoco firmware (AP mode), version 9.48 Hermes I
+    (agere_ap_fw.bin)
+  * Agere/Prism/Symbol Orinoco firmware (STA mode), version 9.48 Hermes
+    I (agere_sta_fw.bin)
+  * Abilis Systems AS102 stage 1 firmware (as102_data1_st.hex)
+  * Abilis Systems AS102 stage 2 firmware (as102_data2_st.hex)
+  * Creative CA0132 DSP firmware (ctefx.bin)
+  * Creative CA0132 SpeakerEQ firmware (ctspeq.bin)
+  * Chelsio T3 optical EDC firmware (AEL2005 PHY)
+    (cxgb3/ael2005_opt_edc.bin)
+  * Chelsio T3 twinax EDC firmware (AEL2005 PHY)
+    (cxgb3/ael2005_twx_edc.bin)
+  * Chelsio T3 twinax EDC firmware (AEL2020 PHY)
+    (cxgb3/ael2020_twx_edc.bin)
+  * Chelsio T3B protocol engine firmware, version 1.1.0
+    (cxgb3/t3b_psram-1.1.0.bin)
+  * Chelsio T3C protocol engine firmware, version 1.1.0
+    (cxgb3/t3c_psram-1.1.0.bin)
+  * Chelsio T3 main firmware, version 7.4.0 (cxgb3/t3fw-7.4.0.bin)
+  * Chelsio T3 main firmware, version 7.10.0 (cxgb3/t3fw-7.10.0.bin)
+  * Chelsio T3 main firmware, version 7.12.0 (cxgb3/t3fw-7.12.0.bin)
+  * Chelsio T4 10GBASE-T firmware (AQ1202 PHY) (cxgb4/aq1202_fw.cld)
+  * Chelsio T4 10GBASE-T firmware (BCM84834 PHY) (cxgb4/bcm8483.bin)
+  * Chelsio T4 firmware, version 1.22.9.0 (cxgb4/t4fw-1.22.9.0.bin,
+    cxgb4/t4fw.bin)
+  * Chelsio T5 firmware, version 1.22.9.0 (cxgb4/t5fw-1.22.9.0.bin,
+    cxgb4/t5fw.bin)
+  * Chelsio T6 firmware, version 1.22.9.0 (cxgb4/t6fw-1.22.9.0.bin,
+    cxgb4/t6fw.bin)
+  * DAB-USB FPGA bitfile (dabusb/bitstream.bin)
+  * DAB-USB firmware (dabusb/firmware.fw)
+  * Xceive 4000 tuner firmware, version 1.4.1 (dvb-fe-xc4000-1.4.1.fw)
+  * Xceive 5000 tuner firmware, version 1.6.114
+    (dvb-fe-xc5000-1.6.114.fw)
+  * Xceive 5000c tuner firmware, version 4.1.30.7
+    (dvb-fe-xc5000c-4.1.30.7.fw)
+  * DiBcom dib0700 USB DVB bridge firmware, version 1.20
+    (dvb-usb-dib0700-1.20.fw)
+  * DiBcom dib9135 DVB-T USB firmware (dvb-usb-it9135-01.fw)
+  * DiBcom dib9135 DVB-T USB firmware (dvb-usb-it9135-02.fw)
+  * Terratec H5 DRX-K firmware (dvb-usb-terratec-h5-drxk.fw)
+  * Intel 82559 D101M microcode (e100/d101m_ucode.bin)
+  * Intel 82559 D101S microcode (e100/d101s_ucode.bin)
+  * Intel 82551-F and 82551-10 microcode (e100/d102e_ucode.bin)
+  * ENE UB6250 MS Pro read/write firmware (ene-ub6250/msp_rdwr.bin)
+  * ENE UB6250 MS init firmware (ene-ub6250/ms_init.bin)
+  * ENE UB6250 MS read/write firmware (ene-ub6250/ms_rdwr.bin)
+  * ENE UB6250 SD init stage 1 firmware (ene-ub6250/sd_init1.bin)
+  * ENE UB6250 SD init stage 2 firmware (ene-ub6250/sd_init2.bin)
+  * ENE UB6250 SD read/write firmware (ene-ub6250/sd_rdwr.bin)
+  * Sensoray 2255 firmware, version 1.2.8 (f2255usb.bin)
+  * Micronas GO7007SB encoder stage 1 firmware (go7007/go7007fw.bin)
+  * Micronas GO7007SB encoder stage 2 firmware (go7007/go7007tv.bin)
+  * WISchip WinFast WalkieTV firmware (go7007/lr192.fw)
+  * Plextor ConvertX M402U firmware (go7007/px-m402u.fw)
+  * Plextor ConvertX TV402U firmware (go7007/px-tv402u.fw)
+  * Sensoray S2250 stage 1 firmware (go7007/s2250-1.fw, s2250_loader.fw)
+  * Sensoray S2250 stage 2 firmware (go7007/s2250-2.fw, s2250.fw)
+  * WISchip WinFast WalkieTV firmware (go7007/wis-startrek.fw)
+  * Intel OPA Gen1 DC firmware, version 1.27.0 (hfi1_dc8051.fw)
+  * Intel OPA Gen1 fabric firmware, version 0x1055 (hfi1_fabric.fw)
+  * Intel OPA Gen1 PCIe serdes firmware, version 0x4755 (hfi1_pcie.fw)
+  * Intel OPA Gen1 SBus firmware, version 0x10130001 (hfi1_sbus.fw)
+  * Freescale i.MX6 SDMA firmware, version 3.3 (imx/sdma/sdma-imx6q.bin)
+  * Freescale i.MX7 SDMA firmware, version 4.2 (imx/sdma/sdma-imx7d.bin)
+  * Intel "Broxton" DMC firmware, version 1.07
+    (i915/bxt_dmc_ver1_07.bin, i915/bxt_dmc_ver1.bin)
+  * Intel "Broxton" GuC firmware, version 8.7 (i915/bxt_guc_ver8_7.bin)
+  * Intel "Broxton" GuC firmware, version 9.29
+    (i915/bxt_guc_ver9_29.bin)
+  * Intel "Broxton" HuC firmware, version 1.07.1398
+    (i915/bxt_huc_ver01_07_1398.bin)
+  * Intel "Cannonlake" DMC firmware, version 1.07
+    (i915/cnl_dmc_ver1_07.bin)
+  * Intel "Geminilake" DMC firmware, version 1.04
+    (i915/glk_dmc_ver1_04.bin)
+  * Intel "Kabylake" DMC firmware, version 1.01
+    (i915/kbl_dmc_ver1_01.bin, i915/kbl_dmc_ver1.bin)
+  * Intel "Kabylake" DMC firmware, version 1.04
+    (i915/kbl_dmc_ver1_04.bin)
+  * Intel "Kabylake" GuC firmware, version 9.14
+    (i915/kbl_guc_ver9_14.bin)
+  * Intel "Kabylake" GuC firmware, version 9.39
+    (i915/kbl_guc_ver9_39.bin)
+  * Intel "Kabylake" HuC firmware, version 2.0.1810
+    (i915/kbl_huc_ver02_00_1810.bin)
+  * Intel "Skylake" DMC firmware, version 1.23
+    (i915/skl_dmc_ver1_23.bin)
+  * Intel "Skylake" DMC firmware, version 1.26
+    (i915/skl_dmc_ver1_26.bin, i915/skl_dmc_ver1.bin)
+  * Intel "Skylake" DMC firmware, version 1.27
+    (i915/skl_dmc_ver1_27.bin)
+  * Intel "Skylake" GuC firmware, version 1.1059 (i915/skl_guc_ver1.bin)
+  * Intel "Skylake" GuC firmware, version 4.3 (i915/skl_guc_ver4.bin)
+  * Intel "Skylake" GuC firmware, version 6.1 (i915/skl_guc_ver6_1.bin,
+    i915/skl_guc_ver6.bin)
+  * Intel "Skylake" GuC firmware, version 9.33
+    (i915/skl_guc_ver9_33.bin)
+  * Intel "Skylake" HuC firmware, version 1.07.1398
+    (i915/skl_huc_ver01_07_1398.bin)
+  * kaweth/new_code.bin
+  * kaweth/new_code_fix.bin
+  * kaweth/trigger_code.bin
+  * kaweth/trigger_code_fix.bin
+  * Matrox G200 WARP engine microcode (matrox/g200_warp.fw)
+  * Matrox G400/G550 WARP engine microcode (matrox/g400_warp.fw)
+  * MOXA UPort 1110 firmware (moxa/moxa-1110.fw)
+  * MOXA UPort 1130 firmware (moxa/moxa-1130.fw)
+  * MOXA UPort 1130I firmware (moxa/moxa-1131.fw)
+  * MOXA UPort 1150 firmware (moxa/moxa-1150.fw)
+  * MOXA UPort 1150I firmware (moxa/moxa-1151.fw)
+  * MOXA UPort 1250 firmware (moxa/moxa-1250.fw)
+  * MOXA UPort 1250I firmware (moxa/moxa-1251.fw)
+  * MOXA UPort 1410 firmware (moxa/moxa-1410.fw)
+  * MOXA UPort 1450 firmware (moxa/moxa-1450.fw)
+  * MOXA UPort 1450I firmware (moxa/moxa-1451.fw)
+  * MOXA UPort 1610-16 firmware (moxa/moxa-1613.fw)
+  * MOXA UPort 1610-8 firmware (moxa/moxa-1618.fw)
+  * MOXA UPort 1650-16 firmware (moxa/moxa-1653.fw)
+  * MOXA UPort 1650-8 firmware (moxa/moxa-1658.fw)
+  * MediaTek MT7601U firmware, version 34 (mt7601u.bin)
+  * MediaTek MT7630/MT7650 Bluetooth firmware (mt7650.bin)
+  * MediaTek MT76x2 firmware, version 1.9 (mt7662.bin)
+  * MediaTek MT76x2 ROM patch, version 0.0.2_P69 (mt7662_rom_patch.bin)
+  * Multi-Tech USB CDMA modem firmware (mts_cdma.fw)
+  * Multi-Tech USB EDGE modem firmware (mts_edge.fw)
+  * Multi-Tech USB GPRS modem firmware (mts_gsm.fw)
+  * Nvidia GK20A FECS firmware data (nvidia/gk20a/fecs_data.bin)
+  * Nvidia GK20A FECS firmware instructions (nvidia/gk20a/fecs_inst.bin)
+  * Nvidia GK20A GPCCS firmware data (nvidia/gk20a/gpccs_data.bin)
+  * Nvidia GK20A GPCCS firmware instructions
+    (nvidia/gk20a/gpccs_inst.bin)
+  * Nvidia GK20A bundle init data (nvidia/gk20a/sw_bundle_init.bin)
+  * Nvidia GK20A ctx init data (nvidia/gk20a/sw_ctx.bin)
+  * Nvidia GK20A method init data (nvidia/gk20a/sw_method_init.bin)
+  * Nvidia GK20A non-ctx init data (nvidia/gk20a/sw_nonctx.bin)
+  * nvidia/gm200/acr/bl.bin, nvidia/gm204/acr/bl.bin,
+    nvidia/gm206/acr/bl.bin
+  * nvidia/gm200/acr/ucode_load.bin, nvidia/gm204/acr/ucode_load.bin
+  * nvidia/gm200/acr/ucode_unload.bin, nvidia/gm204/acr/ucode_unload.bin
+  * nvidia/gm200/gr/fecs_bl.bin, nvidia/gm204/gr/fecs_bl.bin,
+    nvidia/gm206/gr/fecs_bl.bin, nvidia/gp100/gr/fecs_bl.bin,
+    nvidia/gp102/gr/fecs_bl.bin
+  * nvidia/gm200/gr/fecs_data.bin
+  * nvidia/gm200/gr/fecs_inst.bin, nvidia/gm204/gr/fecs_inst.bin,
+    nvidia/gm206/gr/fecs_inst.bin
+  * nvidia/gm200/gr/fecs_sig.bin
+  * nvidia/gm200/gr/gpccs_bl.bin, nvidia/gm204/gr/gpccs_bl.bin,
+    nvidia/gm206/gr/gpccs_bl.bin, nvidia/gp100/gr/gpccs_bl.bin,
+    nvidia/gp102/gr/gpccs_bl.bin
+  * nvidia/gm200/gr/gpccs_data.bin
+  * nvidia/gm200/gr/gpccs_inst.bin, nvidia/gm204/gr/gpccs_inst.bin,
+    nvidia/gm206/gr/gpccs_inst.bin
+  * nvidia/gm200/gr/gpccs_sig.bin
+  * nvidia/gm200/gr/sw_bundle_init.bin,
+    nvidia/gm204/gr/sw_bundle_init.bin,
+    nvidia/gm206/gr/sw_bundle_init.bin
+  * nvidia/gm200/gr/sw_ctx.bin, nvidia/gm204/gr/sw_ctx.bin,
+    nvidia/gm206/gr/sw_ctx.bin
+  * nvidia/gm200/gr/sw_method_init.bin,
+    nvidia/gm204/gr/sw_method_init.bin,
+    nvidia/gm206/gr/sw_method_init.bin,
+    nvidia/gm20b/gr/sw_method_init.bin
+  * nvidia/gm200/gr/sw_nonctx.bin, nvidia/gm204/gr/sw_nonctx.bin,
+    nvidia/gm206/gr/sw_nonctx.bin
+  * nvidia/gm204/gr/fecs_data.bin
+  * nvidia/gm204/gr/fecs_sig.bin
+  * nvidia/gm204/gr/gpccs_data.bin
+  * nvidia/gm204/gr/gpccs_sig.bin
+  * nvidia/gm206/acr/ucode_load.bin
+  * nvidia/gm206/acr/ucode_unload.bin
+  * nvidia/gm206/gr/fecs_data.bin
+  * nvidia/gm206/gr/fecs_sig.bin
+  * nvidia/gm206/gr/gpccs_data.bin
+  * nvidia/gm206/gr/gpccs_sig.bin
+  * nvidia/gm20b/acr/bl.bin
+  * nvidia/gm20b/acr/ucode_load.bin
+  * nvidia/gm20b/gr/fecs_bl.bin
+  * nvidia/gm20b/gr/fecs_data.bin
+  * nvidia/gm20b/gr/fecs_inst.bin
+  * nvidia/gm20b/gr/fecs_sig.bin
+  * nvidia/gm20b/gr/gpccs_data.bin
+  * nvidia/gm20b/gr/gpccs_inst.bin
+  * nvidia/gm20b/gr/sw_bundle_init.bin
+  * nvidia/gm20b/gr/sw_ctx.bin
+  * nvidia/gm20b/gr/sw_nonctx.bin
+  * nvidia/gm20b/pmu/desc.bin
+  * nvidia/gm20b/pmu/image.bin
+  * nvidia/gm20b/pmu/sig.bin
+  * nvidia/gp100/acr/bl.bin
+  * nvidia/gp100/acr/ucode_load.bin
+  * nvidia/gp100/acr/ucode_unload.bin
+  * nvidia/gp100/gr/fecs_data.bin
+  * nvidia/gp100/gr/fecs_inst.bin
+  * nvidia/gp100/gr/fecs_sig.bin
+  * nvidia/gp100/gr/gpccs_data.bin
+  * nvidia/gp100/gr/gpccs_inst.bin
+  * nvidia/gp100/gr/gpccs_sig.bin
+  * nvidia/gp100/gr/sw_bundle_init.bin
+  * nvidia/gp100/gr/sw_ctx.bin
+  * nvidia/gp100/gr/sw_method_init.bin
+  * nvidia/gp100/gr/sw_nonctx.bin
+  * nvidia/gp102/acr/bl.bin, nvidia/gp104/acr/bl.bin,
+    nvidia/gp106/acr/bl.bin, nvidia/gp107/acr/bl.bin,
+    nvidia/gp108/acr/bl.bin
+  * nvidia/gp102/acr/ucode_load.bin, nvidia/gp104/acr/ucode_load.bin,
+    nvidia/gp106/acr/ucode_load.bin, nvidia/gp107/acr/ucode_load.bin,
+    nvidia/gp108/acr/ucode_load.bin
+  * nvidia/gp102/acr/ucode_unload.bin,
+    nvidia/gp104/acr/ucode_unload.bin,
+    nvidia/gp106/acr/ucode_unload.bin,
+    nvidia/gp107/acr/ucode_unload.bin, nvidia/gp108/acr/ucode_unload.bin
+  * nvidia/gp102/acr/unload_bl.bin, nvidia/gp104/acr/unload_bl.bin,
+    nvidia/gp106/acr/unload_bl.bin, nvidia/gp107/acr/unload_bl.bin,
+    nvidia/gp108/acr/unload_bl.bin
+  * nvidia/gp102/gr/fecs_data.bin
+  * nvidia/gp102/gr/fecs_inst.bin, nvidia/gp106/gr/fecs_inst.bin
+  * nvidia/gp102/gr/fecs_sig.bin
+  * nvidia/gp102/gr/gpccs_data.bin
+  * nvidia/gp102/gr/gpccs_inst.bin, nvidia/gp106/gr/gpccs_inst.bin
+  * nvidia/gp102/gr/gpccs_sig.bin
+  * nvidia/gp102/gr/sw_bundle_init.bin,
+    nvidia/gp104/gr/sw_bundle_init.bin,
+    nvidia/gp106/gr/sw_bundle_init.bin,
+    nvidia/gp107/gr/sw_bundle_init.bin
+  * nvidia/gp102/gr/sw_ctx.bin, nvidia/gp104/gr/sw_ctx.bin,
+    nvidia/gp106/gr/sw_ctx.bin
+  * nvidia/gp102/gr/sw_method_init.bin,
+    nvidia/gp104/gr/sw_method_init.bin,
+    nvidia/gp106/gr/sw_method_init.bin,
+    nvidia/gp107/gr/sw_method_init.bin
+  * nvidia/gp102/gr/sw_nonctx.bin, nvidia/gp104/gr/sw_nonctx.bin,
+    nvidia/gp106/gr/sw_nonctx.bin
+  * nvidia/gp102/nvdec/scrubber.bin, nvidia/gp104/nvdec/scrubber.bin,
+    nvidia/gp106/nvdec/scrubber.bin, nvidia/gp107/nvdec/scrubber.bin,
+    nvidia/gp108/nvdec/scrubber.bin
+  * nvidia/gp102/sec2/desc.bin, nvidia/gp104/sec2/desc.bin,
+    nvidia/gp106/sec2/desc.bin, nvidia/gp107/sec2/desc.bin
+  * nvidia/gp102/sec2/image.bin, nvidia/gp104/sec2/image.bin,
+    nvidia/gp106/sec2/image.bin, nvidia/gp107/sec2/image.bin
+  * nvidia/gp102/sec2/sig.bin, nvidia/gp104/sec2/sig.bin,
+    nvidia/gp106/sec2/sig.bin, nvidia/gp107/sec2/sig.bin
+  * nvidia/gp104/gr/fecs_data.bin
+  * nvidia/gp104/gr/fecs_inst.bin
+  * nvidia/gp104/gr/fecs_sig.bin
+  * nvidia/gp104/gr/gpccs_data.bin
+  * nvidia/gp104/gr/gpccs_inst.bin
+  * nvidia/gp104/gr/gpccs_sig.bin
+  * nvidia/gp106/gr/fecs_data.bin
+  * nvidia/gp106/gr/fecs_sig.bin
+  * nvidia/gp106/gr/gpccs_data.bin
+  * nvidia/gp106/gr/gpccs_sig.bin
+  * nvidia/gp107/gr/fecs_bl.bin
+  * nvidia/gp107/gr/fecs_data.bin
+  * nvidia/gp107/gr/fecs_inst.bin
+  * nvidia/gp107/gr/fecs_sig.bin
+  * nvidia/gp107/gr/gpccs_bl.bin
+  * nvidia/gp107/gr/gpccs_data.bin
+  * nvidia/gp107/gr/gpccs_inst.bin
+  * nvidia/gp107/gr/gpccs_sig.bin
+  * nvidia/gp107/gr/sw_ctx.bin
+  * nvidia/gp107/gr/sw_nonctx.bin
+  * nvidia/gp108/gr/fecs_bl.bin
+  * nvidia/gp108/gr/fecs_data.bin
+  * nvidia/gp108/gr/fecs_inst.bin
+  * nvidia/gp108/gr/fecs_sig.bin
+  * nvidia/gp108/gr/gpccs_bl.bin
+  * nvidia/gp108/gr/gpccs_data.bin
+  * nvidia/gp108/gr/gpccs_inst.bin
+  * nvidia/gp108/gr/gpccs_sig.bin
+  * nvidia/gp108/gr/sw_bundle_init.bin
+  * nvidia/gp108/gr/sw_ctx.bin
+  * nvidia/gp108/gr/sw_method_init.bin
+  * nvidia/gp108/gr/sw_nonctx.bin
+  * nvidia/gp108/sec2/desc.bin
+  * nvidia/gp108/sec2/image.bin
+  * nvidia/gp108/sec2/sig.bin
+  * nvidia/gp10b/acr/bl.bin
+  * nvidia/gp10b/acr/ucode_load.bin
+  * nvidia/gp10b/gr/fecs_bl.bin
+  * nvidia/gp10b/gr/fecs_data.bin
+  * nvidia/gp10b/gr/fecs_inst.bin
+  * nvidia/gp10b/gr/fecs_sig.bin
+  * nvidia/gp10b/gr/gpccs_bl.bin
+  * nvidia/gp10b/gr/gpccs_data.bin
+  * nvidia/gp10b/gr/gpccs_inst.bin
+  * nvidia/gp10b/gr/gpccs_sig.bin
+  * nvidia/gp10b/gr/sw_bundle_init.bin
+  * nvidia/gp10b/gr/sw_ctx.bin
+  * nvidia/gp10b/gr/sw_method_init.bin
+  * nvidia/gp10b/gr/sw_nonctx.bin
+  * nvidia/gp10b/pmu/desc.bin
+  * nvidia/gp10b/pmu/image.bin
+  * nvidia/gp10b/pmu/sig.bin
+  * nvidia/tegra124/vic03_ucode.bin
+  * Nvidia Tegra 124 XHCI firmware, version 45.46
+    (nvidia/tegra124/xusb.bin)
+  * nvidia/tegra186/vic04_ucode.bin
+  * nvidia/tegra210/vic04_ucode.bin
+  * Nvidia Tegra 210 XHCI firmware, version 50.10
+    (nvidia/tegra210/xusb.bin)
+  * Intel QAT DH895xCC UOF firmware (qat_895xcc.bin)
+  * Intel QAT DH895xCC MMP firmware (qat_895xcc_mmp.bin, qat_mmp.bin)
+  * Intel QAT C3xxx UOF firmware (qat_c3xxx.bin)
+  * Intel QAT C3xxx MMP firmware (qat_c3xxx_mmp.bin)
+  * Intel QAT C62x UOF firmware (qat_c62x.bin)
+  * Intel QAT C62x MMP firmware (qat_c62x_mmp.bin)
+  * Rockchip cdn DisplayPort controller firmware, version 3.1
+    (rockchip/dptx.bin)
+  * Comtrol RocketPort 2 firmware (rp2.fw)
+  * Ralink RT2561 (RT2501/RT5201 chipset) firmware, version 1.2
+    (rt2561.bin)
+  * Ralink RT2561S (RT2501 Turbo/RT5201 Turbo chipset) firmware, version
+    1.2 (rt2561s.bin)
+  * Ralink RT2661 (RT2600/RT5600 chipset) firmware, version 1.2
+    (rt2661.bin)
+  * Ralink RT2760/RT2790/RT2860/RT2890/RT3090
+    (RT2700P[D]/RT2700E[D]/RT2800P[D]/RT2800E[D]/RT3000E[D] chipset)
+    firmware, version 0.40 (rt2860.bin, rt3090.bin)
+  * Ralink RT2870/RT3070/RT3071/RT3072 (RT2800U[D] chipset) firmware,
+    version 0.36 (rt2870.bin, rt3070.bin)
+  * Ralink RT3071/RT3072 firmware, version 29 (rt3071.bin)
+  * Ralink RT3290 firmware, version 1 (rt3290.bin)
+  * Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware,
+    version 1.8 (rt73.bin)
+  * Tehuti network card firmware (tehuti/bdx.bin)
+  * Broadcom BCM5703/BCM5704 TSO firmware (tigon/tg3_tso.bin)
+  * Broadcom BCM5701A0 firmware (tigon/tg3.bin)
+  * Broadcom BCM5705 TSO firmware (tigon/tg3_tso5.bin)
+  * Broadcom BCM57766 firmware (tigon/tg357766.bin)
+  * ADI Eagle IV ADSL configuration, generic (ueagle-atm/CMV4p.bin.v2)
+  * ADI Eagle IV ADSL DSP firmware (ueagle-atm/DSP4p.bin)
+  * ADI Eagle IV firmware (ueagle-atm/eagleIV.fw)
+  * Conexant CX231xx core firmware (v4l-cx231xx-avcore-01.fw)
+  * Conexant CX23418 APU firmware (v4l-cx23418-apu.fw)
+  * Conexant CX23418 CPU firmware (v4l-cx23418-cpu.fw)
+  * Conexant CX23418 ADEC firmware (v4l-cx23418-dig.fw)
+  * Conexant CX25840 firmware (v4l-cx25840.fw)
+  * Conexant CX23885 core firmware (v4l-cx23885-avcore-01.fw)
+  * VIA VT6656 firmware (vntwusb.fw)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-myricom
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Myri-10G Ethernet adapters
+ This package contains the binary firmware for Myricom Myri-10G Ethernet
+ adapters supported by the myri10ge driver.
+ .
+ Contents:
+  * Myri-10G firmware (aligned, big RX ring), version 1.4.57
+    (myri10ge_eth_big_z8e.dat)
+  * Myri-10G firmware (aligned), version 1.4.57 (myri10ge_eth_z8e.dat)
+  * Myri-10G firmware (unaligned, big RX ring), version 1.4.57
+    (myri10ge_ethp_big_z8e.dat)
+  * Myri-10G firmware (unaligned), version 1.4.57
+    (myri10ge_ethp_z8e.dat)
+  * Myri-10G firmware (aligned, RSS, big RX rings), version 1.4.57
+    (myri10ge_rss_eth_big_z8e.dat)
+  * Myri-10G firmware (aligned, RSS), version 1.4.57
+    (myri10ge_rss_eth_z8e.dat)
+  * Myri-10G firmware (unaligned, RSS, big RX rings), version 1.4.57
+    (myri10ge_rss_ethp_big_z8e.dat)
+  * Myri-10G firmware (unaligned, RSS), version 1.4.57
+    (myri10ge_rss_ethp_z8e.dat)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-netronome
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Netronome network adapters
+ This package contains the binary firmware for Netronome network adapters
+ supported by the nfp driver.
+ .
+ Contents:
+  * Agilio CX 2x10GbE flower firmware, version AOTC-2.10.A.13
+    (netronome/flower/nic_AMDA0096.nffw,
+    netronome/flower/nic_AMDA0096-0001_2x10.nffw)
+  * Agilio CX 1/2x40GbE flower firmware, version AOTC-2.10.A.13
+    (netronome/flower/nic_AMDA0097.nffw,
+    netronome/flower/nic_AMDA0081.nffw,
+    netronome/flower/nic_AMDA0097-0001_2x40.nffw,
+    netronome/flower/nic_AMDA0097-0001_4x10_1x40.nffw,
+    netronome/flower/nic_AMDA0097-0001_8x10.nffw)
+  * Agilio CX 2x25GbE flower firmware, version AOTC-2.10.A.13
+    (netronome/flower/nic_AMDA0099.nffw,
+    netronome/flower/nic_AMDA0099-0001_1x10_1x25.nffw,
+    netronome/flower/nic_AMDA0099-0001_2x10.nffw,
+    netronome/flower/nic_AMDA0099-0001_2x25.nffw)
+  * Agilio LX (rev 11) 2x40GbE firmware, version 2.1.13
+    (netronome/nic/nic_AMDA0058-0011_2x40.nffw)
+  * Agilio LX (rev 12) 2x40GbE firmware, version 2.1.13
+    (netronome/nic/nic_AMDA0058-0012_2x40.nffw)
+  * Agilio LX 1x100GbE firmware, version 2.1.13
+    (netronome/nic/nic_AMDA0078-0011_1x100.nffw)
+  * Agilio CX 1x40GbE firmware, version 2.1.13
+    (netronome/nic/nic_AMDA0081-0001_1x40.nffw,
+    netronome/nic_AMDA0081-0001_1x40.nffw)
+  * Agilio CX 1x40GbE firmware (4x10GbE mode), version 2.1.13
+    (netronome/nic/nic_AMDA0081-0001_4x10.nffw,
+    netronome/nic_AMDA0081-0001_4x10.nffw)
+  * Agilio CX 2x10GbE firmware, version 2.1.13
+    (netronome/nic/nic_AMDA0096-0001_2x10.nffw,
+    netronome/nic_AMDA0096-0001_2x10.nffw)
+  * Agilio CX 2x40GbE firmware, version 2.1.13
+    (netronome/nic/nic_AMDA0097-0001_2x40.nffw,
+    netronome/nic_AMDA0097-0001_2x40.nffw)
+  * Agilio CX 2x40GbE firmware (4x10GbE+1x40GbE mode), version 2.1.13
+    (netronome/nic/nic_AMDA0097-0001_4x10_1x40.nffw,
+    netronome/nic_AMDA0097-0001_4x10_1x40.nffw)
+  * Agilio CX 2x40GbE firmware (8x10GbE mode), version 2.1.13
+    (netronome/nic/nic_AMDA0097-0001_8x10.nffw,
+    netronome/nic_AMDA0097-0001_8x10.nffw)
+  * Agilio CX 2x25GbE firmware (1x10GbE+1x25GbE mode), version 2.1.13
+    (netronome/nic/nic_AMDA0099-0001_1x10_1x25.nffw)
+  * Agilio CX 2x25GbE firmware (2x10GbE mode), version 2.1.13
+    (netronome/nic/nic_AMDA0099-0001_2x10.nffw,
+    netronome/nic_AMDA0099-0001_2x10.nffw)
+  * Agilio CX 2x25GbE firmware, version 2.1.13
+    (netronome/nic/nic_AMDA0099-0001_2x25.nffw,
+    netronome/nic_AMDA0099-0001_2x25.nffw)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-netxen
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for QLogic Intelligent Ethernet (3000 and 3100 Series)
+ This package contains the binary firmware for QLogic (formerly NetXen)
+ Intelligent network adapters supported by the netxen_nic and qlcnic
+ drivers.
+ .
+ Contents:
+  * phanfw.bin
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-qcom-media
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Qualcomm graphics/video
+ This package contains the binary firmware for Qualcomm Adreno GPUs and
+ Venus video accelerators.
+ .
+ Contents:
+  * Qualcomm Adreno 300 PFP firmware (qcom/a300_pfp.fw)
+  * Qualcomm Adreno 300 PM4 firmware (qcom/a300_pm4.fw)
+  * Qualcomm Adreno 530 PFP firmware (qcom/a530_pfp.fw)
+  * Qualcomm Adreno 530 PM4 firmware (qcom/a530_pm4.fw)
+  * Qualcomm Adreno 530 Zap firmware part 0 (qcom/a530_zap.b00)
+  * Qualcomm Adreno 530 Zap firmware part 1 (qcom/a530_zap.b01)
+  * Qualcomm Adreno 530 Zap firmware part 2 (qcom/a530_zap.b02)
+  * Qualcomm Adreno 530 Zap firmware header (qcom/a530_zap.mdt)
+  * Qualcomm Adreno 530 v3 GPMU firmware (qcom/a530v3_gpmu.fw2)
+  * Qualcomm Venus 1.8 firmware part 0 (qcom/venus-1.8/venus.b00)
+  * Qualcomm Venus 1.8 firmware part 1 (qcom/venus-1.8/venus.b01)
+  * Qualcomm Venus 1.8 firmware part 2 (qcom/venus-1.8/venus.b02)
+  * Qualcomm Venus 1.8 firmware part 3 (qcom/venus-1.8/venus.b03)
+  * Qualcomm Venus 1.8 firmware part 4 (qcom/venus-1.8/venus.b04)
+  * Qualcomm Venus 1.8 firmware header (qcom/venus-1.8/venus.mdt)
+  * Qualcomm Venus 4.2 firmware part 0 (qcom/venus-4.2/venus.b00)
+  * Qualcomm Venus 4.2 firmware part 1 (qcom/venus-4.2/venus.b01)
+  * Qualcomm Venus 4.2 firmware part 2 (qcom/venus-4.2/venus.b02)
+  * Qualcomm Venus 4.2 firmware part 3 (qcom/venus-4.2/venus.b03)
+  * Qualcomm Venus 4.2 firmware part 4 (qcom/venus-4.2/venus.b04)
+  * Qualcomm Venus 4.2 firmware header (qcom/venus-4.2/venus.mdt)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-qlogic
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for QLogic HBAs
+ This package contains the binary firmware for QLogic Infiniband, SCSI,
+ Fibre Channel/FCoE adapters and Converged Network Adapters supported by
+ the bfa, bna, ip_iband, qed, qla1280 and qla2xxx drivers.
+ .
+ Contents:
+  * Brocade 425/825/42B/82B/415/815/41B/81B firmware, version 3.2.3.0
+    (cbfw-3.2.3.0.bin)
+  * Brocade 425/825/42B/82B/415/815/41B/81B firmware, version 3.2.5.1
+    (cbfw-3.2.5.1.bin)
+  * Brocade 1860/1867/1869 firmware, version 3.2.3.0 (ct2fw-3.2.3.0.bin)
+  * Brocade 1860/1867/1869 firmware, version 3.2.5.1 (ct2fw-3.2.5.1.bin)
+  * Brocade 1010/1020/1007/1741/804 firmware, version 3.2.3.0
+    (ctfw-3.2.3.0.bin)
+  * Brocade 1010/1020/1007/1741/804 firmware, version 3.2.5.1
+    (ctfw-3.2.5.1.bin)
+  * QLogic QL45000 series firmware, version 8.10.10.0
+    (qed/qed_init_values_zipped-8.10.10.0.bin)
+  * QLogic QL45000 series firmware, version 8.33.1.0
+    (qed/qed_init_values_zipped-8.33.1.0.bin)
+  * QLogic QL45000 series firmware, version 8.33.11.0
+    (qed/qed_init_values_zipped-8.33.11.0.bin)
+  * QLogic QL45000 series firmware, version 8.37.2.0
+    (qed/qed_init_values_zipped-8.37.2.0.bin)
+  * QLogic QLA1040 firmware, version 7.65.06 (qlogic/1040.bin)
+  * QLogic QLA1080, 1240, 1280 firmware, version 8.15.11
+    (qlogic/1280.bin)
+  * QLogic QLA10160, 12160 firmware, version 10.04.42 (qlogic/12160.bin)
+  * QLogic IBA7220 serdes firmware (qlogic/sd7220.fw)
+  * QLogic QLA2100 firmware, version 1.19.38 (ql2100_fw.bin)
+  * QLogic QLA2200 firmware, version 2.02.08 (ql2200_fw.bin)
+  * QLogic QLA2300, ISP2312, SP202 firmware, version 3.03.28
+    (ql2300_fw.bin)
+  * QLogic ISP2322, SP212 firmware, version 3.03.28 (ql2322_fw.bin)
+  * QLogic ISP2422, ISP2432[M], SP222, SP232 firmware, version 8.07.00
+    (ql2400_fw.bin)
+  * QLogic ISP2532 firmware, version 8.07.00 (ql2500_fw.bin)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-realtek
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Realtek wired/wifi/BT adapters
+ This package contains the binary firmware for Realtek Ethernet, wifi and
+ Bluetooth adapters supported by various drivers.
+ .
+ Contents:
+  * Realtek RTL8192E boot code (RTL8192E/boot.img)
+  * Realtek RTL8192E init data (RTL8192E/data.img)
+  * Realtek RTL8192E main code (RTL8192E/main.img)
+  * Realtek RTL8192EE Bluetooth firmware (rtl_bt/rtl8192ee_fw.bin)
+  * Realtek RTL8812AE Bluetooth firmware (rtl_bt/rtl8812ae_fw.bin)
+  * Realtek RTL8761A Bluetooth firmware (rtl_bt/rtl8761a_fw.bin)
+  * Realtek RTL8821A Bluetooth firmware (rtl_bt/rtl8821a_fw.bin)
+  * Realtek RTL8192EU Bluetooth firmware (rtl_bt/rtl8192eu_fw.bin)
+  * Realtek RTL8723AU rev A Bluetooth firmware (rtl_bt/rtl8723a_fw.bin)
+  * Realtek RTL8723BU rev B Bluetooth firmware (rtl_bt/rtl8723b_fw.bin)
+  * Realtek RTL8723D Bluetooth config (rtl_bt/rtl8723d_config.bin)
+  * Realtek RTL8723D Bluetooth firmware (rtl_bt/rtl8723d_fw.bin)
+  * Realtek RTL8821C Bluetooth config (rtl_bt/rtl8821c_config.bin)
+  * Realtek RTL8821C Bluetooth firmware (rtl_bt/rtl8821c_fw.bin)
+  * Realtek RTL8822B Bluetooth config (rtl_bt/rtl8822b_config.bin)
+  * Realtek RTL8822B Bluetooth firmware (rtl_bt/rtl8822b_fw.bin)
+  * Realtek RTL8105E-1 firmware (rtl_nic/rtl8105e-1.fw)
+  * Realtek RTL8106E-1 firmware, version 0.0.1 (rtl_nic/rtl8106e-1.fw)
+  * Realtek RTL8106E-2 firmware, version 0.0.1 (rtl_nic/rtl8106e-2.fw)
+  * Realtek RTL8107E-1 firmware, version 0.0.2 (rtl_nic/rtl8107e-1.fw)
+  * Realtek RTL8107E-2 firmware, version 0.0.2 (rtl_nic/rtl8107e-2.fw)
+  * Realtek RTL8111D-1/RTL8168D-1 firmware (rtl_nic/rtl8168d-1.fw)
+  * Realtek RTL8111D-2/RTL8168D-2 firmware (rtl_nic/rtl8168d-2.fw)
+  * Realtek RTL8168E-1 firmware (rtl_nic/rtl8168e-1.fw)
+  * Realtek RTL8168E-2 firmware (rtl_nic/rtl8168e-2.fw)
+  * Realtek RTL8168E-3 firmware, version 0.0.4 (rtl_nic/rtl8168e-3.fw)
+  * Realtek RTL8168F-1 firmware, version 0.0.5 (rtl_nic/rtl8168f-1.fw)
+  * Realtek RTL8168F-2 firmware, version 0.0.4 (rtl_nic/rtl8168f-2.fw)
+  * Realtek RTL8168G-1 firmware, version 0.0.3 (rtl_nic/rtl8168g-1.fw)
+  * Realtek RTL8168G-2 firmware, version 0.0.1 (rtl_nic/rtl8168g-2.fw)
+  * Realtek RTL8168G-3 firmware, version 0.0.1 (rtl_nic/rtl8168g-3.fw)
+  * Realtek RTL8168H-1 firmware, version 0.0.2 (rtl_nic/rtl8168h-1.fw)
+  * Realtek RTL8168H-2 firmware, version 0.0.2 (rtl_nic/rtl8168h-2.fw)
+  * Realtek RTL8402-1 firmware, version 0.0.1 (rtl_nic/rtl8402-1.fw)
+  * Realtek RTL8411-1 firmware, version 0.0.3 (rtl_nic/rtl8411-1.fw)
+  * Realtek RTL8411-2 firmware, version 0.0.1 (rtl_nic/rtl8411-2.fw)
+  * Realtek RTL8188EE firmware (rtlwifi/rtl8188efw.bin)
+  * Realtek RTL8188EU firmware (rtlwifi/rtl8188eufw.bin)
+  * Realtek RTL8192CE/RTL8188CE firmware (rtlwifi/rtl8192cfw.bin)
+  * Realtek RTL8192CE/RTL8188CE B-cut firmware
+    (rtlwifi/rtl8192cfwU_B.bin)
+  * Realtek RTL8188CE A-cut firmware, version 4.816.2011
+    (rtlwifi/rtl8192cfwU.bin)
+  * Realtek RTL8192CU/RTL8188CU UMC A-cut firmware
+    (rtlwifi/rtl8192cufw_A.bin)
+  * Realtek RTL8192CU/RTL8188CU UMC B-cut firmware
+    (rtlwifi/rtl8192cufw_B.bin)
+  * Realtek RTL8192CU/RTL8188CU TMSC firmware
+    (rtlwifi/rtl8192cufw_TMSC.bin)
+  * Realtek RTL8192CU/RTL8188CU fallback firmware
+    (rtlwifi/rtl8192cufw.bin)
+  * Realtek RTL8192DE firmware (rtlwifi/rtl8192defw.bin)
+  * Realtek RTL8192EE wifi firmware (rtlwifi/rtl8192eefw.bin)
+  * Realtek RTl8192EU non-WoWLAN firmware (rtlwifi/rtl8192eu_nic.bin)
+  * Realtek RTl8192EU WoWLAN firmware (rtlwifi/rtl8192eu_wowlan.bin)
+  * Realtek RTL8192SE/RTL8191SE firmware, version 4.816.2011
+    (rtlwifi/rtl8192sefw.bin)
+  * Realtek RTL8192SU/RTL8712U firmware (rtlwifi/rtl8712u.bin)
+  * Realtek RTL8723AU rev A wifi-with-BT firmware
+    (rtlwifi/rtl8723aufw_A.bin)
+  * Realtek RTL8723AU rev B wifi-with-BT firmware
+    (rtlwifi/rtl8723aufw_B.bin)
+  * Realtek RTL8723AU rev B wifi-only firmware
+    (rtlwifi/rtl8723aufw_B_NoBT.bin)
+  * Realtek RTL8723BE firmware, version 36 (rtlwifi/rtl8723befw_36.bin)
+  * Realtek RTL8723BE firmware (rtlwifi/rtl8723befw.bin)
+  * Realtek RTL8723BS BT firmware (rtlwifi/rtl8723bs_bt.bin)
+  * Realtek RTL8723BS wifi non-WoWLAN firmware
+    (rtlwifi/rtl8723bs_nic.bin)
+  * Realtek RTL8723BS wifi WoWLAN firmware
+    (rtlwifi/rtl8723bs_wowlan.bin)
+  * Realtek RTl8723BU non-WoWLAN firmware (rtlwifi/rtl8723bu_nic.bin)
+  * Realtek RTl8723BU WoWLAN firmware (rtlwifi/rtl8723bu_wowlan.bin)
+  * Realtek RTL8723DE firmware (rtlwifi/rtl8723defw.bin)
+  * Realtek RTL8723AE rev B firmware (rtlwifi/rtl8723fw_B.bin)
+  * Realtek RTL8723AE rev A firmware (rtlwifi/rtl8723fw.bin)
+  * Realtek RTL8821AE firmware, version 29 (rtlwifi/rtl8821aefw_29.bin)
+  * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw_wowlan.bin)
+  * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw.bin)
+  * Realtek RTL8822BE firmware (rtlwifi/rtl8822befw.bin)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-samsung
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Samsung MFC video codecs
+ This package contains the binary firmware for Samsung MFC video codecs
+ used in Exynos SoCs and supported by the s5p-mfc driver.
+ .
+ Contents:
+  * MFCv5 firmware (s5p-mfc.fw)
+  * MFCv6 firmware, version 1 (s5p-mfc-v6.fw)
+  * MFCv6 firmware, version 2 (s5p-mfc-v6-v2.fw)
+  * MFCv7 firmware (s5p-mfc-v7.fw)
+  * MFCv8 firmware (s5p-mfc-v8.fw)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-siano
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for Siano MDTV receivers
+ This package contains the binary firmware for Siano Mobile Digital TV
+ receivers supported by the smsmdtv driver.
+ .
+ Contents:
+  * cmmb_vega_12mhz.inp
+  * cmmb_venice_12mhz.inp
+  * dvb_nova_12mhz.inp
+  * dvb_nova_12mhz_b0.inp
+  * isdbt_nova_12mhz.inp
+  * isdbt_nova_12mhz_b0.inp
+  * isdbt_rio.inp
+  * sms1xxx-hcw-55xxx-dvbt-02.fw
+  * sms1xxx-hcw-55xxx-isdbt-02.fw
+  * sms1xxx-nova-a-dvbt-01.fw
+  * sms1xxx-nova-b-dvbt-01.fw
+  * sms1xxx-stellar-dvbt-01.fw
+  * tdmb_nova_12mhz.inp
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+
+Package: firmware-ti-connectivity
+Architecture: all
+Provides: 
+Depends: ${misc:Depends}
+Recommends: 
+Suggests: initramfs-tools
+Replaces: 
+Breaks: 
+Conflicts: 
+Description: Binary firmware for TI Connectivity wifi and BT/FM/GPS adapters
+ This package contains the binary firmware for Texas Instruments WL1251,
+ WL127x, WL128x and WL18xx wireless network chips supported by the wl1251,
+ wl12xx and wl18xx drivers and BT/FM/GPS chips supported by the st_drv
+ driver.
+ .
+ Contents:
+  * ti-connectivity/TIInit_6.2.31.bts
+  * ti-connectivity/TIInit_6.6.15.bts
+  * ti-connectivity/TIInit_7.2.31.bts
+  * TI WL1251 firmware (ti-connectivity/wl1251-fw.bin)
+  * TI WL1251 reference NVS (ti-connectivity/wl1251-nvs.bin)
+  * TI WL127x multi-role firmware, version 6.5.7.0.50
+    (ti-connectivity/wl127x-fw-5-mr.bin)
+  * TI WL127x PLT (calibration) firmware, version 6.3.10.0.142
+    (ti-connectivity/wl127x-fw-5-plt.bin)
+  * TI WL127x single-role firmware, version 6.3.10.0.142
+    (ti-connectivity/wl127x-fw-5-sr.bin)
+  * TI WL127x reference NVS (ti-connectivity/wl127x-nvs.bin,
+    ti-connectivity/wl1271-nvs.bin, ti-connectivity/wl12xx-nvs.bin)
+  * TI WL128x multi-role firmware, version 7.5.7.0.50
+    (ti-connectivity/wl128x-fw-5-mr.bin)
+  * TI WL128x PLT (calibration) firmware, version 7.3.10.2.142
+    (ti-connectivity/wl128x-fw-5-plt.bin)
+  * TI WL128x single-role firmware, version 7.3.10.0.142
+    (ti-connectivity/wl128x-fw-5-sr.bin)
+  * TI WL128x reference NVS (ti-connectivity/wl128x-nvs.bin)
+  * TI WL18xx firmware, ABI 2 (ti-connectivity/wl18xx-fw-2.bin)
+  * TI WL18xx firmware, ABI 3 (ti-connectivity/wl18xx-fw-3.bin)
+  * TI WL18xx firmware, ABI 4, version 8.9.0.0.79
+    (ti-connectivity/wl18xx-fw-4.bin)
+Homepage: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Multi-Arch: foreign
+

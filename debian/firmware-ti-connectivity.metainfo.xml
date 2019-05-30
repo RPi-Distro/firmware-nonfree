@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-ti-connectivity</id>
+  <name>Binary firmware for TI Connectivity wifi and BT/FM/GPS adapters</name>
+  <summary>
+Binary firmware for Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless
+network chips supported by the wl1251, wl12xx and wl18xx drivers and
+BT/FM/GPS chips supported by the st_drv driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">ti-connectivity/TIInit_6.2.31.bts</firmware>
+    <firmware type="runtime">ti-connectivity/TIInit_6.6.15.bts</firmware>
+    <firmware type="runtime">ti-connectivity/TIInit_7.2.31.bts</firmware>
+    <firmware type="runtime">ti-connectivity/wl1251-fw.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl1251-nvs.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl1271-nvs.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl127x-fw-5-mr.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl127x-fw-5-plt.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl127x-fw-5-sr.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl127x-nvs.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl128x-fw-5-mr.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl128x-fw-5-plt.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl128x-fw-5-sr.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl128x-nvs.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl12xx-nvs.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl18xx-fw-2.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl18xx-fw-3.bin</firmware>
+    <firmware type="runtime">ti-connectivity/wl18xx-fw-4.bin</firmware>
+
+  </provides>
+</component>

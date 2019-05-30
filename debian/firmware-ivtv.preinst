@@ -1,0 +1,72 @@
+#!/bin/sh -e
+
+. /usr/share/debconf/confmodule
+db_version 2.0
+db_capb backup
+
+#Valid values are "required" and "no-preseed"
+license_accept=required
+
+errmsg()
+{
+    echo >&2 ''
+    echo >&2 "$@"
+    echo >&2 "try 'dpkg-reconfigure debconf' to select a frontend other than noninteractive"
+    echo >&2 ''
+}
+
+ask()
+{
+    # facilitate backup capability per debconf-devel(7)
+    STATE=1
+    while true; do
+        case "$STATE" in
+        0)  # ensure going back from license presentment is harmless
+            STATE=1 
+            continue
+            ;;   
+        1)  # present license
+            db_get firmware-ivtv/license/accepted
+            if [ "$RET" != true -o "${license_accept}" = "no-preseed" ]; then
+                db_fset firmware-ivtv/license/accepted seen false
+                if ! db_input critical firmware-ivtv/license/accepted ; then
+                    errmsg "firmware-ivtv agree question could not be asked"
+                    exit 2
+                fi
+            fi
+            ;;      
+        2)  # determine users' choice
+            db_get firmware-ivtv/license/accepted
+            if [ "$RET" = "true" ]; then
+                exit 0
+            fi
+            # error on decline license (give user chance to back up)
+            db_input critical firmware-ivtv/license/error
+            ;;      
+        3)
+            echo "user did not accept the firmware-ivtv license" >&2
+            exit 1
+            ;;
+        *)  # unknown state
+            echo "firmware-ivtv license state unknown: $STATE" >&2
+            exit 2
+            ;;   
+        esac
+        if db_go; then
+            STATE=$(($STATE + 1))
+        else
+            STATE=$(($STATE - 1))
+        fi
+    done
+}
+
+db_get firmware-ivtv/license/accepted
+if [ "$RET" != "true" ]; then
+    ask
+    RESULT=$?
+    [ "$RESULT" = 0 ] || exit $RESULT
+fi
+ 
+#DEBHELPER#
+
+exit 0

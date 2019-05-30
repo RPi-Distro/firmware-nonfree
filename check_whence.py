@@ -5,6 +5,10 @@ import os, re, sys
 def list_whence():
     with open('WHENCE') as whence:
         for line in whence:
+            match = re.match(r'(?:File|Link|Source):\s*"(.*)"', line)
+            if match:
+                yield match.group(1)
+                continue
             match = re.match(r'(?:File|Link|Source):\s*(\S*)', line)
             if match:
                 yield match.group(1)

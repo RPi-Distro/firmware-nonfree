@@ -1,4 +1,4 @@
-from debian_linux.config import ConfigParser, SchemaItemList, SchemaItemBoolean
+from debian_linux.config import ConfigParser, SchemaItemList
 
 class Config(dict):
     config_name = "defines"
@@ -16,7 +16,6 @@ class Config(dict):
         'base': {
             'files': SchemaItemList(),
             'support': SchemaItemList(),
-            'copy': SchemaItemBoolean(),
         }
     }
 

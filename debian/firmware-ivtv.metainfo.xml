@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-ivtv</id>
+  <name>Binary firmware for iTVC15-family MPEG codecs (ivtv and pvrusb2 drivers)</name>
+  <summary>
+Binary firmware for TV cards with Conexant iTVC15-family MPEG codecs,
+supported by the ivtv and pvrusb2 drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">v4l-cx2341x-dec.fw</firmware>
+    <firmware type="runtime">v4l-cx2341x-enc.fw</firmware>
+    <firmware type="runtime">v4l-cx2341x-init.mpg</firmware>
+    <firmware type="runtime">v4l-pvrusb2-24xxx-01.fw</firmware>
+    <firmware type="runtime">v4l-pvrusb2-29xxx-01.fw</firmware>
+
+  </provides>
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-bnx2x</id>
+  <name>Binary firmware for Broadcom NetXtreme II 10Gb</name>
+  <summary>
+Binary firmware for Broadcom NetXtreme II 10Gb network adapters supported by the
+bnx2x driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">bnx2x/bnx2x-e1-7.0.29.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e2-7.0.29.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1h-7.0.29.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1-7.8.19.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e2-7.8.19.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1h-7.8.19.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1-7.10.51.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e2-7.10.51.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1h-7.10.51.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1-7.12.30.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1h-7.12.30.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e2-7.12.30.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1-7.13.1.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e1h-7.13.1.0.fw</firmware>
+    <firmware type="runtime">bnx2x/bnx2x-e2-7.13.1.0.fw</firmware>
+
+  </provides>
+</component>

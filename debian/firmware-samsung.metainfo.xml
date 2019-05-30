@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-samsung</id>
+  <name>Binary firmware for Samsung MFC video codecs</name>
+  <summary>
+Binary firmware for Samsung MFC video codecs used in Exynos SoCs and supported by the
+s5p-mfc driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">s5p-mfc.fw</firmware>
+    <firmware type="runtime">s5p-mfc-v6.fw</firmware>
+    <firmware type="runtime">s5p-mfc-v6-v2.fw</firmware>
+    <firmware type="runtime">s5p-mfc-v7.fw</firmware>
+    <firmware type="runtime">s5p-mfc-v8.fw</firmware>
+
+  </provides>
+</component>

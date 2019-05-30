@@ -1,50 +1,350 @@
-firmware-nonfree (1:20161130-3+rpt4) stretch; urgency=medium
+firmware-nonfree (1:20190114-1+rpt2) buster; urgency=medium
 
-  * Improved brcmfmac BT coexistence parameters
+  * Update brcmfmac43455-sdio.txt
+    - Update boardflags3
 
- -- Serge Schneider <serge@raspberrypi.org>  Mon, 20 Aug 2018 10:53:55 +0100
+ -- Serge Schneider <serge@raspberrypi.org>  Thu, 18 Apr 2019 14:35:34 +0100
 
-firmware-nonfree (1:20161130-3+rpt3) stretch; urgency=medium
+firmware-nonfree (1:20190114-1+rpt1) buster; urgency=medium
 
-  * Add brcmfmac43455-sdio version 7.45.154
-  * Update brcmfmac43430-sdio to 7.45.98.38
   * Add version numbers
-
- -- Serge Schneider <serge@raspberrypi.org>  Mon, 12 Mar 2018 11:08:27 +0000
-
-firmware-nonfree (1:20161130-3+rpt2) stretch; urgency=medium
-
-  * Revert brcmfmac43430-sdio.bin to previous version
-
- -- Serge Schneider <serge@raspberrypi.org>  Wed, 28 Feb 2018 13:53:07 +0000
-
-firmware-nonfree (1:20161130-3+rpt1) stretch; urgency=medium
-
-  * Update brcmfmac43430-sdio.bin
-    - See https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=203508
-
- -- Serge Schneider <serge@raspberrypi.org>  Wed, 07 Feb 2018 11:46:05 +0000
-
-firmware-nonfree (1:20161130-3+rpi2) stretch; urgency=medium
-
+  * Add brcmfmac43430-sdio.txt and brcmfmac43455-sdio.txt
+  * Add brcmfmac43455-sdio.bin and brcmfmac43455-sdio.clm_blob
   * Bump epoch to prevent being replaced by raspbian.org
-  * Update brcmfmac43430-sdio.txt and brcmfmac43430-sdio.bin
-    - CVE-2017-9417: "Broadpwn" issue fix
-    - Add "CY" string in the version string
-    - AMPDU sequence number deadlock fix (potential fix for this issue)
-    - CLM version upgrade
-    - CVE-2017-0572: memory corruption fix
+  * Strip epoch from VERSION_UPSTREAM
+  * Set KERNELVERSION to 4.18.0-3
 
- -- Serge Schneider <serge@raspberrypi.org>  Wed, 09 Aug 2017 12:10:08 +0100
+ -- Serge Schneider <serge@raspberrypi.org>  Fri, 25 Jan 2019 12:19:48 +0000
 
-firmware-nonfree (20161130-3+rpi1) stretch; urgency=medium
+firmware-nonfree (20190114-1) unstable; urgency=medium
 
-  * Non-maintainer upload.
-  * Add brcmfmac43430-sdio.txt
-  * Update to linux-support 4.9.0-3
-  * debian/bin/gencontrol.py: force UTF8 on copyright files
+  [ Romain Perier ]
+  * New upstream version:
+    - Upstream version is commit bc656509a3cfb60fcdfc905d7e23c18873e4e7b9
+      dated 2019-01-14
+    - cavium: Cavium CNN55XX crypto firmware update version v10
+    - intel-sound: Intel Cannonlake SST DSP firmware update version
+      10.23.00.1858
+    - misc-nonfree:
+      + Chelsio T4, T5, and T6 firmware version 1.22.9.0
+      + NVIDIA GP102 firmware update
+      + NVIDIA GP104 firmware update
+      + NVIDIA GP106 firmware update
+      + NVIDIA GP107 firmware update
+      + Intel OPA Gen1 DC firmware update version 1.27.0
+    - brcm80211: BCM43362 firmware update
+    - atheros:
+      + firmware update for QCA61x4 version 3.2 USB BT (CVE-2018-5383)
+      + Qualcomm Atheros QCA9984 rev 1.0 board configuration update
+      + Qualcomm Atheros QCA9984 rev 1.0 firmware update version
+        10.4-3.6.0.1-00003
+      + Qualcomm Atheros QCA988X firmware update version 10.2.4-1.0-00041
+      + Qualcomm Atheros QCA9888 rev 2.0 board configuration update
+      + Qualcomm Atheros QCA9888 rev 2.0 firmware update version 10.4-3.6-00140
+      + Qualcomm Atheros QCA9887 rev 1.0 firmware update version
+        10.2.4-1.0-00041
+      + Qualcomm Atheros QCA4019 rev 1.0 board configuration update
+      + Qualcomm Atheros QCA4019 rev 1.0 firmware update version 10.4-3.6-00140
+    - netronome:
+      + Agilio CX 2x10GbE,2x40GbE,2x25GbE flower firmware update version
+        AOTC-2.10.A.13
+      + Agilio SmartNIC firmware update version 2.1.16
+    - iwlwifi:
+      + 9460/9650 (var 16 rev 1) Bluetooth firmware version 20.100.0.3
+      + 9160/9260 (var 16 rev 1) Bluetooth firmware version 20.100.0.3
+      + 8260/8265 Bluetooth firmware version 20.100.0.3
+      + Add Intel Wireless 9000 firmware version 41.fc1a7aea.0
+      + Add Intel Wireless 9260 firmware version 41.fc1a7aea.0
+      + Intel Wireless 9000/9260 firmware update version 38.755cfdd8.0
+      + Intel Wireless 3160,7260,7265 firmware update version 17.bfb58538.0
+      + Intel Wireless 8000C,8265 firmware update version 36.9f0a2d68.0
+    - amd-graphics:
+      + "Polaris10", "Polaris11", "Raven" firmware updates to sync with
+        18.50 release
+      + "Fiji", "Tonga", "Vega10", "Carrizo" firmware updates to sync with
+        18.40 release
+    - libertas: Marvell Avastar 88W8801-USB firmware version 14.68.36.p138
+  * amd-graphics:
+    - Add AMD Vega M firmware (Closes: #907598)
+    - Add Radeon HD 7800 series firmware to /lib/firmware/amdgpu
+      (Closes: #908632)
+  * Update to linux-support 4.19.0-1
 
- -- Serge Schneider <serge@raspberrypi.org>  Mon, 12 Jun 2017 15:40:15 +0000
+  [ Yves-Alexis Perez ]
+  * firmware-linux: fix typo in short description
+  * firmware-atheros: remove unused lintian override
+  * firmware-misc-nonfree: remove unused lintian override
+
+  [ David Lechner ]
+  * ti-connectivity: include TIInit_6.2.31.bts and TIInit_6.6.15.bts for
+    CC2560(A) Bluetooth
+
+  [ Ben Hutchings ]
+  * debian/README.source: Document the genorig.py --commit option
+  * amd-graphics: Add firmware for "Picasso", "Raven 2", and "Vega 12" chips
+  * amd-graphics: Add additional firmware for Radeon HD 7800 series,
+    "Polaris", and "Raven" chips
+  * amd-graphics: Add firmware for older chips supported by amdgpu to
+    /l/f/amdgpu
+  * amd-graphics: Fix quoting in descriptions of Vega M firmware
+  * debian/source/options: Delete redundant compression setting; satisfy
+    lintian
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Tue, 15 Jan 2019 22:51:01 +0000
+
+firmware-nonfree (20180825+dfsg-1) unstable; urgency=medium
+
+  * Exclude Cavium LiquidIO 23xx vswitch firmware, which contains a Linux
+    kernel image (Closes: #907585)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Wed, 29 Aug 2018 21:14:09 +0100
+
+firmware-nonfree (20180825-1) unstable; urgency=medium
+
+  * New upstream version:
+    - Upstream version is commit fea76a04f25fd0a217c0d566ff5ff8f23ad3e648
+      dated 2018-08-25
+    - cavium: LiquidIO 23xx vswitch firmware version 1.7.2
+    - iwlwifi:
+      + 7265 (D0) Bluetooth firmware patch version 20.60.0.2
+      + 7265 (D1) Bluetooth firmware patch version 20.70.0.4
+      + 8260 Bluetooth firmware version 20.70.0.4
+      + 8265 Bluetooth firmware version 20.70.0.4
+      + 9160/9260 (var 16 rev 1) Bluetooth firmware version 20.70.0.4
+      + 9460/9650 (var 16 rev 1) Bluetooth firmware version 20.70.0.4
+    - amd-graphics:
+      + "Vega 10" VCE firmware version 55.3
+      + "Bonaire", "Hawaii", "Kabini", "Mullins", "Kaveri", "Hainan",
+        "Oland", "Tahiti", "Pitcairn", "Verde" firmware updates to
+        sync with 18.20 release
+      + "Fiji", "Polaris10", "Polaris11", "Polaris12", "Raven", "Tonga",
+        "Vega10" firmware updates to sync with 18.30 release
+      + Update copyright date
+    - brcm80211:
+      + BCM43430 firmware update (CVE-2017-13077, CVE-2017-13078,
+        CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
+      + BCM43340 firmware update (CVE-2017-13077, CVE-2017-13078,
+        CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
+      + BCM43362 firmware update (CVE-2017-13077, CVE-2017-13078,
+        CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
+      + BCM4354 firmware update (CVE-2017-13077, CVE-2017-13078,
+        CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
+      + BCM4356 pcie firmware update (CVE-2017-13077, CVE-2017-13078,
+        CVE-2017-13079, CVE-2017-13080, CVE-2017-13081)
+    - misc-nonfree: Chelsio T4, T5, and T6 firmware version 1.20.8.0
+    - libertas: Marvell Avastar 88W8801-USB firmware version 14.68.36.p131
+    - ti-connectivity: TI WL18xx firmware, ABI 4, version 8.9.0.0.79
+    - netronome: Agilio CX flower firmware version AOTC-2.9.A.31
+
+  [ Romain Perier ]
+  * Add a new script for generating debian changelog
+  * qlogic: Add QLogic QL45000 series firmware version 8.37.2.0
+
+  [ Ben Hutchings ]
+  * Add back firmware-{adi,ralink} as transitional packages (Closes: #907320)
+  * Update to linux-support 4.17.0-3
+  * iwlwifi: Use "release" rather than "build" or "patch" version strings for
+    all Bluetooth firmware files
+  * intel-sound: Add Intel "Kabylake" SST DSP firmware version 9.21.00.3420_163
+  * atheros: Add Wil62x0 default board parameters and firmware for use
+    with the wil6210 driver
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 26 Aug 2018 15:43:40 +0100
+
+firmware-nonfree (20180518-1) unstable; urgency=medium
+
+  [ Ben Hutchings ]
+  * New upstream version:
+    - Upstream version is commit 2a9b2cf50fb32e36e4fc1586c2f6f1421913b553
+      dated 2018-05-18
+    - amd-graphics:
+      + "Fiji" VCE firmware version 53.20
+      + "Polaris" UVD firmware version 1.130
+      + "Polaris" VCE firmware version 53.26
+      + "Vega 10" UVD firmware version 1.87
+      + "Vega 10" VCE firmware version 53.45
+      + "Carrizo", "Fiji", "Polaris", "Tonga", "Topaz", "Vega 10" firmware
+        updates to sync with 18.10 release
+    - atheros:
+      + QCA4019 rev 1.0 board configuration update
+      + QCA4019 rev 1.0 firmware version 10.4-3.5.3-00053
+      + QCA6174 rev 3.0 board configuration update
+      + QCA6174 rev 3.0 firmware version WLAN.RM.4.4.1-00079-QCARMSWPZ-1
+      + QCA9377 rev 1.0 firmware version WLAN.TF.1.0-00002-QCATFSWPZ-5
+      + QCA9887 rev 1.0 firmware version 10.2.4-1.0-00037
+      + QCA9888 rev 2.0 firmware version 10.4-3.5.3-00053
+      + QCA988X firmware version 10.2.4-1.0-00037
+      + QCA9984 rev 1.0 firmware version 10.4-3.5.3-00053
+    - brcm80211 (Closes: #869639):
+      + BCM4339 firmware update (CVE-2016-0801)
+      + BCM4354 firmware update (CVE-2016-0801, CVE-2017-0561, CVE-2017-9417)
+      + BCM4356-PCIe firmware update (CVE-2016-0801, CVE-2017-0561,
+        CVE-2017-9417)
+      + BCM4358 firmware update (CVE-2016-0801, CVE-2017-0561, CVE-2017-9417)
+    - cavium: Update Cavium LiquidIO 210Nv, 210Sv, 23xx, 410Nv firmware to
+      version 1.7.2
+    - intel-sound:
+      + "Broxton", "Geminilake" firmware version 9.22.01.3366_157
+      + "Kabylake", "Skylake" firmware version 9.21.00.3402_161
+    - iwlwifi:
+      + 3160, 7260, 7265 firmware (ABI 17) version 17.388f111f.0
+      + 3160 (B4), 7260 (B3) Bluetooth firmware patch version 87
+      + 3160 (B6), 7260 (B5) Bluetooth firmware patch version 42
+      + 3168, 7265D firmware (ABI 29) version 29.3e3b4de5.0
+      + 7265 (D1) Bluetooth firmware patch version 52
+      + 8000C, 8265 firmware (ABI 31) version 31.560484.0
+      + 8260 Bluetooth configuration and firmware version REL0458
+      + 8265 Bluetooth configuration and firmware version REL0226
+    - libertas: Update Avastar firmware to include WPA2 vulnerability fix:
+      + 88W8897-PCIe firmware version V15.68.7.p154 (WLAN) / 15.28.7.p154 (BT)
+      + 88W8897-SDIO firmware version V15.68.7.p154 (WLAN) / 15.68.7.p154 (BT)
+      + 88W8997-PCIe-USB firmware version V16.68.1.p145 (WLAN) /
+        16.26.1.p145 (BT)
+      + 88W8997-USB firmware version V16.68.1.p162 (WLAN) / 16.26.1.p162 (BT)
+    - misc-nonfree: Update Chelsio T4, T5, and T6 firmware to version 1.19.1.0
+    - misc-nonfree: Update Intel OPA Gen1 DC firmware to version 1.26.1
+    - misc-nonfree: Update Sensoray 2255 firmware to version 1.2.8
+    - ti-connectivity:
+      + WL127x multi-role firmware version 6.5.7.0.50
+      + WL127x PLT (calibration) firmware version 6.3.10.0.142
+      + WL127x single-role firmware version 6.3.10.0.142
+      + WL128x multi-role firmware version 7.5.7.0.50
+      + WL128x PLT (calibration) firmware version 7.3.10.2.142
+      + WL128x single-role firmware version 7.3.10.0.142
+      + WL18xx firmware version 8.9.0.0.76, includes WPA2 KRACK fix
+
+  [ Ben Hutchings ]
+  * debian/bin/gencontrol.py: Set encoding to UTF-8 globally
+  * debian/bin/gencontrol.py: Sort list of symlink names for each blob
+  * debian/control: Point Vcs URLs to Salsa
+  * amd-graphics: Add basic descriptions of all files
+  * amd-graphics: Add "Polaris" new CE, ME, MEC, MEC2, PFP firmware
+    (Closes: #891364)
+  * amd-graphics: Add "Raven" firmware (Closes: #891042)
+  * iwlwifi: Add Intel Wireless 8000C and 8265 firmware version 36.e91976c0.0
+    (ABI 36) (Closes: #893952, #892408)
+  * iwlwifi: Add Intel Wireless 9000 and 9260 firmware versions 34.ba501b11.0
+    (ABI 34) and 38.c0e03d94.0 (ABI 38) (Closes: #899101)
+  * iwlwifi: Update driver list in package description
+  * iwlwifi: Remove old firmware versions not used in any active Debian release
+  * qlogic: Add QLogic QL45000 series firmware versions 8.33.1.0 and 8.33.11.0
+    (Closes: #900036)
+  * qlogic: Remove old QLogic QL4500 firmware versions not used in any active
+    Debian release
+  * brcm80211: Add Broadcom BCM43430 rev 0 firmware
+  * brcm80211: Add Cypress CYW4373 firmware
+  * brcm80211: Add Cypress to the package description
+  * realtek: Add Realtek RTL8723DE and RTL8822BE firmware (Closes: #885016)
+  * iwlwifi: Add Intel Wireless 9160/9260/9460/9650 Bluetooth configurations
+    and firmware
+  * realtek: Add Realtek RTL8723D and RTL8821C Bluetooth configurations and
+    firmware
+  * intel-sound: Add Intel "Cannonlake" SST DSP firmware
+  * cavium: Add Cavium LiquidIO 23xx vswitch firmware
+  * misc-nonfree: Add new Intel GPU firmware:
+    - "Cannonlake" and "Geminilake" DMC firmware
+    - "Broxton" GuC firmware version 9.29
+    - "Kabylake" GuC firmware version 9.39
+    - "Skylake" GuC firmware version 9.33
+  * Revert "misc-nonfree: Replace Nvidia firmware symlinks with copies"
+  * Revert "Add per-file copy flag, allowing replacement of upstream symlinks
+    with copies"
+  * misc-nonfree: Add new Nvidia GPU firmware
+  * misc-nonfree: Rockchip cdn DisplayPort controller firmware
+  * Add firmware-netronome package containing Netronome network adapter
+    firmware
+  * Add firmware-qcom-media package containing Qualcomm graphics/video
+    firmware
+  * misc-nonfree: Fill in copyright for nvidia/*
+  * ivtv: Change Homepage field to archive.org version, as the old site is now
+    domain-squatted
+  * Set a default Homepage for all packages other than firmware-ivtv and
+    firmware-ipw2x00
+  * misc-nonfree: Fill in copyright and license text for imx/sdma/*
+  * Update to linux-support 4.17.0-1
+
+  [ Romain Perier ]
+  * misc-nonfree: Add DMC firmware for "Kabylake" v1.04 (Closes: #898267)
+  * misc-nonfree: Add SDMA firmware for Freescale i.MX6/7 SoCs
+    (Closes: #900266)
+  * misc-nonfree: Add DMC firmware for "Skylake" v1.27 (Closes: #900871)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Fri, 27 Jul 2018 00:56:57 +0800
+
+firmware-nonfree (20170823-1) unstable; urgency=medium
+
+  * New upstream version:
+    - Upstream version is commit b78acc9f0e26459ce2bb586bb00d28bcc14b2c26
+      dated 2017-08-23
+    - atheros: Update Qualcomm Atheros firmware:
+      + QCA4019 rev 1.0, QCA6174 rev 3.0, QCA9377 rev 1.0, QCA9888 rev 2.0,
+        QCA9984 rev 1.0 board configurations
+      + QCA4019 rev 1.0 firmware version 10.4-3.4-00082
+      + QCA9887 rev 1.0 firmware version 10.2.4-1.0-00029
+      + QCA9888 rev 2.0 firmware version 10.4-3.5.1-00014
+      + QCA988X firmware version 10.2.4.70.63-2
+      + QCA9984 rev 1.0 firmware version 10.4-3.4-00082
+    - brcm80211: Update Broadcom BCM43340 firmware
+    - cavium: Update LiquidIO 210Nv, 210Sv, 410Nv firmware to version 1.6.1
+    - intel-sound: Update Intel SST DSP firmware:
+      + for "Skylake" chips, version 8.20.00.969
+      + for "Broxton" chips, version 9.22.01.2219
+      + for "Kabylake" chips, version 9.21.00.2630
+    - iwlwifi: Update Intel Wireless firmware:
+      + 3160, 7260, 7265 firmware (ABI 17) version 17.459231.0
+      + 3168, 7265D, 8000C, 8265 firmware (ABI 22) version 22.391740.0
+      + 7265 (D1) Bluetooth firmware patch version 28
+      + 8260 Bluetooth configuration and firmware version REL0370
+      + 8265 Bluetooth firmware version REL0101
+    - libertas: Update Avastar firmware:
+      + 88W8887 firmware version 15.68.1.p71
+      + 88W8897-SDIO firmware version 15.68.7.p112
+      + 88W8997-PCIe-USB firmware version 16.68.1.p97
+    - misc-nonfree: Update Intel OPA Gen1 DC firmware to version 0.47; PCIe
+      serdes firmware to version 0x4755; remove platform config
+    - misc-nonfree: Update Chelsio T4 and T5 firmware to version 1.16.45.0
+    - qlogic: Update QLogic ISP2422, ISP2432[M], SP222, SP232, ISP2532 firmware
+      to version 8.07.00
+    - realtek: Update Realtek RTL8822B Bluetooth config and firmware
+    - ti-connectivity: Update TI WL127x and WL128x firmware:
+      + WL127x multi-role firmware version 6.5.7.0.49
+      + WL127x PLT (calibration) firmware version 6.3.10.0.141
+      + WL127x single-role firmware version 6.3.10.0.141
+      + WL128x multi-role firmware version 7.5.7.0.49
+      + WL128x PLT (calibration) firmware version 7.3.10.2.141
+      + WL128x single-role firmware version 7.3.10.0.141
+  * Update to linux-support 4.12.0-1
+  * misc-nonfree: Update Intel OPA Gen1 firmware type and version information
+  * iwlwifi: Fix Intel Wireless 8265 Bluetooth file descriptions
+  * atheros: Fix Qualcomm Atheros QCA9887 and QCA9888 file descriptions
+  * amd-graphics: Include firmware for "Polaris" 1.2 and "Vega" 1.0 chips, and
+    K SMC firmware for "Polaris" 1.0 and 1.1 and new "Hainan" chips
+    (Closes: #864529, #868152)
+  * atheros: Update copyright information for ath10k/QCA*/hw*/firmware-*.bin
+  * atheros: Include Qualcomm Atheros QCA6174 rev 3.0 firmware version
+    WLAN.RM.4.4-00022-QCARMSWPZ-2
+  * brcm80211: Include Broadcom BCM4356-SDIO and BCM4358 firmware
+  * cavium: Include Cavium CNN55XX and LiquidIO 23xx firmware
+  * misc-nonfree: Include Chelsio T6 firmware
+  * misc-nonfree: Include Intel "Broxton", "Kabylake", "Skylake" HuC firmware
+    (Closes: #864601)
+  * intel-sound: Include Intel "Geminilake" SST DSP firmware
+  * iwlwifi: Include new firmware for Intel Wireless 3168 and 7265D (ABI 29),
+    8000C and 8265 (ABI 27, 31)
+  * libertas: Include Avastar 88W8997-PCIe and 88W8997-USB firmware
+  * misc-nonfree: Include MediaTek MT76x2 firmware and ROM patch
+  * misc-nonfree: Include new Nvidia GPU firmware (Closes: #872641)
+  * qlogic: Include QLogic QL45000 series firmware versions 8.15.3.0, 8.20.0.0
+  * realtek: Include new firmware:
+    - RTL8192EU, RTL8723BU WoWLAN firmware
+    - RTL8723BE firmware version 36
+    - RTL8723BS firmware
+    - RTL8821AE firmware version 29
+  * Move AppStream metainfo to /usr/share/metainfo
+  * Update Standards-Version to 4.0.1:
+    - Use https scheme in copyright format URL
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 27 Aug 2017 15:21:48 +0100
 
 firmware-nonfree (20161130-3) unstable; urgency=medium
 

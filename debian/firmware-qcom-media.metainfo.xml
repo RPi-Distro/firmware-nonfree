@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-qcom-media</id>
+  <name>Binary firmware for Qualcomm graphics/video</name>
+  <summary>
+Binary firmware for Qualcomm Adreno GPUs and Venus video accelerators.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">qcom/a300_pfp.fw</firmware>
+    <firmware type="runtime">qcom/a300_pm4.fw</firmware>
+    <firmware type="runtime">qcom/a530_pfp.fw</firmware>
+    <firmware type="runtime">qcom/a530_pm4.fw</firmware>
+    <firmware type="runtime">qcom/a530_zap.b00</firmware>
+    <firmware type="runtime">qcom/a530_zap.b01</firmware>
+    <firmware type="runtime">qcom/a530_zap.b02</firmware>
+    <firmware type="runtime">qcom/a530_zap.mdt</firmware>
+    <firmware type="runtime">qcom/a530v3_gpmu.fw2</firmware>
+    <firmware type="runtime">qcom/venus-1.8/venus.b00</firmware>
+    <firmware type="runtime">qcom/venus-1.8/venus.b01</firmware>
+    <firmware type="runtime">qcom/venus-1.8/venus.b02</firmware>
+    <firmware type="runtime">qcom/venus-1.8/venus.b03</firmware>
+    <firmware type="runtime">qcom/venus-1.8/venus.b04</firmware>
+    <firmware type="runtime">qcom/venus-1.8/venus.mdt</firmware>
+    <firmware type="runtime">qcom/venus-4.2/venus.b00</firmware>
+    <firmware type="runtime">qcom/venus-4.2/venus.b01</firmware>
+    <firmware type="runtime">qcom/venus-4.2/venus.b02</firmware>
+    <firmware type="runtime">qcom/venus-4.2/venus.b03</firmware>
+    <firmware type="runtime">qcom/venus-4.2/venus.b04</firmware>
+    <firmware type="runtime">qcom/venus-4.2/venus.mdt</firmware>
+
+  </provides>
+</component>

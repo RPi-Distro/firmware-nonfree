@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Uploaders: Bastian Blank <waldi@debian.org>, Steve Langasek <vorlon@debian.org>, maximilian attems <maks@debian.org>, Ben Hutchings <ben@decadent.org.uk>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.8
-Vcs-Git: https://anonscm.debian.org/git/kernel/firmware-nonfree.git
-Vcs-Browser: https://anonscm.debian.org/cgit/kernel/firmware-nonfree.git
+Standards-Version: 4.0.1
+Vcs-Git: https://salsa.debian.org/kernel-team/firmware-nonfree.git
+Vcs-Browser: https://salsa.debian.org/kernel-team/firmware-nonfree
 XS-Autobuild: yes

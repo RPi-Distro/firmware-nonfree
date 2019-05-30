@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-qlogic</id>
+  <name>Binary firmware for QLogic HBAs</name>
+  <summary>
+Binary firmware for QLogic Infiniband, SCSI, Fibre Channel/FCoE adapters and
+Converged Network Adapters supported by the bfa, bna, ip_iband, qed, qla1280
+and qla2xxx drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">cbfw-3.2.3.0.bin</firmware>
+    <firmware type="runtime">cbfw-3.2.5.1.bin</firmware>
+    <firmware type="runtime">ct2fw-3.2.3.0.bin</firmware>
+    <firmware type="runtime">ct2fw-3.2.5.1.bin</firmware>
+    <firmware type="runtime">ctfw-3.2.3.0.bin</firmware>
+    <firmware type="runtime">ctfw-3.2.5.1.bin</firmware>
+    <firmware type="runtime">qed/qed_init_values_zipped-8.10.10.0.bin</firmware>
+    <firmware type="runtime">qed/qed_init_values_zipped-8.33.1.0.bin</firmware>
+    <firmware type="runtime">qed/qed_init_values_zipped-8.33.11.0.bin</firmware>
+    <firmware type="runtime">qed/qed_init_values_zipped-8.37.2.0.bin</firmware>
+    <firmware type="runtime">qlogic/1040.bin</firmware>
+    <firmware type="runtime">qlogic/1280.bin</firmware>
+    <firmware type="runtime">qlogic/12160.bin</firmware>
+    <firmware type="runtime">qlogic/sd7220.fw</firmware>
+    <firmware type="runtime">ql2100_fw.bin</firmware>
+    <firmware type="runtime">ql2200_fw.bin</firmware>
+    <firmware type="runtime">ql2300_fw.bin</firmware>
+    <firmware type="runtime">ql2322_fw.bin</firmware>
+    <firmware type="runtime">ql2400_fw.bin</firmware>
+    <firmware type="runtime">ql2500_fw.bin</firmware>
+
+  </provides>
+</component>

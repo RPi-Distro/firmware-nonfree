@@ -14,7 +14,9 @@ packages:
  libertas
  misc-nonfree
  myricom
+ netronome
  netxen
+ qcom-media
  qlogic
  realtek
  samsung
@@ -51,7 +53,9 @@ exclude:
  whiteheat_loader.fw
  yamaha/yss225_registers.bin
 # - licence is GPL, but source is elsewhere
- atusb/atusb-0.2.dfu
+ atusb/atusb-*.dfu
+ atusb/rzusb-*.bin
+ liquidio/lio_23xx_vsw.bin
 # - licence is unknown
  acenic/tg[12].bin
  ess/maestro3_*.fw
@@ -94,36 +98,75 @@ exclude:
 # No Debian release references these versions
  cxgb3/t3fw-7.[01].0.bin
  cxgb4/t4fw-1.14.4.0.bin
+ cxgb4/t4fw-1.15.37.0.bin
+ cxgb4/t4fw-1.19.1.0.bin
  cxgb4/t5fw-1.14.4.0.bin
+ cxgb4/t5fw-1.15.37.0.bin
+ cxgb4/t5fw-1.19.1.0.bin
+ cxgb4/t6fw-1.19.1.0.bin
 # No Debian release references this version
  cbfw-3.2.1.1.bin
  ct2fw-3.2.1.1.bin
  ctfw-3.2.1.1.bin
+# No Debian release references this version
+ i915/cnl_dmc_ver1_06.bin
 # Nothing seems to reference these versions
- intel/dsp_fw_bxtn_v430.bin
- intel/dsp_fw_bxtn_v702.bin
+ intel/dsp_fw_bxtn_v2219.bin
+ intel/dsp_fw_glk_v1814.bin
+ intel/dsp_fw_glk_v2880.bin
+ intel/dsp_fw_glk_v2768.bin
  intel/dsp_fw_kbl_v701.bin
- intel/dsp_fw_release_v827.bin
- intel/dsp_fw_release_v869.bin
- intel/dsp_fw_release_v896.bin
- intel/dsp_fw_release_v927.bin
- intel/dsp_fw_release_v948.bin
- intel/dsp_fw_release_v951.bin
+ intel/dsp_fw_kbl_v1037.bin
+ intel/dsp_fw_kbl_v2042.bin
+ intel/dsp_fw_kbl_v2630.bin
+ intel/dsp_fw_kbl_v3266.bin
+ intel/dsp_fw_release_v969.bin
 # No Debian release requires these versions
+ intel/ibt-17-1.ddc
+ intel/ibt-17-1.sfi
+ intel/ibt-17-2.ddc
+ intel/ibt-17-2.sfi
+ intel/ibt-18-1.ddc
+ intel/ibt-18-1.sfi
+ intel/ibt-18-2.ddc
+ intel/ibt-18-2.sfi
  iwlwifi-1000-3.ucode
  iwlwifi-3945-1.ucode
  iwlwifi-4965-1.ucode
  iwlwifi-5000-1.ucode
+ iwlwifi-5000-2.ucode
  iwlwifi-6000g2b-5.ucode
+ iwlwifi-6050-4.ucode
+ iwlwifi-7265D-17.ucode
+ iwlwifi-8000C-34.ucode
+ iwlwifi-8265-34.ucode
  iwlwifi-*-7.ucode
  iwlwifi-*-8.ucode
  iwlwifi-*-10.ucode
+ iwlwifi-*-12.ucode
  iwlwifi-*-13.ucode
+ iwlwifi-*-14.ucode
+ iwlwifi-*-16.ucode
+ iwlwifi-*-21.ucode
+ iwlwifi-*-27.ucode
+ iwlwifi-*-31.ucode
+ iwlwifi-*-33.ucode
 # No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
  mwl8k/fmimage_8366_ap-1.fw
+ mwlwifi/88W8864.bin
+ mwlwifi/88W8897.bin
+# This is for hardware only found in Mellanox switch appliances
+ mellanox/mlxsw_spectrum-*
+# No Debian release references these versions
+ qed/qed_init_values-*.bin
+ qed/qed_init_values_zipped-8.4.2.0.bin
+ qed/qed_init_values_zipped-8.7.3.0.bin
+ qed/qed_init_values_zipped-8.10.5.0.bin
+ qed/qed_init_values_zipped-8.15.3.0.bin
+ qed/qed_init_values_zipped-8.20.0.0.bin
 # Driver never went upstream
  TDA7706*
 # No Debian release requires these versions

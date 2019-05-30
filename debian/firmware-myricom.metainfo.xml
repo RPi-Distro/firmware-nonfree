@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-myricom</id>
+  <name>Binary firmware for Myri-10G Ethernet adapters</name>
+  <summary>
+Binary firmware for Myricom Myri-10G Ethernet adapters supported by the myri10ge driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">myri10ge_eth_big_z8e.dat</firmware>
+    <firmware type="runtime">myri10ge_eth_z8e.dat</firmware>
+    <firmware type="runtime">myri10ge_ethp_big_z8e.dat</firmware>
+    <firmware type="runtime">myri10ge_ethp_z8e.dat</firmware>
+    <firmware type="runtime">myri10ge_rss_eth_big_z8e.dat</firmware>
+    <firmware type="runtime">myri10ge_rss_eth_z8e.dat</firmware>
+    <firmware type="runtime">myri10ge_rss_ethp_big_z8e.dat</firmware>
+    <firmware type="runtime">myri10ge_rss_ethp_z8e.dat</firmware>
+
+  </provides>
+</component>

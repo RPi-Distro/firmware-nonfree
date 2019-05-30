@@ -1,6 +1,8 @@
 [base]
 desc: TI Connectivity wifi and BT/FM/GPS adapters
 files:
+ ti-connectivity/TIInit_6.2.31.bts
+ ti-connectivity/TIInit_6.6.15.bts
  ti-connectivity/TIInit_7.2.31.bts
  ti-connectivity/wl1251-fw.bin
  ti-connectivity/wl1251-nvs.bin
@@ -29,24 +31,30 @@ desc: TI WL1251 reference NVS
 
 [ti-connectivity/wl127x-fw-5-mr.bin_base]
 desc: TI WL127x multi-role firmware
+version: 6.5.7.0.50
 
 [ti-connectivity/wl127x-fw-5-plt.bin_base]
 desc: TI WL127x PLT (calibration) firmware
+version: 6.3.10.0.142
 
 [ti-connectivity/wl127x-fw-5-sr.bin_base]
 desc: TI WL127x single-role firmware
+version: 6.3.10.0.142
 
 [ti-connectivity/wl127x-nvs.bin_base]
 desc: TI WL127x reference NVS
 
 [ti-connectivity/wl128x-fw-5-mr.bin_base]
 desc: TI WL128x multi-role firmware
+version: 7.5.7.0.50
 
 [ti-connectivity/wl128x-fw-5-plt.bin_base]
 desc: TI WL128x PLT (calibration) firmware
+version: 7.3.10.2.142
 
 [ti-connectivity/wl128x-fw-5-sr.bin_base]
 desc: TI WL128x single-role firmware
+version: 7.3.10.0.142
 
 [ti-connectivity/wl128x-nvs.bin_base]
 desc: TI WL128x reference NVS
@@ -59,3 +67,4 @@ desc: TI WL18xx firmware, ABI 3
 
 [ti-connectivity/wl18xx-fw-4.bin_base]
 desc: TI WL18xx firmware, ABI 4
+version: 8.9.0.0.79

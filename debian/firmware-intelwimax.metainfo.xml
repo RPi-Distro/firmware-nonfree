@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-intelwimax</id>
+  <name>Binary firmware for Intel WiMAX Connection</name>
+  <summary>
+Binary firmware for Intel WiMAX Connection devices supported by the i2400m-usb driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">i2400m-fw-usb-1.4.sbcf</firmware>
+    <firmware type="runtime">i2400m-fw-usb-1.5.sbcf</firmware>
+    <firmware type="runtime">i6050-fw-usb-1.5.sbcf</firmware>
+
+  </provides>
+</component>

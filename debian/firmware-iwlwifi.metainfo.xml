@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-iwlwifi</id>
+  <name>Binary firmware for Intel Wireless cards</name>
+  <summary>
+Binary firmware for Intel Wireless cards supported by the iwl3945, iwl4965, and
+iwlwifi drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">intel/ibt-11-5.ddc</firmware>
+    <firmware type="runtime">intel/ibt-11-5.sfi</firmware>
+    <firmware type="runtime">intel/ibt-12-16.ddc</firmware>
+    <firmware type="runtime">intel/ibt-12-16.sfi</firmware>
+    <firmware type="runtime">intel/ibt-17-0-1.ddc</firmware>
+    <firmware type="runtime">intel/ibt-17-0-1.sfi</firmware>
+    <firmware type="runtime">intel/ibt-17-16-1.ddc</firmware>
+    <firmware type="runtime">intel/ibt-17-16-1.sfi</firmware>
+    <firmware type="runtime">intel/ibt-18-0-1.ddc</firmware>
+    <firmware type="runtime">intel/ibt-18-0-1.sfi</firmware>
+    <firmware type="runtime">intel/ibt-18-16-1.ddc</firmware>
+    <firmware type="runtime">intel/ibt-18-16-1.sfi</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.7.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.8.10-fw-1.10.3.11.e.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq</firmware>
+    <firmware type="runtime">intel/ibt-hw-37.8.bseq</firmware>
+    <firmware type="runtime">iwlwifi-100-5.ucode</firmware>
+    <firmware type="runtime">iwlwifi-105-6.ucode</firmware>
+    <firmware type="runtime">iwlwifi-135-6.ucode</firmware>
+    <firmware type="runtime">iwlwifi-1000-5.ucode</firmware>
+    <firmware type="runtime">iwlwifi-2000-6.ucode</firmware>
+    <firmware type="runtime">iwlwifi-2030-6.ucode</firmware>
+    <firmware type="runtime">iwlwifi-3160-9.ucode</firmware>
+    <firmware type="runtime">iwlwifi-3160-17.ucode</firmware>
+    <firmware type="runtime">iwlwifi-3168-22.ucode</firmware>
+    <firmware type="runtime">iwlwifi-3168-29.ucode</firmware>
+    <firmware type="runtime">iwlwifi-3945-2.ucode</firmware>
+    <firmware type="runtime">iwlwifi-4965-2.ucode</firmware>
+    <firmware type="runtime">iwlwifi-5000-5.ucode</firmware>
+    <firmware type="runtime">iwlwifi-5150-2.ucode</firmware>
+    <firmware type="runtime">iwlwifi-6000-4.ucode</firmware>
+    <firmware type="runtime">iwlwifi-6000g2a-5.ucode</firmware>
+    <firmware type="runtime">iwlwifi-6000g2a-6.ucode</firmware>
+    <firmware type="runtime">iwlwifi-6000g2b-6.ucode</firmware>
+    <firmware type="runtime">iwlwifi-6050-5.ucode</firmware>
+    <firmware type="runtime">iwlwifi-7260-9.ucode</firmware>
+    <firmware type="runtime">iwlwifi-7260-17.ucode</firmware>
+    <firmware type="runtime">iwlwifi-7265-9.ucode</firmware>
+    <firmware type="runtime">iwlwifi-7265-17.ucode</firmware>
+    <firmware type="runtime">iwlwifi-7265D-22.ucode</firmware>
+    <firmware type="runtime">iwlwifi-7265D-29.ucode</firmware>
+    <firmware type="runtime">iwlwifi-8000C-22.ucode</firmware>
+    <firmware type="runtime">iwlwifi-8000C-36.ucode</firmware>
+    <firmware type="runtime">iwlwifi-8265-22.ucode</firmware>
+    <firmware type="runtime">iwlwifi-8265-36.ucode</firmware>
+    <firmware type="runtime">iwlwifi-9000-pu-b0-jf-b0-34.ucode</firmware>
+    <firmware type="runtime">iwlwifi-9000-pu-b0-jf-b0-38.ucode</firmware>
+    <firmware type="runtime">iwlwifi-9000-pu-b0-jf-b0-41.ucode</firmware>
+    <firmware type="runtime">iwlwifi-9260-th-b0-jf-b0-34.ucode</firmware>
+    <firmware type="runtime">iwlwifi-9260-th-b0-jf-b0-38.ucode</firmware>
+    <firmware type="runtime">iwlwifi-9260-th-b0-jf-b0-41.ucode</firmware>
+
+  </provides>
+</component>

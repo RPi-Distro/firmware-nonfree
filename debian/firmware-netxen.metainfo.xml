@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-netxen</id>
+  <name>Binary firmware for QLogic Intelligent Ethernet (3000 and 3100 Series)</name>
+  <summary>
+Binary firmware for QLogic (formerly NetXen) Intelligent network adapters supported by
+the netxen_nic and qlcnic drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">phanfw.bin</firmware>
+
+  </provides>
+</component>

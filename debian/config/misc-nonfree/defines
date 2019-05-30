@@ -3,8 +3,8 @@ desc: various drivers in the Linux kernel
 longdesc:
  various drivers in the Linux kernel. This is a collection of firmware blobs
  which are not individually large enough to warrant a standalone package
-replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~), firmware-linux-nonfree (<< 20151018-1~), firmware-adi, firmware-ralink
-breaks: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~), firmware-linux-nonfree (<< 20151018-1~), firmware-adi, firmware-ralink
+replaces: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~), firmware-linux-nonfree (<< 20151018-1~), firmware-adi (<< 20151018-1~), firmware-ralink (<< 20151018-1~)
+breaks: firmware-linux (<< 0.19), firmware-ivtv (<< 0.38~), firmware-linux-nonfree (<< 20151018-1~), firmware-adi (<< 20151018-1~), firmware-ralink (<< 20151018-1~)
 provides: firmware-adi, firmware-ralink
 files:
  3com/typhoon.bin
@@ -29,9 +29,11 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.15.37.0.bin
+ cxgb4/t4fw-1.22.9.0.bin
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.15.37.0.bin
+ cxgb4/t5fw-1.22.9.0.bin
+ cxgb4/t6fw.bin
+ cxgb4/t6fw-1.22.9.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
@@ -62,21 +64,32 @@ files:
  hfi1_dc8051.fw
  hfi1_fabric.fw
  hfi1_pcie.fw
- hfi1_platform.dat
  hfi1_sbus.fw
+ imx/sdma/sdma-imx6q.bin
+ imx/sdma/sdma-imx7d.bin
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
  i915/bxt_guc_ver8_7.bin
+ i915/bxt_guc_ver9_29.bin
+ i915/bxt_huc_ver01_07_1398.bin
+ i915/cnl_dmc_ver1_07.bin
+ i915/glk_dmc_ver1_04.bin
  i915/kbl_dmc_ver1.bin
  i915/kbl_dmc_ver1_01.bin
+ i915/kbl_dmc_ver1_04.bin
  i915/kbl_guc_ver9_14.bin
+ i915/kbl_guc_ver9_39.bin
+ i915/kbl_huc_ver02_00_1810.bin
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
  i915/skl_dmc_ver1_26.bin
+ i915/skl_dmc_ver1_27.bin
  i915/skl_guc_ver1.bin
  i915/skl_guc_ver4.bin
  i915/skl_guc_ver6.bin
  i915/skl_guc_ver6_1.bin
+ i915/skl_guc_ver9_33.bin
+ i915/skl_huc_ver01_07_1398.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -99,6 +112,8 @@ files:
  moxa/moxa-1658.fw
  mt7601u.bin
  mt7650.bin
+ mt7662.bin
+ mt7662_rom_patch.bin
  mts_cdma.fw
  mts_edge.fw
  mts_gsm.fw
@@ -167,6 +182,9 @@ files:
  nvidia/gm20b/gr/sw_ctx.bin
  nvidia/gm20b/gr/sw_method_init.bin
  nvidia/gm20b/gr/sw_nonctx.bin
+ nvidia/gm20b/pmu/desc.bin
+ nvidia/gm20b/pmu/image.bin
+ nvidia/gm20b/pmu/sig.bin
  nvidia/gp100/acr/bl.bin
  nvidia/gp100/acr/ucode_load.bin
  nvidia/gp100/acr/ucode_unload.bin
@@ -182,7 +200,127 @@ files:
  nvidia/gp100/gr/sw_ctx.bin
  nvidia/gp100/gr/sw_method_init.bin
  nvidia/gp100/gr/sw_nonctx.bin
+ nvidia/gp102/acr/bl.bin
+ nvidia/gp102/acr/ucode_load.bin
+ nvidia/gp102/acr/ucode_unload.bin
+ nvidia/gp102/acr/unload_bl.bin
+ nvidia/gp102/gr/fecs_bl.bin
+ nvidia/gp102/gr/fecs_data.bin
+ nvidia/gp102/gr/fecs_inst.bin
+ nvidia/gp102/gr/fecs_sig.bin
+ nvidia/gp102/gr/gpccs_bl.bin
+ nvidia/gp102/gr/gpccs_data.bin
+ nvidia/gp102/gr/gpccs_inst.bin
+ nvidia/gp102/gr/gpccs_sig.bin
+ nvidia/gp102/gr/sw_bundle_init.bin
+ nvidia/gp102/gr/sw_ctx.bin
+ nvidia/gp102/gr/sw_method_init.bin
+ nvidia/gp102/gr/sw_nonctx.bin
+ nvidia/gp102/nvdec/scrubber.bin
+ nvidia/gp102/sec2/desc.bin
+ nvidia/gp102/sec2/image.bin
+ nvidia/gp102/sec2/sig.bin
+ nvidia/gp104/acr/bl.bin
+ nvidia/gp104/acr/ucode_load.bin
+ nvidia/gp104/acr/ucode_unload.bin
+ nvidia/gp104/acr/unload_bl.bin
+ nvidia/gp104/gr/fecs_bl.bin
+ nvidia/gp104/gr/fecs_data.bin
+ nvidia/gp104/gr/fecs_inst.bin
+ nvidia/gp104/gr/fecs_sig.bin
+ nvidia/gp104/gr/gpccs_bl.bin
+ nvidia/gp104/gr/gpccs_data.bin
+ nvidia/gp104/gr/gpccs_inst.bin
+ nvidia/gp104/gr/gpccs_sig.bin
+ nvidia/gp104/gr/sw_bundle_init.bin
+ nvidia/gp104/gr/sw_ctx.bin
+ nvidia/gp104/gr/sw_method_init.bin
+ nvidia/gp104/gr/sw_nonctx.bin
+ nvidia/gp104/nvdec/scrubber.bin
+ nvidia/gp104/sec2/desc.bin
+ nvidia/gp104/sec2/image.bin
+ nvidia/gp104/sec2/sig.bin
+ nvidia/gp106/acr/bl.bin
+ nvidia/gp106/acr/ucode_load.bin
+ nvidia/gp106/acr/ucode_unload.bin
+ nvidia/gp106/acr/unload_bl.bin
+ nvidia/gp106/gr/fecs_bl.bin
+ nvidia/gp106/gr/fecs_data.bin
+ nvidia/gp106/gr/fecs_inst.bin
+ nvidia/gp106/gr/fecs_sig.bin
+ nvidia/gp106/gr/gpccs_bl.bin
+ nvidia/gp106/gr/gpccs_data.bin
+ nvidia/gp106/gr/gpccs_inst.bin
+ nvidia/gp106/gr/gpccs_sig.bin
+ nvidia/gp106/gr/sw_bundle_init.bin
+ nvidia/gp106/gr/sw_ctx.bin
+ nvidia/gp106/gr/sw_method_init.bin
+ nvidia/gp106/gr/sw_nonctx.bin
+ nvidia/gp106/nvdec/scrubber.bin
+ nvidia/gp106/sec2/desc.bin
+ nvidia/gp106/sec2/image.bin
+ nvidia/gp106/sec2/sig.bin
+ nvidia/gp107/acr/bl.bin
+ nvidia/gp107/acr/ucode_load.bin
+ nvidia/gp107/acr/ucode_unload.bin
+ nvidia/gp107/acr/unload_bl.bin
+ nvidia/gp107/gr/fecs_bl.bin
+ nvidia/gp107/gr/fecs_data.bin
+ nvidia/gp107/gr/fecs_inst.bin
+ nvidia/gp107/gr/fecs_sig.bin
+ nvidia/gp107/gr/gpccs_bl.bin
+ nvidia/gp107/gr/gpccs_data.bin
+ nvidia/gp107/gr/gpccs_inst.bin
+ nvidia/gp107/gr/gpccs_sig.bin
+ nvidia/gp107/gr/sw_bundle_init.bin
+ nvidia/gp107/gr/sw_ctx.bin
+ nvidia/gp107/gr/sw_method_init.bin
+ nvidia/gp107/gr/sw_nonctx.bin
+ nvidia/gp107/nvdec/scrubber.bin
+ nvidia/gp107/sec2/desc.bin
+ nvidia/gp107/sec2/image.bin
+ nvidia/gp107/sec2/sig.bin
+ nvidia/gp108/acr/bl.bin
+ nvidia/gp108/acr/ucode_load.bin
+ nvidia/gp108/acr/ucode_unload.bin
+ nvidia/gp108/acr/unload_bl.bin
+ nvidia/gp108/gr/fecs_bl.bin
+ nvidia/gp108/gr/fecs_data.bin
+ nvidia/gp108/gr/fecs_inst.bin
+ nvidia/gp108/gr/fecs_sig.bin
+ nvidia/gp108/gr/gpccs_bl.bin
+ nvidia/gp108/gr/gpccs_data.bin
+ nvidia/gp108/gr/gpccs_inst.bin
+ nvidia/gp108/gr/gpccs_sig.bin
+ nvidia/gp108/gr/sw_bundle_init.bin
+ nvidia/gp108/gr/sw_ctx.bin
+ nvidia/gp108/gr/sw_method_init.bin
+ nvidia/gp108/gr/sw_nonctx.bin
+ nvidia/gp108/nvdec/scrubber.bin
+ nvidia/gp108/sec2/desc.bin
+ nvidia/gp108/sec2/image.bin
+ nvidia/gp108/sec2/sig.bin
+ nvidia/gp10b/acr/bl.bin
+ nvidia/gp10b/acr/ucode_load.bin
+ nvidia/gp10b/gr/fecs_bl.bin
+ nvidia/gp10b/gr/fecs_data.bin
+ nvidia/gp10b/gr/fecs_inst.bin
+ nvidia/gp10b/gr/fecs_sig.bin
+ nvidia/gp10b/gr/gpccs_bl.bin
+ nvidia/gp10b/gr/gpccs_data.bin
+ nvidia/gp10b/gr/gpccs_inst.bin
+ nvidia/gp10b/gr/gpccs_sig.bin
+ nvidia/gp10b/gr/sw_bundle_init.bin
+ nvidia/gp10b/gr/sw_ctx.bin
+ nvidia/gp10b/gr/sw_method_init.bin
+ nvidia/gp10b/gr/sw_nonctx.bin
+ nvidia/gp10b/pmu/desc.bin
+ nvidia/gp10b/pmu/image.bin
+ nvidia/gp10b/pmu/sig.bin
+ nvidia/tegra124/vic03_ucode.bin
  nvidia/tegra124/xusb.bin
+ nvidia/tegra186/vic04_ucode.bin
+ nvidia/tegra210/vic04_ucode.bin
  nvidia/tegra210/xusb.bin
  qat_895xcc.bin
  qat_895xcc_mmp.bin
@@ -191,6 +329,7 @@ files:
  qat_c62x.bin
  qat_c62x_mmp.bin
  qat_mmp.bin
+ rockchip/dptx.bin
  rp2.fw
  rt2561.bin
  rt2561s.bin
@@ -220,7 +359,6 @@ files:
  v4l-cx23885-avcore-01.fw
  vntwusb.fw
 support: initramfs-tools
-uri: http://git.kernel.org/?p=linux/kernel/git/firmware/linux-firmware.git
 
 [3com/typhoon.bin_base]
 desc: 3Com Typhoon firmware
@@ -293,13 +431,17 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.15.37.0.bin_base]
+[cxgb4/t4fw-1.22.9.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.15.37.0
+version: 1.22.9.0
 
-[cxgb4/t5fw-1.15.37.0.bin_base]
+[cxgb4/t5fw-1.22.9.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.15.37.0
+version: 1.22.9.0
+
+[cxgb4/t6fw-1.22.9.0.bin_base]
+desc: Chelsio T6 firmware
+version: 1.22.9.0
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
@@ -361,6 +503,7 @@ desc: ENE UB6250 SD read/write firmware
 
 [f2255usb.bin_base]
 desc: Sensoray 2255 firmware
+version: 1.2.8
 
 [go7007/go7007fw.bin_base]
 desc: Micronas GO7007SB encoder stage 1 firmware
@@ -387,35 +530,72 @@ desc: Sensoray S2250 stage 2 firmware
 desc: WISchip WinFast WalkieTV firmware
 
 [hfi1_dc8051.fw_base]
-desc: Intel OPA Gen1 8051 firmware
+desc: Intel OPA Gen1 DC firmware
+version: 1.27.0
 
 [hfi1_fabric.fw_base]
 desc: Intel OPA Gen1 fabric firmware
+version: 0x1055
 
 [hfi1_pcie.fw_base]
-desc: Intel OPA Gen1 PCIe firmware
-
-[hfi1_platform.dat_base]
-desc: Intel OPA Gen1 platform config
+desc: Intel OPA Gen1 PCIe serdes firmware
+version: 0x4755
 
 [hfi1_sbus.fw_base]
 desc: Intel OPA Gen1 SBus firmware
+version: 0x10130001
+
+[imx/sdma/sdma-imx6q.bin_base]
+desc: Freescale i.MX6 SDMA firmware
+version: 3.3
+
+[imx/sdma/sdma-imx7d.bin_base]
+desc: Freescale i.MX7 SDMA firmware
+version: 4.2
 
 [i915/bxt_dmc_ver1_07.bin_base]
 desc: Intel "Broxton" DMC firmware
+version: 1.07
+
+[i915/cnl_dmc_ver1_07.bin_base]
+desc: Intel "Cannonlake" DMC firmware
 version: 1.07
 
 [i915/bxt_guc_ver8_7.bin_base]
 desc: Intel "Broxton" GuC firmware
 version: 8.7
 
+[i915/bxt_guc_ver9_29.bin_base]
+desc: Intel "Broxton" GuC firmware
+version: 9.29
+
+[i915/bxt_huc_ver01_07_1398.bin_base]
+desc: Intel "Broxton" HuC firmware
+version: 1.07.1398
+
+[i915/glk_dmc_ver1_04.bin_base]
+desc: Intel "Geminilake" DMC firmware
+version: 1.04
+
 [i915/kbl_dmc_ver1_01.bin_base]
 desc: Intel "Kabylake" DMC firmware
 version: 1.01
 
+[i915/kbl_dmc_ver1_04.bin_base]
+desc: Intel "Kabylake" DMC firmware
+version: 1.04
+
 [i915/kbl_guc_ver9_14.bin_base]
 desc: Intel "Kabylake" GuC firmware
 version: 9.14
+
+[i915/kbl_guc_ver9_39.bin_base]
+desc: Intel "Kabylake" GuC firmware
+version: 9.39
+
+[i915/kbl_huc_ver02_00_1810.bin_base]
+desc: Intel "Kabylake" HuC firmware
+version: 2.0.1810
 
 [i915/skl_dmc_ver1_23.bin_base]
 desc: Intel "Skylake" DMC firmware
@@ -424,6 +604,10 @@ version: 1.23
 [i915/skl_dmc_ver1_26.bin_base]
 desc: Intel "Skylake" DMC firmware
 version: 1.26
+
+[i915/skl_dmc_ver1_27.bin_base]
+desc: Intel "Skylake" DMC firmware
+version: 1.27
 
 [i915/skl_guc_ver1.bin_base]
 desc: Intel "Skylake" GuC firmware
@@ -436,6 +620,14 @@ version: 4.3
 [i915/skl_guc_ver6_1.bin_base]
 desc: Intel "Skylake" GuC firmware
 version: 6.1
+
+[i915/skl_guc_ver9_33.bin_base]
+desc: Intel "Skylake" GuC firmware
+version: 9.33
+
+[i915/skl_huc_ver01_07_1398.bin_base]
+desc: Intel "Skylake" HuC firmware
+version: 1.07.1398
 
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode
@@ -492,6 +684,14 @@ version: 34
 [mt7650.bin_base]
 desc: MediaTek MT7630/MT7650 Bluetooth firmware
 
+[mt7662.bin_base]
+desc: MediaTek MT76x2 firmware
+version: 1.9
+
+[mt7662_rom_patch.bin_base]
+desc: MediaTek MT76x2 ROM patch
+version: 0.0.2_P69
+
 [mts_cdma.fw_base]
 desc: Multi-Tech USB CDMA modem firmware
 
@@ -525,75 +725,6 @@ desc: Nvidia GK20A method init data
 [nvidia/gk20a/sw_nonctx.bin_base]
 desc: Nvidia GK20A non-ctx init data
 
-[nvidia/gm204/acr/bl.bin_base]
-copy: True
-
-[nvidia/gm204/acr/ucode_load.bin_base]
-copy: True
-
-[nvidia/gm204/acr/ucode_unload.bin_base]
-copy: True
-
-[nvidia/gm204/gr/fecs_bl.bin_base]
-copy: True
-
-[nvidia/gm204/gr/fecs_inst.bin_base]
-copy: True
-
-[nvidia/gm204/gr/gpccs_bl.bin_base]
-copy: True
-
-[nvidia/gm204/gr/gpccs_inst.bin_base]
-copy: True
-
-[nvidia/gm204/gr/sw_bundle_init.bin_base]
-copy: True
-
-[nvidia/gm204/gr/sw_ctx.bin_base]
-copy: True
-
-[nvidia/gm204/gr/sw_method_init.bin_base]
-copy: True
-
-[nvidia/gm204/gr/sw_nonctx.bin_base]
-copy: True
-
-[nvidia/gm206/acr/bl.bin_base]
-copy: True
-
-[nvidia/gm206/gr/fecs_bl.bin_base]
-copy: True
-
-[nvidia/gm206/gr/fecs_inst.bin_base]
-copy: True
-
-[nvidia/gm206/gr/gpccs_bl.bin_base]
-copy: True
-
-[nvidia/gm206/gr/gpccs_inst.bin_base]
-copy: True
-
-[nvidia/gm206/gr/sw_bundle_init.bin_base]
-copy: True
-
-[nvidia/gm206/gr/sw_ctx.bin_base]
-copy: True
-
-[nvidia/gm206/gr/sw_method_init.bin_base]
-copy: True
-
-[nvidia/gm206/gr/sw_nonctx.bin_base]
-copy: True
-
-[nvidia/gm20b/gr/sw_method_init.bin_base]
-copy: True
-
-[nvidia/gp100/gr/fecs_bl.bin_base]
-copy: True
-
-[nvidia/gp100/gr/gpccs_bl.bin_base]
-copy: True
-
 [nvidia/tegra124/xusb.bin_base]
 desc: Nvidia Tegra 124 XHCI firmware
 version: 45.46
@@ -619,6 +750,10 @@ desc: Intel QAT C62x UOF firmware
 
 [qat_c62x_mmp.bin_base]
 desc: Intel QAT C62x MMP firmware
+
+[rockchip/dptx.bin_base]
+desc: Rockchip cdn DisplayPort controller firmware
+version: 3.1
 
 [rp2.fw_base]
 desc: Comtrol RocketPort 2 firmware

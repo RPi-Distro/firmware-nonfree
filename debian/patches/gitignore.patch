@@ -1,0 +1,11 @@
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,8 @@
++#
++# Debian packaging: ignore everything at the top level, since it isn't
++# included in our repository
++#
++/*
++!/debian/
++!/brcm/brcmfmac43455-sdio.bin
++!/brcm/brcmfmac43455-sdio.clm_blob

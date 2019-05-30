@@ -1,0 +1,16 @@
+# These binaries do not run on the host, so these rules don't apply
+firmware-qcom-media: arch-independent-package-contains-binary-or-object lib/firmware/qcom/a530_zap.b00
+firmware-qcom-media: statically-linked-binary lib/firmware/qcom/a530_zap.b00
+firmware-qcom-media: arch-independent-package-contains-binary-or-object lib/firmware/qcom/a530_zap.mdt
+firmware-qcom-media: statically-linked-binary lib/firmware/qcom/a530_zap.mdt
+firmware-qcom-media: arch-independent-package-contains-binary-or-object lib/firmware/qcom/venus-1.8/venus.b00
+firmware-qcom-media: statically-linked-binary lib/firmware/qcom/venus-1.8/venus.b00
+firmware-qcom-media: arch-independent-package-contains-binary-or-object lib/firmware/qcom/venus-1.8/venus.mdt
+firmware-qcom-media: statically-linked-binary lib/firmware/qcom/venus-1.8/venus.mdt
+firmware-qcom-media: arch-independent-package-contains-binary-or-object lib/firmware/qcom/venus-4.2/venus.b00
+firmware-qcom-media: statically-linked-binary lib/firmware/qcom/venus-4.2/venus.b00
+firmware-qcom-media: arch-independent-package-contains-binary-or-object lib/firmware/qcom/venus-4.2/venus.mdt
+firmware-qcom-media: statically-linked-binary lib/firmware/qcom/venus-4.2/venus.mdt
+# False positive; the code is dual-licensed and actually distributed
+# under a BSD license
+firmware-qcom-media: copyright-should-refer-to-common-license-file-for-gpl

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-import os, re, sys, codecs
+import os, re, sys, locale
 
 sys.path.insert(0, "debian/lib/python")
 sys.path.append(sys.argv[1] + "/lib/python")
+locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config
 from debian_linux.debian import Package, PackageRelation
@@ -92,7 +93,7 @@ class Templates(TemplatesBase):
         for dir in self.dirs:
             filename = "%s/%s.in" % (dir, name)
             if os.path.exists(filename):
-                f = codecs.open(filename, 'r', 'utf-8')
+                f = open(filename, 'r')
                 if prefix == 'control':
                     return read_control(f)
                 elif prefix == 'templates':
@@ -145,7 +146,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         makefile = Makefile()
 
         self.do_source(packages)
-        self.do_meta(packages, makefile)
+        self.do_extra(packages, makefile)
         self.do_main(packages, makefile)
 
         self.write(packages, makefile)
@@ -154,17 +155,17 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         source = self.templates["control.source"]
         packages['source'] = self.process_package(source[0], ())
 
-    def do_meta(self, packages, makefile):
+    def do_extra(self, packages, makefile):
         config_entry = self.config['base',]
         vars = {}
         vars.update(config_entry)
 
-        for entry in self.templates["control.binary.meta"]:
+        for entry in self.templates["control.extra"]:
             package_binary = self.process_package(entry, {})
             assert package_binary['Package'].startswith('firmware-')
             package = package_binary['Package'].replace('firmware-', '')
 
-            f = open('debian/copyright.meta')
+            f = open('debian/copyright.debian')
             open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
 
             makeflags = MakeFlags()
@@ -200,11 +201,11 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         package_dir = "debian/config/%s" % package
 
         if os.path.exists('%s/copyright' % package_dir):
-            f = open('%s/copyright' % package_dir, encoding="utf8")
-            open("debian/firmware-%s.copyright" % package, 'w', encoding="utf8").write(f.read())
+            f = open('%s/copyright' % package_dir)
+            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
         else:
-            vars['license'] = codecs.open("%s/LICENSE" % package_dir, 'r', 'utf-8').read()
-            codecs.open("debian/firmware-%s.copyright" % package, 'w', 'utf-8').write(self.substitute(copyright, vars))
+            vars['license'] = open("%s/LICENSE" % package_dir, 'r').read()
+            open("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
         try:
             os.unlink('debian/firmware-%s.bug-presubj' % package)
@@ -253,8 +254,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         # Take all the other files from upstream
         for f in files_orig:
             if f not in files_real and f not in links:
-                if os.path.islink(f) and \
-                   not self.config.get(('base', package, f), {}).get('copy'):
+                if os.path.islink(f):
                     links[f] = os.readlink(f)
                 elif os.path.isfile(f):
                     files_real[f] = f, f, None
@@ -291,7 +291,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             if version is None:
                 version = c.get('version')
             try:
-                f = f + ', ' + ', '.join(links_rev[f])
+                f = f + ', ' + ', '.join(sorted(links_rev[f]))
             except KeyError:
                 pass
             if desc and version:
@@ -308,19 +308,19 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         if 'initramfs-tools' in config_entry.get('support', []):
             postinst = self.templates['postinst.initramfs-tools']
-            codecs.open("debian/firmware-%s.postinst" % package, 'w', 'utf-8').write(self.substitute(postinst, vars))
+            open("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
         if 'license-accept' in config_entry:
-            license = codecs.open("%s/LICENSE.install" % package_dir, 'r', 'utf-8').read()
+            license = open("%s/LICENSE.install" % package_dir, 'r').read()
             preinst = self.templates['preinst.license']
             preinst_filename = "debian/firmware-%s.preinst" % package
-            codecs.open(preinst_filename, 'w', 'utf-8').write(self.substitute(preinst, vars))
+            open(preinst_filename, 'w').write(self.substitute(preinst, vars))
 
             templates = self.process_templates(self.templates['templates.license'], vars)
             license_split = re.split(r'\n\s*\n', license)
             templates[0]['Description'].extend(license_split)
             templates_filename = "debian/firmware-%s.templates" % package
-            self.write_rfc822(codecs.open(templates_filename, 'w', 'utf-8'), templates)
+            self.write_rfc822(open(templates_filename, 'w'), templates)
 
             desc = packages_binary[0]['Description']
             desc.append(
@@ -336,7 +336,7 @@ You must agree to the terms of this license before it is installed."""
         vars['firmware-list'] = ''.join(firmware_meta_list)
         package_meta_temp = self.templates["metainfo.xml"]
         # XXX Might need to escape some characters
-        codecs.open("debian/firmware-%s.metainfo.xml" % package, 'w', 'utf-8').write(self.substitute(package_meta_temp, vars))
+        open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))
 
     def process_template(self, in_entry, vars):
         e = Template()
@@ -370,10 +370,10 @@ You must agree to the terms of this license before it is installed."""
         self.write_makefile(makefile)
 
     def write_control(self, list):
-        self.write_rfc822(codecs.open("debian/control", 'w', 'utf-8'), list)
+        self.write_rfc822(open("debian/control", 'w'), list)
 
     def write_makefile(self, makefile):
-        f = codecs.open("debian/rules.gen", 'w', 'utf-8')
+        f = open("debian/rules.gen", 'w')
         makefile.write(f)
         f.close()
 

@@ -27,6 +27,7 @@ files:
  libertas_cs.fw
  libertas_cs_helper.fw
  mrvl/pcie8897_uapsta.bin
+ mrvl/pcie8997_wlan_v4.bin
  mrvl/pcieuart8997_combo_v4.bin
  mrvl/pcieusb8997_combo_v4.bin
  mrvl/sd8688.bin
@@ -40,6 +41,7 @@ files:
  mrvl/usb8797_uapsta.bin
  mrvl/usb8801_uapsta.bin
  mrvl/usb8897_uapsta.bin
+ mrvl/usbusb8997_combo_v4.bin
  mwl8k/fmimage_8366.fw
  mwl8k/fmimage_8366_ap-2.fw
  mwl8k/fmimage_8366_ap-3.fw
@@ -129,7 +131,11 @@ desc: 88W8682 firmware
 
 [mrvl/pcie8897_uapsta.bin_base]
 desc: Avastar 88W8897-PCIe firmware
-version: 15.68.7.p53
+version: V15.68.7.p154 (WLAN) / 15.28.7.p154 (BT)
+
+[mrvl/pcie8997_wlan_v4.bin_base]
+desc: Avastar 88W8997-PCIe firmware
+version: 16.68.1.p97
 
 [mrvl/pcieuart8997_combo_v4.bin_base]
 desc: Avastar 88W8997-PCIe-UART firmware
@@ -137,7 +143,7 @@ version: 16.68.1.p70
 
 [mrvl/pcieusb8997_combo_v4.bin_base]
 desc: Avastar 88W8997-PCIe-USB firmware
-version: 16.68.1.p70
+version: V16.68.1.p162 (WLAN) / 16.26.1.p162 (BT)
 
 [mrvl/sd8688.bin_base]
 desc: 88W8688-SDIO main code
@@ -159,11 +165,11 @@ version: 14.68.36.p60
 
 [mrvl/sd8887_uapsta.bin_base]
 desc: Avastar 88W8887 firmware
-version: 15.68.7.p5 (WLAN) / 15.29.7.p5 (BT)
+version: 15.68.1.p71
 
 [mrvl/sd8897_uapsta.bin_base]
 desc: Avastar 88W8897-SDIO firmware
-version: 15.68.7.p53
+version: V15.68.7.p154 (WLAN) / 15.68.7.p154 (BT)
 
 [mrvl/usb8766_uapsta.bin_base]
 desc: Avastar 88W8766 firmware
@@ -175,11 +181,15 @@ version: 14.68.29.p49
 
 [mrvl/usb8801_uapsta.bin_base]
 desc: Avastar 88W8801-USB firmware
-version: 14.68.36.p60
+version: 14.68.36.p138
 
 [mrvl/usb8897_uapsta.bin_base]
 desc: Avastar 88W8897-USB firmware
 version: 15.68.4.p103 (WLAN) / 15.28.4.p103 (BT)
+
+[mrvl/usbusb8997_combo_v4.bin_base]
+desc: Avastar 88W8997-USB firmware
+version: V16.68.1.p162 (WLAN) / 16.26.1.p162 (BT)
 
 [mwl8k/fmimage_8366.fw_base]
 desc: TopDog 88W8366 main code

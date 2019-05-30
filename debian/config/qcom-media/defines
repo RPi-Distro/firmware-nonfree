@@ -1,0 +1,88 @@
+[base]
+desc: Qualcomm graphics/video
+longdesc: Qualcomm Adreno GPUs and Venus video accelerators
+files:
+ qcom/a300_pfp.fw
+ qcom/a300_pm4.fw
+ qcom/a530_pfp.fw
+ qcom/a530_pm4.fw
+ qcom/a530_zap.b00
+ qcom/a530_zap.b01
+ qcom/a530_zap.b02
+ qcom/a530_zap.mdt
+ qcom/a530v3_gpmu.fw2
+ qcom/venus-1.8/venus.b00
+ qcom/venus-1.8/venus.b01
+ qcom/venus-1.8/venus.b02
+ qcom/venus-1.8/venus.b03
+ qcom/venus-1.8/venus.b04
+ qcom/venus-1.8/venus.mdt
+ qcom/venus-4.2/venus.b00
+ qcom/venus-4.2/venus.b01
+ qcom/venus-4.2/venus.b02
+ qcom/venus-4.2/venus.b03
+ qcom/venus-4.2/venus.b04
+ qcom/venus-4.2/venus.mdt
+
+[qcom/a300_pfp.fw_base]
+desc: Qualcomm Adreno 300 PFP firmware
+
+[qcom/a300_pm4.fw_base]
+desc: Qualcomm Adreno 300 PM4 firmware
+
+[qcom/a530_pfp.fw_base]
+desc: Qualcomm Adreno 530 PFP firmware
+
+[qcom/a530_pm4.fw_base]
+desc: Qualcomm Adreno 530 PM4 firmware
+
+[qcom/a530_zap.b00_base]
+desc: Qualcomm Adreno 530 Zap firmware part 0
+
+[qcom/a530_zap.b01_base]
+desc: Qualcomm Adreno 530 Zap firmware part 1
+
+[qcom/a530_zap.b02_base]
+desc: Qualcomm Adreno 530 Zap firmware part 2
+
+[qcom/a530_zap.mdt_base]
+desc: Qualcomm Adreno 530 Zap firmware header
+
+[qcom/a530v3_gpmu.fw2_base]
+desc: Qualcomm Adreno 530 v3 GPMU firmware
+
+[qcom/venus-1.8/venus.b00_base]
+desc: Qualcomm Venus 1.8 firmware part 0
+
+[qcom/venus-1.8/venus.b01_base]
+desc: Qualcomm Venus 1.8 firmware part 1
+
+[qcom/venus-1.8/venus.b02_base]
+desc: Qualcomm Venus 1.8 firmware part 2
+
+[qcom/venus-1.8/venus.b03_base]
+desc: Qualcomm Venus 1.8 firmware part 3
+
+[qcom/venus-1.8/venus.b04_base]
+desc: Qualcomm Venus 1.8 firmware part 4
+
+[qcom/venus-1.8/venus.mdt_base]
+desc: Qualcomm Venus 1.8 firmware header
+
+[qcom/venus-4.2/venus.b00_base]
+desc: Qualcomm Venus 4.2 firmware part 0
+
+[qcom/venus-4.2/venus.b01_base]
+desc: Qualcomm Venus 4.2 firmware part 1
+
+[qcom/venus-4.2/venus.b02_base]
+desc: Qualcomm Venus 4.2 firmware part 2
+
+[qcom/venus-4.2/venus.b03_base]
+desc: Qualcomm Venus 4.2 firmware part 3
+
+[qcom/venus-4.2/venus.b04_base]
+desc: Qualcomm Venus 4.2 firmware part 4
+
+[qcom/venus-4.2/venus.mdt_base]
+desc: Qualcomm Venus 4.2 firmware header

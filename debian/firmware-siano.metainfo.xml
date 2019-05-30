@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-siano</id>
+  <name>Binary firmware for Siano MDTV receivers</name>
+  <summary>
+Binary firmware for Siano Mobile Digital TV receivers supported by the smsmdtv driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">cmmb_vega_12mhz.inp</firmware>
+    <firmware type="runtime">cmmb_venice_12mhz.inp</firmware>
+    <firmware type="runtime">dvb_nova_12mhz.inp</firmware>
+    <firmware type="runtime">dvb_nova_12mhz_b0.inp</firmware>
+    <firmware type="runtime">isdbt_nova_12mhz.inp</firmware>
+    <firmware type="runtime">isdbt_nova_12mhz_b0.inp</firmware>
+    <firmware type="runtime">isdbt_rio.inp</firmware>
+    <firmware type="runtime">sms1xxx-hcw-55xxx-dvbt-02.fw</firmware>
+    <firmware type="runtime">sms1xxx-hcw-55xxx-isdbt-02.fw</firmware>
+    <firmware type="runtime">sms1xxx-nova-a-dvbt-01.fw</firmware>
+    <firmware type="runtime">sms1xxx-nova-b-dvbt-01.fw</firmware>
+    <firmware type="runtime">sms1xxx-stellar-dvbt-01.fw</firmware>
+    <firmware type="runtime">tdmb_nova_12mhz.inp</firmware>
+
+  </provides>
+</component>

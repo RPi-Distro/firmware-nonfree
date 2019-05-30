@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-atheros</id>
+  <name>Binary firmware for Atheros wireless cards</name>
+  <summary>
+Binary firmware for USB wireless network and Bluetooth cards supported by the ar5523,
+ath3k, ath6kl_sdio, ath6kl_usb, ath9k_htc, ath10k, or wilc6210 drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">ar3k/AthrBT_0x01020001.dfu</firmware>
+    <firmware type="runtime">ar3k/AthrBT_0x01020200.dfu</firmware>
+    <firmware type="runtime">ar3k/AthrBT_0x01020201.dfu</firmware>
+    <firmware type="runtime">ar3k/AthrBT_0x11020000.dfu</firmware>
+    <firmware type="runtime">ar3k/AthrBT_0x11020100.dfu</firmware>
+    <firmware type="runtime">ar3k/AthrBT_0x31010000.dfu</firmware>
+    <firmware type="runtime">ar3k/AthrBT_0x31010100.dfu</firmware>
+    <firmware type="runtime">ar3k/AthrBT_0x41020000.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x01020001_26.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x01020200_26.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x01020200_40.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x01020201_26.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x01020201_40.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x11020000_40.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x11020100_40.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x31010000_40.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x31010100_40.dfu</firmware>
+    <firmware type="runtime">ar3k/ramps_0x41020000_40.dfu</firmware>
+    <firmware type="runtime">ar5523.bin</firmware>
+    <firmware type="runtime">ar7010.fw</firmware>
+    <firmware type="runtime">ar7010_1_1.fw</firmware>
+    <firmware type="runtime">ar9271.fw</firmware>
+    <firmware type="runtime">ath10k/QCA4019/hw1.0/board-2.bin</firmware>
+    <firmware type="runtime">ath10k/QCA4019/hw1.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA6174/hw2.1/board.bin</firmware>
+    <firmware type="runtime">ath10k/QCA6174/hw2.1/board-2.bin</firmware>
+    <firmware type="runtime">ath10k/QCA6174/hw2.1/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA6174/hw3.0/board.bin</firmware>
+    <firmware type="runtime">ath10k/QCA6174/hw3.0/board-2.bin</firmware>
+    <firmware type="runtime">ath10k/QCA6174/hw3.0/firmware-4.bin</firmware>
+    <firmware type="runtime">ath10k/QCA6174/hw3.0/firmware-6.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9377/hw1.0/board.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9377/hw1.0/board-2.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9377/hw1.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9887/hw1.0/board.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9887/hw1.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9888/hw2.0/board-2.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9888/hw2.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA988X/hw2.0/board.bin</firmware>
+    <firmware type="runtime">ath10k/QCA988X/hw2.0/firmware-4.bin</firmware>
+    <firmware type="runtime">ath10k/QCA988X/hw2.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9984/hw1.0/board-2.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9984/hw1.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA99X0/hw2.0/board.bin</firmware>
+    <firmware type="runtime">ath10k/QCA99X0/hw2.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath3k-1.fw</firmware>
+    <firmware type="runtime">ath6k/AR6003.1/hw2.1.1/athwlan.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003.1/hw2.1.1/bdata.SD32.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003.1/hw2.1.1/bdata.WB31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003.1/hw2.1.1/data.patch.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003.1/hw2.1.1/endpointping.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003.1/hw2.1.1/otp.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw1.0/athwlan.bin.z77</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw1.0/bdata.SD31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw1.0/bdata.SD32.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw1.0/bdata.WB31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw1.0/data.patch.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw1.0/otp.bin.z77</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.0/athwlan.bin.z77</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.0/bdata.SD31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.0/bdata.SD32.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.0/bdata.WB31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.0/data.patch.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.0/otp.bin.z77</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/athwlan.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/bdata.SD31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/bdata.SD32.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/bdata.WB31.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/data.patch.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/endpointping.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/fw-2.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/fw-3.bin</firmware>
+    <firmware type="runtime">ath6k/AR6003/hw2.1.1/otp.bin</firmware>
+    <firmware type="runtime">ath6k/AR6004/hw1.2/bdata.bin</firmware>
+    <firmware type="runtime">ath6k/AR6004/hw1.2/fw-2.bin</firmware>
+    <firmware type="runtime">ath6k/AR6004/hw1.3/bdata.bin</firmware>
+    <firmware type="runtime">ath6k/AR6004/hw1.3/fw-3.bin</firmware>
+    <firmware type="runtime">ath9k_htc/htc_7010-1.4.0.fw</firmware>
+    <firmware type="runtime">ath9k_htc/htc_9271-1.4.0.fw</firmware>
+    <firmware type="runtime">htc_7010.fw</firmware>
+    <firmware type="runtime">htc_9271.fw</firmware>
+    <firmware type="runtime">qca/nvm_00130300.bin</firmware>
+    <firmware type="runtime">qca/nvm_00130302.bin</firmware>
+    <firmware type="runtime">qca/nvm_usb_00000200.bin</firmware>
+    <firmware type="runtime">qca/nvm_usb_00000201.bin</firmware>
+    <firmware type="runtime">qca/nvm_usb_00000300.bin</firmware>
+    <firmware type="runtime">qca/nvm_usb_00000302.bin</firmware>
+    <firmware type="runtime">qca/rampatch_00130300.bin</firmware>
+    <firmware type="runtime">qca/rampatch_00130302.bin</firmware>
+    <firmware type="runtime">qca/rampatch_usb_00000200.bin</firmware>
+    <firmware type="runtime">qca/rampatch_usb_00000201.bin</firmware>
+    <firmware type="runtime">qca/rampatch_usb_00000300.bin</firmware>
+    <firmware type="runtime">qca/rampatch_usb_00000302.bin</firmware>
+    <firmware type="runtime">wil6210.brd</firmware>
+    <firmware type="runtime">wil6210.fw</firmware>
+
+  </provides>
+</component>

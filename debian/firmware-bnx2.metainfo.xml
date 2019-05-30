@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-bnx2</id>
+  <name>Binary firmware for Broadcom NetXtremeII</name>
+  <summary>
+Binary firmware for Broadcom NetXtremeII network adapters supported by the bnx2 driver.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">bnx2/bnx2-rv2p-06-6.0.15.fw</firmware>
+    <firmware type="runtime">bnx2/bnx2-rv2p-09-6.0.17.fw</firmware>
+    <firmware type="runtime">bnx2/bnx2-rv2p-09ax-6.0.17.fw</firmware>
+    <firmware type="runtime">bnx2/bnx2-mips-06-6.2.1.fw</firmware>
+    <firmware type="runtime">bnx2/bnx2-mips-06-6.2.3.fw</firmware>
+    <firmware type="runtime">bnx2/bnx2-mips-09-6.2.1a.fw</firmware>
+    <firmware type="runtime">bnx2/bnx2-mips-09-6.2.1b.fw</firmware>
+
+  </provides>
+</component>

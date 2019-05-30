@@ -2,7 +2,7 @@
 SHELL := sh -e
 SOURCE := $(shell dpkg-parsechangelog -SSource)
 VERSION := $(shell dpkg-parsechangelog -SVersion)
-VERSION_UPSTREAM := $(shell echo "$(VERSION)" | sed -e 's,-[^-]*$$,,' | sed 's/^.*://')
+VERSION_UPSTREAM := $(shell echo "$(VERSION)" | sed -e 's,^[^:]*:\?,,;s,-[^-]*$$,,')
 
 CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) $(wildcard debian/config/*/copyright) $(wildcard debian/config/*/LICENSE*)
 

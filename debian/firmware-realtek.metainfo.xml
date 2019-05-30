@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.packages.firmware-realtek</id>
+  <name>Binary firmware for Realtek wired/wifi/BT adapters</name>
+  <summary>
+Binary firmware for Realtek Ethernet, wifi and Bluetooth adapters supported by various
+drivers.
+  </summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+    <firmware type="runtime">RTL8192E/boot.img</firmware>
+    <firmware type="runtime">RTL8192E/data.img</firmware>
+    <firmware type="runtime">RTL8192E/main.img</firmware>
+    <firmware type="runtime">rtl_bt/rtl8192ee_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8812ae_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8761a_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8821a_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8192eu_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8723a_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8723b_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8723d_config.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8723d_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8821c_config.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8821c_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8822b_config.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8822b_fw.bin</firmware>
+    <firmware type="runtime">rtl_nic/rtl8105e-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8106e-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8106e-2.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8107e-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8107e-2.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168d-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168d-2.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168e-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168e-2.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168e-3.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168f-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168f-2.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168g-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168g-2.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168g-3.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168h-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8168h-2.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8402-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8411-1.fw</firmware>
+    <firmware type="runtime">rtl_nic/rtl8411-2.fw</firmware>
+    <firmware type="runtime">rtlwifi/rtl8188efw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8188eufw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192cfw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192cfwU_B.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192cfwU.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192cufw_A.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192cufw_B.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192cufw_TMSC.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192cufw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192defw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192eefw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192eu_nic.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192eu_wowlan.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8192sefw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8712u.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723aufw_A.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723aufw_B.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723aufw_B_NoBT.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723befw_36.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723befw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bs_bt.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bs_nic.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bs_wowlan.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bu_nic.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723bu_wowlan.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723defw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723fw_B.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8723fw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8821aefw_29.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8821aefw_wowlan.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8821aefw.bin</firmware>
+    <firmware type="runtime">rtlwifi/rtl8822befw.bin</firmware>
+
+  </provides>
+</component>

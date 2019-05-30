@@ -13,6 +13,8 @@ We set the upstream version to the date of the last commit and use the
 'debian/bin/genorig.py' script to generate a tarball from a git
 repository.  The [upstream] excluded field in 'debian/config/defines'
 lists file patterns that should be excluded from the tarball.
+genorig.py exports from the master branch by default, but this can
+be overridden using the --commit option.
 
 Licences
 --------
@@ -38,7 +40,7 @@ Binary package definition
 The binary package definitions are placed under 'debian/config' and
 written in a format similar to INI files, parsed using the Python
 ConfigParser module
-<http://docs.python.org/release/2.7/library/configparser.html>,
+<https://docs.python.org/3/library/configparser.html>,
 
 The [base] packages field in the top-level 'defines' file lists all
 the binary package names, without the fixed prefix 'firmware-'.
@@ -86,4 +88,15 @@ definitions:
 2. Ensure debian/rules.defs has the right value of KERNELVERSION
 3. Run: debian/rules debian/control
 
- -- Ben Hutchings <ben@decadent.org.uk>, Wed, 25 Nov 2015 22:41:15 +0000
+To update the current package's changelog with the new upstream version:
+
+1. Run: PYTHONPATH=/usr/share/linux-support-<version>/lib/python \
+            debian/bin/release-update /path/to/linux-firmware-repository
+
+   This will update debian/changelog with the changes added between
+   the commit of the current package version and the HEAD commit found in the
+   linux firmware repository, passed as argument.
+
+2. Remove entries regarding firmwares files not packaged
+
+ -- Ben Hutchings <ben@decadent.org.uk>, Tue, 15 Jan 2019 21:34:38 +0000

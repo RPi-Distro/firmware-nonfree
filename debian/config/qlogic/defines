@@ -7,10 +7,10 @@ files:
  ct2fw-3.2.5.1.bin
  ctfw-3.2.3.0.bin
  ctfw-3.2.5.1.bin
- qed/qed_init_values_zipped-8.4.2.0.bin
- qed/qed_init_values_zipped-8.7.3.0.bin
- qed/qed_init_values_zipped-8.10.5.0.bin
  qed/qed_init_values_zipped-8.10.10.0.bin
+ qed/qed_init_values_zipped-8.33.1.0.bin
+ qed/qed_init_values_zipped-8.33.11.0.bin
+ qed/qed_init_values_zipped-8.37.2.0.bin
  qlogic/1040.bin
  qlogic/1280.bin
  qlogic/12160.bin
@@ -50,21 +50,21 @@ version: 3.2.3.0
 desc: Brocade 1010/1020/1007/1741/804 firmware
 version: 3.2.5.1
 
-[qed/qed_init_values_zipped-8.4.2.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.4.2.0
-
-[qed/qed_init_values_zipped-8.7.3.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.7.3.0
-
-[qed/qed_init_values_zipped-8.10.5.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.10.5.0
-
 [qed/qed_init_values_zipped-8.10.10.0.bin_base]
 desc: QLogic QL45000 series firmware
 version: 8.10.10.0
+
+[qed/qed_init_values_zipped-8.33.1.0.bin_base]
+desc: QLogic QL45000 series firmware
+version: 8.33.1.0
+
+[qed/qed_init_values_zipped-8.33.11.0.bin_base]
+desc: QLogic QL45000 series firmware
+version: 8.33.11.0
+
+[qed/qed_init_values_zipped-8.37.2.0.bin_base]
+desc: QLogic QL45000 series firmware
+version: 8.37.2.0
 
 [qlogic/1040.bin_base]
 desc: QLogic QLA1040 firmware
@@ -99,8 +99,8 @@ version: 3.03.28
 
 [ql2400_fw.bin_base]
 desc: QLogic ISP2422, ISP2432[M], SP222, SP232 firmware
-version: 8.03.00
+version: 8.07.00
 
 [ql2500_fw.bin_base]
 desc: QLogic ISP2532 firmware
-version: 8.03.00
+version: 8.07.00
