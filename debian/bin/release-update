@@ -8,61 +8,24 @@ import locale
 
 from debian_linux.debian import Changelog, Version
 
-def new_commit_version():
-    result = subprocess.check_output(['git', 'rev-parse', 'HEAD'])
-    return result[:-1].decode('utf-8')
-
-def new_dated_version(dash = True):
-    cmd = "TZ=GMT git log --date=iso-local --pretty=%cd -1"
-
-    result = subprocess.check_output([cmd], shell=True)
-    result = re.search('^[0-9]+-[0-9]+-[0-9]+',
-             result[:-2].decode('utf-8')).group(0)
-    if not dash:
-        result = result.replace('-', '')
-    return result
-
-def cur_commit_version():
-    rules = r'^    - Upstream version is commit (?P<commit_ver>[0-9a-zA-Z]+)'
-
-    f = open("debian/changelog")
-    while True:
-        line = f.readline()
-        if not line:
-            break
-        match = re.match(rules, line)
-        if not match:
-            continue
-        return match.group('commit_ver')
-    return None
-
-
-def print_stable_log(log, cur_ver, new_ver, new_date_ver):
-    print('    - Upstream version is commit {}\n'
-          '      dated {}'
-          .format(new_ver, new_date_ver),
-          file=log)
+def print_stable_log(log, cur_ver, new_ver):
     log.flush() # serialise our output with git's
     subprocess.check_call(['git', 'log', '--reverse', '--no-merges',
                            '--pretty=    - %s',
                            '{}..{}'.format(cur_ver, new_ver)],
                           stdout=log)
 
-def main(repo):
+def main(repo, new_ver):
     locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
     os.environ['GIT_DIR'] = repo + '/.git'
 
     changelog = Changelog(version=Version)
-    cur_pkg_ver = changelog[0].version
-    cur_ver = cur_commit_version()
-
-    new_hash = new_commit_version()
+    cur_ver = changelog[0].version.upstream
 
     # Nothing to update
-    if cur_ver == new_hash:
+    if cur_ver == new_ver:
         sys.exit(0)
 
-    new_ver = new_dated_version(False)
     new_pkg_ver = new_ver + '-1'
 
     # Three possible cases:
@@ -105,14 +68,12 @@ def main(repo):
                     # Case 2(a)
                     if line_no == 3 and line != intro_line:
                         new_log.write(intro_line)
-                        print_stable_log(new_log, cur_ver, new_hash,
-                                         new_dated_version())
+                        print_stable_log(new_log, cur_ver, new_ver)
                         new_log.write('\n')
                         inserted = True
                     # Case 1 or 2(b)
                     elif line_no > 3 and line == '\n':
-                        print_stable_log(new_log, cur_ver, new_hash,
-                                         new_dated_version())
+                        print_stable_log(new_log, cur_ver, new_ver)
                         inserted = True
 
                 # Check that we inserted before hitting the end of the
@@ -124,10 +85,11 @@ def main(repo):
     os.rename('debian/changelog.new', 'debian/changelog')
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 3:
         print('''\
-Usage: {} REPO
-REPO is the git repository to generate a changelog from'''.format(sys.argv[0]),
+Usage: {} REPO VERSION
+REPO is the git repository to generate a changelog from
+VERSION is the upstream version'''.format(sys.argv[0]),
               file=sys.stderr)
         sys.exit(2)
-    main(sys.argv[1])
+    main(*sys.argv[1:])
