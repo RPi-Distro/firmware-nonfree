@@ -26,6 +26,12 @@ firmware-nonfree (20190717-1) UNRELEASED; urgency=medium
     (Closes: #919632)
   * debian/bin/release-update: Change to use upstream tagged versions
   * debian/bin/genorig.py: Change to use upstream tagged versions
+  * iwlwifi:
+    - Add Intel Wireless 9000 and 9260 firmware version 46.a41adfe7.0 (ABI 46)
+    - Add Intel Wireless 22260 firmware version 46.3cfab8da.0 (ABI 46) and
+      48.13675109.0 (ABI 48)
+    - Add Intel Wireless 22000 series firmware version 48.13675109.0 (ABI 48)
+    - Add Intel Bluetooth AX201 configuration and firmware version 21.20.0.4
 
   [ Romain Perier ]
   * misc-nonfree: Add GV100 signed firmware (Closes: #928672)
