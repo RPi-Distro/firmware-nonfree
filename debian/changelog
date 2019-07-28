@@ -1,4 +1,25 @@
-firmware-nonfree (20190502-2) UNRELEASED; urgency=medium
+firmware-nonfree (20190717-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - iwlwifi:
+      + Intel Wireless 22161, 9460/9650 (var 16 rev 1), and 9160/9260
+        (var 16 rev 1) Bluetooth firmware version 21.30.0.4
+      + Intel Wireless 8265 Bluetooth firmware version 21.10.0.6
+      + Intel Wireless 8000C and 8265 firmware (ABI 36) version 36.8fd77bb3c.0
+    - misc-nonfree:
+      + Freescale i.MX6 SDMA firmware version 3.5
+      + Freescale i.MX7 SDMA firmware version 4.5
+    - libertas: Update license text
+    - amd-graphics: Update to 19.20 release:
+      + "Picasso" ASD and VCN firmware
+      + "Raven" ASD, DMCU, and VCN firmware
+      + "Raven 2" ASD firmware
+      + "Polaris 12" SMC and K SMC firmware
+      + "Vega 10" ASD, CE, ME, MEC, MEC2, PFP, and VCE firmware
+      + "Vega 12" ASD, CE, ME, MEC, MEC2, and PFP firmware
+      + "Tonga" K SMC firmware
+    - amd-graphics: Revert "Vega 10" SOS firmware to 18.30 release
+      (Closes: #928631)
 
   [ Ben Hutchings ]
   * atheros: Revert change of QCA9377 rev 1.0 firmware in 20180518-1

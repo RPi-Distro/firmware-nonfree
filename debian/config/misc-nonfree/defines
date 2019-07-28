@@ -580,11 +580,11 @@ version: 0x10130001
 
 [imx/sdma/sdma-imx6q.bin_base]
 desc: Freescale i.MX6 SDMA firmware
-version: 3.3
+version: 3.5
 
 [imx/sdma/sdma-imx7d.bin_base]
 desc: Freescale i.MX7 SDMA firmware
-version: 4.2
+version: 4.5
 
 [i915/bxt_dmc_ver1_07.bin_base]
 desc: Intel "Broxton" DMC firmware
