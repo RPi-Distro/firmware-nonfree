@@ -13,21 +13,22 @@ from debian_linux.debian import Changelog
 from config import Config
 
 class Main(object):
-    def __init__(self, repo, commit):
+    def __init__(self, repo, override_version):
         self.log = sys.stdout.write
 
         changelog = Changelog()[0]
         source = changelog.source
-        version = changelog.version
+
+        version = override_version or changelog.version.upstream
 
         self.config = Config()
 
-        self.log('Using source name %s, version %s\n' % (source, version.upstream))
+        self.log('Using source name %s, version %s\n' % (source, version))
 
-        self.orig = '%s-%s' % (source, version.upstream)
-        self.orig_tar = '%s_%s.orig.tar.xz' % (source, version.upstream)
+        self.orig = '%s-%s' % (source, version)
+        self.orig_tar = '%s_%s.orig.tar.xz' % (source, version)
         self.repo = repo
-        self.commit = commit
+        self.tag = version
 
     def __call__(self):
         import tempfile
@@ -54,11 +55,11 @@ class Main(object):
             shutil.rmtree(self.dir)
 
     def upstream_export(self):
-        self.log("Exporting %s from %s\n" % (self.commit, self.repo))
+        self.log("Exporting %s from %s\n" % (self.tag, self.repo))
 
         archive_proc = subprocess.Popen(['git', 'archive', '--format=tar',
                                          '--prefix=%s/' % self.orig,
-                                         self.commit],
+                                         self.tag],
                                         cwd=self.repo,
                                         stdout=subprocess.PIPE)
         extract_proc = subprocess.Popen(['tar', '-xaf', '-'], cwd=self.dir,
@@ -108,10 +109,9 @@ class Main(object):
 if __name__ == '__main__':
     from optparse import OptionParser
     parser = OptionParser(usage="%prog [OPTION]... REPO")
-    parser.add_option("--commit", dest="commit",
-                      help="set commit, branch or tag to use (default: master)",
-                      metavar="COMMIT", default='master')
+    parser.add_option("-V", "--override-version", dest="override_version",
+                      help="Override version", metavar="VERSION")
     options, args = parser.parse_args()
 
     assert len(args) == 1
-    Main(args[0], options.commit)()
+    Main(args[0], options.override_version)()
