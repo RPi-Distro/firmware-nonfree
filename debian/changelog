@@ -37,6 +37,7 @@ firmware-nonfree (20190717-1) UNRELEASED; urgency=medium
       GP102, GP104, GP106, and GP107 boards
     - Add Intel "Broxton", "Geminilake", "Icelake", "Kabylake", and "Skylake"
       GuC firmware version 33.0.0
+  * cavium: Add Cavium CNN55XX asymmetric crypto firmware version 01
 
   [ Romain Perier ]
   * misc-nonfree: Add GV100 signed firmware (Closes: #928672)

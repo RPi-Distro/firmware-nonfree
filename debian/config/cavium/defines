@@ -1,6 +1,7 @@
 [base]
 desc: Cavium Ethernet adapters
 files:
+ cavium/cnn55xx_ae.fw
  cavium/cnn55xx_se.fw
  liquidio/lio_210nv_nic.bin
  liquidio/lio_210sv_nic.bin
@@ -10,8 +11,12 @@ longdesc: Cavium crypto and Ethernet adapters supported by the nitrox and
  liquidio drivers
 support: initramfs-tools
 
+[cavium/cnn55xx_ae.fw_base]
+desc: Cavium CNN55XX asymmetric crypto firmware
+version: 01
+
 [cavium/cnn55xx_se.fw_base]
-desc: Cavium CNN55XX firmware
+desc: Cavium CNN55XX symmetric crypto firmware
 version: 10
 
 [liquidio/lio_210nv_nic.bin_base]
