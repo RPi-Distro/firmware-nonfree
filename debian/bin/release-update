@@ -126,7 +126,7 @@ def main(repo):
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print('''\
-Usage: {} REPO"
+Usage: {} REPO
 REPO is the git repository to generate a changelog from'''.format(sys.argv[0]),
               file=sys.stderr)
         sys.exit(2)
