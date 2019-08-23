@@ -1,4 +1,4 @@
-firmware-nonfree (20190114-2) UNRELEASED; urgency=medium
+firmware-nonfree (20190114-2) buster; urgency=medium
 
   [ Ben Hutchings ]
   * Update to linux-support 4.19.0-5
@@ -18,7 +18,7 @@ firmware-nonfree (20190114-2) UNRELEASED; urgency=medium
   [ Romain Perier ]
   * misc-nonfree: Add GV100 signed firmware (Closes: #928672)
 
- -- Ben Hutchings <ben@decadent.org.uk>  Sun, 28 Jul 2019 19:16:36 +0100
+ -- Ben Hutchings <ben@decadent.org.uk>  Fri, 23 Aug 2019 02:04:48 +0100
 
 firmware-nonfree (20190114-1) unstable; urgency=medium
 
