@@ -1,3 +1,10 @@
+firmware-nonfree (20190717-2) unstable; urgency=medium
+
+  * misc-nonfree: Add one more file of Nvidia GV100 signed firmware
+    (thanks to Sven Joachim) (Closes: #928672)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 01 Sep 2019 14:48:05 +0100
+
 firmware-nonfree (20190717-1) unstable; urgency=medium
 
   * New upstream version:
