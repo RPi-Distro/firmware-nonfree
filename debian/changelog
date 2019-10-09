@@ -1,3 +1,12 @@
+firmware-nonfree (1:20190114-1+rpt3) buster; urgency=medium
+
+  * Add brcmfmac43430-sdio.clm_blob
+  * Update brcmfmac43455-sdio.bin to 7.45.189
+  * Update brcmfmac43455-sdio.clm_blob
+  * Update brcmfmac43430-sdio.bin to 7.45.98.83
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 09 Oct 2019 17:06:30 +0100
+
 firmware-nonfree (1:20190114-1+rpt2) buster; urgency=medium
 
   * Update brcmfmac43455-sdio.txt
