@@ -1,3 +1,9 @@
+firmware-nonfree (1:20190114-1+rpt4) buster; urgency=medium
+
+  * Revert +rpt3
+
+ -- Serge Schneider <serge@raspberrypi.org>  Wed, 30 Oct 2019 11:42:06 +0000
+
 firmware-nonfree (1:20190114-1+rpt3) buster; urgency=medium
 
   * Add brcmfmac43430-sdio.clm_blob

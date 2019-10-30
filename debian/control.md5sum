@@ -7,11 +7,11 @@ adc954a9dc00d79080e18ac44ff81ee5  debian/config/intel-sound/defines
 55528cf878602a52937380e49392b36e  debian/config/bnx2x/defines
 7e9bbc1e206af60541b528f0b977d979  debian/config/ti-connectivity/defines
 c4897d4d9a8c8fd5d4fbdd17540908de  debian/config/siano/defines
+0ccc2077c56e4b328f9f8fe0b70475de  debian/config/qcom-media/defines
 ac49608d8a2e90e9235f66f59b424134  debian/config/misc-nonfree/defines
 0663b88c766755dba0794bd733fe7c2a  debian/config/realtek/defines
-13cb15c28f2e49c73ccbd03818ce81e0  debian/config/qlogic/defines
 f95fcce88036d5dc0e2888346ee85d18  debian/config/intelwimax/defines
-0ccc2077c56e4b328f9f8fe0b70475de  debian/config/qcom-media/defines
+13cb15c28f2e49c73ccbd03818ce81e0  debian/config/qlogic/defines
 bbf2ca269bacda3c5162f6e360132b97  debian/config/iwlwifi/defines
 62a33613ed9a3e048039a5ee1656a2f7  debian/config/ipw2x00/defines
 3a9da046c80082b3b494df20e2fa8ec3  debian/config/myricom/defines
@@ -20,7 +20,7 @@ bbf2ca269bacda3c5162f6e360132b97  debian/config/iwlwifi/defines
 4efd5ad469778dc13757a8dbe1c3a54f  debian/config/cavium/defines
 6cacebcacee21fc8152e214f27f4c07c  debian/config/bnx2/defines
 0477a8c4fb398df55c3306bf5b8b1905  debian/config/atheros/defines
-29dfc0c4b735ead4e8ac80de2dbf63a5  debian/config/brcm80211/defines
+9c7d1ea0a0659e6be41da8c8a5d27f90  debian/config/brcm80211/defines
 c76033edfac9f0d1a0c1cecc5391d81b  debian/config/amd-graphics/defines
 fd8f21846ba40b58012d9f3d9fe13b95  debian/config/libertas/copyright
 b196c1c10f48782527383db26c14decb  debian/config/intel-sound/copyright
@@ -34,8 +34,8 @@ cc5a9fa59558837603a026fa8f637d49  debian/config/amd-graphics/copyright
 4add08f2577086d44447996503cddf5f  debian/config/netronome/LICENSE
 0f462f7c71867f49affdc8d270e2f91c  debian/config/bnx2x/LICENSE
 4556c1bf830067f12ca151ad953ec2a5  debian/config/siano/LICENSE
-14b901969e23c41881327c0d9e4b7d36  debian/config/intelwimax/LICENSE
 45d3f86709a1dcaadd8d8fbda5cd7aad  debian/config/qcom-media/LICENSE
+14b901969e23c41881327c0d9e4b7d36  debian/config/intelwimax/LICENSE
 bfc45fabe4f6190932efc41817ac39ee  debian/config/iwlwifi/LICENSE
 6e81681993c231ed42781bba47742e2a  debian/config/ipw2x00/LICENSE.install
 cacf93d0156c89414005ee29b80ef0d3  debian/config/ipw2x00/LICENSE
