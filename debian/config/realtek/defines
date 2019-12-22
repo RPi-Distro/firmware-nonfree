@@ -70,6 +70,9 @@ files:
  rtlwifi/rtl8821aefw_wowlan.bin
  rtlwifi/rtl8821aefw.bin
  rtlwifi/rtl8822befw.bin
+ rtw88/rtw8822b_fw.bin
+ rtw88/rtw8822c_fw.bin
+
 longdesc: Realtek Ethernet, wifi and Bluetooth adapters supported by various
  drivers
 support: initramfs-tools
@@ -299,3 +302,9 @@ desc: Realtek RTL8821AE firmware
 
 [rtlwifi/rtl8822befw.bin_base]
 desc: Realtek RTL8822BE firmware
+
+[rtw88/rtw8822b_fw.bin_base]
+desc: Realtek 8822BE firmware
+
+[rtw88/rtw8822c_fw.bin_base]
+desc: Realtek 8822CE firmware

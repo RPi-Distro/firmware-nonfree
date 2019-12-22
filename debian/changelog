@@ -1,3 +1,10 @@
+firmware-nonfree (20190717-3) UNRELEASED; urgency=medium
+
+  * realtek: Add firmware for Realtek 8822BE/8822CE devices.
+    Thanks to Sjoerd Simons (Closes: #935969)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
+
 firmware-nonfree (20190717-2) unstable; urgency=medium
 
   * misc-nonfree: Add one more file of Nvidia GV100 signed firmware

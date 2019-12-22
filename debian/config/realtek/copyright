@@ -10,7 +10,7 @@ License: Binary redistribution (Realtek permissive)
  data in hexadecimal or equivalent format, provided this copyright
  notice is accompanying it.
 
-Files: RTL8192E/*, RTL8192SU/*, rtlwifi/*
+Files: RTL8192E/*, RTL8192SU/*, rtlwifi/*, rtw88/*
 Copyright: 2009-2010, Realtek Semiconductor Corporation 
 License: Binary redistribution (Realtek restrictive)
  All rights reserved.
