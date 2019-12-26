@@ -74,11 +74,13 @@ files:
  i915/bxt_guc_ver8_7.bin
  i915/bxt_guc_ver9_29.bin
  i915/bxt_huc_ver01_07_1398.bin
+ i915/bxt_huc_ver01_8_2893.bin
  i915/cnl_dmc_ver1_07.bin
  i915/glk_dmc_ver1_04.bin
  i915/glk_guc_32.0.3.bin
  i915/glk_guc_33.0.0.bin
  i915/glk_huc_ver03_01_2893.bin
+ i915/icl_dmc_ver1_07.bin
  i915/icl_guc_32.0.3.bin
  i915/icl_guc_33.0.0.bin
  i915/icl_huc_ver8_4_3238.bin
@@ -632,6 +634,10 @@ version: 9.29
 desc: Intel "Broxton" HuC firmware
 version: 1.07.1398
 
+[i915/bxt_huc_ver01_8_2893.bin_base]
+desc: Intel "Broxton" HuC firmware
+version: 1.8.2893
+
 [i915/glk_dmc_ver1_04.bin_base]
 desc: Intel "Geminilake" DMC firmware
 version: 1.04
@@ -647,6 +653,10 @@ version: 33.0.0
 [i915/glk_huc_ver03_01_2893.bin_base]
 desc: Intel "Geminilake" HuC firmware
 version: 3.1.2893
+
+[i915/icl_dmc_ver1_07.bin]
+desc: Intel "Icelake" DMC firmware
+version: 1.07
 
 [i915/icl_guc_32.0.3.bin_base]
 desc: Intel "Icelake" GuC firmware
