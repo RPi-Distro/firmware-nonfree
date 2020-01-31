@@ -20,11 +20,11 @@ clean: debian/control
 	rm -rf debian/lib/python/__pycache__
 	dh_clean
 
-binary-indep:
+binary-indep: build-indep
 	dh_testdir
 	$(MAKE) -f debian/rules.gen binary-indep
 
-binary-arch:
+binary-arch: build-arch
 
 binary:	binary-indep binary-arch
 
@@ -76,4 +76,4 @@ maintainerclean:
 	-rm debian/*.postinst
 	-rm debian/*.templates
 
-.PHONY: clean build binary-indep binary-arch binary
+.PHONY: clean build-indep build-arch build binary-indep binary-arch binary
