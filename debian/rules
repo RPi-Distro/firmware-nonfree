@@ -12,7 +12,8 @@ GENCONTROL = debian/bin/gencontrol.py
 
 __BINNMU := $(shell dpkg-parsechangelog | sed -rne 's,^Version: .*\+b([0-9]+)$$,\1,p')
 
-build: debian/control
+# Nothing to build
+build-indep build-arch build: debian/control
 
 clean: debian/control
 	dh_testdir

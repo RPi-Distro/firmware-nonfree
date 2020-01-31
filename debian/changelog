@@ -1,7 +1,11 @@
 firmware-nonfree (20190717-3) UNRELEASED; urgency=medium
 
+  [ Salvatore Bonaccorso ]
   * realtek: Add firmware for Realtek 8822BE/8822CE devices.
     Thanks to Sjoerd Simons (Closes: #935969)
+
+  [ Ben Hutchings ]
+  * debian/rules: Implement build-arch and build-indep targets
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
