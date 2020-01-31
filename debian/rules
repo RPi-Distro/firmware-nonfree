@@ -26,7 +26,7 @@ binary-arch: build-arch
 
 binary:	binary-indep binary-arch
 
-CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/control.*)
+CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/*.in)
 CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) $(wildcard debian/config/*/copyright) $(wildcard debian/config/*/LICENSE*)
 
 # debian/bin/gencontrol.py uses debian/changelog as input, but the

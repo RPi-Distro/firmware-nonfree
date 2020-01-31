@@ -7,6 +7,7 @@ firmware-nonfree (20190717-3) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * debian/rules: Implement build-arch and build-indep targets
   * debian/rules: Run gencontrol.py when source name or version changes
+  * debian/rules: Run gencontrol.py when any template is changed
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
