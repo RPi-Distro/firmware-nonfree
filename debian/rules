@@ -3,21 +3,19 @@ SHELL := sh -e
 SOURCE := $(shell dpkg-parsechangelog -SSource)
 VERSION := $(shell dpkg-parsechangelog -SVersion)
 VERSION_UPSTREAM := $(shell echo "$(VERSION)" | sed -e 's,-[^-]*$$,,')
-
-CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) $(wildcard debian/config/*/copyright) $(wildcard debian/config/*/LICENSE*)
+VERSION_BINNMU := $(shell echo "$(VERSION)" | sed -rne 's,.*\+b([0-9]+)$$,\1,p')
+VERSION_SOURCE := $(patsubst %+b$(VERSION_BINNMU),%,$(VERSION))
 
 include debian/rules.defs
 
 GENCONTROL = debian/bin/gencontrol.py
-
-__BINNMU := $(shell dpkg-parsechangelog | sed -rne 's,^Version: .*\+b([0-9]+)$$,\1,p')
 
 # Nothing to build
 build-indep build-arch build: debian/control
 
 clean: debian/control
 	dh_testdir
-	rm -rf debian/lib/python/__pycache__
+	rm -rf debian/build debian/lib/python/__pycache__
 	dh_clean
 
 binary-indep: build-indep
@@ -28,14 +26,22 @@ binary-arch: build-arch
 
 binary:	binary-indep binary-arch
 
+CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/control.*)
+CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) $(wildcard debian/config/*/copyright) $(wildcard debian/config/*/LICENSE*)
+
+# debian/bin/gencontrol.py uses debian/changelog as input, but the
+# output only depends on the source name and version.  To avoid
+# frequent changes to debian/control.md5sum, include only those fields
+# in the checksum.
+debian/build/version-info: debian/changelog
+	mkdir -p $(@D)
+	printf >$@ 'Source: %s\nVersion: %s\n' $(SOURCE) $(VERSION_SOURCE)
+
 debian/control debian/rules.gen: $(GENCONTROL) $(CONTROL_FILES)
 ifeq ($(wildcard debian/control.md5sum),)
 	$(MAKE) -f debian/rules debian/control-real
-else ifeq ($(__BINNMU),)
-	md5sum --check debian/control.md5sum --status || \
-		$(MAKE) -f debian/rules debian/control-real
 else
-	grep -v debian/changelog debian/control.md5sum | md5sum --check - --status || \
+	md5sum --check debian/control.md5sum --status || \
 		$(MAKE) -f debian/rules debian/control-real
 endif
 
