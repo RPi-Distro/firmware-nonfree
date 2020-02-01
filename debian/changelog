@@ -10,6 +10,7 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   * debian/upstream/: Add upstream signing key
   * copyright: Fold debian/config/*/copyright into debian/copyright
   * d/copyright: Fix remaining incorrect continuations
+  * d/copyright: Add Copyright field for Conexant firmware
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 

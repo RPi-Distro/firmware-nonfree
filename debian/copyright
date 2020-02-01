@@ -2428,6 +2428,7 @@ License: BSD-3-clause-Ikanos
  EITHER SOLELY OR IN COMBINATION WITH THIS SOFTWARE.
 
 Files: v4l-cx*.fw
+Copyright: Conexant
 License: binary-redist-Conexant
  Conexant grants permission to use and redistribute these firmware
  files for use with Conexant devices, but not as a part of the Linux
