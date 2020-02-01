@@ -3,10 +3,8 @@ Upstream-Name: linux-firmware
 Upstream-Contact: linux-firmware@kernel.org
 Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 
-Files: r128/r128_cce.bin, radeon/*_cp.bin,
- radeon/R600_me.bin, radeon/R600_pfp.bin,
- radeon/RS780_*.bin, radeon/RV*_me.bin,
- radeon/RV*_pfp.bin
+Files: r128/r128_cce.bin radeon/*_cp.bin radeon/R600_me.bin radeon/R600_pfp.bin
+ radeon/RS780_*.bin radeon/RV*_me.bin radeon/RV*_pfp.bin
 Copyright: 2000-2009, Advanced Micro Devices, Inc.
 License: binary-redist-AMD-permissive
  All Rights Reserved.
@@ -30,7 +28,7 @@ License: binary-redist-AMD-permissive
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Files: amdgpu/*.bin, radeon/*.bin
+Files: amdgpu/*.bin radeon/*.bin
 Copyright: 2009-2019, Advanced Micro Devices, Inc.
 License: binary-redist-AMD-restrictive
  All rights reserved.
@@ -85,8 +83,8 @@ License: binary-redist-AMD-restrictive
  administered by the U.S. Department of State.  These laws include
  restrictions on destinations, end users and end use.
 
-Files: ar3k/*, ar5523.bin, ar7010.fw, ar7010_1_1.fw, ar9271.fw, ath3k-1.fw,
- ath6k/*/*/*, htc_7010.fw, htc_9271.fw
+Files: ar3k/* ar5523.bin ar7010.fw ar7010_1_1.fw ar9271.fw ath3k-1.fw
+ ath6k/*/*/* htc_7010.fw htc_9271.fw
 Copyright: 2008-2010, Atheros Communications, Inc.
 License: binary-redist-Atheros
  All rights reserved.
@@ -127,7 +125,7 @@ License: binary-redist-Atheros
  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Files: ath9k_htc/htc_7010-1.4.0.fw, ath9k_htc/htc_9271-1.4.0.fw
+Files: ath9k_htc/htc_7010-1.4.0.fw ath9k_htc/htc_9271-1.4.0.fw
 Copyright: 1998-2002, Red Hat, Inc.
            2002, Gary Thomas
            2002-2005, Sam Leffler, Errno Consulting
@@ -242,7 +240,7 @@ License: Open-ath9k-HTC-firmware
  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Files: ath10k/QCA*/hw*/firmware-[45].bin
+Files: ath10k/QCA*/hw*/firmware-4.bin ath10k/QCA*/hw*/firmware-5.bin
 Copyright: 1986, Gary S. Brown
            1988, 1990-1991, 1993, The Regents of the University of California
            1998, The NetBSD Foundation, Inc.
@@ -277,8 +275,8 @@ Copyright: 1988, 1990-1991, 1993, The Regents of the University of California
            2015-2016, The Android Open Source Project
 License: binary-redist-Qualcomm-Atheros
 
-Files: ath10k/QCA*/hw*/board.bin, qca/nvm_*.bin, qca/rampatch_*.bin,
- qca/crbtfw*.tlv, qca/crnv*.bin
+Files: ath10k/QCA*/hw*/board.bin qca/nvm_*.bin qca/rampatch_*.bin
+ qca/crbtfw*.tlv qca/crnv*.bin
 Copyright: 2015, Qualcomm Atheros, Inc.
 License: binary-redist-Qualcomm-Atheros
 
@@ -1364,7 +1362,7 @@ License: binary-redist-Intel-3
  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  SUCH DAMAGE.
 
-Files: libertas/*, mwl8k/*
+Files: libertas/* mwl8k/*
 Copyright: 2019, Marvell International Ltd.
 License: binary-redist-Marvell-1
  All rights reserved.
@@ -1393,7 +1391,7 @@ License: binary-redist-Marvell-1
  WARRANTY THAT THE DELIVERABLES WILL OPERATE WITHOUT INTERRUPTION OR
  BE ERROR-FREE.
 
-Files: lbtf_usb.bin, libertas/usb8388_olpc.bin
+Files: lbtf_usb.bin libertas/usb8388_olpc.bin
 Copyright: 2006, One Laptop per Child and Marvell Corporation.
 License: binary-redist-Marvell-2
  All rights reserved.
@@ -1474,7 +1472,7 @@ License: permissive-Advansys
  code retain the above copyright notice and this comment without
  modification.
 
-Files: agere_ap_fw.bin, agere_sta_fw.bin
+Files: agere_ap_fw.bin agere_sta_fw.bin
 Copyright: 1994-1995, AT&T
            1996-2000, Lucent Technologies
            2001-2004, Agere Systems Inc.
@@ -1676,7 +1674,7 @@ License: binary-redist-Cypress
  Semiconductor Corporation, ATTN: Chief Legal Officer, 198 Champion Court, San
  Jose, CA 95134 USA.
 
-Files: ctefx.bin, ctspeq.bin
+Files: ctefx.bin ctspeq.bin
 Copyright: 2012, Creative Technology Ltd
 License: binary-redist-Creative
  All rights reserved.
@@ -1760,7 +1758,7 @@ License: BSD-2-clause
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
 
-Files: cxgb4/*.bin, cxgb4/*.cld
+Files: cxgb4/*.bin cxgb4/*.cld
 Copyright: 2011-2013, Chelsio Communications
 License: binary-redist-Chelsio
  All rights reserved.
@@ -1906,7 +1904,7 @@ License: binary-redist-ENE
  NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
  WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-Files: f2255usb.bin, go7007/s2250-?.fw
+Files: f2255usb.bin go7007/s2250-?.fw
 Copyright: Sensoray
 License: binary-redist-Sensoray
  Sensoray grants permission to use and redistribute these firmware
@@ -2478,7 +2476,7 @@ License: binary-redist-Intel
  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
  DAMAGE.
 
-Files: qlogic/1040.bin, qlogic/1280.bin, qlogic/12160.bin
+Files: qlogic/1040.bin qlogic/1280.bin qlogic/12160.bin
 Copyright: 1995, 1996, 1997, 1998, 1999, 2000, QLogic, Inc.
 License: binary-redist-QLogic-1
  Redistribution and use in source and binary forms are permitted provided
@@ -2502,7 +2500,7 @@ License: binary-redist-QLogic-1
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Files: sd7220.fw:
+Files: sd7220.fw
 Copyright: 2007, 2008. QLogic Corporation
 License: BSD-2-clause-OpenIB.org
  All rights reserved.
@@ -2529,8 +2527,8 @@ License: BSD-2-clause-OpenIB.org
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
 
-Files: ql2100_fw.bin, ql2200_fw.bin, ql2300_fw.bin, ql2322_fw.bin,
- ql2400_fw.bin, ql2500_fw.bin
+Files: ql2100_fw.bin ql2200_fw.bin ql2300_fw.bin ql2322_fw.bin
+ ql2400_fw.bin ql2500_fw.bin
 Copyright: 2003-2006, QLogic Corporation
 License: binary-redist-QLogic-2
  You may redistribute the hardware specific firmware binary file
@@ -2570,7 +2568,7 @@ License: binary-redist-QLogic-2
  ANY OTHER QLOGIC HARDWARE OR SOFTWARE EITHER SOLELY OR IN
  COMBINATION WITH THIS PROGRAM.
 
-Files: cbfw-*.bin, ct2fw-*.bin, ctfw-*.bin
+Files: cbfw-*.bin ct2fw-*.bin ctfw-*.bin
 Copyright: 2013-2014, Brocade Communications Systems, Inc.
  2014-2015, QLogic Corporation.
 License: binary-redist-QLogic-BR-series
@@ -2600,7 +2598,7 @@ License: binary-redist-Realtek-permissive
  data in hexadecimal or equivalent format, provided this copyright
  notice is accompanying it.
 
-Files: RTL8192E/*, RTL8192SU/*, rtlwifi/*, rtw88/*
+Files: RTL8192E/* RTL8192SU/* rtlwifi/* rtw88/*
 Copyright: 2009-2010, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-restrictive
  All rights reserved.
