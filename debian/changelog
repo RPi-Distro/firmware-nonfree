@@ -3,6 +3,9 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   [ Philippe Ombredanne ]
   * Update copyright with correct continuations
 
+  [ Ben Hutchings ]
+  * lintian: Move source overrides to preferred path
+
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
 firmware-nonfree (20210818-1) unstable; urgency=medium
