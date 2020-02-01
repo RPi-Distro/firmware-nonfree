@@ -180,9 +180,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             assert package_binary['Package'].startswith('firmware-')
             package = package_binary['Package'].replace('firmware-', '')
 
-            f = open('debian/copyright.debian')
-            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
-
             makeflags = MakeFlags()
             makeflags['FILES'] = ''
             makeflags['PACKAGE'] = package

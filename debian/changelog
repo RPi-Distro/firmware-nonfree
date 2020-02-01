@@ -17,6 +17,8 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   * copyright: Replace debian/config/*/LICENSE with paragraphs in
     debian/copyright
   * d/copyright: Fix incorrect and obsolete file patterns
+  * copyright: Replace debian/copyright.debian with paragraph in
+    debian/copyright
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
