@@ -208,6 +208,21 @@ License: GPL-2+
  On Debian systems the text of the GPL version 2 can be found in
  /usr/share/common-licenses/GPL-2.
 
+Files: debian/*.metainfo.xml debian/modinfo.json
+Comment:
+ This also applies to the package description fields in
+ debian/config/*/defines, which are used in *.metainfo.xml.
+Copyright: 2006-2009, Bastian Blank <waldi@debian.org>
+           2007, 2010-2020, Ben Hutchings <benh@debian.org>
+           2009-2010, dann frazier <dannf@debian.org>
+License: CC0-1.0
+ To the extent possible under law, the authors have waived all
+ copyright and related or neighboring rights to the specified
+ firmware-nonfree metadata.
+ .
+ On Debian systems, the text of CC0 1.0 Universal can be found in
+ /usr/share/common-licenses/CC0-1.0.
+
 Files: amdgpu/*.bin radeon/*.bin
 Copyright: 2009-2019, Advanced Micro Devices, Inc.
 License: binary-redist-AMD-restrictive
