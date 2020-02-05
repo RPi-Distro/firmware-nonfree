@@ -33,6 +33,9 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
   * qlogic: Add new firmware versions for the QLogic QL45000 series.
     Closes: #963558
 
+  [ Hideki Yamane ]
+  * add Realtek RTL8125 firmware. (closes: #947356)
+
  -- maximilian attems <maks@debian.org>  Wed, 15 Jul 2020 16:39:38 +0200
 
 firmware-nonfree (20200421-1) unstable; urgency=medium
