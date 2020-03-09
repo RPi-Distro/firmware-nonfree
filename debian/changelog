@@ -1,3 +1,12 @@
+firmware-nonfree (1:20190114-1+rpt5) buster; urgency=medium
+
+  * Custom Raspberry Pi firmware builds for CYW43438 and CYW43455 including
+    the kr00k patches.
+    - Update brcmfmac43455-sdio.bin to 7.45.202
+    - Update brcmfmac43430-sdio.bin to 7.45.98.94
+
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 09 Mar 2020 21:06:31 +0000
+
 firmware-nonfree (1:20190114-1+rpt4) buster; urgency=medium
 
   * Revert +rpt3
