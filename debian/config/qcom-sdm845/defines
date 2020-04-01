@@ -1,0 +1,36 @@
+[base]
+desc: Qualcomm SDM845 firmware
+longdesc: Qualcomm SDM845 Audio, Compute and Modem firmware
+files:
+ qcom/sdm845/adsp.mbn
+ qcom/sdm845/adspr.jsn
+ qcom/sdm845/adspua.jsn
+ qcom/sdm845/cdsp.mbn
+ qcom/sdm845/cdspr.jsn
+ qcom/sdm845/mba.mbn
+ qcom/sdm845/modem.mbn
+ qcom/sdm845/modemuw.jsn
+
+[qcom/sdm845/adsp.mbn]
+desc: Qualcomm SDM845 audio firmware
+
+[qcom/sdm845/adspr.jsn]
+desc: Qualcomm SDM845 audio configuration
+
+[qcom/sdm845/adspua.jsn]
+desc: Qualcomm SDM845 audio configuration
+
+[qcom/sdm845/cdsp.mbn]
+desc: Qualcomm SDM845 compute firmware
+
+[qcom/sdm845/cdspr.jsn]
+desc: Qualcomm SDM845 compute configuration
+
+[qcom/sdm845/mba.mbn]
+desc: Qualcomm SDM845 modem firmware
+
+[qcom/sdm845/modem.mbn]
+desc: Qualcomm SDM845 modem firmware
+
+[qcom/sdm845/modemuw.jsn]
+desc: Qualcomm SDM845 modem configuration
