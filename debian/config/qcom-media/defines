@@ -11,6 +11,9 @@ files:
  qcom/a530_zap.b02
  qcom/a530_zap.mdt
  qcom/a530v3_gpmu.fw2
+ qcom/a530v3_gpmu.fw2
+ qcom/a630_gmu.bin
+ qcom/a630_sqe.fw
  qcom/venus-1.8/venus.b00
  qcom/venus-1.8/venus.b01
  qcom/venus-1.8/venus.b02
@@ -50,6 +53,12 @@ desc: Qualcomm Adreno 530 Zap firmware header
 
 [qcom/a530v3_gpmu.fw2_base]
 desc: Qualcomm Adreno 530 v3 GPMU firmware
+
+[qcom/a630_gmu.bin]
+desc: Qualcomm Adreno 630 GMU firmware
+
+[qcom/a630_sqe.fw]
+desc: Qualcomm Adreno 630 SQE firmware
 
 [qcom/venus-1.8/venus.b00_base]
 desc: Qualcomm Venus 1.8 firmware part 0
