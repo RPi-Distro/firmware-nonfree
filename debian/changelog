@@ -1,3 +1,10 @@
+firmware-nonfree (1:20190114-1+rpt6) buster; urgency=medium
+
+  [Phil Elwell ]
+  * Updated coexistence param for post-176 firmware
+
+ -- Serge Schneider <serge@raspberrypi.org>  Fri, 17 Apr 2020 16:15:53 +0100
+
 firmware-nonfree (1:20190114-1+rpt5) buster; urgency=medium
 
   * Custom Raspberry Pi firmware builds for CYW43438 and CYW43455 including
