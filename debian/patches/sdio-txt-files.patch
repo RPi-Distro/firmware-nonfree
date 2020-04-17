@@ -67,7 +67,7 @@
 +btc_params1=0x7530
 --- /dev/null
 +++ b/brcm/brcmfmac43455-sdio.txt
-@@ -0,0 +1,97 @@
+@@ -0,0 +1,98 @@
 +# Cloned from bcm94345wlpagb_p2xx.txt 
 +NVRAMRev=$Rev: 498373 $
 +sromrev=11
@@ -165,3 +165,4 @@
 +btc_mode=1
 +btc_params8=0x4e20
 +btc_params1=0x7530
++btc_params50=0x972c
