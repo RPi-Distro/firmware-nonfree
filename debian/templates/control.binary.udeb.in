@@ -1,7 +1,0 @@
-Package: firmware-@package@-di
-XC-Package-Type: udeb
-Depends: ${misc:Depends}
-Architecture: all
-Section: non-free/debian-installer
-Description: Binary firmware for @desc@
-
