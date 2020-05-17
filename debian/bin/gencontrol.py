@@ -255,10 +255,11 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         # Take all the other files from upstream
         for f in files_orig:
             if f not in files_real and f not in links:
-                if os.path.islink(f):
-                    links[f] = os.readlink(f)
-                elif os.path.isfile(f):
-                    files_real[f] = f, f, None
+                f_upstream = os.path.join('debian/build/install', f)
+                if os.path.islink(f_upstream):
+                    links[f] = os.readlink(f_upstream)
+                elif os.path.isfile(f_upstream):
+                    files_real[f] = f, f_upstream, None
 
         for f in links:
             link_target = os.path.normpath(os.path.join(f, '..', links[f]))
