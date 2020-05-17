@@ -1,5 +1,6 @@
-firmware-nonfree (20200122-1) unstable; urgency=medium
+firmware-nonfree (20200122-1) UNRELEASED; urgency=medium
 
+  [ Aníbal Limón ]
   * New upstream version:
     - iwlwifi: update FWs for 3168, 7265D, 9000, 9260, 8000, 8265 and cc
     - iwlwifi: update -48 FWs for Qu and cc
@@ -129,10 +130,6 @@ firmware-nonfree (20200122-1) unstable; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth 9560
     - linux-firmware: Update firmware file for Intel Bluetooth AX201
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
-
- -- Aníbal Limón <anibal.limon@linaro.org>  Wed, 01 Apr 2020 12:28:36 -0600
-
-firmware-nonfree (20190717-3) UNRELEASED; urgency=medium
 
   [ Salvatore Bonaccorso ]
   * realtek: Add firmware for Realtek 8822BE/8822CE devices.
