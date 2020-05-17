@@ -33,3 +33,11 @@ Depends: firmware-misc-nonfree, ${misc:Depends}
 Description: Binary firmware for Ralink wireless cards (dummmy package)
  This is a dummy transitional package.  It can be safely removed.
 Multi-Arch: foreign
+
+Package: firmware-qcom-media
+Section: non-free/oldlibs
+Architecture: all
+Depends: firmware-qcom-soc, ${misc:Depends}
+Description: Binary firmware for Qualcomm graphics/video (dummy package)
+ This is a dummy transitional package.  It can be safely removed.
+Multi-Arch: foreign
