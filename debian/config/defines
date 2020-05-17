@@ -17,7 +17,7 @@ packages:
  netronome
  netxen
  qcom-media
- qcom-sdm845
+ qcom-soc
  qlogic
  realtek
  samsung

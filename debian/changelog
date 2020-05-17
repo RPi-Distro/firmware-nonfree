@@ -148,6 +148,7 @@ firmware-nonfree (20200122-1) UNRELEASED; urgency=medium
     - gencontrol.py: Update Templates._get override to return file mode
   * debian/rules, debian/bin/gencontrol.py: Run copy-firmware.sh to create
     symlinks
+  * Rename firmware-qcom-sdm845 to firmware-qcom-soc
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 

@@ -1,6 +1,6 @@
 [base]
-desc: Qualcomm SDM845 firmware
-longdesc: Qualcomm SDM845 Audio, Compute and Modem firmware
+desc: Qualcomm SoCs
+longdesc: Qualcomm Snapdragon SoCs
 files:
  qcom/sdm845/adsp.mbn
  qcom/sdm845/adspr.jsn
