@@ -93,12 +93,13 @@ class Templates(TemplatesBase):
         for dir in self.dirs:
             filename = "%s/%s.in" % (dir, name)
             if os.path.exists(filename):
-                f = open(filename, 'r')
-                if prefix == 'control':
-                    return read_control(f)
-                elif prefix == 'templates':
-                    return self._read_templates(f)
-                return f.read()
+                with open(filename) as f:
+                    mode = os.stat(f.fileno()).st_mode
+                    if prefix == 'control':
+                        return (read_control(f), mode)
+                    elif prefix == 'templates':
+                        return (self._read_templates(f), mode)
+                    return (f.read(), mode)
 
     def _read_templates(self, f):
         entries = []

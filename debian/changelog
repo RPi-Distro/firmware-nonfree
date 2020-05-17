@@ -144,6 +144,8 @@ firmware-nonfree (20200122-1) UNRELEASED; urgency=medium
   * debian/rules: Implement build-arch and build-indep targets
   * debian/rules: Run gencontrol.py when source name or version changes
   * debian/rules: Run gencontrol.py when any template is changed
+  * Update to linux-support 5.6.0-1:
+    - gencontrol.py: Update Templates._get override to return file mode
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
