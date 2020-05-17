@@ -130,6 +130,11 @@ firmware-nonfree (20200122-1) UNRELEASED; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth 9560
     - linux-firmware: Update firmware file for Intel Bluetooth AX201
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
+  * misc-nonfree: Update cxgb4 firmware versions in misc-nonfree
+  * Update to linux-support 4.19.0-6
+  * atheros: ath10k: add WCN3990 firmware
+  * Add qcom-sdm845 firmware package
+  * qcom-media; Add Adreno 630 firmware
 
   [ Salvatore Bonaccorso ]
   * realtek: Add firmware for Realtek 8822BE/8822CE devices.
