@@ -4,6 +4,9 @@ firmware-nonfree (20190717-3) UNRELEASED; urgency=medium
   * realtek: Add firmware for Realtek 8822BE/8822CE devices.
     Thanks to Sjoerd Simons (Closes: #935969)
 
+  [ Hideki Yamane ]
+  * misc-nonfree: Add missing firmware file to i915 (Closes: #931930)
+
   [ Ben Hutchings ]
   * debian/rules: Implement build-arch and build-indep targets
   * debian/rules: Run gencontrol.py when source name or version changes
