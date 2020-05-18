@@ -35,18 +35,16 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
     - netronome: nfp: update Agilio SmartNIC flower firmware to rev
       AOTC-2.12.A.13
     - amd-graphics amdgpu: update raven2 firmware for 19.50
-    - amlogic: update video decoder firmwares
     - amd-graphics: amdgpu: update to latest navi10 firmware from 19.50
     - realtek: rtl_bt: Update RTL8822C BT FW to V0x0998_C2B4
     - realtek: rtl_nic: update firmware for RTL8153A
     - amd-graphics: drm/amdgpu: update to latest 19.50 firmware for raven
-    - qca: Fix blueooth firmware name for QCA6174
+    - atheros: qca: Fix blueooth firmware name for QCA6174
     - amd-graphics: amdgpu: update vega10 firmware from 19.50
     - amd-graphics: amdgpu: update vega12 firmware from 19.50
     - amd-graphics: amdgpu: update vega20 firmware from 19.50
     - iwlwifi: Update firmware file for Intel Bluetooth 9260
     - iwlwifi: Update firmware file for Intel Bluetooth 9560
-    - qca: Enable transparent WBS for WCN3991
     - iwlwifi: Update firmware file for Intel Bluetooth AX201
     - iwlwifi: Update firmware file for Intel Bluetooth AX200
     - misc-nonfree: cxgb4: Update firmware to revision 1.24.14.0
