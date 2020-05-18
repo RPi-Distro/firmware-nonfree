@@ -1,6 +1,6 @@
 [base]
-desc: Qualcomm graphics/video
-longdesc: Qualcomm Adreno GPUs and Venus video accelerators
+desc: Qualcomm SoCs
+longdesc: Qualcomm Snapdragon SoCs
 files:
  qcom/a300_pfp.fw
  qcom/a300_pm4.fw
@@ -11,6 +11,17 @@ files:
  qcom/a530_zap.b02
  qcom/a530_zap.mdt
  qcom/a530v3_gpmu.fw2
+ qcom/a530v3_gpmu.fw2
+ qcom/a630_gmu.bin
+ qcom/a630_sqe.fw
+ qcom/sdm845/adsp.mbn
+ qcom/sdm845/adspr.jsn
+ qcom/sdm845/adspua.jsn
+ qcom/sdm845/cdsp.mbn
+ qcom/sdm845/cdspr.jsn
+ qcom/sdm845/mba.mbn
+ qcom/sdm845/modem.mbn
+ qcom/sdm845/modemuw.jsn
  qcom/venus-1.8/venus.b00
  qcom/venus-1.8/venus.b01
  qcom/venus-1.8/venus.b02
@@ -50,6 +61,36 @@ desc: Qualcomm Adreno 530 Zap firmware header
 
 [qcom/a530v3_gpmu.fw2_base]
 desc: Qualcomm Adreno 530 v3 GPMU firmware
+
+[qcom/a630_gmu.bin]
+desc: Qualcomm Adreno 630 GMU firmware
+
+[qcom/a630_sqe.fw]
+desc: Qualcomm Adreno 630 SQE firmware
+
+[qcom/sdm845/adsp.mbn]
+desc: Qualcomm SDM845 audio firmware
+
+[qcom/sdm845/adspr.jsn]
+desc: Qualcomm SDM845 audio configuration
+
+[qcom/sdm845/adspua.jsn]
+desc: Qualcomm SDM845 audio configuration
+
+[qcom/sdm845/cdsp.mbn]
+desc: Qualcomm SDM845 compute firmware
+
+[qcom/sdm845/cdspr.jsn]
+desc: Qualcomm SDM845 compute configuration
+
+[qcom/sdm845/mba.mbn]
+desc: Qualcomm SDM845 modem firmware
+
+[qcom/sdm845/modem.mbn]
+desc: Qualcomm SDM845 modem firmware
+
+[qcom/sdm845/modemuw.jsn]
+desc: Qualcomm SDM845 modem configuration
 
 [qcom/venus-1.8/venus.b00_base]
 desc: Qualcomm Venus 1.8 firmware part 0

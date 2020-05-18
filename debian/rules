@@ -20,6 +20,7 @@ clean: debian/control
 
 binary-indep: build-indep
 	dh_testdir
+	./copy-firmware.sh -v debian/build/install
 	$(MAKE) -f debian/rules.gen binary-indep
 
 binary-arch: build-arch
@@ -46,6 +47,9 @@ else
 endif
 
 debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
+# We currently need to run copy-firmware.sh to get a complete list of
+# symlinks to include in package descriptions.
+	./copy-firmware.sh debian/build/install
 	$(GENCONTROL) /usr/src/linux-support-$(KERNELVERSION)
 	md5sum $^ > debian/control.md5sum
 	@echo
