@@ -64,37 +64,37 @@ desc: Qualcomm Adreno 530 Zap firmware header
 [qcom/a530v3_gpmu.fw2_base]
 desc: Qualcomm Adreno 530 v3 GPMU firmware
 
-[qcom/a630_gmu.bin]
+[qcom/a630_gmu.bin_base]
 desc: Qualcomm Adreno 630 GMU firmware
 
-[qcom/a630_sqe.fw]
+[qcom/a630_sqe.fw_base]
 desc: Qualcomm Adreno 630 SQE firmware
 
 [qcom/sdm845/a630_zap.mbn_base]
 desc: Qualcomm Adreno 630 SDM845 ZAP firmware
 
-[qcom/sdm845/adsp.mbn]
+[qcom/sdm845/adsp.mbn_base]
 desc: Qualcomm SDM845 audio firmware
 
-[qcom/sdm845/adspr.jsn]
+[qcom/sdm845/adspr.jsn_base]
 desc: Qualcomm SDM845 audio configuration
 
-[qcom/sdm845/adspua.jsn]
+[qcom/sdm845/adspua.jsn_base]
 desc: Qualcomm SDM845 audio configuration
 
-[qcom/sdm845/cdsp.mbn]
+[qcom/sdm845/cdsp.mbn_base]
 desc: Qualcomm SDM845 compute firmware
 
-[qcom/sdm845/cdspr.jsn]
+[qcom/sdm845/cdspr.jsn_base]
 desc: Qualcomm SDM845 compute configuration
 
-[qcom/sdm845/mba.mbn]
+[qcom/sdm845/mba.mbn_base]
 desc: Qualcomm SDM845 modem firmware
 
-[qcom/sdm845/modem.mbn]
+[qcom/sdm845/modem.mbn_base]
 desc: Qualcomm SDM845 modem firmware
 
-[qcom/sdm845/modemuw.jsn]
+[qcom/sdm845/modemuw.jsn_base]
 desc: Qualcomm SDM845 modem configuration
 
 [qcom/venus-1.8/venus.b00_base]
