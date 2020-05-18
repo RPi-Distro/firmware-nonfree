@@ -5,7 +5,7 @@ Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 
 Files: 3com/typhoon.bin
 Copyright: 1999-2004, 3Com Corporation
-License: BSD (3Com)
+License: BSD-3-clause-3Com
  All Rights Reserved.
  .
  Redistribution and use in source and binary forms of the 3c990img.h
@@ -40,7 +40,7 @@ License: BSD (3Com)
 Files: advansys/*
 Copyright: 1995-2000, Advanced System Products, Inc.
            2000-2001, ConnectCom Solutions, Inc.
-License: Permissive (Advansys)
+License: permissive-Advansys
  All Rights Reserved.
  .
  Redistribution and use in source and binary forms, with or without
@@ -52,7 +52,7 @@ Files: agere_ap_fw.bin, agere_sta_fw.bin
 Copyright: 1994-1995, AT&T
            1996-2000, Lucent Technologies
            2001-2004, Agere Systems Inc.
-License: BSD (Agere)
+License: BSD-3-clause-Agere
  This software is provided subject to the following terms and conditions,
  which you should read carefully before using the software.  Using this
  software indicates your acceptance of these terms and conditions.  If you do
@@ -93,7 +93,7 @@ License: BSD (Agere)
 
 Files: as102_data?_st.hex
 Copyright: 2010, Abilis Systems Sarl
-License: Binary redistribution (Abilis)
+License: binary-redist-Abilis
  Permission to use, copy, modify, and/or distribute this software for
  any purpose with or without fee is hereby granted, provided that the
  above copyright notice and this permission notice appear in all
@@ -110,7 +110,7 @@ License: Binary redistribution (Abilis)
 
 Files: ctefx.bin, ctspeq.bin
 Copyright: 2012, Creative Technology Ltd
-License: Binary redistribution (Creative)
+License: binary-redist-Creative
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without
@@ -160,14 +160,14 @@ License: Binary redistribution (Creative)
 
 Files: cxgb3/ael*.bin
 Copyright: 2007-2009, NetLogic Microsystems, Inc.
-License: Binary redistribution
+License: binary-redist-NetLogic
  Permission is hereby granted for the distribution of this firmware
  data in hexadecimal or equivalent format, provided this copyright
  notice is accompanying it.
 
 Files: cxgb3/t3*.bin
 Copyright: 2003-2009, Chelsio, Inc.
-License: BSD 2-clause
+License: BSD-2-clause
  All rights reserved.
  .
  Redistribution and use in source and binary forms, with or
@@ -194,7 +194,7 @@ License: BSD 2-clause
 
 Files: cxgb4/*.bin, cxgb4/*.cld
 Copyright: 2011-2013, Chelsio Communications
-License: Binary redistribution (Chelsio)
+License: binary-redist-Chelsio
  All rights reserved.
  .
  Redistribution and use in binary form, without modification, are
@@ -224,7 +224,7 @@ License: Binary redistribution (Chelsio)
 
 Files: dabusb/*
 Copyright: 1999, BayCom GmbH
-License: Permissive (BayCom)
+License: permissive-BayCom
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that redistributions of source
  code retain the above copyright notice and this comment without
@@ -232,7 +232,7 @@ License: Permissive (BayCom)
 
 Files: dvb-fe-xc*
 Copyright: 2009, Xceive Corporation <info@xceive.com>
-License: Binary redistribution (Xceive)
+License: binary-redist-Xceive
  Permission to use, copy, modify, and/or distribute this software, only
  for use with Xceive ICs, for any purpose with or without fee is hereby
  granted, provided that the above copyright notice and this permission
@@ -248,7 +248,7 @@ License: Binary redistribution (Xceive)
 
 Files: dvb-usb-dib0700-1.20.fw
 Copyright: 2009, DiBcom
-License: Binary redistribution (DiBcom)
+License: binary-redist-DiBcom
  Permission to use, copy, modify, and/or distribute this software for
  any purpose with or without fee is hereby granted, provided that the
  above copyright notice and this permission notice appear in all
@@ -265,7 +265,7 @@ License: Binary redistribution (DiBcom)
 
 Files: dvb-usb-it9135*
 Copyright: 2014, ITE Tech. Inc.
-License: Binary redistribution (ITEtech)
+License: binary-redist-ITEtech
  Permission to use, copy, modify, and/or distribute this software for
  any purpose with or without fee is hereby granted, provided that the
  above copyright notice and this permission notice appear in all
@@ -282,7 +282,7 @@ License: Binary redistribution (ITEtech)
 
 Files: dvb-usb-terratec-h5-drxk.fw
 Copyright: Terratec
-License: Binary redistribution (Terratec)
+License: binary-redist-Terratec
  TERRATEC grants permission to use and redistribute these firmware
  files for use with TERRATEC devices, but not as part of the Linux
  kernel or in any other form which would require these files themselves
@@ -294,7 +294,7 @@ License: Binary redistribution (Terratec)
 
 Files: e100/*
 Copyright: 1999-2001, Intel Corporation
-License: BSD (Intel)
+License: BSD-3-clause-Intel
  All rights reserved.
  .
  Redistribution and use in source and binary forms, with or without
@@ -324,7 +324,7 @@ License: BSD (Intel)
 
 Files: ene-ub6250/*
 Copyright: 2011, ENE Technology Inc.
-License: Binary redistribution (ENE)
+License: binary-redist-ENE
  Permission to use, copy, modify, and/or distribute this software for any
  purpose with or without fee is hereby granted, provided that the above
  copyright notice and this permission notice appear in all copies.
@@ -340,7 +340,7 @@ License: Binary redistribution (ENE)
 
 Files: f2255usb.bin, go7007/s2250-?.fw
 Copyright: Sensoray
-License: Redistributable (Sensoray)
+License: binary-redist-Sensoray
  Sensoray grants permission to use and redistribute these firmware
  files for use with Sensoray devices, but not as a part of the Linux
  kernel or in any other form which would require these files themselves
@@ -351,7 +351,7 @@ License: Redistributable (Sensoray)
 
 Files: go7007/*
 Copyright: Micronas
-License: Redistributable (Micronas)
+License: binary-redist-Micronas
  The firmware files included in the firmware/ directory may be freely
  redistributed only in conjunction with this document [LICENCE.go7007];
  but modification, tampering and reverse engineering are prohibited.
@@ -364,7 +364,7 @@ License: Redistributable (Micronas)
 
 Files: hfi1_*
 Copyright: 2015, Intel Corporation
-License: Binary redistribution (Intel, narrower patent license)
+License: binary-redist-Intel-narrower-patent
  All rights reserved.
  .
  Redistribution.
@@ -404,11 +404,11 @@ License: Binary redistribution (Intel, narrower patent license)
 
 Files: i915/* debian/config/misc-nonfree/i915/*
 Copyright: 2015, Intel Corporation
-License: Binary redistribution (Intel)
+License: binary-redist-Intel
 
 Files: imx/sdma/*
 Copyright: 2017, NXP
-License: Binary redistribution (NXP)
+License: binary-redist-NXP
  All rights reserved.
  .
  Redistribution. Reproduction and redistribution in binary form, without
@@ -458,7 +458,7 @@ License: Binary redistribution (NXP)
 
 Files: kaweth/*
 Copyright: 1999, Kawasaki LSI.
-License: BSD 4-clause (Kawasaki LSI)
+License: BSD-4-clause-Kawasaki-LSI
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -488,7 +488,7 @@ License: BSD 4-clause (Kawasaki LSI)
 
 Files: matrox/*
 Copyright: 1999, Matrox Graphics Inc.
-License: Binary redistribution (Matrox)
+License: binary-redist-Matrox
  All Rights Reserved.
  .
  Permission is hereby granted, free of charge, to any person obtaining a
@@ -511,7 +511,7 @@ License: Binary redistribution (Matrox)
 
 Files: moxa/*.fw
 Copyright: Moxa Inc.
-License: Binary redistribution (Moxa)
+License: binary-redist-Moxa
  The software accompanying this license statement (the “Software”)
  is the property of Moxa Inc. (the “Moxa”), and is protected by
  United States and International Copyright Laws and International
@@ -531,7 +531,7 @@ License: Binary redistribution (Moxa)
 
 Files: mt76*.bin
 Copyright: 2013, Ralink, A MediaTek Company
-License: Binary redistribution (MediaTek)
+License: binary-redist-MediaTek
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without
@@ -573,12 +573,12 @@ License: Binary redistribution (MediaTek)
 
 Files: mts_*.fw
 Copyright: 2005, Multi-Tech Systems, Inc.
-License: Binary redistribution (MTS)
+License: binary-redist-MTS
  All firmware components are redistributable in binary form.
 
 Files: nvidia/*
 Copyright: 2014-2017, NVIDIA Corporation
-License: License For Customer Use of NVIDIA Software
+License: binary-redist-Nvidia
  IMPORTANT NOTICE -- READ CAREFULLY: This License For Customer Use of
  NVIDIA Software ("LICENSE") is the agreement which governs use of
  the software of NVIDIA Corporation and its subsidiaries ("NVIDIA")
@@ -709,11 +709,11 @@ License: License For Customer Use of NVIDIA Software
 
 Files: qat_*.bin
 Copyright: 2014, Intel Corporation.
-License: Binary redistribution (Intel)
+License: binary-redist-Intel
 
 Files: rockchip/dptx.bin
 Copyright: 2016, Fuzhou Rockchip Electronics Co.Ltd
-License: Binary redistribution (Rockchip)
+License: binary-redist-Rockchip
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without
@@ -757,7 +757,7 @@ License: Binary redistribution (Rockchip)
 
 Files: rp2.fw
 Copyright: 2013, Comtrol Corporation
-License: Binary redistribution (Comtrol)
+License: binary-redist-Comtrol
  Comtrol grants permission to use and redistribute these firmware
  files for use with Comtrol devices, but not as part of the Linux
  kernel or in any other form which would require these files themselves
@@ -769,7 +769,7 @@ License: Binary redistribution (Comtrol)
 
 Files: rt*.bin
 Copyright: 2007, Ralink Technology Corporation
-License: Binary redistribution (Ralink)
+License: binary-redist-Ralink
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without
@@ -811,21 +811,20 @@ License: Binary redistribution (Ralink)
 
 Files: tehuti/bdx.bin
 Copyright: 2007, Tehuti Networks Ltd.
-License: Binary redistribution
+License: binary-redist-firmware
+
+License: binary-redist-firmware
  Permission is hereby granted for the distribution of this firmware
  data in hexadecimal or equivalent format, provided this copyright
  notice is accompanying it.
 
 Files: tigon/tg3*.bin
 Copyright: 2000-2003, Broadcom Corporation.
-License: Binary redistribution
- Permission is hereby granted for the distribution of this firmware
- data in hexadecimal or equivalent format, provided this copyright
- notice is accompanying it.
+License: binary-redist-firmware
 
 Files: ueagle-atm/*
 Copyright: 2006, Ikanos Communications, Inc.
-License: BSD (Ikanos)
+License: BSD-3-clause-Ikanos
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following
  conditions are met:
@@ -861,7 +860,7 @@ License: BSD (Ikanos)
  EITHER SOLELY OR IN COMBINATION WITH THIS SOFTWARE.
 
 Files: v4l-cx*.fw
-License: Binary redistribution (Conexant)
+License: binary-redist-Conexant
  Conexant grants permission to use and redistribute these firmware
  files for use with Conexant devices, but not as a part of the Linux
  kernel or in any other form which would require these files themselves
@@ -870,7 +869,7 @@ License: Binary redistribution (Conexant)
  useful, but WITHOUT ANY WARRANTY; without even the implied warranty
  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-License: Binary redistribution (Intel)
+License: binary-redist-Intel
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without

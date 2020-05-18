@@ -8,7 +8,7 @@ Files: r128/r128_cce.bin, radeon/*_cp.bin,
  radeon/RS780_*.bin, radeon/RV*_me.bin,
  radeon/RV*_pfp.bin
 Copyright: 2000-2009, Advanced Micro Devices, Inc.
-License: Binary redistribution (AMD permissive)
+License: binary-redist-AMD-permissive
  All Rights Reserved.
  .
  Permission is hereby granted, free of charge, to any person obtaining a
@@ -32,7 +32,7 @@ License: Binary redistribution (AMD permissive)
 
 Files: amdgpu/*.bin, radeon/*.bin
 Copyright: 2009-2019, Advanced Micro Devices, Inc.
-License: Binary redistribution (AMD restrictive)
+License: binary-redist-AMD-restrictive
  All rights reserved.
  .
  REDISTRIBUTION: Permission is hereby granted, free of any license fees,

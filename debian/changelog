@@ -85,6 +85,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * Rename firmware-qcom-sdm845 to firmware-qcom-soc
   * Merge firmware-qcom-media into firmware-qcom-soc, leaving a transitional
     package
+  * copyright: Fix invalid license names
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 

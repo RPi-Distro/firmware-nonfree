@@ -6,7 +6,7 @@ Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Files: ar3k/*, ar5523.bin, ar7010.fw, ar7010_1_1.fw, ar9271.fw, ath3k-1.fw,
  ath6k/*/*/*, htc_7010.fw, htc_9271.fw
 Copyright: 2008-2010, Atheros Communications, Inc.
-License: Binary redistribution (Atheros)
+License: binary-redist-Atheros
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without
@@ -51,7 +51,7 @@ Copyright: 1998-2002, Red Hat, Inc.
            2002-2005, Sam Leffler, Errno Consulting
            2002-2013, Qualcomm Atheros, Inc.
            2013, Tensilica Inc.
-License: Open ath9k HTC firmware
+License: Open-ath9k-HTC-firmware
  All rights reserved.
  .
  Redistribution and use in source and binary forms, with or without
@@ -178,7 +178,7 @@ Copyright: 1986, Gary S. Brown
            2011, Qualcomm Technologies, Inc.
            2011-2015, Qualcomm Atheros, Inc.
            2013, Synopsys, Inc.
-License: Binary redistribution (Qualcomm Atheros)
+License: binary-redist-Qualcomm-Atheros
 
 Files: ath10k/QCA*/hw*/firmware-6.bin
 Copyright: 1988, 1990-1991, 1993, The Regents of the University of California
@@ -193,14 +193,14 @@ Copyright: 1988, 1990-1991, 1993, The Regents of the University of California
            2011, Qualcomm Technologies, Inc.
            2011-2012, 2014-2015, Qualcomm Atheros, Inc.
            2015-2016, The Android Open Source Project
-License: Binary redistribution (Qualcomm Atheros)
+License: binary-redist-Qualcomm-Atheros
 
 Files: ath10k/QCA*/hw*/board.bin, qca/nvm_*.bin, qca/rampatch_*.bin,
  qca/crbtfw*.tlv, qca/crnv*.bin
 Copyright: 2015, Qualcomm Atheros, Inc.
-License: Binary redistribution (Qualcomm Atheros)
+License: binary-redist-Qualcomm-Atheros
 
-License: Binary redistribution (Qualcomm Atheros)
+License: binary-redist-Qualcomm-Atheros
  All rights reserved.
  .
  Redistribution. Reproduction and redistribution in binary form, without

@@ -5,14 +5,14 @@ Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 
 Files: rtl_nic/*
 Copyright: 2010-2013, Realtek Semiconductor Corporation 
-License: Binary redistribution (Realtek permissive)
+License: binary-redist-Realtek-permissive
  Permission is hereby granted for the distribution of this firmware
  data in hexadecimal or equivalent format, provided this copyright
  notice is accompanying it.
 
 Files: RTL8192E/*, RTL8192SU/*, rtlwifi/*, rtw88/*
 Copyright: 2009-2010, Realtek Semiconductor Corporation 
-License: Binary redistribution (Realtek restrictive)
+License: binary-redist-Realtek-restrictive
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without 

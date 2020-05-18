@@ -5,7 +5,7 @@ Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 
 Files: qlogic/1040.bin, qlogic/1280.bin, qlogic/12160.bin
 Copyright: 1995, 1996, 1997, 1998, 1999, 2000, QLogic, Inc.
-License: Binary redistribution (QLogic 1)
+License: binary-redist-QLogic-1
  Redistribution and use in source and binary forms are permitted provided
  that the following conditions are met:
  1. Redistribution of source code must retain the above copyright
@@ -29,7 +29,7 @@ License: Binary redistribution (QLogic 1)
 
 Files: sd7220.fw:
 Copyright: 2007, 2008. QLogic Corporation
-License: The OpenIB.org BSD license
+License: BSD-2-clause-OpenIB.org
  All rights reserved.
  .
  Redistribution and use in source and binary forms, with or
@@ -57,7 +57,7 @@ License: The OpenIB.org BSD license
 Files: ql2100_fw.bin, ql2200_fw.bin, ql2300_fw.bin, ql2322_fw.bin,
  ql2400_fw.bin, ql2500_fw.bin
 Copyright: 2003-2006, QLogic Corporation
-License: Binary redistribution (QLogic 2)
+License: binary-redist-QLogic-2
  You may redistribute the hardware specific firmware binary file
  under the following terms:
  .
@@ -98,7 +98,7 @@ License: Binary redistribution (QLogic 2)
 Files: cbfw-*.bin, ct2fw-*.bin, ctfw-*.bin
 Copyright: 2013-2014, Brocade Communications Systems, Inc.
  2014-2015, QLogic Corporation.
-License: Binary redistribution (QLogic BR-series)
+License: binary-redist-QLogic-BR-series
  Permission is hereby granted for the distribution of this firmware data
  in hexadecimal or equivalent format, provided this copyright notice is
  accompanying it.
@@ -113,7 +113,7 @@ License: Binary redistribution (QLogic BR-series)
 
 Files: qed/qed_init_values_zipped-*.bin
 Copyright: 2015-2016, QLogic Corporation
-License: Binary redistribution (QLogic 3)
+License: binary-redist-QLogic-3
  Permission is hereby granted for the distribution of this firmware data
  in hexadecimal or equivalent format, provided this copyright notice is
  accompanying it.

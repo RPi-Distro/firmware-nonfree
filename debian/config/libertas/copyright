@@ -5,7 +5,7 @@ Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 
 Files: libertas/*, mwl8k/*
 Copyright: 2019, Marvell International Ltd.
-License: Binary redistribution (Marvell 1)
+License: binary-redist-Marvell-1
  All rights reserved.
  .
  Redistribution and use in binary form is permitted provided that the
@@ -34,7 +34,7 @@ License: Binary redistribution (Marvell 1)
 
 Files: lbtf_usb.bin, libertas/usb8388_olpc.bin
 Copyright: 2006, One Laptop per Child and Marvell Corporation.
-License: Binary redistribution (Marvell 2)
+License: binary-redist-Marvell-2
  All rights reserved.
  .
  Redistribution.  Redistribution and use in binary form, without 
