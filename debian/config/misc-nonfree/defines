@@ -16,6 +16,8 @@ files:
  agere_sta_fw.bin
  as102_data1_st.hex
  as102_data2_st.hex
+ brcm/BCM-0bb4-0306.hcd
+ brcm/BCM-0a5c-6410.hcd
  ctefx.bin
  ctspeq.bin
  cxgb3/ael2005_opt_edc.bin
@@ -442,6 +444,9 @@ desc: Abilis Systems AS102 stage 1 firmware
 
 [as102_data2_st.hex_base]
 desc: Abilis Systems AS102 stage 2 firmware
+
+[brcm/BCM-0bb4-0306.hcd_base]
+desc: Broadcom/Cypress Bluetooth firmware (HTC Vive)
 
 [ctefx.bin_base]
 desc: Creative CA0132 DSP firmware

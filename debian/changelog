@@ -86,6 +86,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * Merge firmware-qcom-media into firmware-qcom-soc, leaving a transitional
     package
   * copyright: Fix invalid license names
+  * misc-nonfree: Add Broadcom/Cypress Bluetooth firmware for HTC Vive
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
