@@ -1,6 +1,5 @@
-firmware-nonfree (20200122-1) UNRELEASED; urgency=medium
+firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
 
-  [ Aníbal Limón ]
   * New upstream version:
     - iwlwifi: update FWs for 3168, 7265D, 9000, 9260, 8000, 8265 and cc
     - iwlwifi: update -48 FWs for Qu and cc
@@ -22,7 +21,6 @@ firmware-nonfree (20200122-1) UNRELEASED; urgency=medium
     - Remove duplicate symlinks
     - misc-nonfree: nvidia: Update Tegra210 XUSB firmware to v50.24
     - amd-graphics: amdgpu: update navi10 vcn firmware
-    - misc-nonfree: cxgb4: Update firmware to revision 1.24.11.0
     - atheros: ath10k: QCA6174 hw3.0: update board-2.bin
     - atheros: ath10k: QCA9887 hw1.0: update firmware-5.bin to 10.2.4-1.0-00047
     - atheros: ath10k: QCA9888 hw2.0: update firmware-5.bin to
@@ -31,17 +29,38 @@ firmware-nonfree (20200122-1) UNRELEASED; urgency=medium
     - atheros: ath10k: QCA9984 hw1.0: update firmware-5.bin to
       10.4-3.9.0.2-00070
     - amd-graphics: amdgpu: update raven microcode for 19.50
-    - amd-graphics: amdgpu: update raven2 microcode for 19.50
     - amd-graphics: amdgpu: update picasso microcode for 19.50
-    - amd-graphics: amdgpu: update vega10 microcode for 19.50
-    - amd-graphics: amdgpu: update vega12 microcode for 19.50
-    - amd-graphics: amdgpu: update vega20 microcode for 19.50
-    - amd-graphics: radeon: update oland rlc microcode from amdgpu
     - amd-graphics: amdgpu: update navi10 firmware for 19.50
+    - atheros: qca: update bluetooth firmware for QCA6174
+    - netronome: nfp: update Agilio SmartNIC flower firmware to rev
+      AOTC-2.12.A.13
+    - amd-graphics amdgpu: update raven2 firmware for 19.50
+    - amlogic: update video decoder firmwares
+    - amd-graphics: amdgpu: update to latest navi10 firmware from 19.50
+    - realtek: rtl_bt: Update RTL8822C BT FW to V0x0998_C2B4
+    - realtek: rtl_nic: update firmware for RTL8153A
+    - amd-graphics: drm/amdgpu: update to latest 19.50 firmware for raven
+    - qca: Fix blueooth firmware name for QCA6174
+    - amd-graphics: amdgpu: update vega10 firmware from 19.50
+    - amd-graphics: amdgpu: update vega12 firmware from 19.50
+    - amd-graphics: amdgpu: update vega20 firmware from 19.50
     - iwlwifi: Update firmware file for Intel Bluetooth 9260
     - iwlwifi: Update firmware file for Intel Bluetooth 9560
+    - qca: Enable transparent WBS for WCN3991
     - iwlwifi: Update firmware file for Intel Bluetooth AX201
     - iwlwifi: Update firmware file for Intel Bluetooth AX200
+    - misc-nonfree: cxgb4: Update firmware to revision 1.24.14.0
+    - amd-graphics: amdgpu: update navi10 firmware for 20.10
+    - amd-graphics: amdgpu: update picasso firmware for 20.10
+    - amd-graphics: amdgpu: update raven firmware for 20.10
+    - amd-graphics: amdgpu: update raven2 firmware for 20.10
+    - amd-graphics: amdgpu: update renoir firmware for 20.10
+    - amd-graphics: amdgpu: update vega10 firmware for 20.10
+    - amd-graphics: amdgpu: update vega12 firmware for 20.10
+    - amd-graphics: amdgpu: update vega20 firmware for 20.10
+    - realtek: rtl_bt: Update RTL8822C BT FW to 0x0999_3AA1
+
+  [ Aníbal Limón ]
   * misc-nonfree: Update cxgb4 firmware versions in misc-nonfree
   * Update to linux-support 4.19.0-6
   * atheros: ath10k: add WCN3990 firmware
