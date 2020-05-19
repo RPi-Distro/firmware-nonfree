@@ -96,6 +96,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * misc-nonfree: Add Nvidia Tegra 186 and 194 XHCI firmware
   * misc-nonfree: Add Nvidia TU102/TU104/TU106 and TU116/TU117 signed firmware
   * netronome: Add Agilio CX and LX firmware supporting BPF or SR-IOV
+  * netxen: Include firmware description and version in package description
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
