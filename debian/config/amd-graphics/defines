@@ -136,6 +136,7 @@ files:
  amdgpu/picasso_rlc.bin
  amdgpu/picasso_rlc_am4.bin
  amdgpu/picasso_sdma.bin
+ amdgpu/picasso_ta.bin
  amdgpu/picasso_vcn.bin
  amdgpu/pitcairn_ce.bin
  amdgpu/pitcairn_k_smc.bin
@@ -214,6 +215,7 @@ files:
  amdgpu/raven2_pfp.bin
  amdgpu/raven2_rlc.bin
  amdgpu/raven2_sdma.bin
+ amdgpu/raven2_ta.bin
  amdgpu/raven2_vcn.bin
  amdgpu/raven_asd.bin
  amdgpu/raven_ce.bin
@@ -225,6 +227,7 @@ files:
  amdgpu/raven_pfp.bin
  amdgpu/raven_rlc.bin
  amdgpu/raven_sdma.bin
+ amdgpu/raven_ta.bin
  amdgpu/raven_vcn.bin
  amdgpu/renoir_asd.bin
  amdgpu/renoir_ce.bin
@@ -985,6 +988,9 @@ desc: "Picasso" RLC AM4 firmware
 [amdgpu/picasso_sdma.bin_base]
 desc: "Picasso" SDMA firmware
 
+[amdgpu/picasso_ta.bin_base]
+desc: "Picasso" TA firmware
+
 [amdgpu/picasso_vcn.bin_base]
 desc: "Picasso" VCN firmware
 
@@ -1225,6 +1231,9 @@ desc: "Raven 2" RLC firmware
 [amdgpu/raven2_sdma.bin_base]
 desc: "Raven 2" SDMA firmware
 
+[amdgpu/raven2_ta.bin_base]
+desc: "Raven 2" TA firmware
+
 [amdgpu/raven2_vcn.bin_base]
 desc: "Raven 2" VCN firmware
 
@@ -1257,6 +1266,9 @@ desc: "Raven" RLC firmware
 
 [amdgpu/raven_sdma.bin_base]
 desc: "Raven" SDMA firmware
+
+[amdgpu/raven_ta.bin_base]
+desc: "Raven" TA firmware
 
 [amdgpu/raven_vcn.bin_base]
 desc: "Raven" VCN firmware
