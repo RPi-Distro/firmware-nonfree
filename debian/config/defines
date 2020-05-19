@@ -77,6 +77,8 @@ exclude:
 # These are said to be related to the hci_uart driver, but it doesn't
 # request them
  ar3k/*/*
+# wilc1000 driver is "usually found in IoT devices"
+ atmel/wilc1000_*.bin
 # ath6k doesn't actually support this hardware
  ath6k/AR6002/*
 # These filenames are wrong!
