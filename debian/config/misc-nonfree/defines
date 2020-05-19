@@ -85,6 +85,7 @@ files:
  i915/glk_huc_4.0.0.bin
  i915/glk_huc_ver03_01_2893.bin
  i915/icl_dmc_ver1_07.bin
+ i915/icl_dmc_ver1_09.bin
  i915/icl_guc_32.0.3.bin
  i915/icl_guc_33.0.0.bin
  i915/icl_huc_9.0.0.bin
@@ -672,9 +673,13 @@ version: 4.0.0
 desc: Intel "Geminilake" HuC firmware
 version: 3.1.2893
 
-[i915/icl_dmc_ver1_07.bin]
+[i915/icl_dmc_ver1_07.bin_base]
 desc: Intel "Icelake" DMC firmware
 version: 1.07
+
+[i915/icl_dmc_ver1_09.bin_base]
+desc: Intel "Icelake" DMC firmware
+version: 1.09
 
 [i915/icl_guc_32.0.3.bin_base]
 desc: Intel "Icelake" GuC firmware

@@ -90,6 +90,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * amd-graphics: Add "Raven refresh" RLC firmware
   * misc-nonfree: Add new versions of Intel "Broxton", "Geminilake",
     "Icelake", "Kabylake", and "Skylake" HuC firmware
+  * misc-nonfree: Add Intel "Icelake" DMC firmware version 1.09
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
