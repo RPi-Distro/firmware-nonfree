@@ -87,6 +87,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
     version 7.13.15.0 (for Linux 5.5 onward)
   * amd-graphics: Add "Navi 10", "Navi 14", and "Renoir" firmware
   * amd-graphics: Add "Picasso", "Raven", and "Raven 2" TA firmware
+  * amd-graphics: Add "Raven refresh" RLC firmware
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 

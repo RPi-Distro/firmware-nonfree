@@ -221,6 +221,7 @@ files:
  amdgpu/raven_ce.bin
  amdgpu/raven_dmcu.bin
  amdgpu/raven_gpu_info.bin
+ amdgpu/raven_kicker_rlc.bin
  amdgpu/raven_me.bin
  amdgpu/raven_mec.bin
  amdgpu/raven_mec2.bin
@@ -1248,6 +1249,9 @@ desc: "Raven" DMCU firmware
 
 [amdgpu/raven_gpu_info.bin_base]
 desc: "Raven" GPU info
+
+[amdgpu/raven_kicker_rlc.bin_base]
+desc: "Raven refresh" RLC firmware
 
 [amdgpu/raven_me.bin_base]
 desc: "Raven" ME firmware
