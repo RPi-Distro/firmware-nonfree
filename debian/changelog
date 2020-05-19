@@ -87,6 +87,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
     package
   * copyright: Fix invalid license names
   * misc-nonfree: Add Broadcom/Cypress Bluetooth firmware for HTC Vive
+  * libertas: Add NXP 88W8977-SDIO and 88W8997-SDIO firmware
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
