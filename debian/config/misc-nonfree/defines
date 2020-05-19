@@ -389,7 +389,9 @@ files:
  nvidia/gv100/sec2/sig.bin
  nvidia/tegra124/vic03_ucode.bin
  nvidia/tegra124/xusb.bin
+ nvidia/tegra186/xusb.bin
  nvidia/tegra186/vic04_ucode.bin
+ nvidia/tegra194/xusb.bin
  nvidia/tegra210/vic04_ucode.bin
  nvidia/tegra210/xusb.bin
  qat_895xcc.bin
@@ -938,6 +940,14 @@ desc: Nvidia GK20A non-ctx init data
 [nvidia/tegra124/xusb.bin_base]
 desc: Nvidia Tegra 124 XHCI firmware
 version: 45.46
+
+[nvidia/tegra186/xusb.bin_base]
+desc: Nvidia Tegra 186 XHCI firmware
+version: 55.15
+
+[nvidia/tegra194/xusb.bin_base]
+desc: Nvidia Tegra 194 XHCI firmware
+version: 60.06
 
 [nvidia/tegra210/xusb.bin_base]
 desc: Nvidia Tegra 210 XHCI firmware
