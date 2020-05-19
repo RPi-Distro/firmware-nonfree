@@ -2,6 +2,18 @@
 desc: Netronome network adapters
 longdesc: Netronome network adapters supported by the nfp driver
 files:
+ netronome/bpf/nic_AMDA0058-0011_2x40.nffw
+ netronome/bpf/nic_AMDA0058-0012_2x40.nffw
+ netronome/bpf/nic_AMDA0078-0011_1x100.nffw
+ netronome/bpf/nic_AMDA0081-0001_1x40.nffw
+ netronome/bpf/nic_AMDA0081-0001_4x10.nffw
+ netronome/bpf/nic_AMDA0096-0001_2x10.nffw
+ netronome/bpf/nic_AMDA0097-0001_2x40.nffw
+ netronome/bpf/nic_AMDA0097-0001_4x10_1x40.nffw
+ netronome/bpf/nic_AMDA0097-0001_8x10.nffw
+ netronome/bpf/nic_AMDA0099-0001_1x10_1x25.nffw
+ netronome/bpf/nic_AMDA0099-0001_2x10.nffw
+ netronome/bpf/nic_AMDA0099-0001_2x25.nffw
  netronome/flower/nic_AMDA0058-0011_1x100.nffw
  netronome/flower/nic_AMDA0058-0011_2x40.nffw
  netronome/flower/nic_AMDA0058-0011_4x10_1x40.nffw
@@ -44,6 +56,18 @@ files:
  netronome/nic/nic_AMDA0099-0001_1x10_1x25.nffw
  netronome/nic/nic_AMDA0099-0001_2x10.nffw
  netronome/nic/nic_AMDA0099-0001_2x25.nffw
+ netronome/nic-sriov/nic_AMDA0058-0011_2x40.nffw
+ netronome/nic-sriov/nic_AMDA0058-0012_2x40.nffw
+ netronome/nic-sriov/nic_AMDA0078-0011_1x100.nffw
+ netronome/nic-sriov/nic_AMDA0081-0001_1x40.nffw
+ netronome/nic-sriov/nic_AMDA0081-0001_4x10.nffw
+ netronome/nic-sriov/nic_AMDA0096-0001_2x10.nffw
+ netronome/nic-sriov/nic_AMDA0097-0001_2x40.nffw
+ netronome/nic-sriov/nic_AMDA0097-0001_4x10_1x40.nffw
+ netronome/nic-sriov/nic_AMDA0097-0001_8x10.nffw
+ netronome/nic-sriov/nic_AMDA0099-0001_1x10_1x25.nffw
+ netronome/nic-sriov/nic_AMDA0099-0001_2x10.nffw
+ netronome/nic-sriov/nic_AMDA0099-0001_2x25.nffw
  netronome/nic_AMDA0081-0001_1x40.nffw
  netronome/nic_AMDA0081-0001_4x10.nffw
  netronome/nic_AMDA0096-0001_2x10.nffw
@@ -53,6 +77,54 @@ files:
  netronome/nic_AMDA0099-0001_2x10.nffw
  netronome/nic_AMDA0099-0001_2x25.nffw
 support: initramfs-tools
+
+[netronome/bpf/nic_AMDA0058-0011_2x40.nffw_base]
+desc: Agilio LX (rev 11) 2x40GbE firmware (BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0058-0012_2x40.nffw_base]
+desc: Agilio LX (rev 12) 2x40GbE firmware (BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0078-0011_1x100.nffw_base]
+desc: Agilio LX 1x100GbE firmware (BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0081-0001_1x40.nffw_base]
+desc: Agilio CX 1x40GbE firmware (BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0081-0001_4x10.nffw_base]
+desc: Agilio CX 1x40GbE firmware (4x10GbE mode, BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0096-0001_2x10.nffw_base]
+desc: Agilio CX 2x10GbE firmware (BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0097-0001_2x40.nffw_base]
+desc: Agilio CX 2x40GbE firmware (BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0097-0001_4x10_1x40.nffw_base]
+desc: Agilio CX 2x40GbE firmware (4x10GbE+1x40GbE mode, BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0097-0001_8x10.nffw_base]
+desc: Agilio CX 2x40GbE firmware (8x10GbE mode, BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0099-0001_1x10_1x25.nffw_base]
+desc: Agilio CX 2x25GbE firmware (1x10GbE+1x25GbE mode, BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0099-0001_2x10.nffw_base]
+desc: Agilio CX 2x25GbE firmware (2x10GbE mode, BPF)
+version: 2.0.6.124
+
+[netronome/bpf/nic_AMDA0099-0001_2x25.nffw_base]
+desc: Agilio CX 2x25GbE firmware (BPF)
+version: 2.0.6.124
 
 [netronome/flower/nic_AMDA0058.nffw_base]
 desc: Agilio LX flower firmware
@@ -116,4 +188,52 @@ version: 2.1.16.1
 
 [netronome/nic/nic_AMDA0099-0001_2x25.nffw_base]
 desc: Agilio CX 2x25GbE firmware
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0058-0011_2x40.nffw_base]
+desc: Agilio LX (rev 11) 2x40GbE firmware (SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0058-0012_2x40.nffw_base]
+desc: Agilio LX (rev 12) 2x40GbE firmware (SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0078-0011_1x100.nffw_base]
+desc: Agilio LX 1x100GbE firmware (SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0081-0001_1x40.nffw_base]
+desc: Agilio CX 1x40GbE firmware (SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0081-0001_4x10.nffw_base]
+desc: Agilio CX 1x40GbE firmware (4x10GbE mode, SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0096-0001_2x10.nffw_base]
+desc: Agilio CX 2x10GbE firmware (SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0097-0001_2x40.nffw_base]
+desc: Agilio CX 2x40GbE firmware (SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0097-0001_4x10_1x40.nffw_base]
+desc: Agilio CX 2x40GbE firmware (4x10GbE+1x40GbE mode, SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0097-0001_8x10.nffw_base]
+desc: Agilio CX 2x40GbE firmware (8x10GbE mode, SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0099-0001_1x10_1x25.nffw_base]
+desc: Agilio CX 2x25GbE firmware (1x10GbE+1x25GbE mode, SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0099-0001_2x10.nffw_base]
+desc: Agilio CX 2x25GbE firmware (2x10GbE mode, SR-IOV)
+version: 2.1.16.1
+
+[netronome/nic-sriov/nic_AMDA0099-0001_2x25.nffw_base]
+desc: Agilio CX 2x25GbE firmware (SR-IOV)
 version: 2.1.16.1
