@@ -111,6 +111,8 @@ exclude:
  cbfw-3.2.1.1.bin
  ct2fw-3.2.1.1.bin
  ctfw-3.2.1.1.bin
+# Nothing seems to reference these
+ dpaa2/mc/*
 # No Debian release references this version
  i915/cnl_dmc_ver1_06.bin
 # Nothing seems to reference these versions
