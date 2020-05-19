@@ -615,10 +615,6 @@ version: 4.5
 desc: Intel "Broxton" DMC firmware
 version: 1.07
 
-[i915/cnl_dmc_ver1_07.bin_base]
-desc: Intel "Cannonlake" DMC firmware
-version: 1.07
-
 [i915/bxt_guc_32.0.3.bin_base]
 desc: Intel "Broxton" GuC firmware
 version: 32.0.3
@@ -642,6 +638,10 @@ version: 1.07.1398
 [i915/bxt_huc_ver01_8_2893.bin_base]
 desc: Intel "Broxton" HuC firmware
 version: 1.8.2893
+
+[i915/cnl_dmc_ver1_07.bin_base]
+desc: Intel "Cannonlake" DMC firmware
+version: 1.07
 
 [i915/glk_dmc_ver1_04.bin_base]
 desc: Intel "Geminilake" DMC firmware
