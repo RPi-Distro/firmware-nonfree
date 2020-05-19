@@ -941,7 +941,7 @@ version: 45.46
 
 [nvidia/tegra210/xusb.bin_base]
 desc: Nvidia Tegra 210 XHCI firmware
-version: 50.10
+version: 50.24
 
 [qat_895xcc.bin_base]
 desc: Intel QAT DH895xCC UOF firmware
