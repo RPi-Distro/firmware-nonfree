@@ -20,7 +20,6 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
     - copy-firmware: Create symlinks from WHENCE file
     - Remove duplicate symlinks
     - misc-nonfree: nvidia: Update Tegra210 XUSB firmware to v50.24
-    - amd-graphics: amdgpu: update navi10 vcn firmware
     - atheros: ath10k: QCA6174 hw3.0: update board-2.bin
     - atheros: ath10k: QCA9887 hw1.0: update firmware-5.bin to 10.2.4-1.0-00047
     - atheros: ath10k: QCA9888 hw2.0: update firmware-5.bin to
@@ -30,12 +29,10 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
       10.4-3.9.0.2-00070
     - amd-graphics: amdgpu: update raven microcode for 19.50
     - amd-graphics: amdgpu: update picasso microcode for 19.50
-    - amd-graphics: amdgpu: update navi10 firmware for 19.50
     - atheros: qca: update bluetooth firmware for QCA6174
     - netronome: nfp: update Agilio SmartNIC flower firmware to rev
       AOTC-2.12.A.13
     - amd-graphics amdgpu: update raven2 firmware for 19.50
-    - amd-graphics: amdgpu: update to latest navi10 firmware from 19.50
     - realtek: rtl_bt: Update RTL8822C BT FW to V0x0998_C2B4
     - realtek: rtl_nic: update firmware for RTL8153A
     - amd-graphics: drm/amdgpu: update to latest 19.50 firmware for raven
@@ -48,11 +45,9 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
     - iwlwifi: Update firmware file for Intel Bluetooth AX201
     - iwlwifi: Update firmware file for Intel Bluetooth AX200
     - misc-nonfree: cxgb4: Update firmware to revision 1.24.14.0
-    - amd-graphics: amdgpu: update navi10 firmware for 20.10
     - amd-graphics: amdgpu: update picasso firmware for 20.10
     - amd-graphics: amdgpu: update raven firmware for 20.10
     - amd-graphics: amdgpu: update raven2 firmware for 20.10
-    - amd-graphics: amdgpu: update renoir firmware for 20.10
     - amd-graphics: amdgpu: update vega10 firmware for 20.10
     - amd-graphics: amdgpu: update vega12 firmware for 20.10
     - amd-graphics: amdgpu: update vega20 firmware for 20.10
@@ -90,6 +85,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * libertas: Add NXP 88W8977-SDIO and 88W8997-SDIO firmware
   * bnx2x: Include Broadcom NetXtreme II 10Gb 57710, 57711 and 57712 firmware
     version 7.13.15.0 (for Linux 5.5 onward)
+  * amd-graphics: Add "Navi 10", "Navi 14", and "Renoir" firmware
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
