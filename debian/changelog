@@ -88,6 +88,8 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * copyright: Fix invalid license names
   * misc-nonfree: Add Broadcom/Cypress Bluetooth firmware for HTC Vive
   * libertas: Add NXP 88W8977-SDIO and 88W8997-SDIO firmware
+  * bnx2x: Include Broadcom NetXtreme II 10Gb 57710, 57711 and 57712 firmware
+    version 7.13.15.0 (for Linux 5.5 onward)
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
