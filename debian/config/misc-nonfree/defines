@@ -78,7 +78,11 @@ files:
  i915/bxt_huc_2.0.0.bin
  i915/bxt_huc_ver01_07_1398.bin
  i915/bxt_huc_ver01_8_2893.bin
+ i915/cml_guc_33.0.0.bin
+ i915/cml_huc_4.0.0.bin
  i915/cnl_dmc_ver1_07.bin
+ i915/ehl_guc_33.0.4.bin
+ i915/ehl_huc_9.0.0.bin
  i915/glk_dmc_ver1_04.bin
  i915/glk_guc_32.0.3.bin
  i915/glk_guc_33.0.0.bin
@@ -112,6 +116,11 @@ files:
  i915/skl_guc_ver9_33.bin
  i915/skl_huc_2.0.0.bin
  i915/skl_huc_ver01_07_1398.bin
+ i915/tgl_dmc_ver2_04.bin
+ i915/tgl_dmc_ver2_06.bin
+ i915/tgl_guc_35.2.0.bin
+ i915/tgl_huc_7.0.12.bin
+ i915/tgl_huc_7.0.3.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -649,9 +658,25 @@ version: 1.07.1398
 desc: Intel "Broxton" HuC firmware
 version: 1.8.2893
 
+[i915/cml_guc_33.0.0.bin_base]
+desc: Intel "Comet Lake" GuC firmware
+version: 33.0.0
+
+[i915/cml_huc_4.0.0.bin_base]
+desc: Intel "Comet Lake" HuC firmware
+version: 4.0.0
+
 [i915/cnl_dmc_ver1_07.bin_base]
 desc: Intel "Cannonlake" DMC firmware
 version: 1.07
+
+[i915/ehl_guc_33.0.4.bin_base]
+desc: Intel "Elkhart Lake" GuC firmware
+version: 33.0.4
+
+[i915/ehl_huc_9.0.0.bin_base]
+desc: Intel "Elkhart Lake" HuC firmware
+version: 9.0.0
 
 [i915/glk_dmc_ver1_04.bin_base]
 desc: Intel "Geminilake" DMC firmware
@@ -772,6 +797,26 @@ version: 3.0.0
 [i915/skl_huc_ver01_07_1398.bin_base]
 desc: Intel "Skylake" HuC firmware
 version: 1.07.1398
+
+[i915/tgl_dmc_ver2_04.bin_base]
+desc: Intel "Tiger Lake" DMC firmware
+version: 2.04
+
+[i915/tgl_dmc_ver2_06.bin_base]
+desc: Intel "Tiger Lake" DMC firmware
+version: 2.06
+
+[i915/tgl_guc_35.2.0.bin_base]
+desc: Intel "Tiger Lake" GuC firmware
+version: 35.2.0
+
+[i915/tgl_huc_7.0.12.bin_base]
+desc: Intel "Tiger Lake" HuC firmware
+version: 7.0.12
+
+[i915/tgl_huc_7.0.3.bin_base]
+desc: Intel "Tiger Lake" HuC firmware
+version: 7.0.3
 
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode

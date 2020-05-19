@@ -91,6 +91,8 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * misc-nonfree: Add new versions of Intel "Broxton", "Geminilake",
     "Icelake", "Kabylake", and "Skylake" HuC firmware
   * misc-nonfree: Add Intel "Icelake" DMC firmware version 1.09
+  * misc-nonfree: Add Intel "Comet Lake", "Elkhart Lake", and "Tiger Lake"
+    graphics firmware
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
