@@ -88,6 +88,8 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * amd-graphics: Add "Navi 10", "Navi 14", and "Renoir" firmware
   * amd-graphics: Add "Picasso", "Raven", and "Raven 2" TA firmware
   * amd-graphics: Add "Raven refresh" RLC firmware
+  * misc-nonfree: Add new versions of Intel "Broxton", "Geminilake",
+    "Icelake", "Kabylake", and "Skylake" HuC firmware
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
