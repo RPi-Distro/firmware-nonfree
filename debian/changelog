@@ -1,6 +1,16 @@
+firmware-nonfree (1:20190114-1+rpt7) buster; urgency=medium
+
+  [ Phil Elwell ]
+  * Add BCM43456 firmware
+    - brcm/brcmfmac43456-sdio.bin 7.84.17.1
+    - brcm/brcmfmac43456-sdio.clm_blob
+    - brcm/brcmfmac43456-sdio.txt
+
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 01 Jul 2020 10:11:09 +0100
+
 firmware-nonfree (1:20190114-1+rpt6) buster; urgency=medium
 
-  [Phil Elwell ]
+  [ Phil Elwell ]
   * Updated coexistence param for post-176 firmware
 
  -- Serge Schneider <serge@raspberrypi.org>  Fri, 17 Apr 2020 16:15:53 +0100

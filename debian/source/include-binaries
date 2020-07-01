@@ -17,3 +17,5 @@ debian/config/iwlwifi/iwlwifi-8000C-14.ucode-25.30.14.0
 brcm/brcmfmac43455-sdio.bin
 brcm/brcmfmac43455-sdio.clm_blob
 brcm/brcmfmac43430-sdio.bin
+brcm/brcmfmac43456-sdio.bin
+brcm/brcmfmac43456-sdio.clm_blob
