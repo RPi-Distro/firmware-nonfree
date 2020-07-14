@@ -100,6 +100,7 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
 
   [ maximilian attems ]
   * Update to linux-support 5.7.0-1.
+  * README.source: add git link to upstream repo and run instructions.
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
