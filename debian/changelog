@@ -98,6 +98,9 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * netronome: Add Agilio CX and LX firmware supporting BPF or SR-IOV
   * netxen: Include firmware description and version in package description
 
+  [ maximilian attems ]
+  * Update to linux-support 5.7.0-1.
+
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
 firmware-nonfree (20190717-2) unstable; urgency=medium
