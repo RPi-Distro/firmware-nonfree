@@ -18,8 +18,11 @@ files:
  brcm/brcmfmac43362-sdio.bin
  brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43455-sdio.bin
+ brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
+ brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
  brcm/brcmfmac43430a0-sdio.bin
  brcm/brcmfmac43430-sdio.bin
+ brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
  brcm/brcmfmac4350-pcie.bin
  brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4354-sdio.bin
@@ -86,11 +89,20 @@ desc: Broadcom BCM4335 firmware
 [brcm/brcmfmac4339-sdio.bin_base]
 desc: Broadcom BCM4339 firmware
 
+[brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt_base]
+desc: BCM43455 NVRAM for the Raspberry Pi 3 B+
+
+[brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt_base]
+desc: BCM43455 NVRAM for the Raspberry Pi 4 B
+
 [brcm/brcmfmac43455-sdio.bin_base]
 desc: Broadcom BCM43455 firmware
 
 [brcm/brcmfmac43430a0-sdio.bin_base]
 desc: Broadcom BCM43430 rev 0 firmware
+
+[brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt_base]
+desc: BCM43430 NVRAM for the Raspberry Pi 3 B
 
 [brcm/brcmfmac43430-sdio.bin_base]
 desc: Broadcom BCM43430 rev 1+ firmware
