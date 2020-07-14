@@ -102,6 +102,10 @@ firmware-nonfree (20200421-1) UNRELEASED; urgency=medium
   * Update to linux-support 5.7.0-1.
   * README.source: add git link to upstream repo and run instructions.
 
+  [ Andres Salomon ]
+  * brcm80211: include the various NVRAM config files needed by Raspberry Pi
+    boards (closes: #964028).
+
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 22 Dec 2019 11:07:23 +0100
 
 firmware-nonfree (20190717-2) unstable; urgency=medium
