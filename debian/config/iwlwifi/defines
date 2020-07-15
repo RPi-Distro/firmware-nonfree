@@ -74,13 +74,34 @@ files:
  iwlwifi-9260-th-b0-jf-b0-41.ucode
  iwlwifi-9260-th-b0-jf-b0-46.ucode
  iwlwifi-Qu-b0-hr-b0-48.ucode
+ iwlwifi-Qu-b0-hr-b0-50.ucode
+ iwlwifi-Qu-b0-hr-b0-53.ucode
+ iwlwifi-Qu-b0-hr-b0-55.ucode
  iwlwifi-Qu-b0-jf-b0-48.ucode
+ iwlwifi-Qu-b0-jf-b0-50.ucode
+ iwlwifi-Qu-b0-jf-b0-53.ucode
+ iwlwifi-Qu-b0-jf-b0-55.ucode
  iwlwifi-Qu-c0-hr-b0-48.ucode
+ iwlwifi-Qu-c0-hr-b0-50.ucode
+ iwlwifi-Qu-c0-hr-b0-53.ucode
+ iwlwifi-Qu-c0-hr-b0-55.ucode
  iwlwifi-Qu-c0-jf-b0-48.ucode
+ iwlwifi-Qu-c0-jf-b0-50.ucode
+ iwlwifi-Qu-c0-jf-b0-53.ucode
+ iwlwifi-Qu-c0-jf-b0-55.ucode
  iwlwifi-QuZ-a0-hr-b0-48.ucode
+ iwlwifi-QuZ-a0-hr-b0-50.ucode
+ iwlwifi-QuZ-a0-hr-b0-53.ucode
+ iwlwifi-QuZ-a0-hr-b0-55.ucode
  iwlwifi-QuZ-a0-jf-b0-48.ucode
+ iwlwifi-QuZ-a0-jf-b0-50.ucode
+ iwlwifi-QuZ-a0-jf-b0-53.ucode
+ iwlwifi-QuZ-a0-jf-b0-55.ucode
  iwlwifi-cc-a0-46.ucode
  iwlwifi-cc-a0-48.ucode
+ iwlwifi-cc-a0-50.ucode
+ iwlwifi-cc-a0-53.ucode
+ iwlwifi-cc-a0-55.ucode
 longdesc: Intel Wireless cards supported by the iwl3945, iwl4965, and
  iwlwifi drivers
 
