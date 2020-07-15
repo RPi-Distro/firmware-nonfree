@@ -31,11 +31,11 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.24.14.0.bin
+ cxgb4/t4fw-1.24.17.0.bin
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.24.14.0.bin
+ cxgb4/t5fw-1.24.17.0.bin
  cxgb4/t6fw.bin
- cxgb4/t6fw-1.24.14.0.bin
+ cxgb4/t6fw-1.24.17.0.bin
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
