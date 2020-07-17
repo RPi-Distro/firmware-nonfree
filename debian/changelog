@@ -9,7 +9,7 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
     - rtw88: RTL8821C: add firmware file v24.5
     - iwlwifi: update and add new FWs from core50-70 and core52-81 releases
     - mrvl: add firmware for Prestera ASIC devices
-    - cxgb4: Update firmware to revision 1.24.17.0 (closes: #963558)
+    - cxgb4: Update firmware to revision 1.24.17.0
     - rtw88: RTL8822C: update firmware version to v9.9
     - Mellanox: Add new mlxsw_spectrum firmware xx.2007.1168
     - linux-firmware: Update firmware file for Intel Bluetooth 9260
@@ -27,6 +27,11 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
     - amdgpu: update raven2 firmware from 20.20 release
     - amdgpu: update picasso firmware from 20.20 release
     - amdgpu: update renoir firmware from 20.20 release
+
+  [ Lucas Nussbaum ]
+  * README.source: fix option name
+  * qlogic: Add new firmware versions for the QLogic QL45000 series.
+    Closes: #963558
 
  -- maximilian attems <maks@debian.org>  Wed, 15 Jul 2020 16:39:38 +0200
 
