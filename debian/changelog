@@ -1,11 +1,6 @@
 firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
 
   * New upstream version:
-    - linux-firmware: Update firmware file for Intel Bluetooth 9260
-    - linux-firmware: Update firmware file for Intel Bluetooth 9560
-    - linux-firmware: Update firmware file for Intel Bluetooth AX201
-    - linux-firmware: Update firmware file for Intel Bluetooth AX200
-    - linux-firmware: add rebb firmware for mt7663
     - QCA: Add Bluetooth firmware for QCA9377
     - linux-firmware: add firmware for MT7915E
     - rtw88: update firmware information and README
