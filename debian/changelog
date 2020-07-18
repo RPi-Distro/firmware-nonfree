@@ -1,5 +1,6 @@
 firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
 
+  [maximilian attems]
   * New upstream version:
     - QCA: Add Bluetooth firmware for QCA9377
     - linux-firmware: add firmware for MT7915E
@@ -27,6 +28,7 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
     - amdgpu: update raven2 firmware from 20.20 release
     - amdgpu: update picasso firmware from 20.20 release
     - amdgpu: update renoir firmware from 20.20 release
+   * add rtl8168fp-3 for Realtek's RTL8168fp/RTL8117. (closes: #956224)
 
   [ Lucas Nussbaum ]
   * README.source: fix option name

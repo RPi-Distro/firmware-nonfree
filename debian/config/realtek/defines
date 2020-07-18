@@ -31,6 +31,7 @@ files:
  rtl_nic/rtl8168e-3.fw
  rtl_nic/rtl8168f-1.fw
  rtl_nic/rtl8168f-2.fw
+ rtl_nic/rtl8168fp-3.fw
  rtl_nic/rtl8168g-1.fw
  rtl_nic/rtl8168g-2.fw
  rtl_nic/rtl8168g-3.fw
@@ -174,6 +175,9 @@ version: 0.0.5
 [rtl_nic/rtl8168f-2.fw_base]
 desc: Realtek RTL8168F-2 firmware
 version: 0.0.4
+
+[rtl_nic/rtl8168fp-3.fw_base]
+desc: Realtek's RTL8168fp/RTL8117 firmware
 
 [rtl_nic/rtl8168g-1.fw_base]
 desc: Realtek RTL8168G-1 firmware
