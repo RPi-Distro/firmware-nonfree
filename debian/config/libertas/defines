@@ -44,6 +44,7 @@ files:
  mrvl/usb8801_uapsta.bin
  mrvl/usb8897_uapsta.bin
  mrvl/usbusb8997_combo_v4.bin
+ mrvl/prestera/mvsw_prestera_fw-v2.0.img
  mwl8k/fmimage_8366.fw
  mwl8k/fmimage_8366_ap-2.fw
  mwl8k/fmimage_8366_ap-3.fw
@@ -200,6 +201,9 @@ version: 15.68.4.p103 (WLAN) / 15.28.4.p103 (BT)
 [mrvl/usbusb8997_combo_v4.bin_base]
 desc: Avastar 88W8997-USB firmware
 version: 16.68.1.p183 (WLAN) / 16.26.1.p183 (BT)
+
+[mrvl/prestera/mvsw_prestera_fw-v2.0.img_base]
+desc: Prestera ASIC firmware
 
 [mwl8k/fmimage_8366.fw_base]
 desc: TopDog 88W8366 main code
