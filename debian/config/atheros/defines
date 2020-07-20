@@ -97,6 +97,7 @@ files:
  qca/nvm_usb_00000302.bin
  qca/rampatch_00130300.bin
  qca/rampatch_00130302.bin
+ qca/rampatch_00230302.bin
  qca/rampatch_00440302.bin
  qca/rampatch_usb_00000200.bin
  qca/rampatch_usb_00000201.bin
@@ -325,6 +326,9 @@ desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT rampatch
 
 [qca/rampatch_00130302.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.2 UART BT rampatch
+
+[qca/rampatch_00230302.bin_base]
+desc: Qualcomm QCA9377 BT rampatch
 
 [qca/rampatch_00440302.bin_base]
 desc: Qualcomm Atheros QCA6174 BT rampatch
