@@ -38,6 +38,10 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
   [ Hideki Yamane ]
   * add Realtek RTL8125 firmware. (closes: #947356)
 
+  [ Aníbal Limón ]
+  * qcom-soc: Add SDM845 Adreno 630/WLAN DSP SDM845 firmware
+  * qcom-soc: Add missing _base to fw files for pkg desc
+
  -- maximilian attems <maks@debian.org>  Wed, 15 Jul 2020 16:39:38 +0200
 
 firmware-nonfree (20200421-1) unstable; urgency=medium
@@ -101,8 +105,6 @@ firmware-nonfree (20200421-1) unstable; urgency=medium
   * atheros: ath10k: add WCN3990 firmware
   * Add qcom-sdm845 firmware package
   * qcom-media; Add Adreno 630 firmware
-  * qcom-soc: Add SDM845 Adreno 630/WLAN DSP SDM845 firmware
-  * qcom-soc: Add missing _base to fw files for pkg desc
 
   [ Salvatore Bonaccorso ]
   * realtek: Add firmware for Realtek 8822BE/8822CE devices.
