@@ -101,6 +101,8 @@ firmware-nonfree (20200421-1) unstable; urgency=medium
   * atheros: ath10k: add WCN3990 firmware
   * Add qcom-sdm845 firmware package
   * qcom-media; Add Adreno 630 firmware
+  * qcom-soc: Add SDM845 Adreno 630/WLAN DSP SDM845 firmware
+  * qcom-soc: Add missing _base to fw files for pkg desc
 
   [ Salvatore Bonaccorso ]
   * realtek: Add firmware for Realtek 8822BE/8822CE devices.
