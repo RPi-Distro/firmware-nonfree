@@ -12,7 +12,6 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
     - mrvl: add firmware for Prestera ASIC devices
     - cxgb4: Update firmware to revision 1.24.17.0
     - rtw88: RTL8822C: update firmware version to v9.9
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2007.1168
     - linux-firmware: Update firmware file for Intel Bluetooth 9260
     - linux-firmware: Update firmware file for Intel Bluetooth 9560
     - linux-firmware: Update firmware file for Intel Bluetooth AX201
