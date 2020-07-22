@@ -323,6 +323,7 @@ files:
  amdgpu/vega20_sos.bin
  amdgpu/vega20_uvd.bin
  amdgpu/vega20_vce.bin
+ amdgpu/vega20_ta.bin
  amdgpu/vegam_ce.bin
  amdgpu/vegam_me.bin
  amdgpu/vegam_mec.bin
@@ -1558,6 +1559,9 @@ desc: "Vega 20" UVD firmware
 
 [amdgpu/vega20_vce.bin_base]
 desc: "Vega 20" VCE firmware
+
+[amdgpu/vega20_ta.bin_base]
+desc: "Vega 20" TA firmware
 
 [amdgpu/vegam_ce.bin_base]
 desc: "Vega M" CE firmware
