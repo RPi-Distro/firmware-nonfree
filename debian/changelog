@@ -28,6 +28,8 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
     - amdgpu: update picasso firmware from 20.20 release
     - amdgpu: update renoir firmware from 20.20 release
    * add rtl8168fp-3 for Realtek's RTL8168fp/RTL8117. (closes: #956224)
+   * add firmware-qcom-soc breaks and replaces against old firmware-qcom-media.
+     (closes: #966025)
 
   [ Lucas Nussbaum ]
   * README.source: fix option name
