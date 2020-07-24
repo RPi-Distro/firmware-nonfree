@@ -1,4 +1,4 @@
-firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
+firmware-nonfree (20200619-1) unstable; urgency=medium
 
   [maximilian attems]
   * New upstream version:
@@ -44,7 +44,7 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
   * qcom-soc: Add SDM845 Adreno 630/WLAN DSP SDM845 firmware
   * qcom-soc: Add missing _base to fw files for pkg desc
 
- -- maximilian attems <maks@debian.org>  Wed, 15 Jul 2020 16:39:38 +0200
+ -- maximilian attems <maks@debian.org>  Fri, 24 Jul 2020 17:13:23 +0200
 
 firmware-nonfree (20200421-1) unstable; urgency=medium
 
