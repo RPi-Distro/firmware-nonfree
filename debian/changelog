@@ -1,3 +1,22 @@
+firmware-nonfree (20200721-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - QCA: Update WCN3991 FW files
+    - amdgpu: add UVD firmware for SI asics
+    - QCA: Update Bluetooth firmware for QCA6390
+    - linux-firmware: wilc1000: add wilc1000 v15.4 FW
+    - linux-firmware: Update firmware file for Intel Bluetooth 9260
+    - linux-firmware: Update firmware file for Intel Bluetooth 9560
+    - linux-firmware: Update firmware file for Intel Bluetooth AX200
+    - linux-firmware: Update firmware file for Intel Bluetooth AX201
+    - QCA: Add correct bin file for WCN3991
+    - Update binary firmware for MT7663 based devices to include firmware offload feature and low power feature.
+    - rtl_nic: update firmware for RTL8125B
+    - Update to 20200629111339 version to aligh SDK. Mainly fix DFS false alarm.
+    - linux-firmware: Update AMD SEV firmware
+
+ -- maximilian attems <maks@debian.org>  Fri, 24 Jul 2020 20:16:24 +0200
+
 firmware-nonfree (20200619-1) unstable; urgency=medium
 
   [maximilian attems]
