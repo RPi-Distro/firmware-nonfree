@@ -2,6 +2,7 @@ firmware-nonfree (20200619-1) UNRELEASED; urgency=medium
 
   [maximilian attems]
   * New upstream version:
+    - linux-firmware: add rebb firmware for mt7663
     - QCA: Add Bluetooth firmware for QCA9377
     - linux-firmware: add firmware for MT7915E
     - rtw88: update firmware information and README
