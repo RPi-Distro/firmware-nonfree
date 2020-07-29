@@ -1,3 +1,9 @@
+firmware-nonfree (1:20190114-1+rpt8) buster; urgency=medium
+
+  * Update brcmfmac43455-sdio.bin to 7.45.206
+
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 29 Jul 2020 16:37:59 +0100
+
 firmware-nonfree (1:20190114-1+rpt7) buster; urgency=medium
 
   [ Phil Elwell ]

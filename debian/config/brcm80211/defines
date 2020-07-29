@@ -94,7 +94,7 @@ desc: Broadcom BCM4339 firmware
 
 [brcm/brcmfmac43455-sdio.bin_base]
 desc: Broadcom BCM43455 firmware
-version: 7.45.202
+version: 7.45.206
 
 [brcm/brcmfmac43455-sdio.clm_blob]
 desc: Broadcom BCM43455 localisations blob
