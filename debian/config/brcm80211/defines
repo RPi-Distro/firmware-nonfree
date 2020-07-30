@@ -27,6 +27,7 @@ files:
  brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4354-sdio.bin
  brcm/brcmfmac4356-pcie.bin
+ brcm/brcmfmac4356-pcie.gpd-win-pocket.txt
  brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac43569.bin
  brcm/brcmfmac43570-pcie.bin
@@ -118,6 +119,9 @@ desc: Broadcom BCM4354 firmware
 
 [brcm/brcmfmac4356-pcie.bin_base]
 desc: Broadcom BCM4356-PCIe firmware
+
+[brcm/brcmfmac4356-pcie.gpd-win-pocket.txt_base]
+desc: Broadcom BCM4356-PCIe NVRAM for GPD Pocket and Win
 
 [brcm/brcmfmac4356-sdio.bin_base]
 desc: Broadcom BCM4356-SDIO firmware]
