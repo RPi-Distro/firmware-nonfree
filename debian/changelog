@@ -15,6 +15,10 @@ firmware-nonfree (20200721-1) UNRELEASED; urgency=medium
     - Update to 20200629111339 version to aligh SDK. Mainly fix DFS false alarm.
     - linux-firmware: Update AMD SEV firmware
 
+  [ Jeremy Stanley ]
+  * brcm80211: include the NVRAM config file needed by GPD Pocket
+    and Win UMPCs
+
  -- maximilian attems <maks@debian.org>  Fri, 24 Jul 2020 20:16:24 +0200
 
 firmware-nonfree (20200619-1) unstable; urgency=medium
