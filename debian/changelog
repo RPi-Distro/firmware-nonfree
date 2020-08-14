@@ -4,7 +4,6 @@ firmware-nonfree (20200721-1) UNRELEASED; urgency=medium
     - QCA: Update WCN3991 FW files
     - amdgpu: add UVD firmware for SI asics
     - QCA: Update Bluetooth firmware for QCA6390
-    - linux-firmware: wilc1000: add wilc1000 v15.4 FW
     - linux-firmware: Update firmware file for Intel Bluetooth 9260
     - linux-firmware: Update firmware file for Intel Bluetooth 9560
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
