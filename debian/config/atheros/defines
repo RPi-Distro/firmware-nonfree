@@ -88,6 +88,7 @@ files:
  htc_9271.fw
  qca/crbtfw21.tlv
  qca/crnv21.bin
+ qca/crnv32.bin
  qca/nvm_00130300.bin
  qca/nvm_00130302.bin
  qca/nvm_00440302.bin
@@ -299,6 +300,9 @@ desc: Qualcomm WCN3990 Bluetooth firmware
 
 [qca/crnv21.bin_base]
 desc: Qualcomm WCN3990 Bluetooth NVM configuration
+
+[qca/crnv32.bin_base]
+desc: Qualcomm WCN3991 Bluetooth NVM configuration
 
 [qca/nvm_00130300.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration
