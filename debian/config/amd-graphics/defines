@@ -126,6 +126,7 @@ files:
  amdgpu/oland_pfp.bin
  amdgpu/oland_rlc.bin
  amdgpu/oland_smc.bin
+ amdgpu/oland_uvd.bin
  amdgpu/picasso_asd.bin
  amdgpu/picasso_ce.bin
  amdgpu/picasso_gpu_info.bin
@@ -145,6 +146,7 @@ files:
  amdgpu/pitcairn_pfp.bin
  amdgpu/pitcairn_rlc.bin
  amdgpu/pitcairn_smc.bin
+ amdgpu/pitcairn_uvd.bin
  amdgpu/polaris10_ce.bin
  amdgpu/polaris10_ce_2.bin
  amdgpu/polaris10_k2_smc.bin
@@ -257,6 +259,7 @@ files:
  amdgpu/tahiti_pfp.bin
  amdgpu/tahiti_rlc.bin
  amdgpu/tahiti_smc.bin
+ amdgpu/tahiti_uvd.bin
  amdgpu/tonga_ce.bin
  amdgpu/tonga_k_smc.bin
  amdgpu/tonga_mc.bin
@@ -342,6 +345,7 @@ files:
  amdgpu/verde_pfp.bin
  amdgpu/verde_rlc.bin
  amdgpu/verde_smc.bin
+ amdgpu/verde_uvd.bin
  r128/r128_cce.bin
  radeon/ARUBA_me.bin
  radeon/ARUBA_pfp.bin
@@ -960,6 +964,9 @@ desc: Radeon HD 8500/8600/8700 series RLC microcode
 [amdgpu/oland_smc.bin_base]
 desc: Radeon HD 8500/8600/8700 series SMC microcode
 
+[amdgpu/oland_uvd.bin_base]
+desc: Radeon HD 8500/8600/8700 series UVD microcode
+
 [amdgpu/picasso_asd.bin_base]
 desc: "Picasso" ASD firmware
 
@@ -1016,6 +1023,9 @@ desc: Radeon HD 7800 series RLC microcode
 
 [amdgpu/pitcairn_smc.bin_base]
 desc: Radeon HD 7800 series SMC microcode
+
+[amdgpu/pitcairn_uvd.bin_base]
+desc: Radeon HD 7800 series UVD microcode
 
 [amdgpu/polaris10_ce.bin_base]
 desc: "Polaris 10" old CE firmware
@@ -1360,6 +1370,9 @@ desc: Radeon HD 7900 series RLC microcode
 [amdgpu/tahiti_smc.bin_base]
 desc: Radeon HD 7900 series SMC microcode
 
+[amdgpu/tahiti_uvd.bin_base]
+desc: Radeon HD 7900 series UVD microcode
+
 [amdgpu/tonga_ce.bin_base]
 desc: "Tonga" CE firmware
 
@@ -1616,6 +1629,9 @@ desc: Radeon HD 7700 series RLC microcode
 
 [amdgpu/verde_smc.bin_base]
 desc: Radeon HD 7700 series SMC microcode
+
+[amdgpu/verde_uvd.bin_base]
+desc: Radeon HD 7700 series UVD microcode
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
