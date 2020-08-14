@@ -26,6 +26,10 @@ files:
  rtl_nic/rtl8125a-3.fw
  rtl_nic/rtl8125b-1.fw
  rtl_nic/rtl8125b-2.fw
+ rtl_nic/rtl8153a-2.fw
+ rtl_nic/rtl8153a-3.fw
+ rtl_nic/rtl8153a-4.fw
+ rtl_nic/rtl8153b-2.fw
  rtl_nic/rtl8168d-1.fw
  rtl_nic/rtl8168d-2.fw
  rtl_nic/rtl8168e-1.fw
@@ -160,6 +164,18 @@ desc: Realtek RTL8125B firmware
 
 [rtl_nic/rtl8125b-2.fw_base]
 desc: Realtek RTL8125B firmware
+
+[rtl_nic/rtl8153a-2.fw_base]
+desc: Realtek RTL8152/RTL8153 firmware
+
+[rtl_nic/rtl8153a-3.fw_base]
+desc: Realtek RTL8152/RTL8153 firmware
+
+[rtl_nic/rtl8153a-4.fw_base]
+desc: Realtek RTL8152/RTL8153 firmware
+
+[rtl_nic/rtl8153b-2.fw_base]
+desc: Realtek RTL8152/RTL8153 firmware
 
 [rtl_nic/rtl8168d-1.fw_base]
 desc: Realtek RTL8111D-1/RTL8168D-1 firmware
