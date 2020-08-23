@@ -129,6 +129,9 @@ files:
  matrox/g400_warp.fw
  mediatek/mt7610e.bin
  mediatek/mt7610u.bin
+ mediatek/mt7615_cr4.bin
+ mediatek/mt7615_n9.bin
+ mediatek/mt7615_rom_patch.bin
  mediatek/mt7622pr2h.bin
  mediatek/mt7650e.bin
  mediatek/mt7662u.bin
@@ -946,6 +949,15 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/mt7610e.bin_base]
 desc: MediaTek MT76x0 wifi firmware
+
+[mediatek/mt7615_cr4.bin_base]
+desc: MediaTek MT7615 cr4 firmware
+
+[mediatek/mt7615_n9.bin_base]
+desc: MediaTek MT7615 n9 firmware
+
+[mediatek/mt7615_rom_patch.bin_base]
+desc: MediaTek MT7615 rom firmware
 
 [mediatek/mt7610u.bin_base]
 desc: MediaTek MT76x0 wifi firmware
