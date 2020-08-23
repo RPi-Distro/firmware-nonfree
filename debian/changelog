@@ -12,7 +12,6 @@ firmware-nonfree (20200721-1) UNRELEASED; urgency=medium
     - Update binary firmware for MT7663 based devices to include firmware offload feature and low power feature.
     - rtl_nic: update firmware for RTL8125B
     - Update to 20200629111339 version to aligh SDK. Mainly fix DFS false alarm.
-    - linux-firmware: Update AMD SEV firmware
   * add RTL8822C WoW firmware (closes: #968272)
   * add RTL8152/RTL8153 firmware (closes: #962972)
 
