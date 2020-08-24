@@ -1,4 +1,4 @@
-firmware-nonfree (20200721-1) UNRELEASED; urgency=medium
+firmware-nonfree (20200721-1) unstable; urgency=medium
 
   * New upstream version:
     - QCA: Update WCN3991 FW files
@@ -19,7 +19,7 @@ firmware-nonfree (20200721-1) UNRELEASED; urgency=medium
   * brcm80211: include the NVRAM config file needed by GPD Pocket
     and Win UMPCs
 
- -- maximilian attems <maks@debian.org>  Fri, 24 Jul 2020 20:16:24 +0200
+ -- maximilian attems <maks@debian.org>  Mon, 24 Aug 2020 14:55:53 +0200
 
 firmware-nonfree (20200619-1) unstable; urgency=medium
 
