@@ -1,3 +1,25 @@
+firmware-nonfree (20200817-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.1036
+    - linux-firmware: update NXP SDSD-8997 firmware image
+    - amdgpu: update navi10 firmware for 20.30
+    - amdgpu: update navi14 firmware for 20.30
+    - amdgpu: update picasso firmware for 20.30
+    - amdgpu: update raven firmware for 20.30
+    - amdgpu: update raven2 firmware for 20.30
+    - amdgpu: update renoir firmware for 20.30
+    - amdgpu: update vega10 firmware for 20.30
+    - amdgpu: update vega12 firmware for 20.30
+    - amdgpu: update vega20 firmware for 20.30
+    - i915: Add HuC firwmare v7.5.0 for TGL
+    - i915: Add DMC firmware 2.08 for TGL
+    - i915: Add DMC firmware 2.02 for RKL
+    - rtl_bt: Update RTL8822C BT UART firmware to 0x0599_8A4F
+    - brcm: Add brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt symlink
+
+ -- maximilian attems <maks@debian.org>  Mon, 24 Aug 2020 17:47:31 +0200
+
 firmware-nonfree (20200721-1) unstable; urgency=medium
 
   * New upstream version:
