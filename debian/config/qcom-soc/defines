@@ -38,6 +38,20 @@ files:
  qcom/venus-4.2/venus.b03
  qcom/venus-4.2/venus.b04
  qcom/venus-4.2/venus.mdt
+ qcom/venus-5.2/venus.b00
+ qcom/venus-5.2/venus.b01
+ qcom/venus-5.2/venus.b02
+ qcom/venus-5.2/venus.b03
+ qcom/venus-5.2/venus.b04
+ qcom/venus-5.2/venus.mbn
+ qcom/venus-5.2/venus.mdt
+ qcom/venus-5.4/venus.b00
+ qcom/venus-5.4/venus.b01
+ qcom/venus-5.4/venus.b02
+ qcom/venus-5.4/venus.b03
+ qcom/venus-5.4/venus.b04
+ qcom/venus-5.4/venus.mbn
+ qcom/venus-5.4/venus.mdt
 
 [qcom/a300_pfp.fw_base]
 desc: Qualcomm Adreno 300 PFP firmware
@@ -134,3 +148,45 @@ desc: Qualcomm Venus 4.2 firmware part 4
 
 [qcom/venus-4.2/venus.mdt_base]
 desc: Qualcomm Venus 4.2 firmware header
+
+[qcom/venus-5.2/venus.b00_base]
+desc: Qualcomm Venus 5.2 firmware part 0
+
+[qcom/venus-5.2/venus.b01_base]
+desc: Qualcomm Venus 5.2 firmware part 1
+
+[qcom/venus-5.2/venus.b02_base]
+desc: Qualcomm Venus 5.2 firmware part 2
+
+[qcom/venus-5.2/venus.b03_base]
+desc: Qualcomm Venus 5.2 firmware part 3
+
+[qcom/venus-5.2/venus.b04_base]
+desc: Qualcomm Venus 5.2 firmware part 4
+
+[qcom/venus-5.2/venus.mbn_base]
+desc: Qualcomm Venus 5.2 firmware
+
+[qcom/venus-5.2/venus.mdt_base]
+desc: Qualcomm Venus 5.2 firmware header
+
+[qcom/venus-5.4/venus.b00_base]
+desc: Qualcomm Venus 5.4 firmware part 0
+
+[qcom/venus-5.4/venus.b01_base]
+desc: Qualcomm Venus 5.4 firmware part 1
+
+[qcom/venus-5.4/venus.b02_base]
+desc: Qualcomm Venus 5.4 firmware part 2
+
+[qcom/venus-5.4/venus.b03_base]
+desc: Qualcomm Venus 5.4 firmware part 3
+
+[qcom/venus-5.4/venus.b04_base]
+desc: Qualcomm Venus 5.4 firmware part 4
+
+[qcom/venus-5.4/venus.mbn_base]
+desc: Qualcomm Venus 5.4 firmware
+
+[qcom/venus-5.4/venus.mdt_base]
+desc: Qualcomm Venus 5.4 firmware header
