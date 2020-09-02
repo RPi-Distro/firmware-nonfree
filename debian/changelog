@@ -1,7 +1,6 @@
 firmware-nonfree (20200817-1) UNRELEASED; urgency=medium
 
   * New upstream version:
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.1036
     - linux-firmware: update NXP SDSD-8997 firmware image
     - amdgpu: update navi10 firmware for 20.30
     - amdgpu: update navi14 firmware for 20.30
