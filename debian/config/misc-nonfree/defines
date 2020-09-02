@@ -121,6 +121,7 @@ files:
  i915/tgl_guc_35.2.0.bin
  i915/tgl_huc_7.0.12.bin
  i915/tgl_huc_7.0.3.bin
+ i915/tgl_huc_7.5.0.bin
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -942,6 +943,10 @@ version: 7.0.12
 [i915/tgl_huc_7.0.3.bin_base]
 desc: Intel "Tiger Lake" HuC firmware
 version: 7.0.3
+
+[i915/tgl_huc_7.5.0.bin_base]
+desc: Intel "Tiger Lake" HuC firmware
+version: 7.5.0
 
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode
