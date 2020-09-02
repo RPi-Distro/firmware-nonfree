@@ -1,5 +1,6 @@
 firmware-nonfree (20200817-1) UNRELEASED; urgency=medium
 
+  [maximilian attems]
   * New upstream version:
     - linux-firmware: update NXP SDSD-8997 firmware image
     - amdgpu: update navi10 firmware for 20.30
@@ -17,6 +18,9 @@ firmware-nonfree (20200817-1) UNRELEASED; urgency=medium
     - rtl_bt: Update RTL8822C BT UART firmware to 0x0599_8A4F
     - brcm: Add brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt symlink
   * add rtw88 RTL8821C firmware (closes: #969000)
+
+  [ Aníbal Limón ]
+  * qcom-soc: Add venus 5.2/5.4 firmware
 
  -- maximilian attems <maks@debian.org>  Mon, 24 Aug 2020 17:47:31 +0200
 
