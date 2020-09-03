@@ -1,4 +1,4 @@
-firmware-nonfree (20200817-1) UNRELEASED; urgency=medium
+firmware-nonfree (20200817-1) unstable; urgency=medium
 
   [maximilian attems]
   * New upstream version:
@@ -23,7 +23,7 @@ firmware-nonfree (20200817-1) UNRELEASED; urgency=medium
   [ Aníbal Limón ]
   * qcom-soc: Add venus 5.2/5.4 firmware
 
- -- maximilian attems <maks@debian.org>  Mon, 24 Aug 2020 17:47:31 +0200
+ -- maximilian attems <maks@debian.org>  Thu, 03 Sep 2020 10:52:04 +0200
 
 firmware-nonfree (20200721-1) unstable; urgency=medium
 
