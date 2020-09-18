@@ -1,3 +1,22 @@
+firmware-nonfree (20200918-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: update navi10 firmware for 20.30
+    - amdgpu: add navi12 firmware from 20.30
+    - linux-firmware: mt7615: update firmware to 20200814 version
+    - wl18xx: update firmware file 8.9.0.0.83
+    - qcom: Add updated a5xx and a6xx microcode
+    - brcm: Fix a stale symlink for RPi3 model b+
+    - mediatek: update MT7915 firmware to 20200819
+    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.1310
+    - linux-firmware: Update firmware file for Intel Bluetooth 9260
+    - linux-firmware: Update firmware file for Intel Bluetooth 9560
+    - linux-firmware: Update firmware file for Intel Bluetooth AX201
+    - linux-firmware: Update firmware file for Intel Bluetooth AX200
+    - linux-firmware: Update AMD SEV firmware
+
+ -- maximilian attems <maks@debian.org>  Fri, 18 Sep 2020 21:02:07 +0200
+
 firmware-nonfree (20200817-1) unstable; urgency=medium
 
   [maximilian attems]
