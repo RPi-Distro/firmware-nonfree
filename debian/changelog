@@ -8,7 +8,6 @@ firmware-nonfree (20200918-1) UNRELEASED; urgency=medium
     - qcom: Add updated a5xx and a6xx microcode
     - brcm: Fix a stale symlink for RPi3 model b+
     - mediatek: update MT7915 firmware to 20200819
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.1310
     - linux-firmware: Update firmware file for Intel Bluetooth 9260
     - linux-firmware: Update firmware file for Intel Bluetooth 9560
     - linux-firmware: Update firmware file for Intel Bluetooth AX201
