@@ -12,7 +12,6 @@ firmware-nonfree (20200918-1) UNRELEASED; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth 9560
     - linux-firmware: Update firmware file for Intel Bluetooth AX201
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
-    - linux-firmware: Update AMD SEV firmware
   * Update to linux-support 5.8.0-1.
 
  -- maximilian attems <maks@debian.org>  Fri, 18 Sep 2020 21:02:07 +0200
