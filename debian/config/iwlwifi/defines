@@ -13,8 +13,6 @@ files:
  intel/ibt-18-0-1.sfi
  intel/ibt-18-16-1.ddc
  intel/ibt-18-16-1.sfi
- intel/ibt-18-16-2.ddc
- intel/ibt-18-16-2.sfi
  intel/ibt-19-0-0.ddc
  intel/ibt-19-0-0.sfi
  intel/ibt-19-0-1.ddc
@@ -162,14 +160,6 @@ version: 20.60.0.2
 [intel/ibt-18-16-1.sfi_base]
 desc: Intel Wireless 9160/9260 (var 16 rev 1) Bluetooth firmware
 version: 21.30.0.4
-
-[intel/ibt-18-16-2.ddc_base]
-desc: Intel Wireless 9160/9260 (var 16 rev 2) Bluetooth configuration
-version: 20.120.0.4
-
-[intel/ibt-18-16-2.sfi_base]
-desc: Intel Wireless 9160/9260 (var 16 rev 2) Bluetooth firmware
-version: 21.120.0.4
 
 [intel/ibt-19-0-0.ddc_base]
 desc: Intel Bluetooth AX201 (var 0 rev 0) configuration
