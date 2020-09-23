@@ -1,4 +1,4 @@
-firmware-nonfree (20200918-1) UNRELEASED; urgency=medium
+firmware-nonfree (20200918-1) unstable; urgency=medium
 
   * New upstream version:
     - amdgpu: update navi10 firmware for 20.30
@@ -14,7 +14,7 @@ firmware-nonfree (20200918-1) UNRELEASED; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
   * Update to linux-support 5.8.0-1.
 
- -- maximilian attems <maks@debian.org>  Fri, 18 Sep 2020 21:02:07 +0200
+ -- maximilian attems <maks@debian.org>  Wed, 23 Sep 2020 10:11:09 +0200
 
 firmware-nonfree (20200817-1) unstable; urgency=medium
 
