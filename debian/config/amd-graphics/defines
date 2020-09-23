@@ -2038,19 +2038,19 @@ desc: Radeon R5/R7 IGP 200 series MEC microcode
 version: 396
 
 [radeon/KAVERI_pfp.bin_base]
-desc: Radeon R5/R7 IGP 200 series PFP microcode 
+desc: Radeon R5/R7 IGP 200 series PFP microcode
 
 [radeon/kaveri_pfp.bin_base]
 desc: Radeon R5/R7 IGP 200 series PFP microcode
 
 [radeon/KAVERI_rlc.bin_base]
-desc: Radeon R5/R7 IGP 200 series RLC microcode 
+desc: Radeon R5/R7 IGP 200 series RLC microcode
 
 [radeon/kaveri_rlc.bin_base]
 desc: Radeon R5/R7 IGP 200 series RLC microcode
 
 [radeon/KAVERI_sdma.bin_base]
-desc: Radeon R5/R7 IGP 200 series SDMA microcode 
+desc: Radeon R5/R7 IGP 200 series SDMA microcode
 
 [radeon/kaveri_sdma.bin_base]
 desc: Radeon R5/R7 IGP 200 series SDMA microcode

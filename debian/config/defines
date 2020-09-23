@@ -184,9 +184,9 @@ exclude:
  tlg2300_firmware.bin
 # Licenses for these are very unclear
  ueagle-atm/930-fpga.bin
- ueagle-atm/CMV*.bin    
+ ueagle-atm/CMV*.bin
  ueagle-atm/DSP9p.bin
- ueagle-atm/adi930.fw     
+ ueagle-atm/adi930.fw
  ueagle-atm/eagleI.fw
  ueagle-atm/eagleII.fw
  ueagle-atm/eagleIII.fw

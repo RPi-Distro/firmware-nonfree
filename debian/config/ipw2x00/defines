@@ -7,7 +7,7 @@ files:
  ipw2200-bss.fw
  ipw2200-ibss.fw
  ipw2200-sniffer.fw
-license-accept: required                                                                                                       
+license-accept: required
 license-title: Intel Pro Wireless 2100 and 2200/2915 License
 longdesc: Intel Pro Wireless 2100, 2200 and 2915 cards supported by the
  ipw2100 and ipw2200 drivers

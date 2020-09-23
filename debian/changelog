@@ -1396,7 +1396,7 @@ firmware-nonfree (0.22) unstable; urgency=low
   [ maximilian attems ]
   * Add iwlwifi-1000-3.ucode.
   * Add iwlwifi-6000-4.ucode.
-  
+
   [ Ben Hutchings ]
   * Update Radeon firmware for use with Linux 2.6.32 (Closes: #558023)
   * Change URI for firmware-linux-nonfree to refer to David Woodhouse's
@@ -1457,7 +1457,7 @@ firmware-nonfree (0.18) unstable; urgency=low
   * Add iwlwifi-5000-2.ucode. (closes: #532207)
   * Add iwlwifi-5150-2.ucode.
   * Update iwlwifi-4945 to 228.61.2.24.
-  
+
   [ Ben Hutchings ]
   * Fix Matrox G200/G400/G550 firmware image format (closes: #531367)
   * Add Broadcom Tigon3 firmware for use with tg3 driver (closes: 543233)
