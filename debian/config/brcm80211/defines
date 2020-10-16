@@ -23,6 +23,9 @@ files:
  brcm/brcmfmac43456-sdio.bin
  brcm/brcmfmac43456-sdio.clm_blob
  brcm/brcmfmac43456-sdio.txt
+ brcm/brcmfmac43436-sdio.bin
+ brcm/brcmfmac43436-sdio.clm_blob
+ brcm/brcmfmac43436-sdio.txt
  brcm/brcmfmac43430a0-sdio.bin
  brcm/brcmfmac43430-sdio.bin
  brcm/brcmfmac43430-sdio.txt
@@ -111,6 +114,16 @@ desc: Broadcom BCM43456 localisations blob
 
 [brcm/brcmfmac43456-sdio.txt_base]
 desc: NVRAM file for BCM43456
+
+[brcm/brcmfmac43436-sdio.bin_base]
+desc: Broadcom BCM43436 firmware
+version: 9.88.4.65
+
+[brcm/brcmfmac43436-sdio.clm_blob]
+desc: Broadcom BCM43436 localisations blob
+
+[brcm/brcmfmac43436-sdio.txt_base]
+desc: NVRAM file for BCM43436
 
 [brcm/brcmfmac43430a0-sdio.bin_base]
 desc: Broadcom BCM43430 rev 0 firmware

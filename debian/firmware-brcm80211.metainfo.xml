@@ -29,6 +29,9 @@ Binary firmware for wireless network cards supported by the brcmsmac or brcmfmac
     <firmware type="runtime">brcm/brcmfmac43456-sdio.bin</firmware>
     <firmware type="runtime">brcm/brcmfmac43456-sdio.clm_blob</firmware>
     <firmware type="runtime">brcm/brcmfmac43456-sdio.txt</firmware>
+    <firmware type="runtime">brcm/brcmfmac43436-sdio.bin</firmware>
+    <firmware type="runtime">brcm/brcmfmac43436-sdio.clm_blob</firmware>
+    <firmware type="runtime">brcm/brcmfmac43436-sdio.txt</firmware>
     <firmware type="runtime">brcm/brcmfmac43430a0-sdio.bin</firmware>
     <firmware type="runtime">brcm/brcmfmac43430-sdio.bin</firmware>
     <firmware type="runtime">brcm/brcmfmac43430-sdio.txt</firmware>
