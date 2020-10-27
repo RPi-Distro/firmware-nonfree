@@ -1,3 +1,40 @@
+firmware-nonfree (20201022-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - linux-firmware: Update Marvell Switchdev firmware with ABI changes
+    - linux-firmware: move iwlwifi-7265D-10.ucode symlink to WHENCE
+    - linux-firmware: move i915 firmware symlinks to WHENCE
+    - linux-firmware: nvidia: move firmware symlinks to WHENCE
+    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.1312
+    - linux-firmware: Update firmware patch for Intel Bluetooth 7265 (D1)
+    - linux-firmware: Update firmware for Cadence MHDP8546 DP bridge
+    - QCA : Updated firmware files for WCN3991
+    - linux-firmware: Add new VPDMA firmware 1b8.bin
+    - amdgpu: update navi10 firmware for 20.40
+    - amdgpu: update navi12 firmware for 20.40
+    - amdgpu: update navi14 firmware for 20.40
+    - amdgpu: update picasso firmware for 20.40
+    - amdgpu: update raven firmware for 20.40
+    - amdgpu: update raven2 firmware for 20.40
+    - amdgpu: update renoir firmware for 20.40
+    - amdgpu: update vega10 firmware for 20.40
+    - amdgpu: update vega12 firmware for 20.40
+    - amdgpu: update vega20 firmware for 20.40
+    - copy-firmware: Always write Link: entries
+    - ice: Add comms package file for Intel E800 series driver
+    - qcom : updated venus firmware files for v5.4
+    - i915: Add DG1 DMC v2.02
+    - iwlwifi: update 3168, 7265D, 8000C and 8265 firmwares
+    - iwlwifi: update and add new FWs from core56-54 release
+    - QCA : Updated firmware file for WCN3991
+    - mediatek: separate venc service thread
+    - ice: update package file to 1.3.16.0
+    - ath10k: add SDIO firmware for QCA9377 WiFi
+    - rtl_bt: Update RTL8821C BT FW to 0xAA6C_A99E
+    - cypress: add Cypress firmware and clm_blob files
+
+ -- maximilian attems <maks@debian.org>  Tue, 27 Oct 2020 08:41:45 +0100
+
 firmware-nonfree (20200918-1) unstable; urgency=medium
 
   * New upstream version:
