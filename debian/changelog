@@ -1,3 +1,15 @@
+firmware-nonfree (1:20190114-1+rpt10) buster; urgency=medium
+
+  [ Phil Elwell ]
+  * New clm_blob for BCM43456
+    - An updated clm_blob to open up the 80MHz channels.
+  * Use BCM43456 clm_blob on CYW43455
+    - The previous CYW43455 clm_blob provides limited access to the higher
+      5GHz channels (100+) - the BCM43456 (surprisingly) seems to work and
+      doesn't have this problem.
+
+ -- Serge Schneider <serge@raspberrypi.com>  Thu, 26 Nov 2020 18:51:42 +0000
+
 firmware-nonfree (1:20190114-1+rpt9) buster; urgency=medium
 
   [ Phil Elwell ]
