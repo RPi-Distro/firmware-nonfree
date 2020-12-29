@@ -327,7 +327,7 @@ version: 22.391740.0
 
 [iwlwifi-3168-29.ucode_base]
 desc: Intel Wireless 3168 firmware
-version: 29.3e3b4de5.0
+version: 29.0bd893f3.0
 
 [iwlwifi-3945-2.ucode_base]
 desc: Intel Wireless 3945 firmware
@@ -387,7 +387,7 @@ version: 22.391740.0
 
 [iwlwifi-7265D-29.ucode_base]
 desc: Intel Wireless 7265D firmware
-version: 29.3e3b4de5.0
+version: 29.0bd893f3.0
 
 [iwlwifi-8000C-22.ucode_base]
 desc: Intel Wireless 8000C firmware
@@ -395,7 +395,7 @@ version: 22.391740.0
 
 [iwlwifi-8000C-36.ucode_base]
 desc: Intel Wireless 8000C firmware
-version: 36.8fd77bb3c.0
+version: 36.ad812ee0.0
 
 [iwlwifi-8265-22.ucode_base]
 desc: Intel Wireless 8265 firmware
@@ -403,7 +403,7 @@ version: 22.391740.0
 
 [iwlwifi-8265-36.ucode_base]
 desc: Intel Wireless 8265 firmware
-version: 36.8fd77bb3c.0
+version: 36.ad812ee0.0
 
 [iwlwifi-9000-pu-b0-jf-b0-34.ucode_base]
 desc: Intel Wireless 9000 firmware
