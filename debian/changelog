@@ -28,7 +28,7 @@ firmware-nonfree (20201022-1) UNRELEASED; urgency=medium
     - ath10k: add SDIO firmware for QCA9377 WiFi
     - rtl_bt: Update RTL8821C BT FW to 0xAA6C_A99E
     - cypress: add Cypress firmware and clm_blob files
-  * Update to linux-support 5.9.0-1.
+  * Update to linux-support 5.9.0-5.
 
  -- maximilian attems <maks@debian.org>  Tue, 27 Oct 2020 08:41:45 +0100
 
