@@ -88,8 +88,10 @@ files:
  htc_7010.fw
  htc_9271.fw
  qca/crbtfw21.tlv
+ qca/crbtfw32.tlv
  qca/crnv21.bin
  qca/crnv32.bin
+ qca/crnv32u.bin
  qca/htbtfw20.tlv
  qca/nvm_00130300.bin
  qca/nvm_00130302.bin
@@ -307,7 +309,13 @@ desc: Qualcomm WCN3990 Bluetooth firmware
 [qca/crnv21.bin_base]
 desc: Qualcomm WCN3990 Bluetooth NVM configuration
 
+[qca/crbtfw32.tlv_base]
+desc: Qualcomm WCN3991 RAM FW
+
 [qca/crnv32.bin_base]
+desc: Qualcomm WCN3991 Bluetooth NVM configuration
+
+[qca/crnv32u.bin_base]
 desc: Qualcomm WCN3991 Bluetooth NVM configuration
 
 [qca/htbtfw20.tlv_base]
