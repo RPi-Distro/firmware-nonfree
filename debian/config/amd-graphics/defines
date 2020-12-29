@@ -257,6 +257,7 @@ files:
  amdgpu/renoir_pfp.bin
  amdgpu/renoir_rlc.bin
  amdgpu/renoir_sdma.bin
+ amdgpu/renoir_ta.bin
  amdgpu/renoir_vcn.bin
  amdgpu/si58_mc.bin
  amdgpu/stoney_ce.bin
@@ -1377,6 +1378,9 @@ desc: "Renoir" RLC firmware
 
 [amdgpu/renoir_sdma.bin_base]
 desc: "Renoir" SDMA firmware
+
+[amdgpu/renoir_ta.bin_base]
+desc: "Renoir" TA firmware
 
 [amdgpu/renoir_vcn.bin_base]
 desc: "Renoir" VCN firmware
