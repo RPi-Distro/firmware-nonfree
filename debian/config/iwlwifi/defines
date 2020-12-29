@@ -565,6 +565,14 @@ version: 55.d9698065.0
 desc: Intel Wireless 22000 series (QUZ-A-JF-B) firmware
 version: 59.601f3a66.0
 
+[iwlwifi-cc-a0-46.ucode_base]
+desc: Intel Wireless series (CC-A0) firmware
+version: 46.3cfab8da.0
+
+[iwlwifi-cc-a0-48.ucode_base]
+desc: Intel Wireless series (CC-A0) firmware
+version: 48.13675109.0
+
 [iwlwifi-cc-a0-50.ucode_base]
 desc: Intel Wireless series (CC-A0) firmware
 version: 50.3e391d3e.0
