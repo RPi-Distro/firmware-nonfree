@@ -125,6 +125,8 @@ files:
  i915/tgl_huc_7.0.12.bin
  i915/tgl_huc_7.0.3.bin
  i915/tgl_huc_7.5.0.bin
+ intel/ice/ddp-comms/ice_comms-1.3.20.0.pkg
+ intel/ice/ddp/ice-1.3.4.0.pkg
  kaweth/new_code.bin
  kaweth/new_code_fix.bin
  kaweth/trigger_code.bin
@@ -962,6 +964,14 @@ version: 7.0.3
 [i915/tgl_huc_7.5.0.bin_base]
 desc: Intel "Tiger Lake" HuC firmware
 version: 7.5.0
+
+[intel/ice/ddp-comms/ice_comms-1.3.20.0.pkg_base]
+desc: Intel E800 comms package
+version: 1.3.20
+
+[intel/ice/ddp/ice-1.3.4.0.pkg]
+desc: Intel E800 ice driver
+version: 1.3.4
 
 [matrox/g200_warp.fw_base]
 desc: Matrox G200 WARP engine microcode
