@@ -2,12 +2,8 @@ firmware-nonfree (20201022-1) UNRELEASED; urgency=medium
 
   * New upstream version:
     - linux-firmware: Update Marvell Switchdev firmware with ABI changes
-    - linux-firmware: move iwlwifi-7265D-10.ucode symlink to WHENCE
     - linux-firmware: move i915 firmware symlinks to WHENCE
-    - linux-firmware: nvidia: move firmware symlinks to WHENCE
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.1312
     - linux-firmware: Update firmware patch for Intel Bluetooth 7265 (D1)
-    - linux-firmware: Update firmware for Cadence MHDP8546 DP bridge
     - QCA : Updated firmware files for WCN3991
     - linux-firmware: Add new VPDMA firmware 1b8.bin
     - amdgpu: update navi10 firmware for 20.40
