@@ -25,6 +25,8 @@ files:
  intel/ibt-19-240-1.sfi
  intel/ibt-19-240-4.ddc
  intel/ibt-19-240-4.sfi
+ intel/ibt-19-32-0.ddc
+ intel/ibt-19-32-0.sfi
  intel/ibt-19-32-1.ddc
  intel/ibt-19-32-1.sfi
  intel/ibt-19-32-4.ddc
@@ -216,6 +218,12 @@ version: 21.90.0.3
 [intel/ibt-19-240-4.sfi_base]
 desc: Intel Bluetooth AX201 firmware
 version: 21.90.0.3
+
+[intel/ibt-19-32-0.ddc_base]
+desc: Intel Bluetooth AX201 (var 32 rev 0) configuration
+
+[intel/ibt-19-32-0.sfi_base]
+desc: Intel Bluetooth AX201 (var 32 rev 0) firmware
 
 [intel/ibt-19-32-1.ddc_base]
 desc: Intel Bluetooth AX201 (var 32 rev 1) configuration
