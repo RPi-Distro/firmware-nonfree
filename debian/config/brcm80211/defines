@@ -38,6 +38,27 @@ files:
  brcm/brcmfmac4371-pcie.bin
  brcm/brcmfmac4373.bin
  brcm/brcmfmac4373-sdio.bin
+ cypress/cyfmac43012-sdio.bin
+ cypress/cyfmac43012-sdio.clm_blob
+ cypress/cyfmac43340-sdio.bin
+ cypress/cyfmac43362-sdio.bin
+ cypress/cyfmac4339-sdio.bin
+ cypress/cyfmac43430-sdio.bin
+ cypress/cyfmac43430-sdio.clm_blob
+ cypress/cyfmac43455-sdio.bin
+ cypress/cyfmac43455-sdio.clm_blob
+ cypress/cyfmac4354-sdio.bin
+ cypress/cyfmac4354-sdio.clm_blob
+ cypress/cyfmac4356-pcie.bin
+ cypress/cyfmac4356-pcie.clm_blob
+ cypress/cyfmac4356-sdio.bin
+ cypress/cyfmac4356-sdio.clm_blob
+ cypress/cyfmac43570-pcie.bin
+ cypress/cyfmac43570-pcie.clm_blob
+ cypress/cyfmac4373-sdio.bin
+ cypress/cyfmac4373-sdio.clm_blob
+ cypress/cyfmac54591-pcie.bin
+ cypress/cyfmac54591-pcie.clm_blob
 longdesc: wireless network cards supported by the brcmsmac or brcmfmac driver
 
 [brcm/bcm43xx-0.fw_base]
@@ -152,3 +173,66 @@ desc: Cypress CYW4373-USB firmware
 
 [brcm/brcmfmac4373-sdio.bin_base]
 desc: Cypress CYW4373-SDIO firmware
+
+[cypress/cyfmac43012-sdio.bin_base]
+desc: Cypress CYW43012-SDIO firmware
+
+[cypress/cyfmac43012-sdio.clm_blob_base]
+desc: Cypress CYW43012-SDIO CLM firmware
+
+[cypress/cyfmac43340-sdio.bin_base]
+desc: Cypress CYW43340-SDIO firmware
+
+[cypress/cyfmac43362-sdio.bin_base]
+desc: Cypress CYW43362-SDIO firmware
+
+[cypress/cyfmac4339-sdio.bin_base]
+desc: Cypress CYW4339-SDIO firmware
+
+[cypress/cyfmac43430-sdio.bin_base]
+desc: Cypress CYW43430-SDIO firmware
+
+[cypress/cyfmac43430-sdio.clm_blob_base]
+desc: Cypress CYW43430-SDIO CLM firmware
+
+[cypress/cyfmac43455-sdio.bin_base]
+desc: Cypress CYW43455-SDIO firmware
+
+[cypress/cyfmac43455-sdio.clm_blob_base]
+desc: Cypress CYW43455-SDIO CLM firmware
+
+[cypress/cyfmac4354-sdio.bin_base]
+desc: Cypress CYW4354-SDIO firmware
+
+[cypress/cyfmac4354-sdio.clm_blob_base]
+desc: Cypress CYW4354-SDIO CLM firmware
+
+[cypress/cyfmac4356-pcie.bin_base]
+desc: Cypress CYW4356-PCIE firmware
+
+[cypress/cyfmac4356-pcie.clm_blob_base]
+desc: Cypress CYW4356-PCIE CLM firmware
+
+[cypress/cyfmac4356-sdio.bin_base]
+desc: Cypress CYW4356-SDIO firmware
+
+[cypress/cyfmac4356-sdio.clm_blob_base]
+desc: Cypress CYW4356-SDIO CLM firmware
+
+[cypress/cyfmac43570-pcie.bin_base]
+desc: Cypress CYW43570-PCIE firmware
+
+[cypress/cyfmac43570-pcie.clm_blob_base]
+desc: Cypress CYW43570-PCIE CLM firmware
+
+[cypress/cyfmac4373-sdio.bin_base]
+desc: Cypress CYW4373-SDIO firmware
+
+[cypress/cyfmac4373-sdio.clm_blob_base]
+desc: Cypress CYW4373-SDIO CLM firmware
+
+[cypress/cyfmac54591-pcie.bin_base]
+desc: Cypress CYW54591-PCIE firmware
+
+[cypress/cyfmac54591-pcie.clm_blob_base]
+desc: Cypress CYW54591-PCIE CLM firmware
