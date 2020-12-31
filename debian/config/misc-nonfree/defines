@@ -150,6 +150,8 @@ files:
  mediatek/mt7915_wm.bin
  mediatek/mt7915_wa.bin
  mediatek/mt7915_rom_patch.bin
+ mediatek/mt8173/vpu_d.bin
+ mediatek/mt8173/vpu_p.bin
  moxa/moxa-1110.fw
  moxa/moxa-1130.fw
  moxa/moxa-1131.fw
@@ -1029,6 +1031,14 @@ desc: MediaTek MT7915E firmware
 
 [mediatek/mt7915_rom_patch.bin_base]
 desc: MediaTek MT7915E firmware
+
+[mediatek/mt8173/vpu_d.bin_base]
+desc: MediaTek MT8173 VPU_D firmware
+version: 1.1.16
+
+[mediatek/mt8173/vpu_p.bin_base]
+desc: MediaTek MT8173 VPU_P firmware
+version: 1.1.16
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware
