@@ -1,4 +1,4 @@
-firmware-nonfree (20201022-1) UNRELEASED; urgency=medium
+firmware-nonfree (20201022-1) unstable; urgency=medium
 
   * New upstream version:
     - linux-firmware: Update Marvell Switchdev firmware with ABI changes
@@ -31,7 +31,7 @@ firmware-nonfree (20201022-1) UNRELEASED; urgency=medium
   * Update to linux-support 5.9.0-5.
   * iwlwifi: add Intel Bluetooth AX201 (var 32 rev 0) (closes: 975726)
 
- -- maximilian attems <maks@debian.org>  Tue, 27 Oct 2020 08:41:45 +0100
+ -- maximilian attems <maks@debian.org>  Mon, 04 Jan 2021 11:21:55 +0100
 
 firmware-nonfree (20200918-1) unstable; urgency=medium
 
