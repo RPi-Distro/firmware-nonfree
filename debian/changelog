@@ -1,3 +1,32 @@
+firmware-nonfree (20201118-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - ath10k: QCA6174 hw3.0: update firmware-6.bin to WLAN.RM.4.4.1-00157-QCARMSWPZ-1
+    - ath10k: QCA6174 hw3.0: update board-2.bin
+    - ath10k: QCA9888 hw2.0: update firmware-5.bin to 10.4-3.9.0.2-00131
+    - ath10k: QCA9984 hw1.0: update firmware-5.bin to 10.4-3.9.0.2-00131
+    - ath10k: QCA6174 hw3.0: add firmware-sdio-6.bin version WLAN.RMH.4.4.1-00077
+    - ath11k: IPQ6018 hw1.0: add board-2.bin
+    - ath11k: IPQ6018 hw1.0: add to WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+    - ath11k: IPQ8074 hw2.0: add board-2.bin
+    - ath11k: IPQ8074 hw2.0: add to WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+    - ath11k: QCA6390 hw2.0: add board-2.bin
+    - ath11k: QCA6390 hw2.0: add to WLAN.HST.1.0.1-01740-QCAHSTSWPLZ_V2_TO_X86-1
+    - QCA : Fixed BT SSR due to command timeout / IO fatal error
+    - qcom : updated venus firmware files for v5.4
+    - QCA: Update Bluetooth firmware for QCA6390
+    - rtl_bt: Update RTL8822C BT(USB I/F) FW to 0x099A_281A
+    - rtw88: RTL8822C: Update firmware to v9.9.4
+    - amdgpu: update raven VCN firmware
+    - amdgpu: update raven2 VCN firmware
+    - amdgpu: update picasso VCN firmware
+    - vpdma: Move firmware to ti directory
+    - Revert "rtw88: RTL8822C: Update firmware to v9.9.4"
+    - rtw88: RTL8822C: Update firmware to v9.9.4
+    - rtlwifi: v88.2 firmware files for RTL8192CU
+
+ -- maximilian attems <maks@debian.org>  Mon, 04 Jan 2021 11:47:04 +0100
+
 firmware-nonfree (20201022-1) unstable; urgency=medium
 
   * New upstream version:
