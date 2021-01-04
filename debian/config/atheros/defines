@@ -51,6 +51,7 @@ files:
  ath10k/QCA99X0/hw2.0/firmware-5.bin
  ath10k/WCN3990/hw1.0/firmware-5.bin
  ath10k/WCN3990/hw1.0/wlanmdsp.mbn
+ ath11k/IPQ6018/hw1.0/board-2.bin
  ath3k-1.fw
  ath6k/AR6003.1/hw2.1.1/athwlan.bin
  ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
@@ -288,6 +289,9 @@ desc: Qualcomm Atheros WCN3990 firmware
 
 [ath10k/WCN3990/hw1.0/wlanmdsp.mbn]
 desc: Qualcomm Atheros WCN3990 wlan DSP firmware
+
+[ath11k/IPQ6018/hw1.0/board-2.bin]
+desc: Qualcomm Atheros IPQ6018 802.11ax firmware
 
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
