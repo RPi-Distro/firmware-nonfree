@@ -445,14 +445,6 @@ version: 41.fc1a7aea.0
 desc: Intel Wireless 9260 firmware
 version: 46.4d093a30.0
 
-[iwlwifi-cc-a0-46.ucode_base]
-desc: Intel Wireless 22260 firmware
-version: 46.3cfab8da.0
-
-[iwlwifi-cc-a0-48.ucode_base]
-desc: Intel Wireless 22260 firmware
-version: 48.13675109.0
-
 [iwlwifi-Qu-b0-hr-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-B-HR-B) firmware
 version: 48.13675109.0
