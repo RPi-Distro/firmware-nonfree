@@ -213,7 +213,7 @@ version: WLAN.RM.2.0-00180-QCARMSWPZ-1
 
 [ath10k/QCA6174/hw3.0/firmware-6.bin_base]
 desc: Qualcomm Atheros QCA6174 rev 3.0 firmware
-version: WLAN.RM.4.4.1-00079-QCARMSWPZ-1
+version: WLAN.RM.4.4.1-00157-QCARMSWPZ-1
 
 [ath10k/QCA6174/hw3.0/firmware-sdio-6.bin]
 desc: Qualcomm Atheros QCA6174 SDIO rev 3.0 firmware
@@ -253,7 +253,7 @@ version: 2
 
 [ath10k/QCA9888/hw2.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA9888 rev 2.0 firmware
-version: 10.4-3.9.0.2-00024
+version: 10.4-3.9.0.2-00131
 
 [ath10k/QCA988X/hw2.0/board.bin_base]
 desc: Qualcomm Atheros QCA988X board configuration
@@ -273,7 +273,7 @@ version: 2
 
 [ath10k/QCA9984/hw1.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA9984 rev 1.0 firmware
-version: 10.4-3.9.0.2-00021
+version: 10.4-3.9.0.2-00131
 
 [ath10k/QCA99X0/hw2.0/board.bin_base]
 desc: Qualcomm Atheros QCA99X0 board configuration
