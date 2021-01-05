@@ -52,6 +52,7 @@ files:
  ath10k/WCN3990/hw1.0/firmware-5.bin
  ath10k/WCN3990/hw1.0/wlanmdsp.mbn
  ath11k/IPQ6018/hw1.0/board-2.bin
+ ath11k/IPQ8074/hw2.0/board-2.bin
  ath11k/IPQ8074/hw2.0/m3_fw.b00
  ath11k/IPQ8074/hw2.0/m3_fw.b01
  ath11k/IPQ8074/hw2.0/m3_fw.b02
@@ -307,6 +308,9 @@ desc: Qualcomm Atheros WCN3990 wlan DSP firmware
 
 [ath11k/IPQ6018/hw1.0/board-2.bin]
 desc: Qualcomm Atheros IPQ6018 802.11ax firmware
+
+[ath11k/IPQ8074/hw2.0/board-2.bin]
+desc: Qualcomm Atheros IPQ8074 board firmware
 
 [ath11k/IPQ8074/hw2.0/m3_fw.b00]
 desc: Qualcomm Atheros IPQ8074 m3_fw.b00 firmware
