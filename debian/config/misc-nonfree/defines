@@ -891,7 +891,7 @@ version: 4.0.0
 desc: Intel "Kabylake" HuC firmware
 version: 2.0.1810
 
-[i915/rkl_dmc_ver2_02.bin]
+[i915/rkl_dmc_ver2_02.bin_base]
 desc: Intel "Rocketlake" DMC firmware
 version: 2.02
 
