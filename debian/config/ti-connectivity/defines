@@ -24,7 +24,7 @@ longdesc: Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless
  network chips supported by the wl1251, wl12xx and wl18xx drivers and
  BT/FM/GPS chips supported by the st_drv driver
 
-[ti/vpdma-1b8.bin]
+[ti/vpdma-1b8.bin_base]
 desc: TI VPDMA firmare
 
 [ti-connectivity/wl1251-fw.bin_base]
