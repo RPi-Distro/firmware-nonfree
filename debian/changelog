@@ -12,6 +12,7 @@ firmware-nonfree (20201118-1) UNRELEASED; urgency=medium
     - ath11k: IPQ8074 hw2.0: add to WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
     - ath11k: QCA6390 hw2.0: add board-2.bin
     - ath11k: QCA6390 hw2.0: add to WLAN.HST.1.0.1-01740-QCAHSTSWPLZ_V2_TO_X86-1
+      (closes: #977042)
     - QCA : Fixed BT SSR due to command timeout / IO fatal error
     - qcom : updated venus firmware files for v5.4
     - QCA: Update Bluetooth firmware for QCA6390
