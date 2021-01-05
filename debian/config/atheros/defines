@@ -52,6 +52,21 @@ files:
  ath10k/WCN3990/hw1.0/firmware-5.bin
  ath10k/WCN3990/hw1.0/wlanmdsp.mbn
  ath11k/IPQ6018/hw1.0/board-2.bin
+ ath11k/IPQ8074/hw2.0/m3_fw.b00
+ ath11k/IPQ8074/hw2.0/m3_fw.b01
+ ath11k/IPQ8074/hw2.0/m3_fw.b02
+ ath11k/IPQ8074/hw2.0/m3_fw.flist
+ ath11k/IPQ8074/hw2.0/m3_fw.mdt
+ ath11k/IPQ8074/hw2.0/q6_fw.b00
+ ath11k/IPQ8074/hw2.0/q6_fw.b01
+ ath11k/IPQ8074/hw2.0/q6_fw.b02
+ ath11k/IPQ8074/hw2.0/q6_fw.b03
+ ath11k/IPQ8074/hw2.0/q6_fw.b04
+ ath11k/IPQ8074/hw2.0/q6_fw.b05
+ ath11k/IPQ8074/hw2.0/q6_fw.b07
+ ath11k/IPQ8074/hw2.0/q6_fw.b08
+ ath11k/IPQ8074/hw2.0/q6_fw.flist
+ ath11k/IPQ8074/hw2.0/q6_fw.mdt
  ath3k-1.fw
  ath6k/AR6003.1/hw2.1.1/athwlan.bin
  ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
@@ -292,6 +307,66 @@ desc: Qualcomm Atheros WCN3990 wlan DSP firmware
 
 [ath11k/IPQ6018/hw1.0/board-2.bin]
 desc: Qualcomm Atheros IPQ6018 802.11ax firmware
+
+[ath11k/IPQ8074/hw2.0/m3_fw.b00]
+desc: Qualcomm Atheros IPQ8074 m3_fw.b00 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/m3_fw.b01]
+desc: Qualcomm Atheros IPQ8074 m3_fw.b01 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/m3_fw.b02]
+desc: Qualcomm Atheros IPQ8074 m3_fw.b02 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/m3_fw.flist]
+desc: Qualcomm Atheros IPQ8074 m3_fw.flist firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/m3_fw.mdt]
+desc: Qualcomm Atheros IPQ8074 m3_fw.mdt firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b00]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b00 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b01]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b01 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b02]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b02 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b03]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b03 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b04]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b04 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b05]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b05 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b07]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b07 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.b08]
+desc: Qualcomm Atheros IPQ8074 q6_fw.b08 firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.flist]
+desc: Qualcomm Atheros IPQ8074 q6_fw.list firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/IPQ8074/hw2.0/q6_fw.mdt]
+desc: Qualcomm Atheros IPQ8074 q6_fw.mdt firmware
+version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
 
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
