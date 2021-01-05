@@ -126,6 +126,7 @@ files:
  qca/crnv32.bin
  qca/crnv32u.bin
  qca/htbtfw20.tlv
+ qca/htnv20.bin
  qca/nvm_00130300.bin
  qca/nvm_00130302.bin
  qca/nvm_00440302.bin
@@ -484,7 +485,12 @@ desc: Qualcomm WCN3991 Bluetooth NVM configuration
 desc: Qualcomm WCN3991 Bluetooth NVM configuration
 
 [qca/htbtfw20.tlv_base]
-desc: Qualcomm QCA6390 Bluetooth firmware
+desc: Qualcomm QCA6390 Bluetooth HTBFW20 firmware
+version: v2.0.0-00874
+
+[qca/htnv20.bin]
+desc: Qualcomm QCA6390 Bluetooth HTNV20 firmware
+version: v2.0.0-00874
 
 [qca/nvm_00130300.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration
