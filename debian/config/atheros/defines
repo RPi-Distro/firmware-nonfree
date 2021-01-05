@@ -83,6 +83,7 @@ files:
  ath11k/IPQ8074/hw2.0/q6_fw.b08
  ath11k/IPQ8074/hw2.0/q6_fw.flist
  ath11k/IPQ8074/hw2.0/q6_fw.mdt
+ ath11k/QCA6390/hw2.0/board-2.bin
  ath3k-1.fw
  ath6k/AR6003.1/hw2.1.1/athwlan.bin
  ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
@@ -449,6 +450,9 @@ version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
 [ath11k/IPQ8074/hw2.0/q6_fw.mdt]
 desc: Qualcomm Atheros IPQ8074 q6_fw.mdt firmware
 version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+
+[ath11k/QCA6390/hw2.0/board-2.bin]
+desc: Qualcomm QCA6390 board-2 firmware
 
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
