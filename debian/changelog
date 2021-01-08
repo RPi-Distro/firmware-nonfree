@@ -1,4 +1,4 @@
-firmware-nonfree (20201118-1) UNRELEASED; urgency=medium
+firmware-nonfree (20201118-1) unstable; urgency=medium
 
   * New upstream version:
     - ath10k: QCA6174 hw3.0: update firmware-6.bin to WLAN.RM.4.4.1-00157-QCARMSWPZ-1
@@ -26,7 +26,7 @@ firmware-nonfree (20201118-1) UNRELEASED; urgency=medium
     - rtw88: RTL8822C: Update firmware to v9.9.4
     - rtlwifi: v88.2 firmware files for RTL8192CU
 
- -- maximilian attems <maks@debian.org>  Mon, 04 Jan 2021 11:47:04 +0100
+ -- maximilian attems <maks@debian.org>  Fri, 08 Jan 2021 10:05:27 +0100
 
 firmware-nonfree (20201022-1) unstable; urgency=medium
 
