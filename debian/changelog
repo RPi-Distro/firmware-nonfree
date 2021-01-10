@@ -1,3 +1,34 @@
+firmware-nonfree (20201218-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: update raven firmware for 20.45
+    - amdgpu: update raven2 firmware for 20.45
+    - amdgpu: update navi10 firmware for 20.45
+    - amdgpu: update navi12 firmware for 20.45
+    - amdgpu: update navi14 firmware for 20.45
+    - amdgpu: update renoir firmware for 20.45
+    - amdgpu: update vega10 firmware for 20.45
+    - amdgpu: update vega12 firmware for 20.45
+    - amdgpu: update vega20 firmware for 20.45
+    - amdgpu: add sienna cichlid firmware for 20.45
+    - linux-firmware: Update AMD SEV firmware
+    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.2018
+    - i915: Remove duplicate KBL DMC entry
+    - i915: Add GuC firmware v49.0.1 for all platforms
+    - linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - QCA : Updated firmware files for WCN3991
+    - mediatek: update MT8173 VPU firmware to v1.1.6
+    - linux-firmware: add firmware for Lontium LT9611UXC DSI to HDMI bridge
+    - linux-firmware: Update firmware file for Intel Bluetooth 9260
+    - linux-firmware: Update firmware file for Intel Bluetooth 9560
+    - linux-firmware: Update firmware file for Intel Bluetooth AX201
+    - linux-firmware: Update firmware file for Intel Bluetooth AX200
+    - linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - make AP6212 in bananpi m2 plus/zero work
+
+ -- maximilian attems <maks@debian.org>  Sat, 09 Jan 2021 11:32:27 +0100
+
 firmware-nonfree (20201118-1) unstable; urgency=medium
 
   * New upstream version:
