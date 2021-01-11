@@ -260,6 +260,18 @@ files:
  amdgpu/renoir_ta.bin
  amdgpu/renoir_vcn.bin
  amdgpu/si58_mc.bin
+ amdgpu/sienna_cichlid_ce.bin
+ amdgpu/sienna_cichlid_dmcub.bin
+ amdgpu/sienna_cichlid_me.bin
+ amdgpu/sienna_cichlid_mec.bin
+ amdgpu/sienna_cichlid_mec2.bin
+ amdgpu/sienna_cichlid_pfp.bin
+ amdgpu/sienna_cichlid_rlc.bin
+ amdgpu/sienna_cichlid_sdma.bin
+ amdgpu/sienna_cichlid_smc.bin
+ amdgpu/sienna_cichlid_sos.bin
+ amdgpu/sienna_cichlid_ta.bin
+ amdgpu/sienna_cichlid_vcn.bin
  amdgpu/stoney_ce.bin
  amdgpu/stoney_me.bin
  amdgpu/stoney_mec.bin
@@ -1387,6 +1399,42 @@ desc: "Renoir" VCN firmware
 
 [amdgpu/si58_mc.bin_base]
 desc: Radeon "SI58" MC microcode
+
+[amdgpu/sienna_cichlid_ce.bin]
+desc: AMD Sienna Cichlid CE firmware
+
+[amdgpu/sienna_cichlid_dmcub.bin]
+desc: AMD Sienna Cichlid DMCUB firmware
+
+[amdgpu/sienna_cichlid_me.bin]
+desc: AMD Sienna Cichlid ME firmware
+
+[amdgpu/sienna_cichlid_mec.bin]
+desc: AMD Sienna Cichlid MEC firmware
+
+[amdgpu/sienna_cichlid_mec2.bin]
+desc: AMD Sienna Cichlid MEC2 firmware
+
+[amdgpu/sienna_cichlid_pfp.bin]
+desc: AMD Sienna Cichlid PFP firmware
+
+[amdgpu/sienna_cichlid_rlc.bin]
+desc: AMD Sienna Cichlid RLC firmware
+
+[amdgpu/sienna_cichlid_sdma.bin]
+desc: AMD Sienna Cichlid SDMA firmware
+
+[amdgpu/sienna_cichlid_smc.bin]
+desc: AMD Sienna Cichlid SMC firmware
+
+[amdgpu/sienna_cichlid_sos.bin]
+desc: AMD Sienna Cichlid SOS firmware
+
+[amdgpu/sienna_cichlid_ta.bin]
+desc: AMD Sienna Cichlid TA firmware
+
+[amdgpu/sienna_cichlid_vcn.bin]
+desc: AMD Sienna Cichlid VCN firmware
 
 [amdgpu/stoney_ce.bin_base]
 desc: "Stoney" CE firmware
