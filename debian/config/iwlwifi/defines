@@ -37,6 +37,8 @@ files:
  intel/ibt-20-1-3.sfi
  intel/ibt-20-1-4.ddc
  intel/ibt-20-1-4.sfi
+ intel/ibt-0041-0041.ddc
+ intel/ibt-0041-0041.sfi
  intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq
  intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq
  intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq
@@ -262,6 +264,13 @@ desc: Intel Wireless 22161 (var 1 rev 4) Bluetooth configuration
 
 [intel/ibt-20-1-4.sfi_base]
 desc: Intel Wireless 22161 (var 1 rev 4) Bluetooth firmware
+
+[intel/ibt-0041-0041.ddc_base]
+desc: Intel Wireless AX2100 Bluethooth configuration
+
+[intel/ibt-0041-0041.sfi_base]
+desc: Intel Wireless AX2100 Bluethooth firmware
+version: 22.20.0.3
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
 desc: Intel Wireless 3160 (B6) Bluetooth firmware patch
