@@ -1,4 +1,4 @@
-firmware-nonfree (20201218-1) UNRELEASED; urgency=medium
+firmware-nonfree (20201218-1) unstable; urgency=medium
 
   * New upstream version:
     - amdgpu: update raven firmware for 20.45
@@ -26,7 +26,7 @@ firmware-nonfree (20201218-1) UNRELEASED; urgency=medium
     - make AP6212 in bananpi m2 plus/zero work
   * Update to linux-support 5.10.0-1.
 
- -- maximilian attems <maks@debian.org>  Sat, 09 Jan 2021 11:32:27 +0100
+ -- maximilian attems <maks@debian.org>  Thu, 14 Jan 2021 10:33:27 +0100
 
 firmware-nonfree (20201118-1) unstable; urgency=medium
 
