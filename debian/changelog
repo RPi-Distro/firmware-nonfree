@@ -24,6 +24,7 @@ firmware-nonfree (20201218-1) UNRELEASED; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
     - linux-firmware: Update firmware file for Intel Bluetooth AX210
     - make AP6212 in bananpi m2 plus/zero work
+  * Update to linux-support 5.10.0-1.
 
  -- maximilian attems <maks@debian.org>  Sat, 09 Jan 2021 11:32:27 +0100
 
