@@ -11,8 +11,6 @@ firmware-nonfree (20201218-1) UNRELEASED; urgency=medium
     - amdgpu: update vega12 firmware for 20.45
     - amdgpu: update vega20 firmware for 20.45
     - amdgpu: add sienna cichlid firmware for 20.45
-    - linux-firmware: Update AMD SEV firmware
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.2018
     - i915: Remove duplicate KBL DMC entry
     - i915: Add GuC firmware v49.0.1 for all platforms
     - linux-firmware: Update firmware file for Intel Bluetooth AX210
