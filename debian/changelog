@@ -1,3 +1,9 @@
+firmware-nonfree (20201218-3) UNRELEASED; urgency=medium
+
+  * Add Realtek rtl8822cu config (closes: #971791)
+
+ -- maximilian attems <maks@debian.org>  Tue, 19 Jan 2021 15:52:36 +0100
+
 firmware-nonfree (20201218-2) unstable; urgency=medium
 
   * Add RTW8723D firmware (closes: #980101)
