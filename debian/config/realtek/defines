@@ -18,6 +18,7 @@ files:
  rtl_bt/rtl8822b_config.bin
  rtl_bt/rtl8822b_fw.bin
  rtl_bt/rtl8822cs_fw.bin
+ rtl_bt/rtl8822cs_config.bin
  rtl_bt/rtl8822cu_fw.bin
  rtl_bt/rtl8822cu_config.bin
  rtl_nic/rtl8105e-1.fw
@@ -142,6 +143,9 @@ desc: Realtek RTL8822B Bluetooth firmware
 
 [rtl_bt/rtl8822cs_fw.bin_base]
 desc: Realtek RTL8822CS Bluetooth firmware
+
+[rtl_bt/rtl8822cs_config.bin_base]
+desc: Realtek RTL8822CS Bluetooth config
 
 [rtl_bt/rtl8822cu_fw.bin_base]
 desc: Realtek RTL8822CU Bluetooth firmware
