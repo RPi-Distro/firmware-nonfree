@@ -14,7 +14,7 @@ Architecture: all
 Depends: firmware-misc-nonfree (= ${binary:Version}),
  firmware-amd-graphics (= ${binary:Version}), ${misc:Depends}
 Recommends: intel-microcode, amd64-microcode
-Description: Binary firmware for various drivers in the Linux kernel (meta-package)
+Description: Binary firmware for various drivers in the Linux kernel (metapackage)
  This package depends on non-free firmware which may be used with drivers
  in the Linux kernel.
 
