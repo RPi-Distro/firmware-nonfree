@@ -1,3 +1,11 @@
+firmware-nonfree (1:20190114-1+rpt11) buster; urgency=medium
+
+  * Update CYW43455 firmware
+    - brcm/brcmfmac43455-sdio.bin 7.45.229
+    - See: https://github.com/raspberrypi/linux/issues/3849
+
+ -- Serge Schneider <serge@raspberrypi.com>  Mon, 25 Jan 2021 10:17:21 +0000
+
 firmware-nonfree (1:20190114-1+rpt10) buster; urgency=medium
 
   [ Phil Elwell ]
