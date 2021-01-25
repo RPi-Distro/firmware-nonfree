@@ -1,3 +1,9 @@
+firmware-nonfree (20201218-4) UNRELEASED; urgency=medium
+
+  * 
+
+ -- maximilian attems <maks@debian.org>  Mon, 25 Jan 2021 20:40:06 +0100
+
 firmware-nonfree (20201218-3) unstable; urgency=medium
 
   * Add Realtek rtl8822cu config (closes: #971791)
