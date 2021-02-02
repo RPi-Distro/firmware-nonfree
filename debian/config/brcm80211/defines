@@ -22,6 +22,7 @@ files:
  brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4356-pcie.gpd-win-pocket.txt
  brcm/brcmfmac4356-sdio.bin
+ brcm/brcmfmac4356-sdio.vamrs,rock960.txt
  brcm/brcmfmac43569.bin
  brcm/brcmfmac4358-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
@@ -116,6 +117,9 @@ desc: Broadcom BCM4356-PCIe NVRAM for GPD Pocket and Win
 
 [brcm/brcmfmac4356-sdio.bin_base]
 desc: Broadcom BCM4356-SDIO firmware
+
+[brcm/brcmfmac4356-sdio.vamrs,rock960.txt_base]
+desc: Rock960 Cypress 4356 WiFi 
 
 [brcm/brcmfmac4358-pcie.bin_base]
 desc: Broadcom BCM4358 firmware
