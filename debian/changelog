@@ -1,6 +1,16 @@
-firmware-nonfree (20201218-4) UNRELEASED; urgency=medium
+firmware-nonfree (202002XX-1) UNRELEASED; urgency=medium
 
-  * 
+  * New upstream version:
+    - rtl_bt: Update RTL8821C BT(USB I/F) FW to 0x829a_7644
+    - rtl_bt: Add firmware and config files for RTL8852A BT USB chip
+    - rtl_bt: Update RTL8822C BT(USB I/F) FW to 0x099a_7253
+    - rtl_bt: Update RTL8822C BT(UART I/F) FW to 0x059A_25CB
+    - brcm: remove old brcm firmwares that have newer cypress variants
+    - cypress: Link the new cypress firmware to the old brcm files
+    - cypress: Fix link direction
+    - brcm: Update Raspberry Pi 3B+/4B NVRAM for downstream changes
+    - brcm: Add NVRAM for Vamrs 96boards Rock960
+    - brcm: Link RPi4's WiFi firmware with DMI machine name.
 
  -- maximilian attems <maks@debian.org>  Mon, 25 Jan 2021 20:40:06 +0100
 
