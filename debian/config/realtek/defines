@@ -153,6 +153,12 @@ desc: Realtek RTL8822CU Bluetooth firmware
 [rtl_bt/rtl8822cu_config.bin_base]
 desc: Realtek RTL8822CU Bluetooth config
 
+[rtl_bt/rtl8852au_fw.bin_base]
+desc: Realtek RTL8852AU Bluetooth firmware
+
+[rtl_bt/rtl8852au_config.bin_base]
+desc: Realtek RTL8852AU Bluetooth config
+
 [rtl_nic/rtl8105e-1.fw_base]
 desc: Realtek RTL8105E-1 firmware
 
