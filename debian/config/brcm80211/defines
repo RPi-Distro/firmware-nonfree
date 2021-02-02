@@ -13,31 +13,22 @@ files:
  brcm/brcmfmac4329-sdio.bin
  brcm/brcmfmac4330-sdio.bin
  brcm/brcmfmac4334-sdio.bin
- brcm/brcmfmac43340-sdio.bin
  brcm/brcmfmac4335-sdio.bin
- brcm/brcmfmac43362-sdio.bin
- brcm/brcmfmac4339-sdio.bin
- brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
  brcm/brcmfmac43430a0-sdio.bin
- brcm/brcmfmac43430-sdio.bin
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
  brcm/brcmfmac4350-pcie.bin
  brcm/brcmfmac4350c2-pcie.bin
- brcm/brcmfmac4354-sdio.bin
- brcm/brcmfmac4356-pcie.bin
  brcm/brcmfmac4356-pcie.gpd-win-pocket.txt
  brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac43569.bin
- brcm/brcmfmac43570-pcie.bin
  brcm/brcmfmac4358-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
  brcm/brcmfmac4366b-pcie.bin
  brcm/brcmfmac4371-pcie.bin
  brcm/brcmfmac4373.bin
- brcm/brcmfmac4373-sdio.bin
  cypress/cyfmac43012-sdio.bin
  cypress/cyfmac43012-sdio.clm_blob
  cypress/cyfmac43340-sdio.bin
@@ -99,18 +90,6 @@ desc: Broadcom BCM4330 firmware
 [brcm/brcmfmac4334-sdio.bin_base]
 desc: Broadcom BCM4334 firmware
 
-[brcm/brcmfmac43340-sdio.bin_base]
-desc: Broadcom BCM43340 firmware
-
-[brcm/brcmfmac43362-sdio.bin_base]
-desc: Broadcom BCM43362 firmware
-
-[brcm/brcmfmac4335-sdio.bin_base]
-desc: Broadcom BCM4335 firmware
-
-[brcm/brcmfmac4339-sdio.bin_base]
-desc: Broadcom BCM4339 firmware
-
 [brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt_base]
 desc: BCM43455 NVRAM for the Raspberry Pi 3 B+
 
@@ -126,20 +105,11 @@ desc: Broadcom BCM43430 rev 0 firmware
 [brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt_base]
 desc: BCM43430 NVRAM for the Raspberry Pi 3 B
 
-[brcm/brcmfmac43430-sdio.bin_base]
-desc: Broadcom BCM43430 rev 1+ firmware
-
 [brcm/brcmfmac4350-pcie.bin_base]
 desc: Broadcom BCM4350 rev 0-4 firmware
 
 [brcm/brcmfmac4350c2-pcie.bin_base]
 desc: Broadcom BCM4350 rev 5+ firmware
-
-[brcm/brcmfmac4354-sdio.bin_base]
-desc: Broadcom BCM4354 firmware
-
-[brcm/brcmfmac4356-pcie.bin_base]
-desc: Broadcom BCM4356-PCIe firmware
 
 [brcm/brcmfmac4356-pcie.gpd-win-pocket.txt_base]
 desc: Broadcom BCM4356-PCIe NVRAM for GPD Pocket and Win
@@ -152,9 +122,6 @@ desc: Broadcom BCM4358 firmware
 
 [brcm/brcmfmac43569.bin_base]
 desc: Broadcom BCM43569 firmware
-
-[brcm/brcmfmac43570-pcie.bin_base]
-desc: Broadcom BCM43570 firmware
 
 [brcm/brcmfmac43602-pcie.ap.bin_base]
 desc: Broadcom BCM43602 AP-mode firmware
@@ -170,9 +137,6 @@ desc: Broadcom BCM4371 firmware
 
 [brcm/brcmfmac4373.bin_base]
 desc: Cypress CYW4373-USB firmware
-
-[brcm/brcmfmac4373-sdio.bin_base]
-desc: Cypress CYW4373-SDIO firmware
 
 [cypress/cyfmac43012-sdio.bin_base]
 desc: Cypress CYW43012-SDIO firmware
