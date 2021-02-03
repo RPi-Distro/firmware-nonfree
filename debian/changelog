@@ -11,6 +11,8 @@ firmware-nonfree (202002XX-1) UNRELEASED; urgency=medium
     - brcm: Update Raspberry Pi 3B+/4B NVRAM for downstream changes
     - brcm: Add NVRAM for Vamrs 96boards Rock960
     - brcm: Link RPi4's WiFi firmware with DMI machine name.
+  * add rtl_bt/rtl8852au firmware and config.
+  * add rtl_bt/rtl8723bs firmware and config.
 
  -- maximilian attems <maks@debian.org>  Mon, 25 Jan 2021 20:40:06 +0100
 
