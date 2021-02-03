@@ -21,6 +21,8 @@ files:
  rtl_bt/rtl8822cs_fw.bin
  rtl_bt/rtl8822cu_config.bin
  rtl_bt/rtl8822cu_fw.bin
+ rtl_bt/rtl8852au_config.bin
+ rtl_bt/rtl8852au_fw.bin
  rtl_nic/rtl8105e-1.fw
  rtl_nic/rtl8106e-1.fw
  rtl_nic/rtl8106e-2.fw
