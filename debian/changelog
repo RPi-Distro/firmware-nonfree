@@ -1,4 +1,4 @@
-firmware-nonfree (202002XX-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210208-1) UNRELEASED; urgency=medium
 
   * New upstream version:
     - rtl_bt: Update RTL8821C BT(USB I/F) FW to 0x829a_7644
@@ -11,10 +11,21 @@ firmware-nonfree (202002XX-1) UNRELEASED; urgency=medium
     - brcm: Update Raspberry Pi 3B+/4B NVRAM for downstream changes
     - brcm: Add NVRAM for Vamrs 96boards Rock960
     - brcm: Link RPi4's WiFi firmware with DMI machine name.
-  * add rtl_bt/rtl8852au firmware and config.
-  * add rtl_bt/rtl8723bs firmware and config.
+    - qcom: add firmware files for Adreno a650
+    - qcom: Add SM8250 Audio DSP firmware
+    - qcom: Add SM8250 Compute DSP firmware
+    - qcom: Add venus firmware files for VPU-1.0
+    - i915: Add GuC v49.0.1 for DG1
+    - i915: Add HuC v7.7.1 for DG1
+    - i915: Add DMC v2.01 for ADL-S
+    - linux-firmware: Update firmware file for Intel Bluetooth AX201
+    - linux-firmware: Update firmware file for Intel Bluetooth AX200
+    - linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - rtw88: RTL8821C: Update firmware to v24.8
+    - linux-firmware: add firmware for MT7921
+    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.2304
 
- -- maximilian attems <maks@debian.org>  Mon, 25 Jan 2021 20:40:06 +0100
+ -- maximilian attems <maks@debian.org>  Mon, 08 Feb 2021 16:38:55 +0100
 
 firmware-nonfree (20201218-3) unstable; urgency=medium
 
