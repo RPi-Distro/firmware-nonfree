@@ -25,6 +25,7 @@ firmware-nonfree (20210208-1) UNRELEASED; urgency=medium
     - linux-firmware: add firmware for MT7921
   * add rtl_bt/rtl8852au firmware and config.
   * add rtl_bt/rtl8723bs firmware and config.
+  * Update to linux-support 5.10.0-3.
 
  -- maximilian attems <maks@debian.org>  Mon, 08 Feb 2021 16:38:55 +0100
 
