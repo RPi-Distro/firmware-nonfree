@@ -23,7 +23,6 @@ firmware-nonfree (20210208-1) UNRELEASED; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth AX210
     - rtw88: RTL8821C: Update firmware to v24.8
     - linux-firmware: add firmware for MT7921
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.2304
   * add rtl_bt/rtl8852au firmware and config.
   * add rtl_bt/rtl8723bs firmware and config.
 
