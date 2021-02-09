@@ -16,6 +16,8 @@ files:
  qcom/a530v3_gpmu.fw2
  qcom/a630_gmu.bin
  qcom/a630_sqe.fw
+ qcom/a650_gmu.bin
+ qcom/a650_sqe.fw
  qcom/sdm845/a630_zap.mbn
  qcom/sdm845/adsp.mbn
  qcom/sdm845/adspr.jsn
@@ -26,6 +28,7 @@ files:
  qcom/sdm845/modem.mbn
  qcom/sdm845/modemuw.jsn
  qcom/sdm845/wlanmdsp.mbn
+ qcom/sm8250/a650_zap.mbn
  qcom/venus-1.8/venus.b00
  qcom/venus-1.8/venus.b01
  qcom/venus-1.8/venus.b02
@@ -86,6 +89,12 @@ desc: Qualcomm Adreno 630 GMU firmware
 [qcom/a630_sqe.fw_base]
 desc: Qualcomm Adreno 630 SQE firmware
 
+[qcom/a650_gmu.bin_base]
+desc: Qualcomm Adreno 650 GMU firmware
+
+[qcom/a650_sqe.fw_base]
+desc: Qualcomm Adreno 650 SQE firmware
+
 [qcom/sdm845/a630_zap.mbn_base]
 desc: Qualcomm Adreno 630 SDM845 ZAP firmware
 
@@ -112,6 +121,9 @@ desc: Qualcomm SDM845 modem firmware
 
 [qcom/sdm845/modemuw.jsn_base]
 desc: Qualcomm SDM845 modem configuration
+
+[qcom/sm8250/a650_zap.mbn_base]
+desc: Qualcomm SM8250 ZAP firmware
 
 [qcom/venus-1.8/venus.b00_base]
 desc: Qualcomm Venus 1.8 firmware part 0
