@@ -32,6 +32,8 @@ files:
  qcom/sm8250/adsp.mbn
  qcom/sm8250/adspr.jsn
  qcom/sm8250/adspua.jsn
+ qcom/sm8250/cdsp.mbn
+ qcom/sm8250/cdspr.jsn
  qcom/venus-1.8/venus.b00
  qcom/venus-1.8/venus.b01
  qcom/venus-1.8/venus.b02
@@ -136,6 +138,12 @@ desc: Qualcomm SM8250 audio general config
 
 [qcom/sm8250/adspua.jsn_base]
 desc: Qualcomm SM8250 audio config
+
+[qcom/sm8250/cdsp.mbn_base]
+desc: Qualcomm SM8250 compute DSP firmware
+
+[qcom/sm8250/cdspr.jsn_base]
+desc: Qualcomm SM8250 compute DSP config
 
 [qcom/venus-1.8/venus.b00_base]
 desc: Qualcomm Venus 1.8 firmware part 0
