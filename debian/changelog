@@ -1,4 +1,4 @@
-firmware-nonfree (20210208-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210208-1) unstable; urgency=medium
 
   * New upstream version:
     - rtl_bt: Update RTL8821C BT(USB I/F) FW to 0x829a_7644
@@ -27,7 +27,7 @@ firmware-nonfree (20210208-1) UNRELEASED; urgency=medium
   * add rtl_bt/rtl8723bs firmware and config.
   * Update to linux-support 5.10.0-3.
 
- -- maximilian attems <maks@debian.org>  Mon, 08 Feb 2021 16:38:55 +0100
+ -- maximilian attems <maks@debian.org>  Tue, 09 Feb 2021 11:15:52 +0100
 
 firmware-nonfree (20201218-3) unstable; urgency=medium
 
