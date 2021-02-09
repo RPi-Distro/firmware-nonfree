@@ -29,6 +29,9 @@ files:
  qcom/sdm845/modemuw.jsn
  qcom/sdm845/wlanmdsp.mbn
  qcom/sm8250/a650_zap.mbn
+ qcom/sm8250/adsp.mbn
+ qcom/sm8250/adspr.jsn
+ qcom/sm8250/adspua.jsn
  qcom/venus-1.8/venus.b00
  qcom/venus-1.8/venus.b01
  qcom/venus-1.8/venus.b02
@@ -124,6 +127,15 @@ desc: Qualcomm SDM845 modem configuration
 
 [qcom/sm8250/a650_zap.mbn_base]
 desc: Qualcomm SM8250 ZAP firmware
+
+[qcom/sm8250/adsp.mbn_base]
+desc: Qualcomm SM8250 audio firmware
+
+[qcom/sm8250/adspr.jsn_base]
+desc: Qualcomm SM8250 audio general config
+
+[qcom/sm8250/adspua.jsn_base]
+desc: Qualcomm SM8250 audio config
 
 [qcom/venus-1.8/venus.b00_base]
 desc: Qualcomm Venus 1.8 firmware part 0
