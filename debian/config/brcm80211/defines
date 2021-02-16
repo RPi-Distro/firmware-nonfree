@@ -14,16 +14,16 @@ files:
  brcm/brcmfmac4330-sdio.bin
  brcm/brcmfmac4334-sdio.bin
  brcm/brcmfmac4335-sdio.bin
- brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
- brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
  brcm/brcmfmac43430a0-sdio.bin
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
- brcm/brcmfmac4350-pcie.bin
+ brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
+ brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
  brcm/brcmfmac4350c2-pcie.bin
+ brcm/brcmfmac4350-pcie.bin
+ brcm/brcmfmac43569.bin
  brcm/brcmfmac4356-pcie.gpd-win-pocket.txt
  brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac4356-sdio.vamrs,rock960.txt
- brcm/brcmfmac43569.bin
  brcm/brcmfmac4358-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
