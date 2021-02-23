@@ -3,6 +3,8 @@ desc: Broadcom/Cypress 802.11 wireless cards
 files:
  brcm/bcm43xx-0.fw
  brcm/bcm43xx_hdr-0.fw
+ brcm/brcmfmac43012-sdio.clm_blob
+ brcm/brcmfmac43012-sdio.bin
  brcm/brcmfmac43143.bin
  brcm/brcmfmac43143-sdio.bin
  brcm/brcmfmac43236b.bin
@@ -14,23 +16,47 @@ files:
  brcm/brcmfmac4330-sdio.bin
  brcm/brcmfmac4334-sdio.bin
  brcm/brcmfmac4335-sdio.bin
+ brcm/brcmfmac43340-sdio.bin
+ brcm/brcmfmac43362-sdio.bin
+ brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
+ brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
+ brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
+ brcm/brcmfmac4339-sdio.bin
+ brcm/brcmfmac43430-sdio.bin
+ brcm/brcmfmac43430-sdio.clm_blob
  brcm/brcmfmac43430a0-sdio.bin
  brcm/brcmfmac43430-sdio.AP6212.txt
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+ brcm/brcmfmac43455-sdio.bin
+ brcm/brcmfmac43455-sdio.clm_blob
+ brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+ brcm/brcmfmac43455-sdio.Raspberry\ Pi\ Foundation-Raspberry\ Pi\ 4\ Model\ B.txt
  brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4350-pcie.bin
+ brcm/brcmfmac4354-sdio.bin
+ brcm/brcmfmac4354-sdio.clm_blob
  brcm/brcmfmac43569.bin
+ brcm/brcmfmac4356-pcie.bin
  brcm/brcmfmac4356-pcie.gpd-win-pocket.txt
  brcm/brcmfmac4356-sdio.bin
+ brcm/brcmfmac4356-pcie.clm_blob
+ brcm/brcmfmac4356-sdio.bin
+ brcm/brcmfmac4356-sdio.clm_blob
  brcm/brcmfmac4356-sdio.vamrs,rock960.txt
  brcm/brcmfmac4358-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
  brcm/brcmfmac4366b-pcie.bin
+ brcm/brcmfmac43570-pcie.bin
+ brcm/brcmfmac43570-pcie.clm_blob
  brcm/brcmfmac4371-pcie.bin
  brcm/brcmfmac4373.bin
+ brcm/brcmfmac4373-sdio.bin
+ brcm/brcmfmac4373-sdio.clm_blob
+ brcm/brcmfmac54591-pcie.bin
+ brcm/brcmfmac54591-pcie.clm_blob
  cypress/cyfmac43012-sdio.bin
  cypress/cyfmac43012-sdio.clm_blob
  cypress/cyfmac43340-sdio.bin
