@@ -21,8 +21,6 @@ files:
  brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
- brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt
- brcm/brcmfmac43430-sdio.sinovoip,bpi-m3.txt
  brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43430-sdio.bin
  brcm/brcmfmac43430-sdio.clm_blob
@@ -34,7 +32,6 @@ files:
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
- brcm/brcmfmac43455-sdio.Raspberry\ Pi\ Foundation-Raspberry\ Pi\ 4\ Model\ B.txt
  brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4350-pcie.bin
  brcm/brcmfmac4354-sdio.bin
