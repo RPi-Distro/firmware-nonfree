@@ -1,4 +1,4 @@
-firmware-nonfree (20210208-3) UNRELEASED; urgency=medium
+firmware-nonfree (20210208-3) unstable; urgency=medium
 
   * misc-nonfree: Add missing config files for cxgb4 (closes: #983561)
   * Add missing intel firmwares in iwlwifi, intel-sound, misc-nonfree.
@@ -6,7 +6,7 @@ firmware-nonfree (20210208-3) UNRELEASED; urgency=medium
   * Complete all MediaTek firmwares.
     Thanks to Cyril Brulebois <kibi@debian.org>.
 
- -- maximilian attems <maks@debian.org>  Wed, 24 Feb 2021 13:07:14 +0100
+ -- maximilian attems <maks@debian.org>  Fri, 26 Feb 2021 14:31:24 +0100
 
 firmware-nonfree (20210208-2) unstable; urgency=medium
 
