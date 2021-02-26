@@ -1,3 +1,10 @@
+firmware-nonfree (20210208-3) UNRELEASED; urgency=medium
+
+  * misc-nonfree: Add missing config files for cxgb4 (closes: #983561)
+  * Add missing intel firmwares in iwlwifi, intel-sound, misc-nonfree.
+
+ -- maximilian attems <maks@debian.org>  Wed, 24 Feb 2021 13:07:14 +0100
+
 firmware-nonfree (20210208-2) unstable; urgency=medium
 
   * Add missing brcmfmac43430-sdio.AP6212.txt config. (#982579)
