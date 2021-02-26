@@ -85,6 +85,7 @@ files:
  iwlwifi-9260-th-b0-jf-b0-34.ucode
  iwlwifi-9260-th-b0-jf-b0-38.ucode
  iwlwifi-9260-th-b0-jf-b0-41.ucode
+ iwlwifi-9260-th-b0-jf-b0-43.ucode
  iwlwifi-9260-th-b0-jf-b0-46.ucode
  iwlwifi-Qu-b0-hr-b0-48.ucode
  iwlwifi-Qu-b0-hr-b0-50.ucode
@@ -454,6 +455,10 @@ version: 38.755cfdd8.0
 [iwlwifi-9260-th-b0-jf-b0-41.ucode_base]
 desc: Intel Wireless 9260 firmware
 version: 41.fc1a7aea.0
+
+[iwlwifi-9260-th-b0-jf-b0-43.ucode_base]
+desc: Intel Wireless 9260 firmware
+version: 43.95eb4e97
 
 [iwlwifi-9260-th-b0-jf-b0-46.ucode_base]
 desc: Intel Wireless 9260 firmware
