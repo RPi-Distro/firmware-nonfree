@@ -1139,6 +1139,10 @@ version: 1.1.16
 desc: MediaTek MT8173 VPU_P firmware
 version: 1.1.16
 
+[mediatek/mt8183/scp.img_base]
+desc: MediaTek mt8183 SCP firmware
+version: v12573.77
+
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
 version: 20210122002654a
