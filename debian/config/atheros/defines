@@ -135,6 +135,7 @@ files:
  qca/nvm_00230302.bin
  qca/nvm_00440302.bin
  qca/nvm_00440302_eu.bin
+ qca/nvm_00440302_i2s_eu.bin
  qca/nvm_usb_00000200.bin
  qca/nvm_usb_00000201.bin
  qca/nvm_usb_00000300.bin
@@ -522,6 +523,9 @@ desc: Qualcomm Atheros QCA9377 Bluetooth firmware
 desc: Qualcomm Atheros QCA6174 BT NVM configuration
 
 [qca/nvm_00440302_eu.bin_base]
+desc: Qualcomm Atheros QCA6174 BT NVM firmware
+
+[qca/nvm_00440302_i2s_eu.bin_base]
 desc: Qualcomm Atheros QCA6174 BT NVM firmware
 
 [qca/nvm_usb_00000200.bin_base]
