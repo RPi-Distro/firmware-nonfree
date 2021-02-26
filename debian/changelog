@@ -3,6 +3,7 @@ firmware-nonfree (20210208-3) UNRELEASED; urgency=medium
   * misc-nonfree: Add missing config files for cxgb4 (closes: #983561)
   * Add missing intel firmwares in iwlwifi, intel-sound, misc-nonfree.
   * Ship all Qualcomm Atheros Bluetooth firmwares.
+  * Complete all MediaTek firmwares.
 
  -- maximilian attems <maks@debian.org>  Wed, 24 Feb 2021 13:07:14 +0100
 
