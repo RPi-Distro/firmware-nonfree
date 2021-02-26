@@ -39,6 +39,11 @@ files:
  cxgb4/t6fw.bin
  cxgb4/t6fw-1.24.17.0.bin
  cxgb4/t6-config.txt
+ cxgb4/configs/t4-config-default.txt
+ cxgb4/configs/t5-config-default.txt
+ cxgb4/configs/t6-config-default.txt
+ cxgb4/configs/t5-config-hashfilter.txt
+ cxgb4/configs/t6-config-hashfilter.txt
  dabusb/bitstream.bin
  dabusb/firmware.fw
  dvb-fe-xc4000-1.4.1.fw
@@ -666,6 +671,21 @@ version: 1.24.14.0
 [cxgb4/t6fw-1.24.14.0.bin_base]
 desc: Chelsio T6 firmware
 version: 1.24.14.0
+
+[cxgb4/configs/t4-config-default.txt_base]
+desc: Chelsio T4 config
+
+[cxgb4/configs/t5-config-default.txt_base]
+desc: Chelsio T5 config
+
+[cxgb4/configs/t6-config-default.txt_base]
+desc: Chelsio T6 config
+
+[cxgb4/configs/t5-config-hashfilter.txt_base]
+desc: Chelsio T5 hashfilter config
+
+[cxgb4/configs/t6-config-hashfilter.txt_base]
+desc: Chelsio T6 hashfilter config
 
 [dabusb/firmware.fw_base]
 desc: DAB-USB firmware
