@@ -4,6 +4,7 @@ firmware-nonfree (20210208-3) UNRELEASED; urgency=medium
   * Add missing intel firmwares in iwlwifi, intel-sound, misc-nonfree.
   * Ship all Qualcomm Atheros Bluetooth firmwares.
   * Complete all MediaTek firmwares.
+    Thanks to Cyril Brulebois <kibi@debian.org>.
 
  -- maximilian attems <maks@debian.org>  Wed, 24 Feb 2021 13:07:14 +0100
 
