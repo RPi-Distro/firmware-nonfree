@@ -132,6 +132,7 @@ files:
  qca/htnv20.bin
  qca/nvm_00130300.bin
  qca/nvm_00130302.bin
+ qca/nvm_00230302.bin
  qca/nvm_00440302.bin
  qca/nvm_usb_00000200.bin
  qca/nvm_usb_00000201.bin
@@ -512,6 +513,9 @@ desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration
 
 [qca/nvm_00130302.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.2 UART BT NVM configuration
+
+[qca/nvm_00230302.bin_base]
+desc: Qualcomm Atheros QCA9377 Bluetooth firmware
 
 [qca/nvm_00440302.bin_base]
 desc: Qualcomm Atheros QCA6174 BT NVM configuration
