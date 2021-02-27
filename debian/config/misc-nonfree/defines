@@ -176,6 +176,7 @@ files:
  mediatek/mt7915_rom_patch.bin
  mediatek/mt8173/vpu_d.bin
  mediatek/mt8173/vpu_p.bin
+ mediatek/mt8183/scp.img
  mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin
  mediatek/WIFI_RAM_CODE_MT7961_1.bin
  moxa/moxa-1110.fw
