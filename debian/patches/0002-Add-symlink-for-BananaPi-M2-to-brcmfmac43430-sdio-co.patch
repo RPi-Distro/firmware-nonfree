@@ -1,0 +1,34 @@
+From aa6c6e75b44b90bf9e46f3ebed95e25b0ceda8ec Mon Sep 17 00:00:00 2001
+From: maximilian attems <maks@stro.at>
+Date: Tue, 16 Feb 2021 19:44:21 +0100
+Subject: [PATCH 2/6] Add symlink for BananaPi M2 to brcmfmac43430-sdio config
+
+Fixes ( Debian bug #982579 [1]):
+ [   10.514530] brcmfmac mmc2:0001:1: firmware: direct-loading firmware brcm/brcmfmac43430-sdio.bin
+ [   10.514732] brcmfmac mmc2:0001:1: firmware: failed to load brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt ( -2)
+
+Refs:
+[1] https://bugs.debian.org/982579
+
+Reported-by: Bernhard <bewoern1@gmail.com>
+Signed-off-by: maximilian attems <maks@stro.at>
+Signed-off-by: Josh Boyer <jwboyer@kernel.org>
+---
+ WHENCE | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/WHENCE b/WHENCE
+index aa96404..11c0970 100644
+--- a/WHENCE
++++ b/WHENCE
+@@ -2716,6 +2716,7 @@ File: "brcm/brcmfmac43430a0-sdio.ONDA-V80 PLUS.txt"
+ File: "brcm/brcmfmac43430-sdio.AP6212.txt"
+ Link: brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt -> brcmfmac43430-sdio.AP6212.txt
+ Link: brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt -> brcmfmac43430-sdio.AP6212.txt
++Link: brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt -> brcmfmac43430-sdio.AP6212.txt
+ File: "brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt"
+ File: "brcm/brcmfmac43430-sdio.MUR1DX.txt"
+ File: "brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt"
+-- 
+2.30.1
+
