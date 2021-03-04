@@ -21,6 +21,8 @@ files:
  brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
+ brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt
+ brcm/brcmfmac43430-sdio.sinovoip,bpi-m3.txt
  brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43430-sdio.bin
  brcm/brcmfmac43430-sdio.clm_blob

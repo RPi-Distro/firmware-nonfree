@@ -3,6 +3,7 @@ firmware-nonfree (20210208-4) UNRELEASED; urgency=medium
   * List MediaTek mt8183 firmware.
   * Update to linux-support 5.10.0-4.
   * Add upstream fix for Raspberry Pi 4B. (closes: #984489)
+  * Support BananaPi M2 ultra and BananaPi M3. (closes: #982579)
 
  -- maximilian attems <maks@debian.org>  Fri, 26 Feb 2021 15:40:25 +0100
 
