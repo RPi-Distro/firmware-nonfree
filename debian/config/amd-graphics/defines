@@ -39,6 +39,7 @@ files:
  amdgpu/fiji_smc.bin
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
+ amdgpu/green_sardine_asd.bin
  amdgpu/green_sardine_ce.bin
  amdgpu/green_sardine_dmcub.bin
  amdgpu/green_sardine_me.bin
@@ -740,6 +741,9 @@ version: 1.87.12
 
 [amdgpu/fiji_vce.bin_base]
 desc: "Fiji" VCE firmware
+
+[amdgpu/green_sardine_asd.bin_base]
+desc: AMD RYZEN 5000 ASD firmware
 
 [amdgpu/green_sardine_ce.bin_base]
 desc: AMD RYZEN 5000 CE firmware
