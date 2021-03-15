@@ -39,6 +39,16 @@ files:
  amdgpu/fiji_smc.bin
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
+ amdgpu/green_sardine_ce.bin
+ amdgpu/green_sardine_dmcub.bin
+ amdgpu/green_sardine_me.bin
+ amdgpu/green_sardine_mec2.bin
+ amdgpu/green_sardine_mec.bin
+ amdgpu/green_sardine_pfp.bin
+ amdgpu/green_sardine_rlc.bin
+ amdgpu/green_sardine_sdma.bin
+ amdgpu/green_sardine_ta.bin
+ amdgpu/green_sardine_vcn.bin
  amdgpu/hainan_ce.bin
  amdgpu/hainan_k_smc.bin
  amdgpu/hainan_mc.bin
@@ -730,6 +740,36 @@ version: 1.87.12
 
 [amdgpu/fiji_vce.bin_base]
 desc: "Fiji" VCE firmware
+
+[amdgpu/green_sardine_ce.bin_base]
+desc: AMD RYZEN 5000 CE firmware
+
+[amdgpu/green_sardine_dmcub.bin_base]
+desc: AMD RYZEN 5000 DMCUB firmware
+
+[amdgpu/green_sardine_me.bin_base]
+desc: AMD RYZEN 5000 ME firmware
+
+[amdgpu/green_sardine_mec2.bin_base]
+desc: AMD RYZEN 5000 MEC2 firmware
+
+[amdgpu/green_sardine_mec.bin_base]
+desc: AMD RYZEN 5000 MEC firmware
+
+[amdgpu/green_sardine_pfp.bin_base]
+desc: AMD RYZEN 5000 PFP firmware
+
+[amdgpu/green_sardine_rlc.bin_base]
+desc: AMD RYZEN 5000 RLC firmware
+
+[amdgpu/green_sardine_sdma.bin_base]
+desc: AMD RYZEN 5000 SDMA firmware
+
+[amdgpu/green_sardine_ta.bin_base]
+desc: AMD RYZEN 5000 TA firmware
+
+[amdgpu/green_sardine_vcn.bin_base]
+desc: AMD RYZEN 5000 VCN firmware
 
 [amdgpu/hainan_ce.bin_base]
 desc: Radeon HD 8500M series and R5 M200 CE microcode
