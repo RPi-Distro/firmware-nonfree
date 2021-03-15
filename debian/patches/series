@@ -1,4 +1,1 @@
 gitignore.patch
-0001-brcm-Fix-Raspberry-Pi-4B-NVRAM-file.patch
-0002-Add-symlink-for-BananaPi-M2-to-brcmfmac43430-sdio-co.patch
-0003-WHENCE-add-missing-symlink-for-BananaPi-M3.patch
