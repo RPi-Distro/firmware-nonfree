@@ -1,7 +1,7 @@
 firmware-nonfree (20210315-1) UNRELEASED; urgency=medium
 
   * New upstream version:
-    - rtw88: RTL8822C: Update normal firmware to v9.9.5
+    - rtw88: RTL8822C: Update normal firmware to v9.9.5 (closes: #983255)
     - amdgpu: add initial firmware for green sardine (closes: #984852)
     - silabs: add new firmware for WF200
     - brcm: Fix Raspberry Pi 4B NVRAM file
