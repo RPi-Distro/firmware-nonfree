@@ -574,6 +574,7 @@ files:
  rt73.bin
  s2250.fw
  s2250_loader.fw
+ silabs/wfm_wf200_C0.sec
  tehuti/bdx.bin
  tigon/tg3_tso.bin
  tigon/tg3.bin
@@ -1319,6 +1320,10 @@ version: 1
 [rt73.bin_base]
 desc: Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware
 version: 1.8
+
+[silabs/wfm_wf200_C0.sec_base]
+desc: Silicon Labs WF200 firmware
+Version: 3.12.1
 
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
