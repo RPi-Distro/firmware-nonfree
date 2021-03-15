@@ -155,6 +155,7 @@ files:
  lt9611uxc_fw.bin
  matrox/g200_warp.fw
  matrox/g400_warp.fw
+ mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin
  mediatek/mt7610e.bin
  mediatek/mt7610u.bin
  mediatek/mt7615_cr4.bin
@@ -1074,6 +1075,10 @@ desc: Matrox G200 WARP engine microcode
 
 [matrox/g400_warp.fw_base]
 desc: Matrox G400/G550 WARP engine microcode
+
+[mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
+desc: MediaTek MT7961 bluetooth firmware
+version: 20210223142901
 
 [mediatek/mt7610e.bin_base]
 desc: MediaTek MT76x0 wifi firmware
