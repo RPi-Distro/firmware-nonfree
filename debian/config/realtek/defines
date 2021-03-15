@@ -95,6 +95,7 @@ files:
  rtw88/rtw8822c_fw.bin
  rtw88/rtw8822c_wow_fw.bin
  rtw88/rtw8723d_fw.bin
+ rtw89/rtw8852a_fw.bin
 
 longdesc: Realtek Ethernet, wifi and Bluetooth adapters supported by various
  drivers
@@ -400,3 +401,7 @@ desc: Realtek 8822C firmware
 
 [rtw88/rtw88/rtw8723d_fw.bin_base]
 desc: Realtek RTW8723D firmware
+
+[rtw89/rtw8852a_fw.bin_base]
+desc: Realtek RTL8852A firmware
+version: v0.9.12.2
