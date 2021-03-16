@@ -1,4 +1,4 @@
-firmware-nonfree (20210315-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210315-1~exp1) experimental; urgency=medium
 
   * New upstream version:
     - rtw88: RTL8822C: Update normal firmware to v9.9.5 (closes: #983255)
@@ -10,14 +10,14 @@ firmware-nonfree (20210315-1) UNRELEASED; urgency=medium
     - rtw89: 8852a: add firmware v0.9.12.2
     - linux-firmware: add frimware for mediatek bluetooth chip (MT7921)
     - iwlwifi: update 7265D firmware
-    - iwlwifi: update 9000-family firmwares
+    - iwlwifi: update 9000-family firmwares (closes: #963025)
     - iwlwifi: add new FWs from core59-66 release
     - rtw88: 8822c: Update normal firmware to v9.9.6
     - linux-firmware: Update firmware file for Intel Bluetooth AX201
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
     - linux-firmware: Update firmware file for Intel Bluetooth AX210
 
- -- maximilian attems <maks@debian.org>  Mon, 15 Mar 2021 12:56:56 +0100
+ -- maximilian attems <maks@debian.org>  Mon, 16 Mar 2021 16:56:56 +0100
 
 firmware-nonfree (20210208-4) unstable; urgency=medium
 
