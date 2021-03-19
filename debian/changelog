@@ -1,3 +1,9 @@
+firmware-nonfree (20210315-1) UNRELEASED; urgency=medium
+
+  * Unstable upload of green sardine support (closes: #984874)
+
+ -- maximilian attems <maks@debian.org>  Fri, 19 Mar 2021 16:56:56 +0100
+
 firmware-nonfree (20210315-1~exp1) experimental; urgency=medium
 
   * New upstream version:
@@ -17,7 +23,7 @@ firmware-nonfree (20210315-1~exp1) experimental; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth AX200
     - linux-firmware: Update firmware file for Intel Bluetooth AX210
 
- -- maximilian attems <maks@debian.org>  Mon, 16 Mar 2021 16:56:56 +0100
+ -- maximilian attems <maks@debian.org>  Tue, 16 Mar 2021 16:56:56 +0100
 
 firmware-nonfree (20210208-4) unstable; urgency=medium
 
