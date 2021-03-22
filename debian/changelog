@@ -1,8 +1,8 @@
-firmware-nonfree (20210315-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210315-1) unstable; urgency=medium
 
   * Unstable upload of green sardine support (closes: #984874)
 
- -- maximilian attems <maks@debian.org>  Fri, 19 Mar 2021 16:56:56 +0100
+ -- maximilian attems <maks@debian.org>  Sat, 20 Mar 2021 19:14:23 +0100
 
 firmware-nonfree (20210315-1~exp1) experimental; urgency=medium
 
