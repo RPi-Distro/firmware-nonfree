@@ -18,7 +18,9 @@ files:
  brcm/brcmfmac4335-sdio.bin
  brcm/brcmfmac43340-sdio.bin
  brcm/brcmfmac43362-sdio.bin
+ brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt
  brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
+ brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt
@@ -118,6 +120,12 @@ desc: Broadcom BCM4330 firmware
 
 [brcm/brcmfmac4334-sdio.bin_base]
 desc: Broadcom BCM4334 firmware
+
+[brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt_base]
+desc: Cubietech Cubietruck Ampak AP6210 Wifi/BT NVRAM
+
+[brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt_base]
+desc: Jumper EZpad mini 3 tablet AP6210 Wifi/BT NVRAM
 
 [brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt_base]
 desc: BCM43455 NVRAM for the Raspberry Pi 3 B+
