@@ -1,6 +1,7 @@
 [base]
 desc: Qualcomm SoCs
 longdesc: Qualcomm Snapdragon SoCs
+depends: firmware-atheros
 replaces: firmware-qcom-media (<< 20200421-1~)
 breaks: firmware-qcom-media (<< 20200421-1~)
 files:
