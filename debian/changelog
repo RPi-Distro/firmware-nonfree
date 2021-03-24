@@ -1,7 +1,7 @@
 firmware-nonfree (20210315-2) UNRELEASED; urgency=medium
 
   * Support Cubietech Cubietruck and Jumper EZpad mini 3 tablet
-    (closes: #985740)
+    (closes: #985740, #844056)
   * Add firmware-atheros depends to firmware-qcom-soc (closes: #985743)
     Thanks to Andreas Beckmann <anbe@debian.org>
 
