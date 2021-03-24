@@ -4,6 +4,7 @@ firmware-nonfree (20210315-2) UNRELEASED; urgency=medium
     (closes: #985740, #844056)
   * Add firmware-atheros depends to firmware-qcom-soc (closes: #985743)
     Thanks to Andreas Beckmann <anbe@debian.org>
+  * Add missing brcmfmac4366c firmware.
 
  -- maximilian attems <maks@debian.org>  Sat, 20 Mar 2021 19:14:23 +0100
 

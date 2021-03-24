@@ -52,6 +52,7 @@ files:
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
  brcm/brcmfmac4366b-pcie.bin
+ brcm/brcmfmac4366c-pcie.bin
  brcm/brcmfmac43570-pcie.bin
  brcm/brcmfmac43570-pcie.clm_blob
  brcm/brcmfmac4371-pcie.bin
@@ -174,6 +175,9 @@ desc: Broadcom BCM43602 firmware
 
 [brcm/brcmfmac4366b-pcie.bin_base]
 desc: Broadcom BCM4366 firmware
+
+[brcm/brcmfmac4366c-pcie.bin_base]
+desc: Broadcom BCM4366 3x3 802.11 ac firmware
 
 [brcm/brcmfmac4371-pcie.bin_base]
 desc: Broadcom BCM4371 firmware
