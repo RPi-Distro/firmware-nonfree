@@ -14,6 +14,9 @@ files:
  brcm/brcmfmac43242a.bin
  brcm/brcmfmac4329-sdio.bin
  brcm/brcmfmac4330-sdio.bin
+ brcm/brcmfmac4330-sdio.Prowise-PT301.txt
+ brcm/brcmfmac43340-sdio.meegopad-t08.txt
+ brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt
  brcm/brcmfmac4334-sdio.bin
  brcm/brcmfmac4335-sdio.bin
  brcm/brcmfmac43340-sdio.bin
@@ -30,6 +33,8 @@ files:
  brcm/brcmfmac43430-sdio.clm_blob
  brcm/brcmfmac43430a0-sdio.bin
  brcm/brcmfmac43430-sdio.AP6212.txt
+ brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt
+ brcm/brcmfmac43430-sdio.MUR1DX.txt
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
  brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac43455-sdio.clm_blob
@@ -119,11 +124,26 @@ desc: Broadcom BCM4329 firmware
 [brcm/brcmfmac4330-sdio.bin_base]
 desc: Broadcom BCM4330 firmware
 
+[brcm/brcmfmac4330-sdio.Prowise-PT301.txt_base]
+desc: Broadcom BCM4330 Prowise PT301 tablet NVRAM
+
 [brcm/brcmfmac4334-sdio.bin_base]
 desc: Broadcom BCM4334 firmware
 
 [brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt_base]
 desc: Cubietech Cubietruck Ampak AP6210 Wifi/BT NVRAM
+
+[brcm/brcmfmac43340-sdio.meegopad-t08.txt_base]
+desc: Broadcom BCM43340 Meegopad T08 HDMI stick NVRAM
+
+[brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt_base]
+desc: Broadcom BCM43340 PoV TAB-P1006W-232 tablet NVRAM
+
+[brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt_base]
+desc: Broadcom BCM43430 Chuwi Vi8 Plus tablet NVRAM
+
+[brcm/brcmfmac43430-sdio.MUR1DX.txt_base]
+desc: Broadcom BCM43430 Murata 1DX NVRAM
 
 [brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt_base]
 desc: Jumper EZpad mini 3 tablet AP6210 Wifi/BT NVRAM
