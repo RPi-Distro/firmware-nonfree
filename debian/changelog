@@ -2,6 +2,7 @@ firmware-nonfree (20210315-3) UNRELEASED; urgency=medium
 
   * Update to linux-support 5.10.0-6
   * debian/bin: Add update-modinfo script to maintain cache of module info
+  * Add module info from linux 5.10.28-1 on amd64
 
  -- Ben Hutchings <benh@debian.org>  Fri, 30 Apr 2021 05:08:23 +0200
 
