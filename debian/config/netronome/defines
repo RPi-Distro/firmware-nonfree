@@ -35,6 +35,7 @@ files:
  netronome/nic_AMDA0097-0001_8x10.nffw
  netronome/nic_AMDA0099-0001_2x10.nffw
  netronome/nic_AMDA0099-0001_2x25.nffw
+support: initramfs-tools
 
 [netronome/flower/nic_AMDA0096.nffw_base]
 desc: Agilio CX 2x10GbE flower firmware

@@ -35,6 +35,7 @@ files:
  ath10k/QCA9377/hw1.0/board.bin
  ath10k/QCA9377/hw1.0/board-2.bin
  ath10k/QCA9377/hw1.0/firmware-5.bin
+ ath10k/QCA9377/hw1.0/firmware-6.bin
  ath10k/QCA9887/hw1.0/board.bin
  ath10k/QCA9887/hw1.0/firmware-5.bin
  ath10k/QCA9888/hw2.0/board-2.bin
@@ -211,7 +212,11 @@ version: 2
 
 [ath10k/QCA9377/hw1.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA9377 rev 1.0 firmware
-version: WLAN.TF.1.0-00002-QCATFSWPZ-5
+version: WLAN.TF.1.0-00267-1
+
+[ath10k/QCA9377/hw1.0/firmware-6.bin_base]
+desc: Qualcomm Atheros QCA9377 rev 1.0 firmware
+version: WLAN.TF.2.1-00021-QCARMSWP-1
 
 [ath10k/QCA9887/hw1.0/board.bin_base]
 desc: Qualcomm Atheros QCA9887 rev 1.0 board configuration

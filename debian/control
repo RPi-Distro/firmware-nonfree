@@ -724,7 +724,9 @@ Description: Binary firmware for Atheros wireless cards
   * Qualcomm Atheros QCA9377 rev 1.0 board configuration, version 2
     (ath10k/QCA9377/hw1.0/board-2.bin)
   * Qualcomm Atheros QCA9377 rev 1.0 firmware, version
-    WLAN.TF.1.0-00002-QCATFSWPZ-5 (ath10k/QCA9377/hw1.0/firmware-5.bin)
+    WLAN.TF.1.0-00267-1 (ath10k/QCA9377/hw1.0/firmware-5.bin)
+  * Qualcomm Atheros QCA9377 rev 1.0 firmware, version
+    WLAN.TF.2.1-00021-QCARMSWP-1 (ath10k/QCA9377/hw1.0/firmware-6.bin)
   * Qualcomm Atheros QCA9887 rev 1.0 board configuration, version 1
     (ath10k/QCA9887/hw1.0/board.bin)
   * Qualcomm Atheros QCA9887 rev 1.0 firmware, version 10.2.4-1.0-00041
@@ -1445,6 +1447,13 @@ Description: Binary firmware for various drivers in the Linux kernel
   * kaweth/trigger_code_fix.bin
   * Matrox G200 WARP engine microcode (matrox/g200_warp.fw)
   * Matrox G400/G550 WARP engine microcode (matrox/g400_warp.fw)
+  * MediaTek MT76x0 wifi firmware (mediatek/mt7610e.bin)
+  * MediaTek MT76x0 wifi firmware (mediatek/mt7610u.bin)
+  * MediaTek MT7622 Bluetooth firmware (mediatek/mt7622pr2h.bin)
+  * MediaTek MT76x0 wifi firmware (mediatek/mt7650e.bin)
+  * MediaTek MT76x2u wifi firmware (mediatek/mt7662u.bin)
+  * MediaTek MT76x2u wifi firmware (mediatek/mt7662u_rom_patch.bin)
+  * MediaTek MT7668 Bluetooth firmware (mediatek/mt7668pr2h.bin)
   * MOXA UPort 1110 firmware (moxa/moxa-1110.fw)
   * MOXA UPort 1130 firmware (moxa/moxa-1130.fw)
   * MOXA UPort 1130I firmware (moxa/moxa-1131.fw)
@@ -1633,6 +1642,25 @@ Description: Binary firmware for various drivers in the Linux kernel
   * nvidia/gp10b/pmu/desc.bin
   * nvidia/gp10b/pmu/image.bin
   * nvidia/gp10b/pmu/sig.bin
+  * nvidia/gv100/acr/bl.bin
+  * nvidia/gv100/acr/unload_bl.bin
+  * nvidia/gv100/acr/ucode_unload.bin
+  * nvidia/gv100/gr/fecs_bl.bin
+  * nvidia/gv100/gr/fecs_inst.bin
+  * nvidia/gv100/gr/fecs_data.bin
+  * nvidia/gv100/gr/fecs_sig.bin
+  * nvidia/gv100/gr/gpccs_bl.bin
+  * nvidia/gv100/gr/gpccs_inst.bin
+  * nvidia/gv100/gr/gpccs_data.bin
+  * nvidia/gv100/gr/gpccs_sig.bin
+  * nvidia/gv100/gr/sw_ctx.bin
+  * nvidia/gv100/gr/sw_nonctx.bin
+  * nvidia/gv100/gr/sw_bundle_init.bin
+  * nvidia/gv100/gr/sw_method_init.bin
+  * nvidia/gv100/nvdec/scrubber.bin
+  * nvidia/gv100/sec2/desc.bin
+  * nvidia/gv100/sec2/image.bin
+  * nvidia/gv100/sec2/sig.bin
   * nvidia/tegra124/vic03_ucode.bin
   * Nvidia Tegra 124 XHCI firmware, version 45.46
     (nvidia/tegra124/xusb.bin)
@@ -1913,6 +1941,7 @@ Description: Binary firmware for Realtek wired/wifi/BT adapters
   * Realtek RTL8821C Bluetooth firmware (rtl_bt/rtl8821c_fw.bin)
   * Realtek RTL8822B Bluetooth config (rtl_bt/rtl8822b_config.bin)
   * Realtek RTL8822B Bluetooth firmware (rtl_bt/rtl8822b_fw.bin)
+  * Realtek RTL8822CU Bluetooth firmware (rtl_bt/rtl8822cu_fw.bin)
   * Realtek RTL8105E-1 firmware (rtl_nic/rtl8105e-1.fw)
   * Realtek RTL8106E-1 firmware, version 0.0.1 (rtl_nic/rtl8106e-1.fw)
   * Realtek RTL8106E-2 firmware, version 0.0.1 (rtl_nic/rtl8106e-2.fw)

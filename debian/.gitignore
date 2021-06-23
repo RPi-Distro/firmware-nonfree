@@ -1,0 +1,12 @@
+*~
+.#*
+*.pyc
+/.debhelper/
+/build/
+/control
+/control.md5sum
+/files
+/firmware-*
+/rules.gen
+/stamps/
+!/*.lintian-overrides

@@ -529,6 +529,7 @@ files:
  radeon/verde_rlc.bin
  radeon/VERDE_smc.bin
  radeon/verde_smc.bin
+support: initramfs-tools
 
 [amdgpu/banks_k_2_smc.bin_base]
 desc: "Banks" K-2 SMC microcode

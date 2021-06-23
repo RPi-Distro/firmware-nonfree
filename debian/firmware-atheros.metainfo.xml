@@ -42,6 +42,7 @@ ath3k, ath6kl_sdio, ath6kl_usb, ath9k_htc, ath10k, or wilc6210 drivers.
     <firmware type="runtime">ath10k/QCA9377/hw1.0/board.bin</firmware>
     <firmware type="runtime">ath10k/QCA9377/hw1.0/board-2.bin</firmware>
     <firmware type="runtime">ath10k/QCA9377/hw1.0/firmware-5.bin</firmware>
+    <firmware type="runtime">ath10k/QCA9377/hw1.0/firmware-6.bin</firmware>
     <firmware type="runtime">ath10k/QCA9887/hw1.0/board.bin</firmware>
     <firmware type="runtime">ath10k/QCA9887/hw1.0/firmware-5.bin</firmware>
     <firmware type="runtime">ath10k/QCA9888/hw2.0/board-2.bin</firmware>

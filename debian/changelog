@@ -1,3 +1,31 @@
+firmware-nonfree (1:20190114-2+rpt1) buster; urgency=medium
+
+  * Set appropriate version
+
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 23 Jun 2021 13:02:13 +0100
+
+firmware-nonfree (20190114-2) buster; urgency=medium
+
+  [ Ben Hutchings ]
+  * Update to linux-support 4.19.0-5
+  * amd-graphics: Trigger update-initramfs when installed (Closes: #928510)
+  * cavium, netronome: Trigger update-initramfs when installed
+  * atheros: Add Qualcomm Atheros QCA9377 rev 1.0 firmware version
+    WLAN.TF.2.1-00021-QCARMSWP-1 (Closes: #903437, #919632, #927917)
+  * realtek: Add Realtek RTL8822CU Bluetooth firmware
+  * atheros: Revert change of QCA9377 rev 1.0 firmware in 20180518-1
+    (Closes: #919632)
+
+  [ Raphaël Hertzog ]
+  * misc-nonfree: Add firmware for MediaTek MT76x0/MT76x2u wireless chips
+    (Closes: #919452)
+  * misc-nonfree: Add firmware for MediaTek MT7622/MT7668 bluetooth chips
+
+  [ Romain Perier ]
+  * misc-nonfree: Add GV100 signed firmware (Closes: #928672)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Fri, 23 Aug 2019 02:04:48 +0100
+
 firmware-nonfree (1:20190114-1+rpt11) buster; urgency=medium
 
   * Update CYW43455 firmware

@@ -24,6 +24,7 @@ drivers.
     <firmware type="runtime">rtl_bt/rtl8821c_fw.bin</firmware>
     <firmware type="runtime">rtl_bt/rtl8822b_config.bin</firmware>
     <firmware type="runtime">rtl_bt/rtl8822b_fw.bin</firmware>
+    <firmware type="runtime">rtl_bt/rtl8822cu_fw.bin</firmware>
     <firmware type="runtime">rtl_nic/rtl8105e-1.fw</firmware>
     <firmware type="runtime">rtl_nic/rtl8106e-1.fw</firmware>
     <firmware type="runtime">rtl_nic/rtl8106e-2.fw</firmware>

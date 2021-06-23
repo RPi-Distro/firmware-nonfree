@@ -96,6 +96,13 @@ files:
  kaweth/trigger_code_fix.bin
  matrox/g200_warp.fw
  matrox/g400_warp.fw
+ mediatek/mt7610e.bin
+ mediatek/mt7610u.bin
+ mediatek/mt7622pr2h.bin
+ mediatek/mt7650e.bin
+ mediatek/mt7662u.bin
+ mediatek/mt7662u_rom_patch.bin
+ mediatek/mt7668pr2h.bin
  moxa/moxa-1110.fw
  moxa/moxa-1130.fw
  moxa/moxa-1131.fw
@@ -317,6 +324,25 @@ files:
  nvidia/gp10b/pmu/desc.bin
  nvidia/gp10b/pmu/image.bin
  nvidia/gp10b/pmu/sig.bin
+ nvidia/gv100/acr/bl.bin
+ nvidia/gv100/acr/unload_bl.bin
+ nvidia/gv100/acr/ucode_unload.bin
+ nvidia/gv100/gr/fecs_bl.bin
+ nvidia/gv100/gr/fecs_inst.bin
+ nvidia/gv100/gr/fecs_data.bin
+ nvidia/gv100/gr/fecs_sig.bin
+ nvidia/gv100/gr/gpccs_bl.bin
+ nvidia/gv100/gr/gpccs_inst.bin
+ nvidia/gv100/gr/gpccs_data.bin
+ nvidia/gv100/gr/gpccs_sig.bin
+ nvidia/gv100/gr/sw_ctx.bin
+ nvidia/gv100/gr/sw_nonctx.bin
+ nvidia/gv100/gr/sw_bundle_init.bin
+ nvidia/gv100/gr/sw_method_init.bin
+ nvidia/gv100/nvdec/scrubber.bin
+ nvidia/gv100/sec2/desc.bin
+ nvidia/gv100/sec2/image.bin
+ nvidia/gv100/sec2/sig.bin
  nvidia/tegra124/vic03_ucode.bin
  nvidia/tegra124/xusb.bin
  nvidia/tegra186/vic04_ucode.bin
@@ -634,6 +660,27 @@ desc: Matrox G200 WARP engine microcode
 
 [matrox/g400_warp.fw_base]
 desc: Matrox G400/G550 WARP engine microcode
+
+[mediatek/mt7610e.bin_base]
+desc: MediaTek MT76x0 wifi firmware
+
+[mediatek/mt7610u.bin_base]
+desc: MediaTek MT76x0 wifi firmware
+
+[mediatek/mt7622pr2h.bin_base]
+desc: MediaTek MT7622 Bluetooth firmware
+
+[mediatek/mt7650e.bin_base]
+desc: MediaTek MT76x0 wifi firmware
+
+[mediatek/mt7662u.bin_base]
+desc: MediaTek MT76x2u wifi firmware
+
+[mediatek/mt7662u_rom_patch.bin_base]
+desc: MediaTek MT76x2u wifi firmware
+
+[mediatek/mt7668pr2h.bin_base]
+desc: MediaTek MT7668 Bluetooth firmware
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware
