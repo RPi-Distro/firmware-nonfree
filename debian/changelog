@@ -4,6 +4,7 @@ firmware-nonfree (20210315-3) UNRELEASED; urgency=medium
   * debian/bin: Add update-modinfo script to maintain cache of module info
   * Add module info from linux 5.10.46-2 on amd64
   * debian/bin/gencontrol.py: Include modaliases in AppStream metadata
+    (Closes: #991500)
 
  -- Ben Hutchings <benh@debian.org>  Fri, 30 Apr 2021 05:08:23 +0200
 
