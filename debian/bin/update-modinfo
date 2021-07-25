@@ -1,0 +1,60 @@
+#!/usr/bin/python3
+
+# Update the module information used to generate related device IDs
+
+import json
+import os.path
+import subprocess
+import sys
+
+
+def iter_modules(base_dir):
+    def onerror(e):
+        raise e
+    for root, dirs, files in \
+        os.walk(os.path.join(base_dir, 'kernel'), onerror=onerror):
+        for name in files:
+            if name.endswith('.ko'):
+                yield name[:-3], os.path.join(root, name)
+
+
+def get_module_info(filename, attr_name):
+    output = subprocess.check_output(['modinfo', '-F', attr_name, filename],
+                                     text=True)
+    if output == '':
+        return []
+    return output.rstrip('\n').split('\n')
+
+
+def main(kernel_id=None):
+    if kernel_id is None:
+        kernel_dir = '/lib/modules/' + os.uname().release
+    elif '/' not in kernel_id:
+        kernel_dir = '/lib/modules/' + kernel_id
+    else:
+        kernel_dir = kernel_id
+
+    modinfo = {}
+    for name, filename in iter_modules(kernel_dir):
+        # We only care about modules that might request firmware
+        firmware = get_module_info(filename, 'firmware')
+        if not firmware:
+            continue
+
+        # We only care about aliases generated from device IDs, which
+        # start with <type> ":"
+        aliases = [alias
+                   for alias in get_module_info(filename, 'alias')
+                   if ':' in alias]
+
+        modinfo[name] = {
+            'alias': aliases,
+            'firmware': firmware,
+        }
+
+    with open('debian/modinfo.json', 'w') as f:
+        json.dump(modinfo, f, indent=2, sort_keys=True)
+
+
+if __name__ == '__main__':
+    main(*sys.argv[1:])
