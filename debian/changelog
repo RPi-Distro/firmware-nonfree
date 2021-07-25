@@ -1,4 +1,4 @@
-firmware-nonfree (20210315-3) UNRELEASED; urgency=medium
+firmware-nonfree (20210315-3) unstable; urgency=medium
 
   * Update to linux-support 5.10.0-8
   * debian/bin: Add update-modinfo script to maintain cache of module info
@@ -6,7 +6,7 @@ firmware-nonfree (20210315-3) UNRELEASED; urgency=medium
   * debian/bin/gencontrol.py: Include modaliases in AppStream metadata
     (Closes: #991500)
 
- -- Ben Hutchings <benh@debian.org>  Fri, 30 Apr 2021 05:08:23 +0200
+ -- Ben Hutchings <benh@debian.org>  Sun, 25 Jul 2021 23:19:34 +0200
 
 firmware-nonfree (20210315-2) unstable; urgency=medium
 
