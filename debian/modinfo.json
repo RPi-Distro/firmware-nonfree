@@ -7406,6 +7406,7 @@
   },
   "ti_usb_3410_5052": {
     "alias": [
+      "usb:v14B0p3410d*dc*dsc*dp*ic*isc*ip*in*",
       "usb:v110Ap1151d*dc*dsc*dp*ic*isc*ip*in*",
       "usb:v110Ap1150d*dc*dsc*dp*ic*isc*ip*in*",
       "usb:v110Ap1131d*dc*dsc*dp*ic*isc*ip*in*",
