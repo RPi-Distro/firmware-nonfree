@@ -38,6 +38,7 @@ files:
  brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt
  brcm/brcmfmac43430-sdio.MUR1DX.txt
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+ brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
  brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac43455-sdio.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
