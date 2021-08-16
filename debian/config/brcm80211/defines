@@ -25,6 +25,7 @@ files:
  brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt
  brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
  brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt
+ brcm/brcmfmac43430a0-sdio.ilife-S806.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt
@@ -151,6 +152,9 @@ desc: Broadcom BCM43430 Murata 1DX NVRAM
 
 [brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt_base]
 desc: Jumper EZpad mini 3 tablet AP6210 Wifi/BT NVRAM
+
+[brcm/brcmfmac43430a0-sdio.ilife-S806.txt_base]
+desc: Broadcom BCM43430a Chuwi Hi8 (CWI509) tablet NVRAM
 
 [brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt_base]
 desc: BCM43455 NVRAM for the Raspberry Pi 3 B+
