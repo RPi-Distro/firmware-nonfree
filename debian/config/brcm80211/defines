@@ -17,6 +17,7 @@ files:
  brcm/brcmfmac4330-sdio.Prowise-PT301.txt
  brcm/brcmfmac43340-sdio.meegopad-t08.txt
  brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt
+ brcm/brcmfmac43340-sdio.predia-basic.txt
  brcm/brcmfmac4334-sdio.bin
  brcm/brcmfmac4335-sdio.bin
  brcm/brcmfmac43340-sdio.bin
@@ -138,6 +139,9 @@ desc: Broadcom BCM43340 Meegopad T08 HDMI stick NVRAM
 
 [brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt_base]
 desc: Broadcom BCM43340 PoV TAB-P1006W-232 tablet NVRAM
+
+[brcm/brcmfmac43340-sdio.predia-basic.txt_base]
+desc: Broadcom BCM43340 Predia Basic tablet NVRAM
 
 [brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt_base]
 desc: Broadcom BCM43430 Chuwi Vi8 Plus tablet NVRAM
