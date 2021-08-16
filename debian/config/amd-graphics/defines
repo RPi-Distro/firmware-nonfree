@@ -4,6 +4,16 @@ longdesc: AMD/ATI graphics chips supported by the radeon, amdgpu and r128 driver
 replaces: firmware-linux-nonfree (<< 20151018-1~)
 breaks: firmware-linux-nonfree (<< 20151018-1~)
 files:
+ amdgpu/arcturus_asd.bin
+ amdgpu/arcturus_gpu_info.bin
+ amdgpu/arcturus_mec2.bin
+ amdgpu/arcturus_mec.bin
+ amdgpu/arcturus_rlc.bin
+ amdgpu/arcturus_sdma.bin
+ amdgpu/arcturus_smc.bin
+ amdgpu/arcturus_sos.bin
+ amdgpu/arcturus_ta.bin
+ amdgpu/arcturus_vcn.bin
  amdgpu/banks_k_2_smc.bin
  amdgpu/bonaire_ce.bin
  amdgpu/bonaire_k_smc.bin
@@ -646,6 +656,36 @@ files:
  radeon/VERDE_smc.bin
  radeon/verde_smc.bin
 support: initramfs-tools
+
+[amdgpu/arcturus_asd.bin]
+desc: AMD Arcturus ASDN firmware
+
+[amdgpu/arcturus_gpu_info.bin]
+desc: AMD Arcturus GPU info firmware
+
+[amdgpu/arcturus_mec2.bin]
+desc: AMD Arcturus MEC2 firmware
+
+[amdgpu/arcturus_mec.bin]
+desc: AMD Arcturus MEC firmware
+
+[amdgpu/arcturus_rlc.bin]
+desc: AMD Arcturus RLC firmware
+
+[amdgpu/arcturus_sdma.bin]
+desc: AMD Arcturus SDMA firmware
+
+[amdgpu/arcturus_smc.bin]
+desc: AMD Arcturus SMC firmware
+
+[amdgpu/arcturus_sos.bin]
+desc: AMD Arcturus SOS firmware
+
+[amdgpu/arcturus_ta.bin]
+desc: AMD Arcturus TA firmware
+
+[amdgpu/arcturus_vcn.bin]
+desc: AMD Arcturus VCN firmware
 
 [amdgpu/banks_k_2_smc.bin_base]
 desc: "Banks" K-2 SMC microcode
