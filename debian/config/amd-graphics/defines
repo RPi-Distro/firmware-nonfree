@@ -145,6 +145,18 @@ files:
  amdgpu/navi14_sos.bin
  amdgpu/navi14_ta.bin
  amdgpu/navi14_vcn.bin
+ amdgpu/navy_flounder_ce.bin
+ amdgpu/navy_flounder_dmcub.bin
+ amdgpu/navy_flounder_me.bin
+ amdgpu/navy_flounder_mec.bin
+ amdgpu/navy_flounder_mec2.bin
+ amdgpu/navy_flounder_pfp.bin
+ amdgpu/navy_flounder_rlc.bin
+ amdgpu/navy_flounder_sdma.bin
+ amdgpu/navy_flounder_smc.bin
+ amdgpu/navy_flounder_sos.bin
+ amdgpu/navy_flounder_ta.bin
+ amdgpu/navy_flounder_vcn.bin
  amdgpu/oland_ce.bin
  amdgpu/oland_k_smc.bin
  amdgpu/oland_mc.bin
@@ -1059,6 +1071,43 @@ desc: "Navi 14" TA firmware
 
 [amdgpu/navi14_vcn.bin_base]
 desc: "Navi 14" VCN firmware
+
+[amdgpu/navy_flounder_ce.bin]
+desc: AMD Navy Flunder CE firmware
+
+[amdgpu/navy_flounder_dmcub.bin]
+desc: AMD Navy Flunder DMCUB firmware
+
+[amdgpu/navy_flounder_me.bin]
+desc: AMD Navy Flunder ME firmware
+
+[amdgpu/navy_flounder_mec.bin]
+desc: AMD Navy Flunder MEC firmware
+
+[amdgpu/navy_flounder_mec2.bin]
+desc: AMD Navy Flunder MEC2 firmware
+
+[amdgpu/navy_flounder_pfp.bin]
+desc: AMD Navy Flunder PFP firmware
+
+[amdgpu/navy_flounder_rlc.bin]
+desc: AMD Navy Flunder RLC firmware
+
+[amdgpu/navy_flounder_sdma.bin]
+desc: AMD Navy Flunder SDMA firmware
+
+[amdgpu/navy_flounder_smc.bin]
+desc: AMD Navy Flunder SMC firmware
+
+[amdgpu/navy_flounder_sos.bin]
+desc: AMD Navy Flunder SOS firmware
+
+[amdgpu/navy_flounder_ta.bin]
+desc: AMD Navy Flunder TA firmware
+
+[amdgpu/navy_flounder_vcn.bin]
+desc: AMD Navy Flunder VCN firmware
+
 
 [amdgpu/oland_ce.bin_base]
 desc: Radeon HD 8500/8600/8700 series CE microcode
