@@ -19,6 +19,8 @@ files:
  qcom/a630_sqe.fw
  qcom/a650_gmu.bin
  qcom/a650_sqe.fw
+ qcom/a660_gmu.bin
+ qcom/a660_sqe.fw
  qcom/sdm845/a630_zap.mbn
  qcom/sdm845/adsp.mbn
  qcom/sdm845/adspr.jsn
@@ -114,6 +116,12 @@ desc: Qualcomm Adreno 650 GMU firmware
 
 [qcom/a650_sqe.fw_base]
 desc: Qualcomm Adreno 650 SQE firmware
+
+[qcom/a660_gmu.bin_base]
+desc: Qualcomm Adreno 660 GMU firmware
+
+[qcom/a660_sqe.fw_base]
+desc: Qualcomm Adreno 660 SQE firmware
 
 [qcom/sdm845/a630_zap.mbn_base]
 desc: Qualcomm Adreno 630 SDM845 ZAP firmware
