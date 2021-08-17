@@ -1,3 +1,23 @@
+firmware-nonfree (20210511-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - qcom: update venus firmware files for v5.4
+    - rtw89: 8852a: update fw to v0.13.8.0
+    - qcom: Add venus firmware files for VPU-2.0
+    - rtl_bt: Update RTL8852A BT USB firmware to 0xD9A8_7893
+    - rtw89: 8852a: update fw to v0.13.8.0
+    - brcm: Add a link to enable khadas VIM2's WiFi
+    - qcom: add gpu firmwares for sc7280
+    - firmware: nvidia: Add VIC firmware for Tegra194
+    - amdgpu: add new polaris 12 MC firmware
+    - i915: Add ADL-P DMC Support
+    - linux-firmware: update firmware for mhdp8546
+    - nvidia: Update Tegra210 XUSB firmware to v50.26
+    - nvidia: Update Tegra186 XUSB firmware to v55.18
+    - nvidia: Update Tegra194 XUSB firmware to v60.09
+
+ -- maximilian attems <maks@debian.org>  Tue, 17 Aug 2021 08:59:09 +0200
+
 firmware-nonfree (20210427-1) unstable; urgency=medium
 
   * New upstream version:
