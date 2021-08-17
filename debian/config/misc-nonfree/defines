@@ -18,6 +18,7 @@ files:
  as102_data2_st.hex
  brcm/BCM-0bb4-0306.hcd
  brcm/BCM-0a5c-6410.hcd
+ cadence/mhdp8546.bin
  ctefx.bin
  ctspeq.bin
  cxgb3/ael2005_opt_edc.bin
@@ -624,6 +625,9 @@ desc: Abilis Systems AS102 stage 2 firmware
 
 [brcm/BCM-0bb4-0306.hcd_base]
 desc: Broadcom/Cypress Bluetooth firmware (HTC Vive)
+
+[cadence/mhdp8546.bin_base]
+desc: Cadence MHDP8546 DP bridge firmware
 
 [ctefx.bin_base]
 desc: Creative CA0132 DSP firmware
