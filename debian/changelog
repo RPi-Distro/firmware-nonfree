@@ -1,4 +1,4 @@
-firmware-nonfree (20210427-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210427-1) unstable; urgency=medium
 
   * New upstream version:
     - amdgpu: add initial support for navy flounder
@@ -54,7 +54,7 @@ firmware-nonfree (20210427-1) UNRELEASED; urgency=medium
     - linux-firmware: Update firmware file for Intel Bluetooth 9560
     - linux-firmware: Update firmware file for Intel Bluetooth AX210
 
- -- maximilian attems <maks@debian.org>  Mon, 16 Aug 2021 13:44:32 +0200
+ -- maximilian attems <maks@debian.org>  Tue, 17 Aug 2021 08:45:02 +0200
 
 firmware-nonfree (20210315-3) unstable; urgency=medium
 
