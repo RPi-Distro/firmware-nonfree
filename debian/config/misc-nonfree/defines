@@ -441,6 +441,7 @@ files:
  nvidia/tegra186/xusb.bin
  nvidia/tegra186/vic04_ucode.bin
  nvidia/tegra194/xusb.bin
+ nvidia/tegra194/vic.bin
  nvidia/tegra210/vic04_ucode.bin
  nvidia/tegra210/xusb.bin
  nvidia/tu102/acr/bl.bin
@@ -1273,6 +1274,9 @@ version: 55.15
 [nvidia/tegra194/xusb.bin_base]
 desc: Nvidia Tegra 194 XHCI firmware
 version: 60.06
+
+[nvidia/tegra194/vic.bin_base]
+desc: Nvidia Tegra 194 VIC firmware
 
 [nvidia/tegra210/xusb.bin_base]
 desc: Nvidia Tegra 210 XHCI firmware
