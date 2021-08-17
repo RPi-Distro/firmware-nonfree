@@ -78,6 +78,8 @@ files:
  hfi1_sbus.fw
  imx/sdma/sdma-imx6q.bin
  imx/sdma/sdma-imx7d.bin
+ i915/adlp_dmc_ver2_09.bin
+ i915/adlp_dmc_ver2_10.bin
  i915/adls_dmc_ver2_01.bin
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
@@ -806,6 +808,14 @@ version: 3.5
 [imx/sdma/sdma-imx7d.bin_base]
 desc: Freescale i.MX7 SDMA firmware
 version: 4.5
+
+[i915/adlp_dmc_ver2_09.bin_base]
+desc: Intel ADL-P DMC Support
+version: 2.09
+
+[i915/adlp_dmc_ver2_10.bin_base]
+desc: Intel ADL-P DMC Support
+version: 2.10
 
 [i915/adls_dmc_ver2_01.bin_base]
 desc: Intel "Adler Lake" DMC firmware
