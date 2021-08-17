@@ -27,7 +27,6 @@ firmware-nonfree (20210427-1) UNRELEASED; urgency=medium
     - amdgpu: update navi14 smc firmware
     - linux-firmware: Update firmware file for Intel Bluetooth AX201
     - brcm: Link CM4's WiFi firmware with DMI machine name.
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.2438
     - cxgb4: Update firmware to revision 1.25.4.0
     - rtl_nic: add new firmware for RTL8153 and RTL8156 series
     - amdgpu: update raven firmware from 21.10
