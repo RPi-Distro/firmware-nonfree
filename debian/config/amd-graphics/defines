@@ -237,6 +237,7 @@ files:
  amdgpu/polaris11_smc_sk.bin
  amdgpu/polaris11_uvd.bin
  amdgpu/polaris11_vce.bin
+ amdgpu/polaris12_32_mc.bin
  amdgpu/polaris12_ce.bin
  amdgpu/polaris12_ce_2.bin
  amdgpu/polaris12_k_mc.bin
@@ -1361,6 +1362,9 @@ version: 1.130
 [amdgpu/polaris11_vce.bin_base]
 desc: "Polaris 11" VCE firmware
 version: 53.26
+
+[amdgpu/polaris12_32_mc.bin_base]
+desc: "Polaris 12" 32 MC config
 
 [amdgpu/polaris12_ce.bin_base]
 desc: "Polaris 12" old CE firmware
