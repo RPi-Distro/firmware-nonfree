@@ -1,4 +1,4 @@
-firmware-nonfree (20210511-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210511-1~exp1) experimental; urgency=medium
 
   * New upstream version:
     - qcom: update venus firmware files for v5.4
@@ -16,7 +16,7 @@ firmware-nonfree (20210511-1) UNRELEASED; urgency=medium
     - nvidia: Update Tegra186 XUSB firmware to v55.18
     - nvidia: Update Tegra194 XUSB firmware to v60.09
 
- -- maximilian attems <maks@debian.org>  Tue, 17 Aug 2021 08:59:09 +0200
+ -- maximilian attems <maks@debian.org>  Wed, 18 Aug 2021 07:00:34 +0200
 
 firmware-nonfree (20210427-1) unstable; urgency=medium
 
