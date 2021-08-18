@@ -32,13 +32,13 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.25.4.0.bin
+ cxgb4/t4fw-1.26.0.0.bin
  cxgb4/t4-config.txt
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.25.4.0.bin
+ cxgb4/t5fw-1.26.0.0.bin
  cxgb4/t5-config.txt
  cxgb4/t6fw.bin
- cxgb4/t6fw-1.25.4.0.bin
+ cxgb4/t6fw-1.26.0.0.bin
  cxgb4/t6-config.txt
  cxgb4/configs/t4-config-default.txt
  cxgb4/configs/t5-config-default.txt
@@ -673,17 +673,17 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.25.4.0.bin_base]
+[cxgb4/t4fw-1.26.0.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.25.4.0
+version: 1.26.0.0
 
-[cxgb4/t5fw-1.25.4.0.bin_base]
+[cxgb4/t5fw-1.26.0.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.25.4.0
+version: 1.26.0.0
 
-[cxgb4/t6fw-1.25.4.0.bin_base]
+[cxgb4/t6fw-1.26.0.0.bin_base]
 desc: Chelsio T6 firmware
-version: 1.25.4.0
+version: 1.26.0.0
 
 [cxgb4/configs/t4-config-default.txt_base]
 desc: Chelsio T4 config
