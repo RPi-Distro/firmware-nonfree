@@ -56,6 +56,7 @@ files:
  brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac4356-sdio.clm_blob
  brcm/brcmfmac4356-sdio.vamrs,rock960.txt
+ brcm/brcmfmac4356-sdio.khadas,vim2.txt
  brcm/brcmfmac4358-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
