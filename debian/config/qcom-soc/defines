@@ -77,6 +77,21 @@ files:
  qcom/vpu-1.0/venus.b19
  qcom/vpu-1.0/venus.mbn
  qcom/vpu-1.0/venus.mdt
+ qcom/vpu-2.0/venus.b00
+ qcom/vpu-2.0/venus.b01
+ qcom/vpu-2.0/venus.b02
+ qcom/vpu-2.0/venus.b03
+ qcom/vpu-2.0/venus.b04
+ qcom/vpu-2.0/venus.b05
+ qcom/vpu-2.0/venus.b06
+ qcom/vpu-2.0/venus.b07
+ qcom/vpu-2.0/venus.b08
+ qcom/vpu-2.0/venus.b09
+ qcom/vpu-2.0/venus.b10
+ qcom/vpu-2.0/venus.b19
+ qcom/vpu-2.0/venus.mbn
+ qcom/vpu-2.0/venus.mdt
+
 
 [qcom/a300_pfp.fw_base]
 desc: Qualcomm Adreno 300 PFP firmware
@@ -286,4 +301,46 @@ desc: Qualcomm Venus VPU-1.0 firwmare part 19
 desc: Qualcomm Venus VPU-1.0 firwmare
 
 [qcom/vpu-1.0/venus.mdt_base]
+desc: Qualcomm Venus VPU-1.0 firwmare header
+
+[qcom/vpu-2.0/venus.b00]
+desc: Qualcomm Venus VPU-1.0 firwmare part 00
+
+[qcom/vpu-2.0/venus.b01]
+desc: Qualcomm Venus VPU-1.0 firwmare part 01
+
+[qcom/vpu-2.0/venus.b02]
+desc: Qualcomm Venus VPU-1.0 firwmare part 02
+
+[qcom/vpu-2.0/venus.b03]
+desc: Qualcomm Venus VPU-1.0 firwmare part 03
+
+[qcom/vpu-2.0/venus.b04]
+desc: Qualcomm Venus VPU-1.0 firwmare part 04
+
+[qcom/vpu-2.0/venus.b05]
+desc: Qualcomm Venus VPU-1.0 firwmare part 05
+
+[qcom/vpu-2.0/venus.b06]
+desc: Qualcomm Venus VPU-1.0 firwmare part 06
+
+[qcom/vpu-2.0/venus.b07]
+desc: Qualcomm Venus VPU-1.0 firwmare part 07
+
+[qcom/vpu-2.0/venus.b08]
+desc: Qualcomm Venus VPU-1.0 firwmare part 08
+
+[qcom/vpu-2.0/venus.b09]
+desc: Qualcomm Venus VPU-1.0 firwmare part 09
+
+[qcom/vpu-2.0/venus.b10]
+desc: Qualcomm Venus VPU-1.0 firwmare part 10
+
+[qcom/vpu-2.0/venus.b19]
+desc: Qualcomm Venus VPU-1.0 firwmare part 19
+
+[qcom/vpu-2.0/venus.mbn]
+desc: Qualcomm Venus VPU-1.0 firwmare
+
+[qcom/vpu-2.0/venus.mdt]
 desc: Qualcomm Venus VPU-1.0 firwmare header
