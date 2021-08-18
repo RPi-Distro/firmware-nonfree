@@ -352,17 +352,8 @@ version: 36
 [rtlwifi/rtl8723befw.bin_base]
 desc: Realtek RTL8723BE firmware
 
-[rtlwifi/rtl8723bs_ap_wowlan.bin_base]
-desc: Realtek RTL8723BS AP WOWLAN firmware
-
 [rtlwifi/rtl8723bs_bt.bin_base]
 desc: Realtek RTL8723BS BT firmware
-
-[rtlwifi/rtl8723bs_nic.bin_base]
-desc: Realtek RTL8723BS wifi non-WoWLAN firmware
-
-[rtlwifi/rtl8723bs_wowlan.bin_base]
-desc: Realtek RTL8723BS wifi WoWLAN firmware
 
 [rtlwifi/rtl8723bu_ap_wowlan.bin_base]
 desc: Realtek RTl8723BU AP WoWLAN firmware
