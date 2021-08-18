@@ -320,9 +320,6 @@ desc: Realtek RTL8192CU/RTL8188CU fallback firmware
 [rtlwifi/rtl8192defw.bin_base]
 desc: Realtek RTL8192DE firmware
 
-[rtlwifi/rtl8192eefw.bin_base]
-desc: Realtek RTL8192EE wifi firmware
-
 [rtlwifi/rtl8192eu_nic.bin_base]
 desc: Realtek RTl8192EU non-WoWLAN firmware
 
