@@ -14,7 +14,6 @@ firmware-nonfree (20210716-1) UNRELEASED; urgency=medium
     - rtl_bt: Update RTL8822C BT(USB I/F) FW to 0x09A8_A0CB
     - rtl_bt: Update RTL8822C BT(UART I/F) FW to 0x05A8_A0CB
     - mediatek: update MT7915 firmware to 20201105
-    - Mellanox: Add new mlxsw_spectrum firmware xx.2008.2946
     - rtl_bt: Add rtl8761b firmware
     - rtl_bt: Add rtl8761bu firmware
     - cypress: update firmware for cyw43012 sdio
