@@ -1,4 +1,4 @@
-firmware-nonfree (20210716-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210716-1~exp1) UNRELEASED; urgency=medium
 
   * New upstream version:
     - iwlwifi: add new FWs from core60-51 release
