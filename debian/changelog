@@ -1,4 +1,4 @@
-firmware-nonfree (20210716-1~exp1) UNRELEASED; urgency=medium
+firmware-nonfree (20210716-1~exp1) experimental; urgency=medium
 
   * New upstream version:
     - iwlwifi: add new FWs from core60-51 release
@@ -61,7 +61,7 @@ firmware-nonfree (20210716-1~exp1) UNRELEASED; urgency=medium
     - rtlwifi: de-dupe rtl8723b WiFi firmware
     - linux-firmware: update NXP 8897/8997 firmware images
 
- -- maximilian attems <maks@debian.org>  Wed, 18 Aug 2021 07:14:51 +0200
+ -- maximilian attems <maks@debian.org>  Fri, 20 Aug 2021 19:07:10 +0200
 
 firmware-nonfree (20210511-1) unstable; urgency=medium
 
