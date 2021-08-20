@@ -14,6 +14,10 @@ files:
  rtl_bt/rtl8723d_config.bin
  rtl_bt/rtl8723d_fw.bin
  rtl_bt/rtl8761a_fw.bin
+ rtl_bt/rtl8761b_config.bin
+ rtl_bt/rtl8761b_fw.bin
+ rtl_bt/rtl8761bu_config.bin
+ rtl_bt/rtl8761bu_fw.bin
  rtl_bt/rtl8812ae_fw.bin
  rtl_bt/rtl8821a_fw.bin
  rtl_bt/rtl8821a_config.bin
@@ -123,6 +127,18 @@ desc: Realtek RTL8812AE Bluetooth firmware
 
 [rtl_bt/rtl8761a_fw.bin_base]
 desc: Realtek RTL8761A Bluetooth firmware
+
+[rtl_bt/rtl8761b_config.bin_base]
+desc: Realtek RTL8761B Bluetooth config
+
+[rtl_bt/rtl8761b_fw.bin_base]
+desc: Realtek RTL8761B Bluetooth firmware
+
+[rtl_bt/rtl8761bu_config.bin_base]
+desc: Realtek RTL8761BU Bluetooth config
+
+[rtl_bt/rtl8761bu_fw.bin_base]
+desc: Realtek RTL8761BU Bluetooth firmware
 
 [rtl_bt/rtl8821a_fw.bin_base]
 desc: Realtek RTL8821A Bluetooth firmware
@@ -320,9 +336,6 @@ desc: Realtek RTL8192CU/RTL8188CU fallback firmware
 [rtlwifi/rtl8192defw.bin_base]
 desc: Realtek RTL8192DE firmware
 
-[rtlwifi/rtl8192eefw.bin_base]
-desc: Realtek RTL8192EE wifi firmware
-
 [rtlwifi/rtl8192eu_nic.bin_base]
 desc: Realtek RTl8192EU non-WoWLAN firmware
 
@@ -352,17 +365,8 @@ version: 36
 [rtlwifi/rtl8723befw.bin_base]
 desc: Realtek RTL8723BE firmware
 
-[rtlwifi/rtl8723bs_ap_wowlan.bin_base]
-desc: Realtek RTL8723BS AP WOWLAN firmware
-
 [rtlwifi/rtl8723bs_bt.bin_base]
 desc: Realtek RTL8723BS BT firmware
-
-[rtlwifi/rtl8723bs_nic.bin_base]
-desc: Realtek RTL8723BS wifi non-WoWLAN firmware
-
-[rtlwifi/rtl8723bs_wowlan.bin_base]
-desc: Realtek RTL8723BS wifi WoWLAN firmware
 
 [rtlwifi/rtl8723bu_ap_wowlan.bin_base]
 desc: Realtek RTl8723BU AP WoWLAN firmware

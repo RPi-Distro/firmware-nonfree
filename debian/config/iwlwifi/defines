@@ -93,36 +93,42 @@ files:
  iwlwifi-Qu-b0-hr-b0-55.ucode
  iwlwifi-Qu-b0-hr-b0-59.ucode
  iwlwifi-Qu-b0-hr-b0-62.ucode
+ iwlwifi-Qu-b0-hr-b0-63.ucode
  iwlwifi-Qu-b0-jf-b0-48.ucode
  iwlwifi-Qu-b0-jf-b0-50.ucode
  iwlwifi-Qu-b0-jf-b0-53.ucode
  iwlwifi-Qu-b0-jf-b0-55.ucode
  iwlwifi-Qu-b0-jf-b0-59.ucode
  iwlwifi-Qu-b0-jf-b0-62.ucode
+ iwlwifi-Qu-b0-jf-b0-63.ucode
  iwlwifi-Qu-c0-hr-b0-48.ucode
  iwlwifi-Qu-c0-hr-b0-50.ucode
  iwlwifi-Qu-c0-hr-b0-53.ucode
  iwlwifi-Qu-c0-hr-b0-55.ucode
  iwlwifi-Qu-c0-hr-b0-59.ucode
  iwlwifi-Qu-c0-hr-b0-62.ucode
+ iwlwifi-Qu-c0-hr-b0-63.ucode
  iwlwifi-Qu-c0-jf-b0-48.ucode
  iwlwifi-Qu-c0-jf-b0-50.ucode
  iwlwifi-Qu-c0-jf-b0-53.ucode
  iwlwifi-Qu-c0-jf-b0-55.ucode
  iwlwifi-Qu-c0-jf-b0-59.ucode
  iwlwifi-Qu-c0-jf-b0-62.ucode
+ iwlwifi-Qu-c0-jf-b0-63.ucode
  iwlwifi-QuZ-a0-hr-b0-48.ucode
  iwlwifi-QuZ-a0-hr-b0-50.ucode
  iwlwifi-QuZ-a0-hr-b0-53.ucode
  iwlwifi-QuZ-a0-hr-b0-55.ucode
  iwlwifi-QuZ-a0-hr-b0-59.ucode
  iwlwifi-QuZ-a0-hr-b0-62.ucode
+ iwlwifi-QuZ-a0-hr-b0-63.ucode
  iwlwifi-QuZ-a0-jf-b0-48.ucode
  iwlwifi-QuZ-a0-jf-b0-50.ucode
  iwlwifi-QuZ-a0-jf-b0-53.ucode
  iwlwifi-QuZ-a0-jf-b0-55.ucode
  iwlwifi-QuZ-a0-jf-b0-59.ucode
  iwlwifi-QuZ-a0-jf-b0-62.ucode
+ iwlwifi-QuZ-a0-jf-b0-63.ucode
  iwlwifi-cc-a0-46.ucode
  iwlwifi-cc-a0-48.ucode
  iwlwifi-cc-a0-50.ucode
@@ -130,8 +136,10 @@ files:
  iwlwifi-cc-a0-55.ucode
  iwlwifi-cc-a0-59.ucode
  iwlwifi-cc-a0-62.ucode
+ iwlwifi-cc-a0-63.ucode
  iwlwifi-ty-a0-gf-a0-59.ucode
  iwlwifi-ty-a0-gf-a0-62.ucode
+ iwlwifi-ty-a0-gf-a0-63.ucode
  iwlwifi-ty-a0-gf-a0.pnvm
 longdesc: Intel Wireless cards supported by the iwl3945, iwl4965, and
  iwlwifi drivers
@@ -190,7 +198,7 @@ version: 21.20.0.4
 
 [intel/ibt-19-0-0.sfi_base]
 desc: Intel Bluetooth AX201 (var 0 rev 0) firmware
-version: 21.20.0.4
+version: 22.60.0.3
 
 [intel/ibt-19-0-1.ddc_base]
 desc: Intel Bluetooth AX201 (var 0 rev 1) configuration
@@ -198,7 +206,7 @@ version: 21.20.0.4
 
 [intel/ibt-19-0-1.sfi_base]
 desc: Intel Bluetooth AX201 (var 0 rev 1) firmware
-version: 21.20.0.4
+version: 22.60.0.3
 
 [intel/ibt-19-0-4.ddc_base]
 desc: Intel Bluetooth AX201 (var 0 rev 4) configuration
@@ -206,7 +214,7 @@ version: 21.20.0.4
 
 [intel/ibt-19-0-4.sfi_base]
 desc: Intel Bluetooth AX201 (var 0 rev 4) firmware
-version: 21.20.0.4
+version: 22.60.0.3
 
 [intel/ibt-19-16-4.ddc_base]
 desc: Intel Bluetooth AX201 (var 16 rev 4) configuration
@@ -214,7 +222,7 @@ version: 21.20.0.4
 
 [intel/ibt-19-16-4.sfi_base]
 desc: Intel Bluetooth AX201 (var 16 rev 4) firmware
-version: 21.20.0.4
+version: 22.60.0.3
 
 [intel/ibt-19-240-1.ddc_base]
 desc: Intel Bluetooth AX201 firmware
@@ -222,7 +230,7 @@ version: 21.110.0.3
 
 [intel/ibt-19-240-1.sfi_base]
 desc: Intel Bluetooth AX201 firmware
-version: 21.110.0.3
+version: 22.60.0.3
 
 [intel/ibt-19-240-4.ddc_base]
 desc: Intel Bluetooth AX201 firmware
@@ -230,7 +238,7 @@ version: 21.90.0.3
 
 [intel/ibt-19-240-4.sfi_base]
 desc: Intel Bluetooth AX201 firmware
-version: 21.90.0.3
+version: 22.60.0.3
 
 [intel/ibt-19-32-0.ddc_base]
 desc: Intel Bluetooth AX201 (var 32 rev 0) configuration
@@ -244,7 +252,7 @@ version: 21.20.0.4
 
 [intel/ibt-19-32-1.sfi_base]
 desc: Intel Bluetooth AX201 (var 32 rev 1) firmware
-version: 21.20.0.4
+version: 22.60.0.3
 
 [intel/ibt-19-32-4.ddc_base]
 desc: Intel Bluetooth AX201 (var 32 rev 4) configuration
@@ -281,7 +289,7 @@ desc: Intel Wireless AX2100 Bluethooth configuration
 
 [intel/ibt-0041-0041.sfi_base]
 desc: Intel Wireless AX2100 Bluethooth firmware
-version: 22.20.0.3
+version: 22.60.0.3
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
 desc: Intel Wireless 3160 (B6) Bluetooth firmware patch
@@ -423,7 +431,7 @@ version: 22.391740.0
 
 [iwlwifi-8000C-36.ucode_base]
 desc: Intel Wireless 8000C firmware
-version: 36.ad812ee0.0
+version: 36.ca7b901d.0
 
 [iwlwifi-8265-22.ucode_base]
 desc: Intel Wireless 8265 firmware
@@ -431,7 +439,7 @@ version: 22.391740.0
 
 [iwlwifi-8265-36.ucode_base]
 desc: Intel Wireless 8265 firmware
-version: 36.ad812ee0.0
+version: 36.ca7b901.0
 
 [iwlwifi-9000-pu-b0-jf-b0-34.ucode_base]
 desc: Intel Wireless 9000 firmware
@@ -451,7 +459,7 @@ version: 43.95eb4e97
 
 [iwlwifi-9000-pu-b0-jf-b0-46.ucode_base]
 desc: Intel Wireless 9000 firmware
-version: 46.a41adfe7.0
+version: 46.6b541b68.0
 
 [iwlwifi-9260-th-b0-jf-b0-34.ucode_base]
 desc: Intel Wireless 9260 firmware
@@ -471,7 +479,7 @@ version: 43.95eb4e97
 
 [iwlwifi-9260-th-b0-jf-b0-46.ucode_base]
 desc: Intel Wireless 9260 firmware
-version: 46.4d093a30.0
+version: 46.6b541b68.0
 
 [iwlwifi-Qu-b0-hr-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-B-HR-B) firmware
@@ -497,6 +505,10 @@ version: 59.601f3a66.0
 desc: Intel Wireless 22000 series (QU-B-HR-B) firmware
 version: 62.49eeb572.0
 
+[iwlwifi-Qu-b0-hr-b0-63.ucode_base]
+desc: Intel Wireless 22000 series (QU-B-HR-B) firmware
+version: 63.49eeb572.0
+
 [iwlwifi-Qu-b0-jf-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-B-JF-B) firmware
 version: 48.13675109.0
@@ -520,6 +532,10 @@ version: 59.601f3a66.0
 [iwlwifi-Qu-b0-jf-b0-62.ucode_base]
 desc: Intel Wireless 22000 series (QU-B-JF-B) firmware
 version: 62.49eeb572.0
+
+[iwlwifi-Qu-b0-jf-b0-63.ucode_base]
+desc: Intel Wireless 22000 series (QU-B-JF-B) firmware
+version: 63.49eeb572.0
 
 [iwlwifi-Qu-c0-hr-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-C-HR-B) firmware
@@ -545,6 +561,10 @@ version: 59.601f3a66.0
 desc: Intel Wireless 22000 series (QU-C-HR-B) firmware
 version: 62.49eeb572.0
 
+[iwlwifi-Qu-c0-hr-b0-63.ucode_base]
+desc: Intel Wireless 22000 series (QU-C-HR-B) firmware
+version: 63.49eeb572.0
+
 [iwlwifi-Qu-c0-jf-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-C-JF-B) firmware
 version: 48.13675109.0
@@ -569,6 +589,10 @@ version: 59.601f3a66.0
 desc: Intel Wireless 22000 series (QU-C-JF-B) firmware
 version: 62.49eeb572.0
 
+[iwlwifi-Qu-c0-jf-b0-63.ucode_base]
+desc: Intel Wireless 22000 series (QU-C-JF-B) firmware
+version: 63.49eeb572.0
+
 [iwlwifi-QuZ-a0-hr-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QUZ-A-HR-B) firmware
 version: 48.13675109.0
@@ -590,6 +614,10 @@ desc: Intel Wireless 22000 series (QUZ-A-HR-B) firmware
 version: 59.601f3a66.0
 
 [iwlwifi-QuZ-a0-hr-b0-62.ucode_base]
+desc: Intel Wireless 22000 series (QUZ-A-HR-B) firmware
+version: 62.49eeb572.0
+
+[iwlwifi-QuZ-a0-hr-b0-63.ucode_base]
 desc: Intel Wireless 22000 series (QUZ-A-HR-B) firmware
 version: 62.49eeb572.0
 
@@ -616,6 +644,10 @@ version: 59.601f3a66.0
 [iwlwifi-QuZ-a0-jf-b0-62.ucode_base]
 desc: Intel Wireless 22000 series (QUZ-A-JF-B) firmware
 version: 62.49eeb572.0
+
+[iwlwifi-QuZ-a0-jf-b0-63.ucode_base]
+desc: Intel Wireless 22000 series (QUZ-A-JF-B) firmware
+version: 63.49eeb572.0
 
 [iwlwifi-cc-a0-46.ucode_base]
 desc: Intel Wireless series (CC-A0) firmware
@@ -645,6 +677,10 @@ version: 59.601f3a66.0
 desc: Intel Wireless series (CC-A0) firmware
 version: 62.49eeb572.0
 
+[iwlwifi-cc-a0-63.ucode_base]
+desc: Intel Wireless series (CC-A0) firmware
+version: 63.49eeb572.0
+
 [iwlwifi-ty-a0-gf-a0-59.ucode_base]
 desc: Intel Wireless (TY-A0-GF-A0) firmware
 version: 59.601f3a66.0
@@ -652,6 +688,10 @@ version: 59.601f3a66.0
 [iwlwifi-ty-a0-gf-a0-62.ucode_base]
 desc: Intel Wireless (TY-A0-GF-A0) firmware
 version: 62.49eeb572.0
+
+[iwlwifi-ty-a0-gf-a0-63.ucode_base]
+desc: Intel Wireless (TY-A0-GF-A0) firmware
+version: 63.49eeb572.0
 
 [iwlwifi-ty-a0-gf-a0.pnvm_base]
 desc: Intel Wireless (TY-A0-GF-A0) PNVM firmware

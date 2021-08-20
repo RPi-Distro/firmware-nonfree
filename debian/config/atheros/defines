@@ -141,6 +141,12 @@ files:
  qca/nvm_usb_00000300.bin
  qca/nvm_usb_00000302.bin
  qca/nvm_usb_00000302_eu.bin
+ qca/nvm_usb_00130200.bin
+ qca/nvm_usb_00130200_0104.bin
+ qca/nvm_usb_00130200_0105.bin
+ qca/nvm_usb_00130200_0106.bin
+ qca/nvm_usb_00130200_0107.bin
+ qca/nvm_usb_00130200_0110.bin
  qca/rampatch_00130300.bin
  qca/rampatch_00130302.bin
  qca/rampatch_00230302.bin
@@ -149,6 +155,7 @@ files:
  qca/rampatch_usb_00000201.bin
  qca/rampatch_usb_00000300.bin
  qca/rampatch_usb_00000302.bin
+ qca/rampatch_usb_00130200.bin
  wil6210.brd
  wil6210.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
@@ -556,6 +563,24 @@ desc: Qualcomm QCA9377 BT rampatch
 [qca/rampatch_00440302.bin_base]
 desc: Qualcomm Atheros QCA6174 BT rampatch
 
+[qca/nvm_usb_00130200.bin_base]
+desc: Qualcomm Atheros WCN685x NVM BT firmware
+
+[qca/nvm_usb_00130200_0104.bin_base]
+desc: Qualcomm Atheros WCN685x 0104 NVM BT firmware
+
+[qca/nvm_usb_00130200_0105.bin_base]
+desc: Qualcomm Atheros WCN685x 0105 NVM BT firmware
+
+[qca/nvm_usb_00130200_0106.bin_base]
+desc: Qualcomm Atheros WCN685x 0106 NVM BT firmware
+
+[qca/nvm_usb_00130200_0107.bin_base]
+desc: Qualcomm Atheros WCN685x 0107 NVM BT firmware
+
+[qca/nvm_usb_00130200_0110.bin_base]
+desc: Qualcomm Atheros WCN685x 0110 NVM BT firmware
+
 [qca/rampatch_usb_00000200.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT rampatch
 
@@ -567,6 +592,9 @@ desc: Qualcomm Atheros QCA61x4 version 3.0 USB BT rampatch
 
 [qca/rampatch_usb_00000302.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.2 USB BT rampatch
+
+[qca/rampatch_usb_00130200.bin_base]
+desc: Qualcomm Atheros WCN685x 0110 RAM BT firmware
 
 [wil6210.brd_base]
 desc: Qualcomm Atheros Wil62x0 default board parameters

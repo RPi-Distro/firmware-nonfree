@@ -37,6 +37,18 @@ files:
  amdgpu/carrizo_sdma1.bin
  amdgpu/carrizo_uvd.bin
  amdgpu/carrizo_vce.bin
+ amdgpu/dimgrey_cavefish_ce.bin
+ amdgpu/dimgrey_cavefish_dmcub.bin
+ amdgpu/dimgrey_cavefish_me.bin
+ amdgpu/dimgrey_cavefish_mec.bin
+ amdgpu/dimgrey_cavefish_mec2.bin
+ amdgpu/dimgrey_cavefish_pfp.bin
+ amdgpu/dimgrey_cavefish_rlc.bin
+ amdgpu/dimgrey_cavefish_sdma.bin
+ amdgpu/dimgrey_cavefish_smc.bin
+ amdgpu/dimgrey_cavefish_sos.bin
+ amdgpu/dimgrey_cavefish_ta.bin
+ amdgpu/dimgrey_cavefish_vcn.bin
  amdgpu/fiji_ce.bin
  amdgpu/fiji_mc.bin
  amdgpu/fiji_me.bin
@@ -757,6 +769,42 @@ version: 1.87
 
 [amdgpu/carrizo_vce.bin_base]
 desc: "Carrizo" VCE firmware
+
+[amdgpu/dimgrey_cavefish_ce.bin_base]
+desc: AMD "Dimgrey Cavefish" CE firmware
+
+[amdgpu/dimgrey_cavefish_dmcub.bin_base]
+desc: AMD "Dimgrey Cavefish" DMCUB firmware
+
+[amdgpu/dimgrey_cavefish_me.bin_base]
+desc: AMD "Dimgrey Cavefish" ME firmware
+
+[amdgpu/dimgrey_cavefish_mec.bin_base]
+desc: AMD "Dimgrey Cavefish" MEC firmware
+
+[amdgpu/dimgrey_cavefish_mec2.bin_base]
+desc: AMD "Dimgrey Cavefish" MEC2 firmware
+
+[amdgpu/dimgrey_cavefish_pfp.bin_base]
+desc: AMD "Dimgrey Cavefish" PFP firmware
+
+[amdgpu/dimgrey_cavefish_rlc.bin_base]
+desc: AMD "Dimgrey Cavefish" RLC firmware
+
+[amdgpu/dimgrey_cavefish_sdma.bin_base]
+desc: AMD "Dimgrey Cavefish" SDMA firmware
+
+[amdgpu/dimgrey_cavefish_smc.bin_base]
+desc: AMD "Dimgrey Cavefish" SMC firmware
+
+[amdgpu/dimgrey_cavefish_sos.bin_base]
+desc: AMD "Dimgrey Cavefish" SOS firmware
+
+[amdgpu/dimgrey_cavefish_ta.bin_base]
+desc: AMD "Dimgrey Cavefish" TA firmware
+
+[amdgpu/dimgrey_cavefish_vcn.bin_base]
+desc: AMD "Dimgrey Cavefish" VCN firmware
 
 [amdgpu/fiji_ce.bin_base]
 desc: "Fiji" CE firmware
