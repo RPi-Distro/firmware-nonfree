@@ -1263,6 +1263,81 @@ desc: Nvidia GK20A method init data
 [nvidia/gk20a/sw_nonctx.bin_base]
 desc: Nvidia GK20A non-ctx init data
 
+[nvidia/gm200/acr/bl.bin_base]
+desc: Nvidia GM200 bl firmware
+
+[nvidia/gm200/acr/ucode_load.bin_base]
+desc: Nvidia GM200 load firmware
+
+[nvidia/gm200/acr/ucode_unload.bin_base]
+desc: Nvidia GM200 unload firmware
+
+[nvidia/gm200/gr/fecs_bl.bin_base]
+desc: Nvidia GM200 FECS firmware
+
+[nvidia/gm200/gr/fecs_data.bin_base]
+desc: Nvidia GM200 FECS data
+
+[nvidia/gm200/gr/fecs_inst.bin_base]
+desc: Nvidia GM200 FECS firmware instructions
+
+[nvidia/gm200/gr/fecs_sig.bin_base]
+desc: Nvidia GM200 FECS sig firwmare
+
+[nvidia/gm200/gr/gpccs_bl.bin_base]
+desc: Nvidia GM200 GPCCS firmware
+
+[nvidia/gm200/gr/gpccs_data.bin_base]
+desc: Nvidia GM200 GPCCS data
+
+[nvidia/gm200/gr/gpccs_inst.bin_base]
+desc: Nvidia GM200 GPCCS firmware instructions
+
+[nvidia/gm200/gr/gpccs_sig.bin_base]
+desc: Nvidia GM200 GPCCS sig firmware
+
+[nvidia/gm200/gr/sw_bundle_init.bin_base]
+desc: Nvidia GM200 bundle init
+
+[nvidia/gm200/gr/sw_ctx.bin_base]
+desc: Nvidia GM200 sw ctx firmware
+
+[nvidia/gm200/gr/sw_method_init.bin_base]
+desc: Nvidia GM200 method init
+
+[nvidia/gm200/gr/sw_nonctx.bin_base]
+desc: Nvidia GM200 sw nonctx firmware
+
+[nvidia/gm204/gr/fecs_data.bin_base]
+desc: Nvidia GM204 FECS data
+
+[nvidia/gm204/gr/fecs_sig.bin_base]
+desc: Nvidia GM204 FECS sig firwmare
+
+[nvidia/gm204/gr/gpccs_data.bin_base]
+desc: Nvidia GM204 GPCCS data
+
+[nvidia/gm204/gr/gpccs_sig.bin_base]
+desc: Nvidia GM204 GPCCS sig firmware
+
+[nvidia/gm206/acr/ucode_load.bin_base]
+desc: Nvidia GM206 load firmware
+
+[nvidia/gm206/acr/ucode_unload.bin_base]
+desc: Nvidia GM206 unload firmware
+
+[nvidia/gm206/gr/fecs_data.bin_base]
+desc: Nvidia GM206 FECS data
+
+[nvidia/gm206/gr/fecs_sig.bin_base]
+desc: Nvidia GM206 FECS sig firwmare
+
+[nvidia/gm206/gr/gpccs_data.bin_base]
+desc: Nvidia GM206 GPCCS data
+
+[nvidia/gm206/gr/gpccs_sig.bin_base]
+desc: Nvidia GM206 GPCCS sig firmware
+
 [nvidia/tegra124/xusb.bin_base]
 desc: Nvidia Tegra 124 XHCI firmware
 version: 45.46
