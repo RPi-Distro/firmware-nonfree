@@ -1,8 +1,8 @@
-firmware-nonfree (20210511-1) UNRELEASED; urgency=high
+firmware-nonfree (20210511-1) unstable; urgency=medium
 
   * Unstable upload.
 
- -- maximilian attems <maks@debian.org>  Wed, 19 Aug 2021 06:00:34 +0200
+ -- maximilian attems <maks@debian.org>  Fri, 20 Aug 2021 19:00:37 +0200
 
 firmware-nonfree (20210511-1~exp1) experimental; urgency=medium
 
