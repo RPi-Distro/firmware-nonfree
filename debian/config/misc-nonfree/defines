@@ -152,6 +152,7 @@ files:
  i915/tgl_dmc_ver2_04.bin
  i915/tgl_dmc_ver2_06.bin
  i915/tgl_dmc_ver2_08.bin
+ i915/tgl_dmc_ver2_12.bin
  i915/tgl_guc_35.2.0.bin
  i915/tgl_guc_49.0.1.bin
  i915/tgl_guc_62.0.0.bin
@@ -1101,6 +1102,10 @@ version: 2.06
 [i915/tgl_dmc_ver2_08.bin_base]
 desc: Intel "Tiger Lake" DMC firmware
 version: 2.08
+
+[i915/tgl_dmc_ver2_12.bin_base]
+desc: Intel "Tiger Lake" DMC firmware
+version: 2.12
 
 [i915/tgl_guc_35.2.0.bin_base]
 desc: Intel "Tiger Lake" GuC firmware
