@@ -27,7 +27,7 @@ firmware-nonfree (20210818-1) UNRELEASED; urgency=medium
     - amdgpu: update vega20 firmware from 21.30
     - amdgpu: add initial vangogh support
     - amdgpu: revert back to older picasso sdma firmware
-    - amdgpu: revert back to older raven sdma firmware
+    - amdgpu: revert back to older raven sdma firmware (closes: #992551)
     - amdgpu: revert back to older raven2 sdma firmware
     - ice: update package file to 1.3.26.0
 
