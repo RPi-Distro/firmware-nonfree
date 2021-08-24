@@ -196,6 +196,8 @@ files:
  mediatek/mt8173/vpu_d.bin
  mediatek/mt8173/vpu_p.bin
  mediatek/mt8183/scp.img
+ mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin
+ mediatek/WIFI_RAM_CODE_MT7922_1.bin
  mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin
  mediatek/WIFI_RAM_CODE_MT7961_1.bin
  moxa/moxa-1110.fw
@@ -1239,6 +1241,14 @@ version: 1.1.16
 [mediatek/mt8183/scp.img_base]
 desc: MediaTek mt8183 SCP firmware
 version: v12573.77
+
+[mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin_base]
+desc: MediaTek MT7922 hdr firmware
+version: 20210727184234a
+
+[mediatek/WIFI_RAM_CODE_MT7922_1.bin_base]
+desc: MediaTek MT7922 firmware
+version: 20210727184325
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
