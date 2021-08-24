@@ -1,4 +1,4 @@
-firmware-nonfree (20210818-1) UNRELEASED; urgency=medium
+firmware-nonfree (20210818-1) unstable; urgency=medium
 
   * New upstream version:
     - iwlwifi: add ty firmware from Core63-43
@@ -31,7 +31,7 @@ firmware-nonfree (20210818-1) UNRELEASED; urgency=medium
     - amdgpu: revert back to older raven2 sdma firmware
     - ice: update package file to 1.3.26.0
 
- -- maximilian attems <maks@debian.org>  Fri, 20 Aug 2021 19:17:40 +0200
+ -- maximilian attems <maks@debian.org>  Tue, 24 Aug 2021 17:46:21 +0200
 
 firmware-nonfree (20210716-1~exp1) experimental; urgency=medium
 
