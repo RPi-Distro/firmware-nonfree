@@ -1,3 +1,13 @@
+firmware-nonfree (1:20190114-2+rpt2) buster; urgency=medium
+
+  [ Phil Elwell ]
+  * Switch to a new official Cypress 43455 clm_blob
+    - This clm_blob is tailored for Pi platforms and contains only "Reg/rev"
+      values of zero. This should solve some longstanding problems of channel
+      connectivity in some regions
+
+ -- Serge Schneider <serge@raspberrypi.com>  Fri, 01 Oct 2021 11:05:16 +0100
+
 firmware-nonfree (1:20190114-2+rpt1) buster; urgency=medium
 
   * Set appropriate version
