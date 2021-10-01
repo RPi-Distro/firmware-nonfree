@@ -1,3 +1,18 @@
+firmware-nonfree (1:20210315-3+rpt1) bullseye; urgency=medium
+
+  * Fix VERSION_UPSTREAM
+  * Update Cypress CYW43430-SDIO firmware
+    - Version 7.45.98.94
+    - Remove upstream CLM blob
+  * Add Cypress CYW43436-SDIO firmware
+    - Version 9.88.4.65
+  * Update Cypress CYW43455-SDIO firmware
+    - Version 7.45.229
+  * Add Cypress CYW43456-SDIO firmware
+    - Version 7.84.17.1
+
+ -- Serge Schneider <serge@raspberrypi.com>  Thu, 30 Sep 2021 17:10:49 +0100
+
 firmware-nonfree (20210315-3) unstable; urgency=medium
 
   * Update to linux-support 5.10.0-8

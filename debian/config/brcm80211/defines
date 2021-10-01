@@ -30,17 +30,25 @@ files:
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m3.txt
  brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43430-sdio.bin
- brcm/brcmfmac43430-sdio.clm_blob
+ brcm/brcmfmac43430-sdio.txt
  brcm/brcmfmac43430a0-sdio.bin
  brcm/brcmfmac43430-sdio.AP6212.txt
  brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt
  brcm/brcmfmac43430-sdio.MUR1DX.txt
+ brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+ brcm/brcmfmac43436-sdio.bin
+ brcm/brcmfmac43436-sdio.clm_blob
+ brcm/brcmfmac43436-sdio.txt
  brcm/brcmfmac43455-sdio.bin
+ brcm/brcmfmac43455-sdio.txt
  brcm/brcmfmac43455-sdio.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+ brcm/brcmfmac43456-sdio.bin
+ brcm/brcmfmac43456-sdio.clm_blob
+ brcm/brcmfmac43456-sdio.txt
  brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4350-pcie.bin
  brcm/brcmfmac4354-sdio.bin
@@ -148,6 +156,16 @@ desc: Broadcom BCM43430 Murata 1DX NVRAM
 [brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt_base]
 desc: Jumper EZpad mini 3 tablet AP6210 Wifi/BT NVRAM
 
+[brcm/brcmfmac43436-sdio.bin_base]
+desc: Broadcom BCM43436 firmware
+version: 9.88.4.65
+
+[brcm/brcmfmac43436-sdio.clm_blob]
+desc: Broadcom BCM43436 localisations blob
+
+[brcm/brcmfmac43436-sdio.txt_base]
+desc: NVRAM file for BCM43436
+
 [brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt_base]
 desc: BCM43455 NVRAM for the Raspberry Pi 3 B+
 
@@ -157,11 +175,24 @@ desc: BCM43455 NVRAM for the Raspberry Pi 4 B
 [brcm/brcmfmac43455-sdio.bin_base]
 desc: Broadcom BCM43455 firmware
 
+[brcm/brcmfmac43456-sdio.bin_base]
+desc: Broadcom BCM43456 firmware
+version: 7.84.17.1
+
+[brcm/brcmfmac43456-sdio.clm_blob]
+desc: Broadcom BCM43456 localisations blob
+
+[brcm/brcmfmac43456-sdio.txt_base]
+desc: NVRAM file for BCM43456
+
 [brcm/brcmfmac43430a0-sdio.bin_base]
 desc: Broadcom BCM43430 rev 0 firmware
 
 [brcmfmac43430-sdio.AP6212.txt_base]
 desc: BCM43430 NRVAM AP6212 config
+
+[brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt_base]
+desc: BCM43430 NVRAM for the Raspberry Pi Zero W
 
 [brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt_base]
 desc: BCM43430 NVRAM for the Raspberry Pi 3 B
@@ -222,12 +253,14 @@ desc: Cypress CYW4339-SDIO firmware
 
 [cypress/cyfmac43430-sdio.bin_base]
 desc: Cypress CYW43430-SDIO firmware
+version: 7.45.98.94
 
 [cypress/cyfmac43430-sdio.clm_blob_base]
 desc: Cypress CYW43430-SDIO CLM firmware
 
 [cypress/cyfmac43455-sdio.bin_base]
 desc: Cypress CYW43455-SDIO firmware
+version: 7.45.229
 
 [cypress/cyfmac43455-sdio.clm_blob_base]
 desc: Cypress CYW43455-SDIO CLM firmware
