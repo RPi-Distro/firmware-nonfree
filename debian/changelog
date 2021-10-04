@@ -1,3 +1,12 @@
+firmware-nonfree (1:20210315-3+rpt2) bullseye; urgency=medium
+
+  [ Phil Elwell ]
+  * Revert "Switch to a new official Cypress 43455 clm_blob"
+    - The updated clm_blob breaks 5G access for most CCs. Revert to the
+      previous version until it's fixed.
+
+ -- Serge Schneider <serge@raspberrypi.com>  Mon, 04 Oct 2021 12:28:39 +0100
+
 firmware-nonfree (1:20210315-3+rpt1) bullseye; urgency=medium
 
   * Fix VERSION_UPSTREAM
