@@ -1,3 +1,12 @@
+firmware-nonfree (1:20190114-2+rpt4) buster; urgency=medium
+
+  [ Phil Elwell ]
+  * Add 43436S firmware
+    - Future Zero 2 W boards will have an alternative version of 43436
+      that should have different firmware, named brcmfmac43436s-sdio.
+
+ -- Serge Schneider <serge@raspberrypi.com>  Mon, 01 Nov 2021 22:07:49 +0000
+
 firmware-nonfree (1:20190114-2+rpt3) buster; urgency=medium
 
   [ Phil Elwell ]

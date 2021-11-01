@@ -936,6 +936,8 @@ Description: Binary firmware for Broadcom/Cypress 802.11 wireless cards
     (brcm/brcmfmac43436-sdio.bin)
   * brcm/brcmfmac43436-sdio.clm_blob
   * NVRAM file for BCM43436 (brcm/brcmfmac43436-sdio.txt)
+  * brcm/brcmfmac43436s-sdio.bin
+  * brcm/brcmfmac43436s-sdio.txt
   * Broadcom BCM43430 rev 0 firmware (brcm/brcmfmac43430a0-sdio.bin)
   * Broadcom BCM43430 rev 1+ firmware, version 7.45.98.94
     (brcm/brcmfmac43430-sdio.bin)

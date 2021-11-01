@@ -20,7 +20,7 @@ bbf2ca269bacda3c5162f6e360132b97  debian/config/iwlwifi/defines
 6ed523d95d01839d4f5b7b35aa52b25b  debian/config/cavium/defines
 6cacebcacee21fc8152e214f27f4c07c  debian/config/bnx2/defines
 03a67c89bdbcc305f3dc6224a4d4dc40  debian/config/atheros/defines
-cecb26f8337e48b20a4a6079db27f9dc  debian/config/brcm80211/defines
+46c484f082cf564b78042b0d1d9f765c  debian/config/brcm80211/defines
 ea86b84c610d8623b2d6d77bedd8291f  debian/config/amd-graphics/defines
 fd8f21846ba40b58012d9f3d9fe13b95  debian/config/libertas/copyright
 b196c1c10f48782527383db26c14decb  debian/config/intel-sound/copyright
