@@ -3,7 +3,7 @@ tuned to maximise the number of clients in AP mode while still supporting STA
 mode. The expected number of supported clients using this firmware is now 19.
 To achieve this, a number of features have been removed:
 
-* advanced roaming features (802.11k, 802.11v and 802.11r) 
+* advanced roaming features (802.11k, 802.11v and 802.11r)
 * dfsradar - allows an AP to operate in channels that may be used by radar
   systems
 * obss-obssdump - ACS (Auto Channel Support)
