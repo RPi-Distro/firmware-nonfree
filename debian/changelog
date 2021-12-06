@@ -1,3 +1,12 @@
+firmware-nonfree (1:20210315-3+rpt4) bullseye; urgency=medium
+
+  [ Phil Elwell ]
+  * Add 43438 firmware 7.45.98.118 + external clm_blob
+  * Add 43455 firmware 7.45.241 and clm_blob
+  * Add "minimal" firmware for AP+STA mode
+
+ -- Serge Schneider <serge@raspberrypi.com>  Mon, 06 Dec 2021 14:10:27 +0000
+
 firmware-nonfree (1:20210315-3+rpt3) bullseye; urgency=medium
 
   [ Phil Elwell ]

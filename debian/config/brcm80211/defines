@@ -31,6 +31,7 @@ files:
  brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43430-sdio.bin
  brcm/brcmfmac43430-sdio.txt
+ brcm/brcmfmac43430-sdio.clm_blob
  brcm/brcmfmac43430a0-sdio.bin
  brcm/brcmfmac43430-sdio.AP6212.txt
  brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt
@@ -85,6 +86,7 @@ files:
  cypress/cyfmac43430-sdio.clm_blob
  cypress/cyfmac43455-sdio.bin
  cypress/cyfmac43455-sdio.clm_blob
+ cypress/cyfmac43455-sdio-minimal.bin
  cypress/cyfmac4354-sdio.bin
  cypress/cyfmac4354-sdio.clm_blob
  cypress/cyfmac4356-pcie.bin
@@ -262,17 +264,21 @@ desc: Cypress CYW4339-SDIO firmware
 
 [cypress/cyfmac43430-sdio.bin_base]
 desc: Cypress CYW43430-SDIO firmware
-version: 7.45.98.94
+version: 7.45.98.118
 
 [cypress/cyfmac43430-sdio.clm_blob_base]
 desc: Cypress CYW43430-SDIO CLM firmware
 
 [cypress/cyfmac43455-sdio.bin_base]
 desc: Cypress CYW43455-SDIO firmware
-version: 7.45.229
+version: 7.45.241
 
 [cypress/cyfmac43455-sdio.clm_blob_base]
 desc: Cypress CYW43455-SDIO CLM firmware
+
+[cypress/cyfmac43455-sdio-minimal.bin_base]
+desc: Cypress CYW43455-SDIO minimal firmware
+version: 7.45.241
 
 [cypress/cyfmac4354-sdio.bin_base]
 desc: Cypress CYW4354-SDIO firmware
