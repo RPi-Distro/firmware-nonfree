@@ -13,6 +13,7 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   * d/copyright: Add Copyright field for Conexant firmware
   * d/copyright: Fix Files field syntax
   * d/copyright: Replace tabs with spaces
+  * d/copyright: Fix paragraph order for files in go7007/ and radeon/
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
