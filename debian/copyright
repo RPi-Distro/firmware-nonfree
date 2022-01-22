@@ -2,6 +2,177 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: linux-firmware
 Upstream-Contact: linux-firmware@kernel.org
 Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Files-Excluded:
+# Undistributable because:
+# - licence doesn't mention redistribution
+ 3com/3C359.bin
+ tr_smctr.bin
+# - licence allows redistribution only as part of a kernel
+ emi26/*.fw
+ emi62/*.fw
+ keyspan/mpr.fw
+ keyspan/usa*.fw
+ rsi_91x.fw
+ sdd_sagrad_1091_1098.bin
+ slicoss/*.sys
+ sxg/*.sys
+ wsm_22.bin
+# - licence is supposedly GPL, but no source is visible
+ adaptec/starfire_??.bin
+ atmsar11.fw
+ cpia2/stv0672_vp4.bin
+ edgeport/*
+ ositech/Xilinx7OD.bin
+ sb16/*.csp
+ ti_3410.fw
+ ti_5052.fw
+ whiteheat.fw
+ whiteheat_loader.fw
+ yamaha/yss225_registers.bin
+# - licence is GPL, but source is elsewhere
+ atusb/atusb-*.dfu
+ atusb/rzusb-*.bin
+ liquidio/lio_23xx_vsw.bin
+# - licence is unknown
+ acenic/tg?.bin
+ ess/maestro3_*.fw
+ intelliport2.bin
+ korg/k1212.dsp
+ lgs8g75.fw
+ mts_mt9234*.fw
+ myricom/lanai.bin
+ qlogic/isp1000.bin
+ sun/cassini.bin
+ ttusb-budget/dspbootcode.bin
+ vicam/firmware.fw
+ yam/*
+ yamaha/ds1*.fw
+# Packaged in amd64-microcode
+ amd-ucode/*
+# No Debian release references these; obsoleted by ar9170.fw
+ ar9170-?.fw
+# These are said to be related to the hci_uart driver, but it doesn't
+# request them
+ ar3k/*/*
+# wilc1000 driver is "usually found in IoT devices"
+ atmel/wilc1000_*.bin
+# ath6k doesn't actually support this hardware
+ ath6k/AR6002/*
+# These filenames are wrong!
+ brcm/bcm43xx*-0-610-809-0.fw
+ brcm/bcm4329-fullmac-4.bin
+# No Debian release newer than squeeze references these versions
+ bnx2/bnx2-*-4.6.*.fw
+ bnx2/bnx2-*-5.0.*.fw
+ bnx2/bnx2-mips-*-6.0.*.fw
+ bnx2/bnx2-mips-09-6.2.1.fw
+# No Debian release references these versions
+ bnx2x-e1*-4.*.fw
+ bnx2x-e1*-5.2.*.fw
+ bnx2x/bnx2x-e*-6.*.fw
+ bnx2x/bnx2x-e*-7.0.20.0.fw
+ bnx2x/bnx2x-e*-7.0.23.0.fw
+ bnx2x/bnx2x-e*-7.2.*.fw
+ bnx2x/bnx2x-e*-7.8.2.0.fw
+ bnx2x/bnx2x-e*-7.8.17.0.fw
+ bnx2x/bnx2x-e*-7.13.11.0.fw
+# No Debian release references these versions
+ cxgb3/t3fw-7.0.0.bin
+ cxgb3/t3fw-7.1.0.bin
+ cxgb4/t4fw-1.14.4.0.bin
+ cxgb4/t4fw-1.15.37.0.bin
+ cxgb4/t4fw-1.19.1.0.bin
+ cxgb4/t5fw-1.14.4.0.bin
+ cxgb4/t5fw-1.15.37.0.bin
+ cxgb4/t5fw-1.19.1.0.bin
+ cxgb4/t6fw-1.19.1.0.bin
+# No Debian release references this version
+ cbfw-3.2.1.1.bin
+ ct2fw-3.2.1.1.bin
+ ctfw-3.2.1.1.bin
+# Nothing seems to reference these
+ dpaa2/mc/*
+# No Debian release references this version
+ i915/cnl_dmc_ver1_06.bin
+# Nothing seems to reference these versions
+ intel/dsp_fw_bxtn_v2219.bin
+ intel/dsp_fw_glk_v1814.bin
+ intel/dsp_fw_glk_v2880.bin
+ intel/dsp_fw_glk_v2768.bin
+ intel/dsp_fw_kbl_v701.bin
+ intel/dsp_fw_kbl_v1037.bin
+ intel/dsp_fw_kbl_v2042.bin
+ intel/dsp_fw_kbl_v2630.bin
+ intel/dsp_fw_kbl_v3266.bin
+ intel/dsp_fw_release_v969.bin
+# No Debian release requires these versions
+ intel/ibt-17-1.ddc
+ intel/ibt-17-1.sfi
+ intel/ibt-17-2.ddc
+ intel/ibt-17-2.sfi
+ intel/ibt-18-1.ddc
+ intel/ibt-18-1.sfi
+ intel/ibt-18-2.ddc
+ intel/ibt-18-2.sfi
+ iwlwifi-1000-3.ucode
+ iwlwifi-3945-1.ucode
+ iwlwifi-4965-1.ucode
+ iwlwifi-5000-1.ucode
+ iwlwifi-5000-2.ucode
+ iwlwifi-6000g2b-5.ucode
+ iwlwifi-6050-4.ucode
+ iwlwifi-7265D-17.ucode
+ iwlwifi-8000C-34.ucode
+ iwlwifi-8265-34.ucode
+ iwlwifi-*-7.ucode
+ iwlwifi-*-8.ucode
+ iwlwifi-*-10.ucode
+ iwlwifi-*-12.ucode
+ iwlwifi-*-13.ucode
+ iwlwifi-*-14.ucode
+ iwlwifi-*-16.ucode
+ iwlwifi-*-21.ucode
+ iwlwifi-*-27.ucode
+ iwlwifi-*-31.ucode
+ iwlwifi-*-33.ucode
+# No Debian release references these versions
+ libertas/gspi8682*.bin
+ libertas/lbtf_sdio.bin
+ libertas/sd8682*.bin
+ mwl8k/fmimage_8366_ap-1.fw
+ mwlwifi/88W8864.bin
+ mwlwifi/88W8897.bin
+# This is for hardware only found in Mellanox switch appliances
+ mellanox/mlxsw_spectrum-*
+# No Debian release references these versions
+ qed/qed_init_values-*.bin
+ qed/qed_init_values_zipped-8.4.2.0.bin
+ qed/qed_init_values_zipped-8.7.3.0.bin
+ qed/qed_init_values_zipped-8.10.5.0.bin
+ qed/qed_init_values_zipped-8.15.3.0.bin
+ qed/qed_init_values_zipped-8.20.0.0.bin
+# Driver never went upstream
+ TDA7706*
+# No Debian release requires these versions
+ ti-connectivity/wl1271-fw*.bin
+ ti-connectivity/wl128x-fw.bin
+ ti-connectivity/wl128x-fw-ap.bin
+ ti-connectivity/wl12?x-fw*-3.bin
+ ti-connectivity/wl12?x-fw*-4-*.bin
+ ti-connectivity/wl18xx-fw.bin
+# Driver requesting this was removed upstream before we added the firmware
+ tlg2300_firmware.bin
+# Licenses for these are very unclear
+ ueagle-atm/930-fpga.bin
+ ueagle-atm/CMV*.bin
+ ueagle-atm/adi930.fw
+ ueagle-atm/eagleI.fw
+ ueagle-atm/eagleII.fw
+ ueagle-atm/eagleIII.fw
+ ueagle-atm/DSP9?.bin
+ ueagle-atm/DSPe?.bin
+# Xframe hardware has been discontinued and no-one requested these
+ vxge/X3fw*.ncf
 
 Files: debian/*
 Copyright: 2006-2009, Bastian Blank <waldi@debian.org>
