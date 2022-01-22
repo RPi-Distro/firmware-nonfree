@@ -176,7 +176,24 @@ Files-Excluded:
 
 Files: debian/*
 Copyright: 2006-2009, Bastian Blank <waldi@debian.org>
-           2009, Ben Hutchings <ben@decadent.org.uk>
+           2006, Frederik Schüler <fs@debian.org>
+           2007, 2009-2022, Ben Hutchings <benh@debian.org>
+           2007, Daniel Baumann <daniel@debian.org>
+           2007, Steve Langasek <vorlon@debian.org>
+           2008-2011, dann frazier <dannf@debian.org>
+           2009, 2015, 2020-2021, maximilian attems <maks@debian.org>
+           2015, Sophie Brun <sophie@freexian.com>
+           2016, 2019, Sven Joachim <svenjoac@gmx.de>
+           2018-2020, Romain Perier <romain.perier@gmail.com>
+           2018, Yves-Alexis Perez <corsac@debian.org>
+           2019, Raphaël Hertzog <raphael@offensive-security.com>
+           2019, Salvatore Bonaccorso <carnil@debian.org>
+           2019-2020, Hideki Yamane <henrich@debian.org>
+           2019, David Lechner <david@lechnology.com>
+           2020, Andres Salomon <dilinger@queued.net>
+           2020, Aníbal Limón <anibal.limon@linaro.org>
+           2020, Jeremy Stanley <fungi@yuggoth.org>
+           2020, Lucas Nussbaum <lucas@debian.org>
 License: GPL-2+
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
