@@ -27,6 +27,9 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   * Update to linux-support 5.17.0-2
   * ipw2x00, ivtv: Add environment variable to skip EULA on installation:
     FIRMWARE_{IPW2X00,IVTV}_LICENSE_READ_AND_ACCEPTED must be set to 'yes'
+  * d/salsa-ci.yml: Add CI configuration for salsa.debian.org
+    - d/rules: Add linux-support-name target to show the name of the
+      linux-support dependency
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 

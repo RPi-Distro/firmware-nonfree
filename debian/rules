@@ -85,4 +85,8 @@ maintainerclean:
 	-rm debian/*.postinst
 	-rm debian/*.templates
 
-.PHONY: clean build-indep build-arch build binary-indep binary-arch binary
+linux-support-name:
+	@echo linux-support-$(KERNELVERSION)
+
+.PHONY: clean build-indep build-arch build binary-indep binary-arch binary \
+	linux-support-name
