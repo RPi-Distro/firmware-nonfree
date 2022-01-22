@@ -1,0 +1,3 @@
+# These binaries do not run on the host, so these rules don't apply
+firmware-qcom-soc: arch-independent-package-contains-binary-or-object *lib/firmware/*
+firmware-qcom-soc: statically-linked-binary *lib/firmware/*
