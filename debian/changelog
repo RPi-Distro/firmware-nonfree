@@ -6,6 +6,7 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * lintian: Move source overrides to preferred path
   * lintian: Refresh lintian-overrides
+  * d/control: Use my debian.org email in Uploaders field
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
