@@ -23,6 +23,7 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   * Move file exclusions to debian/copyright; replace genorig.py with uscan
   * d/copyright: Update copyright holders and dates for debian/*
   * d/copyright: Add paragraph for metadata that should be CC0
+  * d/copyright: Drop non-matching file exclusions
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
