@@ -2104,7 +2104,7 @@ License: binary-redist-EULA-Hauppuage
  immediately destroy the Firmware or return all copies of the Firmware
  to Hauppauge.
 
-Files: intel/ibt-* iwlwifi-* debian/config/iwlwifi/iwlwifi-*
+Files: intel/ibt-* iwlwifi-*
 Copyright: 2006-2016, Intel Corporation
 License: binary-redist-Intel
 
@@ -2716,7 +2716,7 @@ License: binary-redist-Intel-narrower-patent
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Files: i915/* debian/config/misc-nonfree/i915/*
+Files: i915/*
 Copyright: 2015, Intel Corporation
 License: binary-redist-Intel
 
@@ -4049,7 +4049,7 @@ License: binary-redist-QLogic-1
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Files: sd7220.fw
+Files: qlogic/sd7220.fw
 Copyright: 2007, 2008. QLogic Corporation
 License: BSD-2-clause-OpenIB.org
  All rights reserved.
@@ -4181,7 +4181,7 @@ License: binary-redist-Realtek-permissive
  data in hexadecimal or equivalent format, provided this copyright
  notice is accompanying it.
 
-Files: RTL8192E/* RTL8192SU/* rtlwifi/* rtw88/*
+Files: RTL8192E/* rtlwifi/* rtw88/*
 Copyright: 2009-2010, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-restrictive
  All rights reserved.
