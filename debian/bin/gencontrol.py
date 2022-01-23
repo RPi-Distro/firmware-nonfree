@@ -204,6 +204,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         config_entry = self.config['base', package]
         vars.update(config_entry)
         vars['package'] = package
+        vars['package-env-prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
 
         makeflags['PACKAGE'] = package
 
