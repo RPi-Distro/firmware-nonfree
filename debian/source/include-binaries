@@ -1,7 +1,7 @@
 debian/config/atheros/ath10k/QCA9377/hw1.0/firmware-5.bin
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.bin
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.clm_blob
-debian/config/brcm80211/brcm/brcmfmac43436-sdio.bin
+debian/config/brcm80211/brcm/brcmfmac43436f-sdio.bin
 debian/config/brcm80211/brcm/brcmfmac43436-sdio.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43436s-sdio.bin
 debian/config/brcm80211/brcm/brcmfmac43455-sdio.bin

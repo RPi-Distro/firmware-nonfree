@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	update-alternatives --quiet --install \
+	                    /lib/firmware/brcm/brcmfmac43436-sdio.bin brcmfmac43436-sdio.bin /lib/firmware/brcm/brcmfmac43436f-sdio.bin 50 \
+			    --slave /lib/firmware/brcm/brcmfmac43436-sdio.txt brcmfmac43436-sdio.txt /lib/firmware/brcm/brcmfmac43436f-sdio.txt
+	update-alternatives --quiet --install \
+	                    /lib/firmware/brcm/brcmfmac43436-sdio.bin brcmfmac43436-sdio.bin /lib/firmware/brcm/brcmfmac43436s-sdio.bin 10 \
+			    --slave /lib/firmware/brcm/brcmfmac43436-sdio.txt brcmfmac43436-sdio.txt /lib/firmware/brcm/brcmfmac43436s-sdio.txt
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

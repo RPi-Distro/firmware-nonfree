@@ -10,3 +10,5 @@
 /rules.gen
 /stamps/
 !/*.lintian-overrides
+!/firmware-brcm80211.postinst
+!/firmware-brcm80211.prerm

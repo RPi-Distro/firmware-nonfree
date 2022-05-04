@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove|upgrade|deconfigure)
+        update-alternatives --quiet --remove \
+                            brcmfmac43436-sdio.bin \
+                            /lib/firmware/brcm/brcmfmac43436s-sdio.bin
+        update-alternatives --quiet --remove \
+                            brcmfmac43436-sdio.bin \
+                            /lib/firmware/brcm/brcmfmac43436f-sdio.bin
+    ;;
+
+    failed-upgrade)
+    ;;
+
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
