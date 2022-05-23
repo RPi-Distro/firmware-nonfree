@@ -60,6 +60,10 @@ ask()
     done
 }
 
+if [ "$@package-env-prefix@_LICENSE_READ_AND_ACCEPTED" = yes ]; then
+    db_set firmware-@package@/license/accepted true
+fi
+
 db_get firmware-@package@/license/accepted
 if [ "$RET" != "true" ]; then
     ask
