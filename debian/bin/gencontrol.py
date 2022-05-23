@@ -180,9 +180,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             assert package_binary['Package'].startswith('firmware-')
             package = package_binary['Package'].replace('firmware-', '')
 
-            f = open('debian/copyright.debian')
-            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
-
             makeflags = MakeFlags()
             makeflags['FILES'] = ''
             makeflags['PACKAGE'] = package
@@ -211,16 +208,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         makeflags['PACKAGE'] = package
 
         binary = self.templates["control.binary"]
-        copyright = self.templates["copyright.binary"]
 
         package_dir = "debian/config/%s" % package
-
-        if os.path.exists('%s/copyright' % package_dir):
-            f = open('%s/copyright' % package_dir)
-            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
-        else:
-            vars['license'] = open("%s/LICENSE" % package_dir, 'r').read()
-            open("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
         try:
             os.unlink('debian/firmware-%s.bug-presubj' % package)
@@ -261,7 +250,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                                              f_version
                         continue
                 # Whitelist files not expected to be installed as firmware
-                if f in ['copyright', 'defines', 'LICENSE', 'LICENSE.install',
+                if f in ['defines', 'LICENSE.install',
                          'update.py', 'update.sh']:
                     continue
                 files_unused.append(f)

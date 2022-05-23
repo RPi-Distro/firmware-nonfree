@@ -7,9 +7,6 @@ class Config(dict):
         'base': {
             'packages': SchemaItemList(),
         },
-        'upstream': {
-            'exclude': SchemaItemList()
-        }
     }
 
     package_schemas = {

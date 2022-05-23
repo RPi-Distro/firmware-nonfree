@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import errno, filecmp, fnmatch, glob, os.path, re, sys
+from debian import deb822
 from enum import Enum
 
 sys.path.insert(0, "debian/lib/python")
@@ -51,7 +52,8 @@ def main(source_dir='.'):
     config = Config()
     over_dirs = ['debian/config/' + package for
                  package in config['base',]['packages']]
-    exclusions = config['upstream',]['exclude']
+    with open("debian/copyright") as f:
+        exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
     packaged_files = {}
     for package in config['base',]['packages']:
         for filename in config['base', package]['files']:
