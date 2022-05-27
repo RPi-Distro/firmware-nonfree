@@ -1,3 +1,9 @@
+firmware-nonfree (1:20210315-3+rpt6) UNRELEASED; urgency=medium
+
+  * Add license from Synaptics
+
+ -- Serge Schneider <serge@raspberrypi.com>  Fri, 27 May 2022 16:39:02 +0100
+
 firmware-nonfree (1:20210315-3+rpt5) bullseye; urgency=medium
 
   * Add ability to choose between 43436 and 43436S using update-alternatives

@@ -354,3 +354,58 @@ License: binary-redist-Cypress
 
 Files: debian/config/brcm80211/*/*43436* debian/config/brcm80211/*/*43456*
 Copyright: Synaptics
+License: Synaptics
+ END-USER SOFTWARE TOOL LICENSE 
+ .
+ This End-User Software Tool License is made by and between Synaptics Incorporated ("Synaptics") and you.
+ 1.  	The Synaptics product that you are licensing under this agreement are the Software Libraries (which includes but is not limited to, DLL files, binary code, firmware, library files, and reference codes) and relevant documentation ("Software Libraries"). The Software Libraries are licensed and not sold to you.
+ By acces sing, using, downloading or installing the Software Libraries, you accept these terms. If you do not accept them, do not access, use, download or install the Software Libraries. Instead, remove the Software Libraries from your computer or other device and return it to Synaptics.ÿÿ 
+ .
+ 2.	When Synaptics delivers or otherwise provides the Software Libraries to you, , you will have a nonexclusive, non-transferable, limited right, during the License Term, to:
+ (a) install the Software Libraries on one or more computers; and
+ (b) use the Software Libraries solely for the purposes of      configuration and/or testing of your products which utilize Synaptics integrated circuits; and 
+ (c) Copy and redistribute the Software Libraries in object code only in accordance with this agreement for use in connection with Synaptics integrated circuits.
+ Synaptics reserves all other rights to the Software Libraries and any improvements, updates, upgrades and revisions to such Software Libraries.
+ .
+ 3. 	 Your right to use the Software Libraries is contingent upon your continuing compliance with the terms of this agreement, including the restrictions set forth herein.  Subject to Section 11, when the License Term expires, your license rights also expire and you may no longer use the Software Libraries.
+ .
+ 4.  	You may not (and may not allow anyone else to):
+ (a) copy or use the Software Libraries or related documentation in any manner that is not expressly allowed by the license rights stated above;
+ (b) work around or gain access to any restricted or inactivated                              features or other technical limitations in the Software Libraries;
+ (c) decompile, reverse engineer, or otherwise attempt to derive the source code for the Software Libraries or any underlying algorithms or other ideas embodied in the Software Libraries;
+ (d) distribute or publish any copy of the Software Libraries or related documentation on any medium for any purpose or allow anyone other than you to have access to or use (such as in a timesharing, service bureau, or application service provider model) any Software Libraries other than as permitted under this agreement;
+ (e) rent, lease, or otherwise lend the Software Libraries;
+ (f) use the Software Libraries or its output to create, modify, or simulate designs or patterns for third parties or to develop or enhance any product that competes with a Synaptics product; or
+ (g) modify, enhance or create a derivative work of any part of an Software Libraries or related documentation; or
+ (h) use the Software Libraries in the development of any product if the failure or malfunction of that product could reasonably be expected to result in personal injury, death, or catastrophic loss. 
+ .
+ 5.	You may not transfer, sublicense or assign your license rights to any other person in any manner (by assignment, operation of law or otherwise), without Synaptics written consent.  If you attempt to transfer or assign any of your license rights, the transfer or assignment will be ineffective, null, and void, and you will be in material breach of this agreement.  
+ .
+ 6.	Synaptics may provide error corrections to the Software Libraries as well as minor improvements as such corrections and improvements become generally available at its sole discretion and option.  
+ .
+ 7.	The Software Libraries are licensed ?AS IS? and Synaptics makes no warranties, express, implied, statutory, or otherwise, regarding the Software Libraries or any related documentation.  You acknowledge and agree that any integration or combination of the Software Libraries with your own products, or any other use of the Software Libraries is solely at your OWN RISK. Synaptics disclaims all liability of any kind in connection with the Software Libraries and related documentation, and specifically disclaims any implied warranties of noninfringement, title, merchantability, or fitness for a particular purpose, or arising from a course of dealing or usage of trade. 
+ .
+ 8.  Each party agrees to abide by the following confidentiality obligations with respect to the other party?s information which it has designated at the time of disclosure to be confidential or proprietary:
+ (a) to not disclose it to any third party unless (i) the other party has given its specific and express prior written approval, (ii) the disclosure is expressly allowed under this agreement, or (iii) the disclosure is necessary to comply with a valid court order or subpoena;
+ (b) to not use it for any reason other than to exercise its rights and perform its obligations under this agreement; and
+ (c) to protect it from unauthorized dissemination in the same manner as that party protects its own confidential information, and in any event with reasonable precautions (which include limiting access to employees on a ?need to know? basis).     
+ This Section 8 does not limit your right to redistribute the Software Libraries in object code under Section 2. 
+ .
+ 9.	If you believe you must disclose Synaptics' confidential information in order to comply with a valid court order or subpoena, you must promptly notify Synaptics and cooperate with Synaptics if Synaptics chooses to contest the disclosure requirement, seek confidential treatment of the information to be disclosed, or limit the nature or scope of the information to be disclosed.  Synaptics will do the same if it believes it must disclose your confidential information in similar circumstances.
+ .
+ 10.	The term of this agreement (the ?License Term?) will begin on the date of accessing, using, downloading or installing the Software Libraries and will end when you stop accessing or using the Software Libraries or when Synaptics notifies you in writing of the termination of this agreement not less than thirty days following the sending of the notice, unless this agreement is terminated sooner by Synaptics as provided herein. Synaptics has the right, in its sole discretion, to terminate this agreement immediately by giving written notice of termination to you. If you breach any of the provisions contained within this agreement, the license and agreement shall automatically and immediately terminate and Synaptics shall seek all remedies available to it at law or in equity.
+ .
+ 11.  If and when either you or Synaptics terminates this agreement:
+ (a) you must (i) immediately cease all use of the Software Libraries and related documentation in any future releases of your products or platforms without prior written authorization from Synaptics      (ii) promptly return to Synaptics or destroy all copies (except limited copies for providing any updates to existing products, with prior authorization from Synaptics)  of the Software Libraries and related documentation in your possession or control, and (iii) certify in writing to Synaptics that you have complied with clauses (i) and (ii); and
+ (b) the provisions of Sections 3, 4, 5, 9, 10, 11, 14, 15, 16 and 17 will remain in effect.
+ .
+ 12.	Synaptics owns certain intellectual property rights in the Software Libraries and related documentation.  The only rights granted to you by Synaptics in the Software Libraries and related documentation are the rights expressly granted in this agreement; all other rights are reserved by Synaptics.
+ .
+ 13. 	Synaptics' total, cumulative liability to you relating to this agreement is limited to the amount of fees you paid Synaptics for the Software Libraries, if any (regardless of the nature of the liability or the nature or number of claims giving rise to the liability).  Synaptics will not, under any circumstances or any theory of liability, be liable to you for any lost profits, loss of data, or consequential, incidental, or special damages arising from this agreement or the products and services provided to you under this agreement.  These limitations of liability are intended to apply even if an exclusive remedy is found to have failed its essential purpose.
+ .
+ 14. 	This agreement is governed by the laws of the United States and the State of California, without regard to conflicts of laws principles.  The federal and state courts located in Santa Clara County, California have exclusive jurisdiction over any disputes arising from or relating to this agreement, and each party consents to such jurisdiction and venue. Any notice, approval, consent, or other communication intended to have legal effect under this agreement must be sent to Synaptics Incorporated, ATTN: General Counsel, 1109 McKay Drive, San Jose, California 95131 U.S.A and shall be deemed effective when actually received.
+ .
+ 15.	Either party?s failure to enforce any provision of this agreement will not be deemed a waiver of the future enforcement of that provision or enforcement of any other provision.  In order to be binding, a waiver must be in writing and signed by the party giving the waiver.
+ .
+ 16.	If any provision in this agreement is found to be invalid or unenforceable as written, the remaining provisions will remain in full force and effect and the invalid or unenforceable provision is to be construed (and, if necessary, modified) so that it is valid and enforceable to the greatest extent possible.
+ 17.	This agreement constitutes the entire agreement between the parties concerning its subject matter, and supersede any prior or contemporaneous agreements, communications, or understandings (whether written or oral).
