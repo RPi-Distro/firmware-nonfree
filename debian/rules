@@ -83,7 +83,7 @@ maintainerclean:
 	-rm debian/*.hook.*
 	rm -f debian/*.metainfo.xml
 	-rm debian/*.preinst
-	-find debian/ -type f -name '*.postinst' ! -name 'firmware-brcm80211.postinst'
+	-find debian/ -type f -name '*.postinst' ! -name 'firmware-brcm80211.postinst' -delete
 	-rm debian/*.templates
 
 .PHONY: clean build-indep build-arch build binary-indep binary-arch binary
