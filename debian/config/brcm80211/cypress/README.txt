@@ -17,3 +17,10 @@ its current working directory set to ../brcm:
 
 Be aware that an update of the firmware-brcm80211 package may require that the
 symbolic link be restored.
+
+In an up-to-date Raspberry Pi OS install, you can switch between the two
+variants by running the following command:
+
+    sudo update-alternatives --config cyfmac43455-sdio.bin
+
+This method will persist across firmware-brcm80211 updates.
