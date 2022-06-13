@@ -1,6 +1,15 @@
-firmware-nonfree (1:20210315-3+rpt6) UNRELEASED; urgency=medium
+firmware-nonfree (1:20210315-3+rpt6) bullseye; urgency=medium
 
+  [ Serge Schneider ]
+  * Add update-alternatives for cyfmac43455-sdio.bin
+  * Remove update-alternatives for brcmfmac43436-sdio.bin
+  [ Phil Elwell ]
   * Add license from Synaptics
+  * Update SYN43436P firmware
+    - The shipping firmware for the SYN43436P does not support 4-way
+      handshake offloading. This new firmware (version string
+      "Version: 9.88.4.77 CRC: 143f9f15 Date: Thu 2022-03-31 17:25:16
+      CST Ucode Ver: 1043.20743 FWID: 01-3b307371") fixes that.
 
  -- Serge Schneider <serge@raspberrypi.com>  Fri, 27 May 2022 16:39:02 +0100
 
