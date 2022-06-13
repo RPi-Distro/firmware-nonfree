@@ -4,12 +4,10 @@ set -e
 
 case "$1" in
     configure)
-	update-alternatives --quiet --install \
-	                    /lib/firmware/brcm/brcmfmac43436-sdio.bin brcmfmac43436-sdio.bin /lib/firmware/brcm/brcmfmac43436f-sdio.bin 50 \
-			    --slave /lib/firmware/brcm/brcmfmac43436-sdio.txt brcmfmac43436-sdio.txt /lib/firmware/brcm/brcmfmac43436f-sdio.txt
-	update-alternatives --quiet --install \
-	                    /lib/firmware/brcm/brcmfmac43436-sdio.bin brcmfmac43436-sdio.bin /lib/firmware/brcm/brcmfmac43436s-sdio.bin 10 \
-			    --slave /lib/firmware/brcm/brcmfmac43436-sdio.txt brcmfmac43436-sdio.txt /lib/firmware/brcm/brcmfmac43436s-sdio.txt
+        update-alternatives --quiet --install \
+                            /lib/firmware/cypress/cyfmac43455-sdio.bin cyfmac43455-sdio.bin /lib/firmware/cypress/cyfmac43455-sdio-standard.bin 50
+        update-alternatives --quiet --install \
+                            /lib/firmware/cypress/cyfmac43455-sdio.bin cyfmac43455-sdio.bin /lib/firmware/cypress/cyfmac43455-sdio-minimal.bin 10
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

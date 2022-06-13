@@ -38,9 +38,9 @@ files:
  brcm/brcmfmac43430-sdio.MUR1DX.txt
  brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
- brcm/brcmfmac43436f-sdio.bin
+ brcm/brcmfmac43436-sdio.bin
  brcm/brcmfmac43436-sdio.clm_blob
- brcm/brcmfmac43436f-sdio.txt
+ brcm/brcmfmac43436-sdio.txt
  brcm/brcmfmac43436s-sdio.bin
  brcm/brcmfmac43436s-sdio.txt
  brcm/brcmfmac43455-sdio.bin
@@ -84,7 +84,7 @@ files:
  cypress/cyfmac4339-sdio.bin
  cypress/cyfmac43430-sdio.bin
  cypress/cyfmac43430-sdio.clm_blob
- cypress/cyfmac43455-sdio.bin
+ cypress/cyfmac43455-sdio-standard.bin
  cypress/cyfmac43455-sdio.clm_blob
  cypress/cyfmac43455-sdio-minimal.bin
  cypress/cyfmac4354-sdio.bin
@@ -160,14 +160,14 @@ desc: Broadcom BCM43430 Murata 1DX NVRAM
 [brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt_base]
 desc: Jumper EZpad mini 3 tablet AP6210 Wifi/BT NVRAM
 
-[brcm/brcmfmac43436f-sdio.bin_base]
+[brcm/brcmfmac43436-sdio.bin_base]
 desc: Broadcom BCM43436 firmware
-version: 9.88.4.65
+version: 9.88.4.77
 
 [brcm/brcmfmac43436-sdio.clm_blob]
 desc: Broadcom BCM43436 localisations blob
 
-[brcm/brcmfmac43436f-sdio.txt_base]
+[brcm/brcmfmac43436-sdio.txt_base]
 desc: NVRAM file for BCM43436
 
 [brcm/brcmfmac43456s-sdio.bin_base]
@@ -269,7 +269,7 @@ version: 7.45.98.118
 [cypress/cyfmac43430-sdio.clm_blob_base]
 desc: Cypress CYW43430-SDIO CLM firmware
 
-[cypress/cyfmac43455-sdio.bin_base]
+[cypress/cyfmac43455-sdio-standard.bin_base]
 desc: Cypress CYW43455-SDIO firmware
 version: 7.45.241
 
