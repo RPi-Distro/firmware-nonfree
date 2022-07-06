@@ -170,9 +170,9 @@ desc: Broadcom BCM43436 localisations blob
 [brcm/brcmfmac43436-sdio.txt_base]
 desc: NVRAM file for BCM43436
 
-[brcm/brcmfmac43456s-sdio.bin_base]
-desc: Broadcom BCM43456s firmware
-version: 7.45.96
+[brcm/brcmfmac43436s-sdio.bin_base]
+desc: Broadcom BCM43436s firmware
+version: 7.45.96.141
 
 [brcm/brcmfmac43436s-sdio.txt_base]
 desc: NVRAM file for BCM43436s
