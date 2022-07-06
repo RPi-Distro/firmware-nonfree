@@ -1,3 +1,17 @@
+firmware-nonfree (1:20210315-3+rpt7) bullseye; urgency=medium
+
+  [ Phil Elwell ]
+  * Updated SYN43436S firmware
+    - The embedded clm_blob in the previous SYN43436S firmware did not offer
+      any channels when the country code was set to KR (Korea). This firmware
+      fixes that.
+    - Full version string:
+      Version: 7.45.96.141 (g53ba0094) CRC: 6a9f22a0 Date: Tue 2022-07-05
+      21:30:23 CST Ucode Ver: 1043.20739 FWID: 01-eef9b3bf
+
+
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 06 Jul 2022 14:37:16 +0100
+
 firmware-nonfree (1:20210315-3+rpt6) bullseye; urgency=medium
 
   [ Serge Schneider ]
