@@ -210,7 +210,7 @@ License: binary-redist-Broadcom-wifi
  writing.
 
 Files: brcm/BCM-0bb4-0306.hcd debian/config/brcm80211/*/*43430*
- debian/config/brcm80211/*/*43455*
+ debian/config/brcm80211/*/*43455* debian/config/brcm80211/*/*43439*
 Copyright: 2018, Cypress Semiconductor Corporation
 License: binary-redist-Cypress
  CYPRESS WIRELESS CONNECTIVITY DEVICES
