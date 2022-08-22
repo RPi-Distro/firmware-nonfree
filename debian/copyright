@@ -1846,10 +1846,6 @@ License: binary-redist-Intel-3
  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  SUCH DAMAGE.
 
-Files: i2400m-fw-usb-1.4.sbcf i2400m-fw-usb-1.5.sbcf i6050-fw-usb-1.5.sbcf
-Copyright: 2008, Intel Corporation
-License: binary-redist-Intel-narrower-patent
-
 Files: debian/config/ipw2x00/*.fw
 Copyright: 2003-2009, Intel Corporation
 License: binary-redist-EULA-Intel-Pro-Wireless
