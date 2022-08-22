@@ -594,7 +594,6 @@ files:
  rt73.bin
  s2250.fw
  s2250_loader.fw
- silabs/wfm_wf200_C0.sec
  tehuti/bdx.bin
  tigon/tg3_tso.bin
  tigon/tg3.bin
@@ -610,6 +609,7 @@ files:
  v4l-cx25840.fw
  v4l-cx23885-avcore-01.fw
  vntwusb.fw
+ wfx/wfm_wf200_C0.sec
 support: initramfs-tools
 
 [3com/typhoon.bin_base]
@@ -1494,10 +1494,6 @@ version: 1
 desc: Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware
 version: 1.8
 
-[silabs/wfm_wf200_C0.sec_base]
-desc: Silicon Labs WF200 firmware
-Version: 3.12.1
-
 [tehuti/bdx.bin_base]
 desc: Tehuti network card firmware
 
@@ -1542,3 +1538,7 @@ desc: Conexant CX23885 core firmware
 
 [vntwusb.fw_base]
 desc: VIA VT6656 firmware
+
+[wfx/wfm_wf200_C0.sec_base]
+desc: Silicon Labs WF200 firmware
+Version: 3.12.1
