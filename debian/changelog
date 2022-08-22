@@ -38,6 +38,8 @@ firmware-nonfree (20220815-1) UNRELEASED; urgency=medium
   * lintian: fix file-matching in source override
   * lintian: fix elf-error override syntax
   * Update module info from linux 5.19.0-1 on amd64
+  * 20220815:
+    - atheros: ath10k QCA99X0 board updated to v2
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
