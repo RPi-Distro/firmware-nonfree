@@ -42,6 +42,8 @@ firmware-nonfree (20220815-1) UNRELEASED; urgency=medium
     - atheros: ath10k QCA99X0 board updated to v2
     - bnx2, bnx2x: Drop obsolete firmware files
     - intelwimax: Drop Intel WiMax package (unsupported since 5.10+)
+    - iwlwifi: remove old unsupported 3160/7260/7265/8000/8265 firmware
+      (unsupported since 4.8.0)
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
