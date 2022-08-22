@@ -33,11 +33,10 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
       linux-support dependency
   * Update to linux-support 5.19.0-1
 
-  [ Didier Raboud ]
+  [ Didier Raboud ]
   * d/salsa-ci.yml: Sync build-script with upstream
   * lintian: fix file-matching in source override
   * lintian: fix elf-error override syntax
-  * Update module info from linux 5.19.0-1 on amd64
   * 20220815:
     - atheros: ath10k QCA99X0 board updated to v2
     - bnx2, bnx2x: Drop obsolete firmware files
@@ -47,6 +46,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - misc-nonfree: Update cxgb4 firmware to revision 1.26.6.0
     - misc-nonfree: Update ice package to 1.3.30.0, and DDP comms to 1.3.31.0
     - misc-nonfree: rename silabs/ to wfx/
+  * Update dependency and modinfo from linux 5.19.0-2 on amd64
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 

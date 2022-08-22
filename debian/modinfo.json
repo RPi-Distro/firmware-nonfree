@@ -5074,6 +5074,8 @@
       "usb:v17EFp3069d*dc*dsc*dp*icFFisc*ip*in*",
       "usb:v17EFp3062d*dc*dsc*dp*ic02isc06ip00in*",
       "usb:v17EFp3062d*dc*dsc*dp*icFFisc*ip*in*",
+      "usb:v17EFp3054d*dc*dsc*dp*ic02isc06ip00in*",
+      "usb:v17EFp3054d*dc*dsc*dp*icFFisc*ip*in*",
       "usb:v17EFp304Fd*dc*dsc*dp*ic02isc06ip00in*",
       "usb:v17EFp304Fd*dc*dsc*dp*icFFisc*ip*in*",
       "usb:v04E8pA101d*dc*dsc*dp*ic02isc06ip00in*",
@@ -5152,6 +5154,28 @@
       "rtl_nic/rtl8168e-1.fw",
       "rtl_nic/rtl8168d-2.fw",
       "rtl_nic/rtl8168d-1.fw"
+    ]
+  },
+  "r8188eu": {
+    "alias": [
+      "usb:v7392pB811d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v0B05p18F0d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v2C4Ep0102d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v2357p0111d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v2357p010Cd*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v056Ep4008d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v2001p331Bd*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v2001p3311d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v2001p3310d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v2001p330Fd*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v0DF6p0076d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v07B8p8179d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v0BDApFFEFd*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v0BDAp0179d*dc*dsc*dp*ic*isc*ip*in*",
+      "usb:v0BDAp8179d*dc*dsc*dp*ic*isc*ip*in*"
+    ],
+    "firmware": [
+      "rtlwifi/rtl8188eufw.bin"
     ]
   },
   "r8192e_pci": {
