@@ -45,6 +45,7 @@ firmware-nonfree (20220815-1) UNRELEASED; urgency=medium
     - iwlwifi: remove old unsupported 3160/7260/7265/8000/8265 firmware
       (unsupported since 4.8.0)
     - misc-nonfree: Update cxgb4 firmware to revision 1.26.6.0
+    - misc-nonfree: Update ice package to 1.3.30.0, and DDP comms to 1.3.31.0
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
