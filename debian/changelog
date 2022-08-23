@@ -1,4 +1,6 @@
-firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
+firmware-nonfree (20220815-1) UNRELEASED; urgency=medium
+
+  * New upstream version
 
   [ Philippe Ombredanne ]
   * Update copyright with correct continuations
