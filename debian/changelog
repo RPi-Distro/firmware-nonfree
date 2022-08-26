@@ -51,6 +51,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - qlogic: drop old obsolete brocade firmware revs
     - misc-nonfree: Add lintian override for unstripped-binary-or-object
     - source: Add lintian override for unstripped-binary-or-object
+    - misc-nonfree: i915: Add ADL-P DMC firmware v2.12
   * CI: Build 'all' only, drop autopkgtest job and artifact the source package
     separately
 
