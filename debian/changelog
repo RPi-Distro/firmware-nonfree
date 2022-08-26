@@ -31,6 +31,9 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
     - d/rules: Add linux-support-name target to show the name of the
       linux-support dependency
 
+  [ Didier Raboud ]
+  * d/salsa-ci.yml: Sync build-script with upstream
+
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
 firmware-nonfree (20210818-1) unstable; urgency=medium
