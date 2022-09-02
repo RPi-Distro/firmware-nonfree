@@ -1,10 +1,10 @@
 # Can't translate clickwrap licence texts
 firmware-nonfree source: not-using-po-debconf
-firmware-nonfree source: untranslatable-debconf-templates firmware-ivtv.templates: 4
-firmware-nonfree source: untranslatable-debconf-templates firmware-ivtv.templates: 134
-firmware-nonfree source: untranslatable-debconf-templates firmware-ipw2x00.templates: 4
-firmware-nonfree source: untranslatable-debconf-templates firmware-ipw2x00.templates: 82
+firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ivtv.templates:4]
+firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ivtv.templates:134]
+firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ipw2x00.templates:4]
+firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ipw2x00.templates:82]
 # Well duh that's why this is non-free
 firmware-nonfree source: source-is-missing *
 # These binaries do not run on the host, so these rules don't apply
-firmware-nonfree source: elf-error .*
+firmware-nonfree source: elf-error *
