@@ -36,6 +36,7 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
   * lintian: fix file-matching in source override
   * lintian: fix elf-error override syntax
   * Update module info from linux 5.19.0-1 on amd64
+  * Update to debhelper-compat to 13
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
