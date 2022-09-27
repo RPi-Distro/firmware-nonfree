@@ -82,10 +82,6 @@ Files-Excluded:
  cxgb4/t4fw-1.15.37.0.bin
  cxgb4/t5fw-1.14.4.0.bin
  cxgb4/t5fw-1.15.37.0.bin
-# No Debian release references this version
- cbfw-3.2.1.1.bin
- ct2fw-3.2.1.1.bin
- ctfw-3.2.1.1.bin
 # Nothing seems to reference these
  dpaa2/mc/*
 # No Debian release references this version
