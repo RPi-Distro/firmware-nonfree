@@ -48,7 +48,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - misc-nonfree: rename silabs/ to wfx/
   * Update dependency and modinfo from linux 5.19.0-2 on amd64
   * 20220913:
-    - brocade: drop old unsupported firmware revs
+    - qlogic: drop old obsolete brocade firmware revs
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
