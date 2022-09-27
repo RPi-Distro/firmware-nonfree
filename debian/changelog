@@ -49,6 +49,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * Update dependency and modinfo from linux 5.19.0-2 on amd64
   * 20220913:
     - qlogic: drop old obsolete brocade firmware revs
+    - misc-nonfree: Add lintian override for unstripped-binary-or-object
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
