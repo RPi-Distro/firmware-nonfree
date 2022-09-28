@@ -191,7 +191,7 @@ extract-source:
     - dpkg-buildpackage -uc -us -S -sa -d
     - mkdir -p ${WORKING_DIR}
     - cp ../firmware-nonfree_${upstream_version}.orig.tar.xz ${WORKING_DIR}
-    - mv ../firmware-nonfree_${version}.dsc ../firmware-nonfree_${version}.debian.tar.xz ${WORKING_DIR}
+    - mv ../firmware-nonfree_${version}.dsc ../firmware-nonfree_${version}.debian.tar.xz ../firmware-nonfree_${version}_source.buildinfo ../firmware-nonfree_${version}_source.changes ${WORKING_DIR}
 
     # Move orig tarballs back to where GitLab wants them
     - mkdir orig
@@ -213,7 +213,7 @@ build:
     CCACHE_TMP_DIR: ${CI_PROJECT_DIR}/../.ccache
     CCACHE_WORK_DIR: ${CI_PROJECT_DIR}/.ccache
     DB_BUILD_PARAM: ${SALSA_CI_DPKG_BUILDPACKAGE_ARGS}
-    DB_BUILD_TYPE: full
+    DB_BUILD_TYPE: all
   artifacts:
     exclude:
       - ${WORKING_DIR}/${SOURCE_DIR}/**/*
@@ -228,6 +228,8 @@ build:
     - *build-before-script
     - *build-script
     - mv ${CCACHE_TMP_DIR} ${CCACHE_WORK_DIR}
+    # Do not artifact the source package again, we're keeping the one from extract-source
+    - rm -f ${WORKING_DIR}/*.orig.tar.* ${WORKING_DIR}/*.dsc ${WORKING_DIR}/*.debian.tar.* ${WORKING_DIR}/*_source.changes
   dependencies:
     - extract-source
 
@@ -237,9 +239,10 @@ build:
 
 lintian:
     extends: .test-lintian
-
-autopkgtest:
-    extends: .test-autopkgtest
+    needs:
+    - !reference [.test-lintian,needs]
+    - job: extract-source
+      artifacts: true
 
 piuparts:
     extends: .test-piuparts

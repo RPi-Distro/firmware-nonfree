@@ -51,6 +51,8 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - qlogic: drop old obsolete brocade firmware revs
     - misc-nonfree: Add lintian override for unstripped-binary-or-object
     - source: Add lintian override for unstripped-binary-or-object
+  * CI: Build 'all' only, drop autopkgtest job and artifact the source package
+    separately
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
