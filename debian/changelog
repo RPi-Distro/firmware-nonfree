@@ -34,7 +34,6 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * Update to linux-support 5.19.0-1
 
   [ Didier Raboud ]
-  * d/salsa-ci.yml: Sync build-script with upstream
   * lintian: fix file-matching in source override
   * lintian: fix elf-error override syntax
   * 20220815:
