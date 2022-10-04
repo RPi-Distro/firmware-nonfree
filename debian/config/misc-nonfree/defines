@@ -828,11 +828,11 @@ desc: Freescale i.MX7 SDMA firmware
 version: 4.5
 
 [i915/adlp_dmc_ver2_09.bin_base]
-desc: Intel ADL-P DMC Support
+desc: Intel ADL-P DMC firmware
 version: 2.09
 
 [i915/adlp_dmc_ver2_10.bin_base]
-desc: Intel ADL-P DMC Support
+desc: Intel ADL-P DMC firmware
 version: 2.10
 
 [i915/adlp_dmc_ver2_12.bin_base]
