@@ -53,6 +53,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - source: Add lintian override for unstripped-binary-or-object
     - misc-nonfree: i915: Add ADL-P DMC firmware v2.12
     - misc-nonfree: i915: ADL-P DMC files are firmware not support files
+    - misc-nonfree: i915: Add ADL-P DMC firmware v2.14
   * CI: Build 'all' only, drop autopkgtest job and artifact the source package
     separately
 
