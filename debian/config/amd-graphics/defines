@@ -4,6 +4,7 @@ longdesc: AMD/ATI graphics chips supported by the radeon, amdgpu and r128 driver
 replaces: firmware-linux-nonfree (<< 20151018-1~)
 breaks: firmware-linux-nonfree (<< 20151018-1~)
 files:
+ amdgpu/aldebaran_mec.bin
  amdgpu/aldebaran_mec2.bin
  amdgpu/aldebaran_rlc.bin
  amdgpu/aldebaran_sdma.bin
@@ -730,6 +731,9 @@ files:
  radeon/VERDE_smc.bin
  radeon/verde_smc.bin
 support: initramfs-tools
+
+[amdgpu/aldebaran_mec.bin_base]
+desc: "Aldebaran" MEC firmware
 
 [amdgpu/aldebaran_mec2.bin_base]
 desc: "Aldebaran" MEC2 firmware
