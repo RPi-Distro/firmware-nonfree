@@ -37,6 +37,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * misc-nonfree: Add Intel DG2 firmware
   * misc-nonfree: Add Nvidia Ampere GA102/GA103/GA104/GA106/GA107 firmware
   * amd-graphics: Correct descriptions of files with IP version in filename
+  * amd-graphics: Fix some inconsistent file descriptions
 
   [ Didier Raboud ]
   * lintian: fix file-matching in source override
