@@ -80,7 +80,11 @@ files:
  imx/sdma/sdma-imx7d.bin
  i915/adlp_dmc_ver2_09.bin
  i915/adlp_dmc_ver2_10.bin
+ i915/adlp_dmc_ver2_12.bin
+ i915/adlp_dmc_ver2_14.bin
  i915/adlp_guc_62.0.3.bin
+ i915/adlp_guc_69.0.3.bin
+ i915/adlp_guc_70.1.1.bin
  i915/adls_dmc_ver2_01.bin
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
@@ -88,6 +92,8 @@ files:
  i915/bxt_guc_33.0.0.bin
  i915/bxt_guc_49.0.1.bin
  i915/bxt_guc_62.0.0.bin
+ i915/bxt_guc_69.0.3.bin
+ i915/bxt_guc_70.1.1.bin
  i915/bxt_guc_ver8_7.bin
  i915/bxt_guc_ver9_29.bin
  i915/bxt_huc_2.0.0.bin
@@ -96,22 +102,30 @@ files:
  i915/cml_guc_33.0.0.bin
  i915/cml_guc_49.0.1.bin
  i915/cml_guc_62.0.0.bin
+ i915/cml_guc_69.0.3.bin
+ i915/cml_guc_70.1.1.bin
  i915/cml_huc_4.0.0.bin
  i915/cnl_dmc_ver1_07.bin
  i915/dg1_dmc_ver2_02.bin
  i915/dg1_guc_49.0.1.bin
  i915/dg1_guc_62.0.0.bin
+ i915/dg1_guc_69.0.3.bin
+ i915/dg1_guc_70.1.1.bin
  i915/dg1_huc_7.7.1.bin
  i915/dg1_huc_7.9.3.bin
  i915/ehl_guc_33.0.4.bin
  i915/ehl_guc_49.0.1.bin
  i915/ehl_guc_62.0.0.bin
+ i915/ehl_guc_69.0.3.bin
+ i915/ehl_guc_70.1.1.bin
  i915/ehl_huc_9.0.0.bin
  i915/glk_dmc_ver1_04.bin
  i915/glk_guc_32.0.3.bin
  i915/glk_guc_33.0.0.bin
  i915/glk_guc_49.0.1.bin
  i915/glk_guc_62.0.0.bin
+ i915/glk_guc_69.0.3.bin
+ i915/glk_guc_70.1.1.bin
  i915/glk_huc_4.0.0.bin
  i915/glk_huc_ver03_01_2893.bin
  i915/icl_dmc_ver1_07.bin
@@ -120,6 +134,8 @@ files:
  i915/icl_guc_33.0.0.bin
  i915/icl_guc_49.0.1.bin
  i915/icl_guc_62.0.0.bin
+ i915/icl_guc_69.0.3.bin
+ i915/icl_guc_70.1.1.bin
  i915/icl_huc_9.0.0.bin
  i915/icl_huc_ver8_4_3238.bin
  i915/kbl_dmc_ver1.bin
@@ -129,6 +145,8 @@ files:
  i915/kbl_guc_33.0.0.bin
  i915/kbl_guc_49.0.1.bin
  i915/kbl_guc_62.0.0.bin
+ i915/kbl_guc_69.0.3.bin
+ i915/kbl_guc_70.1.1.bin
  i915/kbl_guc_ver9_14.bin
  i915/kbl_guc_ver9_39.bin
  i915/kbl_huc_4.0.0.bin
@@ -143,6 +161,8 @@ files:
  i915/skl_guc_33.0.0.bin
  i915/skl_guc_49.0.1.bin
  i915/skl_guc_62.0.0.bin
+ i915/skl_guc_69.0.3.bin
+ i915/skl_guc_70.1.1.bin
  i915/skl_guc_ver1.bin
  i915/skl_guc_ver4.bin
  i915/skl_guc_ver6.bin
@@ -157,6 +177,8 @@ files:
  i915/tgl_guc_35.2.0.bin
  i915/tgl_guc_49.0.1.bin
  i915/tgl_guc_62.0.0.bin
+ i915/tgl_guc_69.0.3.bin
+ i915/tgl_guc_70.1.1.bin
  i915/tgl_huc_7.0.12.bin
  i915/tgl_huc_7.0.3.bin
  i915/tgl_huc_7.5.0.bin
@@ -827,16 +849,32 @@ desc: Freescale i.MX7 SDMA firmware
 version: 4.5
 
 [i915/adlp_dmc_ver2_09.bin_base]
-desc: Intel ADL-P DMC Support
+desc: Intel ADL-P DMC firmware
 version: 2.09
 
 [i915/adlp_dmc_ver2_10.bin_base]
-desc: Intel ADL-P DMC Support
+desc: Intel ADL-P DMC firmware
 version: 2.10
+
+[i915/adlp_dmc_ver2_12.bin_base]
+desc: Intel ADL-P DMC firmware
+version: 2.12
+
+[i915/adlp_dmc_ver2_14.bin_base]
+desc: Intel ADL-P DMC firmware
+version: 2.14
 
 [i915/adlp_guc_62.0.3.bin_base]
 desc: Intel ADL-P GuC firmware
 version: 62.0.3
+
+[i915/adlp_guc_69.0.3.bin_base]
+desc: Intel ADL-P GuC firmware
+version: 69.0.3
+
+[i915/adlp_guc_70.1.1.bin_base]
+desc: Intel ADL-P GuC firmware
+version: 70.1.1
 
 [i915/adls_dmc_ver2_01.bin_base]
 desc: Intel "Adler Lake" DMC firmware
@@ -861,6 +899,14 @@ version: 49.0.1
 [i915/bxt_guc_62.0.0.bin_base]
 desc: Intel "Broxton" GuC firmware
 version: 62.0.0
+
+[i915/bxt_guc_69.0.3.bin_base]
+desc: Intel "Broxton" GuC firmware
+version: 69.0.3
+
+[i915/bxt_guc_70.1.1.bin_base]
+desc: Intel "Broxton" GuC firmware
+version: 70.1.1
 
 [i915/bxt_guc_ver8_7.bin_base]
 desc: Intel "Broxton" GuC firmware
@@ -894,6 +940,14 @@ version: 49.0.1
 desc: Intel "Comet Lake" GuC firmware
 version: 62.0.0
 
+[i915/cml_guc_69.0.3.bin_base]
+desc: Intel "Comet Lake" GuC firmware
+version: 69.0.3
+
+[i915/cml_guc_70.1.1.bin_base]
+desc: Intel "Comet Lake" GuC firmware
+version: 70.1.1
+
 [i915/cml_huc_4.0.0.bin_base]
 desc: Intel "Comet Lake" HuC firmware
 version: 4.0.0
@@ -914,6 +968,14 @@ version: 49.0.1
 desc: Intel DG1 GuC firmware
 version: 62.0.0
 
+[i915/dg1_guc_69.0.3.bin_base]
+desc: Intel DG1 GuC firmware
+version: 69.0.3
+
+[i915/dg1_guc_70.1.1.bin_base]
+desc: Intel DG1 GuC firmware
+version: 70.1.1
+
 [i915/dg1_huc_7.7.1.bin_base]
 desc: Intel DG1 HUC firmware
 version: 7.7.1
@@ -933,6 +995,14 @@ version: 49.0.1
 [i915/ehl_guc_62.0.0.bin_base]
 desc: Intel "Elkhart Lake" GuC firmware
 version: 62.0.0
+
+[i915/ehl_guc_69.0.3.bin_base]
+desc: Intel "Elkhart Lake" GuC firmware
+version: 69.0.3
+
+[i915/ehl_guc_70.1.1.bin_base]
+desc: Intel "Elkhart Lake" GuC firmware
+version: 70.1.1
 
 [i915/ehl_huc_9.0.0.bin_base]
 desc: Intel "Elkhart Lake" HuC firmware
@@ -957,6 +1027,14 @@ version: 49.0.1
 [i915/glk_guc_62.0.0.bin_base]
 desc: Intel "Geminilake" GuC firmware
 version: 62.0.0
+
+[i915/glk_guc_69.0.3.bin_base]
+desc: Intel "Geminilake" GuC firmware
+version: 69.0.3
+
+[i915/glk_guc_70.1.1.bin_base]
+desc: Intel "Geminilake" GuC firmware
+version: 70.1.1
 
 [i915/glk_huc_4.0.0.bin_base]
 desc: Intel "Geminilake" HuC firmware
@@ -990,6 +1068,14 @@ version: 49.0.1
 desc: Intel "Icelake" GuC firmware
 version: 62.0.0
 
+[i915/icl_guc_69.0.3.bin_base]
+desc: Intel "Icelake" GuC firmware
+version: 69.0.3
+
+[i915/icl_guc_70.1.1.bin_base]
+desc: Intel "Icelake" GuC firmware
+version: 70.1.1
+
 [i915/icl_huc_9.0.0.bin_base]
 desc: Intel "Icelake" HuC firmware
 version: 9.0.0
@@ -1021,6 +1107,14 @@ version: 49.0.1
 [i915/kbl_guc_62.0.0.bin_base]
 desc: Intel "Kabylake" GuC firmware
 version: 62.0.0
+
+[i915/kbl_guc_69.0.3.bin_base]
+desc: Intel "Kabylake" GuC firmware
+version: 69.0.3
+
+[i915/kbl_guc_70.1.1.bin_base]
+desc: Intel "Kabylake" GuC firmware
+version: 70.1.1
 
 [i915/kbl_guc_ver9_14.bin_base]
 desc: Intel "Kabylake" GuC firmware
@@ -1074,6 +1168,14 @@ version: 49.0.0
 desc: Intel "Skylake" GuC firmware
 version: 62.0.0
 
+[i915/skl_guc_69.0.3.bin_base]
+desc: Intel "Skylake" GuC firmware
+version: 69.0.3
+
+[i915/skl_guc_70.1.1.bin_base]
+desc: Intel "Skylake" GuC firmware
+version: 70.1.1
+
 [i915/skl_guc_ver1.bin_base]
 desc: Intel "Skylake" GuC firmware
 version: 1.1059
@@ -1125,6 +1227,14 @@ version: 49.0.1
 [i915/tgl_guc_62.0.0.bin_base]
 desc: Intel "Tiger Lake" GuC firmware
 version: 62.0.0
+
+[i915/tgl_guc_69.0.3.bin_base]
+desc: Intel "Tiger Lake" GuC firmware
+version: 69.0.3
+
+[i915/tgl_guc_70.1.1.bin_base]
+desc: Intel "Tiger Lake" GuC firmware
+version: 70.1.1
 
 [i915/tgl_huc_7.0.12.bin_base]
 desc: Intel "Tiger Lake" HuC firmware
