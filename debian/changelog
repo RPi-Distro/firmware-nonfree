@@ -1,3 +1,10 @@
+firmware-nonfree (20210818-1~bpo11+1) bullseye-backports; urgency=medium
+
+  * Rebuild for bullseye-backports:
+    - Use linux-support-5.10.0-18
+
+ -- Ben Hutchings <benh@debian.org>  Sat, 08 Oct 2022 21:50:37 +0200
+
 firmware-nonfree (20210818-1) unstable; urgency=medium
 
   * New upstream version:
