@@ -913,8 +913,7 @@ desc: AMD "Cyan Skillfish2" SDMA Firmware
 desc: AMD "Cyan Skillfish2" SDMA1 Firmware
 
 [amdgpu/dcn_3_1_6_dmcub.bin_base]
-desc: AMD DCN DMCUB Firmware
-version: 3.1.6
+desc: AMD DCN 3.1.6 DMCUB Firmware
 
 [amdgpu/dimgrey_cavefish_ce.bin_base]
 desc: AMD "Dimgrey Cavefish" CE firmware
@@ -990,28 +989,22 @@ version: 1.87.12
 desc: "Fiji" VCE firmware
 
 [amdgpu/gc_10_3_7_ce.bin_base]
-desc: AMD GC CE Firmware
-version: 10.3.7
+desc: AMD GC 10.3.7 CE firmware
 
 [amdgpu/gc_10_3_7_me.bin_base]
-desc: AMD GC ME Firmware
-version: 10.3.7
+desc: AMD GC 10.3.7 ME firmware
 
 [amdgpu/gc_10_3_7_mec.bin_base]
-desc: AMD GC MEC Firmware
-version: 10.3.7
+desc: AMD GC 10.3.7 MEC firmware
 
 [amdgpu/gc_10_3_7_mec2.bin_base]
-desc: AMD GC MEC2 Firmware
-version: 10.3.7
+desc: AMD GC 10.3.7 MEC2 firmware
 
 [amdgpu/gc_10_3_7_pfp.bin_base]
-desc: AMD GC PFP Firmware
-version: 10.3.7
+desc: AMD GC 10.3.7 PFP firmware
 
 [amdgpu/gc_10_3_7_rlc.bin_base]
-desc: AMD GC RLC Firmware
-version: 10.3.7
+desc: AMD GC 10.3.7 RLC firmware
 
 [amdgpu/green_sardine_asd.bin_base]
 desc: AMD RYZEN 5000 ASD firmware
@@ -1644,16 +1637,13 @@ desc: "Polaris 12" VCE firmware
 version: 53.26
 
 [amdgpu/psp_13_0_8_asd.bin_base]
-desc: AMD PSP ASD Firmware
-version: 13.0.8
+desc: AMD PSP 13.0.8 ASD Firmware
 
 [amdgpu/psp_13_0_8_ta.bin_base]
-desc: AMD PSP TA Firmware
-version: 13.0.8
+desc: AMD PSP 13.0.8 TA Firmware
 
 [amdgpu/psp_13_0_8_toc.bin_base]
-desc: AMD PSP TOC Firmware
-version: 13.0.8
+desc: AMD PSP 13.0.8 TOC Firmware
 
 [amdgpu/raven2_asd.bin_base]
 desc: "Raven 2" ASD firmware
@@ -1764,8 +1754,7 @@ desc: "Renoir" TA firmware
 desc: "Renoir" VCN firmware
 
 [amdgpu/sdma_5_2_7.bin_base]
-desc: AMD SDMA Firmware
-version: 5.2.7
+desc: AMD SDMA 5.2.7 firmware
 
 [amdgpu/si58_mc.bin_base]
 desc: Radeon "SI58" MC microcode
