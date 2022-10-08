@@ -82,6 +82,7 @@ files:
  i915/adlp_dmc_ver2_10.bin
  i915/adlp_dmc_ver2_12.bin
  i915/adlp_dmc_ver2_14.bin
+ i915/adlp_dmc_ver2_16.bin
  i915/adlp_guc_62.0.3.bin
  i915/adlp_guc_69.0.3.bin
  i915/adlp_guc_70.1.1.bin
@@ -863,6 +864,10 @@ version: 2.12
 [i915/adlp_dmc_ver2_14.bin_base]
 desc: Intel ADL-P DMC firmware
 version: 2.14
+
+[i915/adlp_dmc_ver2_16.bin_base]
+desc: Intel ADL-P DMC firmware
+version: 2.16
 
 [i915/adlp_guc_62.0.3.bin_base]
 desc: Intel ADL-P GuC firmware
