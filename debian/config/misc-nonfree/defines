@@ -247,6 +247,39 @@ files:
  mts_cdma.fw
  mts_edge.fw
  mts_gsm.fw
+ nvidia/ga102/acr/ucode_ahesasc.bin
+ nvidia/ga102/acr/ucode_asb.bin
+ nvidia/ga102/acr/ucode_unload.bin
+ nvidia/ga102/gr/fecs_bl.bin
+ nvidia/ga102/gr/fecs_sig.bin
+ nvidia/ga102/gr/gpccs_bl.bin
+ nvidia/ga102/gr/gpccs_sig.bin
+ nvidia/ga102/gr/NET_img.bin
+ nvidia/ga102/nvdec/scrubber.bin
+ nvidia/ga102/sec2/desc.bin
+ nvidia/ga102/sec2/hs_bl_sig.bin
+ nvidia/ga102/sec2/image.bin
+ nvidia/ga102/sec2/sig.bin
+ nvidia/ga103/gr/fecs_bl.bin
+ nvidia/ga103/gr/fecs_sig.bin
+ nvidia/ga103/gr/gpccs_bl.bin
+ nvidia/ga103/gr/gpccs_sig.bin
+ nvidia/ga103/gr/NET_img.bin
+ nvidia/ga104/gr/fecs_bl.bin
+ nvidia/ga104/gr/fecs_sig.bin
+ nvidia/ga104/gr/gpccs_bl.bin
+ nvidia/ga104/gr/gpccs_sig.bin
+ nvidia/ga104/gr/NET_img.bin
+ nvidia/ga106/gr/fecs_bl.bin
+ nvidia/ga106/gr/fecs_sig.bin
+ nvidia/ga106/gr/gpccs_bl.bin
+ nvidia/ga106/gr/gpccs_sig.bin
+ nvidia/ga106/gr/NET_img.bin
+ nvidia/ga107/gr/fecs_bl.bin
+ nvidia/ga107/gr/fecs_sig.bin
+ nvidia/ga107/gr/gpccs_bl.bin
+ nvidia/ga107/gr/gpccs_sig.bin
+ nvidia/ga107/gr/NET_img.bin
  nvidia/gk20a/fecs_data.bin
  nvidia/gk20a/fecs_inst.bin
  nvidia/gk20a/gpccs_data.bin

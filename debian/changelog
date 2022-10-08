@@ -35,6 +35,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * d/bin/gencontrol.py: Make debian/rules.gen reproducible
   * misc-nonfree: Add Intel ADL-P DMC firmware version 2.16
   * misc-nonfree: Add Intel DG2 firmware
+  * misc-nonfree: Add Nvidia Ampere GA102/GA103/GA104/GA106/GA107 firmware
 
   [ Didier Raboud ]
   * lintian: fix file-matching in source override
