@@ -139,6 +139,12 @@ files:
  iwlwifi-ty-a0-gf-a0-63.ucode
  iwlwifi-ty-a0-gf-a0-66.ucode
  iwlwifi-ty-a0-gf-a0.pnvm
+ iwlwifi-so-a0-gf-a0-71.ucode
+ iwlwifi-so-a0-gf-a0.pnvm
+ iwlwifi-so-a0-gf4-a0-71.ucode
+ iwlwifi-so-a0-gf4-a0.pnvm
+ iwlwifi-so-a0-hr-b0-71.ucode
+ iwlwifi-so-a0-jf-b0-71.ucode
 longdesc: Intel Wireless cards supported by the iwl3945, iwl4965, and
  iwlwifi drivers
 
@@ -685,3 +691,21 @@ version: 66.55c64978.0
 
 [iwlwifi-ty-a0-gf-a0.pnvm_base]
 desc: Intel Wireless (TY-A0-GF-A0) PNVM firmware
+
+[iwlwifi-so-a0-gf-a0-71.ucode_base]
+desc: Intel Wireless (SO-A0-GF-A0) firmware
+
+[iwlwifi-so-a0-gf-a0.pnvm_base]
+desc: Intel Wireless (SO-A0-GF-A0) PNVM firmware
+
+[iwlwifi-so-a0-gf4-a0-71.ucode_base]
+desc: Intel Wireless (SO-A0-GF4-A0) firmware
+
+[iwlwifi-so-a0-gf4-a0.pnvm_base]
+desc: Intel Wireless (SO-A0-GF4-A0) PNVM firmware
+
+[iwlwifi-so-a0-hr-b0-71.ucode_base]
+desc: Intel Wireless (SO-A0-HR-B0) firmware
+
+[iwlwifi-so-a0-jf-b0-71.ucode_base]
+desc: Intel Wireless (SO-A0-JF-B0) firmware
