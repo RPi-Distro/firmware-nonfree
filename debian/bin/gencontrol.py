@@ -275,11 +275,11 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             print('W: %s: unused files:' % package, ' '.join(files_unused),
                   file=sys.stderr)
 
-        makeflags['FILES'] = ' '.join(["%s:%s" % (i[1], i[0]) for i in files_real.values()])
+        makeflags['FILES'] = ' '.join(["%s:%s" % (i[1], i[0]) for i in sorted(files_real.values())])
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
 
         makeflags['LINKS'] = ' '.join(["%s:%s" % (link, target)
-                                       for link, target in links.items()])
+                                       for link, target in sorted(links.items())])
 
         files_desc = ["Contents:"]
         firmware_meta_temp = self.templates["metainfo.xml.firmware"]

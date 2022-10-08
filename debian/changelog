@@ -32,6 +32,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - d/rules: Add linux-support-name target to show the name of the
       linux-support dependency
   * Update to linux-support 5.19.0-1
+  * d/bin/gencontrol.py: Make debian/rules.gen reproducible
 
   [ Didier Raboud ]
   * lintian: fix file-matching in source override
