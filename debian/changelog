@@ -34,6 +34,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * Update to linux-support 5.19.0-1
   * d/bin/gencontrol.py: Make debian/rules.gen reproducible
   * misc-nonfree: Add Intel ADL-P DMC firmware version 2.16
+  * misc-nonfree: Add Intel DG2 firmware
 
   [ Didier Raboud ]
   * lintian: fix file-matching in source override

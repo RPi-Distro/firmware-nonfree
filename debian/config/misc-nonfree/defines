@@ -114,6 +114,10 @@ files:
  i915/dg1_guc_70.1.1.bin
  i915/dg1_huc_7.7.1.bin
  i915/dg1_huc_7.9.3.bin
+ i915/dg2_guc_70.1.2.bin
+ i915/dg2_guc_70.4.1.bin
+ i915/dg2_dmc_ver2_06.bin
+ i915/dg2_dmc_ver2_07.bin
  i915/ehl_guc_33.0.4.bin
  i915/ehl_guc_49.0.1.bin
  i915/ehl_guc_62.0.0.bin
@@ -988,6 +992,22 @@ version: 7.7.1
 [i915/dg1_huc_7.9.3.bin_base]
 desc: Intel DG1 HUC firmware
 version: 7.9.3
+
+[i915/dg2_guc_70.1.2.bin_base]
+desc: Intel DG2 GuC firmware
+version: 70.1.2
+
+[i915/dg2_guc_70.4.1.bin_base]
+desc: Intel DG2 GuC firmware
+version: 70.4.1
+
+[i915/dg2_dmc_ver2_06.bin_base]
+desc: Intel DG2 DMC firmware
+version: 2.06
+
+[i915/dg2_dmc_ver2_07.bin_base]
+desc: Intel DG2 DMC firmware
+version: 2.07
 
 [i915/ehl_guc_33.0.4.bin_base]
 desc: Intel "Elkhart Lake" GuC firmware
