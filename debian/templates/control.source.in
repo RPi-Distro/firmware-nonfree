@@ -3,7 +3,7 @@ Section: non-free/kernel
 Priority: optional
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Uploaders: Bastian Blank <waldi@debian.org>, Steve Langasek <vorlon@debian.org>, maximilian attems <maks@debian.org>, Ben Hutchings <benh@debian.org>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.0.1
 Vcs-Git: https://salsa.debian.org/kernel-team/firmware-nonfree.git
 Vcs-Browser: https://salsa.debian.org/kernel-team/firmware-nonfree
