@@ -6,7 +6,6 @@ packages:
  bnx2x
  brcm80211
  cavium
- intelwimax
  intel-sound
  ipw2x00
  ivtv

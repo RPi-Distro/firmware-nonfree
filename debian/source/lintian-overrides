@@ -8,3 +8,4 @@ firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ipw2x
 firmware-nonfree source: source-is-missing *
 # These binaries do not run on the host, so these rules don't apply
 firmware-nonfree source: elf-error *
+firmware-nonfree source: binary-with-bad-dynamic-table *

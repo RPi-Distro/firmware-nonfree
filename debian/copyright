@@ -82,10 +82,6 @@ Files-Excluded:
  cxgb4/t4fw-1.15.37.0.bin
  cxgb4/t5fw-1.14.4.0.bin
  cxgb4/t5fw-1.15.37.0.bin
-# No Debian release references this version
- cbfw-3.2.1.1.bin
- ct2fw-3.2.1.1.bin
- ctfw-3.2.1.1.bin
 # Nothing seems to reference these
  dpaa2/mc/*
 # No Debian release references this version
@@ -488,7 +484,7 @@ Copyright: 1988, 1990-1991, 1993, The Regents of the University of California
            2015-2016, The Android Open Source Project
 License: binary-redist-Qualcomm-Atheros
 
-Files: ath10k/QCA*/hw*/board.bin qca/nvm_*.bin qca/rampatch_*.bin
+Files: ath10k/QCA*/hw*/board*.bin qca/nvm_*.bin qca/rampatch_*.bin
  qca/crbtfw*.tlv qca/crnv*.bin
 Copyright: 2015, Qualcomm Atheros, Inc.
 License: binary-redist-Qualcomm-Atheros
@@ -1845,10 +1841,6 @@ License: binary-redist-Intel-3
  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  SUCH DAMAGE.
-
-Files: i2400m-fw-usb-1.4.sbcf i2400m-fw-usb-1.5.sbcf i6050-fw-usb-1.5.sbcf
-Copyright: 2008, Intel Corporation
-License: binary-redist-Intel-narrower-patent
 
 Files: debian/config/ipw2x00/*.fw
 Copyright: 2003-2009, Intel Corporation

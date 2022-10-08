@@ -1,4 +1,6 @@
-firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
+firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
+
+  * New upstream version
 
   [ Philippe Ombredanne ]
   * Update copyright with correct continuations
@@ -31,11 +33,26 @@ firmware-nonfree (20210818-2) UNRELEASED; urgency=medium
       linux-support dependency
   * Update to linux-support 5.19.0-1
 
-  [ Didier Raboud ]
+  [ Didier Raboud ]
   * d/salsa-ci.yml: Sync build-script with upstream
   * lintian: fix file-matching in source override
   * lintian: fix elf-error override syntax
-  * Update module info from linux 5.19.0-1 on amd64
+  * 20220815:
+    - atheros: ath10k QCA99X0 board updated to v2
+    - bnx2, bnx2x: Drop obsolete firmware files
+    - intelwimax: Drop Intel WiMax package (unsupported since 5.10+)
+    - iwlwifi: remove old unsupported 3160/7260/7265/8000/8265 firmware
+      (unsupported since 4.8.0)
+    - misc-nonfree: Update cxgb4 firmware to revision 1.26.6.0
+    - misc-nonfree: Update ice package to 1.3.30.0, and DDP comms to 1.3.31.0
+    - misc-nonfree: rename silabs/ to wfx/
+  * Update dependency and modinfo from linux 5.19.0-2 on amd64
+  * 20220913:
+    - qlogic: drop old obsolete brocade firmware revs
+    - misc-nonfree: Add lintian override for unstripped-binary-or-object
+    - source: Add lintian override for unstripped-binary-or-object
+  * CI: Build 'all' only, drop autopkgtest job and artifact the source package
+    separately
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
