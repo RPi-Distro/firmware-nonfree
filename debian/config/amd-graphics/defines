@@ -4,6 +4,13 @@ longdesc: AMD/ATI graphics chips supported by the radeon, amdgpu and r128 driver
 replaces: firmware-linux-nonfree (<< 20151018-1~)
 breaks: firmware-linux-nonfree (<< 20151018-1~)
 files:
+ amdgpu/aldebaran_mec2.bin
+ amdgpu/aldebaran_rlc.bin
+ amdgpu/aldebaran_sdma.bin
+ amdgpu/aldebaran_smc.bin
+ amdgpu/aldebaran_sos.bin
+ amdgpu/aldebaran_ta.bin
+ amdgpu/aldebaran_vcn.bin
  amdgpu/arcturus_asd.bin
  amdgpu/arcturus_gpu_info.bin
  amdgpu/arcturus_mec2.bin
@@ -15,6 +22,18 @@ files:
  amdgpu/arcturus_ta.bin
  amdgpu/arcturus_vcn.bin
  amdgpu/banks_k_2_smc.bin
+ amdgpu/beige_goby_ce.bin
+ amdgpu/beige_goby_dmcub.bin
+ amdgpu/beige_goby_me.bin
+ amdgpu/beige_goby_mec.bin
+ amdgpu/beige_goby_mec2.bin
+ amdgpu/beige_goby_pfp.bin
+ amdgpu/beige_goby_rlc.bin
+ amdgpu/beige_goby_sdma.bin
+ amdgpu/beige_goby_smc.bin
+ amdgpu/beige_goby_sos.bin
+ amdgpu/beige_goby_ta.bin
+ amdgpu/beige_goby_vcn.bin
  amdgpu/bonaire_ce.bin
  amdgpu/bonaire_k_smc.bin
  amdgpu/bonaire_mc.bin
@@ -37,6 +56,15 @@ files:
  amdgpu/carrizo_sdma1.bin
  amdgpu/carrizo_uvd.bin
  amdgpu/carrizo_vce.bin
+ amdgpu/cyan_skillfish2_ce.bin
+ amdgpu/cyan_skillfish2_me.bin
+ amdgpu/cyan_skillfish2_mec.bin
+ amdgpu/cyan_skillfish2_mec2.bin
+ amdgpu/cyan_skillfish2_pfp.bin
+ amdgpu/cyan_skillfish2_rlc.bin
+ amdgpu/cyan_skillfish2_sdma.bin
+ amdgpu/cyan_skillfish2_sdma1.bin
+ amdgpu/dcn_3_1_6_dmcub.bin
  amdgpu/dimgrey_cavefish_ce.bin
  amdgpu/dimgrey_cavefish_dmcub.bin
  amdgpu/dimgrey_cavefish_me.bin
@@ -61,6 +89,12 @@ files:
  amdgpu/fiji_smc.bin
  amdgpu/fiji_uvd.bin
  amdgpu/fiji_vce.bin
+ amdgpu/gc_10_3_7_ce.bin
+ amdgpu/gc_10_3_7_me.bin
+ amdgpu/gc_10_3_7_mec.bin
+ amdgpu/gc_10_3_7_mec2.bin
+ amdgpu/gc_10_3_7_pfp.bin
+ amdgpu/gc_10_3_7_rlc.bin
  amdgpu/green_sardine_asd.bin
  amdgpu/green_sardine_ce.bin
  amdgpu/green_sardine_dmcub.bin
@@ -269,6 +303,9 @@ files:
  amdgpu/polaris12_smc.bin
  amdgpu/polaris12_uvd.bin
  amdgpu/polaris12_vce.bin
+ amdgpu/psp_13_0_8_asd.bin
+ amdgpu/psp_13_0_8_ta.bin
+ amdgpu/psp_13_0_8_toc.bin
  amdgpu/raven2_asd.bin
  amdgpu/raven2_ce.bin
  amdgpu/raven2_gpu_info.bin
@@ -305,6 +342,7 @@ files:
  amdgpu/renoir_sdma.bin
  amdgpu/renoir_ta.bin
  amdgpu/renoir_vcn.bin
+ amdgpu/sdma_5_2_7.bin
  amdgpu/si58_mc.bin
  amdgpu/sienna_cichlid_ce.bin
  amdgpu/sienna_cichlid_dmcub.bin
@@ -431,6 +469,18 @@ files:
  amdgpu/verde_rlc.bin
  amdgpu/verde_smc.bin
  amdgpu/verde_uvd.bin
+ amdgpu/yellow_carp_asd.bin
+ amdgpu/yellow_carp_ce.bin
+ amdgpu/yellow_carp_dmcub.bin
+ amdgpu/yellow_carp_me.bin
+ amdgpu/yellow_carp_mec.bin
+ amdgpu/yellow_carp_mec2.bin
+ amdgpu/yellow_carp_pfp.bin
+ amdgpu/yellow_carp_rlc.bin
+ amdgpu/yellow_carp_sdma.bin
+ amdgpu/yellow_carp_ta.bin
+ amdgpu/yellow_carp_toc.bin
+ amdgpu/yellow_carp_vcn.bin
  r128/r128_cce.bin
  radeon/ARUBA_me.bin
  radeon/ARUBA_pfp.bin
@@ -681,6 +731,27 @@ files:
  radeon/verde_smc.bin
 support: initramfs-tools
 
+[amdgpu/aldebaran_mec2.bin_base]
+desc: AMD Aldebaran MEC2 Firmware
+
+[amdgpu/aldebaran_rlc.bin_base]
+desc: AMD Aldebaran RLC Firmware
+
+[amdgpu/aldebaran_sdma.bin_base]
+desc: AMD Aldebaran SDMA Firmware
+
+[amdgpu/aldebaran_smc.bin_base]
+desc: AMD Aldebaran SMC Firmware
+
+[amdgpu/aldebaran_sos.bin_base]
+desc: AMD Aldebaran SOS Firmware
+
+[amdgpu/aldebaran_ta.bin_base]
+desc: AMD Aldebaran TA Firmware
+
+[amdgpu/aldebaran_vcn.bin_base]
+desc: AMD Aldebaran VCN Firmware
+
 [amdgpu/arcturus_asd.bin_base]
 desc: AMD Arcturus ASDN firmware
 
@@ -710,6 +781,42 @@ desc: AMD Arcturus TA firmware
 
 [amdgpu/arcturus_vcn.bin_base]
 desc: AMD Arcturus VCN firmware
+
+[amdgpu/beige_goby_ce.bin_base]
+desc: AMD "Beige Goby" CE Firmware
+
+[amdgpu/beige_goby_dmcub.bin_base]
+desc: AMD "Beige Goby" DMCUB Firmware
+
+[amdgpu/beige_goby_me.bin_base]
+desc: AMD "Beige Goby" ME Firmware
+
+[amdgpu/beige_goby_mec.bin_base]
+desc: AMD "Beige Goby" MEC Firmware
+
+[amdgpu/beige_goby_mec2.bin_base]
+desc: AMD "Beige Goby" MEC2 Firmware
+
+[amdgpu/beige_goby_pfp.bin_base]
+desc: AMD "Beige Goby" PFP Firmware
+
+[amdgpu/beige_goby_rlc.bin_base]
+desc: AMD "Beige Goby" RLC Firmware
+
+[amdgpu/beige_goby_sdma.bin_base]
+desc: AMD "Beige Goby" SDMA Firmware
+
+[amdgpu/beige_goby_smc.bin_base]
+desc: AMD "Beige Goby" SMC Firmware
+
+[amdgpu/beige_goby_sos.bin_base]
+desc: AMD "Beige Goby" SOS Firmware
+
+[amdgpu/beige_goby_ta.bin_base]
+desc: AMD "Beige Goby" TA Firmware
+
+[amdgpu/beige_goby_vcn.bin_base]
+desc: AMD "Beige Goby" VCN Firmware
 
 [amdgpu/banks_k_2_smc.bin_base]
 desc: "Banks" K-2 SMC microcode
@@ -780,6 +887,34 @@ version: 1.87
 
 [amdgpu/carrizo_vce.bin_base]
 desc: "Carrizo" VCE firmware
+
+[amdgpu/cyan_skillfish2_ce.bin_base]
+desc: AMD "Cyan Skillfish2" CE Firmware
+
+[amdgpu/cyan_skillfish2_me.bin_base]
+desc: AMD "Cyan Skillfish2" ME Firmware
+
+[amdgpu/cyan_skillfish2_mec.bin_base]
+desc: AMD "Cyan Skillfish2" MEC Firmware
+
+[amdgpu/cyan_skillfish2_mec2.bin_base]
+desc: AMD "Cyan Skillfish2" MEC2 Firmware
+
+[amdgpu/cyan_skillfish2_pfp.bin_base]
+desc: AMD "Cyan Skillfish2" PFP Firmware
+
+[amdgpu/cyan_skillfish2_rlc.bin_base]
+desc: AMD "Cyan Skillfish2" RLC Firmware
+
+[amdgpu/cyan_skillfish2_sdma.bin_base]
+desc: AMD "Cyan Skillfish2" SDMA Firmware
+
+[amdgpu/cyan_skillfish2_sdma1.bin_base]
+desc: AMD "Cyan Skillfish2" SDMA1 Firmware
+
+[amdgpu/dcn_3_1_6_dmcub.bin_base]
+desc: AMD DCN DMCUB Firmware
+version: 3.1.6
 
 [amdgpu/dimgrey_cavefish_ce.bin_base]
 desc: AMD "Dimgrey Cavefish" CE firmware
@@ -853,6 +988,30 @@ version: 1.87.12
 
 [amdgpu/fiji_vce.bin_base]
 desc: "Fiji" VCE firmware
+
+[amdgpu/gc_10_3_7_ce.bin_base]
+desc: AMD GC CE Firmware
+version: 10.3.7
+
+[amdgpu/gc_10_3_7_me.bin_base]
+desc: AMD GC ME Firmware
+version: 10.3.7
+
+[amdgpu/gc_10_3_7_mec.bin_base]
+desc: AMD GC MEC Firmware
+version: 10.3.7
+
+[amdgpu/gc_10_3_7_mec2.bin_base]
+desc: AMD GC MEC2 Firmware
+version: 10.3.7
+
+[amdgpu/gc_10_3_7_pfp.bin_base]
+desc: AMD GC PFP Firmware
+version: 10.3.7
+
+[amdgpu/gc_10_3_7_rlc.bin_base]
+desc: AMD GC RLC Firmware
+version: 10.3.7
 
 [amdgpu/green_sardine_asd.bin_base]
 desc: AMD RYZEN 5000 ASD firmware
@@ -1484,6 +1643,18 @@ version: 1.130
 desc: "Polaris 12" VCE firmware
 version: 53.26
 
+[amdgpu/psp_13_0_8_asd.bin_base]
+desc: AMD PSP ASD Firmware
+version: 13.0.8
+
+[amdgpu/psp_13_0_8_ta.bin_base]
+desc: AMD PSP TA Firmware
+version: 13.0.8
+
+[amdgpu/psp_13_0_8_toc.bin_base]
+desc: AMD PSP TOC Firmware
+version: 13.0.8
+
 [amdgpu/raven2_asd.bin_base]
 desc: "Raven 2" ASD firmware
 
@@ -1591,6 +1762,10 @@ desc: "Renoir" TA firmware
 
 [amdgpu/renoir_vcn.bin_base]
 desc: "Renoir" VCN firmware
+
+[amdgpu/sdma_5_2_7.bin_base]
+desc: AMD SDMA Firmware
+version: 5.2.7
 
 [amdgpu/si58_mc.bin_base]
 desc: Radeon "SI58" MC microcode
@@ -1972,6 +2147,42 @@ desc: Radeon HD 7700 series SMC microcode
 
 [amdgpu/verde_uvd.bin_base]
 desc: Radeon HD 7700 series UVD microcode
+
+[amdgpu/yellow_carp_asd.bin_base]
+desc: AMD "Yellow Carp" ASD Firmware
+
+[amdgpu/yellow_carp_ce.bin_base]
+desc: AMD "Yellow Carp" CE Firmware
+
+[amdgpu/yellow_carp_dmcub.bin_base]
+desc: AMD "Yellow Carp" DMCUB Firmware
+
+[amdgpu/yellow_carp_me.bin_base]
+desc: AMD "Yellow Carp" ME Firmware
+
+[amdgpu/yellow_carp_mec.bin_base]
+desc: AMD "Yellow Carp" MEC Firmware
+
+[amdgpu/yellow_carp_mec2.bin_base]
+desc: AMD "Yellow Carp" MEC2 Firmware
+
+[amdgpu/yellow_carp_pfp.bin_base]
+desc: AMD "Yellow Carp" PFP Firmware
+
+[amdgpu/yellow_carp_rlc.bin_base]
+desc: AMD "Yellow Carp" RLC Firmware
+
+[amdgpu/yellow_carp_sdma.bin_base]
+desc: AMD "Yellow Carp" SDMA Firmware
+
+[amdgpu/yellow_carp_ta.bin_base]
+desc: AMD "Yellow Carp" TA Firmware
+
+[amdgpu/yellow_carp_toc.bin_base]
+desc: AMD "Yellow Carp" TOC Firmware
+
+[amdgpu/yellow_carp_vcn.bin_base]
+desc: AMD "Yellow Carp" VCN Firmware
 
 [r128/r128_cce.bin_base]
 desc: Rage 128 CCE microcode
