@@ -78,6 +78,9 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * Update to debhelper-compat to 13
   * Update dependency and modinfo from linux 6.0.0-2 on amd64
 
+  [ Dmitry Baryshkov ]
+  * atheros: ath11k: WCN3990 hw1.0: add board-2.bin, board data file
+
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
 firmware-nonfree (20210818-1) unstable; urgency=medium
