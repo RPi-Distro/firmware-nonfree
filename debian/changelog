@@ -82,6 +82,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * atheros: ath11k: WCN3990 hw1.0: add board-2.bin, board data file
   * atheros: ath11k: Add firmware for QCN9074 (hw1.0), WCN6750 (hw1.0) and
     WCN6855 (hw2.0)
+  * atheros: qca: Add WCN685x 0109 NVM bluetooth firmware
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 

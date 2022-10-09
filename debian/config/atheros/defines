@@ -168,6 +168,7 @@ files:
  qca/nvm_usb_00130200_0105.bin
  qca/nvm_usb_00130200_0106.bin
  qca/nvm_usb_00130200_0107.bin
+ qca/nvm_usb_00130200_0109.bin
  qca/nvm_usb_00130200_0110.bin
  qca/rampatch_00130300.bin
  qca/rampatch_00130302.bin
@@ -681,6 +682,9 @@ desc: Qualcomm Atheros WCN685x 0106 NVM BT firmware
 
 [qca/nvm_usb_00130200_0107.bin_base]
 desc: Qualcomm Atheros WCN685x 0107 NVM BT firmware
+
+[qca/nvm_usb_00130200_0109.bin_base]
+desc: Qualcomm Atheros WCN685x 0109 NVM BT firmware
 
 [qca/nvm_usb_00130200_0110.bin_base]
 desc: Qualcomm Atheros WCN685x 0110 NVM BT firmware
