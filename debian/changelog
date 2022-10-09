@@ -47,7 +47,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - misc-nonfree: Update ice package to 1.3.30.0, and DDP comms to 1.3.31.0
     - misc-nonfree: rename silabs/ to wfx/
   * Update dependency and modinfo from linux 5.19.0-2 on amd64
-  * 20220913 (Closes: #1009316):
+  * 20220913 (Closes: #1009316, #1020962):
     - qlogic: drop old obsolete brocade firmware revs
     - misc-nonfree: Add lintian override for unstripped-binary-or-object
     - source: Add lintian override for unstripped-binary-or-object
