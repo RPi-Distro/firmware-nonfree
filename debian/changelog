@@ -80,6 +80,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
 
   [ Dmitry Baryshkov ]
   * qcom-soc: Fix paths for Lenovo ThinkPas X13s firmware
+  * qcom-soc: Add new Adreno firmware (a200, a330, a420)
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
