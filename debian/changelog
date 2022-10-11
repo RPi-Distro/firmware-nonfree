@@ -1,6 +1,9 @@
 firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
 
-  * New upstream version
+  * New upstream version (Closes: #1009316, #1015728)
+  * Various new firmware for Intel hardware closes: #1014651, #1020962
+  * amd-graphics: Various new firmware closes: #999825, #1019847
+  * iwlwifi: Various new firmware closes: #1016058
 
   [ Philippe Ombredanne ]
   * Update copyright with correct continuations
@@ -57,18 +60,18 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - misc-nonfree: Update ice package to 1.3.30.0, and DDP comms to 1.3.31.0
     - misc-nonfree: rename silabs/ to wfx/
   * Update dependency and modinfo from linux 5.19.0-2 on amd64
-  * 20220913 (Closes: #1009316, #1020962):
+  * 20220913:
     - qlogic: drop old obsolete brocade firmware revs
     - misc-nonfree: Add lintian override for unstripped-binary-or-object
     - source: Add lintian override for unstripped-binary-or-object
-    - misc-nonfree: i915: Add ADL-P DMC firmware v2.12
+    - misc-nonfree: i915: Add ADL-P DMC firmware v2.12 (Closes: #1006638)
     - misc-nonfree: i915: ADL-P DMC files are firmware not support files
     - misc-nonfree: i915: Add ADL-P DMC firmware v2.14
     - misc-nonfree: i915: Add GuC firmware 69.0.3 for all platforms
     - misc-nonfree: i915: Add GuC firmware 70.1.1 for all platforms
     - iwlwifi: Add FWs for new SO device types with multiple RF modules
     - amd-graphics: Add latest binary firmwares (Aldebaran, Beige Goby, Cyan
-      Sillfish2, GC, PSP, SDMA, Yellow Carp)
+      Sillfish2, GC, PSP, SDMA, Yellow Carp) (Closes: #1009618)
   * CI: Build 'all' only, drop autopkgtest job and artifact the source package
     separately
   * Update to debhelper-compat to 13
