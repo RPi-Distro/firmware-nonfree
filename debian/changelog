@@ -40,6 +40,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * amd-graphics: Fix some inconsistent file descriptions
   * amd-graphics: Add "Aldebaran" MEC firmware
   * amd-graphics: Add more versions of DCN, GC, PSP, SDMA, VCN firmware
+  * d/copyright: Delete obsolete filename patterns from Files-Excluded
 
   [ Didier Raboud ]
   * lintian: fix file-matching in source override

@@ -4,9 +4,6 @@ Upstream-Contact: linux-firmware@kernel.org
 Source: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Files-Excluded:
 # Undistributable because:
-# - licence doesn't mention redistribution
- 3com/3C359.bin
- tr_smctr.bin
 # - licence allows redistribution only as part of a kernel
  emi26/*.fw
  emi62/*.fw
@@ -19,7 +16,6 @@ Files-Excluded:
  wsm_22.bin
 # - licence is supposedly GPL, but no source is visible
  adaptec/starfire_??.bin
- atmsar11.fw
  cpia2/stv0672_vp4.bin
  edgeport/*
  ositech/Xilinx7OD.bin
@@ -36,7 +32,6 @@ Files-Excluded:
 # - licence is unknown
  acenic/tg?.bin
  ess/maestro3_*.fw
- intelliport2.bin
  korg/k1212.dsp
  lgs8g75.fw
  mts_mt9234*.fw
@@ -60,20 +55,7 @@ Files-Excluded:
  ath6k/AR6002/*
 # This filename is wrong!
  brcm/bcm4329-fullmac-4.bin
-# No Debian release newer than squeeze references these versions
- bnx2/bnx2-*-4.6.*.fw
- bnx2/bnx2-*-5.0.*.fw
- bnx2/bnx2-mips-*-6.0.*.fw
- bnx2/bnx2-mips-09-6.2.1.fw
-# No Debian release references these versions
- bnx2x-e1*-4.*.fw
- bnx2x-e1*-5.2.*.fw
- bnx2x/bnx2x-e*-6.*.fw
- bnx2x/bnx2x-e*-7.0.20.0.fw
- bnx2x/bnx2x-e*-7.0.23.0.fw
- bnx2x/bnx2x-e*-7.2.*.fw
- bnx2x/bnx2x-e*-7.8.2.0.fw
- bnx2x/bnx2x-e*-7.8.17.0.fw
+# No Debian release references this version
  bnx2x/bnx2x-e*-7.13.11.0.fw
 # No Debian release references these versions
  cxgb3/t3fw-7.0.0.bin
@@ -111,16 +93,8 @@ Files-Excluded:
  iwlwifi-5000-2.ucode
  iwlwifi-6000g2b-5.ucode
  iwlwifi-6050-4.ucode
- iwlwifi-7265D-17.ucode
  iwlwifi-8000C-34.ucode
  iwlwifi-8265-34.ucode
- iwlwifi-*-7.ucode
- iwlwifi-*-8.ucode
- iwlwifi-*-10.ucode
- iwlwifi-*-12.ucode
- iwlwifi-*-13.ucode
- iwlwifi-*-16.ucode
- iwlwifi-*-21.ucode
  iwlwifi-*-27.ucode
  iwlwifi-*-31.ucode
  iwlwifi-*-33.ucode
@@ -140,8 +114,6 @@ Files-Excluded:
  qed/qed_init_values_zipped-8.10.5.0.bin
  qed/qed_init_values_zipped-8.15.3.0.bin
  qed/qed_init_values_zipped-8.20.0.0.bin
-# Driver never went upstream
- TDA7706*
 # No Debian release requires these versions
  ti-connectivity/wl1271-fw*.bin
  ti-connectivity/wl128x-fw.bin
