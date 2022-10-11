@@ -72,6 +72,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     - iwlwifi: Add FWs for new SO device types with multiple RF modules
     - amd-graphics: Add latest binary firmwares (Aldebaran, Beige Goby, Cyan
       Sillfish2, GC, PSP, SDMA, Yellow Carp) (Closes: #1009618)
+    - qcom-soc: Add firmware for Lenovo ThinkPad X13s (21BX)
   * CI: Build 'all' only, drop autopkgtest job and artifact the source package
     separately
   * Update to debhelper-compat to 13
