@@ -42,6 +42,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * amd-graphics: Add more versions of DCN, GC, PSP, SDMA, VCN firmware
   * d/copyright: Delete obsolete filename patterns from Files-Excluded
   * bnx2x: Add firmware version 7.13.21.0 (Closes: #1006500)
+  * iwlwifi: Add firmware version 71.058653f6.0 for various models
 
   [ Didier Raboud ]
   * lintian: fix file-matching in source override
