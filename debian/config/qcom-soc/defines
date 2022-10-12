@@ -21,14 +21,14 @@ files:
  qcom/a650_sqe.fw
  qcom/a660_gmu.bin
  qcom/a660_sqe.fw
- qcom/LENOVO/21BX/adspr.jsn
- qcom/LENOVO/21BX/adspua.jsn
- qcom/LENOVO/21BX/battmgr.jsn
- qcom/LENOVO/21BX/cdspr.jsn
- qcom/LENOVO/21BX/qcadsp8280.mbn
- qcom/LENOVO/21BX/qccdsp8280.mbn
- qcom/LENOVO/21BX/qcdxkmsuc8280.mbn
- qcom/LENOVO/21BX/qcslpi8280.mbn
+ qcom/sc8280xp/LENOVO/21BX/adspr.jsn
+ qcom/sc8280xp/LENOVO/21BX/adspua.jsn
+ qcom/sc8280xp/LENOVO/21BX/battmgr.jsn
+ qcom/sc8280xp/LENOVO/21BX/cdspr.jsn
+ qcom/sc8280xp/LENOVO/21BX/qcadsp8280.mbn
+ qcom/sc8280xp/LENOVO/21BX/qccdsp8280.mbn
+ qcom/sc8280xp/LENOVO/21BX/qcdxkmsuc8280.mbn
+ qcom/sc8280xp/LENOVO/21BX/qcslpi8280.mbn
  qcom/sdm845/a630_zap.mbn
  qcom/sdm845/adsp.mbn
  qcom/sdm845/adspr.jsn
@@ -146,28 +146,28 @@ desc: Qualcomm Adreno 660 GMU firmware
 [qcom/a660_sqe.fw_base]
 desc: Qualcomm Adreno 660 SQE firmware
 
-[qcom/LENOVO/21BX/adspr.jsn_base]
+[qcom/sc8280xp/LENOVO/21BX/adspr.jsn_base]
 desc: Lenovo X13s audio DSP configuration
 
-[qcom/LENOVO/21BX/adspua.jsn_base]
+[qcom/sc8280xp/LENOVO/21BX/adspua.jsn_base]
 desc: Lenovo X13s audio DSP configuration
 
-[qcom/LENOVO/21BX/battmgr.jsn_base]
+[qcom/sc8280xp/LENOVO/21BX/battmgr.jsn_base]
 desc: Lenovo X13s battery management configuration
 
-[qcom/LENOVO/21BX/cdspr.jsn_base]
+[qcom/sc8280xp/LENOVO/21BX/cdspr.jsn_base]
 desc: Lenovo X13s compute DSP configuration
 
-[qcom/LENOVO/21BX/qcadsp8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qcadsp8280.mbn_base]
 desc: Lenovo X13s remoteproc audio DSP firmware
 
-[qcom/LENOVO/21BX/qccdsp8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qccdsp8280.mbn_base]
 desc: Lenovo X13s remoteproc compute DSP firmware
 
-[qcom/LENOVO/21BX/qcdxkmsuc8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qcdxkmsuc8280.mbn_base]
 desc: Lenovo X13s Adreno ZAP firmware
 
-[qcom/LENOVO/21BX/qcslpi8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qcslpi8280.mbn_base]
 desc: Lenovo X13s sensor DSP firmware
 
 [qcom/sdm845/a630_zap.mbn_base]
