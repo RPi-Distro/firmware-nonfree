@@ -76,6 +76,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
   * CI: Build 'all' only, drop autopkgtest job and artifact the source package
     separately
   * Update to debhelper-compat to 13
+  * Update dependency and modinfo from linux 6.0.0-2 on amd64
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
