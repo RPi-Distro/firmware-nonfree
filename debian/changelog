@@ -81,6 +81,7 @@ firmware-nonfree (20221012-1) UNRELEASED; urgency=medium
     - misc-nonfree: update cxgb4 firmware to 1.27.0.0
     - misc-nonfree: update firmware versions for MT7921 and MT7922 devices
     - misc-nonfree: add MediaTek mt8186 and mt8195 scp firmware
+    - realtek: add Realtek RTL8852C, RTL8852BU and RTL8852CU config and firmware
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 

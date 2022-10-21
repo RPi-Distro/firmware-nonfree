@@ -31,6 +31,10 @@ files:
  rtl_bt/rtl8822cu_fw.bin
  rtl_bt/rtl8852au_config.bin
  rtl_bt/rtl8852au_fw.bin
+ rtl_bt/rtl8852bu_config.bin
+ rtl_bt/rtl8852bu_fw.bin
+ rtl_bt/rtl8852cu_config.bin
+ rtl_bt/rtl8852cu_fw.bin
  rtl_nic/rtl8105e-1.fw
  rtl_nic/rtl8106e-1.fw
  rtl_nic/rtl8106e-2.fw
@@ -105,6 +109,7 @@ files:
  rtw88/rtw8822c_wow_fw.bin
  rtw88/rtw8723d_fw.bin
  rtw89/rtw8852a_fw.bin
+ rtw89/rtw8852c_fw.bin
 
 longdesc: Realtek Ethernet, wifi and Bluetooth adapters supported by various
  drivers
@@ -196,6 +201,18 @@ desc: Realtek RTL8852AU Bluetooth firmware
 
 [rtl_bt/rtl8852au_config.bin_base]
 desc: Realtek RTL8852AU Bluetooth config
+
+[rtl_bt/rtl8852bu_fw.bin_base]
+desc: Realtek RTL8852BU Bluetooth firmware
+
+[rtl_bt/rtl8852bu_config.bin_base]
+desc: Realtek RTL8852BU Bluetooth config
+
+[rtl_bt/rtl8852cu_fw.bin_base]
+desc: Realtek RTL8852CU Bluetooth firmware
+
+[rtl_bt/rtl8852cu_config.bin_base]
+desc: Realtek RTL8852CU Bluetooth config
 
 [rtl_nic/rtl8105e-1.fw_base]
 desc: Realtek RTL8105E-1 firmware
@@ -423,3 +440,7 @@ desc: Realtek RTW8723D firmware
 [rtw89/rtw8852a_fw.bin_base]
 desc: Realtek RTL8852A firmware
 version: v0.9.12.2
+
+[rtw89/rtw8852c_fw.bin_base]
+desc: Realtek RTL8852C firmware
+version: v0.27.56.1
