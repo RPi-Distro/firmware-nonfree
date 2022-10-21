@@ -79,6 +79,7 @@ firmware-nonfree (20221012-1) UNRELEASED; urgency=medium
   * Update dependency and modinfo from linux 6.0.0-2 on amd64
   * 20221012:
     - misc-nonfree: update cxgb4 firmware to 1.27.0.0
+    - misc-nonfree: update firmware versions for MT7921 and MT7922 devices
 
  -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
 
