@@ -1,4 +1,4 @@
-firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
+firmware-nonfree (20221012-1) UNRELEASED; urgency=medium
 
   * New upstream version (Closes: #1009316, #1015728)
   * Various new firmware for Intel hardware closes: #1014651, #1020962
