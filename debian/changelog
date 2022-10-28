@@ -1,4 +1,4 @@
-firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
+firmware-nonfree (20220913-1) unstable; urgency=medium
 
   * New upstream version (Closes: #1009316, #1015728)
   * Various new firmware for Intel hardware closes: #1014651, #1020962
@@ -77,7 +77,7 @@ firmware-nonfree (20220913-1) UNRELEASED; urgency=medium
     separately
   * Update to debhelper-compat to 13
 
- -- Ben Hutchings <benh@debian.org>  Sat, 22 Jan 2022 22:17:37 +0100
+ -- Bastian Blank <waldi@debian.org>  Fri, 28 Oct 2022 20:48:14 +0200
 
 firmware-nonfree (20210818-1) unstable; urgency=medium
 
