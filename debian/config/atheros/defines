@@ -105,6 +105,10 @@ files:
  ath11k/WCN6855/hw2.0/board-2.bin
  ath11k/WCN6855/hw2.0/m3.bin
  ath11k/WCN6855/hw2.0/regdb.bin
+ ath11k/WCN6855/hw2.1/amss.bin
+ ath11k/WCN6855/hw2.1/board-2.bin
+ ath11k/WCN6855/hw2.1/m3.bin
+ ath11k/WCN6855/hw2.1/regdb.bin
  ath3k-1.fw
  ath6k/AR6003.1/hw2.1.1/athwlan.bin
  ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
