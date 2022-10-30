@@ -7,6 +7,10 @@ breaks: firmware-qcom-media (<< 20200421-1~)
 files:
  qcom/a300_pfp.fw
  qcom/a300_pm4.fw
+ qcom/a330_pfp.fw
+ qcom/a330_pm4.fw
+ qcom/a420_pfp.fw
+ qcom/a420_pm4.fw
  qcom/a530_pfp.fw
  qcom/a530_pm4.fw
  qcom/a530_zap.b00
@@ -21,14 +25,22 @@ files:
  qcom/a650_sqe.fw
  qcom/a660_gmu.bin
  qcom/a660_sqe.fw
- qcom/LENOVO/21BX/adspr.jsn
- qcom/LENOVO/21BX/adspua.jsn
- qcom/LENOVO/21BX/battmgr.jsn
- qcom/LENOVO/21BX/cdspr.jsn
- qcom/LENOVO/21BX/qcadsp8280.mbn
- qcom/LENOVO/21BX/qccdsp8280.mbn
- qcom/LENOVO/21BX/qcdxkmsuc8280.mbn
- qcom/LENOVO/21BX/qcslpi8280.mbn
+ qcom/leia_pfp_470.fw
+ qcom/leia_pm4_470.fw
+ qcom/apq8096/adsp.mbn
+ qcom/apq8096/adspr.jsn
+ qcom/apq8096/adspua.jsn
+ qcom/apq8096/mba.mbn
+ qcom/apq8096/modem.mbn
+ qcom/apq8096/modemr.jsn
+ qcom/sc8280xp/LENOVO/21BX/adspr.jsn
+ qcom/sc8280xp/LENOVO/21BX/adspua.jsn
+ qcom/sc8280xp/LENOVO/21BX/battmgr.jsn
+ qcom/sc8280xp/LENOVO/21BX/cdspr.jsn
+ qcom/sc8280xp/LENOVO/21BX/qcadsp8280.mbn
+ qcom/sc8280xp/LENOVO/21BX/qccdsp8280.mbn
+ qcom/sc8280xp/LENOVO/21BX/qcdxkmsuc8280.mbn
+ qcom/sc8280xp/LENOVO/21BX/qcslpi8280.mbn
  qcom/sdm845/a630_zap.mbn
  qcom/sdm845/adsp.mbn
  qcom/sdm845/adspr.jsn
@@ -107,6 +119,18 @@ desc: Qualcomm Adreno 300 PFP firmware
 [qcom/a300_pm4.fw_base]
 desc: Qualcomm Adreno 300 PM4 firmware
 
+[qcom/a330_pfp.fw_base]
+desc: Qualcomm Adreno 330 PFP firmware
+
+[qcom/a330_pm4.fw_base]
+desc: Qualcomm Adreno 330 PM4 firmware
+
+[qcom/a420_pfp.fw_base]
+desc: Qualcomm Adreno 420 PFP firmware
+
+[qcom/a420_pm4.fw_base]
+desc: Qualcomm Adreno 420 PM4 firmware
+
 [qcom/a530_pfp.fw_base]
 desc: Qualcomm Adreno 530 PFP firmware
 
@@ -146,28 +170,52 @@ desc: Qualcomm Adreno 660 GMU firmware
 [qcom/a660_sqe.fw_base]
 desc: Qualcomm Adreno 660 SQE firmware
 
-[qcom/LENOVO/21BX/adspr.jsn_base]
+[qcom/leia_pfp_470.fw_base]
+desc: Qualcomm Adreno 200 (leia) PFP firmware
+
+[qcom/leia_pm4_470.fw_base]
+desc: Qualcomm Adreno 200 (leia) PM4 firmware
+
+[qcom/apq8096/adsp.mbn_base]
+desc: Qualcomm APQ8096 audio firmware
+
+[qcom/apq8096/adspr.jsn_base]
+desc: Qualcomm APQ8096 audio configuration
+
+[qcom/apq8096/adspua.jsn_base]
+desc: Qualcomm APQ8096 audio configuration
+
+[qcom/apq8096/mba.mbn_base]
+desc: Qualcomm APQ8096 modem firmware
+
+[qcom/apq8096/modem.mbn_base]
+desc: Qualcomm APQ8096 modem firmware
+
+[qcom/apq8096/modemr.jsn_base]
+desc: Qualcomm APQ8096 modem configuration
+
+[qcom/sc8280xp/LENOVO/21BX/adspr.jsn_base]
 desc: Lenovo X13s audio DSP configuration
 
-[qcom/LENOVO/21BX/adspua.jsn_base]
+[qcom/sc8280xp/LENOVO/21BX/adspua.jsn_base]
 desc: Lenovo X13s audio DSP configuration
 
-[qcom/LENOVO/21BX/battmgr.jsn_base]
+[qcom/sc8280xp/LENOVO/21BX/battmgr.jsn_base]
 desc: Lenovo X13s battery management configuration
 
-[qcom/LENOVO/21BX/cdspr.jsn_base]
+[qcom/sc8280xp/LENOVO/21BX/cdspr.jsn_base]
 desc: Lenovo X13s compute DSP configuration
 
-[qcom/LENOVO/21BX/qcadsp8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qcadsp8280.mbn_base]
 desc: Lenovo X13s remoteproc audio DSP firmware
 
-[qcom/LENOVO/21BX/qccdsp8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qccdsp8280.mbn_base]
 desc: Lenovo X13s remoteproc compute DSP firmware
 
-[qcom/LENOVO/21BX/qcdxkmsuc8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qcdxkmsuc8280.mbn_base]
 desc: Lenovo X13s Adreno ZAP firmware
 
-[qcom/LENOVO/21BX/qcslpi8280.mbn_base]
+[qcom/sc8280xp/LENOVO/21BX/qcslpi8280.mbn_base]
 desc: Lenovo X13s sensor DSP firmware
 
 [qcom/sdm845/a630_zap.mbn_base]

@@ -9,6 +9,10 @@ firmware-nonfree (20220913-2) UNRELEASED; urgency=medium
     WCN6855 (hw2.0)
   * atheros: qca: Add WCN685x 0109 NVM bluetooth firmware
   * atheros: qca: Add bluetooth firmware for WCN685x ROM 13.2.1
+  * qcom-soc: Fix paths for Lenovo ThinkPas X13s firmware
+  * qcom-soc: Add new Adreno firmware (a200, a330, a420)
+  * qcom-soc: Add firmware for APQ8096 (including lintian overrides for
+    reported issues with apq8096/modem.mbn)
 
   [ Ben Hutchings ]
   * atheros: Fix capitalisation in some file descriptions
