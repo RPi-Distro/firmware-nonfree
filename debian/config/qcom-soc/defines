@@ -27,6 +27,7 @@ files:
  qcom/a660_sqe.fw
  qcom/leia_pfp_470.fw
  qcom/leia_pm4_470.fw
+ qcom/apq8096/a530_zap.mbn
  qcom/apq8096/adsp.mbn
  qcom/apq8096/adspr.jsn
  qcom/apq8096/adspua.jsn
@@ -175,6 +176,9 @@ desc: Qualcomm Adreno 200 (leia) PFP firmware
 
 [qcom/leia_pm4_470.fw_base]
 desc: Qualcomm Adreno 200 (leia) PM4 firmware
+
+[qcom/apq8096/a530_zap.mbn_base]
+desc: Qualcomm Adreno 530 APQ8096 ZAP firmware
 
 [qcom/apq8096/adsp.mbn_base]
 desc: Qualcomm APQ8096 audio firmware
