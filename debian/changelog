@@ -13,7 +13,7 @@ firmware-nonfree (20221012-1) UNRELEASED; urgency=medium
   [ Dmitry Baryshkov ]
   * atheros: ath11k: WCN3990 hw1.0: add board-2.bin, board data file
   * atheros: ath11k: Add firmware for QCN9074 (hw1.0), WCN6750 (hw1.0) and
-    WCN6855 (hw2.0)
+    WCN6855 (hw2.0, hw2.1) (Closes: #1021157)
   * atheros: qca: Add WCN685x 0109 NVM bluetooth firmware
   * atheros: qca: Add bluetooth firmware for WCN685x ROM 13.2.1
   * qcom-soc: Fix paths for Lenovo ThinkPas X13s firmware
