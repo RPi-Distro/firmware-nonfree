@@ -699,28 +699,28 @@ desc: Qualcomm Atheros WCN685x 0109 NVM BT firmware
 desc: Qualcomm Atheros WCN685x 0110 NVM BT firmware
 
 [qca/nvm_usb_00130201.bin_base]
-desc: Qualcomm Atheros WCN685x NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x NVM BT firmware
 
 [qca/nvm_usb_00130201_010a.bin_base]
-desc: Qualcomm Atheros WCN685x 010a NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x 010a NVM BT firmware
 
 [qca/nvm_usb_00130201_010b.bin_base]
-desc: Qualcomm Atheros WCN685x 010b NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x 010b NVM BT firmware
 
 [qca/nvm_usb_00130201_0303.bin_base]
-desc: Qualcomm Atheros WCN685x 0303 NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x 0303 NVM BT firmware
 
 [qca/nvm_usb_00130201_gf.bin_base]
-desc: Qualcomm Atheros WCN685x gf NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x gf NVM BT firmware
 
 [qca/nvm_usb_00130201_gf_010a.bin_base]
-desc: Qualcomm Atheros WCN685x gf 010a NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x gf 010a NVM BT firmware
 
 [qca/nvm_usb_00130201_gf_010b.bin_base]
-desc: Qualcomm Atheros WCN685x gf 010b NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x gf 010b NVM BT firmware
 
 [qca/nvm_usb_00130201_gf_0303.bin_base]
-desc: Qualcomm Atheros WCN685x gf 0303 NVM BT FIRMWARE
+desc: Qualcomm Atheros WCN685x gf 0303 NVM BT firmware
 
 [qca/rampatch_usb_00000200.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT rampatch
