@@ -1,4 +1,4 @@
-firmware-nonfree (20221012-1) UNRELEASED; urgency=medium
+firmware-nonfree (20221012-1) unstable; urgency=medium
 
   * New upstream version
 
@@ -24,7 +24,7 @@ firmware-nonfree (20221012-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * atheros: Fix capitalisation in some file descriptions
 
- -- Ben Hutchings <benh@debian.org>  Sun, 30 Oct 2022 14:06:42 +0100
+ -- Ben Hutchings <benh@debian.org>  Mon, 31 Oct 2022 01:18:11 +0100
 
 firmware-nonfree (20220913-1) unstable; urgency=medium
 
