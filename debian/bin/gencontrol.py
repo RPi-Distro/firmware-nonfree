@@ -11,11 +11,11 @@ sys.path.append(sys.argv[1] + "/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config
-from debian_linux.debian import BinaryPackage, PackageRelation
+from debian_linux.debian import Package, PackageRelation
 from debian_linux.debian import PackageDescription as PackageDescriptionBase
 import debian_linux.gencontrol
 from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
-from debian_linux.utils import TextWrapper, read_control, read_control_source
+from debian_linux.utils import TextWrapper, read_control
 from debian_linux.utils import Templates as TemplatesBase
 from collections import OrderedDict
 
@@ -53,7 +53,7 @@ class PackageDescription(PackageDescriptionBase):
             for i in desc:
                 self.append(i)
 
-BinaryPackage._fields['Description'] = PackageDescription
+Package._fields['Description'] = PackageDescription
 
 class Template(dict):
     _fields = OrderedDict((
@@ -99,8 +99,6 @@ class Templates(TemplatesBase):
             if os.path.exists(filename):
                 with open(filename) as f:
                     mode = os.stat(f.fileno()).st_mode
-                    if name == 'control.source':
-                        return (read_control_source(f), mode)
                     if prefix == 'control':
                         return (read_control(f), mode)
                     elif prefix == 'templates':
