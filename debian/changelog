@@ -6,6 +6,7 @@ firmware-nonfree (20221109-1) UNRELEASED; urgency=medium
   * Update dependency to linux 6.0.0-4
   * iwlwifi: update 9000-family firmwares to core72-129
   * iwlwifi: add new FWs from core69-81 release (Closes: #1023240)
+  * iwlwifi: update firmware files for Intel Bluetooth AX2*
 
  -- Didier Raboud <odyx@debian.org>  Tue, 15 Nov 2022 13:45:23 +0100
 
