@@ -9,6 +9,7 @@ firmware-nonfree (20221109-1) UNRELEASED; urgency=medium
   * iwlwifi: update firmware files for Intel Bluetooth AX2*
   * iwlwifi: Add Intel Wireless AX211 Bluethooth firmware and
     configuration (Closes: #1023245)
+  * qcom-soc: venus: replace split firmware with mbn files
 
  -- Didier Raboud <odyx@debian.org>  Tue, 15 Nov 2022 13:45:23 +0100
 
