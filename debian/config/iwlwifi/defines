@@ -92,6 +92,7 @@ files:
  iwlwifi-Qu-b0-hr-b0-62.ucode
  iwlwifi-Qu-b0-hr-b0-63.ucode
  iwlwifi-Qu-b0-hr-b0-71.ucode
+ iwlwifi-Qu-b0-hr-b0-72.ucode
  iwlwifi-Qu-b0-jf-b0-48.ucode
  iwlwifi-Qu-b0-jf-b0-50.ucode
  iwlwifi-Qu-b0-jf-b0-53.ucode
@@ -100,6 +101,7 @@ files:
  iwlwifi-Qu-b0-jf-b0-62.ucode
  iwlwifi-Qu-b0-jf-b0-63.ucode
  iwlwifi-Qu-b0-jf-b0-71.ucode
+ iwlwifi-Qu-b0-jf-b0-72.ucode
  iwlwifi-Qu-c0-hr-b0-48.ucode
  iwlwifi-Qu-c0-hr-b0-50.ucode
  iwlwifi-Qu-c0-hr-b0-53.ucode
@@ -108,6 +110,7 @@ files:
  iwlwifi-Qu-c0-hr-b0-62.ucode
  iwlwifi-Qu-c0-hr-b0-63.ucode
  iwlwifi-Qu-c0-hr-b0-71.ucode
+ iwlwifi-Qu-c0-hr-b0-72.ucode
  iwlwifi-Qu-c0-jf-b0-48.ucode
  iwlwifi-Qu-c0-jf-b0-50.ucode
  iwlwifi-Qu-c0-jf-b0-53.ucode
@@ -116,6 +119,7 @@ files:
  iwlwifi-Qu-c0-jf-b0-62.ucode
  iwlwifi-Qu-c0-jf-b0-63.ucode
  iwlwifi-Qu-c0-jf-b0-71.ucode
+ iwlwifi-Qu-c0-jf-b0-72.ucode
  iwlwifi-QuZ-a0-hr-b0-48.ucode
  iwlwifi-QuZ-a0-hr-b0-50.ucode
  iwlwifi-QuZ-a0-hr-b0-53.ucode
@@ -124,6 +128,7 @@ files:
  iwlwifi-QuZ-a0-hr-b0-62.ucode
  iwlwifi-QuZ-a0-hr-b0-63.ucode
  iwlwifi-QuZ-a0-hr-b0-71.ucode
+ iwlwifi-QuZ-a0-hr-b0-72.ucode
  iwlwifi-QuZ-a0-jf-b0-48.ucode
  iwlwifi-QuZ-a0-jf-b0-50.ucode
  iwlwifi-QuZ-a0-jf-b0-53.ucode
@@ -132,6 +137,7 @@ files:
  iwlwifi-QuZ-a0-jf-b0-62.ucode
  iwlwifi-QuZ-a0-jf-b0-63.ucode
  iwlwifi-QuZ-a0-jf-b0-71.ucode
+ iwlwifi-QuZ-a0-jf-b0-72.ucode
  iwlwifi-cc-a0-46.ucode
  iwlwifi-cc-a0-48.ucode
  iwlwifi-cc-a0-50.ucode
@@ -141,18 +147,23 @@ files:
  iwlwifi-cc-a0-62.ucode
  iwlwifi-cc-a0-63.ucode
  iwlwifi-cc-a0-71.ucode
+ iwlwifi-cc-a0-72.ucode
  iwlwifi-ty-a0-gf-a0-59.ucode
  iwlwifi-ty-a0-gf-a0-62.ucode
  iwlwifi-ty-a0-gf-a0-63.ucode
  iwlwifi-ty-a0-gf-a0-66.ucode
  iwlwifi-ty-a0-gf-a0-71.ucode
+ iwlwifi-ty-a0-gf-a0-72.ucode
  iwlwifi-ty-a0-gf-a0.pnvm
  iwlwifi-so-a0-gf-a0-71.ucode
+ iwlwifi-so-a0-gf-a0-72.ucode
  iwlwifi-so-a0-gf-a0.pnvm
  iwlwifi-so-a0-gf4-a0-71.ucode
+ iwlwifi-so-a0-gf4-a0-72.ucode
  iwlwifi-so-a0-gf4-a0.pnvm
  iwlwifi-so-a0-hr-b0-71.ucode
  iwlwifi-so-a0-jf-b0-71.ucode
+ iwlwifi-so-a0-jf-b0-72.ucode
 longdesc: Intel Wireless cards supported by the iwl3945, iwl4965, and
  iwlwifi drivers
 
@@ -513,6 +524,10 @@ version: 63.49eeb572.0
 desc: Intel Wireless 22000 series (QU-B-HR-B) firmware
 version: 71.058653f6.0
 
+[iwlwifi-Qu-b0-hr-b0-72.ucode_base]
+desc: Intel Wireless 22000 series (QU-B-HR-B) firmware
+version: 72.daa05125.0
+
 [iwlwifi-Qu-b0-jf-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-B-JF-B) firmware
 version: 48.13675109.0
@@ -544,6 +559,10 @@ version: 63.49eeb572.0
 [iwlwifi-Qu-b0-jf-b0-71.ucode_base]
 desc: Intel Wireless 22000 series (QU-B-JF-B) firmware
 version: 71.058653f6.0
+
+[iwlwifi-Qu-b0-jf-b0-72.ucode_base]
+desc: Intel Wireless 22000 series (QU-B-JF-B) firmware
+version: 72.daa05125.0
 
 [iwlwifi-Qu-c0-hr-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-C-HR-B) firmware
@@ -577,6 +596,10 @@ version: 63.49eeb572.0
 desc: Intel Wireless 22000 series (QU-C-HR-B) firmware
 version: 71.058653f6.0
 
+[iwlwifi-Qu-c0-hr-b0-72.ucode_base]
+desc: Intel Wireless 22000 series (QU-C-HR-B) firmware
+version: 72.daa05125.0
+
 [iwlwifi-Qu-c0-jf-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-C-JF-B) firmware
 version: 48.13675109.0
@@ -608,6 +631,10 @@ version: 63.49eeb572.0
 [iwlwifi-Qu-c0-jf-b0-71.ucode_base]
 desc: Intel Wireless 22000 series (QU-C-JF-B) firmware
 version: 71.058653f6.0
+
+[iwlwifi-Qu-c0-jf-b0-72.ucode_base]
+desc: Intel Wireless 22000 series (QU-C-JF-B) firmware
+version: 72.daa05125.0
 
 [iwlwifi-QuZ-a0-hr-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QUZ-A-HR-B) firmware
@@ -641,6 +668,10 @@ version: 62.49eeb572.0
 desc: Intel Wireless 22000 series (QUZ-A-HR-B) firmware
 version: 71.058653f6.0
 
+[iwlwifi-QuZ-a0-hr-b0-72.ucode_base]
+desc: Intel Wireless 22000 series (QUZ-A-HR-B) firmware
+version: 72.daa05125.0
+
 [iwlwifi-QuZ-a0-jf-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QUZ-A-JF-B) firmware
 version: 48.13675109.0
@@ -672,6 +703,10 @@ version: 63.49eeb572.0
 [iwlwifi-QuZ-a0-jf-b0-71.ucode_base]
 desc: Intel Wireless 22000 series (QUZ-A-JF-B) firmware
 version: 71.058653f6.0
+
+[iwlwifi-QuZ-a0-jf-b0-72.ucode_base]
+desc: Intel Wireless 22000 series (QUZ-A-JF-B) firmware
+version: 72.daa05125.0
 
 [iwlwifi-cc-a0-46.ucode_base]
 desc: Intel Wireless series (CC-A0) firmware
@@ -709,6 +744,10 @@ version: 63.49eeb572.0
 desc: Intel Wireless series (CC-A0) firmware
 version: 71.058653f6.0
 
+[iwlwifi-cc-a0-72.ucode_base]
+desc: Intel Wireless series (CC-A0) firmware
+version: 72.daa05125.0
+
 [iwlwifi-ty-a0-gf-a0-59.ucode_base]
 desc: Intel Wireless (TY-A0-GF-A0) firmware
 version: 59.601f3a66.0
@@ -729,6 +768,10 @@ version: 66.55c64978.0
 desc: Intel Wireless (TY-A0-GF-A0) firmware
 version: 71.058653f6.0
 
+[iwlwifi-ty-a0-gf-a0-72.ucode_base]
+desc: Intel Wireless (TY-A0-GF-A0) firmware
+version: 72.daa05125.0
+
 [iwlwifi-ty-a0-gf-a0.pnvm_base]
 desc: Intel Wireless (TY-A0-GF-A0) PNVM firmware
 version: 71.058653f6.0
@@ -736,6 +779,10 @@ version: 71.058653f6.0
 [iwlwifi-so-a0-gf-a0-71.ucode_base]
 desc: Intel Wireless (SO-A0-GF-A0) firmware
 version: 71.058653f6.0
+
+[iwlwifi-so-a0-gf-a0-72.ucode_base]
+desc: Intel Wireless (SO-A0-GF-A0) firmware
+version: 72.daa05125.0
 
 [iwlwifi-so-a0-gf-a0.pnvm_base]
 desc: Intel Wireless (SO-A0-GF-A0) PNVM firmware
@@ -753,6 +800,14 @@ version: 71.058653f6.0
 desc: Intel Wireless (SO-A0-HR-B0) firmware
 version: 71.058653f6.0
 
+[iwlwifi-so-a0-hr-b0-72.ucode_base]
+desc: Intel Wireless (SO-A0-HR-B0) firmware
+version: 72.daa05125.0
+
 [iwlwifi-so-a0-jf-b0-71.ucode_base]
 desc: Intel Wireless (SO-A0-JF-B0) firmware
 version: 71.058653f6.0
+
+[iwlwifi-so-a0-jf-b0-72.ucode_base]
+desc: Intel Wireless (SO-A0-JF-B0) firmware
+version: 72.daa05125.0
