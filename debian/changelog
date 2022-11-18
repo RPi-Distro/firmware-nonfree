@@ -11,6 +11,9 @@ firmware-nonfree (20221109-1) UNRELEASED; urgency=medium
     configuration (Closes: #1023245)
   * qcom-soc: venus: replace split firmware with mbn files
 
+  [ Salvatore Bonaccorso ]
+  * Add myself to Uploaders
+
  -- Didier Raboud <odyx@debian.org>  Tue, 15 Nov 2022 13:45:23 +0100
 
 firmware-nonfree (20221012-1) unstable; urgency=medium
