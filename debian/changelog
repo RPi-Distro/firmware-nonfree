@@ -1,4 +1,4 @@
-firmware-nonfree (20221109-1) UNRELEASED; urgency=medium
+firmware-nonfree (20221109-1) unstable; urgency=medium
 
   * New upstream version
 
@@ -14,7 +14,7 @@ firmware-nonfree (20221109-1) UNRELEASED; urgency=medium
   [ Salvatore Bonaccorso ]
   * Add myself to Uploaders
 
- -- Didier Raboud <odyx@debian.org>  Tue, 15 Nov 2022 13:45:23 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 18 Nov 2022 11:18:32 +0100
 
 firmware-nonfree (20221012-1) unstable; urgency=medium
 
