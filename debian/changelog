@@ -1,3 +1,18 @@
+firmware-nonfree (20221109-1) UNRELEASED; urgency=medium
+
+  * New upstream version
+
+  [ Didier Raboud ]
+  * Update dependency to linux 6.0.0-4
+  * iwlwifi: update 9000-family firmwares to core72-129
+  * iwlwifi: add new FWs from core69-81 release (Closes: #1023240)
+  * iwlwifi: update firmware files for Intel Bluetooth AX2*
+  * iwlwifi: Add Intel Wireless AX211 Bluethooth firmware and
+    configuration (Closes: #1023245)
+  * qcom-soc: venus: replace split firmware with mbn files
+
+ -- Didier Raboud <odyx@debian.org>  Tue, 15 Nov 2022 13:45:23 +0100
+
 firmware-nonfree (20221012-1) unstable; urgency=medium
 
   * New upstream version
@@ -98,8 +113,8 @@ firmware-nonfree (20220913-1) unstable; urgency=medium
     - misc-nonfree: i915: Add GuC firmware 69.0.3 for all platforms
     - misc-nonfree: i915: Add GuC firmware 70.1.1 for all platforms
     - iwlwifi: Add FWs for new SO device types with multiple RF modules
-    - amd-graphics: Add latest binary firmwares (Aldebaran, Beige Goby, Cyan
-      Sillfish2, GC, PSP, SDMA, Yellow Carp) (Closes: #1009618)
+    - amd-graphics: Add latest binary firmwares (Aldebaran, Beige Goby, Cyan
+      Sillfish2, GC, PSP, SDMA, Yellow Carp) (Closes: #1009618)
     - qcom-soc: Add firmware for Lenovo ThinkPad X13s (21BX)
   * CI: Build 'all' only, drop autopkgtest job and artifact the source package
     separately
