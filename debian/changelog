@@ -1,10 +1,10 @@
-firmware-nonfree (20221109-2) UNRELEASED; urgency=medium
+firmware-nonfree (20221109-2) unstable; urgency=medium
 
   * qlogic: Add QLogic QL45000 series firmware version 8.59.1.0
     (Closes: #1016945)
   * misc-nonfree: Add MediaTek MT7922 bluetooth firmware (Closes: #1023289)
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 18 Nov 2022 21:36:02 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 19 Nov 2022 09:51:39 +0100
 
 firmware-nonfree (20221109-1) unstable; urgency=medium
 
