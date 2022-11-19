@@ -200,6 +200,7 @@ files:
  matrox/g200_warp.fw
  matrox/g400_warp.fw
  mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin
+ mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin
  mediatek/mt7610e.bin
  mediatek/mt7610u.bin
  mediatek/mt7615_cr4.bin
@@ -1336,6 +1337,10 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
+version: 20220908211234
+
+[mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
+desc: MediaTek MT7922 bluetooth firmware
 version: 20220908211234
 
 [mediatek/mt7610e.bin_base]
