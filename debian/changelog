@@ -1,11 +1,11 @@
-firmware-nonfree (20221109-3) UNRELEASED; urgency=medium
+firmware-nonfree (20221109-3) unstable; urgency=medium
 
   * misc-nonfree: i915: Add versionless HuC files for current platforms
     (Closes: #1024881)
   * misc-nonfree: i915: Add GuC v70.5.1 for DG1, DG2, TGL and ADL-P
     (Closes: #1024881)
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 27 Nov 2022 20:56:19 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 27 Nov 2022 21:09:34 +0100
 
 firmware-nonfree (20221109-2) unstable; urgency=medium
 
