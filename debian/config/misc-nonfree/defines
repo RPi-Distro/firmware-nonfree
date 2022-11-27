@@ -114,6 +114,7 @@ files:
  i915/dg1_guc_70.1.1.bin
  i915/dg1_huc_7.7.1.bin
  i915/dg1_huc_7.9.3.bin
+ i915/dg1_huc.bin
  i915/dg2_guc_70.1.2.bin
  i915/dg2_guc_70.4.1.bin
  i915/dg2_dmc_ver2_06.bin
@@ -188,6 +189,7 @@ files:
  i915/tgl_huc_7.0.3.bin
  i915/tgl_huc_7.5.0.bin
  i915/tgl_huc_7.9.3.bin
+ i915/tgl_huc.bin
  intel/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
  intel/ice/ddp-comms/ice_comms-1.3.31.0.pkg
  intel/ice/ddp/ice-1.3.30.0.pkg
@@ -1029,6 +1031,10 @@ version: 7.7.1
 desc: Intel DG1 HUC firmware
 version: 7.9.3
 
+[i915/dg1_huc.bin_base]
+desc: Intel DG1 HUC firmware
+version: 7.9.3
+
 [i915/dg2_guc_70.1.2.bin_base]
 desc: Intel DG2 GuC firmware
 version: 70.1.2
@@ -1310,6 +1316,10 @@ desc: Intel "Tiger Lake" HuC firmware
 version: 7.5.0
 
 [i915/tgl_huc_7.9.3.bin_base]
+desc: Intel "Tiger Lake" HuC firmware
+version: 7.9.3
+
+[i915/tgl_huc.bin_base]
 desc: Intel "Tiger Lake" HuC firmware
 version: 7.9.3
 

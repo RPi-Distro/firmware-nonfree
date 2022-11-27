@@ -1,3 +1,10 @@
+firmware-nonfree (20221109-3) UNRELEASED; urgency=medium
+
+  * misc-nonfree: i915: Add versionless HuC files for current platforms
+    (Closes: #1024881)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 27 Nov 2022 20:56:19 +0100
+
 firmware-nonfree (20221109-2) unstable; urgency=medium
 
   * qlogic: Add QLogic QL45000 series firmware version 8.59.1.0
