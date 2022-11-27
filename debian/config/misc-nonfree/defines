@@ -86,6 +86,7 @@ files:
  i915/adlp_guc_62.0.3.bin
  i915/adlp_guc_69.0.3.bin
  i915/adlp_guc_70.1.1.bin
+ i915/adlp_guc_70.bin
  i915/adls_dmc_ver2_01.bin
  i915/bxt_dmc_ver1.bin
  i915/bxt_dmc_ver1_07.bin
@@ -112,11 +113,13 @@ files:
  i915/dg1_guc_62.0.0.bin
  i915/dg1_guc_69.0.3.bin
  i915/dg1_guc_70.1.1.bin
+ i915/dg1_guc_70.bin
  i915/dg1_huc_7.7.1.bin
  i915/dg1_huc_7.9.3.bin
  i915/dg1_huc.bin
  i915/dg2_guc_70.1.2.bin
  i915/dg2_guc_70.4.1.bin
+ i915/dg2_guc_70.bin
  i915/dg2_dmc_ver2_06.bin
  i915/dg2_dmc_ver2_07.bin
  i915/ehl_guc_33.0.4.bin
@@ -185,6 +188,7 @@ files:
  i915/tgl_guc_62.0.0.bin
  i915/tgl_guc_69.0.3.bin
  i915/tgl_guc_70.1.1.bin
+ i915/tgl_guc_70.bin
  i915/tgl_huc_7.0.12.bin
  i915/tgl_huc_7.0.3.bin
  i915/tgl_huc_7.5.0.bin
@@ -923,6 +927,10 @@ version: 69.0.3
 desc: Intel ADL-P GuC firmware
 version: 70.1.1
 
+[i915/adlp_guc_70.bin_base]
+desc: Intel ADL-P GuC firmware
+version: 70.5.1
+
 [i915/adls_dmc_ver2_01.bin_base]
 desc: Intel "Adler Lake" DMC firmware
 version: 2.01
@@ -1023,6 +1031,10 @@ version: 69.0.3
 desc: Intel DG1 GuC firmware
 version: 70.1.1
 
+[i915/dg1_guc_70.bin_base]
+desc: Intel DG1 GuC firmware
+version: 70.5.1
+
 [i915/dg1_huc_7.7.1.bin_base]
 desc: Intel DG1 HUC firmware
 version: 7.7.1
@@ -1042,6 +1054,10 @@ version: 70.1.2
 [i915/dg2_guc_70.4.1.bin_base]
 desc: Intel DG2 GuC firmware
 version: 70.4.1
+
+[i915/dg2_guc_70.bin_base]
+desc: Intel DG2 GuC firmware
+version: 70.5.1
 
 [i915/dg2_dmc_ver2_06.bin_base]
 desc: Intel DG2 DMC firmware
@@ -1302,6 +1318,10 @@ version: 69.0.3
 [i915/tgl_guc_70.1.1.bin_base]
 desc: Intel "Tiger Lake" GuC firmware
 version: 70.1.1
+
+[i915/tgl_guc_70.bin_base]
+desc: Intel "Tiger Lake" GuC firmware
+version: 70.5.1
 
 [i915/tgl_huc_7.0.12.bin_base]
 desc: Intel "Tiger Lake" HuC firmware
