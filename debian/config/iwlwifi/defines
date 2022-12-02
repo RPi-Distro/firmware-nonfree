@@ -41,6 +41,10 @@ files:
  intel/ibt-0040-0041.sfi
  intel/ibt-0041-0041.ddc
  intel/ibt-0041-0041.sfi
+ intel/ibt-0040-4150.ddc
+ intel/ibt-0040-4150.sfi
+ intel/ibt-1040-4150.ddc
+ intel/ibt-1040-4150.sfi
  intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq
  intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq
  intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq
@@ -324,6 +328,22 @@ desc: Intel Wireless AX2100 Bluethooth configuration
 
 [intel/ibt-0041-0041.sfi_base]
 desc: Intel Wireless AX2100 Bluethooth firmware
+version: 22.180.0.2
+
+[intel/ibt-0040-4150.ddc_base]
+desc: Intel Wireless Bluetooth AX201 configuration
+version: 22.80.0.4
+
+[intel/ibt-0040-4150.sfi_base]
+desc: Intel Wireless Bluetooth AX201 firmware
+version: 22.180.0.2
+
+[intel/ibt-1040-4150.ddc_base]
+desc: Intel Wireless Bluetooth AX201 configuration
+version: 22.80.0.4
+
+[intel/ibt-1040-4150.sfi_base]
+desc: Intel Wireless Bluetooth AX201 firmware
 version: 22.180.0.2
 
 [intel/ibt-hw-37.7.10-fw-1.0.1.2d.d.bseq_base]
