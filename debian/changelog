@@ -1,10 +1,10 @@
-firmware-nonfree (20221109-4) UNRELEASED; urgency=medium
+firmware-nonfree (20221109-4) unstable; urgency=medium
 
   * Update to linux-support 6.0.0-5
   * iwlwifi: Add Intel Wireless Bluethooth AX201 firmware and configuration
     (Closes: #1025132)
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 02 Dec 2022 08:17:05 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 02 Dec 2022 13:28:27 +0100
 
 firmware-nonfree (20221109-3) unstable; urgency=medium
 
