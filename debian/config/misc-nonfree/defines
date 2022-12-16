@@ -122,6 +122,7 @@ files:
  i915/dg2_guc_70.bin
  i915/dg2_dmc_ver2_06.bin
  i915/dg2_dmc_ver2_07.bin
+ i915/dg2_dmc_ver2_08.bin
  i915/ehl_guc_33.0.4.bin
  i915/ehl_guc_49.0.1.bin
  i915/ehl_guc_62.0.0.bin
@@ -1067,6 +1068,10 @@ version: 2.06
 desc: Intel DG2 DMC firmware
 version: 2.07
 
+[i915/dg2_dmc_ver2_08.bin_base]
+desc: Intel DG2 DMC firmware
+version: 2.08
+
 [i915/ehl_guc_33.0.4.bin_base]
 desc: Intel "Elkhart Lake" GuC firmware
 version: 33.0.4
@@ -1367,7 +1372,7 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
-version: 20220908211234
+version: 20221109111213
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
@@ -1460,11 +1465,11 @@ version: 20220908203253
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
-version: 20220908210919a
+version: 20221109110918a
 
 [mediatek/WIFI_RAM_CODE_MT7961_1.bin_base]
 desc: MediaTek MT7921 firmware
-version: 20220908211021
+version: 20221109111005
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware

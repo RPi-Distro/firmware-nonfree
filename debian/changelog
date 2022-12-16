@@ -1,3 +1,48 @@
+firmware-nonfree (20221214-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: update green sardine DMCUB firmware
+    - amdgpu: update sdma_5.2.7 firmware
+    - rtl_bt: Update RTL8821C BT(USB I/F) FW to 0x75b8_f098
+    - brcm: add/update firmware files for brcmfmac driver
+    - amdgpu: updated navi12 firmware for amd-5.4
+    - amdgpu: updated renoir firmware for amd-5.4
+    - amdgpu: updated navi14 firmware for amd-5.4
+    - amdgpu: updated arcture firmware for amd-5.4
+    - amdgpu: updated sienna cichlid firmware for amd-5.4
+    - amdgpu: updated green sardine firmware for amd-5.4
+    - amdgpu: updated navy flounder firmware for amd-5.4
+    - amdgpu: updated picasso firmware for amd-5.4
+    - amdgpu: updated vangogh firmware for amd-5.4
+    - amdgpu: updated dimgrey cavefish firmware for amd-5.4
+    - amdgpu: updated beige goby firmware for amd-5.4
+    - amdgpu: updated vega10 firmware for amd-5.4
+    - amdgpu: add SMU 13.0.0 firmware for amd-5.4
+    - amdgpu: updated PSP 13.0.5 firmware for amd-5.4
+    - amdgpu: updated vega20 firmware for amd-5.4
+    - amdgpu: updated GC 10.3.7 RLC firmware for amd-5.4
+    - amdgpu: updated PSP 13.0.8 firmware for amd-5.4
+    - amdgpu: updated raven firmware for amd-5.4
+    - amdgpu: updated raven2 firmware for amd-5.4
+    - amdgpu: updated yellow carp firmware for amd-5.4
+    - amdgpu: updated navi10 firmware for amd-5.4
+
+  [ Salvatore Bonaccorso ]
+  * Update to linux-support 6.0.0-6
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
+  * misc-nonfree: i915: Add DMC v2.08 for DG2
+  * atheros: QCA: Add Bluetooth firmware for WCN785x
+  * amd-graphics: amdgpu: updated aldebaran firmware for amd-5.4
+  * amd-graphics: amdgpu: add DCN 3.2.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: add GC 11.0.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: add PSP 13.0.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: Add SDMA 6.0.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: add VCN 4.0.0 firmware for amd-5.4
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 16 Dec 2022 13:40:49 +0100
+
 firmware-nonfree (20221109-4) unstable; urgency=medium
 
   * Update to linux-support 6.0.0-5
