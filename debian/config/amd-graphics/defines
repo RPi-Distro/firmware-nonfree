@@ -433,6 +433,7 @@ files:
  amdgpu/vangogh_toc.bin
  amdgpu/vangogh_vcn.bin
  amdgpu/vcn_3_1_2.bin
+ amdgpu/vcn_4_0_0.bin
  amdgpu/vega10_acg_smc.bin
  amdgpu/vega10_asd.bin
  amdgpu/vega10_ce.bin
@@ -2054,6 +2055,9 @@ desc: "Van Gogh" VNC firmware
 
 [amdgpu/vcn_3_1_2.bin_base]
 desc: VCN 3.1.2 firmware
+
+[amdgpu/vcn_4_0_0.bin_base]
+desc: VCN 4.0.0 firmware
 
 [amdgpu/vega10_acg_smc.bin_base]
 desc: "Vega 10" ACG-SMC firmware
