@@ -7,6 +7,8 @@ files:
  amdgpu/aldebaran_mec.bin
  amdgpu/aldebaran_mec2.bin
  amdgpu/aldebaran_rlc.bin
+ amdgpu/aldebaran_sjt_mec.bin
+ amdgpu/aldebaran_sjt_mec2.bin
  amdgpu/aldebaran_sdma.bin
  amdgpu/aldebaran_smc.bin
  amdgpu/aldebaran_sos.bin
@@ -752,6 +754,12 @@ desc: "Aldebaran" MEC2 firmware
 
 [amdgpu/aldebaran_rlc.bin_base]
 desc: "Aldebaran" RLC firmware
+
+[amdgpu/aldebaran_sjt_mec.bin_base]
+desc: "Aldebaran" SJT MEC firmware
+
+[amdgpu/aldebaran_sjt_mec2.bin_base]
+desc: "Aldebaran" SJT MEC2 firmware
 
 [amdgpu/aldebaran_sdma.bin_base]
 desc: "Aldebaran" SDMA firmware
