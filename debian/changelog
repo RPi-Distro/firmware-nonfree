@@ -29,6 +29,7 @@ firmware-nonfree (20221214-1) UNRELEASED; urgency=medium
 
   [ Salvatore Bonaccorso ]
   * Update to linux-support 6.0.0-6
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 16 Dec 2022 13:40:49 +0100
 
