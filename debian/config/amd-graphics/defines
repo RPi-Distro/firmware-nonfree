@@ -321,6 +321,8 @@ files:
  amdgpu/polaris12_smc.bin
  amdgpu/polaris12_uvd.bin
  amdgpu/polaris12_vce.bin
+ amdgpu/psp_13_0_0_sos.bin
+ amdgpu/psp_13_0_0_ta.bin
  amdgpu/psp_13_0_5_asd.bin
  amdgpu/psp_13_0_5_ta.bin
  amdgpu/psp_13_0_5_toc.bin
@@ -1712,6 +1714,12 @@ version: 1.130
 [amdgpu/polaris12_vce.bin_base]
 desc: "Polaris 12" VCE firmware
 version: 53.26
+
+[amdgpu/psp_13_0_0_sos.bin_base]
+desc: PSP 13.0.0 SOS firmware
+
+[amdgpu/psp_13_0_0_ta.bin_base]
+desc: PSP 13.0.0 TA firmware
 
 [amdgpu/psp_13_0_5_asd.bin_base]
 desc: PSP 13.0.5 ASD firmware
