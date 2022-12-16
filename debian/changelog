@@ -27,6 +27,9 @@ firmware-nonfree (20221214-1) UNRELEASED; urgency=medium
     - amdgpu: updated yellow carp firmware for amd-5.4
     - amdgpu: updated navi10 firmware for amd-5.4
 
+  [ Salvatore Bonaccorso ]
+  * Update to linux-support 6.0.0-6
+
  -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 16 Dec 2022 13:40:49 +0100
 
 firmware-nonfree (20221109-4) unstable; urgency=medium
