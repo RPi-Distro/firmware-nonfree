@@ -32,6 +32,7 @@ firmware-nonfree (20221214-1) UNRELEASED; urgency=medium
   * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
   * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
     (MT7921)
+  * misc-nonfree: i915: Add DMC v2.08 for DG2
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 16 Dec 2022 13:40:49 +0100
 

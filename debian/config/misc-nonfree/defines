@@ -122,6 +122,7 @@ files:
  i915/dg2_guc_70.bin
  i915/dg2_dmc_ver2_06.bin
  i915/dg2_dmc_ver2_07.bin
+ i915/dg2_dmc_ver2_08.bin
  i915/ehl_guc_33.0.4.bin
  i915/ehl_guc_49.0.1.bin
  i915/ehl_guc_62.0.0.bin
@@ -1066,6 +1067,10 @@ version: 2.06
 [i915/dg2_dmc_ver2_07.bin_base]
 desc: Intel DG2 DMC firmware
 version: 2.07
+
+[i915/dg2_dmc_ver2_08.bin_base]
+desc: Intel DG2 DMC firmware
+version: 2.08
 
 [i915/ehl_guc_33.0.4.bin_base]
 desc: Intel "Elkhart Lake" GuC firmware
