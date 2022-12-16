@@ -69,6 +69,7 @@ files:
  amdgpu/cyan_skillfish2_sdma1.bin
  amdgpu/dcn_3_1_5_dmcub.bin
  amdgpu/dcn_3_1_6_dmcub.bin
+ amdgpu/dcn_3_2_0_dmcub.bin
  amdgpu/dimgrey_cavefish_ce.bin
  amdgpu/dimgrey_cavefish_dmcub.bin
  amdgpu/dimgrey_cavefish_me.bin
@@ -941,6 +942,9 @@ desc: DCN 3.1.5 DMCUB firmware
 
 [amdgpu/dcn_3_1_6_dmcub.bin_base]
 desc: DCN 3.1.6 DMCUB firmware
+
+[amdgpu/dcn_3_2_0_dmcub.bin_base]
+desc: DCN 3.2.0 DMCUB firmware
 
 [amdgpu/dimgrey_cavefish_ce.bin_base]
 desc: "Dimgrey Cavefish" CE firmware
