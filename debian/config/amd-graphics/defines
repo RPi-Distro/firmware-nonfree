@@ -106,6 +106,13 @@ files:
  amdgpu/gc_10_3_7_mec2.bin
  amdgpu/gc_10_3_7_pfp.bin
  amdgpu/gc_10_3_7_rlc.bin
+ amdgpu/gc_11_0_0_imu.bin
+ amdgpu/gc_11_0_0_me.bin
+ amdgpu/gc_11_0_0_mec.bin
+ amdgpu/gc_11_0_0_mes1.bin
+ amdgpu/gc_11_0_0_mes.bin
+ amdgpu/gc_11_0_0_pfp.bin
+ amdgpu/gc_11_0_0_rlc.bin
  amdgpu/green_sardine_asd.bin
  amdgpu/green_sardine_ce.bin
  amdgpu/green_sardine_dmcub.bin
@@ -1054,6 +1061,27 @@ desc: GC 10.3.7 PFP firmware
 
 [amdgpu/gc_10_3_7_rlc.bin_base]
 desc: GC 10.3.7 RLC firmware
+
+[amdgpu/gc_11_0_0_imu.bin_base]
+desc: GC 11.0.0 IMU firmware
+
+[amdgpu/gc_11_0_0_me.bin_base]
+desc: GC 11.0.0 ME firmware
+
+[amdgpu/gc_11_0_0_mec.bin_base]
+desc: GC 11.0.0 MEC firmware
+
+[amdgpu/gc_11_0_0_mes1.bin_base]
+desc: GC 11.0.0 MES1 firmware
+
+[amdgpu/gc_11_0_0_mes.bin_base]
+desc: GC 11.0.0 MES firmware
+
+[amdgpu/gc_11_0_0_pfp.bin_base]
+desc: GC 11.0.0 PFP firmware
+
+[amdgpu/gc_11_0_0_rlc.bin_base]
+desc: GC 11.0.0 RLC firmware
 
 [amdgpu/green_sardine_asd.bin_base]
 desc: Ryzen 5000 ASD firmware

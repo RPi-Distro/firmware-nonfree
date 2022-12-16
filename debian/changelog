@@ -36,6 +36,7 @@ firmware-nonfree (20221214-1) UNRELEASED; urgency=medium
   * atheros: QCA: Add Bluetooth firmware for WCN785x
   * amd-graphics: amdgpu: updated aldebaran firmware for amd-5.4
   * amd-graphics: amdgpu: add DCN 3.2.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: add GC 11.0.0 firmware for amd-5.4
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 16 Dec 2022 13:40:49 +0100
 
