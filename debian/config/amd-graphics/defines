@@ -367,6 +367,7 @@ files:
  amdgpu/renoir_vcn.bin
  amdgpu/sdma_5_2_6.bin
  amdgpu/sdma_5_2_7.bin
+ amdgpu/sdma_6_0_0.bin
  amdgpu/si58_mc.bin
  amdgpu/sienna_cichlid_ce.bin
  amdgpu/sienna_cichlid_dmcub.bin
@@ -1852,6 +1853,9 @@ desc: SDMA 5.2.6 firmware
 
 [amdgpu/sdma_5_2_7.bin_base]
 desc: SDMA 5.2.7 firmware
+
+[amdgpu/sdma_6_0_0.bin_base]
+desc: SDMA 6.0.0 firmware
 
 [amdgpu/si58_mc.bin_base]
 desc: Radeon "SI58" MC microcode
