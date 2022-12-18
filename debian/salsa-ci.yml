@@ -20,7 +20,7 @@ variables:
 
 extract-source:
   stage: provisioning
-  image: $SALSA_CI_IMAGES_GBP
+  image: $SALSA_CI_IMAGES_BASE
   cache:
     key: "orig-${RELEASE}"
     paths:
@@ -39,10 +39,14 @@ extract-source:
       fi
 
     # Install dependencies of gencontrol.py and debian/rules orig
+    # plus origtargz
     - apt-get update
+    - eatmydata apt-get install --no-install-recommends -y make
     - |
       eatmydata apt-get install --no-install-recommends -y \
         debhelper \
+        devscripts \
+        git \
         python3 \
         quilt \
         rsync \
