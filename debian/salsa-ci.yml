@@ -55,8 +55,8 @@ extract-source:
     - origtargz -dt
     - debian/rules orig
 
-    # Fudge source version *before* gencontrol.py
-    - sed -i -e '1 s/)/+salsaci)/' debian/changelog
+    # Fudge source version and suite *before* gencontrol.py
+    - sed -i -e '1 s/) [^;]*/+salsaci) UNRELEASED/' debian/changelog
     - version=${version}+salsaci
 
     # Run gencontrol.py

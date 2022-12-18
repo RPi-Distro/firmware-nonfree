@@ -1,8 +1,12 @@
 firmware-nonfree (20221109-4~bpo11+1) UNRELEASED; urgency=medium
 
+  [ Didier Raboud ]
   * Rebuild for bullseye-backports
   * d/salsa-ci.yml: Set RELEASE to bullseye-backports
   * d/b/gencontrol.py: Revert bookworm changes
+
+  [ Ben Hutchings ]
+  * d/salsa-ci.yml: Set changelog suite to UNRELEASED to avoid lintian error
 
  -- Didier Raboud <odyx@debian.org>  Fri, 11 Nov 2022 12:09:18 +0100
 
