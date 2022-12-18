@@ -1,3 +1,9 @@
+firmware-nonfree (20221214-2) UNRELEASED; urgency=medium
+
+  * d/salsa-ci.yml: Set changelog suite to UNRELEASED to avoid lintian error
+
+ -- Ben Hutchings <benh@debian.org>  Mon, 19 Dec 2022 14:23:45 +0100
+
 firmware-nonfree (20221214-1) unstable; urgency=medium
 
   * New upstream version:
