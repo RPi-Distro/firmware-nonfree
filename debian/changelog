@@ -1,4 +1,4 @@
-firmware-nonfree (20221109-4~bpo11+1) UNRELEASED; urgency=medium
+firmware-nonfree (20221109-4~bpo11+1) bullseye-backports; urgency=medium
 
   [ Didier Raboud ]
   * Rebuild for bullseye-backports
@@ -9,7 +9,7 @@ firmware-nonfree (20221109-4~bpo11+1) UNRELEASED; urgency=medium
   * d/salsa-ci.yml: Set changelog suite to UNRELEASED to avoid lintian error
   * d/salsa-ci.yml: Run extract-source job in target release, not unstable
 
- -- Didier Raboud <odyx@debian.org>  Fri, 11 Nov 2022 12:09:18 +0100
+ -- Didier Raboud <odyx@debian.org>  Mon, 19 Dec 2022 07:16:47 +0100
 
 firmware-nonfree (20221109-4) unstable; urgency=medium
 
