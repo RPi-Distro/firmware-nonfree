@@ -2,7 +2,7 @@ include:
   - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/salsa-ci.yml
 
 variables:
-  RELEASE: 'unstable'
+  RELEASE: 'bullseye-backports'
   # We only build arch:all packages
   SALSA_CI_DISABLE_BLHC: 'true'
   SALSA_CI_DISABLE_BUILD_PACKAGE_I386: 'true'
