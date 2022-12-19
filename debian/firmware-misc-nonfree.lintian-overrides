@@ -1,0 +1,4 @@
+# These binaries do not run on the host, so these rules don't apply
+firmware-misc-nonfree: arch-independent-package-contains-binary-or-object *lib/firmware/*
+firmware-misc-nonfree: statically-linked-binary *lib/firmware/*
+firmware-misc-nonfree: unstripped-binary-or-object *lib/firmware/*

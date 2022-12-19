@@ -47,9 +47,10 @@ files:
  ath10k/QCA988X/hw2.0/firmware-5.bin
  ath10k/QCA9984/hw1.0/board-2.bin
  ath10k/QCA9984/hw1.0/firmware-5.bin
- ath10k/QCA99X0/hw2.0/board.bin
+ ath10k/QCA99X0/hw2.0/board-2.bin
  ath10k/QCA99X0/hw2.0/firmware-5.bin
  ath10k/WCN3990/hw1.0/firmware-5.bin
+ ath10k/WCN3990/hw1.0/board-2.bin
  ath10k/WCN3990/hw1.0/wlanmdsp.mbn
  ath11k/IPQ6018/hw1.0/board-2.bin
  ath11k/IPQ6018/hw1.0/m3_fw.b00
@@ -86,6 +87,28 @@ files:
  ath11k/QCA6390/hw2.0/board-2.bin
  ath11k/QCA6390/hw2.0/amss.bin
  ath11k/QCA6390/hw2.0/m3.bin
+ ath11k/QCN9074/hw1.0/amss.bin
+ ath11k/QCN9074/hw1.0/board-2.bin
+ ath11k/QCN9074/hw1.0/m3.bin
+ ath11k/WCN6750/hw1.0/board-2.bin
+ ath11k/WCN6750/hw1.0/wpss.b00
+ ath11k/WCN6750/hw1.0/wpss.b01
+ ath11k/WCN6750/hw1.0/wpss.b02
+ ath11k/WCN6750/hw1.0/wpss.b03
+ ath11k/WCN6750/hw1.0/wpss.b04
+ ath11k/WCN6750/hw1.0/wpss.b05
+ ath11k/WCN6750/hw1.0/wpss.b06
+ ath11k/WCN6750/hw1.0/wpss.b07
+ ath11k/WCN6750/hw1.0/wpss.b08
+ ath11k/WCN6750/hw1.0/wpss.mdt
+ ath11k/WCN6855/hw2.0/amss.bin
+ ath11k/WCN6855/hw2.0/board-2.bin
+ ath11k/WCN6855/hw2.0/m3.bin
+ ath11k/WCN6855/hw2.0/regdb.bin
+ ath11k/WCN6855/hw2.1/amss.bin
+ ath11k/WCN6855/hw2.1/board-2.bin
+ ath11k/WCN6855/hw2.1/m3.bin
+ ath11k/WCN6855/hw2.1/regdb.bin
  ath3k-1.fw
  ath6k/AR6003.1/hw2.1.1/athwlan.bin
  ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
@@ -149,7 +172,16 @@ files:
  qca/nvm_usb_00130200_0105.bin
  qca/nvm_usb_00130200_0106.bin
  qca/nvm_usb_00130200_0107.bin
+ qca/nvm_usb_00130200_0109.bin
  qca/nvm_usb_00130200_0110.bin
+ qca/nvm_usb_00130201.bin
+ qca/nvm_usb_00130201_010a.bin
+ qca/nvm_usb_00130201_010b.bin
+ qca/nvm_usb_00130201_0303.bin
+ qca/nvm_usb_00130201_gf.bin
+ qca/nvm_usb_00130201_gf_010a.bin
+ qca/nvm_usb_00130201_gf_010b.bin
+ qca/nvm_usb_00130201_gf_0303.bin
  qca/rampatch_00130300.bin
  qca/rampatch_00130302.bin
  qca/rampatch_00230302.bin
@@ -159,6 +191,7 @@ files:
  qca/rampatch_usb_00000300.bin
  qca/rampatch_usb_00000302.bin
  qca/rampatch_usb_00130200.bin
+ qca/rampatch_usb_00130201.bin
  wil6210.brd
  wil6210.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
@@ -325,9 +358,9 @@ version: 2
 desc: Qualcomm Atheros QCA9984 rev 1.0 firmware
 version: 10.4-3.9.0.2-00131
 
-[ath10k/QCA99X0/hw2.0/board.bin_base]
+[ath10k/QCA99X0/hw2.0/board-2.bin_base]
 desc: Qualcomm Atheros QCA99X0 board configuration
-version: 1
+version: 2
 
 [ath10k/QCA99X0/hw2.0/firmware-5.bin_base]
 desc: Qualcomm Atheros QCA99X0 firmware
@@ -335,6 +368,9 @@ version: 10.4.1.00030-1
 
 [ath10k/WCN3990/hw1.0/firmware-5.bin_base]
 desc: Qualcomm Atheros WCN3990 firmware
+
+[ath10k/WCN3990/hw1.0/board-2.bin_base]
+desc: Qualcomm Atheros WCN3990 board-2.bin firmware
 
 [ath10k/WCN3990/hw1.0/wlanmdsp.mbn_base]
 desc: Qualcomm Atheros WCN3990 wlan DSP firmware
@@ -479,6 +515,76 @@ version: WLAN.HST.1.0.1-01740-QCAHSTSWPLZ_V2_TO_X86-1
 desc: Qualcomm Atheros QCA6390 m3 firmware
 version: WLAN.HST.1.0.1-01740-QCAHSTSWPLZ_V2_TO_X86-1
 
+[ath11k/QCN9074/hw1.0/amss.bin_base]
+desc: Qualcomm Atheros QCN9074 amss firmware
+version: WLAN.HK.2.5.0.1-01208-QCAHKSWPL_SILICONZ-1
+
+[ath11k/QCN9074/hw1.0/board-2.bin_base]
+desc: Qualcomm Atheros QCN9074 board-2 firmware
+version: WLAN.HK.2.5.0.1-01208-QCAHKSWPL_SILICONZ-1
+
+[ath11k/QCN9074/hw1.0/m3.bin_base]
+desc: Qualcomm Atheros QCN9074 m3 firmware
+version: WLAN.HK.2.5.0.1-01208-QCAHKSWPL_SILICONZ-1
+
+[ath11k/WCN6750/hw1.0/board-2.bin_base]
+desc: Qualcomm Atheros WCN6750 board-2 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b00_base]
+desc: Qualcomm Atheros WCN6750 wpss.b00 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b01_base]
+desc: Qualcomm Atheros WCN6750 wpss.b01 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b02_base]
+desc: Qualcomm Atheros WCN6750 wpss.b02 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b03_base]
+desc: Qualcomm Atheros WCN6750 wpss.b03 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b04_base]
+desc: Qualcomm Atheros WCN6750 wpss.b04 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b05_base]
+desc: Qualcomm Atheros WCN6750 wpss.b05 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b06_base]
+desc: Qualcomm Atheros WCN6750 wpss.b06 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b07_base]
+desc: Qualcomm Atheros WCN6750 wpss.b07 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.b08_base]
+desc: Qualcomm Atheros WCN6750 wpss.b08 firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6750/hw1.0/wpss.mdt_base]
+desc: Qualcomm Atheros WCN6750 wpss.mdt firmware
+version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+
+[ath11k/WCN6855/hw2.0/amss.bin_base]
+desc: Qualcomm Atheros WCN6855 amss firmware
+version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.9
+
+[ath11k/WCN6855/hw2.0/board-2.bin_base]
+desc: Qualcomm Atheros WCN6855 board-2 firmware
+
+[ath11k/WCN6855/hw2.0/m3.bin_base]
+desc: Qualcomm Atheros WCN6855 m3 firmware
+version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3
+
+[ath11k/WCN6855/hw2.0/regdb.bin_base]
+desc: Qualcomm Atheros WCN6855 regdb firmware
+
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
 
@@ -590,8 +696,35 @@ desc: Qualcomm Atheros WCN685x 0106 NVM BT firmware
 [qca/nvm_usb_00130200_0107.bin_base]
 desc: Qualcomm Atheros WCN685x 0107 NVM BT firmware
 
+[qca/nvm_usb_00130200_0109.bin_base]
+desc: Qualcomm Atheros WCN685x 0109 NVM BT firmware
+
 [qca/nvm_usb_00130200_0110.bin_base]
 desc: Qualcomm Atheros WCN685x 0110 NVM BT firmware
+
+[qca/nvm_usb_00130201.bin_base]
+desc: Qualcomm Atheros WCN685x NVM BT firmware
+
+[qca/nvm_usb_00130201_010a.bin_base]
+desc: Qualcomm Atheros WCN685x 010a NVM BT firmware
+
+[qca/nvm_usb_00130201_010b.bin_base]
+desc: Qualcomm Atheros WCN685x 010b NVM BT firmware
+
+[qca/nvm_usb_00130201_0303.bin_base]
+desc: Qualcomm Atheros WCN685x 0303 NVM BT firmware
+
+[qca/nvm_usb_00130201_gf.bin_base]
+desc: Qualcomm Atheros WCN685x gf NVM BT firmware
+
+[qca/nvm_usb_00130201_gf_010a.bin_base]
+desc: Qualcomm Atheros WCN685x gf 010a NVM BT firmware
+
+[qca/nvm_usb_00130201_gf_010b.bin_base]
+desc: Qualcomm Atheros WCN685x gf 010b NVM BT firmware
+
+[qca/nvm_usb_00130201_gf_0303.bin_base]
+desc: Qualcomm Atheros WCN685x gf 0303 NVM BT firmware
 
 [qca/rampatch_usb_00000200.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT rampatch
@@ -607,6 +740,9 @@ desc: Qualcomm Atheros QCA61x4 version 3.2 USB BT rampatch
 
 [qca/rampatch_usb_00130200.bin_base]
 desc: Qualcomm Atheros WCN685x 0110 RAM BT firmware
+
+[qca/rampatch_usb_00130201.bin_base]
+desc: Qualcomm Atheros WCN685x RAM BT firmware
 
 [wil6210.brd_base]
 desc: Qualcomm Atheros Wil62x0 default board parameters

@@ -1,0 +1,6 @@
+# These binaries do not run on the host, so these rules don't apply
+firmware-qcom-soc: arch-independent-package-contains-binary-or-object *lib/firmware/*
+firmware-qcom-soc: statically-linked-binary *lib/firmware/*
+# apq8096 modem.mbn issues
+firmware-qcom-soc: binary-with-bad-dynamic-table [lib/firmware/qcom/apq8096/modem.mbn]
+firmware-qcom-soc: elf-error In program headers: * [lib/firmware/qcom/apq8096/modem.mbn]

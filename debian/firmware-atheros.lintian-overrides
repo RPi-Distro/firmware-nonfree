@@ -1,0 +1,7 @@
+# These binaries do not run on the host, so these rules don't apply
+firmware-atheros: arch-independent-package-contains-binary-or-object *lib/firmware/*
+firmware-atheros: elf-error *lib/firmware/*
+firmware-atheros: program-not-linked-against-libc *lib/firmware/*
+firmware-atheros: statically-linked-binary *lib/firmware/*
+firmware-atheros: undeclared-elf-prerequisites *lib/firmware/*
+firmware-atheros: unstripped-binary-or-object *lib/firmware/*

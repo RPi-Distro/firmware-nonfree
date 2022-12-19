@@ -1,0 +1,4 @@
+version=3
+opts="mode=git, gitmode=shallow, pgpmode=gittag" \
+https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git \
+refs/tags/(.*) debian
