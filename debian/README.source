@@ -10,15 +10,10 @@ its contents are not clearly redistributable, and some are obsolete
 for Debian's purposes.
 git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
 
-We set the upstream version to the date of the last commit and use the
-'debian/bin/genorig.py' script to generate a tarball from upstream git.
-The [upstream] excluded field in 'debian/config/defines' lists file
-patterns that should be excluded from the tarball.
-genorig.py exports from the master branch by default, but this can
-be overridden using the --override-version option.
-
-Run: PYTHONPATH=/usr/share/linux-support-<version>/lib/python \
-     debian/bin/genorig.py /path/to/linux-firmware-repository
+We set the upstream version to the date of the last commit and use
+uscan to generate a tarball from upstream git.  The Files-Excluded
+field in 'debian/copyright' lists file patterns that should be
+excluded from the tarball.
 
 We also pull module information from Linux binary packages.  To update
 this information, run:
@@ -111,4 +106,4 @@ To update the current package's changelog with the new upstream version:
 
 2. Remove entries regarding firmwares files not packaged
 
- -- Ben Hutchings <benh@debian.org>, Fri, 30 Apr 2021 05:54:37 +0200
+ -- Ben Hutchings <benh@debian.org>, Sat, 22 Jan 2022 21:05:51 +0100

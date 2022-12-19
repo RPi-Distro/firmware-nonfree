@@ -1,3 +1,155 @@
+firmware-nonfree (20221109-4) unstable; urgency=medium
+
+  * Update to linux-support 6.0.0-5
+  * iwlwifi: Add Intel Wireless Bluethooth AX201 firmware and configuration
+    (Closes: #1025132)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 02 Dec 2022 13:28:27 +0100
+
+firmware-nonfree (20221109-3) unstable; urgency=medium
+
+  * misc-nonfree: i915: Add versionless HuC files for current platforms
+    (Closes: #1024881)
+  * misc-nonfree: i915: Add GuC v70.5.1 for DG1, DG2, TGL and ADL-P
+    (Closes: #1024881)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 27 Nov 2022 21:09:34 +0100
+
+firmware-nonfree (20221109-2) unstable; urgency=medium
+
+  * qlogic: Add QLogic QL45000 series firmware version 8.59.1.0
+    (Closes: #1016945)
+  * misc-nonfree: Add MediaTek MT7922 bluetooth firmware (Closes: #1023289)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 19 Nov 2022 09:51:39 +0100
+
+firmware-nonfree (20221109-1) unstable; urgency=medium
+
+  * New upstream version
+
+  [ Didier Raboud ]
+  * Update dependency to linux 6.0.0-4
+  * iwlwifi: update 9000-family firmwares to core72-129
+  * iwlwifi: add new FWs from core69-81 release (Closes: #1023240)
+  * iwlwifi: update firmware files for Intel Bluetooth AX2*
+  * iwlwifi: Add Intel Wireless AX211 Bluethooth firmware and
+    configuration (Closes: #1023245)
+  * qcom-soc: venus: replace split firmware with mbn files
+
+  [ Salvatore Bonaccorso ]
+  * Add myself to Uploaders
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 18 Nov 2022 11:18:32 +0100
+
+firmware-nonfree (20221012-1) unstable; urgency=medium
+
+  * New upstream version
+
+  [ Didier Raboud ]
+  * Update dependency and modinfo from linux 6.0.0-2 on amd64
+  * 20221012:
+    - misc-nonfree: update cxgb4 firmware to 1.27.0.0
+    - misc-nonfree: update firmware versions for MT7921 and MT7922 devices
+    - misc-nonfree: add MediaTek mt8186 and mt8195 scp firmware
+    - realtek: add Realtek RTL8852C, RTL8852BU and RTL8852CU config and firmware
+
+  [ Dmitry Baryshkov ]
+  * atheros: ath11k: WCN3990 hw1.0: add board-2.bin, board data file
+  * atheros: ath11k: Add firmware for QCN9074 (hw1.0), WCN6750 (hw1.0) and
+    WCN6855 (hw2.0, hw2.1) (Closes: #1021157)
+  * atheros: qca: Add WCN685x 0109 NVM bluetooth firmware
+  * atheros: qca: Add bluetooth firmware for WCN685x ROM 13.2.1
+  * qcom-soc: Fix paths for Lenovo ThinkPas X13s firmware
+  * qcom-soc: Add new Adreno firmware (a200, a330, a420)
+  * qcom-soc: Add firmware for APQ8096 (including lintian overrides for
+    reported issues with apq8096/modem.mbn)
+
+  [ Ben Hutchings ]
+  * atheros: Fix capitalisation in some file descriptions
+
+ -- Ben Hutchings <benh@debian.org>  Mon, 31 Oct 2022 01:18:11 +0100
+
+firmware-nonfree (20220913-1) unstable; urgency=medium
+
+  * New upstream version (Closes: #1009316, #1015728)
+  * Various new firmware for Intel hardware closes: #1014651, #1020962
+  * amd-graphics: Various new firmware closes: #999825, #1019847
+  * iwlwifi: Various new firmware closes: #1016058
+
+  [ Philippe Ombredanne ]
+  * Update copyright with correct continuations
+
+  [ Ben Hutchings ]
+  * lintian: Move source overrides to preferred path
+  * lintian: Refresh lintian-overrides
+  * d/control: Use my debian.org email in Uploaders field
+  * debian/upstream/: Add upstream signing key
+  * copyright: Fold debian/config/*/copyright into debian/copyright
+  * d/copyright: Fix remaining incorrect continuations
+  * d/copyright: Add Copyright field for Conexant firmware
+  * d/copyright: Fix Files field syntax
+  * d/copyright: Replace tabs with spaces
+  * d/copyright: Fix paragraph order for files in go7007/ and radeon/
+  * copyright: Replace debian/config/*/LICENSE with paragraphs in
+    debian/copyright
+  * d/copyright: Fix incorrect and obsolete file patterns
+  * copyright: Replace debian/copyright.debian with paragraph in
+    debian/copyright
+  * copyright: Remove support for per-binary-package copyright files
+  * Move file exclusions to debian/copyright; replace genorig.py with uscan
+  * d/copyright: Update copyright holders and dates for debian/*
+  * d/copyright: Add paragraph for metadata that should be CC0
+  * d/copyright: Drop non-matching file exclusions
+  * ipw2x00, ivtv: Add environment variable to skip EULA on installation:
+    FIRMWARE_{IPW2X00,IVTV}_LICENSE_READ_AND_ACCEPTED must be set to 'yes'
+  * d/salsa-ci.yml: Add CI configuration for salsa.debian.org
+    - d/rules: Add linux-support-name target to show the name of the
+      linux-support dependency
+  * Update to linux-support 5.19.0-1
+  * d/bin/gencontrol.py: Make debian/rules.gen reproducible
+  * misc-nonfree: Add Intel ADL-P DMC firmware version 2.16
+  * misc-nonfree: Add Intel DG2 firmware
+  * misc-nonfree: Add Nvidia Ampere GA102/GA103/GA104/GA106/GA107 firmware
+  * amd-graphics: Correct descriptions of files with IP version in filename
+  * amd-graphics: Fix some inconsistent file descriptions
+  * amd-graphics: Add "Aldebaran" MEC firmware
+  * amd-graphics: Add more versions of DCN, GC, PSP, SDMA, VCN firmware
+  * d/copyright: Delete obsolete filename patterns from Files-Excluded
+  * bnx2x: Add firmware version 7.13.21.0 (Closes: #1006500)
+  * iwlwifi: Add firmware version 71.058653f6.0 for various models
+
+  [ Didier Raboud ]
+  * lintian: fix file-matching in source override
+  * lintian: fix elf-error override syntax
+  * 20220815:
+    - atheros: ath10k QCA99X0 board updated to v2
+    - bnx2, bnx2x: Drop obsolete firmware files
+    - intelwimax: Drop Intel WiMax package (unsupported since 5.10+)
+    - iwlwifi: remove old unsupported 3160/7260/7265/8000/8265 firmware
+      (unsupported since 4.8.0)
+    - misc-nonfree: Update cxgb4 firmware to revision 1.26.6.0
+    - misc-nonfree: Update ice package to 1.3.30.0, and DDP comms to 1.3.31.0
+    - misc-nonfree: rename silabs/ to wfx/
+  * Update dependency and modinfo from linux 5.19.0-2 on amd64
+  * 20220913:
+    - qlogic: drop old obsolete brocade firmware revs
+    - misc-nonfree: Add lintian override for unstripped-binary-or-object
+    - source: Add lintian override for unstripped-binary-or-object
+    - misc-nonfree: i915: Add ADL-P DMC firmware v2.12 (Closes: #1006638)
+    - misc-nonfree: i915: ADL-P DMC files are firmware not support files
+    - misc-nonfree: i915: Add ADL-P DMC firmware v2.14
+    - misc-nonfree: i915: Add GuC firmware 69.0.3 for all platforms
+    - misc-nonfree: i915: Add GuC firmware 70.1.1 for all platforms
+    - iwlwifi: Add FWs for new SO device types with multiple RF modules
+    - amd-graphics: Add latest binary firmwares (Aldebaran, Beige Goby, Cyan
+      Sillfish2, GC, PSP, SDMA, Yellow Carp) (Closes: #1009618)
+    - qcom-soc: Add firmware for Lenovo ThinkPad X13s (21BX)
+  * CI: Build 'all' only, drop autopkgtest job and artifact the source package
+    separately
+  * Update to debhelper-compat to 13
+
+ -- Bastian Blank <waldi@debian.org>  Fri, 28 Oct 2022 20:48:14 +0200
+
 firmware-nonfree (20210818-1~bpo11+1) bullseye-backports; urgency=medium
 
   * Rebuild for bullseye-backports:

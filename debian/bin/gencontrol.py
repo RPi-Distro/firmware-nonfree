@@ -11,11 +11,11 @@ sys.path.append(sys.argv[1] + "/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config
-from debian_linux.debian import Package, PackageRelation
+from debian_linux.debian import BinaryPackage, PackageRelation
 from debian_linux.debian import PackageDescription as PackageDescriptionBase
 import debian_linux.gencontrol
 from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
-from debian_linux.utils import TextWrapper, read_control
+from debian_linux.utils import TextWrapper, read_control, read_control_source
 from debian_linux.utils import Templates as TemplatesBase
 from collections import OrderedDict
 
@@ -53,7 +53,7 @@ class PackageDescription(PackageDescriptionBase):
             for i in desc:
                 self.append(i)
 
-Package._fields['Description'] = PackageDescription
+BinaryPackage._fields['Description'] = PackageDescription
 
 class Template(dict):
     _fields = OrderedDict((
@@ -99,6 +99,8 @@ class Templates(TemplatesBase):
             if os.path.exists(filename):
                 with open(filename) as f:
                     mode = os.stat(f.fileno()).st_mode
+                    if name == 'control.source':
+                        return (read_control_source(f), mode)
                     if prefix == 'control':
                         return (read_control(f), mode)
                     elif prefix == 'templates':
@@ -180,9 +182,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             assert package_binary['Package'].startswith('firmware-')
             package = package_binary['Package'].replace('firmware-', '')
 
-            f = open('debian/copyright.debian')
-            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
-
             makeflags = MakeFlags()
             makeflags['FILES'] = ''
             makeflags['PACKAGE'] = package
@@ -207,20 +206,13 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         config_entry = self.config['base', package]
         vars.update(config_entry)
         vars['package'] = package
+        vars['package-env-prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
 
         makeflags['PACKAGE'] = package
 
         binary = self.templates["control.binary"]
-        copyright = self.templates["copyright.binary"]
 
         package_dir = "debian/config/%s" % package
-
-        if os.path.exists('%s/copyright' % package_dir):
-            f = open('%s/copyright' % package_dir)
-            open("debian/firmware-%s.copyright" % package, 'w').write(f.read())
-        else:
-            vars['license'] = open("%s/LICENSE" % package_dir, 'r').read()
-            open("debian/firmware-%s.copyright" % package, 'w').write(self.substitute(copyright, vars))
 
         try:
             os.unlink('debian/firmware-%s.bug-presubj' % package)
@@ -261,7 +253,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                                              f_version
                         continue
                 # Whitelist files not expected to be installed as firmware
-                if f in ['copyright', 'defines', 'LICENSE', 'LICENSE.install',
+                if f in ['defines', 'LICENSE.install',
                          'update.py', 'update.sh']:
                     continue
                 files_unused.append(f)
@@ -283,11 +275,11 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             print('W: %s: unused files:' % package, ' '.join(files_unused),
                   file=sys.stderr)
 
-        makeflags['FILES'] = ' '.join(["%s:%s" % (i[1], i[0]) for i in files_real.values()])
+        makeflags['FILES'] = ' '.join(["%s:%s" % (i[1], i[0]) for i in sorted(files_real.values())])
         vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
 
         makeflags['LINKS'] = ' '.join(["%s:%s" % (link, target)
-                                       for link, target in links.items()])
+                                       for link, target in sorted(links.items())])
 
         files_desc = ["Contents:"]
         firmware_meta_temp = self.templates["metainfo.xml.firmware"]
