@@ -335,6 +335,7 @@ version: 22.180.0.2
 
 [intel/ibt-0041-0041.ddc_base]
 desc: Intel Wireless AX2100 Bluethooth configuration
+version: 22.00.0.0
 
 [intel/ibt-0041-0041.sfi_base]
 desc: Intel Wireless AX2100 Bluethooth firmware
