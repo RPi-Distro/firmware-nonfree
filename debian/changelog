@@ -1,3 +1,9 @@
+firmware-nonfree (20221214-3) UNRELEASED; urgency=medium
+
+  * iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 22 Dec 2022 08:36:08 +0100
+
 firmware-nonfree (20221214-2) unstable; urgency=medium
 
   [ Ben Hutchings ]

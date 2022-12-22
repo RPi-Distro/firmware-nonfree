@@ -39,6 +39,8 @@ files:
  intel/ibt-20-1-4.sfi
  intel/ibt-0040-0041.ddc
  intel/ibt-0040-0041.sfi
+ intel/ibt-1040-0041.ddc
+ intel/ibt-1040-0041.sfi
  intel/ibt-0041-0041.ddc
  intel/ibt-0041-0041.sfi
  intel/ibt-0040-4150.ddc
@@ -320,6 +322,14 @@ desc: Intel Wireless AX211 Bluethooth configuration
 version: 22.80.0.4
 
 [intel/ibt-0040-0041.sfi_base]
+desc: Intel Wireless AX211 Bluethooth firmware
+version: 22.180.0.2
+
+[intel/intel/ibt-1040-0041.ddc_base]
+desc: Intel Wireless AX211 Bluethooth configuration
+version: 22.80.0.4
+
+[intel/intel/ibt-1040-0041.sfi_base]
 desc: Intel Wireless AX211 Bluethooth firmware
 version: 22.180.0.2
 
