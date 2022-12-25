@@ -1,10 +1,10 @@
-firmware-nonfree (20221214-3) UNRELEASED; urgency=medium
+firmware-nonfree (20221214-3) unstable; urgency=medium
 
   * iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
   * iwlwifi: Add version information for ibt-0041-0041.ddc (Intel Wireless
     AX2100 Bluethooth configuration)
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 22 Dec 2022 08:36:08 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 25 Dec 2022 17:32:01 +0100
 
 firmware-nonfree (20221214-2) unstable; urgency=medium
 
