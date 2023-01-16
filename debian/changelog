@@ -1,3 +1,9 @@
+firmware-nonfree (20221214-4) UNRELEASED; urgency=medium
+
+  * Update to linux-support 6.1.0-1
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 16 Jan 2023 23:57:26 +0000
+
 firmware-nonfree (20221214-3) unstable; urgency=medium
 
   * iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
