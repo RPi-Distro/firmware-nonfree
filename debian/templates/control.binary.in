@@ -1,11 +1,11 @@
 Package: firmware-@package@
 Architecture: all
-Replaces: @?replaces@
-Conflicts: @?conflicts@
-Breaks: @?breaks@
-Provides: @?provides@
+Replaces: @replaces@
+Conflicts: @conflicts@
+Breaks: @breaks@
+Provides: @provides@
 Depends: ${misc:Depends}
-Recommends: @?recommends@
+Recommends: @recommends@
 Suggests: initramfs-tools
 Description: Binary firmware for @desc@
  This package contains the binary firmware for @longdesc@.

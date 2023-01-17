@@ -12,6 +12,10 @@ firmware-nonfree (20221214-4) UNRELEASED; urgency=medium
        the base class.
      - Use get_templates_control() and an append() to include the license
        in the templates.
+     - Avoid KeyError during substitutions by renaming @?variable@ into
+       @variable@, listing each such variable as optional (so that the
+       placeholder gets replaced with an empty string if that variable is
+       not set in the config).
 
  -- Cyril Brulebois <kibi@debian.org>  Mon, 16 Jan 2023 23:57:26 +0000
 

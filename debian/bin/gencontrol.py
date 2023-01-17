@@ -135,6 +135,12 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         makeflags['PACKAGE'] = package
 
+        # Those might be absent, set them to empty string for replacement to work:
+        empty_list = ['replaces', 'conflicts', 'breaks', 'provides', 'recommends']
+        for optional in ['replaces', 'conflicts', 'breaks', 'provides', 'recommends']:
+            if optional not in vars:
+                vars[optional] = ''
+
         package_dir = "debian/config/%s" % package
 
         try:
