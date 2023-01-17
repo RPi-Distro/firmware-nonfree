@@ -10,6 +10,8 @@ firmware-nonfree (20221214-4) UNRELEASED; urgency=medium
        Description.
      - Simplify Templates, only adding a get_templates_control() method to
        the base class.
+     - Use get_templates_control() and an append() to include the license
+       in the templates.
 
  -- Cyril Brulebois <kibi@debian.org>  Mon, 16 Jan 2023 23:57:26 +0000
 

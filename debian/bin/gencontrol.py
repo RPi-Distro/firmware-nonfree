@@ -260,9 +260,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             preinst_filename = "debian/firmware-%s.preinst" % package
             open(preinst_filename, 'w').write(self.substitute(preinst, vars))
 
-            templates = self.process_templates(self.templates['templates.license'], vars)
-            license_split = re.split(r'\n\s*\n', license)
-            templates[0]['Description'].extend(license_split)
+            templates = self.templates.get_templates_control('templates.license', vars)
+            templates[0]['Description'].append(re.sub('\n\n', '\n.\n', license))
             templates_filename = "debian/firmware-%s.templates" % package
             self.write_rfc822(open(templates_filename, 'w'), templates)
 
