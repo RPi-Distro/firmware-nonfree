@@ -4,6 +4,7 @@ firmware-nonfree (20221214-4) UNRELEASED; urgency=medium
   * Update to the new linux-support API:
      - Replace self.templates[foo] with self.templates.get*(foo),
        merging the self.process_package() substitution in passing.
+     - Replace makefile.add() with makefile.add_cmds().
 
  -- Cyril Brulebois <kibi@debian.org>  Mon, 16 Jan 2023 23:57:26 +0000
 

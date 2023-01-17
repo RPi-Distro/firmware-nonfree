@@ -183,7 +183,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             makeflags = MakeFlags()
             makeflags['FILES'] = ''
             makeflags['PACKAGE'] = package
-            makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
+            makefile.add_cmds('binary-indep', ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
 
             packages.append(package_binary)
 
@@ -195,7 +195,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         makeflags = MakeFlags()
 
         for i in ('build', 'binary-arch', 'setup'):
-            makefile.add("%s_%%" % i, cmds = ["@true"])
+            makefile.add_cmds("%s_%%" % i, ["@true"])
 
         for package in config_entry['packages']:
             self.do_package(packages, makefile, package, vars.copy(), makeflags.copy())
@@ -348,7 +348,7 @@ You must agree to the terms of this license before it is installed."""
 
         packages.extend(packages_binary)
 
-        makefile.add('binary-indep', cmds = ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
+        makefile.add_cmds('binary-indep', ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
 
         vars['firmware-list'] = ''.join(firmware_meta_list)
         vars['modalias-list'] = ''.join(modalias_meta_list)
