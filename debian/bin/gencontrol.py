@@ -15,7 +15,7 @@ from debian_linux.debian import BinaryPackage, PackageRelation
 from debian_linux.debian import PackageDescription as PackageDescriptionBase
 import debian_linux.gencontrol
 from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
-from debian_linux.utils import TextWrapper, read_control, read_control_source
+from debian_linux.utils import TextWrapper
 from debian_linux.utils import Templates as TemplatesBase
 from collections import OrderedDict
 
@@ -169,16 +169,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         self.write(packages, makefile)
 
     def do_source(self, packages):
-        source = self.templates["control.source"]
-        packages['source'] = self.process_package(source[0], ())
+        packages['source'] = self.templates.get_source_control("control.source", {})[0]
 
     def do_extra(self, packages, makefile):
         config_entry = self.config['base',]
         vars = {}
         vars.update(config_entry)
 
-        for entry in self.templates["control.extra"]:
-            package_binary = self.process_package(entry, {})
+        for package_binary in self.templates.get_control("control.extra", {}):
             assert package_binary['Package'].startswith('firmware-')
             package = package_binary['Package'].replace('firmware-', '')
 
@@ -209,8 +207,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         vars['package-env-prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
 
         makeflags['PACKAGE'] = package
-
-        binary = self.templates["control.binary"]
 
         package_dir = "debian/config/%s" % package
 
@@ -282,7 +278,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                                        for link, target in sorted(links.items())])
 
         files_desc = ["Contents:"]
-        firmware_meta_temp = self.templates["metainfo.xml.firmware"]
+        firmware_meta_temp = self.templates.get("metainfo.xml.firmware")
         firmware_meta_list = []
         module_names = set()
 
@@ -318,22 +314,22 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             for modalias in self.modinfo[module_name]['alias']:
                 modaliases.add(modalias)
         modalias_meta_list = [
-            self.substitute(self.templates["metainfo.xml.modalias"],
+            self.substitute(self.templates.get("metainfo.xml.modalias"),
                             {'alias': alias})
             for alias in sorted(list(modaliases))
         ]
 
-        packages_binary = self.process_packages(binary, vars)
+        packages_binary = self.templates.get_control("control.binary", vars)
 
         packages_binary[0]['Description'].append_pre(files_desc)
 
         if 'initramfs-tools' in config_entry.get('support', []):
-            postinst = self.templates['postinst.initramfs-tools']
+            postinst = self.templates.get('postinst.initramfs-tools')
             open("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
 
         if 'license-accept' in config_entry:
             license = open("%s/LICENSE.install" % package_dir, 'r').read()
-            preinst = self.templates['preinst.license']
+            preinst = self.templates.get('preinst.license')
             preinst_filename = "debian/firmware-%s.preinst" % package
             open(preinst_filename, 'w').write(self.substitute(preinst, vars))
 
@@ -360,7 +356,7 @@ You must agree to the terms of this license before it is installed."""
         vars['package-metainfo'] = package.replace('-', '_')
         # Summary must not contain line breaks
         vars['longdesc-metainfo'] = re.sub(r'\s+', ' ', vars['longdesc'])
-        package_meta_temp = self.templates["metainfo.xml"]
+        package_meta_temp = self.templates.get("metainfo.xml", {})
         # XXX Might need to escape some characters
         open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))
 
