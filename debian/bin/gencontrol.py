@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import io
 import json
 import locale
 import os
@@ -11,7 +12,7 @@ sys.path.append(sys.argv[1] + "/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config
-from debian_linux.debian import BinaryPackage, PackageRelation
+from debian_linux.debian import BinaryPackage, PackageRelation, _ControlFileDict
 from debian_linux.debian import PackageDescription as PackageDescriptionBase
 import debian_linux.gencontrol
 from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
@@ -55,92 +56,18 @@ class PackageDescription(PackageDescriptionBase):
 
 BinaryPackage._fields['Description'] = PackageDescription
 
-class Template(dict):
+class Template(_ControlFileDict):
     _fields = OrderedDict((
         ('Template', str),
         ('Type', str),
         ('Default', str),
-        ('Description', PackageDescription),
+        ('Description', PackageDescriptionBase),
     ))
-
-    def __setitem__(self, key, value):
-        try:
-            cls = self._fields[key]
-            if not isinstance(value, cls):
-                value = cls(value)
-        except KeyError: pass
-        super(Template, self).__setitem__(key, value)
-
-    def keys(self):
-        keys = set(super(Template, self).keys())
-        for i in self._fields.keys():
-            if i in self:
-                keys.remove(i)
-                yield i
-        for i in keys:
-            yield i
-
-    def items(self):
-        for i in self.keys():
-            yield (i, self[i])
-
-    def values(self):
-        for i in self.keys():
-            yield self[i]
 
 
 class Templates(TemplatesBase):
-    # TODO
-    def _read(self, name):
-        prefix, id = name.split('.', 1)
-
-        for dir in self.dirs:
-            filename = "%s/%s.in" % (dir, name)
-            if os.path.exists(filename):
-                with open(filename) as f:
-                    mode = os.stat(f.fileno()).st_mode
-                    if name == 'control.source':
-                        return (read_control_source(f), mode)
-                    if prefix == 'control':
-                        return (read_control(f), mode)
-                    elif prefix == 'templates':
-                        return (self._read_templates(f), mode)
-                    return (f.read(), mode)
-
-    def _read_templates(self, f):
-        entries = []
-
-        while True:
-            e = Template()
-            last = None
-            lines = []
-            while True:
-                line = f.readline()
-                if not line:
-                    break
-                line = line.strip('\n')
-                if not line:
-                    break
-                if line[0] in ' \t':
-                    if not last:
-                        raise ValueError('Continuation line seen before first header')
-                    lines.append(line.lstrip())
-                    continue
-                if last:
-                    e[last] = '\n'.join(lines)
-                i = line.find(':')
-                if i < 0:
-                    raise ValueError("Not a header, not a continuation: ``%s''" % line)
-                last = line[:i]
-                lines = [line[i+1:].lstrip()]
-            if last:
-                e[last] = '\n'.join(lines)
-            if not e:
-                break
-
-            entries.append(e)
-
-        return entries
+    def get_templates_control(self, key: str, context: dict[str, str] = {}) -> Template:
+        return Template.read_rfc822(io.StringIO(self.get(key, context)))
 
 
 class GenControl(debian_linux.gencontrol.Gencontrol):
