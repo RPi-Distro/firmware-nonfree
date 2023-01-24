@@ -4,7 +4,7 @@ firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ivtv.
 firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ivtv.templates:134]
 firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ipw2x00.templates:4]
 firmware-nonfree source: untranslatable-debconf-templates [debian/firmware-ipw2x00.templates:82]
-# Well duh that's why this is non-free
+# Well duh that's why this is non-free-firmware
 firmware-nonfree source: source-is-missing *
 # These binaries do not run on the host, so these rules don't apply
 firmware-nonfree source: elf-error *

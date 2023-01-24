@@ -1,5 +1,5 @@
 Package: firmware-linux
-Section: non-free/metapackages
+Section: non-free-firmware/metapackages
 Architecture: all
 Depends: firmware-linux-free, firmware-linux-nonfree (= ${binary:Version}),
  ${misc:Depends}
@@ -9,7 +9,7 @@ Description: Binary firmware for various drivers in the Linux kernel (metapackag
  be used with drivers in the Linux kernel.
 
 Package: firmware-linux-nonfree
-Section: non-free/metapackages
+Section: non-free-firmware/metapackages
 Architecture: all
 Depends: firmware-misc-nonfree (= ${binary:Version}),
  firmware-amd-graphics (= ${binary:Version}), ${misc:Depends}
@@ -19,7 +19,7 @@ Description: Binary firmware for various drivers in the Linux kernel (metapackag
  in the Linux kernel.
 
 Package: firmware-qcom-media
-Section: non-free/oldlibs
+Section: non-free-firmware/oldlibs
 Architecture: all
 Depends: firmware-qcom-soc, ${misc:Depends}
 Description: Binary firmware for Qualcomm graphics/video (dummy package)

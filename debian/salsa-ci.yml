@@ -48,6 +48,7 @@ extract-source:
         devscripts \
         git \
         python3 \
+        python3-jinja2 \
         quilt \
         rsync \
         $(debian/rules linux-support-name)

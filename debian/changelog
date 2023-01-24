@@ -1,3 +1,27 @@
+firmware-nonfree (20221214-4) UNRELEASED; urgency=medium
+
+  * Update to linux-support 6.1.0-1
+  * Update to the new linux-support API:
+     - Replace self.templates[foo] with self.templates.get*(foo),
+       merging the self.process_package() substitution in passing.
+     - Replace makefile.add() with makefile.add_cmds().
+     - Make Template inherit from _ControlFileDict, and use OrderedDict to
+       define its fields. Use PackageDescriptionBase directly for the
+       Description.
+     - Simplify Templates, only adding a get_templates_control() method to
+       the base class.
+     - Use get_templates_control() and an append() to include the license
+       in the templates.
+     - Avoid KeyError during substitutions by renaming @?variable@ into
+       @variable@, listing each such variable as optional (so that the
+       placeholder gets replaced with an empty string if that variable is
+       not set in the config).
+     - salsa-ci: install python3-jinja2
+  * Move source and binaries from non-free/* to non-free-firmware/*
+    following the 2022 General Resolution about non-free firmware.
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 16 Jan 2023 23:57:26 +0000
+
 firmware-nonfree (20221214-3) unstable; urgency=medium
 
   * iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
