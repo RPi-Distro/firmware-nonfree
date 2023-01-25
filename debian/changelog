@@ -21,6 +21,9 @@ firmware-nonfree (20221214-4) unstable; urgency=medium
   * Move source and binaries from non-free/* to non-free-firmware/*
     following the 2022 General Resolution about non-free firmware.
 
+  [ Bastian Blank ]
+  * Update to linux-support 6.1.0-2
+
  -- Bastian Blank <waldi@debian.org>  Tue, 24 Jan 2023 12:19:29 +0100
 
 firmware-nonfree (20221214-3) unstable; urgency=medium
