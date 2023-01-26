@@ -1,3 +1,15 @@
+firmware-nonfree (20221214-5) UNRELEASED; urgency=medium
+
+  * Add lintian overrides to appease bullseye's lintian:
+     - license-problem-non-free-RFC (source): not needed for non-free
+       packages, but needed since the move to non-free-firmware (which
+       lintian 2.104.0 doesn't know about).
+     - binary-with-bad-dynamic-table (firmware-qcom-soc): duplicate the
+       existing override, without square brackets (since override formats
+       changed across lintian versions).
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 25 Jan 2023 04:05:17 +0100
+
 firmware-nonfree (20221214-4) unstable; urgency=medium
 
   [ Cyril Brulebois ]
@@ -20,6 +32,9 @@ firmware-nonfree (20221214-4) unstable; urgency=medium
      - salsa-ci: install python3-jinja2
   * Move source and binaries from non-free/* to non-free-firmware/*
     following the 2022 General Resolution about non-free firmware.
+
+  [ Bastian Blank ]
+  * Update to linux-support 6.1.0-2
 
  -- Bastian Blank <waldi@debian.org>  Tue, 24 Jan 2023 12:19:29 +0100
 

@@ -9,3 +9,5 @@ firmware-nonfree source: source-is-missing *
 # These binaries do not run on the host, so these rules don't apply
 firmware-nonfree source: elf-error *
 firmware-nonfree source: binary-with-bad-dynamic-table *
+# ignored by bullseye's lintian when in non-free, not when in non-free-firmware:
+firmware-nonfree source: license-problem-non-free-RFC ath11k/WCN6750/hw1.0/Notice.txt
