@@ -513,7 +513,7 @@ version: 43.95eb4e97
 
 [iwlwifi-9000-pu-b0-jf-b0-46.ucode_base]
 desc: Intel Wireless 9000 firmware
-version: 46.50fdb42f.0
+version: 46.ea3728ee.0
 
 [iwlwifi-9260-th-b0-jf-b0-34.ucode_base]
 desc: Intel Wireless 9260 firmware
@@ -533,7 +533,7 @@ version: 43.95eb4e97
 
 [iwlwifi-9260-th-b0-jf-b0-46.ucode_base]
 desc: Intel Wireless 9260 firmware
-version: 46.50fdb42f.0
+version: 46.ea3728ee.0
 
 [iwlwifi-Qu-b0-hr-b0-48.ucode_base]
 desc: Intel Wireless 22000 series (QU-B-HR-B) firmware
