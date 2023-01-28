@@ -1372,11 +1372,11 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
-version: 20221109111213
+version: 20221227151301
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
-version: 20220908211234
+version: 20221227123429
 
 [mediatek/mt7610e.bin_base]
 desc: MediaTek MT76x0 wifi firmware
@@ -1457,11 +1457,11 @@ version: v2.0.11956
 
 [mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin_base]
 desc: MediaTek MT7922 hdr firmware
-version: 20220908203203a
+version: 20221227123154a
 
 [mediatek/WIFI_RAM_CODE_MT7922_1.bin_base]
 desc: MediaTek MT7922 firmware
-version: 20220908203253
+version: 20221227123243
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
@@ -1469,7 +1469,7 @@ version: 20221109110918a
 
 [mediatek/WIFI_RAM_CODE_MT7961_1.bin_base]
 desc: MediaTek MT7921 firmware
-version: 20221109111005
+version: 20221227150954
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware

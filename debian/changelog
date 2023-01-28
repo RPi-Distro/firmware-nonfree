@@ -2,6 +2,10 @@ firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
 
   * New upstream version:
     - atheros: qca: Update firmware files for BT chip WCN6750
+    - misc-nonfree: Update firmware for mediatek bluetooth chip (MT7922)
+    - misc-nonfree: Update firmware for mediatek bluetooth chip (MT7921)
+    - misc-nonfree: Update firmware for MT7922 WiFi device
+    - misc-nonfree: Update firmware for MT7921 WiFi device
 
  -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
 
