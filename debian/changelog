@@ -6,6 +6,7 @@ firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
     - misc-nonfree: Update firmware for mediatek bluetooth chip (MT7921)
     - misc-nonfree: Update firmware for MT7922 WiFi device
     - misc-nonfree: Update firmware for MT7921 WiFi device
+    - misc-nonfree: Update firmware cxgb4 to revision 1.27.1.0
 
  -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
 
