@@ -70,6 +70,7 @@ files:
  amdgpu/dcn_3_1_5_dmcub.bin
  amdgpu/dcn_3_1_6_dmcub.bin
  amdgpu/dcn_3_2_0_dmcub.bin
+ amdgpu/dcn_3_2_1_dmcub.bin
  amdgpu/dimgrey_cavefish_ce.bin
  amdgpu/dimgrey_cavefish_dmcub.bin
  amdgpu/dimgrey_cavefish_me.bin
@@ -113,6 +114,13 @@ files:
  amdgpu/gc_11_0_0_mes.bin
  amdgpu/gc_11_0_0_pfp.bin
  amdgpu/gc_11_0_0_rlc.bin
+ amdgpu/gc_11_0_2_imu.bin
+ amdgpu/gc_11_0_2_me.bin
+ amdgpu/gc_11_0_2_mec.bin
+ amdgpu/gc_11_0_2_mes1.bin
+ amdgpu/gc_11_0_2_mes.bin
+ amdgpu/gc_11_0_2_pfp.bin
+ amdgpu/gc_11_0_2_rlc.bin
  amdgpu/green_sardine_asd.bin
  amdgpu/green_sardine_ce.bin
  amdgpu/green_sardine_dmcub.bin
@@ -326,6 +334,8 @@ files:
  amdgpu/psp_13_0_5_asd.bin
  amdgpu/psp_13_0_5_ta.bin
  amdgpu/psp_13_0_5_toc.bin
+ amdgpu/psp_13_0_7_sos.bin
+ amdgpu/psp_13_0_7_ta.bin
  amdgpu/psp_13_0_8_asd.bin
  amdgpu/psp_13_0_8_ta.bin
  amdgpu/psp_13_0_8_toc.bin
@@ -368,7 +378,9 @@ files:
  amdgpu/sdma_5_2_6.bin
  amdgpu/sdma_5_2_7.bin
  amdgpu/sdma_6_0_0.bin
+ amdgpu/sdma_6_0_2.bin
  amdgpu/smu_13_0_0.bin
+ amdgpu/smu_13_0_7.bin
  amdgpu/si58_mc.bin
  amdgpu/sienna_cichlid_ce.bin
  amdgpu/sienna_cichlid_dmcub.bin
@@ -435,6 +447,7 @@ files:
  amdgpu/vangogh_vcn.bin
  amdgpu/vcn_3_1_2.bin
  amdgpu/vcn_4_0_0.bin
+ amdgpu/vcn_4_0_4.bin
  amdgpu/vega10_acg_smc.bin
  amdgpu/vega10_asd.bin
  amdgpu/vega10_ce.bin
@@ -958,6 +971,9 @@ desc: DCN 3.1.6 DMCUB firmware
 [amdgpu/dcn_3_2_0_dmcub.bin_base]
 desc: DCN 3.2.0 DMCUB firmware
 
+[amdgpu/dcn_3_2_1_dmcub.bin_base]
+desc: DCN 3.2.1 DMCUB firmware
+
 [amdgpu/dimgrey_cavefish_ce.bin_base]
 desc: "Dimgrey Cavefish" CE firmware
 
@@ -1087,6 +1103,27 @@ desc: GC 11.0.0 PFP firmware
 
 [amdgpu/gc_11_0_0_rlc.bin_base]
 desc: GC 11.0.0 RLC firmware
+
+[amdgpu/gc_11_0_2_imu.bin_base]
+desc: GC 11.0.2 IMU firmware
+
+[amdgpu/gc_11_0_2_me.bin_base]
+desc: GC 11.0.2 ME firmware
+
+[amdgpu/gc_11_0_2_mec.bin_base]
+desc: GC 11.0.2 MEC firmware
+
+[amdgpu/gc_11_0_2_mes1.bin_base]
+desc: GC 11.0.2 MES1 firmware
+
+[amdgpu/gc_11_0_2_mes.bin_base]
+desc: GC 11.0.2 MES firmware
+
+[amdgpu/gc_11_0_2_pfp.bin_base]
+desc: GC 11.0.2 PFP firmware
+
+[amdgpu/gc_11_0_2_rlc.bin_base]
+desc: GC 11.0.2 RLC firmware
 
 [amdgpu/green_sardine_asd.bin_base]
 desc: Ryzen 5000 ASD firmware
@@ -1733,6 +1770,12 @@ desc: PSP 13.0.5 TA firmware
 [amdgpu/psp_13_0_5_toc.bin_base]
 desc: PSP 13.0.5 TOC firmware
 
+[amdgpu/psp_13_0_7_sos.bin_base]
+desc: PSP 13.0.7 SOS firmware
+
+[amdgpu/psp_13_0_7_ta.bin_base]
+desc: PSP 13.0.7 TA firmware
+
 [amdgpu/psp_13_0_8_asd.bin_base]
 desc: PSP 13.0.8 ASD firmware
 
@@ -1859,8 +1902,14 @@ desc: SDMA 5.2.7 firmware
 [amdgpu/sdma_6_0_0.bin_base]
 desc: SDMA 6.0.0 firmware
 
+[amdgpu/sdma_6_0_2.bin_base]
+desc: SDMA 6.0.2 firmware
+
 [amdgpu/smu_13_0_0.bin_base]
 desc: SMU 13.0.0 firmware
+
+[amdgpu/smu_13_0_7.bin_base]
+desc: SMU 13.0.7 firmware
 
 [amdgpu/si58_mc.bin_base]
 desc: Radeon "SI58" MC microcode
@@ -2062,6 +2111,9 @@ desc: VCN 3.1.2 firmware
 
 [amdgpu/vcn_4_0_0.bin_base]
 desc: VCN 4.0.0 firmware
+
+[amdgpu/vcn_4_0_4.bin_base]
+desc: VCN 4.0.4 firmware
 
 [amdgpu/vega10_acg_smc.bin_base]
 desc: "Vega 10" ACG-SMC firmware

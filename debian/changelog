@@ -17,6 +17,12 @@ firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
     - amd-graphics: update SDMA6.0.0 firmware from amd-5.4
     - amd-graphics: update SMU13.0.0 firmware from amd-5.4
     - amd-graphics: update VCN4.0.0 firmware from amd-5.4
+    - amd-graphics: add DCN3.2.1 firmware from amd-5.4
+    - amd-graphics: add GC11.0.2 firmware from amd-5.4
+    - amd-graphics: add PSP13.0.7 firmware from amd-5.4
+    - amd-graphics: add SDMA6.0.2 firmware from amd-5.4
+    - amd-graphics: add SMU13.0.7 firmware from amd-5.4
+    - amd-graphics: add VCN4.0.4 firmware from amd-5.4
   * Update modinfo from linux 6.1.0-2 on amd64
 
  -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
