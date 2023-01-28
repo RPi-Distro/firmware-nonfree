@@ -8,6 +8,8 @@ firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
     - misc-nonfree: Update firmware for MT7921 WiFi device
     - misc-nonfree: Update firmware cxgb4 to revision 1.27.1.0
     - amd-graphics: Update copyright date
+    - amd-graphics: Update renoir PSP firmware
+    - amd-graphics: update renoir DMCUB firmware
 
  -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
 
