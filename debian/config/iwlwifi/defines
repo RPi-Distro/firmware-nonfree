@@ -817,7 +817,7 @@ version: 72.daa05125.0
 
 [iwlwifi-ty-a0-gf-a0.pnvm_base]
 desc: Intel Wireless (TY-A0-GF-A0) PNVM firmware
-version: 71.058653f6.0
+version: 76.27f1c37b.0
 
 [iwlwifi-so-a0-gf-a0-71.ucode_base]
 desc: Intel Wireless (SO-A0-GF-A0) firmware
@@ -829,7 +829,7 @@ version: 72.daa05125.0
 
 [iwlwifi-so-a0-gf-a0.pnvm_base]
 desc: Intel Wireless (SO-A0-GF-A0) PNVM firmware
-version: 71.058653f6.0
+version: 76.27f1c37b.0
 
 [iwlwifi-so-a0-gf4-a0-71.ucode_base]
 desc: Intel Wireless (SO-A0-GF4-A0) firmware
@@ -837,7 +837,7 @@ version: 71.058653f6.0
 
 [iwlwifi-so-a0-gf4-a0.pnvm_base]
 desc: Intel Wireless (SO-A0-GF4-A0) PNVM firmware
-version: 71.058653f6.0
+version: 76.27f1c37b.0
 
 [iwlwifi-so-a0-hr-b0-71.ucode_base]
 desc: Intel Wireless (SO-A0-HR-B0) firmware
