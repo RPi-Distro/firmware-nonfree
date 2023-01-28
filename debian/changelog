@@ -23,6 +23,12 @@ firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
     - amd-graphics: add SDMA6.0.2 firmware from amd-5.4
     - amd-graphics: add SMU13.0.7 firmware from amd-5.4
     - amd-graphics: add VCN4.0.4 firmware from amd-5.4
+    - iwlwifi: Update firmware file for Intel Bluetooth 9260
+    - iwlwifi: Update firmware file for Intel Bluetooth 9560
+    - iwlwifi: Update firmware file for Intel Bluetooth AX200
+    - iwlwifi: Update firmware file for Intel Bluetooth AX210
+    - iwlwifi: Update firmware file for Intel Bluetooth AX211
+    - iwlwifi: Update firmware file for Intel Bluetooth AX201
   * Update modinfo from linux 6.1.0-2 on amd64
 
  -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
