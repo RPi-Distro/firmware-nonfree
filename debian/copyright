@@ -185,7 +185,7 @@ License: CC0-1.0
  /usr/share/common-licenses/CC0-1.0.
 
 Files: amdgpu/*.bin radeon/*.bin
-Copyright: 2009-2022, Advanced Micro Devices, Inc.
+Copyright: 2009-2023, Advanced Micro Devices, Inc.
 License: binary-redist-AMD-restrictive
  All rights reserved.
  .

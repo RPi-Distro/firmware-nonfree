@@ -32,13 +32,13 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.27.0.0.bin
+ cxgb4/t4fw-1.27.1.0.bin
  cxgb4/t4-config.txt
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.27.0.0.bin
+ cxgb4/t5fw-1.27.1.0.bin
  cxgb4/t5-config.txt
  cxgb4/t6fw.bin
- cxgb4/t6fw-1.27.0.0.bin
+ cxgb4/t6fw-1.27.1.0.bin
  cxgb4/t6-config.txt
  cxgb4/configs/t4-config-default.txt
  cxgb4/configs/t5-config-default.txt
@@ -759,17 +759,17 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.27.0.0.bin_base]
+[cxgb4/t4fw-1.27.1.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.27.0.0
+version: 1.27.1.0
 
-[cxgb4/t5fw-1.27.0.0.bin_base]
+[cxgb4/t5fw-1.27.1.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.27.0.0
+version: 1.27.1.0
 
-[cxgb4/t6fw-1.27.0.0.bin_base]
+[cxgb4/t6fw-1.27.1.0.bin_base]
 desc: Chelsio T6 firmware
-version: 1.27.0.0
+version: 1.27.1.0
 
 [cxgb4/configs/t4-config-default.txt_base]
 desc: Chelsio T4 config
@@ -1372,11 +1372,11 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
-version: 20221109111213
+version: 20221227151301
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
-version: 20220908211234
+version: 20221227123429
 
 [mediatek/mt7610e.bin_base]
 desc: MediaTek MT76x0 wifi firmware
@@ -1457,11 +1457,11 @@ version: v2.0.11956
 
 [mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin_base]
 desc: MediaTek MT7922 hdr firmware
-version: 20220908203203a
+version: 20221227123154a
 
 [mediatek/WIFI_RAM_CODE_MT7922_1.bin_base]
 desc: MediaTek MT7922 firmware
-version: 20220908203253
+version: 20221227123243
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
@@ -1469,7 +1469,7 @@ version: 20221109110918a
 
 [mediatek/WIFI_RAM_CODE_MT7961_1.bin_base]
 desc: MediaTek MT7921 firmware
-version: 20221109111005
+version: 20221227150954
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware

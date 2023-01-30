@@ -1,3 +1,39 @@
+firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - atheros: qca: Update firmware files for BT chip WCN6750
+    - misc-nonfree: Update firmware for mediatek bluetooth chip (MT7922)
+    - misc-nonfree: Update firmware for mediatek bluetooth chip (MT7921)
+    - misc-nonfree: Update firmware for MT7922 WiFi device
+    - misc-nonfree: Update firmware for MT7921 WiFi device
+    - misc-nonfree: Update firmware cxgb4 to revision 1.27.1.0
+    - amd-graphics: Update copyright date
+    - amd-graphics: Update renoir PSP firmware
+    - amd-graphics: update renoir DMCUB firmware
+    - iwlwifi: update 9000-family firmwares to core75-47
+    - iwlwifi: update PNVM firmwares from core76-35 release
+    - amd-graphics: update GC11.0.0 firmware from amd-5.4
+    - amd-graphics: update PSP13.0.0 firmware from amd-5.4
+    - amd-graphics: update SDMA6.0.0 firmware from amd-5.4
+    - amd-graphics: update SMU13.0.0 firmware from amd-5.4
+    - amd-graphics: update VCN4.0.0 firmware from amd-5.4
+    - amd-graphics: add DCN3.2.1 firmware from amd-5.4
+    - amd-graphics: add GC11.0.2 firmware from amd-5.4
+    - amd-graphics: add PSP13.0.7 firmware from amd-5.4
+    - amd-graphics: add SDMA6.0.2 firmware from amd-5.4
+    - amd-graphics: add SMU13.0.7 firmware from amd-5.4
+    - amd-graphics: add VCN4.0.4 firmware from amd-5.4
+    - iwlwifi: Update firmware file for Intel Bluetooth 9260
+    - iwlwifi: Update firmware file for Intel Bluetooth 9560
+    - iwlwifi: Update firmware file for Intel Bluetooth AX200
+    - iwlwifi: Update firmware file for Intel Bluetooth AX210
+    - iwlwifi: Update firmware file for Intel Bluetooth AX211
+    - iwlwifi: Update firmware file for Intel Bluetooth AX201
+    - realtek: rtw89: 8852c: update fw to v0.27.56.10
+  * Update modinfo from linux 6.1.0-3 on amd64
+
+ -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
+
 firmware-nonfree (20221214-5) unstable; urgency=medium
 
   * Add lintian overrides to appease bullseye's lintian:
