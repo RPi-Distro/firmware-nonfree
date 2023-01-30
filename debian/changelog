@@ -34,6 +34,10 @@ firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
   * realtek: rtw89: 8852c: update fw to v0.27.56.10
   * Update modinfo from linux 6.1.0-3 on amd64
 
+  [ Salvatore Bonaccorso ]
+  * realtek: rtw89: 8852b: Add firmware to support RTL8852B chip
+    (Closes: #1029708)
+
  -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
 
 firmware-nonfree (20221214-5) unstable; urgency=medium
