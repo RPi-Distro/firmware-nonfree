@@ -1,4 +1,4 @@
-firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
+firmware-nonfree (20230117-1) unstable; urgency=medium
 
   * New upstream version:
     - atheros: qca: Update firmware files for BT chip WCN6750
@@ -38,7 +38,7 @@ firmware-nonfree (20230117-1) UNRELEASED; urgency=medium
   * realtek: rtw89: 8852b: Add firmware to support RTL8852B chip
     (Closes: #1029708)
 
- -- Didier Raboud <odyx@debian.org>  Thu, 26 Jan 2023 08:23:13 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 31 Jan 2023 21:35:58 +0100
 
 firmware-nonfree (20221214-5) unstable; urgency=medium
 
