@@ -115,6 +115,13 @@ files:
  amdgpu/gc_11_0_0_mes.bin
  amdgpu/gc_11_0_0_pfp.bin
  amdgpu/gc_11_0_0_rlc.bin
+ amdgpu/gc_11_0_1_imu.bin
+ amdgpu/gc_11_0_1_me.bin
+ amdgpu/gc_11_0_1_mec.bin
+ amdgpu/gc_11_0_1_mes.bin
+ amdgpu/gc_11_0_1_mes1.bin
+ amdgpu/gc_11_0_1_pfp.bin
+ amdgpu/gc_11_0_1_rlc.bin
  amdgpu/gc_11_0_2_imu.bin
  amdgpu/gc_11_0_2_me.bin
  amdgpu/gc_11_0_2_mec.bin
@@ -1107,6 +1114,27 @@ desc: GC 11.0.0 PFP firmware
 
 [amdgpu/gc_11_0_0_rlc.bin_base]
 desc: GC 11.0.0 RLC firmware
+
+[amdgpu/gc_11_0_1_imu.bin_base]
+desc: GC 11.0.1 IMU firmware
+
+[amdgpu/gc_11_0_1_me.bin_base]
+desc: GC 11.0.1 ME firmware
+
+[amdgpu/gc_11_0_1_mec.bin_base]
+desc: GC 11.0.1 MEC firmware
+
+[amdgpu/gc_11_0_1_mes.bin_base]
+desc: GC 11.0.1 MES firmware
+
+[amdgpu/gc_11_0_1_mes1.bin_base]
+desc: GC 11.0.1 MES1 firmware
+
+[amdgpu/gc_11_0_1_pfp.bin_base]
+desc: GC 11.0. PFP firmware
+
+[amdgpu/gc_11_0_1_rlc.bin_base]
+desc: GC 11.0.1 RLC firmware
 
 [amdgpu/gc_11_0_2_imu.bin_base]
 desc: GC 11.0.2 IMU firmware
