@@ -67,6 +67,7 @@ files:
  amdgpu/cyan_skillfish2_rlc.bin
  amdgpu/cyan_skillfish2_sdma.bin
  amdgpu/cyan_skillfish2_sdma1.bin
+ amdgpu/dcn_3_1_4_dmcub.bin
  amdgpu/dcn_3_1_5_dmcub.bin
  amdgpu/dcn_3_1_6_dmcub.bin
  amdgpu/dcn_3_2_0_dmcub.bin
@@ -961,6 +962,9 @@ desc: "Cyan Skillfish2" SDMA firmware
 
 [amdgpu/cyan_skillfish2_sdma1.bin_base]
 desc: "Cyan Skillfish2" SDMA1 firmware
+
+[amdgpu/dcn_3_1_4_dmcub.bin_base]
+desc: DCN 3.1.4 DMCUB firmware
 
 [amdgpu/dcn_3_1_5_dmcub.bin_base]
 desc: DCN 3.1.5 DMCUB firmware
