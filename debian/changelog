@@ -1,3 +1,12 @@
+firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: update vangogh firmware
+    - rtw88: 8822c: Update normal firmware to v9.9.14
+    - brcm: restore previous firmware file for BCM4329 device
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
+
 firmware-nonfree (20230117-2) unstable; urgency=medium
 
   [ Dmitry Baryshkov ]
