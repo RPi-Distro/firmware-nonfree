@@ -63,24 +63,19 @@ files:
  iwlwifi-2000-6.ucode
  iwlwifi-2030-6.ucode
  iwlwifi-3160-17.ucode
- iwlwifi-3168-22.ucode
  iwlwifi-3168-29.ucode
  iwlwifi-3945-2.ucode
  iwlwifi-4965-2.ucode
  iwlwifi-5000-5.ucode
  iwlwifi-5150-2.ucode
  iwlwifi-6000-4.ucode
- iwlwifi-6000g2a-5.ucode
  iwlwifi-6000g2a-6.ucode
  iwlwifi-6000g2b-6.ucode
  iwlwifi-6050-5.ucode
  iwlwifi-7260-17.ucode
  iwlwifi-7265-17.ucode
- iwlwifi-7265D-22.ucode
  iwlwifi-7265D-29.ucode
- iwlwifi-8000C-22.ucode
  iwlwifi-8000C-36.ucode
- iwlwifi-8265-22.ucode
  iwlwifi-8265-36.ucode
  iwlwifi-9000-pu-b0-jf-b0-34.ucode
  iwlwifi-9000-pu-b0-jf-b0-38.ucode
@@ -419,10 +414,6 @@ version: 18.168.6.1
 desc: Intel Wireless 3160 firmware
 version: 17.bfb58538.0
 
-[iwlwifi-3168-22.ucode_base]
-desc: Intel Wireless 3168 firmware
-version: 22.391740.0
-
 [iwlwifi-3168-29.ucode_base]
 desc: Intel Wireless 3168 firmware
 version: 29.0bd893f3.0
@@ -447,10 +438,6 @@ version: 8.24.2.2
 desc: Intel Wireless 6000 firmware
 version: 9.221.4.1
 
-[iwlwifi-6000g2a-5.ucode_base]
-desc: Intel Wireless 6005/6205 firmware
-version: 17.168.5.3
-
 [iwlwifi-6000g2a-6.ucode_base]
 desc: Intel Wireless 6005/6205 firmware
 version: 18.168.6.1
@@ -471,25 +458,13 @@ version: 17.bfb58538.0
 desc: Intel Wireless 7265 firmware
 version: 17.bfb58538.0
 
-[iwlwifi-7265D-22.ucode_base]
-desc: Intel Wireless 7265D firmware
-version: 22.391740.0
-
 [iwlwifi-7265D-29.ucode_base]
 desc: Intel Wireless 7265D firmware
 version: 29.0bd893f3.0
 
-[iwlwifi-8000C-22.ucode_base]
-desc: Intel Wireless 8000C firmware
-version: 22.391740.0
-
 [iwlwifi-8000C-36.ucode_base]
 desc: Intel Wireless 8000C firmware
 version: 36.ca7b901d.0
-
-[iwlwifi-8265-22.ucode_base]
-desc: Intel Wireless 8265 firmware
-version: 22.391740.0
 
 [iwlwifi-8265-36.ucode_base]
 desc: Intel Wireless 8265 firmware
