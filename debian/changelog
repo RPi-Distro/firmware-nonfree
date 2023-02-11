@@ -25,6 +25,7 @@ firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
   * brcm80211: brcm: revert firmware files for Cypress devices
   * misc-nonfree: i915: Add DMC v2.18 for ADLP
   * misc-nonfree: i915: Add DMC v2.11 for MTL
+  * Update module info from linux 6.1.0-4 on amd64
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
 

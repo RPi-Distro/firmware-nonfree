@@ -5116,6 +5116,8 @@
       "usb:v17EFp304Fd*dc*dsc*dp*icFFisc*ip*in*",
       "usb:v04E8pA101d*dc*dsc*dp*ic02isc06ip00in*",
       "usb:v04E8pA101d*dc*dsc*dp*icFFisc*ip*in*",
+      "usb:v045Ep0C5Ed*dc*dsc*dp*ic02isc06ip00in*",
+      "usb:v045Ep0C5Ed*dc*dsc*dp*icFFisc*ip*in*",
       "usb:v045Ep0927d*dc*dsc*dp*ic02isc06ip00in*",
       "usb:v045Ep0927d*dc*dsc*dp*icFFisc*ip*in*",
       "usb:v045Ep07C6d*dc*dsc*dp*ic02isc06ip00in*",
