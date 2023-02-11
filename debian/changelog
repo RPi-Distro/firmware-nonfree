@@ -1,4 +1,4 @@
-firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
+firmware-nonfree (20230210-1) unstable; urgency=medium
 
   * New upstream version:
     - amdgpu: update vangogh firmware
@@ -27,7 +27,7 @@ firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
   * misc-nonfree: i915: Add DMC v2.11 for MTL
   * Update module info from linux 6.1.0-4 on amd64
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 21:28:33 +0100
 
 firmware-nonfree (20230117-2) unstable; urgency=medium
 
