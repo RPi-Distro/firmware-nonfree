@@ -9,6 +9,8 @@ firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
   * Update to linux-support 6.1.0-4
   * debian/copyright: Drop exclude-patters for files not anymore included
     upstream
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
 
