@@ -458,6 +458,7 @@ files:
  amdgpu/vangogh_vcn.bin
  amdgpu/vcn_3_1_2.bin
  amdgpu/vcn_4_0_0.bin
+ amdgpu/vcn_4_0_2.bin
  amdgpu/vcn_4_0_4.bin
  amdgpu/vega10_acg_smc.bin
  amdgpu/vega10_asd.bin
@@ -2155,6 +2156,9 @@ desc: VCN 3.1.2 firmware
 
 [amdgpu/vcn_4_0_0.bin_base]
 desc: VCN 4.0.0 firmware
+
+[amdgpu/vcn_4_0_2.bin_base]
+desc: VCN 4.0.2 firmware
 
 [amdgpu/vcn_4_0_4.bin_base]
 desc: VCN 4.0.4 firmware
