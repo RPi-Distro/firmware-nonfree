@@ -1,3 +1,33 @@
+firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: update vangogh firmware
+    - rtw88: 8822c: Update normal firmware to v9.9.14
+    - brcm: restore previous firmware file for BCM4329 device
+
+  [ Salvatore Bonaccorso ]
+  * Update to linux-support 6.1.0-4
+  * debian/copyright: Drop exclude-patters for files not anymore included
+    upstream
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+  * iwlwifi: remove old unsupported older than 4.14 LTS
+  * iwlwifi: remove 4.19 and 5.4 intermediate old firmwares
+  * iwlwifi: remove 5.4 and 5.10 intermediate old firmwares
+  * iwlwifi: remove 5.10 and 5.15 intermediate old firmwares
+  * iwlwifi: remove old intermediate 5.15+ firmwares
+  * amd-graphics: amdgpu: Add DCN 3.1.4 firmware
+  * amd-graphics: amdgpu: Add GC 11.0.1 firmware
+  * amd-graphics: amdgpu: Add SDMA 6.0.1 fimware
+  * amd-graphics: amdgpu: Add PSP 13.0.4 firmware
+  * amd-graphics: amdgpu: Add VCN 4.0.2 firmware
+  * brcm80211: brcm: revert firmware files for Cypress devices
+  * misc-nonfree: i915: Add DMC v2.18 for ADLP
+  * misc-nonfree: i915: Add DMC v2.11 for MTL
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
+
 firmware-nonfree (20230117-2) unstable; urgency=medium
 
   [ Dmitry Baryshkov ]

@@ -83,6 +83,7 @@ files:
  i915/adlp_dmc_ver2_12.bin
  i915/adlp_dmc_ver2_14.bin
  i915/adlp_dmc_ver2_16.bin
+ i915/adlp_dmc.bin
  i915/adlp_guc_62.0.3.bin
  i915/adlp_guc_69.0.3.bin
  i915/adlp_guc_70.1.1.bin
@@ -161,6 +162,7 @@ files:
  i915/kbl_guc_ver9_39.bin
  i915/kbl_huc_4.0.0.bin
  i915/kbl_huc_ver02_00_1810.bin
+ i915/mtl_dmc.bin
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
  i915/skl_dmc_ver1_26.bin
@@ -916,6 +918,10 @@ version: 2.14
 desc: Intel ADL-P DMC firmware
 version: 2.16
 
+[i915/adlp_dmc.bin_base]
+desc: Intel ADL-P DMC firmware
+version: 2.18
+
 [i915/adlp_guc_62.0.3.bin_base]
 desc: Intel ADL-P GuC firmware
 version: 62.0.3
@@ -1220,6 +1226,10 @@ version: 4.0.0
 desc: Intel "Kabylake" HuC firmware
 version: 2.0.1810
 
+[i915/mtl_dmc.bin_base]
+desc: Intel "Meteorlake" DMC firmware
+version: 2.11
+
 [i915/skl_dmc_ver1_23.bin_base]
 desc: Intel "Skylake" DMC firmware
 version: 1.23
@@ -1372,7 +1382,7 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
-version: 20221227151301
+version: 20230117171152
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
@@ -1465,11 +1475,11 @@ version: 20221227123243
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
-version: 20221109110918a
+version: 20230117170855a
 
 [mediatek/WIFI_RAM_CODE_MT7961_1.bin_base]
 desc: MediaTek MT7921 firmware
-version: 20221227150954
+version: 20230117170942
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware
