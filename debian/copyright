@@ -88,16 +88,8 @@ Files-Excluded:
  intel/ibt-18-1.sfi
  intel/ibt-18-2.ddc
  intel/ibt-18-2.sfi
- iwlwifi-1000-3.ucode
- iwlwifi-5000-1.ucode
- iwlwifi-5000-2.ucode
- iwlwifi-6000g2b-5.ucode
- iwlwifi-6050-4.ucode
  iwlwifi-8000C-34.ucode
  iwlwifi-8265-34.ucode
- iwlwifi-*-27.ucode
- iwlwifi-*-31.ucode
- iwlwifi-*-33.ucode
 # No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
