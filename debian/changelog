@@ -11,6 +11,7 @@ firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
     upstream
   * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
     (MT7921)
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
 

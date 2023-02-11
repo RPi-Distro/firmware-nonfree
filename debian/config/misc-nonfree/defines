@@ -1465,11 +1465,11 @@ version: 20221227123243
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
-version: 20221109110918a
+version: 20230117170855a
 
 [mediatek/WIFI_RAM_CODE_MT7961_1.bin_base]
 desc: MediaTek MT7921 firmware
-version: 20221227150954
+version: 20230117170942
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware
