@@ -13,6 +13,7 @@ firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
     (MT7921)
   * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
   * iwlwifi: remove old unsupported older than 4.14 LTS
+  * iwlwifi: remove 4.19 and 5.4 intermediate old firmwares
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
 
