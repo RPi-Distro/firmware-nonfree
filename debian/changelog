@@ -23,6 +23,7 @@ firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
   * amd-graphics: amdgpu: Add PSP 13.0.4 firmware
   * amd-graphics: amdgpu: Add VCN 4.0.2 firmware
   * brcm80211: brcm: revert firmware files for Cypress devices
+  * misc-nonfree: i915: Add DMC v2.18 for ADLP
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
 
