@@ -19,6 +19,7 @@ firmware-nonfree (20230210-1) UNRELEASED; urgency=medium
   * iwlwifi: remove old intermediate 5.15+ firmwares
   * amd-graphics: amdgpu: Add DCN 3.1.4 firmware
   * amd-graphics: amdgpu: Add GC 11.0.1 firmware
+  * amd-graphics: amdgpu: Add SDMA 6.0.1 fimware
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 13:11:30 +0100
 

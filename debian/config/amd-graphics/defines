@@ -386,6 +386,7 @@ files:
  amdgpu/sdma_5_2_6.bin
  amdgpu/sdma_5_2_7.bin
  amdgpu/sdma_6_0_0.bin
+ amdgpu/sdma_6_0_1.bin
  amdgpu/sdma_6_0_2.bin
  amdgpu/smu_13_0_0.bin
  amdgpu/smu_13_0_7.bin
@@ -1933,6 +1934,9 @@ desc: SDMA 5.2.7 firmware
 
 [amdgpu/sdma_6_0_0.bin_base]
 desc: SDMA 6.0.0 firmware
+
+[amdgpu/sdma_6_0_1.bin_base]
+desc: SDMA 6.0.1 firmware
 
 [amdgpu/sdma_6_0_2.bin_base]
 desc: SDMA 6.0.2 firmware
