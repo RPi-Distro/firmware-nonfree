@@ -8,6 +8,9 @@ firmware-nonfree (20230210-2) UNRELEASED; urgency=medium
   * brcm80211: brcm: Add AzureWave AW-CM256SM NVRAM file
   * brcm80211: brcm: Add symlinks to AW-CM256SM NVRAM file
 
+  [ Bastian Germann ]
+  * firmware-atheros: Remove ath9k_htc firmware (Closes: #837385)
+
  -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 15 Feb 2023 16:02:49 +0100
 
 firmware-nonfree (20230210-1) unstable; urgency=medium
