@@ -5,6 +5,7 @@ firmware-nonfree (20230210-2) UNRELEASED; urgency=medium
 
   [ Diederik de Haas ]
   * brcm80211: brcm: Add AzureWave AW-CM256SM NVRAM file
+  * brcm80211: brcm: Add symlinks to AV-CM256SM NVRAM file
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 15 Feb 2023 16:02:49 +0100
 

@@ -41,6 +41,9 @@ files:
  brcm/brcmfmac43455-sdio.AW-CM256SM.txt
  brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac43455-sdio.clm_blob
+ brcm/brcmfmac43455-sdio.pine64,pinebook-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,pinephone-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,quartz64-b.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
