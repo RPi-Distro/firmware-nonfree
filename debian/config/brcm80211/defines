@@ -165,7 +165,7 @@ desc: Broadcom BCM43455 firmware
 [brcm/brcmfmac43430a0-sdio.bin_base]
 desc: Broadcom BCM43430 rev 0 firmware
 
-[brcmfmac43430-sdio.AP6212.txt_base]
+[brcm/brcmfmac43430-sdio.AP6212.txt_base]
 desc: BCM43430 NRVAM AP6212 config
 
 [brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt_base]
