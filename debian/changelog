@@ -1,6 +1,10 @@
 firmware-nonfree (20230210-2) UNRELEASED; urgency=medium
 
+  [ Salvatore Bonaccorso ]
   * brcm80211: Correct section for brcmfmac43430-sdio.AP6212.txt config
+
+  [ Diederik de Haas ]
+  * brcm80211: brcm: Add AzureWave AW-CM256SM NVRAM file
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 15 Feb 2023 16:02:49 +0100
 
