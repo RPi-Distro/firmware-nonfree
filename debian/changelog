@@ -1,6 +1,7 @@
 firmware-nonfree (20230210-2) UNRELEASED; urgency=medium
 
   * brcm80211: Correct section for brcmfmac43430-sdio.AP6212.txt config
+  * Update to linux-support 6.1.0-5
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 15 Feb 2023 16:02:49 +0100
 
