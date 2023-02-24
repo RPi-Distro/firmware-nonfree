@@ -38,8 +38,12 @@ files:
  brcm/brcmfmac43430-sdio.MUR1DX.txt
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
  brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
+ brcm/brcmfmac43455-sdio.AW-CM256SM.txt
  brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac43455-sdio.clm_blob
+ brcm/brcmfmac43455-sdio.pine64,pinebook-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,pinephone-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,quartz64-b.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
@@ -152,6 +156,9 @@ desc: Jumper EZpad mini 3 tablet AP6210 Wifi/BT NVRAM
 
 [brcm/brcmfmac43430a0-sdio.ilife-S806.txt_base]
 desc: Broadcom BCM43430a Chuwi Hi8 (CWI509) tablet NVRAM
+
+[brcm/brcmfmac43455-sdio.AW-CM256SM.txt_base]
+desc: BCM43455 NVRAM for AzureWave AW-CM256SM
 
 [brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt_base]
 desc: BCM43455 NVRAM for the Raspberry Pi 3 B+
