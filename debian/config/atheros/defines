@@ -195,7 +195,7 @@ files:
  wil6210.brd
  wil6210.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
- ath3k, ath6kl_sdio, ath6kl_usb, ath9k_htc, ath10k, or wilc6210 drivers
+ ath3k, ath6kl_sdio, ath6kl_usb, ath10k, or wilc6210 drivers
 
 [ar3k/AthrBT_0x01020001.dfu_base]
 desc: Atheros AR3012 rev 01020001 patch
