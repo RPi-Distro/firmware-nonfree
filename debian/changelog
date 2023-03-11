@@ -1,9 +1,9 @@
-firmware-nonfree (20230210-4) UNRELEASED; urgency=medium
+firmware-nonfree (20230210-4) unstable; urgency=medium
 
   * iwlwifi: Add missing files entry for iwlwifi-so-a0-hr-b0-72.ucode.
     Thanks to Jonathan Klabunde Tomer (Closes: #1032608)
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Mar 2023 14:55:14 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Mar 2023 15:15:03 +0100
 
 firmware-nonfree (20230210-3) unstable; urgency=medium
 
