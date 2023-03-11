@@ -1,4 +1,4 @@
-firmware-nonfree (20230210-3) UNRELEASED; urgency=medium
+firmware-nonfree (20230210-3) unstable; urgency=medium
 
   [ Bastian Germann ]
   * firmware-atheros: Remove ath9k_htc from description
@@ -8,7 +8,7 @@ firmware-nonfree (20230210-3) UNRELEASED; urgency=medium
   * brcm80211: brcm: Restore symlinks from cypress to brcm directory
     (Closes: #1032367)
 
- -- Bastian Germann <bage@debian.org>  Sun, 26 Feb 2023 11:34:51 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Mar 2023 14:29:56 +0100
 
 firmware-nonfree (20230210-2) unstable; urgency=medium
 
