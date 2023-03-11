@@ -5,7 +5,6 @@ firmware-nonfree (20230210-3) UNRELEASED; urgency=medium
 
   [ Diederik de Haas ]
   * Update to linux-support 6.1.0-6
-  * brcm80211: brcm: Remove moved bin/clm_blob files
 
  -- Bastian Germann <bage@debian.org>  Sun, 26 Feb 2023 11:34:51 +0100
 
