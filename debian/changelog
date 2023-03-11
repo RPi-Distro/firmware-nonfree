@@ -29,6 +29,7 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   [ Diederik de Haas ]
   * d/patches/gitignore: Add DEP-3 header
   * d/README.source: Expand steps to regenerate debian/control
+  * d/config/*/defines: Replace 'wifi' with 'Wi-Fi'
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 

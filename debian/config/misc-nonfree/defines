@@ -1389,7 +1389,7 @@ desc: MediaTek MT7922 bluetooth firmware
 version: 20221227123429
 
 [mediatek/mt7610e.bin_base]
-desc: MediaTek MT76x0 wifi firmware
+desc: MediaTek MT76x0 Wi-Fi firmware
 
 [mediatek/mt7615_cr4.bin_base]
 desc: MediaTek MT7615 cr4 firmware
@@ -1401,19 +1401,19 @@ desc: MediaTek MT7615 n9 firmware
 desc: MediaTek MT7615 rom firmware
 
 [mediatek/mt7610u.bin_base]
-desc: MediaTek MT76x0 wifi firmware
+desc: MediaTek MT76x0 Wi-Fi firmware
 
 [mediatek/mt7622pr2h.bin_base]
 desc: MediaTek MT7622 Bluetooth firmware
 
 [mediatek/mt7650e.bin_base]
-desc: MediaTek MT76x0 wifi firmware
+desc: MediaTek MT76x0 Wi-Fi firmware
 
 [mediatek/mt7662u.bin_base]
-desc: MediaTek MT76x2u wifi firmware
+desc: MediaTek MT76x2u Wi-Fi firmware
 
 [mediatek/mt7662u_rom_patch.bin_base]
-desc: MediaTek MT76x2u wifi firmware
+desc: MediaTek MT76x2u Wi-Fi firmware
 
 [mediatek/mt7622_n9.bin_base]
 desc: MediaTek MT7622 N9 firmware

@@ -1,5 +1,5 @@
 [base]
-desc: Realtek wired/wifi/BT adapters
+desc: Realtek wired/Wi-Fi/BT adapters
 files:
  RTL8192E/boot.img
  RTL8192E/data.img
@@ -112,7 +112,7 @@ files:
  rtw89/rtw8852b_fw.bin
  rtw89/rtw8852c_fw.bin
 
-longdesc: Realtek Ethernet, wifi and Bluetooth adapters supported by various
+longdesc: Realtek Ethernet, Wi-Fi and Bluetooth adapters supported by various
  drivers
 support: initramfs-tools
 
