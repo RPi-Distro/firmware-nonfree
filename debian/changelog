@@ -26,6 +26,9 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   * iwlwifi: Add missing stanza for iwlwifi-so-a0-gf4-a0-72.ucode firmware
   * Update to linux-support 6.1.0-7
 
+  [ Diederik de Haas ]
+  * d/patches/gitignore: Add DEP-3 header
+
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 
 firmware-nonfree (20230210-4) unstable; urgency=medium
