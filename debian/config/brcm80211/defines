@@ -30,6 +30,7 @@ files:
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m3.txt
+ brcm/brcmfmac4339-sdio.bin
  brcm/brcmfmac43430-sdio.bin
  brcm/brcmfmac43430-sdio.clm_blob
  brcm/brcmfmac43430a0-sdio.bin
@@ -49,10 +50,14 @@ files:
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
  brcm/brcmfmac4350c2-pcie.bin
  brcm/brcmfmac4350-pcie.bin
+ brcm/brcmfmac4354-sdio.bin
  brcm/brcmfmac4354-sdio.clm_blob
  brcm/brcmfmac43569.bin
+ brcm/brcmfmac4356-pcie.bin
  brcm/brcmfmac4356-pcie.gpd-win-pocket.txt
+ brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac4356-pcie.clm_blob
+ brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac4356-sdio.clm_blob
  brcm/brcmfmac4356-sdio.vamrs,rock960.txt
  brcm/brcmfmac4356-sdio.khadas,vim2.txt
