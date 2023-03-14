@@ -1,5 +1,15 @@
-firmware-nonfree (20230210-5) UNRELEASED; urgency=medium
+firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
 
+  * New upstream version:
+    - amdgpu: Update GC 11.0.1 firmware
+    - ath10k: WCN3990 hw1.0: update board-2.bin
+    - ath11k: WCN6750 hw1.0: update board-2.bin
+    - ath11k: WCN6855 hw2.0: update board-2.bin
+    - rtl_bt: Update RTL8852C BT USB firmware to 0xD7B8_FABF
+    - rtl_bt: Update RTL8822C BT UART firmware to 0x05C6_D2E3
+    - rtl_bt: Update RTL8822C BT USB firmware to 0x0CC6_D2E3
+
+  [ Salvatore Bonaccorso ]
   * Exclude ath9k_htc/htc_{7010,9271}-1.4.0.fw files from generated orig
     tarball
 
