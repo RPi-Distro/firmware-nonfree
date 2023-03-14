@@ -12,6 +12,7 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   [ Salvatore Bonaccorso ]
   * Exclude ath9k_htc/htc_{7010,9271}-1.4.0.fw files from generated orig
     tarball
+  * intel-sound: catpt: Add AudioDSP base firmware for BDW platforms
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 
