@@ -19,6 +19,7 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
     WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.23
   * realtek: rtw89: 8852b: update fw to v0.29.26.0
   * realtek: rtw89: 8852b: update fw to v0.29.29.0
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 
