@@ -23,6 +23,7 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
     (MT7921)
   * iwlwifi: iwlwifi: update core69 and core72 firmwares for Ty device
+  * iwlwifi: Add missing stanza for iwlwifi-so-a0-gf4-a0-72.ucode firmware
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 
