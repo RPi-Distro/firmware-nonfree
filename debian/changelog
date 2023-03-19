@@ -13,6 +13,8 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   * Exclude ath9k_htc/htc_{7010,9271}-1.4.0.fw files from generated orig
     tarball
   * intel-sound: catpt: Add AudioDSP base firmware for BDW platforms
+  * atheros: ath10k: QCA6174 hw3.0: update firmware-sdio-6.bin to version
+    WLAN.RMH.4.4.1-00174
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 
