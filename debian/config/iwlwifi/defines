@@ -535,7 +535,7 @@ version: 66.55c64978.0
 
 [iwlwifi-ty-a0-gf-a0-72.ucode_base]
 desc: Intel Wireless (TY-A0-GF-A0) firmware
-version: 72.daa05125.0
+version: 72.a764baac.0
 
 [iwlwifi-ty-a0-gf-a0.pnvm_base]
 desc: Intel Wireless (TY-A0-GF-A0) PNVM firmware
