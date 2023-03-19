@@ -444,7 +444,7 @@ version: v0.9.12.2
 
 [rtw89/rtw8852b_fw.bin_base]
 desc: Realtek RTL8852B firmware
-version: v0.29.26.0
+version: v0.29.29.0
 
 [rtw89/rtw8852c_fw.bin_base]
 desc: Realtek RTL8852C firmware
