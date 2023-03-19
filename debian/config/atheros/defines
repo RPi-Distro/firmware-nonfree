@@ -573,7 +573,7 @@ version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
 
 [ath11k/WCN6855/hw2.0/amss.bin_base]
 desc: Qualcomm Atheros WCN6855 amss firmware
-version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.9
+version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.23
 
 [ath11k/WCN6855/hw2.0/board-2.bin_base]
 desc: Qualcomm Atheros WCN6855 board-2 firmware

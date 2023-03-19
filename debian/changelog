@@ -15,6 +15,8 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   * intel-sound: catpt: Add AudioDSP base firmware for BDW platforms
   * atheros: ath10k: QCA6174 hw3.0: update firmware-sdio-6.bin to version
     WLAN.RMH.4.4.1-00174
+  * atheros: ath11k: WCN6855 hw2.0: update to
+    WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.23
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 
