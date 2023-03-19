@@ -20,6 +20,8 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   * realtek: rtw89: 8852b: update fw to v0.29.26.0
   * realtek: rtw89: 8852b: update fw to v0.29.29.0
   * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 

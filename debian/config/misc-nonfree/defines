@@ -1382,7 +1382,7 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
-version: 20230117171152
+version: 20230302151355
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
