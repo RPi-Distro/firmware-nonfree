@@ -1,3 +1,10 @@
+firmware-nonfree (20230210-5) UNRELEASED; urgency=medium
+
+  * Exclude ath9k_htc/htc_{7010,9271}-1.4.0.fw files from generated orig
+    tarball
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
+
 firmware-nonfree (20230210-4) unstable; urgency=medium
 
   * iwlwifi: Add missing files entry for iwlwifi-so-a0-hr-b0-72.ucode.
