@@ -1,4 +1,4 @@
-firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
+firmware-nonfree (20230310-1~exp1) experimental; urgency=medium
 
   * New upstream version:
     - amdgpu: Update GC 11.0.1 firmware
@@ -31,7 +31,7 @@ firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
   * d/README.source: Expand steps to regenerate debian/control
   * d/config/*/defines: Replace 'wifi' with 'Wi-Fi'
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 01 Apr 2023 20:38:58 +0200
 
 firmware-nonfree (20230210-4) unstable; urgency=medium
 
