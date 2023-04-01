@@ -2,6 +2,7 @@
 desc: Intel sound DSPs
 files:
  intel/IntcSST2.bin
+ intel/catpt/bdw/dsp_basefw.bin
  intel/dsp_fw_bxtn.bin
  intel/dsp_fw_bxtn_v3366.bin
  intel/dsp_fw_cnl.bin
@@ -49,9 +50,8 @@ version: 9.21.00.3420_163
 desc: Intel "Skylake" SST DSP firmware
 version: 9.21.00.3402_161
 
-[intel/IntcSST2.bin_base]
-desc: Intel "Broadwell" SST DSP firmware
-version: 8.4.1.77
+[intel/catpt/bdw/dsp_basefw.bin_base]
+desc: Intel AudioDSP driver base firmware for HSW/BDW
 
 [intel/fw_sst_0f28.bin-48kHz_i2s_master_base]
 desc: Intel "Bay Trail" SST DSP firmware

@@ -300,7 +300,7 @@ version: WLAN.RM.4.4.1-00157-QCARMSWPZ-1
 
 [ath10k/QCA6174/hw3.0/firmware-sdio-6.bin_base]
 desc: Qualcomm Atheros QCA6174 SDIO rev 3.0 firmware
-version: WLAN.RMH.4.4.1-00077
+version: WLAN.RMH.4.4.1-00174
 
 [ath10k/QCA9377/hw1.0/board.bin_base]
 desc: Qualcomm Atheros QCA9377 rev 1.0 board configuration
@@ -573,7 +573,7 @@ version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
 
 [ath11k/WCN6855/hw2.0/amss.bin_base]
 desc: Qualcomm Atheros WCN6855 amss firmware
-version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.9
+version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.23
 
 [ath11k/WCN6855/hw2.0/board-2.bin_base]
 desc: Qualcomm Atheros WCN6855 board-2 firmware

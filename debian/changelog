@@ -1,7 +1,30 @@
-firmware-nonfree (20230210-5) UNRELEASED; urgency=medium
+firmware-nonfree (20230310-1) UNRELEASED; urgency=medium
 
+  * New upstream version:
+    - amdgpu: Update GC 11.0.1 firmware
+    - ath10k: WCN3990 hw1.0: update board-2.bin
+    - ath11k: WCN6750 hw1.0: update board-2.bin
+    - ath11k: WCN6855 hw2.0: update board-2.bin
+    - rtl_bt: Update RTL8852C BT USB firmware to 0xD7B8_FABF
+    - rtl_bt: Update RTL8822C BT UART firmware to 0x05C6_D2E3
+    - rtl_bt: Update RTL8822C BT USB firmware to 0x0CC6_D2E3
+
+  [ Salvatore Bonaccorso ]
   * Exclude ath9k_htc/htc_{7010,9271}-1.4.0.fw files from generated orig
     tarball
+  * intel-sound: catpt: Add AudioDSP base firmware for BDW platforms
+  * atheros: ath10k: QCA6174 hw3.0: update firmware-sdio-6.bin to version
+    WLAN.RMH.4.4.1-00174
+  * atheros: ath11k: WCN6855 hw2.0: update to
+    WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.23
+  * realtek: rtw89: 8852b: update fw to v0.29.26.0
+  * realtek: rtw89: 8852b: update fw to v0.29.29.0
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
+  * iwlwifi: iwlwifi: update core69 and core72 firmwares for Ty device
+  * iwlwifi: Add missing stanza for iwlwifi-so-a0-gf4-a0-72.ucode firmware
+  * Update to linux-support 6.1.0-7
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 Mar 2023 22:10:25 +0100
 
