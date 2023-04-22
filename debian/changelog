@@ -1,4 +1,4 @@
-firmware-nonfree (20221109-4~bpo11+1) bullseye-backports; urgency=medium
+firmware-nonfree (20221109-4~bpo11+1) UNRELEASED; urgency=medium
 
   [ Didier Raboud ]
   * Rebuild for bullseye-backports
