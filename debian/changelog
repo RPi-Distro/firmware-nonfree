@@ -1,4 +1,4 @@
-firmware-nonfree (20230210-4~bpo11+1) UNRELEASED; urgency=medium
+firmware-nonfree (20230210-4~bpo11+1) bullseye-backports; urgency=medium
 
   [ Didier Raboud ]
   * Rebuild for bullseye-backports
@@ -10,7 +10,7 @@ firmware-nonfree (20230210-4~bpo11+1) UNRELEASED; urgency=medium
   * d/b/gencontrol.py, d/salsa-ci.yml, d/templates: Revert further bookworm
     changes
 
- -- Didier Raboud <odyx@debian.org>  Mon, 19 Dec 2022 07:16:47 +0100
+ -- Ben Hutchings <benh@debian.org>  Sat, 22 Apr 2023 16:06:29 +0200
 
 firmware-nonfree (20230210-4) unstable; urgency=medium
 
