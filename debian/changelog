@@ -1,4 +1,4 @@
-firmware-nonfree (20221109-4~bpo11+1) UNRELEASED; urgency=medium
+firmware-nonfree (20230210-4~bpo11+1) UNRELEASED; urgency=medium
 
   [ Didier Raboud ]
   * Rebuild for bullseye-backports
@@ -6,11 +6,233 @@ firmware-nonfree (20221109-4~bpo11+1) UNRELEASED; urgency=medium
   * d/b/gencontrol.py: Revert bookworm changes
 
   [ Ben Hutchings ]
-  * d/salsa-ci.yml: Set changelog suite to UNRELEASED to avoid lintian error
-  * d/salsa-ci.yml: Run extract-source job in target release, not unstable
   * Update to linux-support 5.10.0-21
+  * d/b/gencontrol.py, d/salsa-ci.yml, d/templates: Revert further bookworm
+    changes
 
  -- Didier Raboud <odyx@debian.org>  Mon, 19 Dec 2022 07:16:47 +0100
+
+firmware-nonfree (20230210-4) unstable; urgency=medium
+
+  * iwlwifi: Add missing files entry for iwlwifi-so-a0-hr-b0-72.ucode.
+    Thanks to Jonathan Klabunde Tomer (Closes: #1032608)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Mar 2023 15:15:03 +0100
+
+firmware-nonfree (20230210-3) unstable; urgency=medium
+
+  [ Bastian Germann ]
+  * firmware-atheros: Remove ath9k_htc from description
+
+  [ Diederik de Haas ]
+  * Update to linux-support 6.1.0-6
+  * brcm80211: brcm: Restore symlinks from cypress to brcm directory
+    (Closes: #1032367)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Mar 2023 14:29:56 +0100
+
+firmware-nonfree (20230210-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * brcm80211: Correct section for brcmfmac43430-sdio.AP6212.txt config
+  * Update to linux-support 6.1.0-5
+
+  [ Diederik de Haas ]
+  * brcm80211: brcm: Add AzureWave AW-CM256SM NVRAM file
+  * brcm80211: brcm: Add symlinks to AW-CM256SM NVRAM file
+
+  [ Bastian Germann ]
+  * firmware-atheros: Remove ath9k_htc firmware (Closes: #837385)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 25 Feb 2023 18:02:15 +0100
+
+firmware-nonfree (20230210-1) unstable; urgency=medium
+
+  * New upstream version:
+    - amdgpu: update vangogh firmware
+    - rtw88: 8822c: Update normal firmware to v9.9.14
+    - brcm: restore previous firmware file for BCM4329 device
+
+  [ Salvatore Bonaccorso ]
+  * Update to linux-support 6.1.0-4
+  * debian/copyright: Drop exclude-patters for files not anymore included
+    upstream
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+  * iwlwifi: remove old unsupported older than 4.14 LTS
+  * iwlwifi: remove 4.19 and 5.4 intermediate old firmwares
+  * iwlwifi: remove 5.4 and 5.10 intermediate old firmwares
+  * iwlwifi: remove 5.10 and 5.15 intermediate old firmwares
+  * iwlwifi: remove old intermediate 5.15+ firmwares
+  * amd-graphics: amdgpu: Add DCN 3.1.4 firmware
+  * amd-graphics: amdgpu: Add GC 11.0.1 firmware
+  * amd-graphics: amdgpu: Add SDMA 6.0.1 fimware
+  * amd-graphics: amdgpu: Add PSP 13.0.4 firmware
+  * amd-graphics: amdgpu: Add VCN 4.0.2 firmware
+  * brcm80211: brcm: revert firmware files for Cypress devices
+  * misc-nonfree: i915: Add DMC v2.18 for ADLP
+  * misc-nonfree: i915: Add DMC v2.11 for MTL
+  * Update module info from linux 6.1.0-4 on amd64
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 11 Feb 2023 21:28:33 +0100
+
+firmware-nonfree (20230117-2) unstable; urgency=medium
+
+  [ Dmitry Baryshkov ]
+  * qcom-soc: correct the description of qcom/leia*.fw
+  * qcom-soc: add firmware for Adreno 200 family of GPU
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Add stanza for qcom/yamato* files
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 05 Feb 2023 15:13:43 +0100
+
+firmware-nonfree (20230117-1) unstable; urgency=medium
+
+  * New upstream version:
+    - atheros: qca: Update firmware files for BT chip WCN6750
+    - amd-graphics: Update renoir PSP firmware
+    - amd-graphics: update renoir DMCUB firmware
+
+  [ Didier Raboud ]
+  * misc-nonfree: Update firmware for mediatek bluetooth chip (MT7922)
+  * misc-nonfree: Update firmware for mediatek bluetooth chip (MT7921)
+  * misc-nonfree: Update firmware for MT7922 WiFi device
+  * misc-nonfree: Update firmware for MT7921 WiFi device
+  * misc-nonfree: Update firmware cxgb4 to revision 1.27.1.0
+  * amd-graphics: Update copyright date
+  * iwlwifi: update 9000-family firmwares to core75-47
+  * iwlwifi: update PNVM firmwares from core76-35 release
+  * amd-graphics: update GC11.0.0 firmware from amd-5.4
+  * amd-graphics: update PSP13.0.0 firmware from amd-5.4
+  * amd-graphics: update SDMA6.0.0 firmware from amd-5.4
+  * amd-graphics: update SMU13.0.0 firmware from amd-5.4
+  * amd-graphics: update VCN4.0.0 firmware from amd-5.4
+  * amd-graphics: add DCN3.2.1 firmware from amd-5.4
+  * amd-graphics: add GC11.0.2 firmware from amd-5.4
+  * amd-graphics: add PSP13.0.7 firmware from amd-5.4
+  * amd-graphics: add SDMA6.0.2 firmware from amd-5.4
+  * amd-graphics: add SMU13.0.7 firmware from amd-5.4
+  * amd-graphics: add VCN4.0.4 firmware from amd-5.4
+  * iwlwifi: Update firmware file for Intel Bluetooth 9260
+  * iwlwifi: Update firmware file for Intel Bluetooth 9560
+  * iwlwifi: Update firmware file for Intel Bluetooth AX200
+  * iwlwifi: Update firmware file for Intel Bluetooth AX210
+  * iwlwifi: Update firmware file for Intel Bluetooth AX211
+  * iwlwifi: Update firmware file for Intel Bluetooth AX201
+  * realtek: rtw89: 8852c: update fw to v0.27.56.10
+  * Update modinfo from linux 6.1.0-3 on amd64
+
+  [ Salvatore Bonaccorso ]
+  * realtek: rtw89: 8852b: Add firmware to support RTL8852B chip
+    (Closes: #1029708)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 31 Jan 2023 21:35:58 +0100
+
+firmware-nonfree (20221214-5) unstable; urgency=medium
+
+  * Add lintian overrides to appease bullseye's lintian:
+     - license-problem-non-free-RFC (source): not needed for non-free
+       packages, but needed since the move to non-free-firmware (which
+       lintian 2.104.0 doesn't know about).
+     - binary-with-bad-dynamic-table (firmware-qcom-soc): duplicate the
+       existing override, without square brackets (since override formats
+       changed across lintian versions).
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 27 Jan 2023 19:47:36 +0100
+
+firmware-nonfree (20221214-4) unstable; urgency=medium
+
+  [ Cyril Brulebois ]
+  * Update to linux-support 6.1.0-1
+  * Update to the new linux-support API:
+     - Replace self.templates[foo] with self.templates.get*(foo),
+       merging the self.process_package() substitution in passing.
+     - Replace makefile.add() with makefile.add_cmds().
+     - Make Template inherit from _ControlFileDict, and use OrderedDict to
+       define its fields. Use PackageDescriptionBase directly for the
+       Description.
+     - Simplify Templates, only adding a get_templates_control() method to
+       the base class.
+     - Use get_templates_control() and an append() to include the license
+       in the templates.
+     - Avoid KeyError during substitutions by renaming @?variable@ into
+       @variable@, listing each such variable as optional (so that the
+       placeholder gets replaced with an empty string if that variable is
+       not set in the config).
+     - salsa-ci: install python3-jinja2
+  * Move source and binaries from non-free/* to non-free-firmware/*
+    following the 2022 General Resolution about non-free firmware.
+
+  [ Bastian Blank ]
+  * Update to linux-support 6.1.0-2
+
+ -- Bastian Blank <waldi@debian.org>  Tue, 24 Jan 2023 12:19:29 +0100
+
+firmware-nonfree (20221214-3) unstable; urgency=medium
+
+  * iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
+  * iwlwifi: Add version information for ibt-0041-0041.ddc (Intel Wireless
+    AX2100 Bluethooth configuration)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 25 Dec 2022 17:32:01 +0100
+
+firmware-nonfree (20221214-2) unstable; urgency=medium
+
+  [ Ben Hutchings ]
+  * d/salsa-ci.yml: Set changelog suite to UNRELEASED to avoid lintian error
+  * d/salsa-ci.yml: Run extract-source job in target release, not unstable
+
+  [ Salvatore Bonaccorso ]
+  * amd-graphics: amdgpu: add SMU 13.0.0 firmware for amd-5.4 (Closes: #1026391)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Mon, 19 Dec 2022 21:36:20 +0100
+
+firmware-nonfree (20221214-1) unstable; urgency=medium
+
+  * New upstream version:
+    - amdgpu: update green sardine DMCUB firmware
+    - amdgpu: update sdma_5.2.7 firmware
+    - rtl_bt: Update RTL8821C BT(USB I/F) FW to 0x75b8_f098
+    - brcm: add/update firmware files for brcmfmac driver
+    - amdgpu: updated navi12 firmware for amd-5.4
+    - amdgpu: updated renoir firmware for amd-5.4
+    - amdgpu: updated navi14 firmware for amd-5.4
+    - amdgpu: updated arcture firmware for amd-5.4
+    - amdgpu: updated sienna cichlid firmware for amd-5.4
+    - amdgpu: updated green sardine firmware for amd-5.4
+    - amdgpu: updated navy flounder firmware for amd-5.4
+    - amdgpu: updated picasso firmware for amd-5.4
+    - amdgpu: updated vangogh firmware for amd-5.4
+    - amdgpu: updated dimgrey cavefish firmware for amd-5.4
+    - amdgpu: updated beige goby firmware for amd-5.4
+    - amdgpu: updated vega10 firmware for amd-5.4
+    - amdgpu: add SMU 13.0.0 firmware for amd-5.4
+    - amdgpu: updated PSP 13.0.5 firmware for amd-5.4
+    - amdgpu: updated vega20 firmware for amd-5.4
+    - amdgpu: updated GC 10.3.7 RLC firmware for amd-5.4
+    - amdgpu: updated PSP 13.0.8 firmware for amd-5.4
+    - amdgpu: updated raven firmware for amd-5.4
+    - amdgpu: updated raven2 firmware for amd-5.4
+    - amdgpu: updated yellow carp firmware for amd-5.4
+    - amdgpu: updated navi10 firmware for amd-5.4
+
+  [ Salvatore Bonaccorso ]
+  * Update to linux-support 6.0.0-6
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
+  * misc-nonfree: i915: Add DMC v2.08 for DG2
+  * atheros: QCA: Add Bluetooth firmware for WCN785x
+  * amd-graphics: amdgpu: updated aldebaran firmware for amd-5.4
+  * amd-graphics: amdgpu: add DCN 3.2.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: add GC 11.0.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: add PSP 13.0.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: Add SDMA 6.0.0 firmware for amd-5.4
+  * amd-graphics: amdgpu: add VCN 4.0.0 firmware for amd-5.4
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 16 Dec 2022 17:54:21 +0100
 
 firmware-nonfree (20221109-4) unstable; urgency=medium
 

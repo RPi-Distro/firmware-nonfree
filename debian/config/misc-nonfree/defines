@@ -32,13 +32,13 @@ files:
  cxgb4/aq1202_fw.cld
  cxgb4/bcm8483.bin
  cxgb4/t4fw.bin
- cxgb4/t4fw-1.27.0.0.bin
+ cxgb4/t4fw-1.27.1.0.bin
  cxgb4/t4-config.txt
  cxgb4/t5fw.bin
- cxgb4/t5fw-1.27.0.0.bin
+ cxgb4/t5fw-1.27.1.0.bin
  cxgb4/t5-config.txt
  cxgb4/t6fw.bin
- cxgb4/t6fw-1.27.0.0.bin
+ cxgb4/t6fw-1.27.1.0.bin
  cxgb4/t6-config.txt
  cxgb4/configs/t4-config-default.txt
  cxgb4/configs/t5-config-default.txt
@@ -83,6 +83,7 @@ files:
  i915/adlp_dmc_ver2_12.bin
  i915/adlp_dmc_ver2_14.bin
  i915/adlp_dmc_ver2_16.bin
+ i915/adlp_dmc.bin
  i915/adlp_guc_62.0.3.bin
  i915/adlp_guc_69.0.3.bin
  i915/adlp_guc_70.1.1.bin
@@ -122,6 +123,7 @@ files:
  i915/dg2_guc_70.bin
  i915/dg2_dmc_ver2_06.bin
  i915/dg2_dmc_ver2_07.bin
+ i915/dg2_dmc_ver2_08.bin
  i915/ehl_guc_33.0.4.bin
  i915/ehl_guc_49.0.1.bin
  i915/ehl_guc_62.0.0.bin
@@ -160,6 +162,7 @@ files:
  i915/kbl_guc_ver9_39.bin
  i915/kbl_huc_4.0.0.bin
  i915/kbl_huc_ver02_00_1810.bin
+ i915/mtl_dmc.bin
  i915/skl_dmc_ver1.bin
  i915/skl_dmc_ver1_23.bin
  i915/skl_dmc_ver1_26.bin
@@ -758,17 +761,17 @@ desc: Chelsio T4 10GBASE-T firmware (AQ1202 PHY)
 [cxgb4/bcm8483.bin_base]
 desc: Chelsio T4 10GBASE-T firmware (BCM84834 PHY)
 
-[cxgb4/t4fw-1.27.0.0.bin_base]
+[cxgb4/t4fw-1.27.1.0.bin_base]
 desc: Chelsio T4 firmware
-version: 1.27.0.0
+version: 1.27.1.0
 
-[cxgb4/t5fw-1.27.0.0.bin_base]
+[cxgb4/t5fw-1.27.1.0.bin_base]
 desc: Chelsio T5 firmware
-version: 1.27.0.0
+version: 1.27.1.0
 
-[cxgb4/t6fw-1.27.0.0.bin_base]
+[cxgb4/t6fw-1.27.1.0.bin_base]
 desc: Chelsio T6 firmware
-version: 1.27.0.0
+version: 1.27.1.0
 
 [cxgb4/configs/t4-config-default.txt_base]
 desc: Chelsio T4 config
@@ -914,6 +917,10 @@ version: 2.14
 [i915/adlp_dmc_ver2_16.bin_base]
 desc: Intel ADL-P DMC firmware
 version: 2.16
+
+[i915/adlp_dmc.bin_base]
+desc: Intel ADL-P DMC firmware
+version: 2.18
 
 [i915/adlp_guc_62.0.3.bin_base]
 desc: Intel ADL-P GuC firmware
@@ -1067,6 +1074,10 @@ version: 2.06
 desc: Intel DG2 DMC firmware
 version: 2.07
 
+[i915/dg2_dmc_ver2_08.bin_base]
+desc: Intel DG2 DMC firmware
+version: 2.08
+
 [i915/ehl_guc_33.0.4.bin_base]
 desc: Intel "Elkhart Lake" GuC firmware
 version: 33.0.4
@@ -1214,6 +1225,10 @@ version: 4.0.0
 [i915/kbl_huc_ver02_00_1810.bin_base]
 desc: Intel "Kabylake" HuC firmware
 version: 2.0.1810
+
+[i915/mtl_dmc.bin_base]
+desc: Intel "Meteorlake" DMC firmware
+version: 2.11
 
 [i915/skl_dmc_ver1_23.bin_base]
 desc: Intel "Skylake" DMC firmware
@@ -1367,11 +1382,11 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
-version: 20220908211234
+version: 20230117171152
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
-version: 20220908211234
+version: 20221227123429
 
 [mediatek/mt7610e.bin_base]
 desc: MediaTek MT76x0 wifi firmware
@@ -1452,19 +1467,19 @@ version: v2.0.11956
 
 [mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin_base]
 desc: MediaTek MT7922 hdr firmware
-version: 20220908203203a
+version: 20221227123154a
 
 [mediatek/WIFI_RAM_CODE_MT7922_1.bin_base]
 desc: MediaTek MT7922 firmware
-version: 20220908203253
+version: 20221227123243
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
-version: 20220908210919a
+version: 20230117170855a
 
 [mediatek/WIFI_RAM_CODE_MT7961_1.bin_base]
 desc: MediaTek MT7921 firmware
-version: 20220908211021
+version: 20230117170942
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware

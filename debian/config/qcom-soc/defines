@@ -66,6 +66,8 @@ files:
  qcom/vpu-1.0/venus.mbn
  qcom/vpu-1.0/venus.mdt
  qcom/vpu-2.0/venus.mbn
+ qcom/yamato_pfp.fw
+ qcom/yamato_pm4.fw
 
 [qcom/a300_pfp.fw_base]
 desc: Qualcomm Adreno 300 PFP firmware
@@ -116,10 +118,10 @@ desc: Qualcomm Adreno 660 GMU firmware
 desc: Qualcomm Adreno 660 SQE firmware
 
 [qcom/leia_pfp_470.fw_base]
-desc: Qualcomm Adreno 200 (leia) PFP firmware
+desc: Qualcomm Adreno 220 (leia) PFP firmware
 
 [qcom/leia_pm4_470.fw_base]
-desc: Qualcomm Adreno 200 (leia) PM4 firmware
+desc: Qualcomm Adreno 220 (leia) PM4 firmware
 
 [qcom/apq8096/a530_zap.mbn_base]
 desc: Qualcomm Adreno 530 APQ8096 ZAP firmware
@@ -243,3 +245,9 @@ desc: Qualcomm Venus VPU-1.0 firwmare header
 
 [qcom/vpu-2.0/venus.mbn]
 desc: Qualcomm Venus VPU-2.0 firwmare
+
+[qcom/yamato_pfp.fw_base]
+desc: Qualcomm Adreno 200 (yamato) PFP firmware
+
+[qcom/yamato_pm4.fw_base]
+desc: Qualcomm Adreno 200 (yamato) PM4 firmware

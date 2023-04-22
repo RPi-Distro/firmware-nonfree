@@ -142,8 +142,6 @@ files:
  ath6k/AR6004/hw1.2/fw-2.bin
  ath6k/AR6004/hw1.3/bdata.bin
  ath6k/AR6004/hw1.3/fw-3.bin
- ath9k_htc/htc_7010-1.4.0.fw
- ath9k_htc/htc_9271-1.4.0.fw
  htc_7010.fw
  htc_9271.fw
  qca/crbtfw21.tlv
@@ -182,6 +180,7 @@ files:
  qca/nvm_usb_00130201_gf_010a.bin
  qca/nvm_usb_00130201_gf_010b.bin
  qca/nvm_usb_00130201_gf_0303.bin
+ qca/nvm_usb_00190200.bin
  qca/rampatch_00130300.bin
  qca/rampatch_00130302.bin
  qca/rampatch_00230302.bin
@@ -192,10 +191,11 @@ files:
  qca/rampatch_usb_00000302.bin
  qca/rampatch_usb_00130200.bin
  qca/rampatch_usb_00130201.bin
+ qca/rampatch_usb_00190200.bin
  wil6210.brd
  wil6210.fw
 longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
- ath3k, ath6kl_sdio, ath6kl_usb, ath9k_htc, ath10k, or wilc6210 drivers
+ ath3k, ath6kl_sdio, ath6kl_usb, ath10k, or wilc6210 drivers
 
 [ar3k/AthrBT_0x01020001.dfu_base]
 desc: Atheros AR3012 rev 01020001 patch
@@ -588,14 +588,6 @@ desc: Qualcomm Atheros WCN6855 regdb firmware
 [ath3k-1.fw_base]
 desc: Atheros AR3011 firmware
 
-[ath9k_htc/htc_7010-1.4.0.fw_base]
-desc: Atheros AR7010 firmware
-version: 1.4.0
-
-[ath9k_htc/htc_9271-1.4.0.fw_base]
-desc: Atheros AR9271 firmware
-version: 1.4.0
-
 [htc_7010.fw_base]
 desc: Atheros AR7010 firmware
 version: 1.3.1
@@ -726,6 +718,9 @@ desc: Qualcomm Atheros WCN685x gf 010b NVM BT firmware
 [qca/nvm_usb_00130201_gf_0303.bin_base]
 desc: Qualcomm Atheros WCN685x gf 0303 NVM BT firmware
 
+[qca/nvm_usb_00190200.bin_base]
+desc: Qualcomm Atheros WCN785x NVM Bluetooth firmware
+
 [qca/rampatch_usb_00000200.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 2.0 USB BT rampatch
 
@@ -743,6 +738,9 @@ desc: Qualcomm Atheros WCN685x 0110 RAM BT firmware
 
 [qca/rampatch_usb_00130201.bin_base]
 desc: Qualcomm Atheros WCN685x RAM BT firmware
+
+[qca/rampatch_usb_00190200.bin_base]
+desc: Qualcomm Atheros WCN785x RAM Bluetooth firmware
 
 [wil6210.brd_base]
 desc: Qualcomm Atheros Wil62x0 default board parameters
