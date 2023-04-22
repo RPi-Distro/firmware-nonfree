@@ -8,6 +8,7 @@ firmware-nonfree (20221109-4~bpo11+1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * d/salsa-ci.yml: Set changelog suite to UNRELEASED to avoid lintian error
   * d/salsa-ci.yml: Run extract-source job in target release, not unstable
+  * Update to linux-support 5.10.0-21
 
  -- Didier Raboud <odyx@debian.org>  Mon, 19 Dec 2022 07:16:47 +0100
 
