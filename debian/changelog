@@ -2,6 +2,7 @@ firmware-nonfree (20230210-5) UNRELEASED; urgency=medium
 
   * brcm80211: brcm: rename Rock960 NVRAM to AP6356S and link devices to it
     (Closes: #1035282)
+  * Update to linux-support 6.1.0-8
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 30 Apr 2023 07:31:54 +0200
 
