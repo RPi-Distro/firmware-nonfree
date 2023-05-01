@@ -33,6 +33,14 @@ firmware-nonfree (20230310-1~exp1) experimental; urgency=medium
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 01 Apr 2023 20:38:58 +0200
 
+firmware-nonfree (20230210-5) unstable; urgency=medium
+
+  * brcm80211: brcm: rename Rock960 NVRAM to AP6356S and link devices to it
+    (Closes: #1035282)
+  * Update to linux-support 6.1.0-8
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Mon, 01 May 2023 21:30:16 +0200
+
 firmware-nonfree (20230210-4) unstable; urgency=medium
 
   * iwlwifi: Add missing files entry for iwlwifi-so-a0-hr-b0-72.ucode.

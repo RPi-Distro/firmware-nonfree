@@ -59,8 +59,10 @@ files:
  brcm/brcmfmac4356-pcie.clm_blob
  brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac4356-sdio.clm_blob
- brcm/brcmfmac4356-sdio.vamrs,rock960.txt
+ brcm/brcmfmac4356-sdio.AP6356S.txt
+ brcm/brcmfmac4356-sdio.firefly,firefly-rk3399.txt
  brcm/brcmfmac4356-sdio.khadas,vim2.txt
+ brcm/brcmfmac4356-sdio.vamrs,rock960.txt
  brcm/brcmfmac4358-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
@@ -192,8 +194,8 @@ desc: Broadcom BCM4350 rev 5+ firmware
 [brcm/brcmfmac4356-pcie.gpd-win-pocket.txt_base]
 desc: Broadcom BCM4356-PCIe NVRAM for GPD Pocket and Win
 
-[brcm/brcmfmac4356-sdio.vamrs,rock960.txt_base]
-desc: Rock960 Cypress 4356 WiFi 
+[brcm/brcmfmac4356-sdio.AP6356S.txt_base]
+desc: Broadcom AP6356S WiFi module NVRAM
 
 [brcm/brcmfmac4358-pcie.bin_base]
 desc: Broadcom BCM4358 firmware
