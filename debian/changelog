@@ -1,4 +1,4 @@
-firmware-nonfree (20230310-1~exp2) UNRELEASED; urgency=medium
+firmware-nonfree (20230310-1~exp2) experimental; urgency=medium
 
   * intel-sound: intel: avs: Add AudioDSP base firmware for SKL-based platforms
     (Closes: #1035281)
@@ -7,7 +7,7 @@ firmware-nonfree (20230310-1~exp2) UNRELEASED; urgency=medium
   * intel-sound: intel: avs: Add AudioDSP base firmware for CNL-based platforms
     (Closes: #1035281)
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 02 May 2023 17:06:47 +0200
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 02 May 2023 18:03:22 +0200
 
 firmware-nonfree (20230310-1~exp1) experimental; urgency=medium
 
