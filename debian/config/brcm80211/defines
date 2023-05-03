@@ -17,6 +17,7 @@ files:
  brcm/brcmfmac4330-sdio.Prowise-PT301.txt
  brcm/brcmfmac43340-sdio.meegopad-t08.txt
  brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt
+ brcm/brcmfmac43340-sdio.predia-basic.txt
  brcm/brcmfmac4334-sdio.bin
  brcm/brcmfmac4335-sdio.bin
  brcm/brcmfmac43340-sdio.bin
@@ -24,6 +25,7 @@ files:
  brcm/brcmfmac43362-sdio.cubietech,cubietruck.txt
  brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
  brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt
+ brcm/brcmfmac43430a0-sdio.ilife-S806.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt
@@ -36,25 +38,18 @@ files:
  brcm/brcmfmac43430-sdio.AP6212.txt
  brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt
  brcm/brcmfmac43430-sdio.MUR1DX.txt
- brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.bin
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.clm_blob
  brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.txt
  brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.bin
  brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.clm_blob
- brcm/brcmfmac43436-sdio.bin
- brcm/brcmfmac43436-sdio.clm_blob
- brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.bin
- brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.clm_blob
- brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.txt
- brcm/brcmfmac43436-sdio.txt
- brcm/brcmfmac43436s-sdio.bin
- brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin
- brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.txt
- brcm/brcmfmac43436s-sdio.txt
+ brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt
+ brcm/brcmfmac43455-sdio.AW-CM256SM.txt
  brcm/brcmfmac43455-sdio.bin
- brcm/brcmfmac43455-sdio.txt
  brcm/brcmfmac43455-sdio.clm_blob
+ brcm/brcmfmac43455-sdio.pine64,pinebook-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,pinephone-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,quartz64-b.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.bin
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
@@ -67,6 +62,17 @@ files:
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.bin
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+ brcm/brcmfmac43455-sdio.txt
+ brcm/brcmfmac43436-sdio.bin
+ brcm/brcmfmac43436-sdio.clm_blob
+ brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.bin
+ brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.clm_blob
+ brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.txt
+ brcm/brcmfmac43436-sdio.txt
+ brcm/brcmfmac43436s-sdio.bin
+ brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin
+ brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.txt
+ brcm/brcmfmac43436s-sdio.txt
  brcm/brcmfmac43456-sdio.bin
  brcm/brcmfmac43456-sdio.clm_blob
  brcm/brcmfmac43456-sdio.raspberrypi,400.bin
@@ -88,6 +94,7 @@ files:
  brcm/brcmfmac4356-sdio.bin
  brcm/brcmfmac4356-sdio.clm_blob
  brcm/brcmfmac4356-sdio.vamrs,rock960.txt
+ brcm/brcmfmac4356-sdio.khadas,vim2.txt
  brcm/brcmfmac4358-pcie.bin
  brcm/brcmfmac43602-pcie.ap.bin
  brcm/brcmfmac43602-pcie.bin
@@ -175,6 +182,9 @@ desc: Broadcom BCM43340 Meegopad T08 HDMI stick NVRAM
 [brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt_base]
 desc: Broadcom BCM43340 PoV TAB-P1006W-232 tablet NVRAM
 
+[brcm/brcmfmac43340-sdio.predia-basic.txt_base]
+desc: Broadcom BCM43340 Predia Basic tablet NVRAM
+
 [brcm/brcmfmac43430-sdio.Hampoo-D2D3_Vi8A1.txt_base]
 desc: Broadcom BCM43430 Chuwi Vi8 Plus tablet NVRAM
 
@@ -201,6 +211,12 @@ version: 7.45.96.141
 [brcm/brcmfmac43436s-sdio.txt_base]
 desc: NVRAM file for BCM43436s
 
+[brcm/brcmfmac43430a0-sdio.ilife-S806.txt_base]
+desc: Broadcom BCM43430a Chuwi Hi8 (CWI509) tablet NVRAM
+
+[brcm/brcmfmac43455-sdio.AW-CM256SM.txt_base]
+desc: BCM43455 NVRAM for AzureWave AW-CM256SM
+
 [brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt_base]
 desc: BCM43455 NVRAM for the Raspberry Pi 3 B+
 
@@ -223,7 +239,7 @@ desc: NVRAM file for BCM43456
 [brcm/brcmfmac43430a0-sdio.bin_base]
 desc: Broadcom BCM43430 rev 0 firmware
 
-[brcmfmac43430-sdio.AP6212.txt_base]
+[brcm/brcmfmac43430-sdio.AP6212.txt_base]
 desc: BCM43430 NRVAM AP6212 config
 
 [brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.txt_base]

@@ -1,17 +1,15 @@
 [base]
 desc: QLogic HBAs
 files:
- cbfw-3.2.3.0.bin
  cbfw-3.2.5.1.bin
- ct2fw-3.2.3.0.bin
  ct2fw-3.2.5.1.bin
- ctfw-3.2.3.0.bin
  ctfw-3.2.5.1.bin
  qed/qed_init_values_zipped-8.10.10.0.bin
  qed/qed_init_values_zipped-8.33.1.0.bin
  qed/qed_init_values_zipped-8.33.11.0.bin
  qed/qed_init_values_zipped-8.37.2.0.bin
  qed/qed_init_values_zipped-8.42.2.0.bin
+ qed/qed_init_values_zipped-8.59.1.0.bin
  qlogic/1040.bin
  qlogic/1280.bin
  qlogic/12160.bin
@@ -27,25 +25,13 @@ longdesc: QLogic Infiniband, SCSI, Fibre Channel/FCoE adapters and
  and qla2xxx drivers
 support: initramfs-tools
 
-[cbfw-3.2.3.0.bin_base]
-desc: Brocade 425/825/42B/82B/415/815/41B/81B firmware
-version: 3.2.3.0
-
 [cbfw-3.2.5.1.bin_base]
 desc: Brocade 425/825/42B/82B/415/815/41B/81B firmware
 version: 3.2.5.1
 
-[ct2fw-3.2.3.0.bin_base]
-desc: Brocade 1860/1867/1869 firmware
-version: 3.2.3.0
-
 [ct2fw-3.2.5.1.bin_base]
 desc: Brocade 1860/1867/1869 firmware
 version: 3.2.5.1
-
-[ctfw-3.2.3.0.bin_base]
-desc: Brocade 1010/1020/1007/1741/804 firmware
-version: 3.2.3.0
 
 [ctfw-3.2.5.1.bin_base]
 desc: Brocade 1010/1020/1007/1741/804 firmware
@@ -70,6 +56,10 @@ version: 8.37.2.0
 [qed/qed_init_values_zipped-8.42.2.0.bin_base]
 desc: QLogic QL45000 series firmware
 version: 8.42.2.0
+
+[qed/qed_init_values_zipped-8.59.1.0.bin_base]
+desc: QLogic QL45000 series firmware
+version: 8.59.1.0
 
 [qlogic/1040.bin_base]
 desc: QLogic QLA1040 firmware
