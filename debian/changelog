@@ -21,6 +21,7 @@ firmware-nonfree (1:20230210-4~bpo11+1+rpt1) UNRELEASED; urgency=medium
   * Add update-alternatives for standard and minimal versions of
     cyfmac43455-sdio.bin
     - See debian/config/brcm80211/cypress/README.txt
+  * Update debian/copyright
 
  -- Serge Schneider <serge@raspberrypi.com>  Wed, 03 May 2023 09:00:24 +0100
 
