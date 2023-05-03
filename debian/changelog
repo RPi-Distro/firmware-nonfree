@@ -1,4 +1,4 @@
-firmware-nonfree (1:20230210-4~bpo11+1+rpt1) UNRELEASED; urgency=medium
+firmware-nonfree (1:20230210-4~bpo11+1+rpt1) bullseye; urgency=medium
 
   [ Phil Elwell ]
   * Add CYW43455 firmware (cyfmac43455-sdio-standard):
@@ -24,7 +24,7 @@ firmware-nonfree (1:20230210-4~bpo11+1+rpt1) UNRELEASED; urgency=medium
   * Update debian/copyright
   * Use linux-support-5.10.0-20
 
- -- Serge Schneider <serge@raspberrypi.com>  Wed, 03 May 2023 09:00:24 +0100
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 03 May 2023 10:49:35 +0100
 
 firmware-nonfree (20230210-4~bpo11+1) bullseye-backports; urgency=medium
 
