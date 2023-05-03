@@ -61,6 +61,9 @@ files:
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.bin
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
+ brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.bin
+ brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.clm_blob
+ brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.txt
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.bin
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
