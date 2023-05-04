@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove)
+        update-alternatives --quiet --remove \
+                            cyfmac43455-sdio.bin \
+                            /lib/firmware/cypress/cyfmac43455-sdio-minimal.bin
+        update-alternatives --quiet --remove \
+                            cyfmac43455-sdio.bin \
+                            /lib/firmware/cypress/cyfmac43455-sdio-standard.bin
+    ;;
+
+    failed-upgrade|upgrade|deconfigure)
+    ;;
+
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
