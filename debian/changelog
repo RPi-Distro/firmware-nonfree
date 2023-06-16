@@ -28,6 +28,9 @@ firmware-nonfree (20230404-1) UNRELEASED; urgency=medium
   * amd-graphics: amdgpu: Add GC 11.0.4 firmware
   * amd-graphics: amdgpu: Add PSP 13.0.11 firmware
 
+  [ Ben Hutchings ]
+  * Update to linux-support 6.3.0-1
+
  -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 07 Jun 2023 22:14:14 +0200
 
 firmware-nonfree (20230310-1~exp2) experimental; urgency=medium
