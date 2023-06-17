@@ -920,7 +920,7 @@ version: 2.16
 
 [i915/adlp_dmc.bin_base]
 desc: Intel ADL-P DMC firmware
-version: 2.18
+version: 2.19
 
 [i915/adlp_guc_62.0.3.bin_base]
 desc: Intel ADL-P GuC firmware
@@ -1228,7 +1228,7 @@ version: 2.0.1810
 
 [i915/mtl_dmc.bin_base]
 desc: Intel "Meteorlake" DMC firmware
-version: 2.11
+version: 2.12
 
 [i915/skl_dmc_ver1_23.bin_base]
 desc: Intel "Skylake" DMC firmware
@@ -1386,7 +1386,7 @@ version: 20230302151355
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
-version: 20221227123429
+version: 20230328143444
 
 [mediatek/mt7610e.bin_base]
 desc: MediaTek MT76x0 Wi-Fi firmware
@@ -1463,15 +1463,15 @@ version: v0.0.9
 
 [mediatek/mt8195/scp.img_base]
 desc: MediaTek mt8195 SCP firmware
-version: v2.0.11956
+version: v2.0.20536
 
 [mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin_base]
 desc: MediaTek MT7922 hdr firmware
-version: 20221227123154a
+version: 20230328143229a
 
 [mediatek/WIFI_RAM_CODE_MT7922_1.bin_base]
 desc: MediaTek MT7922 firmware
-version: 20221227123243
+version: 20230328143313
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware

@@ -1,3 +1,38 @@
+firmware-nonfree (20230404-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - iwlwifi: update core69 and core72 firmwares for So device
+    - realtek: rtw89: 8852b: rollback firmware to v0.27.32.1
+    - realtek: rtw89: 8852b: update format-1 fw to v0.29.29.0
+    - misc-nonfree: mediatek: Update mt8192/mt8195 SCP firmware to support
+      MM21 and MT21
+    - misc-nonfree: i915: Update ADLP DMC to v2.19
+    - misc-nonfree: i915: Update MTL DMC to v2.12
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX203
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX101
+    - realtek: rtw88: 8822c: Update normal firmware to v9.9.15
+    - amd-graphics: amdgpu: Update DCN 3.1.4 firmware
+    - amd-graphics: amdgpu: Update GC 11.0.1 firmware
+    - amd-graphics: amdgpu: Update PSP 13.0.4 firmware
+    - iwlwifi: update 9000-family firmwares to core78-32
+    - misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+      (MT7922)
+    - misc-nonfree: linux-firmware: update firmware for MT7922 WiFi device
+    - misc-nonfree: nvidia: update Tu10x and Tu11x signed firmware to support
+      newer Turing HW
+
+  [ Salvatore Bonaccorso ]
+  * realtek: rtw89: 8852b: add format-1 fw v0.29.26.0
+  * amd-graphics: amdgpu: Add GC 11.0.4 firmware
+  * amd-graphics: amdgpu: Add PSP 13.0.11 firmware
+
+  [ Ben Hutchings ]
+  * Update to linux-support 6.3.0-1
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 07 Jun 2023 22:14:14 +0200
+
 firmware-nonfree (20230310-1~exp2) experimental; urgency=medium
 
   * intel-sound: intel: avs: Add AudioDSP base firmware for SKL-based platforms
