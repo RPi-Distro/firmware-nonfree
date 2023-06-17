@@ -27,6 +27,7 @@ firmware-nonfree (20230404-1) UNRELEASED; urgency=medium
   * realtek: rtw89: 8852b: add format-1 fw v0.29.26.0
   * amd-graphics: amdgpu: Add GC 11.0.4 firmware
   * amd-graphics: amdgpu: Add PSP 13.0.11 firmware
+  * Update module info from linux 6.3.0-1 on amd64
 
   [ Ben Hutchings ]
   * Update to linux-support 6.3.0-1
