@@ -1,9 +1,9 @@
-firmware-nonfree (20230210-5~bpo11+1) UNRELEASED; urgency=medium
+firmware-nonfree (20230210-5~bpo11+1) bullseye-backports; urgency=medium
 
   * Rebuild for bullseye-backports
   * Update to linux-support 5.10.0-23
 
- -- Ben Hutchings <benh@debian.org>  Wed, 21 Jun 2023 00:15:59 +0200
+ -- Ben Hutchings <benh@debian.org>  Wed, 21 Jun 2023 00:17:14 +0200
 
 firmware-nonfree (20230210-5) unstable; urgency=medium
 
