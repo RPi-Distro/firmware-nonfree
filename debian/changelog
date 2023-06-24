@@ -39,6 +39,9 @@ firmware-nonfree (20230515-1) UNRELEASED; urgency=medium
     - misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
       (MT7922)
 
+  [ Salvatore Bonaccorso ]
+  * realtek: rtl_bt: Add firmware and config files for RTL8851B
+
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 24 Jun 2023 15:56:44 +0200
 
 firmware-nonfree (20230404-1) unstable; urgency=medium

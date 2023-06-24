@@ -35,6 +35,8 @@ files:
  rtl_bt/rtl8852bu_fw.bin
  rtl_bt/rtl8852cu_config.bin
  rtl_bt/rtl8852cu_fw.bin
+ rtl_bt/rtl8851bu_fw.bin
+ rtl_bt/rtl8851bu_config.bin
  rtl_nic/rtl8105e-1.fw
  rtl_nic/rtl8106e-1.fw
  rtl_nic/rtl8106e-2.fw
@@ -215,6 +217,12 @@ desc: Realtek RTL8852CU Bluetooth firmware
 
 [rtl_bt/rtl8852cu_config.bin_base]
 desc: Realtek RTL8852CU Bluetooth config
+
+[rtl_bt/rtl8851bu_fw.bin_base]
+desc: Realtek RTL8851BU Bluetooth firmware
+
+[rtl_bt/rtl8851bu_config.bin_base]
+desc: Realtek RTL8851BU Bluetooth config
 
 [rtl_nic/rtl8105e-1.fw_base]
 desc: Realtek RTL8105E-1 firmware
