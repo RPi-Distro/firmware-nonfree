@@ -1,4 +1,4 @@
-firmware-nonfree (20230515-1) UNRELEASED; urgency=medium
+firmware-nonfree (20230515-1) unstable; urgency=medium
 
   * New upstream version:
     - atheros: ath10k: QCA4019 hw1.0: update board-2.bin
@@ -42,7 +42,7 @@ firmware-nonfree (20230515-1) UNRELEASED; urgency=medium
   [ Salvatore Bonaccorso ]
   * realtek: rtl_bt: Add firmware and config files for RTL8851B
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 24 Jun 2023 15:56:44 +0200
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 25 Jun 2023 09:03:51 +0200
 
 firmware-nonfree (20230404-1) unstable; urgency=medium
 
