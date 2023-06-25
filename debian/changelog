@@ -1,3 +1,49 @@
+firmware-nonfree (20230515-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - atheros: ath10k: QCA4019 hw1.0: update board-2.bin
+    - atheros: ath10k: QCA6174 hw3.0: update board-2.bin
+    - atheros: ath10k: QCA9888 hw2.0: update board-2.bin
+    - atheros: ath10k: QCA9984 hw1.0: update board-2.bin
+    - atheros: ath10k: QCA99X0 hw2.0: update board-2.bin
+    - atheros: ath11k: IPQ6018 hw1.0: update board-2.bin
+    - atheros: ath11k: IPQ6018 hw1.0: update to
+      WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
+    - atheros: ath11k: IPQ8074 hw2.0: update board-2.bin
+    - atheros: ath11k: IPQ8074 hw2.0: update to
+      WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
+    - atheros: ath11k: QCN9074 hw1.0: update to
+      WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
+    - atheros: ath11k: WCN6750 hw1.0: update to
+      WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
+    - atheros: ath11k: WCN6855 hw2.0: update board-2.bin
+    - realtek: rtw89: 8852c: update fw to v0.27.56.13
+    - realtek: rtw89: 8852b: update format-1 fw to v0.29.29.1
+    - misc-nonfree: linux-firmware: update qat firmware
+    - misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+      (MT7921)
+    - misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+    - misc-nonfree: mt76xx: Move the old Mediatek WiFi firmware to mediatek
+    - atheros: qca: Update firmware files for BT chip WCN6750
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX203
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX201
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX200
+    - realtek: rtl_nic: update firmware of USB devices
+    - realtek: rtl_bt: Update RTL8761B BT UART firmware to 0x9DC6_D922
+    - realtek: rtl_bt: Update RTL8761B BT USB firmware to 0xDFC6_D922
+    - realtek: rtl_bt: Update RTL8852B BT USB firmware to 0xDBC6_B20F
+    - amd-graphics: amdgpu: update DCN 3.1.6 DMCUB firmware
+    - misc-nonfree: linux-firmware: update firmware for MT7922 WiFi device
+    - misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+      (MT7922)
+
+  [ Salvatore Bonaccorso ]
+  * realtek: rtl_bt: Add firmware and config files for RTL8851B
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 24 Jun 2023 15:56:44 +0200
+
 firmware-nonfree (20230404-1) unstable; urgency=medium
 
   * New upstream version:

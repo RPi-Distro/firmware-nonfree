@@ -252,10 +252,10 @@ files:
  moxa/moxa-1618.fw
  moxa/moxa-1653.fw
  moxa/moxa-1658.fw
- mt7601u.bin
- mt7650.bin
- mt7662.bin
- mt7662_rom_patch.bin
+ mediatek/mt7601u.bin
+ mediatek/mt7650.bin
+ mediatek/mt7662.bin
+ mediatek/mt7662_rom_patch.bin
  mts_cdma.fw
  mts_edge.fw
  mts_gsm.fw
@@ -1382,11 +1382,11 @@ desc: Matrox G400/G550 WARP engine microcode
 
 [mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin_base]
 desc: MediaTek MT7961 bluetooth firmware
-version: 20230302151355
+version: 20230331111156
 
 [mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin_base]
 desc: MediaTek MT7922 bluetooth firmware
-version: 20230328143444
+version: 20230509203838
 
 [mediatek/mt7610e.bin_base]
 desc: MediaTek MT76x0 Wi-Fi firmware
@@ -1467,19 +1467,19 @@ version: v2.0.20536
 
 [mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin_base]
 desc: MediaTek MT7922 hdr firmware
-version: 20230328143229a
+version: 20230509203612a
 
 [mediatek/WIFI_RAM_CODE_MT7922_1.bin_base]
 desc: MediaTek MT7922 firmware
-version: 20230328143313
+version: 20230509203655
 
 [mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin_base]
 desc: MediaTek MT7921 hdr firmware
-version: 20230302150916a
+version: 20230331110902a
 
 [mediatek/WIFI_RAM_CODE_MT7961_1.bin_base]
 desc: MediaTek MT7921 firmware
-version: 20230302150956
+version: 20230331110939
 
 [moxa/moxa-1110.fw_base]
 desc: MOXA UPort 1110 firmware
@@ -1523,18 +1523,18 @@ desc: MOXA UPort 1650-16 firmware
 [moxa/moxa-1658.fw_base]
 desc: MOXA UPort 1650-8 firmware
 
-[mt7601u.bin_base]
+[mediatek/mt7601u.bin_base]
 desc: MediaTek MT7601U firmware
 version: 34
 
-[mt7650.bin_base]
+[mediatek/mt7650.bin_base]
 desc: MediaTek MT7630/MT7650 Bluetooth firmware
 
-[mt7662.bin_base]
+[mediatek/mt7662.bin_base]
 desc: MediaTek MT76x2 firmware
 version: 1.9
 
-[mt7662_rom_patch.bin_base]
+[mediatek/mt7662_rom_patch.bin_base]
 desc: MediaTek MT76x2 ROM patch
 version: 0.0.2_P69
 
