@@ -1,9 +1,9 @@
-firmware-nonfree (20230515-2) UNRELEASED; urgency=medium
+firmware-nonfree (20230515-2) unstable; urgency=medium
 
   * Add compatibility links for old Mediatek WiFi firmware afer move to mediatek
     folder (Closes: #1039576)
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 27 Jun 2023 14:23:56 +0200
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 27 Jun 2023 15:16:13 +0200
 
 firmware-nonfree (20230515-1) unstable; urgency=medium
 
