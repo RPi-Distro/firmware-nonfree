@@ -252,6 +252,10 @@ files:
  moxa/moxa-1618.fw
  moxa/moxa-1653.fw
  moxa/moxa-1658.fw
+ mt7601u.bin
+ mt7650.bin
+ mt7662.bin
+ mt7662_rom_patch.bin
  mediatek/mt7601u.bin
  mediatek/mt7650.bin
  mediatek/mt7662.bin
