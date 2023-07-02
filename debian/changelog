@@ -1,6 +1,11 @@
 firmware-nonfree (20230515-3) UNRELEASED; urgency=medium
 
+  [ Salvatore Bonaccorso ]
   * Update to linux-support 6.3.0-2
+
+  [ Stuart Hayhurst ]
+  * iwlwifi: Add missing iwlwifi-ty-a0-gf-a0-73.ucode and
+    iwlwifi-ty-a0-gf-a0-74.ucode
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 04 Jul 2023 09:58:21 +0200
 
