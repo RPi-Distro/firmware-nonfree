@@ -1,4 +1,4 @@
-firmware-nonfree (20230515-3) UNRELEASED; urgency=medium
+firmware-nonfree (20230515-3) unstable; urgency=medium
 
   [ Salvatore Bonaccorso ]
   * Update to linux-support 6.3.0-2
@@ -8,7 +8,7 @@ firmware-nonfree (20230515-3) UNRELEASED; urgency=medium
   * iwlwifi: Add missing iwlwifi-ty-a0-gf-a0-73.ucode and
     iwlwifi-ty-a0-gf-a0-74.ucode
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 04 Jul 2023 09:58:21 +0200
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 04 Jul 2023 16:44:14 +0200
 
 firmware-nonfree (20230515-2) unstable; urgency=medium
 
