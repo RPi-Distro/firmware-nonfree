@@ -121,6 +121,7 @@ files:
  i915/dg2_guc_70.1.2.bin
  i915/dg2_guc_70.4.1.bin
  i915/dg2_guc_70.bin
+ i915/dg2_huc_gsc.bin
  i915/dg2_dmc_ver2_06.bin
  i915/dg2_dmc_ver2_07.bin
  i915/dg2_dmc_ver2_08.bin
@@ -1069,6 +1070,10 @@ version: 70.4.1
 [i915/dg2_guc_70.bin_base]
 desc: Intel DG2 GuC firmware
 version: 70.5.1
+
+[i915/dg2_huc_gsc.bin_base]
+desc: Intel DG2 HuC firmware
+version: 7.10.3
 
 [i915/dg2_dmc_ver2_06.bin_base]
 desc: Intel DG2 DMC firmware

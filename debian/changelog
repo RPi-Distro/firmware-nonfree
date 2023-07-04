@@ -2,6 +2,7 @@ firmware-nonfree (20230515-3) UNRELEASED; urgency=medium
 
   [ Salvatore Bonaccorso ]
   * Update to linux-support 6.3.0-2
+  * misc-nonfree: i915: Add HuC 7.10.3 for DG2 (Closes: #1040012)
 
   [ Stuart Hayhurst ]
   * iwlwifi: Add missing iwlwifi-ty-a0-gf-a0-73.ucode and
