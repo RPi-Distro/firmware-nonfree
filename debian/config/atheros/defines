@@ -175,6 +175,8 @@ files:
  qca/msbtfw11.mbn
  qca/msbtfw11.tlv
  qca/msnv11.bin
+ qca/msnv11.b09
+ qca/msnv11.b0a
  qca/nvm_00130300.bin
  qca/nvm_00130302.bin
  qca/nvm_00230302.bin
@@ -736,6 +738,12 @@ desc: Qualcomm WCN6750 Bluetooth TLV RAM fw dump
 
 [qca/msnv11.bin_base]
 desc: Qualcomm WCN6750 Bluetooth NVM fw dump
+
+[qca/msnv11.b09_base]
+desc: Qualcomm WCN6750 Bluetooth NVM fw dump for board-id 09
+
+[qca/msnv11.b0a_base]
+desc: Qualcomm WCN6750 Bluetooth NVM fw dump for board-id 0a
 
 [qca/nvm_00130300.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration

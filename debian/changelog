@@ -72,6 +72,7 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
     - Makefile, copy-firmware: support xz/zstd compressed firmware
   * qcom-soc: add firmware for Qualcomm APQ8016 / db410c
   * atheros: ath11k: package firmware for ath11k/IPQ5018
+  * atheros: QCA: add new board files for WCN6750
 
  -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
 
