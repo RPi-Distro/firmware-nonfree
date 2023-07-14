@@ -24,6 +24,10 @@ files:
  qcom/a660_sqe.fw
  qcom/leia_pfp_470.fw
  qcom/leia_pm4_470.fw
+ qcom/apq8016/mba.mbn
+ qcom/apq8016/modem.mbn
+ qcom/apq8016/wcnss.mbn
+ qcom/apq8016/WCNSS_qcom_wlan_nv_sbc.bin
  qcom/apq8096/a530_zap.mbn
  qcom/apq8096/adsp.mbn
  qcom/apq8096/adspr.jsn
@@ -123,6 +127,18 @@ desc: Qualcomm Adreno 220 (leia) PFP firmware
 
 [qcom/leia_pm4_470.fw_base]
 desc: Qualcomm Adreno 220 (leia) PM4 firmware
+
+[qcom/apq8016/mba.mbn_base]
+desc: Qualcomm APQ8016 modem firmware
+
+[qcom/apq8016/modem.mbn_base]
+desc: Qualcomm APQ8016 modem firmware
+
+[qcom/apq8016/wcnss.mbn_base]
+desc: Qualcomm APQ8016 WiFi firmware
+
+[qcom/apq8016/WCNSS_qcom_wlan_nv_sbc.bin]
+desc: Qualcomm Dragonboard 410c WiFi board file
 
 [qcom/apq8096/a530_zap.mbn_base]
 desc: Qualcomm Adreno 530 APQ8096 ZAP firmware
