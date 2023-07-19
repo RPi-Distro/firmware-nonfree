@@ -170,6 +170,13 @@ files:
  qca/crnv21.bin
  qca/crnv32.bin
  qca/crnv32u.bin
+ qca/hpbtfw21.tlv
+ qca/hpnv21.bin
+ qca/hpnv21g.bin
+ qca/hpnv21.301
+ qca/hpnv21.302
+ qca/hpnv21g.301
+ qca/hpnv21g.302
  qca/htbtfw20.tlv
  qca/htnv20.bin
  qca/msbtfw11.mbn
