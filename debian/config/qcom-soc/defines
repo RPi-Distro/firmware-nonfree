@@ -47,6 +47,7 @@ files:
  qcom/sdm845/cdspr.jsn
  qcom/sdm845/mba.mbn
  qcom/sdm845/modem.mbn
+ qcom/sdm845/modem_nm.mbn
  qcom/sdm845/modemuw.jsn
  qcom/sdm845/wlanmdsp.mbn
  qcom/sm8250/a650_zap.mbn
@@ -189,7 +190,7 @@ desc: Qualcomm SDM845 compute configuration
 [qcom/sdm845/mba.mbn_base]
 desc: Qualcomm SDM845 modem firmware
 
-[qcom/sdm845/modem.mbn_base]
+[qcom/sdm845/modem_nm.mbn_base]
 desc: Qualcomm SDM845 modem firmware
 
 [qcom/sdm845/modemuw.jsn_base]
