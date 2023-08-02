@@ -1,3 +1,11 @@
+firmware-nonfree (1:20230210-4~bpo11+1+rpt2) UNRELEASED; urgency=medium
+
+  [ Phil Elwell ]
+  * Updated SYN43436S firmware for Zero 2 W
+  * Obviate the brcmfmac Device Tree firmware patch
+
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 02 Aug 2023 15:19:41 +0100
+
 firmware-nonfree (1:20230210-4~bpo11+1+rpt1) bullseye; urgency=medium
 
   [ Phil Elwell ]
