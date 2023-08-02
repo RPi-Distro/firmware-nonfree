@@ -1,12 +1,4 @@
-firmware-nonfree (1:20230210-4~bpo11+1+rpt2) UNRELEASED; urgency=medium
-
-  [ Phil Elwell ]
-  * Updated SYN43436S firmware for Zero 2 W
-  * Obviate the brcmfmac Device Tree firmware patch
-
- -- Serge Schneider <serge@raspberrypi.com>  Wed, 02 Aug 2023 15:19:41 +0100
-
-firmware-nonfree (1:20230210-4~bpo11+1+rpt1) bullseye; urgency=medium
+firmware-nonfree (1:20230210-5~bpo11+1+rpt1) bookworm; urgency=medium
 
   [ Phil Elwell ]
   * Add CYW43455 firmware (cyfmac43455-sdio-standard):
@@ -18,7 +10,7 @@ firmware-nonfree (1:20230210-4~bpo11+1+rpt1) bullseye; urgency=medium
   * Add SYN43436P firmware for Zero 2 W (brcmfmac43436-sdio):
     - Version: 9.88.4.77 CRC: 143f9f15 Date: Thu 2022-03-31 17:25:16 CST Ucode Ver: 1043.20743 FWID: 01-3b307371
   * Add SYN43436S firmware for future Zero 2 W boards (brcmfmac43436s-sdio):
-    - Version: 7.45.96.141 (g53ba0094) CRC: 6a9f22a0 Date: Tue 2022-07-05 21:30:23 CST Ucode Ver: 1043.20739 FWID: 01-eef9b3bf
+    - Version: 7.45.96.s1 (gf031a129) CRC: 6670a1e Date: Wed 2023-06-14 07:28:04 CST Ucode Ver: 1043.20744 FWID: 01-70bd2af7
   * Add CYW43456 firmware and (brcmfmac43456-sdio):
     - Version: 7.84.17.1 (r871554) CRC: 72494685 Date: Thu 2020-05-14 17:41:11 KST Ucode Ver: 1043.20424 FWID: 01-3d9e1d87
   * Add CYW43439 firmware for Pico W (43439A0-7.95.49.00.combined):
@@ -32,7 +24,22 @@ firmware-nonfree (1:20230210-4~bpo11+1+rpt1) bullseye; urgency=medium
   * Update debian/copyright
   * Use linux-support-5.10.0-20
 
- -- Serge Schneider <serge@raspberrypi.com>  Wed, 03 May 2023 10:49:35 +0100
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 02 Aug 2023 15:19:41 +0100
+
+firmware-nonfree (20230210-5~bpo11+1) bullseye-backports; urgency=medium
+
+  * Rebuild for bullseye-backports
+  * Update to linux-support 5.10.0-23
+
+ -- Ben Hutchings <benh@debian.org>  Wed, 21 Jun 2023 00:17:14 +0200
+
+firmware-nonfree (20230210-5) unstable; urgency=medium
+
+  * brcm80211: brcm: rename Rock960 NVRAM to AP6356S and link devices to it
+    (Closes: #1035282)
+  * Update to linux-support 6.1.0-8
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Mon, 01 May 2023 21:30:16 +0200
 
 firmware-nonfree (20230210-4~bpo11+1) bullseye-backports; urgency=medium
 
