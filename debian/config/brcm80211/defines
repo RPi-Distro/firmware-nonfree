@@ -26,6 +26,11 @@ files:
  brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
  brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt
  brcm/brcmfmac43430a0-sdio.ilife-S806.txt
+ brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.bin
+ brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.clm_blob
+ brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.txt
+ brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.bin
+ brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-zero.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-ultra.txt
@@ -206,7 +211,7 @@ desc: NVRAM file for BCM43436
 
 [brcm/brcmfmac43436s-sdio.bin_base]
 desc: Broadcom BCM43436s firmware
-version: 7.45.96.141
+version: 7.45.96.s1
 
 [brcm/brcmfmac43436s-sdio.txt_base]
 desc: NVRAM file for BCM43436s

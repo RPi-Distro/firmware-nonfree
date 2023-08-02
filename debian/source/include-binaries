@@ -1,8 +1,11 @@
 debian/config/atheros/ath10k/QCA9377/hw1.0/firmware-5.bin
+debian/config/brcm80211/brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.clm_blob
+debian/config/brcm80211/brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.bin
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.bin
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.bin
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.raspberrypi,3-model-b.clm_blob
+debian/config/brcm80211/brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.bin
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.bin
 debian/config/brcm80211/brcm/brcmfmac43430-sdio.raspberrypi,model-zero-w.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43436-sdio.bin
