@@ -1003,6 +1003,7 @@ desc: "Dimgrey Cavefish" CE firmware
 
 [amdgpu/dimgrey_cavefish_dmcub.bin_base]
 desc: "Dimgrey Cavefish" DMCUB firmware
+version: 0.0.172.0
 
 [amdgpu/dimgrey_cavefish_me.bin_base]
 desc: "Dimgrey Cavefish" ME firmware
@@ -1514,6 +1515,7 @@ desc: "Navy Flounder" CE firmware
 
 [amdgpu/navy_flounder_dmcub.bin_base]
 desc: "Navy Flounder" DMCUB firmware
+version: 0.0.172.0
 
 [amdgpu/navy_flounder_me.bin_base]
 desc: "Navy Flounder" ME firmware
@@ -2000,6 +2002,7 @@ desc: "Sienna Cichlid" CE firmware
 
 [amdgpu/sienna_cichlid_dmcub.bin_base]
 desc: "Sienna Cichlid" DMCUB firmware
+version: 0.0.172.0
 
 [amdgpu/sienna_cichlid_me.bin_base]
 desc: "Sienna Cichlid" ME firmware

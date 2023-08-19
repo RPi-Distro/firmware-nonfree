@@ -214,6 +214,7 @@ desc: Realtek RTL8852BU Bluetooth config
 
 [rtl_bt/rtl8852cu_fw.bin_base]
 desc: Realtek RTL8852CU Bluetooth firmware
+version: 0x040D_7225
 
 [rtl_bt/rtl8852cu_config.bin_base]
 desc: Realtek RTL8852CU Bluetooth config
@@ -337,6 +338,7 @@ desc: Realtek RTL8188EE firmware
 
 [rtlwifi/rtl8188eufw.bin_base]
 desc: Realtek RTL8188EU firmware
+version: 28.0
 
 [rtlwifi/rtl8192cfw.bin_base]
 desc: Realtek RTL8192CE/RTL8188CE firmware

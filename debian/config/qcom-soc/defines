@@ -109,6 +109,7 @@ desc: Qualcomm Adreno 630 GMU firmware
 
 [qcom/a630_sqe.fw_base]
 desc: Qualcomm Adreno 630 SQE firmware
+version: 1.89.01
 
 [qcom/a650_gmu.bin_base]
 desc: Qualcomm Adreno 650 GMU firmware
