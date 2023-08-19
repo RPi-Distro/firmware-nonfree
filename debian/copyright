@@ -28,7 +28,6 @@ Files-Excluded:
 # - licence is GPL, but source is elsewhere
  atusb/atusb-*.dfu
  atusb/rzusb-*.bin
- liquidio/lio_23xx_vsw.bin
 # - licence is unknown
  acenic/tg?.bin
  ess/maestro3_*.fw

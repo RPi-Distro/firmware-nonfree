@@ -79,6 +79,7 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * amd-graphics, qcom-soc: Add some missing file descriptions
   * Add/update file versions for recently updated files
+  * d/copyright: Remove obsolete file exclusion
 
  -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
 
