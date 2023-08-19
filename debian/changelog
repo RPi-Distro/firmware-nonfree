@@ -1,3 +1,82 @@
+firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - cxgb4: Update firmware to revision 1.27.3.0
+    - rtlwifi: Update firmware for RTL8188EU to v28.0
+    - rtlwifi: Add firmware v6.0 for RTL8192FU
+    - ice: update ice DDP comms package to 1.3.40.0
+    - amdgpu: DMCUB updates for various AMDGPU asics
+    - amdgpu: update aldebaran firmware for amd.5.5 release
+    - amdgpu: update sienna cichlid firmware for amd.5.5 release
+    - amdgpu: update navy flounder firmware for amd.5.5 release
+    - amdgpu: update GC 10.3.6 firmware for amd.5.5 release
+    - amdgpu: update psp 13.0.5 firmware for amd.5.5 release
+    - amdgpu: update vcn 3.1.2 firmware for amd.5.5 release
+    - amdgpu: update arcturus firmware for amd.5.5 release
+    - amdgpu: update dimgrey cavefish firmware for amd.5.5 release
+    - amdgpu: update beige goby firmware for amd.5.5 release
+    - amdgpu: update green sardine firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.0 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.0 firmware for amd.5.5 release
+    - amdgpu: update SMU 13.0.0 firmware for amd.5.5 release
+    - amdgpu: update VCN 4.0.0 firmware for amd.5.5 release
+    - amdgpu: update renoir firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.2 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.7 firmware for amd.5.5 release
+    - amdgpu: update SMU 13.0.7 firmware for amd.5.5 release
+    - amdgpu: update VCN 4.0.4 firmware for amd.5.5 release
+    - amdgpu: update vangogh firmware for amd.5.5 release
+    - amdgpu: update GC 10.3.7 firmware for amd.5.5 release
+    - amdgpu: update 13.0.8 firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.1 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.4 firmware for amd.5.5 release
+    - amdgpu: update SDMA 6.0.1 firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.4 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.11 firmware for amd.5.5 release
+    - amdgpu: update vega10 firmware for amd.5.5 release
+    - amdgpu: update navi10 firmware for amd.5.5 release
+    - amdgpu: update vega12 firmware for amd.5.5 release
+    - amdgpu: update vega20 firmware for amd.5.5 release
+    - amdgpu: update navi12 firmware for amd.5.5 release
+    - amdgpu: update navi14 firmware for amd.5.5 release
+    - amdgpu: update yellow carp firmware for amd.5.5 release
+    - rtw89: 8851b: add firmware v0.29.41.0
+    - amdgpu: Update GC 11.0.1 and 11.0.4
+    - brcm: Add symlinks from Pine64 devices to AW-CM256SM.txt
+    - cirrus: Add firmware for new Asus ROG Laptops
+    - qcom: apq8016: add Dragonboard 410c WiFi and modem firmware
+    - mediatek: Update mt8195 SCP firmware to support hevc
+    - i915: Add HuC v8.5.0 for MTL
+    - linux-firmware: update firmware for mediatek bluetooth chip (MT7921)
+    - linux-firmware: update firmware for mediatek bluetooth chip (MT7922)
+    - linux-firmware: update firmware for MT7921 WiFi device
+    - linux-firmware: update firmware for MT7922 WiFi device
+    - amdgpu: DMCUB updates for various AMDGPU asics
+    - rtl_bt: Update RTL8852C BT USB firmware to 0x040D_7225
+    - rtl_bt: Update RTL8852A BT USB firmware to 0xDAC7_480D
+    - qcom: sdm845: update remoteproc firmware
+    - qcom: sdm845: rename the modem firmware
+    - qcom: Update the microcode files for Adreno a630 GPUs.
+    - fix broken cirrus firmware symlinks
+    - amdgpu: update DMCUB to v0.0.172.0 for various AMDGPU ASICs
+    - amdgpu: DMCUB updates for DCN 3.1.4 and 3.1.5
+    - ice: update ice DDP wireless_edge package to 1.3.10.0
+    - linux-firmware: wilc1000: update WILC1000 firmware to v16.0
+    - check_whence: strip quotation marks
+    - check_whence: error if File: is actually a link
+    - check_whence: error if symlinks are in-tree
+    - copy-firmware: quote deskdir and dirname
+    - copy-firmware: tweak sed invocation
+    - copy-firmware: drop obsolete backticks, quote
+    - copy-firmware: silence the last shellcheck warnings
+    - Makefile, copy-firmware: support xz/zstd compressed firmware
+  * qcom-soc: add firmware for Qualcomm APQ8016 / db410c
+  * atheros: ath11k: package firmware for ath11k/IPQ5018
+  * atheros: QCA: add new board files for WCN6750
+  * atheros: QCA: add firmware for QCA2026
+
+ -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
+
 firmware-nonfree (20230515-3) unstable; urgency=medium
 
   [ Salvatore Bonaccorso ]
