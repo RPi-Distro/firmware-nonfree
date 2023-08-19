@@ -1,5 +1,6 @@
 firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
 
+  [ Dmitry Baryshkov ]
   * New upstream version:
     - cxgb4: Update firmware to revision 1.27.3.0
     - rtlwifi: Update firmware for RTL8188EU to v28.0
@@ -74,6 +75,9 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
   * atheros: ath11k: package firmware for ath11k/IPQ5018
   * atheros: QCA: add new board files for WCN6750
   * atheros: QCA: add firmware for QCA2026
+
+  [ Ben Hutchings ]
+  * Update to linux-support 6.4.0-3
 
  -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
 
