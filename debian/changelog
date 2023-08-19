@@ -76,6 +76,9 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
   * atheros: QCA: add new board files for WCN6750
   * atheros: QCA: add firmware for QCA2026
 
+  [ Ben Hutchings ]
+  * amd-graphics, qcom-soc: Add some missing file descriptions
+
  -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
 
 firmware-nonfree (20230515-4) experimental; urgency=medium
