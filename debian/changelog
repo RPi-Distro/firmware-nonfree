@@ -42,7 +42,7 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
     - amdgpu: update navi14 firmware for amd.5.5 release
     - amdgpu: update yellow carp firmware for amd.5.5 release
     - rtw89: 8851b: add firmware v0.29.41.0
-    - amdgpu: Update GC 11.0.1 and 11.0.4
+    - amdgpu: Update GC 11.0.1 and 11.0.4 (Closes: #1053856)
     - brcm: Add symlinks from Pine64 devices to AW-CM256SM.txt
     - cirrus: Add firmware for new Asus ROG Laptops
     - qcom: apq8016: add Dragonboard 410c WiFi and modem firmware
