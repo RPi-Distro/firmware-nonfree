@@ -67,6 +67,9 @@ files:
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.bin
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,4-model-b.txt
+ brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.bin
+ brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.clm_blob
+ brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.txt
  brcm/brcmfmac43455-sdio.txt
  brcm/brcmfmac43436-sdio.bin
  brcm/brcmfmac43436-sdio.clm_blob
