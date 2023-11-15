@@ -1,3 +1,15 @@
+firmware-nonfree (1:20230210-5+rpt2) bookworm; urgency=medium
+
+  [ Phil Elwell ]
+  * Add Pi 5-specific links to the 43455 firmware
+  * Update Synaptics licence
+
+  [ Serge Schneider ]
+  * Update packaging for new symlinks
+  * Update to linux-support 6.1.0-rpi4
+
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 15 Nov 2023 14:19:44 +0000
+
 firmware-nonfree (1:20230210-5+rpt1) bookworm; urgency=medium
 
   [ Phil Elwell ]
