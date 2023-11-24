@@ -1,3 +1,9 @@
+firmware-nonfree (20230515-4) UNRELEASED; urgency=medium
+
+  * Update to linux-support 6.5.0-4
+
+ -- Ben Hutchings <benh@debian.org>  Fri, 24 Nov 2023 16:40:08 +0000
+
 firmware-nonfree (20230515-3) unstable; urgency=medium
 
   [ Salvatore Bonaccorso ]
