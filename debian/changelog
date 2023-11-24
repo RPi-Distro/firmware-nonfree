@@ -76,10 +76,16 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
   * atheros: QCA: add new board files for WCN6750
   * atheros: QCA: add firmware for QCA2026
 
-  [ Ben Hutchings ]
-  * Update to linux-support 6.4.0-3
-
  -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
+
+firmware-nonfree (20230515-4) experimental; urgency=medium
+
+  * Update to linux-support 6.5.0-4
+  * d/rules.real: Run dh_movetousr if available
+    - lintian: Update overrides to match files in either /lib/firmware or
+      /usr/lib/firmware
+
+ -- Ben Hutchings <benh@debian.org>  Fri, 24 Nov 2023 23:38:40 +0000
 
 firmware-nonfree (20230515-3) unstable; urgency=medium
 
