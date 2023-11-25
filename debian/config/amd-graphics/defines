@@ -1003,6 +1003,7 @@ desc: "Dimgrey Cavefish" CE firmware
 
 [amdgpu/dimgrey_cavefish_dmcub.bin_base]
 desc: "Dimgrey Cavefish" DMCUB firmware
+version: 0.0.172.0
 
 [amdgpu/dimgrey_cavefish_me.bin_base]
 desc: "Dimgrey Cavefish" ME firmware
@@ -1514,6 +1515,7 @@ desc: "Navy Flounder" CE firmware
 
 [amdgpu/navy_flounder_dmcub.bin_base]
 desc: "Navy Flounder" DMCUB firmware
+version: 0.0.172.0
 
 [amdgpu/navy_flounder_me.bin_base]
 desc: "Navy Flounder" ME firmware
@@ -1995,40 +1997,41 @@ desc: SMU 13.0.7 firmware
 [amdgpu/si58_mc.bin_base]
 desc: Radeon "SI58" MC microcode
 
-[amdgpu/sienna_cichlid_ce.bin]
+[amdgpu/sienna_cichlid_ce.bin_base]
 desc: "Sienna Cichlid" CE firmware
 
-[amdgpu/sienna_cichlid_dmcub.bin]
+[amdgpu/sienna_cichlid_dmcub.bin_base]
 desc: "Sienna Cichlid" DMCUB firmware
+version: 0.0.172.0
 
-[amdgpu/sienna_cichlid_me.bin]
+[amdgpu/sienna_cichlid_me.bin_base]
 desc: "Sienna Cichlid" ME firmware
 
-[amdgpu/sienna_cichlid_mec.bin]
+[amdgpu/sienna_cichlid_mec.bin_base]
 desc: "Sienna Cichlid" MEC firmware
 
-[amdgpu/sienna_cichlid_mec2.bin]
+[amdgpu/sienna_cichlid_mec2.bin_base]
 desc: "Sienna Cichlid" MEC2 firmware
 
-[amdgpu/sienna_cichlid_pfp.bin]
+[amdgpu/sienna_cichlid_pfp.bin_base]
 desc: "Sienna Cichlid" PFP firmware
 
-[amdgpu/sienna_cichlid_rlc.bin]
+[amdgpu/sienna_cichlid_rlc.bin_base]
 desc: "Sienna Cichlid" RLC firmware
 
-[amdgpu/sienna_cichlid_sdma.bin]
+[amdgpu/sienna_cichlid_sdma.bin_base]
 desc: "Sienna Cichlid" SDMA firmware
 
-[amdgpu/sienna_cichlid_smc.bin]
+[amdgpu/sienna_cichlid_smc.bin_base]
 desc: "Sienna Cichlid" SMC firmware
 
-[amdgpu/sienna_cichlid_sos.bin]
+[amdgpu/sienna_cichlid_sos.bin_base]
 desc: "Sienna Cichlid" SOS firmware
 
-[amdgpu/sienna_cichlid_ta.bin]
+[amdgpu/sienna_cichlid_ta.bin_base]
 desc: "Sienna Cichlid" TA firmware
 
-[amdgpu/sienna_cichlid_vcn.bin]
+[amdgpu/sienna_cichlid_vcn.bin_base]
 desc: "Sienna Cichlid" VCN firmware
 
 [amdgpu/stoney_ce.bin_base]

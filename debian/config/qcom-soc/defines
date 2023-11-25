@@ -109,6 +109,7 @@ desc: Qualcomm Adreno 630 GMU firmware
 
 [qcom/a630_sqe.fw_base]
 desc: Qualcomm Adreno 630 SQE firmware
+version: 1.89.01
 
 [qcom/a650_gmu.bin_base]
 desc: Qualcomm Adreno 650 GMU firmware
@@ -137,7 +138,7 @@ desc: Qualcomm APQ8016 modem firmware
 [qcom/apq8016/wcnss.mbn_base]
 desc: Qualcomm APQ8016 WiFi firmware
 
-[qcom/apq8016/WCNSS_qcom_wlan_nv_sbc.bin]
+[qcom/apq8016/WCNSS_qcom_wlan_nv_sbc.bin_base]
 desc: Qualcomm Dragonboard 410c WiFi board file
 
 [qcom/apq8096/a530_zap.mbn_base]
@@ -260,7 +261,7 @@ desc: Qualcomm Venus VPU-1.0 firwmare
 [qcom/vpu-1.0/venus.mdt_base]
 desc: Qualcomm Venus VPU-1.0 firwmare header
 
-[qcom/vpu-2.0/venus.mbn]
+[qcom/vpu-2.0/venus.mbn_base]
 desc: Qualcomm Venus VPU-2.0 firwmare
 
 [qcom/yamato_pfp.fw_base]
