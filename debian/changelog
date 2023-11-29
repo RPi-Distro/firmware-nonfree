@@ -81,6 +81,9 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
   * Add/update file versions for recently updated files
   * d/copyright: Remove obsolete file exclusion
 
+  [ Diederik de Haas ]
+  * brcm80211: brcm: Enable symlinks from Pine64 devices to AW-CM256SM.txt
+
  -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
 
 firmware-nonfree (20230515-4) experimental; urgency=medium
