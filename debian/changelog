@@ -6,7 +6,7 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
     - rtlwifi: Update firmware for RTL8188EU to v28.0
     - rtlwifi: Add firmware v6.0 for RTL8192FU
     - ice: update ice DDP comms package to 1.3.40.0
-    - amdgpu: DMCUB updates for various AMDGPU asics
+    - amdgpu: DMCUB updates for various AMDGPU asics (Closes: #1040185)
     - amdgpu: update aldebaran firmware for amd.5.5 release
     - amdgpu: update sienna cichlid firmware for amd.5.5 release
     - amdgpu: update navy flounder firmware for amd.5.5 release
