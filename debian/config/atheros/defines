@@ -729,6 +729,34 @@ desc: Qualcomm WCN3991 Bluetooth NVM configuration
 [qca/crnv32u.bin_base]
 desc: Qualcomm WCN3991 Bluetooth NVM configuration
 
+[qca/hpbtfw21.tlv_base]
+desc: Qualcomm QCA2066 Bluetooth RAM FW firmware
+version: 2.1.0-00538
+
+[qca/hpnv21.bin_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21g.bin_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21.301_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21.302_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21g.301_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21g.302_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
 [qca/htbtfw20.tlv_base]
 desc: Qualcomm QCA6390 Bluetooth HTBFW20 firmware
 version: v2.0.0-00874
