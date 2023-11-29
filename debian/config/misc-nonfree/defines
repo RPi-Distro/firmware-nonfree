@@ -234,6 +234,7 @@ files:
  mediatek/mt8173/vpu_p.bin
  mediatek/mt8183/scp.img
  mediatek/mt8186/scp.img
+ mediatek/mt8192/scp.img
  mediatek/mt8195/scp.img
  mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin
  mediatek/WIFI_RAM_CODE_MT7922_1.bin
@@ -1469,6 +1470,10 @@ version: v12573.77
 [mediatek/mt8186/scp.img_base]
 desc: MediaTek mt8186 SCP firmware
 version: v0.0.9
+
+[mediatek/mt8192/scp.img_base]
+desc: MediaTek mt8192 SCP firmware
+version: 2.0.20536
 
 [mediatek/mt8195/scp.img_base]
 desc: MediaTek mt8195 SCP firmware

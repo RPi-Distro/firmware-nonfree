@@ -86,6 +86,7 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
 
   [ Salvatore Bonaccorso ]
   * atheros: Add description for Bluetooth firmware for QCA2066
+  * misc-nonfree: Add MediaTek mt8192 SCP firmware (Closes: #1043099)
 
  -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
 
