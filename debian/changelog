@@ -1,4 +1,4 @@
-firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
+firmware-nonfree (20230625-1) unstable; urgency=medium
 
   [ Dmitry Baryshkov ]
   * New upstream version:
@@ -88,7 +88,7 @@ firmware-nonfree (20230625-1) UNRELEASED; urgency=medium
   * atheros: Add description for Bluetooth firmware for QCA2066
   * misc-nonfree: Add MediaTek mt8192 SCP firmware (Closes: #1043099)
 
- -- Dmitry Baryshkov <dbaryshkov@gmail.com>  Wed, 19 Jul 2023 11:05:56 +0300
+ -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 29 Nov 2023 11:10:54 +0100
 
 firmware-nonfree (20230515-4) experimental; urgency=medium
 
