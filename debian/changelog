@@ -1,3 +1,11 @@
+firmware-nonfree (20230625-2) UNRELEASED; urgency=medium
+
+  * Update to linux-support 6.5.0-5
+  * misc-nonfree: Add Nvidia Ampere GA103/GA104/GA106/GA107 links
+    (Closes: #1040910, #1058991)
+
+ -- Diederik de Haas <didi.debian@cknow.org>  Tue, 19 Dec 2023 14:39:29 +0100
+
 firmware-nonfree (20230625-1) unstable; urgency=medium
 
   [ Dmitry Baryshkov ]
