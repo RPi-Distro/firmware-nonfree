@@ -1,3 +1,14 @@
+firmware-nonfree (1:20230210-5+rpt3) bookworm; urgency=medium
+
+  [ Phil Elwell ]
+  * brcm80211: cypress: Use a generic CYW43455 firmware
+    - Version: 7.45.234 (4ca95bb CY) CRC: 212e223d Date: Thu 2021-04-15 03:06:00 PDT Ucode Ver: 1043.2161 FWID 01-996384e2
+
+  [ Serge Schneider ]
+  * Update to linux-support 6.1.0-rpi7
+
+ -- Serge Schneider <serge@raspberrypi.com>  Wed, 17 Jan 2024 15:24:35 +0000
+
 firmware-nonfree (1:20230210-5+rpt2) bookworm; urgency=medium
 
   [ Phil Elwell ]
