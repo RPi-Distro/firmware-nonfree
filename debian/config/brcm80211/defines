@@ -321,7 +321,7 @@ desc: Cypress CYW43430-SDIO CLM firmware
 
 [cypress/cyfmac43455-sdio-standard.bin_base]
 desc: Cypress CYW43455-SDIO firmware
-version: 7.45.241
+version: 7.45.234
 
 [cypress/cyfmac43455-sdio.clm_blob_base]
 desc: Cypress CYW43455-SDIO CLM firmware
