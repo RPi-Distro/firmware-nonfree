@@ -220,14 +220,16 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 self.templates.get('postinst.initramfs-tools', vars))
 
         if 'license_accept' in config_entry:
-            license = open("%s/LICENSE.install" % package_dir, 'r').read()
+            with open("%s/LICENSE.install" % package_dir, 'r') as license_fh:
+                license = license_fh.read()
             scripts.setdefault("preinst", []).append(
                 self.templates.get('preinst.license', vars))
 
             templates = list(self.templates.get_templates_control('templates.license', vars))
             templates[0].description.append(re.sub('\n\n', '\n.\n', license))
             templates_filename = "debian/firmware-%s.templates" % package
-            write_deb822(templates, open(templates_filename, 'w'))
+            with open(templates_filename, 'w') as templates_fh:
+                write_deb822(templates, templates_fh)
 
             desc = packages_binary[0].description
             desc.append(
@@ -247,7 +249,8 @@ You must agree to the terms of this license before it is installed."""
         for script, script_contents in scripts.items():
             script_contents.insert(0, "#!/bin/sh\n\nset -e\n")
             script_contents.append("#DEBHELPER#\n\nexit 0\n")
-            open("debian/firmware-%s.%s" % (package, script), "w").write("\n".join(script_contents))
+            with open("debian/firmware-%s.%s" % (package, script), "w") as script_fh:
+                script_fh.write("\n".join(script_contents))
 
         self.bundle.add_packages(packages_binary, (package,), MakeFlags())
 
@@ -258,8 +261,8 @@ You must agree to the terms of this license before it is installed."""
         package_metainfo_filename = \
             f'debian/org.debian.firmware_{package_metainfo}.metainfo.xml'
         # XXX Might need to escape some characters
-        open(package_metainfo_filename, 'w') \
-            .write(self.templates.get("metainfo.xml", vars))
+        with open(package_metainfo_filename, 'w') as metainfo_fh:
+            metainfo_fh.write(self.templates.get("metainfo.xml", vars))
 
         def dh_install_escape(name):
             return name.replace('$', '${}').replace(' ', '${Space}')
