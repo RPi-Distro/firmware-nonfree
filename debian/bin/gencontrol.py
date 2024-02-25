@@ -272,22 +272,6 @@ You must agree to the terms of this license before it is installed."""
             print(package_metainfo_filename, '/usr/share/metainfo',
                   file=install_fh)
 
-    def process_template(self, in_entry, vars):
-        e = Template()
-        for key, value in in_entry.items():
-            if isinstance(value, PackageDescription):
-                e[key] = self.process_description(value, vars)
-            elif key[:2] == 'X-':
-                pass
-            else:
-                e[key] = self.substitute(value, vars)
-        return e
-
-    def process_templates(self, in_entries, vars):
-        entries = []
-        for i in in_entries:
-            entries.append(self.process_template(i, vars))
-        return entries
 
 if __name__ == '__main__':
     GenControl()()
