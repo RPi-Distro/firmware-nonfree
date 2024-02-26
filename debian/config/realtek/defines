@@ -82,6 +82,7 @@ files:
  rtlwifi/rtl8192eu_ap_wowlan.bin
  rtlwifi/rtl8192eu_nic.bin
  rtlwifi/rtl8192eu_wowlan.bin
+ rtlwifi/rtl8192fufw.bin
  rtlwifi/rtl8192sefw.bin
  rtlwifi/rtl8712u.bin
  rtlwifi/rtl8723aufw_A.bin
