@@ -14,6 +14,8 @@ debian/config/brcm80211/brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.bin
 debian/config/brcm80211/brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43436s-sdio.bin
 debian/config/brcm80211/brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin
+debian/config/brcm80211/brcm/brcmfmac43439-sdio.bin
+debian/config/brcm80211/brcm/brcmfmac43439-sdio.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43455-sdio.bin
 debian/config/brcm80211/brcm/brcmfmac43455-sdio.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.clm_blob
@@ -31,6 +33,8 @@ debian/config/brcm80211/brcm/brcmfmac43456-sdio.raspberrypi,4-compute-module.clm
 debian/config/brcm80211/cypress/43439A0-7.95.49.00.combined
 debian/config/brcm80211/cypress/cyfmac43430-sdio.bin
 debian/config/brcm80211/cypress/cyfmac43430-sdio.clm_blob
+debian/config/brcm80211/cypress/cyfmac43439-sdio.bin
+debian/config/brcm80211/cypress/cyfmac43439-sdio.clm_blob
 debian/config/brcm80211/cypress/cyfmac43455-sdio-standard.bin
 debian/config/brcm80211/cypress/cyfmac43455-sdio.clm_blob
 debian/config/brcm80211/cypress/cyfmac43455-sdio-minimal.bin

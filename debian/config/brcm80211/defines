@@ -81,6 +81,9 @@ files:
  brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin
  brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.txt
  brcm/brcmfmac43436s-sdio.txt
+ brcm/brcmfmac43439-sdio.bin
+ brcm/brcmfmac43439-sdio.clm_blob
+ brcm/brcmfmac43439-sdio.txt
  brcm/brcmfmac43456-sdio.bin
  brcm/brcmfmac43456-sdio.clm_blob
  brcm/brcmfmac43456-sdio.raspberrypi,400.bin
@@ -125,6 +128,9 @@ files:
  cypress/cyfmac4339-sdio.bin
  cypress/cyfmac43430-sdio.bin
  cypress/cyfmac43430-sdio.clm_blob
+ cypress/cyfmac43439-sdio.bin
+ cypress/cyfmac43439-sdio.clm_blob
+ cypress/cyfmac43439-sdio.txt
  cypress/cyfmac43455-sdio-standard.bin
  cypress/cyfmac43455-sdio.clm_blob
  cypress/cyfmac43455-sdio-minimal.bin
