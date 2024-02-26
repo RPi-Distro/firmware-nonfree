@@ -1,3 +1,9 @@
+firmware-nonfree (1:20230625-2+rpt2) bookworm; urgency=medium
+
+  * Add rtl8192fufw firmware
+
+ -- Serge Schneider <serge@raspberrypi.com>  Mon, 26 Feb 2024 17:06:22 +0000
+
 firmware-nonfree (1:20230625-2+rpt1) bookworm; urgency=medium
 
   [ Phil Elwell ]
