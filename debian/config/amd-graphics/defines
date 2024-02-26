@@ -129,6 +129,13 @@ files:
  amdgpu/gc_11_0_2_mes.bin
  amdgpu/gc_11_0_2_pfp.bin
  amdgpu/gc_11_0_2_rlc.bin
+ amdgpu/gc_11_0_4_imu.bin
+ amdgpu/gc_11_0_4_me.bin
+ amdgpu/gc_11_0_4_mec.bin
+ amdgpu/gc_11_0_4_mes.bin
+ amdgpu/gc_11_0_4_mes1.bin
+ amdgpu/gc_11_0_4_pfp.bin
+ amdgpu/gc_11_0_4_rlc.bin
  amdgpu/green_sardine_asd.bin
  amdgpu/green_sardine_ce.bin
  amdgpu/green_sardine_dmcub.bin
@@ -349,6 +356,8 @@ files:
  amdgpu/psp_13_0_8_asd.bin
  amdgpu/psp_13_0_8_ta.bin
  amdgpu/psp_13_0_8_toc.bin
+ amdgpu/psp_13_0_11_ta.bin
+ amdgpu/psp_13_0_11_toc.bin
  amdgpu/raven2_asd.bin
  amdgpu/raven2_ce.bin
  amdgpu/raven2_gpu_info.bin
@@ -994,6 +1003,7 @@ desc: "Dimgrey Cavefish" CE firmware
 
 [amdgpu/dimgrey_cavefish_dmcub.bin_base]
 desc: "Dimgrey Cavefish" DMCUB firmware
+version: 0.0.172.0
 
 [amdgpu/dimgrey_cavefish_me.bin_base]
 desc: "Dimgrey Cavefish" ME firmware
@@ -1160,6 +1170,27 @@ desc: GC 11.0.2 PFP firmware
 
 [amdgpu/gc_11_0_2_rlc.bin_base]
 desc: GC 11.0.2 RLC firmware
+
+[amdgpu/gc_11_0_4_imu.bin_base]
+desc: GC 11.0.4 IMU firmware
+
+[amdgpu/gc_11_0_4_me.bin_base]
+desc: GC 11.0.4 ME firmware
+
+[amdgpu/gc_11_0_4_mec.bin_base]
+desc: GC 11.0.4 MEC firmware
+
+[amdgpu/gc_11_0_4_mes.bin_base]
+desc: GC 11.0.4 MES firmware
+
+[amdgpu/gc_11_0_4_mes1.bin_base]
+desc: GC 11.0.4 MES1 firmware
+
+[amdgpu/gc_11_0_4_pfp.bin_base]
+desc: GC 11.0.4 PFP firmware
+
+[amdgpu/gc_11_0_4_rlc.bin_base]
+desc: GC 11.0.4 RLC firmware
 
 [amdgpu/green_sardine_asd.bin_base]
 desc: Ryzen 5000 ASD firmware
@@ -1484,6 +1515,7 @@ desc: "Navy Flounder" CE firmware
 
 [amdgpu/navy_flounder_dmcub.bin_base]
 desc: "Navy Flounder" DMCUB firmware
+version: 0.0.172.0
 
 [amdgpu/navy_flounder_me.bin_base]
 desc: "Navy Flounder" ME firmware
@@ -1827,6 +1859,12 @@ desc: PSP 13.0.8 TA firmware
 [amdgpu/psp_13_0_8_toc.bin_base]
 desc: PSP 13.0.8 TOC firmware
 
+[amdgpu/psp_13_0_11_ta.bin_base]
+desc: PSP 13.0.11 TA firmware
+
+[amdgpu/psp_13_0_11_toc.bin_base]
+desc: PSP 13.0.11 TOC firmware
+
 [amdgpu/raven2_asd.bin_base]
 desc: "Raven 2" ASD firmware
 
@@ -1959,40 +1997,41 @@ desc: SMU 13.0.7 firmware
 [amdgpu/si58_mc.bin_base]
 desc: Radeon "SI58" MC microcode
 
-[amdgpu/sienna_cichlid_ce.bin]
+[amdgpu/sienna_cichlid_ce.bin_base]
 desc: "Sienna Cichlid" CE firmware
 
-[amdgpu/sienna_cichlid_dmcub.bin]
+[amdgpu/sienna_cichlid_dmcub.bin_base]
 desc: "Sienna Cichlid" DMCUB firmware
+version: 0.0.172.0
 
-[amdgpu/sienna_cichlid_me.bin]
+[amdgpu/sienna_cichlid_me.bin_base]
 desc: "Sienna Cichlid" ME firmware
 
-[amdgpu/sienna_cichlid_mec.bin]
+[amdgpu/sienna_cichlid_mec.bin_base]
 desc: "Sienna Cichlid" MEC firmware
 
-[amdgpu/sienna_cichlid_mec2.bin]
+[amdgpu/sienna_cichlid_mec2.bin_base]
 desc: "Sienna Cichlid" MEC2 firmware
 
-[amdgpu/sienna_cichlid_pfp.bin]
+[amdgpu/sienna_cichlid_pfp.bin_base]
 desc: "Sienna Cichlid" PFP firmware
 
-[amdgpu/sienna_cichlid_rlc.bin]
+[amdgpu/sienna_cichlid_rlc.bin_base]
 desc: "Sienna Cichlid" RLC firmware
 
-[amdgpu/sienna_cichlid_sdma.bin]
+[amdgpu/sienna_cichlid_sdma.bin_base]
 desc: "Sienna Cichlid" SDMA firmware
 
-[amdgpu/sienna_cichlid_smc.bin]
+[amdgpu/sienna_cichlid_smc.bin_base]
 desc: "Sienna Cichlid" SMC firmware
 
-[amdgpu/sienna_cichlid_sos.bin]
+[amdgpu/sienna_cichlid_sos.bin_base]
 desc: "Sienna Cichlid" SOS firmware
 
-[amdgpu/sienna_cichlid_ta.bin]
+[amdgpu/sienna_cichlid_ta.bin_base]
 desc: "Sienna Cichlid" TA firmware
 
-[amdgpu/sienna_cichlid_vcn.bin]
+[amdgpu/sienna_cichlid_vcn.bin_base]
 desc: "Sienna Cichlid" VCN firmware
 
 [amdgpu/stoney_ce.bin_base]

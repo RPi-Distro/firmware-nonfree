@@ -93,7 +93,14 @@ definitions:
 
 1. Install the current linux-support-<kernelversion> package
 2. Ensure debian/rules.defs has the right value of KERNELVERSION
-3. Run: debian/rules debian/control
+3. If the 'orig.tar' archive is not yet available, retrieve it as follows:
+   ``uscan --download-version <upstream-version>`` (<upstream-version> is f.e. ``20230210``)
+   To retrieve <upstream-version> programmatically, use f.e. this:
+   $(head -n1 debian/changelog | sed 's/.*\([[:digit:]]\{8\}\).*/\1/')
+   Combined that results in:
+   ``uscan --download-version $(head -n1 debian/changelog | sed 's/.*\([[:digit:]]\{8\}\).*/\1/')``
+4. Run: debian/rules orig
+5. Run: debian/rules debian/control
 
 To update the current package's changelog with the new upstream version:
 

@@ -1,5 +1,5 @@
 [base]
-desc: TI Connectivity wifi and BT/FM/GPS adapters
+desc: TI Connectivity Wi-Fi and BT/FM/GPS adapters
 files:
  ti/vpdma-1b8.bin
  ti-connectivity/TIInit_6.2.31.bts

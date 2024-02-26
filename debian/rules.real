@@ -39,6 +39,7 @@ endif
 	dh_compress
 	dh_fixperms
 	dh_installdeb
+	if command -v dh_movetousr >/dev/null; then dh_movetousr; fi
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb

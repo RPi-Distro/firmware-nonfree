@@ -1,59 +1,259 @@
-firmware-nonfree (1:20230210-5+rpt4) bookworm; urgency=medium
+firmware-nonfree (20230625-2) unstable; urgency=medium
 
-  [ Phil Elwell ]
-  * brcm80211: cypress: Add CYW43439 firmware
+  [ Diederik de Haas ]
+  * Update to linux-support 6.5.0-5
+  * misc-nonfree: Add Nvidia Ampere GA103/GA104/GA106/GA107 links
+    (Closes: #1040910, #1058991)
 
- -- Serge Schneider <serge@raspberrypi.com>  Mon, 26 Feb 2024 15:58:27 +0000
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 19 Dec 2023 18:01:10 +0100
 
-firmware-nonfree (1:20230210-5+rpt3) bookworm; urgency=medium
+firmware-nonfree (20230625-1) unstable; urgency=medium
 
-  [ Phil Elwell ]
-  * brcm80211: cypress: Use a generic CYW43455 firmware
-    - Version: 7.45.234 (4ca95bb CY) CRC: 212e223d Date: Thu 2021-04-15 03:06:00 PDT Ucode Ver: 1043.2161 FWID 01-996384e2
+  [ Dmitry Baryshkov ]
+  * New upstream version:
+    - cxgb4: Update firmware to revision 1.27.3.0
+    - rtlwifi: Update firmware for RTL8188EU to v28.0
+    - rtlwifi: Add firmware v6.0 for RTL8192FU
+    - ice: update ice DDP comms package to 1.3.40.0
+    - amdgpu: DMCUB updates for various AMDGPU asics (Closes: #1040185)
+    - amdgpu: update aldebaran firmware for amd.5.5 release
+    - amdgpu: update sienna cichlid firmware for amd.5.5 release
+    - amdgpu: update navy flounder firmware for amd.5.5 release
+    - amdgpu: update GC 10.3.6 firmware for amd.5.5 release
+    - amdgpu: update psp 13.0.5 firmware for amd.5.5 release
+    - amdgpu: update vcn 3.1.2 firmware for amd.5.5 release
+    - amdgpu: update arcturus firmware for amd.5.5 release
+    - amdgpu: update dimgrey cavefish firmware for amd.5.5 release
+    - amdgpu: update beige goby firmware for amd.5.5 release
+    - amdgpu: update green sardine firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.0 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.0 firmware for amd.5.5 release
+    - amdgpu: update SMU 13.0.0 firmware for amd.5.5 release
+    - amdgpu: update VCN 4.0.0 firmware for amd.5.5 release
+    - amdgpu: update renoir firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.2 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.7 firmware for amd.5.5 release
+    - amdgpu: update SMU 13.0.7 firmware for amd.5.5 release
+    - amdgpu: update VCN 4.0.4 firmware for amd.5.5 release
+    - amdgpu: update vangogh firmware for amd.5.5 release
+    - amdgpu: update GC 10.3.7 firmware for amd.5.5 release
+    - amdgpu: update 13.0.8 firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.1 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.4 firmware for amd.5.5 release
+    - amdgpu: update SDMA 6.0.1 firmware for amd.5.5 release
+    - amdgpu: update GC 11.0.4 firmware for amd.5.5 release
+    - amdgpu: update PSP 13.0.11 firmware for amd.5.5 release
+    - amdgpu: update vega10 firmware for amd.5.5 release
+    - amdgpu: update navi10 firmware for amd.5.5 release
+    - amdgpu: update vega12 firmware for amd.5.5 release
+    - amdgpu: update vega20 firmware for amd.5.5 release
+    - amdgpu: update navi12 firmware for amd.5.5 release
+    - amdgpu: update navi14 firmware for amd.5.5 release
+    - amdgpu: update yellow carp firmware for amd.5.5 release
+    - rtw89: 8851b: add firmware v0.29.41.0
+    - amdgpu: Update GC 11.0.1 and 11.0.4 (Closes: #1053856)
+    - brcm: Add symlinks from Pine64 devices to AW-CM256SM.txt
+    - cirrus: Add firmware for new Asus ROG Laptops
+    - qcom: apq8016: add Dragonboard 410c WiFi and modem firmware
+    - mediatek: Update mt8195 SCP firmware to support hevc
+    - i915: Add HuC v8.5.0 for MTL
+    - linux-firmware: update firmware for mediatek bluetooth chip (MT7921)
+    - linux-firmware: update firmware for mediatek bluetooth chip (MT7922)
+    - linux-firmware: update firmware for MT7921 WiFi device
+    - linux-firmware: update firmware for MT7922 WiFi device
+    - amdgpu: DMCUB updates for various AMDGPU asics
+    - rtl_bt: Update RTL8852C BT USB firmware to 0x040D_7225
+    - rtl_bt: Update RTL8852A BT USB firmware to 0xDAC7_480D
+    - qcom: sdm845: update remoteproc firmware
+    - qcom: sdm845: rename the modem firmware
+    - qcom: Update the microcode files for Adreno a630 GPUs.
+    - fix broken cirrus firmware symlinks
+    - amdgpu: update DMCUB to v0.0.172.0 for various AMDGPU ASICs
+    - amdgpu: DMCUB updates for DCN 3.1.4 and 3.1.5
+    - ice: update ice DDP wireless_edge package to 1.3.10.0
+    - linux-firmware: wilc1000: update WILC1000 firmware to v16.0
+    - check_whence: strip quotation marks
+    - check_whence: error if File: is actually a link
+    - check_whence: error if symlinks are in-tree
+    - copy-firmware: quote deskdir and dirname
+    - copy-firmware: tweak sed invocation
+    - copy-firmware: drop obsolete backticks, quote
+    - copy-firmware: silence the last shellcheck warnings
+    - Makefile, copy-firmware: support xz/zstd compressed firmware
+  * qcom-soc: add firmware for Qualcomm APQ8016 / db410c
+  * atheros: ath11k: package firmware for ath11k/IPQ5018
+  * atheros: QCA: add new board files for WCN6750
+  * atheros: QCA: add firmware for QCA2026 (Closes: #1057039)
 
-  [ Serge Schneider ]
-  * Update to linux-support 6.1.0-rpi7
+  [ Ben Hutchings ]
+  * amd-graphics, qcom-soc: Add some missing file descriptions
+  * Add/update file versions for recently updated files
+  * d/copyright: Remove obsolete file exclusion
 
- -- Serge Schneider <serge@raspberrypi.com>  Wed, 17 Jan 2024 15:24:35 +0000
+  [ Diederik de Haas ]
+  * brcm80211: brcm: Enable symlinks from Pine64 devices to AW-CM256SM.txt
 
-firmware-nonfree (1:20230210-5+rpt2) bookworm; urgency=medium
+  [ Salvatore Bonaccorso ]
+  * atheros: Add description for Bluetooth firmware for QCA2066
+  * misc-nonfree: Add MediaTek mt8192 SCP firmware (Closes: #1043099)
 
-  [ Phil Elwell ]
-  * Add Pi 5-specific links to the 43455 firmware
-  * Update Synaptics licence
+ -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 29 Nov 2023 11:10:54 +0100
 
-  [ Serge Schneider ]
-  * Update packaging for new symlinks
-  * Update to linux-support 6.1.0-rpi4
+firmware-nonfree (20230515-4) experimental; urgency=medium
 
- -- Serge Schneider <serge@raspberrypi.com>  Wed, 15 Nov 2023 14:19:44 +0000
+  * Update to linux-support 6.5.0-4
+  * d/rules.real: Run dh_movetousr if available
+    - lintian: Update overrides to match files in either /lib/firmware or
+      /usr/lib/firmware
 
-firmware-nonfree (1:20230210-5+rpt1) bookworm; urgency=medium
+ -- Ben Hutchings <benh@debian.org>  Fri, 24 Nov 2023 23:38:40 +0000
 
-  [ Phil Elwell ]
-  * Add CYW43455 firmware (cyfmac43455-sdio-standard):
-    - Version: 7.45.241 (1a2f2fa CY) CRC: 959ad1c7 Date: Mon 2021-11-01 00:40:29 PDT Ucode Ver: 1043.2164 FWID 01-703fd60
-  * Add "minimal" 43455 firmware for AP+STA mode (cyfmac43455-sdio-minimal):
-    - Version: 7.45.241 (1a2f2fa CY) CRC: 349757d5 Date: Mon 2021-11-01 00:40:07 PDT Ucode Ver: 1043.2164 FWID 01-5209c09
-  * Add CYW43430 firmware (cyfmac43430-sdio):
-    - Version: 7.45.98 (TOB) (56df937 CY) CRC: 442f3e3 Date: Mon 2021-07-19 03:25:10 CDT Ucode Ver: 1043.213703 FWID 01-8e14b897
-  * Add SYN43436P firmware for Zero 2 W (brcmfmac43436-sdio):
-    - Version: 9.88.4.77 CRC: 143f9f15 Date: Thu 2022-03-31 17:25:16 CST Ucode Ver: 1043.20743 FWID: 01-3b307371
-  * Add SYN43436S firmware for future Zero 2 W boards (brcmfmac43436s-sdio):
-    - Version: 7.45.96.s1 (gf031a129) CRC: 6670a1e Date: Wed 2023-06-14 07:28:04 CST Ucode Ver: 1043.20744 FWID: 01-70bd2af7
-  * Add CYW43456 firmware and (brcmfmac43456-sdio):
-    - Version: 7.84.17.1 (r871554) CRC: 72494685 Date: Thu 2020-05-14 17:41:11 KST Ucode Ver: 1043.20424 FWID: 01-3d9e1d87
-  * Add CYW43439 firmware for Pico W (43439A0-7.95.49.00.combined):
-    - Version: 7.95.49 (2271bb6 CY) CRC: b7a28ef3 Date: Mon 2021-11-29 22:50:27 PST Ucode Ver: 1043.2162 FWID 01-c51d9400
-  * Add license from Synaptics
+firmware-nonfree (20230515-3) unstable; urgency=medium
 
-  [ Serge Schneider ]
-  * Add update-alternatives for standard and minimal versions of
-    cyfmac43455-sdio.bin
-    - See debian/config/brcm80211/cypress/README.txt
-  * Update debian/copyright
+  [ Salvatore Bonaccorso ]
+  * Update to linux-support 6.3.0-2
+  * misc-nonfree: i915: Add HuC 7.10.3 for DG2 (Closes: #1040012)
 
- -- Serge Schneider <serge@raspberrypi.com>  Wed, 02 Aug 2023 16:05:06 +0100
+  [ Stuart Hayhurst ]
+  * iwlwifi: Add missing iwlwifi-ty-a0-gf-a0-73.ucode and
+    iwlwifi-ty-a0-gf-a0-74.ucode
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 04 Jul 2023 16:44:14 +0200
+
+firmware-nonfree (20230515-2) unstable; urgency=medium
+
+  * Add compatibility links for old Mediatek WiFi firmware afer move to mediatek
+    folder (Closes: #1039576)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 27 Jun 2023 15:16:13 +0200
+
+firmware-nonfree (20230515-1) unstable; urgency=medium
+
+  * New upstream version:
+    - atheros: ath10k: QCA4019 hw1.0: update board-2.bin
+    - atheros: ath10k: QCA6174 hw3.0: update board-2.bin
+    - atheros: ath10k: QCA9888 hw2.0: update board-2.bin
+    - atheros: ath10k: QCA9984 hw1.0: update board-2.bin
+    - atheros: ath10k: QCA99X0 hw2.0: update board-2.bin
+    - atheros: ath11k: IPQ6018 hw1.0: update board-2.bin
+    - atheros: ath11k: IPQ6018 hw1.0: update to
+      WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
+    - atheros: ath11k: IPQ8074 hw2.0: update board-2.bin
+    - atheros: ath11k: IPQ8074 hw2.0: update to
+      WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
+    - atheros: ath11k: QCN9074 hw1.0: update to
+      WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
+    - atheros: ath11k: WCN6750 hw1.0: update to
+      WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
+    - atheros: ath11k: WCN6855 hw2.0: update board-2.bin
+    - realtek: rtw89: 8852c: update fw to v0.27.56.13
+    - realtek: rtw89: 8852b: update format-1 fw to v0.29.29.1
+    - misc-nonfree: linux-firmware: update qat firmware
+    - misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+      (MT7921)
+    - misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+    - misc-nonfree: mt76xx: Move the old Mediatek WiFi firmware to mediatek
+    - atheros: qca: Update firmware files for BT chip WCN6750
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX203
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX201
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX200
+    - realtek: rtl_nic: update firmware of USB devices
+    - realtek: rtl_bt: Update RTL8761B BT UART firmware to 0x9DC6_D922
+    - realtek: rtl_bt: Update RTL8761B BT USB firmware to 0xDFC6_D922
+    - realtek: rtl_bt: Update RTL8852B BT USB firmware to 0xDBC6_B20F
+    - amd-graphics: amdgpu: update DCN 3.1.6 DMCUB firmware
+    - misc-nonfree: linux-firmware: update firmware for MT7922 WiFi device
+    - misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+      (MT7922)
+
+  [ Salvatore Bonaccorso ]
+  * realtek: rtl_bt: Add firmware and config files for RTL8851B
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 25 Jun 2023 09:03:51 +0200
+
+firmware-nonfree (20230404-1) unstable; urgency=medium
+
+  * New upstream version:
+    - iwlwifi: update core69 and core72 firmwares for So device
+    - realtek: rtw89: 8852b: rollback firmware to v0.27.32.1
+    - realtek: rtw89: 8852b: update format-1 fw to v0.29.29.0
+    - misc-nonfree: mediatek: Update mt8192/mt8195 SCP firmware to support
+      MM21 and MT21
+    - misc-nonfree: i915: Update ADLP DMC to v2.19
+    - misc-nonfree: i915: Update MTL DMC to v2.12
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX210
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX211
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX203
+    - iwlwifi: linux-firmware: Update firmware file for Intel Bluetooth AX101
+    - realtek: rtw88: 8822c: Update normal firmware to v9.9.15
+    - amd-graphics: amdgpu: Update DCN 3.1.4 firmware
+    - amd-graphics: amdgpu: Update GC 11.0.1 firmware
+    - amd-graphics: amdgpu: Update PSP 13.0.4 firmware
+    - iwlwifi: update 9000-family firmwares to core78-32
+    - misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+      (MT7922)
+    - misc-nonfree: linux-firmware: update firmware for MT7922 WiFi device
+    - misc-nonfree: nvidia: update Tu10x and Tu11x signed firmware to support
+      newer Turing HW
+
+  [ Salvatore Bonaccorso ]
+  * realtek: rtw89: 8852b: add format-1 fw v0.29.26.0
+  * amd-graphics: amdgpu: Add GC 11.0.4 firmware
+  * amd-graphics: amdgpu: Add PSP 13.0.11 firmware
+  * Update module info from linux 6.3.0-1 on amd64
+
+  [ Ben Hutchings ]
+  * Update to linux-support 6.3.0-1
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 17 Jun 2023 21:30:15 +0200
+
+firmware-nonfree (20230310-1~exp2) experimental; urgency=medium
+
+  * intel-sound: intel: avs: Add AudioDSP base firmware for SKL-based platforms
+    (Closes: #1035281)
+  * intel-sound: intel: avs: Add AudioDSP base firmware for APL-based platforms
+    (Closes: #1035281)
+  * intel-sound: intel: avs: Add AudioDSP base firmware for CNL-based platforms
+    (Closes: #1035281)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 02 May 2023 18:03:22 +0200
+
+firmware-nonfree (20230310-1~exp1) experimental; urgency=medium
+
+  * New upstream version:
+    - amdgpu: Update GC 11.0.1 firmware
+    - ath10k: WCN3990 hw1.0: update board-2.bin
+    - ath11k: WCN6750 hw1.0: update board-2.bin
+    - ath11k: WCN6855 hw2.0: update board-2.bin
+    - rtl_bt: Update RTL8852C BT USB firmware to 0xD7B8_FABF
+    - rtl_bt: Update RTL8822C BT UART firmware to 0x05C6_D2E3
+    - rtl_bt: Update RTL8822C BT USB firmware to 0x0CC6_D2E3
+
+  [ Salvatore Bonaccorso ]
+  * Exclude ath9k_htc/htc_{7010,9271}-1.4.0.fw files from generated orig
+    tarball
+  * intel-sound: catpt: Add AudioDSP base firmware for BDW platforms
+  * atheros: ath10k: QCA6174 hw3.0: update firmware-sdio-6.bin to version
+    WLAN.RMH.4.4.1-00174
+  * atheros: ath11k: WCN6855 hw2.0: update to
+    WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.23
+  * realtek: rtw89: 8852b: update fw to v0.29.26.0
+  * realtek: rtw89: 8852b: update fw to v0.29.29.0
+  * misc-nonfree: linux-firmware: update firmware for MT7921 WiFi device
+  * misc-nonfree: linux-firmware: update firmware for mediatek bluetooth chip
+    (MT7921)
+  * iwlwifi: iwlwifi: update core69 and core72 firmwares for Ty device
+  * iwlwifi: Add missing stanza for iwlwifi-so-a0-gf4-a0-72.ucode firmware
+  * Update to linux-support 6.1.0-7
+
+  [ Diederik de Haas ]
+  * d/patches/gitignore: Add DEP-3 header
+  * d/README.source: Expand steps to regenerate debian/control
+  * d/config/*/defines: Replace 'wifi' with 'Wi-Fi'
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 01 Apr 2023 20:38:58 +0200
 
 firmware-nonfree (20230210-5) unstable; urgency=medium
 

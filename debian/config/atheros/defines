@@ -52,6 +52,27 @@ files:
  ath10k/WCN3990/hw1.0/firmware-5.bin
  ath10k/WCN3990/hw1.0/board-2.bin
  ath10k/WCN3990/hw1.0/wlanmdsp.mbn
+ ath11k/IPQ5018/hw1.0/board-2.bin
+ ath11k/IPQ5018/hw1.0/m3_fw.b00
+ ath11k/IPQ5018/hw1.0/m3_fw.b01
+ ath11k/IPQ5018/hw1.0/m3_fw.b02
+ ath11k/IPQ5018/hw1.0/m3_fw.flist
+ ath11k/IPQ5018/hw1.0/m3_fw.mdt
+ ath11k/IPQ5018/hw1.0/q6_fw.b00
+ ath11k/IPQ5018/hw1.0/q6_fw.b01
+ ath11k/IPQ5018/hw1.0/q6_fw.b02
+ ath11k/IPQ5018/hw1.0/q6_fw.b03
+ ath11k/IPQ5018/hw1.0/q6_fw.b04
+ ath11k/IPQ5018/hw1.0/q6_fw.b05
+ ath11k/IPQ5018/hw1.0/q6_fw.b07
+ ath11k/IPQ5018/hw1.0/q6_fw.b08
+ ath11k/IPQ5018/hw1.0/q6_fw.b09
+ ath11k/IPQ5018/hw1.0/q6_fw.b10
+ ath11k/IPQ5018/hw1.0/q6_fw.b11
+ ath11k/IPQ5018/hw1.0/q6_fw.b13
+ ath11k/IPQ5018/hw1.0/q6_fw.b14
+ ath11k/IPQ5018/hw1.0/q6_fw.flist
+ ath11k/IPQ5018/hw1.0/q6_fw.mdt
  ath11k/IPQ6018/hw1.0/board-2.bin
  ath11k/IPQ6018/hw1.0/m3_fw.b00
  ath11k/IPQ6018/hw1.0/m3_fw.b01
@@ -149,11 +170,20 @@ files:
  qca/crnv21.bin
  qca/crnv32.bin
  qca/crnv32u.bin
+ qca/hpbtfw21.tlv
+ qca/hpnv21.bin
+ qca/hpnv21g.bin
+ qca/hpnv21.301
+ qca/hpnv21.302
+ qca/hpnv21g.301
+ qca/hpnv21g.302
  qca/htbtfw20.tlv
  qca/htnv20.bin
  qca/msbtfw11.mbn
  qca/msbtfw11.tlv
  qca/msnv11.bin
+ qca/msnv11.b09
+ qca/msnv11.b0a
  qca/nvm_00130300.bin
  qca/nvm_00130302.bin
  qca/nvm_00230302.bin
@@ -300,7 +330,7 @@ version: WLAN.RM.4.4.1-00157-QCARMSWPZ-1
 
 [ath10k/QCA6174/hw3.0/firmware-sdio-6.bin_base]
 desc: Qualcomm Atheros QCA6174 SDIO rev 3.0 firmware
-version: WLAN.RMH.4.4.1-00077
+version: WLAN.RMH.4.4.1-00174
 
 [ath10k/QCA9377/hw1.0/board.bin_base]
 desc: Qualcomm Atheros QCA9377 rev 1.0 board configuration
@@ -375,133 +405,221 @@ desc: Qualcomm Atheros WCN3990 board-2.bin firmware
 [ath10k/WCN3990/hw1.0/wlanmdsp.mbn_base]
 desc: Qualcomm Atheros WCN3990 wlan DSP firmware
 
+[ath11k/IPQ5018/hw1.0/board-2.bin_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax board-2.bin firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/m3_fw.b00_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax m3_fw.b00 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/m3_fw.b01_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax m3_fw.b01 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/m3_fw.b02_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax m3_fw.b02 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/m3_fw.flist_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax m3_fw.flist firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/m3_fw.mdt_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax m3_fw.mdt firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b00_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b00 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b01_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b01 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b02_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b02 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b03_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b03 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b04_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b04 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b05_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b05 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b07_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b07 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b08_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b08 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b09_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b09 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b10_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b10 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b11_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b11 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b12_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b12 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b13_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b13 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.b14_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.b14 firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.flist_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.flist firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
+[ath11k/IPQ5018/hw1.0/q6_fw.mdt_base]
+desc: Qualcomm Atheros IPQ5018 802.11ax q6_fw.mdt firmware
+version: WLAN.HK.2.6.0.1-00861-QCAHKSWPL_SILICONZ-1
+
 [ath11k/IPQ6018/hw1.0/board-2.bin_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax board-2.bin firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/m3_fw.b00_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax m3_fw.b00 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/m3_fw.b01_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax m3_fw.b01 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/m3_fw.b02_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax m3_fw.b02 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/m3_fw.flist_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax m3_fw.flist firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/m3_fw.mdt_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax m3_fw.mdt firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b00_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b00 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b01_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b01 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b02_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b02 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b03_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b03 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b04_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b04 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b05_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b05 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b07_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b07 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.b08_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.b08 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.flist_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.flist firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ6018/hw1.0/q6_fw.mdt_base]
 desc: Qualcomm Atheros IPQ6018 802.11ax q6_fw.mdt firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/board-2.bin_base]
 desc: Qualcomm Atheros IPQ8074 board firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/m3_fw.b00_base]
 desc: Qualcomm Atheros IPQ8074 m3_fw.b00 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/m3_fw.b01_base]
 desc: Qualcomm Atheros IPQ8074 m3_fw.b01 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/m3_fw.b02_base]
 desc: Qualcomm Atheros IPQ8074 m3_fw.b02 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/m3_fw.flist_base]
 desc: Qualcomm Atheros IPQ8074 m3_fw.flist firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/m3_fw.mdt_base]
 desc: Qualcomm Atheros IPQ8074 m3_fw.mdt firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b00_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b00 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b01_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b01 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b02_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b02 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b03_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b03 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b04_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b04 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b05_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b05 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b07_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b07 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.b08_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.b08 firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.flist_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.list firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/IPQ8074/hw2.0/q6_fw.mdt_base]
 desc: Qualcomm Atheros IPQ8074 q6_fw.mdt firmware
-version: WLAN.HK.2.1.0.1-01238-QCAHKSWPL_SILICONZ-2
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/QCA6390/hw2.0/board-2.bin_base]
 desc: Qualcomm Atheros QCA6390 board-2 firmware
@@ -517,63 +635,63 @@ version: WLAN.HST.1.0.1-01740-QCAHSTSWPLZ_V2_TO_X86-1
 
 [ath11k/QCN9074/hw1.0/amss.bin_base]
 desc: Qualcomm Atheros QCN9074 amss firmware
-version: WLAN.HK.2.5.0.1-01208-QCAHKSWPL_SILICONZ-1
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/QCN9074/hw1.0/board-2.bin_base]
 desc: Qualcomm Atheros QCN9074 board-2 firmware
-version: WLAN.HK.2.5.0.1-01208-QCAHKSWPL_SILICONZ-1
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/QCN9074/hw1.0/m3.bin_base]
 desc: Qualcomm Atheros QCN9074 m3 firmware
-version: WLAN.HK.2.5.0.1-01208-QCAHKSWPL_SILICONZ-1
+version: WLAN.HK.2.7.0.1-01744-QCAHKSWPL_SILICONZ-1
 
 [ath11k/WCN6750/hw1.0/board-2.bin_base]
 desc: Qualcomm Atheros WCN6750 board-2 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b00_base]
 desc: Qualcomm Atheros WCN6750 wpss.b00 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b01_base]
 desc: Qualcomm Atheros WCN6750 wpss.b01 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b02_base]
 desc: Qualcomm Atheros WCN6750 wpss.b02 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b03_base]
 desc: Qualcomm Atheros WCN6750 wpss.b03 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b04_base]
 desc: Qualcomm Atheros WCN6750 wpss.b04 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b05_base]
 desc: Qualcomm Atheros WCN6750 wpss.b05 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b06_base]
 desc: Qualcomm Atheros WCN6750 wpss.b06 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b07_base]
 desc: Qualcomm Atheros WCN6750 wpss.b07 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.b08_base]
 desc: Qualcomm Atheros WCN6750 wpss.b08 firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6750/hw1.0/wpss.mdt_base]
 desc: Qualcomm Atheros WCN6750 wpss.mdt firmware
-version: WLAN.MSL.1.0.1-00887-QCAMSLSWPLZ-1
+version: WLAN.MSL.1.0.1-01160-QCAMSLSWPLZ-1
 
 [ath11k/WCN6855/hw2.0/amss.bin_base]
 desc: Qualcomm Atheros WCN6855 amss firmware
-version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.9
+version: WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.23
 
 [ath11k/WCN6855/hw2.0/board-2.bin_base]
 desc: Qualcomm Atheros WCN6855 board-2 firmware
@@ -611,6 +729,34 @@ desc: Qualcomm WCN3991 Bluetooth NVM configuration
 [qca/crnv32u.bin_base]
 desc: Qualcomm WCN3991 Bluetooth NVM configuration
 
+[qca/hpbtfw21.tlv_base]
+desc: Qualcomm QCA2066 Bluetooth RAM FW firmware
+version: 2.1.0-00538
+
+[qca/hpnv21.bin_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21g.bin_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21.301_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21.302_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21g.301_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
+[qca/hpnv21g.302_base]
+desc: Qualcomm QCA2066 Bluetooth NVM firmware
+version: 2.1.0-00538
+
 [qca/htbtfw20.tlv_base]
 desc: Qualcomm QCA6390 Bluetooth HTBFW20 firmware
 version: v2.0.0-00874
@@ -627,6 +773,12 @@ desc: Qualcomm WCN6750 Bluetooth TLV RAM fw dump
 
 [qca/msnv11.bin_base]
 desc: Qualcomm WCN6750 Bluetooth NVM fw dump
+
+[qca/msnv11.b09_base]
+desc: Qualcomm WCN6750 Bluetooth NVM fw dump for board-id 09
+
+[qca/msnv11.b0a_base]
+desc: Qualcomm WCN6750 Bluetooth NVM fw dump for board-id 0a
 
 [qca/nvm_00130300.bin_base]
 desc: Qualcomm Atheros QCA61x4 version 3.0 UART BT NVM configuration

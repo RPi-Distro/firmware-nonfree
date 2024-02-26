@@ -53,8 +53,16 @@ files:
  brcm/brcmfmac43455-sdio.bin
  brcm/brcmfmac43455-sdio.clm_blob
  brcm/brcmfmac43455-sdio.pine64,pinebook-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,pinenote-v1.1.txt
+ brcm/brcmfmac43455-sdio.pine64,pinenote-v1.2.txt
  brcm/brcmfmac43455-sdio.pine64,pinephone-pro.txt
+ brcm/brcmfmac43455-sdio.pine64,quartz64-a.txt
  brcm/brcmfmac43455-sdio.pine64,quartz64-b.txt
+ brcm/brcmfmac43455-sdio.pine64,rockpro64-v2.0.txt
+ brcm/brcmfmac43455-sdio.pine64,rockpro64-v2.1.txt
+ brcm/brcmfmac43455-sdio.pine64,soquartz-model-a.txt
+ brcm/brcmfmac43455-sdio.pine64,soquartz-cm4io.txt
+ brcm/brcmfmac43455-sdio.pine64,soquartz-blade.txt
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.bin
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
