@@ -274,6 +274,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * realtek: Remove configuration for RTL8192E firmware which was removed
     upstream
   * Build-Depend on rdfind, needed by new version of copy-firmware.sh
+  * d/b/gencontrol.py: Delete unused files_real template variable
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 

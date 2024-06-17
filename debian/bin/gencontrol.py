@@ -248,8 +248,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         makeflags['FILES'] = ' '.join([f'"{source}":"{dest}"'
                                        for dest, source in sorted(files_real.items())])
-        vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
-
         makeflags['LINKS'] = ' '.join([f'"{link}":"{target}"'
                                        for link, target in sorted(links.items())])
 
