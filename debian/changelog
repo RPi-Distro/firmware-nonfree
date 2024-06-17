@@ -2,6 +2,7 @@ firmware-nonfree (20230625-3~exp4) UNRELEASED; urgency=medium
 
   * d/b/release-update: Sort and de-dupe upstream changelog
   * d/b/release-update: Filter upstream changelog to files that we include
+  * d/b/release-update: Strip useless 'linux-firmware:' prefix
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 

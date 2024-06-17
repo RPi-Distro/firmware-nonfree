@@ -52,6 +52,10 @@ def print_stable_log(log, cur_ver, new_ver, files_include):
             as proc:
         lines.extend(proc.stdout.readlines())
 
+    # Strip useless subject prefix
+    strip_re = re.compile(r'^linux-firmware: *')
+    lines = [strip_re.sub('', line) for line in lines]
+
     # Sort and de-dupe lines
     lines.sort(key=str.casefold)
     last_line = None
