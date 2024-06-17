@@ -51,6 +51,7 @@ extract-source:
         python3-dacite \
         python3-jinja2 \
         quilt \
+        rdfind \
         rsync \
         $(debian/rules linux-support-name)
 
