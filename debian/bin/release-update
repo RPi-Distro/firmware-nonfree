@@ -9,11 +9,20 @@ import locale
 from debian_linux.debian import Changelog, Version
 
 def print_stable_log(log, cur_ver, new_ver):
-    log.flush() # serialise our output with git's
-    subprocess.check_call(['git', 'log', '--reverse', '--no-merges',
-                           '--pretty=    - %s',
+    with subprocess.Popen(['git', 'log', '--no-merges', '--pretty=%s',
                            '{}..{}'.format(cur_ver, new_ver)],
-                          stdout=log)
+                          stdout=subprocess.PIPE, text=True) \
+            as proc:
+        lines = proc.stdout.readlines()
+
+    # Sort and de-dupe lines
+    lines.sort(key=str.casefold)
+    last_line = None
+    for line in lines:
+        if line != last_line:
+            log.write(f'    - {line}')
+            last_line = line
+
 
 def main(repo, new_ver):
     locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
