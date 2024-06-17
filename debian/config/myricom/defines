@@ -4,35 +4,3 @@ longdesc: Myricom Myri-10G Ethernet adapters supported by the myri10ge driver
 support: initramfs-tools
 files:
  myri10ge_*
-
-[myri10ge_eth_z8e.dat_base]
-desc: Myri-10G firmware (aligned)
-version: 1.4.57
-
-[myri10ge_eth_big_z8e.dat_base]
-desc: Myri-10G firmware (aligned, big RX ring)
-version: 1.4.57
-
-[myri10ge_ethp_z8e.dat_base]
-desc: Myri-10G firmware (unaligned)
-version: 1.4.57
-
-[myri10ge_ethp_big_z8e.dat_base]
-desc: Myri-10G firmware (unaligned, big RX ring)
-version: 1.4.57
-
-[myri10ge_rss_eth_z8e.dat_base]
-desc: Myri-10G firmware (aligned, RSS)
-version: 1.4.57
-
-[myri10ge_rss_eth_big_z8e.dat_base]
-desc: Myri-10G firmware (aligned, RSS, big RX rings)
-version: 1.4.57
-
-[myri10ge_rss_ethp_z8e.dat_base]
-desc: Myri-10G firmware (unaligned, RSS)
-version: 1.4.57
-
-[myri10ge_rss_ethp_big_z8e.dat_base]
-desc: Myri-10G firmware (unaligned, RSS, big RX rings)
-version: 1.4.57

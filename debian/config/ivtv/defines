@@ -15,18 +15,3 @@ files:
  v4l-cx2341x-init.mpg
  v4l-pvrusb2-24xxx-01.fw
  v4l-pvrusb2-29xxx-01.fw
-
-[v4l-cx2341x-dec.fw_base]
-desc: Conexant CX23415/CX23416 MPEG codec (decoder)
-
-[v4l-cx2341x-enc.fw_base]
-desc: Conexant CX23415/CX23416 MPEG codec (encoder)
-
-[v4l-cx2341x-init.mpg_base]
-desc: Conexant CX23415/CX23416 MPEG codec (initialization)
-
-[v4l-pvrusb2-24xxx-01.fw_base]
-desc: Hauppauge PVR USB2 24xxx models
-
-[v4l-pvrusb2-29xxx-01.fw_base]
-desc: Hauppauge PVR USB2 29xxx models

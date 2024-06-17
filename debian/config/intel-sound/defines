@@ -10,38 +10,3 @@ files:
  intel/catpt/bdw/dsp_basefw.bin
 files-excluded:
  intel/dsp_fw_*_v*.bin
-
-[intel/fw_sst_0f28.bin_base]
-desc: Intel "Bay Trail" SST DSP firmware
-version: 01.0C.00.01
-
-[intel/fw_sst_0f28.bin-48kHz_i2s_master_base]
-desc: Intel "Bay Trail" SST DSP firmware
-
-[intel/fw_sst_0f28_ssp0.bin_base]
-desc: Intel "Bay Trail" SST DSP firmware
-version: 01.0C.00.01
-
-[intel/fw_sst_22a8.bin_base]
-desc: Intel "Cherry Trail"/"Braswell" SST DSP firmware
-version: 01.0B.02.02
-
-[intel/avs/apl/dsp_basefw.bin_base]
-desc: Intel AudioDSP driver base firmware for APL-based platforms
-version: 9.22.01.4908
-
-[intel/avs/cnl/dsp_basefw.bin_base]
-desc: Intel AudioDSP driver base firmware for CNL-based platforms
-version: 10.23.00.8551
-
-[intel/avs/skl/dsp_basefw.bin_base]
-desc: Intel AudioDSP driver base firmware for SKL-based platforms
-version: 9.21.00.4899
-
-[intel/avs/skl/dsp_mod_7CAD0808-AB10-CD23-EF45-12AB34CD56EF.bin_base]
-desc: Intel AudioDSP driver base firmware for SKL-based platforms
-version: 9.21.00.4899
-
-[intel/catpt/bdw/dsp_basefw.bin_base]
-desc: Intel AudioDSP base firmware for BDW platforms
-version: 44b81c4d5397a63108356f58f036953d9b288c4e
