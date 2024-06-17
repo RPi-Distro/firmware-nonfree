@@ -8,12 +8,49 @@ import locale
 
 from debian_linux.debian import Changelog, Version
 
-def print_stable_log(log, cur_ver, new_ver):
+from config import Config, pattern_to_re
+
+
+# Convert Python glob pattern to Git patterns.  Notable difference is
+# that in Python globbing '**/' matches a directory and its
+# descendants, but in Git it only matches descendants.  Assume there
+# is at most one '**' in a pattern.
+def pattern_to_git_patterns(pattern):
+    yield f':{pattern}'
+    if '**/' in pattern:
+        yield f':{ pattern.replace("**/", "") }'
+
+
+# Convert Python glob pattern to Git reegexp.  This assumes
+# pattern_to_re() produces compatible regular expressions except for
+# the use of '(?:...)' which we fix up.
+def pattern_to_git_re(pattern):
+    return pattern_to_re(pattern).pattern.replace('(?:', '(')
+
+
+def print_stable_log(log, cur_ver, new_ver, files_include):
+    inc_git_patterns = []
+    inc_git_res = []
+    for pattern in files_include:
+        inc_git_patterns.extend(pattern_to_git_patterns(pattern))
+        inc_git_res.append(pattern_to_git_re(pattern))
+
+    git_rev_range = f'{cur_ver}..{new_ver}'
+
+    # List commits changing files that we include
     with subprocess.Popen(['git', 'log', '--no-merges', '--pretty=%s',
-                           '{}..{}'.format(cur_ver, new_ver)],
+                           git_rev_range, '--'] + inc_git_patterns,
                           stdout=subprocess.PIPE, text=True) \
             as proc:
         lines = proc.stdout.readlines()
+
+    # List commits changing links that we include
+    with subprocess.Popen(['git', 'log', '--no-merges', '--pretty=%s',
+                           '-G', f'^Link: *({ "|".join(inc_git_res) }) ->',
+                           git_rev_range, '--', 'WHENCE'],
+                          stdout=subprocess.PIPE, text=True) \
+            as proc:
+        lines.extend(proc.stdout.readlines())
 
     # Sort and de-dupe lines
     lines.sort(key=str.casefold)
@@ -34,6 +71,16 @@ def main(repo, new_ver):
     # Nothing to update
     if cur_ver == new_ver:
         sys.exit(0)
+
+    # Get list of file patterns that we include.  Don't get exclusions
+    # because in some cases files are excluded from one binary package
+    # so they can be included in another, and I don't think we can
+    # construct a single pattern list that exactly matches our include/
+    # exclude behaviour.
+    config = Config()
+    files_include = sum((config['base', package]['files']
+                         for package in config['base',]['packages']),
+                        [])
 
     new_pkg_ver = new_ver + '-1'
 
@@ -77,12 +124,14 @@ def main(repo, new_ver):
                     # Case 2(a)
                     if line_no == 3 and line != intro_line:
                         new_log.write(intro_line)
-                        print_stable_log(new_log, cur_ver, new_ver)
+                        print_stable_log(new_log, cur_ver, new_ver,
+                                         files_include)
                         new_log.write('\n')
                         inserted = True
                     # Case 1 or 2(b)
                     elif line_no > 3 and line == '\n':
-                        print_stable_log(new_log, cur_ver, new_ver)
+                        print_stable_log(new_log, cur_ver, new_ver,
+                                         files_include)
                         inserted = True
 
                 # Check that we inserted before hitting the end of the
