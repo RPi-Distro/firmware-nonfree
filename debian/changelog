@@ -270,6 +270,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
     - wfx: update to firmware 3.17
     - WHENCE: add symlink for BananaPi M64
     - WHENCE: Link the Raspberry Pi CM4 and 5B to the 4B
+  * d/patches: Refresh gitignore.patch
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 
