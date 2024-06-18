@@ -1,3 +1,9 @@
+firmware-nonfree (20230625-3~exp2) experimental; urgency=medium
+
+  * qcom-soc: Re-fix lintian override for lib/firmware/qcom/apq8096/modem.mbn
+
+ -- Ben Hutchings <benh@debian.org>  Tue, 18 Jun 2024 02:33:12 +0200
+
 firmware-nonfree (20230625-3~exp1) experimental; urgency=medium
 
   [ Diederik de Haas ]
