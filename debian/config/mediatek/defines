@@ -1,7 +1,6 @@
 [base]
 desc: MediaTek and Ralink chips for networking, SoCs and media
-longdesc:
- MediaTek devices such as ethernet/Wi-Fi/Bluetooth chips, SoCs
+longdesc: MediaTek devices such as ethernet/Wi-Fi/Bluetooth chips, SoCs
  and other chips and devices made by MediaTek and Ralink
 support: initramfs-tools
 conflicts: firmware-misc-nonfree (<< 20230625-3~)

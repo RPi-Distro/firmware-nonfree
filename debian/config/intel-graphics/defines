@@ -1,9 +1,8 @@
 [base]
 desc: Intel Graphics Media Driver chips
-longdesc:
- the Intel Graphics Media Driver aka i915 driver in the Linux kernel.
+longdesc: the Intel Graphics Media Driver aka i915 driver in the Linux kernel.
  This supports the iGPU found in f.e. Broadwell/Skylake/Broxton and
- Apollo/Gemini/Kaby/Coffee/Ice/Tiger/etc Lake CPUs.
+ Apollo/Gemini/Kaby/Coffee/Ice/Tiger/etc Lake CPUs
 conflicts: firmware-misc-nonfree (<< 20230625-3~)
 files:
  i915/*

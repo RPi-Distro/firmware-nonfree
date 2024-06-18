@@ -1,7 +1,6 @@
 [base]
 desc: Nvidia GPU chips
-longdesc:
- Nvidia graphics chips using the nouveau driver
+longdesc: Nvidia graphics chips using the nouveau driver
 conflicts: firmware-misc-nonfree (<< 20230625-3~)
 files:
  nvidia/**/*

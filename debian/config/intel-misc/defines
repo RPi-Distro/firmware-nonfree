@@ -1,10 +1,9 @@
 [base]
 desc: miscellaneous Intel devices and chips
-longdesc:
- miscellaneous Intel devices and chips, which do not belong in the iwlwifi,
- ipw2x00, intel-graphics or intel-sound packages.
+longdesc: miscellaneous Intel devices and chips, which do not belong in the
+ iwlwifi, ipw2x00, intel-graphics or intel-sound packages.
  This includes for example Omni-Path, Ethernet/Network chips/devices,
- QuickAssist Technology crypto accelerators and Visual Sensing Controller.
+ QuickAssist Technology crypto accelerators and Visual Sensing Controller
 conflicts: firmware-misc-nonfree (<< 20230625-3~)
 files:
  hfi1_*
