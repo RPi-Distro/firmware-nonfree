@@ -276,6 +276,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * Build-Depend on rdfind, needed by new version of copy-firmware.sh
   * d/b/gencontrol.py: Delete unused files_real template variable
   * Remove file lists from package descriptions
+  * intel-graphics: Include IPU3 firmware under its new filename
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 
