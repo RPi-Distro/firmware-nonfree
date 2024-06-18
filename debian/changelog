@@ -1,4 +1,4 @@
-firmware-nonfree (20230625-3~exp2) UNRELEASED; urgency=medium
+firmware-nonfree (20230625-3~exp3) UNRELEASED; urgency=medium
 
   * d/b/gencontrol.py: Remove support for encoding file version in filename
   * d/b/gencontrol.py: Remove check for .svn directories
@@ -8,6 +8,12 @@ firmware-nonfree (20230625-3~exp2) UNRELEASED; urgency=medium
   * d/config: Use wildcards in file lists
 
  -- Ben Hutchings <benh@debian.org>  Mon, 17 Jun 2024 19:44:17 +0100
+
+firmware-nonfree (20230625-3~exp2) experimental; urgency=medium
+
+  * qcom-soc: Re-fix lintian override for lib/firmware/qcom/apq8096/modem.mbn
+
+ -- Ben Hutchings <benh@debian.org>  Tue, 18 Jun 2024 02:33:12 +0200
 
 firmware-nonfree (20230625-3~exp1) experimental; urgency=medium
 

@@ -2,5 +2,8 @@
 firmware-qcom-soc: arch-independent-package-contains-binary-or-object *lib/firmware/*
 firmware-qcom-soc: statically-linked-binary *lib/firmware/*
 # apq8096 modem.mbn issues
-firmware-qcom-soc: binary-with-bad-dynamic-table [*lib/firmware/qcom/apq8096/modem.mbn]
+# The binary-with-bad-dynamic-table override needs to match the
+# filename with or without brackets, until ftp-master has an upgraded
+# version of lintian!
+firmware-qcom-soc: binary-with-bad-dynamic-table *lib/firmware/qcom/apq8096/modem.mbn*
 firmware-qcom-soc: elf-error In program headers: * [*lib/firmware/qcom/apq8096/modem.mbn]
