@@ -16,6 +16,7 @@ class Config(dict):
             'files': SchemaItemList(),
             'files-excluded': SchemaItemList(),
             'support': SchemaItemList(),
+            'usrmovemitigation': SchemaItemList(),
         }
     }
 

@@ -8,6 +8,7 @@ firmware-nonfree (20230625-3~exp3) UNRELEASED; urgency=medium
     (Closes: #1035505)
   * d/config: Use wildcards in file lists
   * Use @package@ in new maintainer script templates instead of #PACKAGE#
+  * Set the 'usrmovemitigation' config field to list type
 
   [ Helmut Grohne ]
   * Mitigate loss of files due to restructuring and /usr-move

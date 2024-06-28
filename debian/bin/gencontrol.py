@@ -328,7 +328,7 @@ You must agree to the terms of this license before it is installed."""
             packages_binary[0]['Pre-Depends'] = PackageRelation('debconf | debconf-2.0')
 
         if config_entry.get('usrmovemitigation', []):
-            vars['files'] = config_entry['usrmovemitigation']
+            vars['files'] = ' '.join(config_entry['usrmovemitigation'])
             for script in ("preinst", "postinst"):
                 script_template = self.templates.get(script + '.usrmovemitigation')
                 script_content = self.substitute(script_template, vars)
