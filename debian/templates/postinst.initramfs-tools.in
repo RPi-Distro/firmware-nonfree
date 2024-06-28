@@ -1,7 +1,3 @@
-#!/bin/sh
-
-set -e
-
 case "$1" in
 	configure)
 		dpkg-trigger --no-await update-initramfs
@@ -15,5 +11,3 @@ case "$1" in
 		exit 1
 	;;
 esac
-
-#DEBHELPER#

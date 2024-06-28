@@ -1,7 +1,3 @@
-#!/bin/sh
-
-set -e
-
 . /usr/share/debconf/confmodule
 db_version 2.0
 db_capb backup
@@ -72,7 +68,3 @@ if [ "$RET" != "true" ]; then
     RESULT=$?
     [ "$RESULT" = 0 ] || exit $RESULT
 fi
- 
-#DEBHELPER#
-
-exit 0

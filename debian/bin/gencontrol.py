@@ -304,15 +304,16 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         packages_binary[0]['Description'].append_pre(files_desc)
 
+        scripts = {}
+
         if 'initramfs-tools' in config_entry.get('support', []):
             postinst = self.templates.get('postinst.initramfs-tools')
-            open("debian/firmware-%s.postinst" % package, 'w').write(self.substitute(postinst, vars))
+            scripts.setdefault("postinst", []).append(self.substitute(postinst, vars))
 
         if 'license-accept' in config_entry:
             license = open("%s/LICENSE.install" % package_dir, 'r').read()
             preinst = self.templates.get('preinst.license')
-            preinst_filename = "debian/firmware-%s.preinst" % package
-            open(preinst_filename, 'w').write(self.substitute(preinst, vars))
+            scripts.setdefault("preinst", []).append(self.substitute(preinst, vars))
 
             templates = self.templates.get_templates_control('templates.license', vars)
             templates[0]['Description'].append(re.sub('\n\n', '\n.\n', license))
@@ -325,6 +326,11 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 You must agree to the terms of this license before it is installed."""
 % vars['license-title'])
             packages_binary[0]['Pre-Depends'] = PackageRelation('debconf | debconf-2.0')
+
+        for script, script_contents in scripts.items():
+            script_contents.insert(0, "#!/bin/sh\n\nset -e\n")
+            script_contents.append("#DEBHELPER#\n\nexit 0\n")
+            open("debian/firmware-%s.%s" % (package, script), "w").write("\n".join(script_contents))
 
         packages.extend(packages_binary)
 
