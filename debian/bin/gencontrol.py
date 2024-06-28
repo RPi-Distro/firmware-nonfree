@@ -328,10 +328,12 @@ You must agree to the terms of this license before it is installed."""
             packages_binary[0]['Pre-Depends'] = PackageRelation('debconf | debconf-2.0')
 
         if config_entry.get('usrmovemitigation', []):
+            vars['files'] = config_entry['usrmovemitigation']
             for script in ("preinst", "postinst"):
                 script_template = self.templates.get(script + '.usrmovemitigation')
-                script_content = self.substitute(script_template, dict(files=config_entry["usrmovemitigation"]))
+                script_content = self.substitute(script_template, vars)
                 scripts.setdefault(script, []).append(script_content)
+            del vars['files']
 
         for script, script_contents in scripts.items():
             script_contents.insert(0, "#!/bin/sh\n\nset -e\n")
