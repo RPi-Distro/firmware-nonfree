@@ -33,6 +33,7 @@ Files-Excluded:
  ess/maestro3_*.fw
  korg/k1212.dsp
  lgs8g75.fw
+ mediatek/mt7996/*
  mts_mt9234*.fw
  myricom/lanai.bin
  qlogic/isp1000.bin
