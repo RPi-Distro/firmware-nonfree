@@ -1,11 +1,18 @@
 firmware-nonfree (20230625-3~exp3) UNRELEASED; urgency=medium
 
+  [ Ben Hutchings ]
   * d/b/gencontrol.py: Remove support for encoding file version in filename
   * d/b/gencontrol.py: Remove check for .svn directories
   * d/b/gencontrol.py: Use path objects where possible
   * d/b/{gencontrol,check_upstream}.py: Support wildcards in file lists
     (Closes: #1035505)
   * d/config: Use wildcards in file lists
+  * Use @package@ in new maintainer script templates instead of #PACKAGE#
+  * Set the 'usrmovemitigation' config field to list type
+
+  [ Helmut Grohne ]
+  * Mitigate loss of files due to restructuring and /usr-move
+    (DEP17 P1, Closes: #1073832)
 
  -- Ben Hutchings <benh@debian.org>  Mon, 17 Jun 2024 19:44:17 +0100
 

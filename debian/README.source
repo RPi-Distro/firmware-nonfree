@@ -79,6 +79,8 @@ Optional metadata:
 [base] replaces: Used as Replaces field
 [base] conflicts: Used as Conflicts field
 [base] provides: Used as Provides field
+[base] usrmergemitigation: List of firmware files that require protective
+                           diversions
 
 Optional per-file metadata:
 

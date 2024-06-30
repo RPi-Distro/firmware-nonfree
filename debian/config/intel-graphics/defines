@@ -4,11 +4,131 @@ longdesc:
  the Intel Graphics Media Driver aka i915 driver in the Linux kernel.
  This supports the iGPU found in f.e. Broadwell/Skylake/Broxton and
  Apollo/Gemini/Kaby/Coffee/Ice/Tiger/etc Lake CPUs.
-replaces: firmware-misc-nonfree (<< 20230625-3~)
-breaks: firmware-misc-nonfree (<< 20230625-3~)
+conflicts: firmware-misc-nonfree (<< 20230625-3~)
 files:
  i915/*
  intel/irci_*
+usrmovemitigation:
+ i915/adlp_dmc.bin
+ i915/adlp_dmc_ver2_09.bin
+ i915/adlp_dmc_ver2_10.bin
+ i915/adlp_dmc_ver2_12.bin
+ i915/adlp_dmc_ver2_14.bin
+ i915/adlp_dmc_ver2_16.bin
+ i915/adlp_guc_62.0.3.bin
+ i915/adlp_guc_69.0.3.bin
+ i915/adlp_guc_70.1.1.bin
+ i915/adlp_guc_70.bin
+ i915/adls_dmc_ver2_01.bin
+ i915/bxt_dmc_ver1.bin
+ i915/bxt_dmc_ver1_07.bin
+ i915/bxt_guc_32.0.3.bin
+ i915/bxt_guc_33.0.0.bin
+ i915/bxt_guc_49.0.1.bin
+ i915/bxt_guc_62.0.0.bin
+ i915/bxt_guc_69.0.3.bin
+ i915/bxt_guc_70.1.1.bin
+ i915/bxt_guc_ver8_7.bin
+ i915/bxt_guc_ver9_29.bin
+ i915/bxt_huc_2.0.0.bin
+ i915/bxt_huc_ver01_07_1398.bin
+ i915/bxt_huc_ver01_8_2893.bin
+ i915/cml_guc_33.0.0.bin
+ i915/cml_guc_49.0.1.bin
+ i915/cml_guc_62.0.0.bin
+ i915/cml_guc_69.0.3.bin
+ i915/cml_guc_70.1.1.bin
+ i915/cml_huc_4.0.0.bin
+ i915/cnl_dmc_ver1_07.bin
+ i915/dg1_dmc_ver2_02.bin
+ i915/dg1_guc_49.0.1.bin
+ i915/dg1_guc_62.0.0.bin
+ i915/dg1_guc_69.0.3.bin
+ i915/dg1_guc_70.1.1.bin
+ i915/dg1_guc_70.bin
+ i915/dg1_huc.bin
+ i915/dg1_huc_7.7.1.bin
+ i915/dg1_huc_7.9.3.bin
+ i915/dg2_dmc_ver2_06.bin
+ i915/dg2_dmc_ver2_07.bin
+ i915/dg2_dmc_ver2_08.bin
+ i915/dg2_guc_70.1.2.bin
+ i915/dg2_guc_70.4.1.bin
+ i915/dg2_guc_70.bin
+ i915/ehl_guc_33.0.4.bin
+ i915/ehl_guc_49.0.1.bin
+ i915/ehl_guc_62.0.0.bin
+ i915/ehl_guc_69.0.3.bin
+ i915/ehl_guc_70.1.1.bin
+ i915/ehl_huc_9.0.0.bin
+ i915/glk_dmc_ver1_04.bin
+ i915/glk_guc_32.0.3.bin
+ i915/glk_guc_33.0.0.bin
+ i915/glk_guc_49.0.1.bin
+ i915/glk_guc_62.0.0.bin
+ i915/glk_guc_69.0.3.bin
+ i915/glk_guc_70.1.1.bin
+ i915/glk_huc_4.0.0.bin
+ i915/glk_huc_ver03_01_2893.bin
+ i915/icl_dmc_ver1_07.bin
+ i915/icl_dmc_ver1_09.bin
+ i915/icl_guc_32.0.3.bin
+ i915/icl_guc_33.0.0.bin
+ i915/icl_guc_49.0.1.bin
+ i915/icl_guc_62.0.0.bin
+ i915/icl_guc_69.0.3.bin
+ i915/icl_guc_70.1.1.bin
+ i915/icl_huc_9.0.0.bin
+ i915/icl_huc_ver8_4_3238.bin
+ i915/kbl_dmc_ver1.bin
+ i915/kbl_dmc_ver1_01.bin
+ i915/kbl_dmc_ver1_04.bin
+ i915/kbl_guc_32.0.3.bin
+ i915/kbl_guc_33.0.0.bin
+ i915/kbl_guc_49.0.1.bin
+ i915/kbl_guc_62.0.0.bin
+ i915/kbl_guc_69.0.3.bin
+ i915/kbl_guc_70.1.1.bin
+ i915/kbl_guc_ver9_14.bin
+ i915/kbl_guc_ver9_39.bin
+ i915/kbl_huc_4.0.0.bin
+ i915/kbl_huc_ver02_00_1810.bin
+ i915/mtl_dmc.bin
+ i915/rkl_dmc_ver2_02.bin
+ i915/rkl_dmc_ver2_03.bin
+ i915/skl_dmc_ver1.bin
+ i915/skl_dmc_ver1_23.bin
+ i915/skl_dmc_ver1_26.bin
+ i915/skl_dmc_ver1_27.bin
+ i915/skl_guc_32.0.3.bin
+ i915/skl_guc_33.0.0.bin
+ i915/skl_guc_49.0.1.bin
+ i915/skl_guc_62.0.0.bin
+ i915/skl_guc_69.0.3.bin
+ i915/skl_guc_70.1.1.bin
+ i915/skl_guc_ver1.bin
+ i915/skl_guc_ver4.bin
+ i915/skl_guc_ver6.bin
+ i915/skl_guc_ver6_1.bin
+ i915/skl_guc_ver9_33.bin
+ i915/skl_huc_2.0.0.bin
+ i915/skl_huc_ver01_07_1398.bin
+ i915/tgl_dmc_ver2_04.bin
+ i915/tgl_dmc_ver2_06.bin
+ i915/tgl_dmc_ver2_08.bin
+ i915/tgl_dmc_ver2_12.bin
+ i915/tgl_guc_35.2.0.bin
+ i915/tgl_guc_49.0.1.bin
+ i915/tgl_guc_62.0.0.bin
+ i915/tgl_guc_69.0.3.bin
+ i915/tgl_guc_70.1.1.bin
+ i915/tgl_guc_70.bin
+ i915/tgl_huc.bin
+ i915/tgl_huc_7.0.12.bin
+ i915/tgl_huc_7.0.3.bin
+ i915/tgl_huc_7.5.0.bin
+ i915/tgl_huc_7.9.3.bin
+ intel/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
 
 [i915/adlp_dmc.bin_base]
 desc: Intel ADL-P DMC firmware

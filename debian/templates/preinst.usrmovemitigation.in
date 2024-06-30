@@ -1,0 +1,7 @@
+if [ "$1" = "upgrade" ] || [ "$1" = "install" ]; then
+	for f in @files@; do
+		dpkg-divert --package firmware-@package@ --no-rename --quiet \
+			--divert "/lib/firmware/$f.usr-is-merged" \
+			--add "/lib/firmware/$f"
+	done
+fi

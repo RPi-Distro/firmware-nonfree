@@ -6,8 +6,7 @@ longdesc:
 recommends: firmware-nvidia-graphics, firmware-intel-graphics,
  firmware-intel-misc, firmware-mediatek
 support: initramfs-tools
-breaks: firmware-ti-connectivity (<< 20230625-3~)
-replaces: firmware-ti-connectivity (<< 20230625-3~)
+conflicts: firmware-ti-connectivity (<< 20230625-3~)
 provides: firmware-adi, firmware-ralink
 files:
  agere_*
@@ -56,6 +55,8 @@ files:
  tigon/*
  ueagle-atm/*
  wfx/wfm_wf200_C0.sec
+usrmovemitigation:
+ ti/vpdma-1b8.bin
 
 [agere_ap_fw.bin_base]
 desc: Agere/Prism/Symbol Orinoco firmware (AP mode)
