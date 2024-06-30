@@ -154,6 +154,75 @@ Files-Excluded:
 # No Debian release requires these versions
  iwlwifi-8000C-34.ucode
  iwlwifi-8265-34.ucode
+ iwlwifi-9000-pu-b0-jf-b0-34.ucode
+ iwlwifi-9260-th-b0-jf-b0-34.ucode
+ iwlwifi-Qu-b0-hr-b0-50.ucode
+ iwlwifi-Qu-b0-hr-b0-66.ucode
+ iwlwifi-Qu-b0-hr-b0-73.ucode
+ iwlwifi-Qu-b0-hr-b0-74.ucode
+ iwlwifi-Qu-b0-jf-b0-50.ucode
+ iwlwifi-Qu-b0-jf-b0-66.ucode
+ iwlwifi-Qu-b0-jf-b0-73.ucode
+ iwlwifi-Qu-b0-jf-b0-74.ucode
+ iwlwifi-Qu-c0-hr-b0-50.ucode
+ iwlwifi-Qu-c0-hr-b0-66.ucode
+ iwlwifi-Qu-c0-hr-b0-73.ucode
+ iwlwifi-Qu-c0-hr-b0-74.ucode
+ iwlwifi-Qu-c0-jf-b0-50.ucode
+ iwlwifi-Qu-c0-jf-b0-66.ucode
+ iwlwifi-Qu-c0-jf-b0-73.ucode
+ iwlwifi-Qu-c0-jf-b0-74.ucode
+ iwlwifi-QuZ-a0-hr-b0-50.ucode
+ iwlwifi-QuZ-a0-hr-b0-66.ucode
+ iwlwifi-QuZ-a0-hr-b0-73.ucode
+ iwlwifi-QuZ-a0-hr-b0-74.ucode
+ iwlwifi-QuZ-a0-jf-b0-50.ucode
+ iwlwifi-QuZ-a0-jf-b0-66.ucode
+ iwlwifi-QuZ-a0-jf-b0-73.ucode
+ iwlwifi-QuZ-a0-jf-b0-74.ucode
+ iwlwifi-cc-a0-50.ucode
+ iwlwifi-cc-a0-66.ucode
+ iwlwifi-cc-a0-73.ucode
+ iwlwifi-cc-a0-74.ucode
+ iwlwifi-gl-c0-fm-c0-83.ucode
+ iwlwifi-gl-c0-fm-c0-90.ucode
+ iwlwifi-ma-b0-gf-a0-83.ucode
+ iwlwifi-ma-b0-gf4-a0-83.ucode
+ iwlwifi-ma-b0-hr-b0-83.ucode
+ iwlwifi-so-a0-gf-a0-73.ucode
+ iwlwifi-so-a0-gf-a0-74.ucode
+ iwlwifi-so-a0-gf-a0-77.ucode
+ iwlwifi-so-a0-gf-a0-78.ucode
+ iwlwifi-so-a0-gf-a0-79.ucode
+ iwlwifi-so-a0-gf-a0-81.ucode
+ iwlwifi-so-a0-gf-a0-83.ucode
+ iwlwifi-so-a0-gf-a0-84.ucode
+ iwlwifi-so-a0-gf4-a0-73.ucode
+ iwlwifi-so-a0-gf4-a0-74.ucode
+ iwlwifi-so-a0-gf4-a0-77.ucode
+ iwlwifi-so-a0-gf4-a0-78.ucode
+ iwlwifi-so-a0-gf4-a0-79.ucode
+ iwlwifi-so-a0-gf4-a0-81.ucode
+ iwlwifi-so-a0-gf4-a0-83.ucode
+ iwlwifi-so-a0-gf4-a0-84.ucode
+ iwlwifi-so-a0-hr-b0-73.ucode
+ iwlwifi-so-a0-hr-b0-74.ucode
+ iwlwifi-so-a0-hr-b0-77.ucode
+ iwlwifi-so-a0-hr-b0-79.ucode
+ iwlwifi-so-a0-hr-b0-81.ucode
+ iwlwifi-so-a0-hr-b0-83.ucode
+ iwlwifi-so-a0-hr-b0-84.ucode
+ iwlwifi-so-a0-jf-b0-73.ucode
+ iwlwifi-so-a0-jf-b0-74.ucode
+ iwlwifi-ty-a0-gf-a0-66.ucode
+ iwlwifi-ty-a0-gf-a0-73.ucode
+ iwlwifi-ty-a0-gf-a0-74.ucode
+ iwlwifi-ty-a0-gf-a0-77.ucode
+ iwlwifi-ty-a0-gf-a0-78.ucode
+ iwlwifi-ty-a0-gf-a0-79.ucode
+ iwlwifi-ty-a0-gf-a0-81.ucode
+ iwlwifi-ty-a0-gf-a0-83.ucode
+ iwlwifi-ty-a0-gf-a0-84.ucode
 # No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
