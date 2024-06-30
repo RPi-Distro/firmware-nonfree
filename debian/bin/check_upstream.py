@@ -25,18 +25,21 @@ def is_source_available(section):
     return True
 
 def check_section(section):
-    if re.search(r'^BSD\b'
-                 r'|^GPLv2 or OpenIB\.org BSD\b'
-                 r'|\bPermission\s+is\s+hereby\s+granted\s+for\s+the\s+'
-                 r'distribution\s+of\s+this\s+firmware\s+(?:data|image)\b'
-                 r'(?!\s+as\s+part\s+of)'
-                 r'|\bRedistribution\s+and\s+use\s+in(?:\s+source\s+and)?'
-                 r'\s+binary\s+forms\b'
-                 r'|\bPermission\s+is\s+hereby\s+granted\b[^.]+\sto'
-                 r'\s+deal\s+in\s+the\s+Software\s+without'
-                 r'\s+restriction\b'
-                 r'|\bredistributable\s+in\s+binary\s+form\b',
-                 section.licence):
+    if section.licence is None:
+        # Maybe undistributable
+        return DistState.undistributable
+    elif re.search(r'^BSD\b'
+                   r'|^GPLv2 or OpenIB\.org BSD\b'
+                   r'|\bPermission\s+is\s+hereby\s+granted\s+for\s+the\s+'
+                   r'distribution\s+of\s+this\s+firmware\s+(?:data|image)\b'
+                   r'(?!\s+as\s+part\s+of)'
+                   r'|\bRedistribution\s+and\s+use\s+in(?:\s+source\s+and)?'
+                   r'\s+binary\s+forms\b'
+                   r'|\bPermission\s+is\s+hereby\s+granted\b[^.]+\sto'
+                   r'\s+deal\s+in\s+the\s+Software\s+without'
+                   r'\s+restriction\b'
+                   r'|\bredistributable\s+in\s+binary\s+form\b',
+                   section.licence):
         return (DistState.free if is_source_available(section)
                 else DistState.non_free)
     elif re.match(r'^(?:D|Red)istributable\b', section.licence):
