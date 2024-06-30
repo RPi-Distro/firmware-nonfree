@@ -280,6 +280,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * nvidia-graphics: Override lintian errors for GSP firmware
   * d/b/check_upstream.py: Handle missing Licen[cs]e field
   * d/copyright: Exclude Mediatek MT7996 firmware with unknown licence
+  * d/copyright: Exclude carl9170 firmware (see #1073525)
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 

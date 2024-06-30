@@ -28,6 +28,7 @@ Files-Excluded:
 # - licence is GPL, but source is elsewhere
  atusb/atusb-*.dfu
  atusb/rzusb-*.bin
+ carl9170*
 # - licence is unknown
  acenic/tg?.bin
  ess/maestro3_*.fw
