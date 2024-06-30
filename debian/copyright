@@ -155,6 +155,7 @@ Files-Excluded:
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
+ mrvl/prestera/mvsw_prestera_fw-v3.0.img
  mwl8k/fmimage_8366_ap-1.fw
  mwlwifi/88W8864.bin
  mwlwifi/88W8897.bin
