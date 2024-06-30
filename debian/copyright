@@ -68,8 +68,67 @@ Files-Excluded:
  cxgb4/t5fw-1.15.37.0.bin
 # Nothing seems to reference these
  dpaa2/mc/*
-# No Debian release references this version
+# No Debian release references these versions
+ i915/adlp_dmc_ver2_09.bin
+ i915/adlp_dmc_ver2_10.bin
+ i915/adlp_dmc_ver2_12.bin
+ i915/adlp_dmc_ver2_14.bin
+ i915/adlp_guc_62.0.3.bin
+ i915/bxt_guc_32.0.3.bin
+ i915/bxt_guc_49.0.1.bin
+ i915/bxt_guc_62.0.0.bin
+ i915/bxt_guc_69.0.3.bin
+ i915/bxt_guc_ver8_7.bin
+ i915/bxt_huc_ver01_8_2893.bin
+ i915/cml_guc_49.0.1.bin
+ i915/cml_guc_62.0.0.bin
+ i915/cml_guc_69.0.3.bin
  i915/cnl_dmc_ver1_06.bin
+ i915/dg1_guc_49.0.1.bin
+ i915/dg1_guc_62.0.0.bin
+ i915/dg1_guc_69.0.3.bin
+ i915/dg1_guc_70.1.1.bin
+ i915/dg1_huc_7.7.1.bin
+ i915/dg1_huc_7.9.3.bin
+ i915/dg2_dmc_ver2_06.bin
+ i915/dg2_guc_70.1.2.bin
+ i915/dg2_guc_70.4.1.bin
+ i915/ehl_guc_49.0.1.bin
+ i915/ehl_guc_62.0.0.bin
+ i915/ehl_guc_69.0.3.bin
+ i915/glk_guc_32.0.3.bin
+ i915/glk_guc_49.0.1.bin
+ i915/glk_guc_62.0.0.bin
+ i915/glk_guc_69.0.3.bin
+ i915/glk_huc_ver03_01_2893.bin
+ i915/icl_dmc_ver1_07.bin
+ i915/icl_guc_32.0.3.bin
+ i915/icl_guc_49.0.1.bin
+ i915/icl_guc_62.0.0.bin
+ i915/icl_guc_69.0.3.bin
+ i915/icl_huc_ver8_4_3238.bin
+ i915/kbl_dmc_ver1_01.bin
+ i915/kbl_guc_32.0.3.bin
+ i915/kbl_guc_49.0.1.bin
+ i915/kbl_guc_62.0.0.bin
+ i915/kbl_guc_69.0.3.bin
+ i915/kbl_guc_ver9_14.bin
+ i915/mtl_dmc_ver2_10.bin
+ i915/skl_dmc_ver1_23.bin
+ i915/skl_dmc_ver1_26.bin
+ i915/skl_guc_32.0.3.bin
+ i915/skl_guc_49.0.1.bin
+ i915/skl_guc_62.0.0.bin
+ i915/skl_guc_69.0.3.bin
+ i915/skl_guc_ver1.bin
+ i915/skl_guc_ver4.bin
+ i915/skl_guc_ver6_1.bin
+ i915/tgl_dmc_ver2_04.bin
+ i915/tgl_dmc_ver2_06.bin
+ i915/tgl_guc_49.0.1.bin
+ i915/tgl_guc_62.0.0.bin
+ i915/tgl_huc_7.0.12.bin
+ i915/tgl_huc_7.0.3.bin
 # Nothing seems to reference these versions
  intel/dsp_fw_bxtn_v2219.bin
  intel/dsp_fw_glk_v1814.bin

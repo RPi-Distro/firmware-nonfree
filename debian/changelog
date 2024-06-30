@@ -279,6 +279,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * intel-graphics: Include IPU3 firmware under its new filename
   * Fix doubled spaces and punctuation in some package descriptions
   * intel-graphics: Update description to cover IPU3 firmware
+  * intel-graphics: Exclude firmware versions not referenced by any release
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 
