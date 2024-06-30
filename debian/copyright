@@ -149,6 +149,9 @@ Files-Excluded:
  intel/ibt-18-1.sfi
  intel/ibt-18-2.ddc
  intel/ibt-18-2.sfi
+# Only referenced by staging atomisp driver, and in different dir
+ intel/ipu/shisp_*
+# No Debian release requires these versions
  iwlwifi-8000C-34.ucode
  iwlwifi-8265-34.ucode
 # No Debian release references these versions
