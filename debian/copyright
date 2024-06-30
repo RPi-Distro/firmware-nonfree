@@ -161,6 +161,11 @@ Files-Excluded:
  mwlwifi/88W8897.bin
 # This is for hardware only found in Mellanox switch appliances
  mellanox/mlxsw_spectrum-*
+# Exclude some large Qualcomm binaries until they're needed
+ qcom/qcm2290/*
+ qcom/qrb4210/*
+ qcom/sdm845/Thundercomm/*
+ qcom/sm8250/Thundercomm/*
 # No Debian release references these versions
  qed/qed_init_values-*.bin
  qed/qed_init_values_zipped-8.4.2.0.bin

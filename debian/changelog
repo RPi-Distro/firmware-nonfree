@@ -215,19 +215,11 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
     - qcom: Add Audio firmware for SM8550 QRD
     - qcom: Add Audio firmware for SM8650 MTP
     - qcom: Add Audio firmware for SM8650 QRD
-    - qcom: add firmware for QCM2290 platforms
-    - qcom: add firmware for QRB4210 platforms
-    - qcom: add firmware for the onboard WiFi on qcm2290 / qrb4210
     - qcom: add GPU firmware for QCM2290 / QRB2210
     - qcom: add venus firmware files for v6.0
     - qcom: sc8280xp: LENOVO: remove directory sym link
     - qcom: sc8280xp: LENOVO: Remove execute bits
-    - qcom: sdm845: add RB3 sensors DSP firmware
-    - qcom: sm8250: add RB5 sensors DSP firmware
     - qcom: sm8250: update DSP firmware
-    - qcom: update qcm2290 firmware
-    - qcom: update qcm2290/qrb4210 WiFi firmware file
-    - qcom: update qrb4210 firmware
     - qcom: Update the firmware for Adreno a630 family of GPUs
     - qcom: update venus firmware file for v5.4
     - qcom: Update vpu-1.0 firmware
@@ -281,6 +273,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * intel-graphics: Update description to cover IPU3 firmware
   * intel-graphics: Exclude firmware versions not referenced by any release
   * marvell-prestera: Exclude firmware version not referenced by any release
+  * qcom-soc: Exclude some large new firmware files
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 
