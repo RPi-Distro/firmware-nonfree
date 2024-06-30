@@ -276,6 +276,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * qcom-soc: Exclude some large new firmware files
   * d/copyright: Exclude atomisp2 firmware
   * iwlwifi: Exclude firmware versions not referenced by any release
+  * d/copyright: Exclude more mlxsw firmware
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 

@@ -232,7 +232,7 @@ Files-Excluded:
  mwlwifi/88W8864.bin
  mwlwifi/88W8897.bin
 # This is for hardware only found in Mellanox switch appliances
- mellanox/mlxsw_spectrum-*
+ mellanox/mlxsw*
 # Exclude some large Qualcomm binaries until they're needed
  qcom/qcm2290/*
  qcom/qrb4210/*
