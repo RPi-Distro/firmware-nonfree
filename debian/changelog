@@ -1,5 +1,6 @@
 firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
 
+  [ Ben Hutchings ]
   * d/b/release-update: Sort and de-dupe upstream changelog
   * d/b/release-update: Filter upstream changelog to files that we include
   * d/b/release-update: Strip useless 'linux-firmware:' prefix
@@ -281,6 +282,9 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/b/check_upstream.py: Handle missing Licen[cs]e field
   * d/copyright: Exclude Mediatek MT7996 firmware with unknown licence
   * d/copyright: Exclude carl9170 firmware (see #1073525)
+
+  [ Dylan Aïssi ]
+  * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs
 
  -- Ben Hutchings <benh@debian.org>  Sun, 30 Jun 2024 16:36:58 +0200
 
