@@ -620,6 +620,10 @@ Files: intel/fw_sst_*
 Copyright: 2014, Intel Corporation
 License: binary-redist-Intel-2
 
+Files: intel/ipu/ipu6* intel/vsc/*
+Copyright: 2023-2024, Intel Corporation
+License: binary-redist-Intel
+
 Files: intel/ipu/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
 Copyright: 2017, Intel Corporation
 License: binary-redist-Intel-2
@@ -909,6 +913,10 @@ License: binary-redist-VIA-vt6656
 Files: wfx/wfm_wf200_C0.sec
 Copyright: 2021, Silicon Laboratories, Inc.
 License: binary-redist-Silicon-Labs
+
+Files: xe/*
+Copyright: 2024, Intel Corporation
+License: binary-redist-Intel
 
 License: binary-redist-Abilis
  Permission to use, copy, modify, and/or distribute this software for
