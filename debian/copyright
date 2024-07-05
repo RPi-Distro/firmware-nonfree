@@ -540,6 +540,21 @@ Files: ath11k/*/hw*/board-2.bin ath11k/*/hw*/Notice.txt
 Copyright: 2022-2023 Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-Atheros
 
+Files: ath12k/WCN7850/hw2.0/*
+Copyright: 1986, Gary S. Brown
+           1988, 1990-1991, 1993, The Regents of the University of California
+           2000-2001, Aaron D. Gifford
+           2002-2018, Jouni Malinen
+           2002-2004, Sam Leffler, Errno Consulting
+           2002-2021, The Linux Foundation
+           2008, 2012, Atheros Communications Inc.
+           2011, The FreeBSD Foundation
+           2013, Cozybit, Inc.
+           2015, Pali Rohár
+           2015, 2018, The Android Open Source Project
+           2021-2022, Qualcomm Innovation Center, Inc.
+License: binary-redist-Qualcomm-Atheros
+
 Files: qca/crbtfw*.tlv qca/crnv*.bin qca/hpbtfw21.tlv qca/hpnv21*.*
  qca/htbtfw20.tlv qca/htnv20.bin qca/msbtfw11.* qca/msnv11.*
  qca/nvm_*.bin qca/rampatch_*.bin

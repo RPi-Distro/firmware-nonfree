@@ -14,7 +14,9 @@ files:
  ath6k/**/*
  ath10k/**/*
  ath11k/**/*
+ ath12k/**/*
  qca/**/*
 files-excluded:
  ath10k/**/notice*.txt*
  ath11k/**/Notice.txt
+ ath12k/**/Notice.txt
