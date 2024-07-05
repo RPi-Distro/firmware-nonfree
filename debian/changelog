@@ -283,6 +283,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/copyright: Exclude Mediatek MT7996 firmware with unknown licence
   * d/copyright: Exclude carl9170 firmware (see #1073525)
   * d/copyright: Exclude more undistributable rsi_91x firmware
+  * d/copyright: Exclude undistributable ti-tas2563 and ti-tas2781 firmware
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs

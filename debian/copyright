@@ -21,6 +21,8 @@ Files-Excluded:
  edgeport/*
  ositech/Xilinx7OD.bin
  sb16/*.csp
+ ti/tas2563/*
+ ti/tas2781/*
  ti_3410.fw
  ti_5052.fw
  whiteheat.fw
