@@ -318,6 +318,10 @@ Files: debian/config/ivtv/*.fw debian/config/ivtv/v4l-cx2341x-init.mpg
 Copyright: 2003-2006, Hauppauge
 License: binary-redist-EULA-Hauppuage
 
+Files: airoha/Eth*
+Copyright: 2023-2024, Airoha Inc.
+License: binary-redist-Airoha
+
 Files: amdgpu/*.bin radeon/*.bin
 Copyright: 2009-2023, Advanced Micro Devices, Inc.
 License: binary-redist-AMD-restrictive
@@ -932,6 +936,17 @@ License: binary-redist-Abilis
  PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
  TORTUOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  PERFORMANCE OF THIS SOFTWARE.
+
+License: binary-redist-Airoha
+ Airoha Inc. grants permission to use and redistribute aforementioned firmware
+ files for the use with devices containing Airoha chipsets, but not as part of
+ the Linux kernel or in any other form which would require these files themselves
+ to be covered by the terms of the GNU General Public License or the GNU Lesser
+ General Public License.
+ .
+ These firmware files are distributed in the hope that they will be useful, but
+ are provided WITHOUT ANY WARRANTY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTY
+ OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 
 License: binary-redist-AMD-permissive
  All Rights Reserved.

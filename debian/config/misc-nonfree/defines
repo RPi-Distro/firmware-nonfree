@@ -10,6 +10,7 @@ conflicts: firmware-ti-connectivity (<< 20230625-3~)
 provides: firmware-adi, firmware-ralink
 files:
  agere_*
+ airoha/Eth*
  as102_*
  ctefx.bin
  ctspeq.bin
