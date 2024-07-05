@@ -9,6 +9,7 @@ Files-Excluded:
  emi62/*.fw
  keyspan/mpr.fw
  keyspan/usa*.fw
+ rsi/*
  rsi_91x.fw
  sdd_sagrad_1091_1098.bin
  slicoss/*.sys
