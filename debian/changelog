@@ -290,6 +290,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/copyright: Exclude ixp4xx firmware for no-longer-supported SoCs
   * d/copyright: Exclude firmware for unreleased R-Car H3 ES1 SoC
   * d/b/check_upstream.py: Treat .txt files as being source code
+  * d/b/check_upstream.py: Match another wording of permission to redistribute
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs

@@ -40,7 +40,9 @@ def check_section(section):
                    r'|\bPermission\s+is\s+hereby\s+granted\b[^.]+\sto'
                    r'\s+deal\s+in\s+the\s+Software\s+without'
                    r'\s+restriction\b'
-                   r'|\bredistributable\s+in\s+binary\s+form\b',
+                   r'|\bredistributable\s+in\s+binary\s+form\b'
+                   r'|\bgrants\s+permission\s+to\s+use\s+and\s+redistribute'
+                   r'\s+these\s+firmware\s+files\b',
                    section.licence):
         return (DistState.free if is_source_available(section)
                 else DistState.non_free)
