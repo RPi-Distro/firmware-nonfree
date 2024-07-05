@@ -20,7 +20,9 @@ class DistState(Enum):
 
 def is_source_available(section):
     for file_info in section.files.values():
-        if not (file_info.source or file_info.binary.endswith('.cis')):
+        if not (file_info.source
+                or file_info.binary.endswith('.txt')
+                or file_info.binary.endswith('.cis')):
             return False
     return True
 
