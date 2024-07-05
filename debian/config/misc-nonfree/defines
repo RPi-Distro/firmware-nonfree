@@ -30,6 +30,7 @@ files:
  3com/typhoon.bin
  advansys/*
  amphion/vpu/*
+ arm/mali/arch10.8/mali_csffw.bin
  brcm/BCM-0a5c-6410.hcd
  brcm/BCM-0bb4-0306.hcd
  cadence/mhdp8546.bin

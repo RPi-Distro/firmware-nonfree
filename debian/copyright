@@ -321,6 +321,10 @@ Files: ar3k/* ar5523.bin ar7010.fw ar7010_1_1.fw ar9271.fw ath3k-1.fw
 Copyright: 2008-2010, Atheros Communications, Inc.
 License: binary-redist-Atheros
 
+Files: arm/mali/arch10.8/mali_csffw.bin
+Copyright: 2023, Arm Ltd.
+License: binary-redist-Arm-CSF
+
 Files: ath10k/QCA4019/hw1.0/firmware-5.bin ath10k/QCA9888/hw2.0/firmware-5.bin
  ath10k/QCA9984/hw1.0/firmware-5.bin
 Copyright: 1988, 1990-1991, 1993, The Regents of the University of California
@@ -1036,6 +1040,185 @@ License: binary-redist-Amphion
  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Comment:
  This is LICENSE.amphion_vpu.
+
+License: binary-redist-Arm-CSF
+ END USER LICENCE AGREEMENT FOR THE MALI FIRMWARE
+ .
+ THIS END USER LICENCE AGREEMENT (“LICENCE”) IS A LEGAL AGREEMENT BETWEEN YOU
+ (EITHER A SINGLE INDIVIDUAL, OR SINGLE LEGAL ENTITY) AND ARM LIMITED ("ARM")
+ FOR THE USE OF THE SOFTWARE ACCOMPANYING THIS LICENCE. ARM IS ONLY WILLING
+ TO LICENSE THE SOFTWARE TO YOU ON CONDITION THAT YOU ACCEPT ALL OF THE TERMS
+ IN THIS LICENCE. BY INSTALLING OR OTHERWISE USING OR COPYING THE SOFTWARE YOU
+ INDICATE THAT YOU AGREE TO BE BOUND BY ALL OF THE TERMS OF THIS LICENCE.
+ IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENCE, ARM IS UNWILLING TO LICENSE
+ THE SOFTWARE TO YOU AND YOU MAY NOT INSTALL, USE OR COPY THE SOFTWARE, AND
+ YOU SHOULD PROMPTLY RETURN THE SOFTWARE TO YOUR SUPPLIER.
+ .
+ “Applications” means applications for use solely in conjunction with
+ Mali-based products manufactured under licence from ARM.
+ .
+ “Output” means data resulting from your use of the Software and all direct
+ and indirect derivatives thereof.
+ .
+ “Software” means any software, firmware and data accompanying this Licence,
+ any printed, electronic or online documentation supplied with it under the
+ terms of this Licence.
+ .
+ .
+ 1. LICENCE GRANTS TO YOU.
+ 1.1 ARM hereby grants to you, subject to the terms and conditions of this
+ Licence, a non-exclusive, non-transferable, revocable, worldwide licence to:
+ .
+     (i)   Use the Software for the purposes of installation;
+     (ii)  use and copy the Software or certain components or optional
+           functionality in the Software, as applicable, solely for the
+           purposes of running, designing or developing Applications; and
+     (iii) subject to Clause 1.2, distribute the whole of the Software
+           either standalone and/or as incorporated into, Applications.
+ .
+ 1.2 If you choose to redistribute the whole or any part of the Software
+ pursuant to the licences granted in Clause 1.1(iii), you agree:
+ .
+ (i)   not to use ARM’s or any of its licensors names, logos or trademarks
+       to market Applications;
+ (ii)  to retain any and all copyright notices and other notices (whether
+       ARM’s or its licensor’s) which are included with the Software; and
+ (iii) include a copy of this Licence with such redistribution.
+ .
+ .
+ 2. RESTRICTIONS ON USE OF THE SOFTWARE.
+ .
+ COPYRIGHT AND RESERVATION OF RIGHTS: The Software is owned by ARM or its
+ licensors and is protected by copyright and other intellectual property laws
+ and international treaties. The Software is licensed not sold. You acquire
+ no rights to the Software other than as expressly provided by this Licence.
+ You shall not remove from the Software any copyright notice or other notice
+ and shall ensure that any such notice is reproduced in any copies of the
+ whole or any part of the Software made by you or other permitted users.
+ .
+ REVERSE ENGINEERING: Except to the extent that such activity is permitted
+ by applicable law you shall not reverse engineer, decompile or disassemble
+ any of the Software. If the Software was provided to you in Europe you shall
+ not reverse engineer, decompile or disassemble any of the Software for the
+ purposes of error correction.
+ .
+ RESTRICTED USE
+ You agree that you shall not use the Software or the Output other than
+ pursuant to and in accordance with the exercise of any of the licences
+ granted under this Licence. Without limiting the generality of the foregoing,
+ you shall not use the Software or any Output: (a) for determining if any
+ features, functions or processes provided by the Software are covered by any
+ patents or patent applications owned by you or a third party; or (b)  for
+ developing technology, applications or products which avoid any of ARM’s
+ intellectual property in the Software licensed hereunder; or (c) as a
+ reference for modifying existing patents or patent applications or creating
+ any continuation, continuation in part, or extension of existing patents or
+ patent applications.
+ .
+ .
+ 3. SUPPORT.
+ ARM is not under an obligation to provide support, but it may do so at its
+ own discretion, and if it does, it will only be in respect of the Software
+ as delivered.
+ .
+ .
+ 4. NO WARRANTIES.
+ YOU AGREE THAT THE SOFTWARE IS LICENSED “AS IS”, AND THAT ARM EXPRESSLY
+ DISCLAIMS ALL REPRESENTATIONS, WARRANTIES, CONDITIONS OR OTHER TERMS,
+ EXPRESS OR IMPLIED OR STATUTORY, INCLUDING WITHOUT LIMITATION THE
+ IMPLIED WARRANTIES OF NON-INFRINGEMENT, SATISFACTORY QUALITY, AND
+ FITNESS FOR A PARTICULAR PURPOSE.
+ .
+ YOU EXPRESSLY ASSUME ALL LIABILITIES AND RISKS, FOR USE OR OPERATION OF
+ APPLICATIONS, INCLUDING WITHOUT LIMITATION, APPLICATIONS DESIGNED OR
+ INTENDED FOR MISSION CRITICAL APPLICATIONS, SUCH AS PACEMAKERS, WEAPONRY,
+ AIRCRAFT NAVIGATION, FACTORY CONTROL SYSTEMS, ETC. SHOULD THE SOFTWARE
+ PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING,
+ REPAIR OR CORRECTION.
+ .
+ .
+ 5. LIMITATION OF LIABILITY.
+ TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL ARM
+ BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES
+ (INCLUDING LOSS OF PROFITS) ARISING OUT OF THE USE OR INABILITY TO USE
+ THE SOFTWARE WHETHER BASED ON A CLAIM UNDER CONTRACT, TORT OR OTHER LEGAL
+ THEORY, EVEN IF ARM WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+ .
+ ARM does not seek to limit or exclude liability for death or personal injury
+ arising from ARM's negligence or ARM’s fraud and because some jurisdictions
+ do not permit the exclusion or limitation of liability for consequential
+ or incidental damages the above limitation relating to liability for
+ consequential damages may not apply to you.
+ .
+ NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED IN THIS LICENCE, THE
+ MAXIMUM LIABILITY OF ARM TO YOU IN AGGREGATE FOR ALL CLAIMS MADE AGAINST
+ ARM IN CONTRACT TORT OR OTHERWISE UNDER OR IN CONNECTION WITH THE SUBJECT
+ MATTER OF THIS LICENCE SHALL NOT EXCEED THE GREATER OF: (I) THE TOTAL OF
+ SUMS PAID BY YOU TO ARM (IF ANY) FOR THIS LICENCE; AND (II) $10.00 USD.
+ THE EXISTENCE OF MORE THAN ONE CLAIM WILL NOT ENLARGE OR EXTEND THE LIMIT.
+ .
+ .
+ 6. U.S. GOVERNMENT END USERS.
+ US Government Restrictions: Use, duplication, reproduction, release,
+ modification, disclosure or transfer of the Software is restricted in
+ accordance with the terms of this Licence.
+ .
+ .
+ 7. TERM AND TERMINATION.
+ This Licence shall remain in force until terminated by you or by ARM.
+ Without prejudice to any of its other rights if you are in breach of any
+ of the terms and conditions of this Licence then ARM may terminate this
+ Licence immediately upon giving written notice to you or on thirty (30)
+ days written notice without cause. You may terminate this Licence at
+ any time. Upon termination of this Licence by you or by ARM , you shall
+ stop using the Software and destroy all copies of the Software in your
+ possession, together with all documentation and related materials.
+ The provisions of clauses 2, 3, 4, 5, 6, 7, and 8 shall survive
+ termination of this Licence.
+ .
+ 8. GENERAL.
+ This Licence is governed by English Law. Except where ARM agrees otherwise
+ in: (i) a written contract signed by you and ARM; or (ii) a written
+ contract provided by ARM and accepted by you, this is the only
+ agreement between you and ARM relating to the Software and it may
+ only be modified by written agreement between you and ARM. Except as
+ expressly agreed in writing, this Licence may not be modified by purchase
+ orders, advertising or other representation by any person. If any clause
+ or sentence in this Licence is held by a court of law to be illegal or
+ unenforceable the remaining provisions of this Licence shall not be affected
+ thereby. The failure by ARM to enforce any of the provisions of this Licence,
+ unless waived in writing, shall not constitute a waiver of ARM's rights to
+ enforce such provision or any other provision of this Licence in the future.
+ .
+ The Software provided under this License may be subject to U.K., European
+ Union, and U.S. export control and sanctions laws and regulations, including
+ the U.S.  Export Administration Regulations (“EAR”) (hereafter collectively
+ referred to as “Export Regulations”). The parties agree to comply fully with
+ all applicable Export Regulations. You agree that you shall not, either
+ directly or indirectly, export in breach of the Export Regulations the
+ Software received under this License, nor any direct products thereof: (i) to
+ any country, company or person subject to export restrictions or sanctions
+ under the applicable Export Regulations without required export authorisation;
+ or (ii) for any prohibited end use, which at the time of export requires an
+ export license or other governmental approval, without first obtaining such
+ license or approval. The specific export controls applicable to the Software
+ is determined by the relevant ECCN. Arm will provide ECCNs for licensed
+ products upon request to tradecompliance@arm.com. You are responsible for
+ determining the jurisdiction and classification of the designs you create the
+ Software. The Software  provided under this License are dual-use,
+ and are not listed on the UK Military List, nor are they subject to the
+ International Traffic in Arms Regulations (ITAR), the 600 Series of the EAR or
+ other military export control regimes. The parties are prohibited from sharing
+ ITAR-controlled technical data, 600 series-controlled technology, other export
+ controlled military data, or any other data that might require an export
+ license or other export authorisation without prior written consent from the
+ other party.
+ Further, Arm is expressly authorised to use non-U.S. citizens for the
+ performance of this License with the exception of nationals of Country Group
+ E:1 and E:2 as listed in Supp. 1 to Part 740 of the EAR, which shall only be
+ permitted in full compliance with all applicable laws.
+Comment:
+ This is LICENCE.mali_csffw, reformatted for line length.
 
 License: binary-redist-Atheros
  All rights reserved.
