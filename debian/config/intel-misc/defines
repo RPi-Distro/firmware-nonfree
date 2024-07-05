@@ -1,10 +1,9 @@
 [base]
 desc: miscellaneous Intel devices and chips
-longdesc:
- miscellaneous Intel devices and chips, which do not belong in the iwlwifi,
- ipw2x00, intel-graphics or intel-sound packages.
+longdesc: miscellaneous Intel devices and chips, which do not belong in the
+ iwlwifi, ipw2x00, intel-graphics or intel-sound packages.
  This includes for example Omni-Path, Ethernet/Network chips/devices,
- QuickAssist Technology crypto accelerators and Visual Sensing Controller.
+ QuickAssist Technology crypto accelerators and Visual Sensing Controller
 conflicts: firmware-misc-nonfree (<< 20230625-3~)
 files:
  hfi1_*
@@ -30,58 +29,3 @@ usrmovemitigation:
  qat_c62x.bin
  qat_c62x_mmp.bin
  qat_mmp.bin
-
-[hfi1_dc8051.fw_base]
-desc: Intel OPA Gen1 DC firmware
-version: 1.27.0
-
-[hfi1_fabric.fw_base]
-desc: Intel OPA Gen1 fabric firmware
-version: 0x1055
-
-[hfi1_pcie.fw_base]
-desc: Intel OPA Gen1 PCIe serdes firmware
-version: 0x4755
-
-[hfi1_sbus.fw_base]
-desc: Intel OPA Gen1 SBus firmware
-version: 0x10130001
-
-[qat_895xcc.bin_base]
-desc: Intel QAT DH895xCC UOF firmware
-
-[qat_895xcc_mmp.bin_base]
-desc: Intel QAT DH895xCC MMP firmware
-
-[qat_c3xxx.bin_base]
-desc: Intel QAT C3xxx UOF firmware
-
-[qat_c3xxx_mmp.bin_base]
-desc: Intel QAT C3xxx MMP firmware
-
-[qat_c62x.bin_base]
-desc: Intel QAT C62x UOF firmware
-
-[qat_c62x_mmp.bin_base]
-desc: Intel QAT C62x MMP firmware
-
-[e100/d101m_ucode.bin_base]
-desc: Intel 82559 D101M microcode
-
-[e100/d101s_ucode.bin_base]
-desc: Intel 82559 D101S microcode
-
-[e100/d102e_ucode.bin_base]
-desc: Intel 82551-F and 82551-10 microcode
-
-[intel/ice/ddp/ice-1.3.30.0.pkg_base]
-desc: Intel E800 ice driver
-version: 1.3.30.0
-
-[intel/ice/ddp-comms/ice_comms-1.3.40.0.pkg_base]
-desc: Intel E800 comms package
-version: 1.3.40.0
-
-[intel/ice/ddp-wireless_edge/ice_wireless_edge-1.3.10.0.pkg_base]
-desc: Intel E800 wireless edge package
-version: 1.3.10.0

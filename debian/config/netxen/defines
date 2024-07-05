@@ -5,7 +5,3 @@ longdesc: QLogic (formerly NetXen) Intelligent network adapters supported by
 support: initramfs-tools
 files:
  phanfw.bin
-
-[phanfw.bin_base]
-desc: QLogic Intelligent Ethernet (3000 and 3100 Series)
-version: 4.0.590

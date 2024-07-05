@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import io
+import itertools
 import json
 import locale
 import os
@@ -248,47 +249,19 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         makeflags['FILES'] = ' '.join([f'"{source}":"{dest}"'
                                        for dest, source in sorted(files_real.items())])
-        vars['files_real'] = ' '.join(["/lib/firmware/%s" % i for i in config_entry['files']])
-
         makeflags['LINKS'] = ' '.join([f'"{link}":"{target}"'
                                        for link, target in sorted(links.items())])
 
-        files_desc = ["Contents:"]
         firmware_meta_temp = self.templates.get("metainfo.xml.firmware")
         firmware_meta_list = []
         module_names = set()
 
-        wrap = TextWrapper(width = 71, fix_sentence_endings = True,
-                           initial_indent = ' * ',
-                           subsequent_indent = '   ').wrap
-        for canon_path, is_link in sorted(
-            [(path, False) for path in files_real]
-            + [(path, True) for path in links]
-        ):
+        for canon_path in sorted(itertools.chain(files_real, links)):
             canon_name = str(canon_path)
             firmware_meta_list.append(self.substitute(firmware_meta_temp,
                                                       {'filename': canon_name}))
             for module_name in self.firmware_modules.get(canon_name, []):
                 module_names.add(module_name)
-            if is_link:
-                continue
-            cur_path = files_real[canon_path]
-            c = self.config.get(('base', package, canon_name), {})
-            desc = c.get('desc')
-            version = c.get('version')
-            try:
-                canon_names = (canon_name + ', '
-                               + ', '.join(str(path) for path in
-                                           sorted(links_rev[canon_path])))
-            except KeyError:
-                canon_names = canon_name
-            if desc and version:
-                desc = "%s, version %s (%s)" % (desc, version, canon_names)
-            elif desc:
-                desc = "%s (%s)" % (desc, canon_names)
-            else:
-                desc = "%s" % canon_names
-            files_desc.extend(wrap(desc))
 
         modaliases = set()
         for module_name in module_names:
@@ -301,8 +274,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         ]
 
         packages_binary = self.templates.get_control("control.binary", vars)
-
-        packages_binary[0]['Description'].append_pre(files_desc)
 
         scripts = {}
 

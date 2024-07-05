@@ -7,19 +7,3 @@ files:
  mrvl/prestera/*
 usrmovemitigation:
  mrvl/prestera/mvsw_prestera_fw-v2.0.img
- mrvl/prestera/mvsw_prestera_fw-v3.0.img
-
-[mrvl/prestera/mvsw_prestera_fw-v2.0.img_base]
-desc: Prestera ASIC firmware v2
-
-[mrvl/prestera/mvsw_prestera_fw-v3.0.img_base]
-desc: Prestera ASIC firmware v3
-
-[mrvl/prestera/mvsw_prestera_fw-v4.0.img_base]
-desc: Prestera ASIC firmware v4
-
-[mrvl/prestera/mvsw_prestera_fw-v4.1.img_base]
-desc: Prestera ASIC firmware v4.1
-
-[mrvl/prestera/mvsw_prestera_fw_arm64-v4.1.img_base]
-desc: Prestera ASIC firmware v4.1 for arm64

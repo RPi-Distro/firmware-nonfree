@@ -28,11 +28,13 @@ Files-Excluded:
 # - licence is GPL, but source is elsewhere
  atusb/atusb-*.dfu
  atusb/rzusb-*.bin
+ carl9170*
 # - licence is unknown
  acenic/tg?.bin
  ess/maestro3_*.fw
  korg/k1212.dsp
  lgs8g75.fw
+ mediatek/mt7996/*
  mts_mt9234*.fw
  myricom/lanai.bin
  qlogic/isp1000.bin
@@ -68,8 +70,67 @@ Files-Excluded:
  cxgb4/t5fw-1.15.37.0.bin
 # Nothing seems to reference these
  dpaa2/mc/*
-# No Debian release references this version
+# No Debian release references these versions
+ i915/adlp_dmc_ver2_09.bin
+ i915/adlp_dmc_ver2_10.bin
+ i915/adlp_dmc_ver2_12.bin
+ i915/adlp_dmc_ver2_14.bin
+ i915/adlp_guc_62.0.3.bin
+ i915/bxt_guc_32.0.3.bin
+ i915/bxt_guc_49.0.1.bin
+ i915/bxt_guc_62.0.0.bin
+ i915/bxt_guc_69.0.3.bin
+ i915/bxt_guc_ver8_7.bin
+ i915/bxt_huc_ver01_8_2893.bin
+ i915/cml_guc_49.0.1.bin
+ i915/cml_guc_62.0.0.bin
+ i915/cml_guc_69.0.3.bin
  i915/cnl_dmc_ver1_06.bin
+ i915/dg1_guc_49.0.1.bin
+ i915/dg1_guc_62.0.0.bin
+ i915/dg1_guc_69.0.3.bin
+ i915/dg1_guc_70.1.1.bin
+ i915/dg1_huc_7.7.1.bin
+ i915/dg1_huc_7.9.3.bin
+ i915/dg2_dmc_ver2_06.bin
+ i915/dg2_guc_70.1.2.bin
+ i915/dg2_guc_70.4.1.bin
+ i915/ehl_guc_49.0.1.bin
+ i915/ehl_guc_62.0.0.bin
+ i915/ehl_guc_69.0.3.bin
+ i915/glk_guc_32.0.3.bin
+ i915/glk_guc_49.0.1.bin
+ i915/glk_guc_62.0.0.bin
+ i915/glk_guc_69.0.3.bin
+ i915/glk_huc_ver03_01_2893.bin
+ i915/icl_dmc_ver1_07.bin
+ i915/icl_guc_32.0.3.bin
+ i915/icl_guc_49.0.1.bin
+ i915/icl_guc_62.0.0.bin
+ i915/icl_guc_69.0.3.bin
+ i915/icl_huc_ver8_4_3238.bin
+ i915/kbl_dmc_ver1_01.bin
+ i915/kbl_guc_32.0.3.bin
+ i915/kbl_guc_49.0.1.bin
+ i915/kbl_guc_62.0.0.bin
+ i915/kbl_guc_69.0.3.bin
+ i915/kbl_guc_ver9_14.bin
+ i915/mtl_dmc_ver2_10.bin
+ i915/skl_dmc_ver1_23.bin
+ i915/skl_dmc_ver1_26.bin
+ i915/skl_guc_32.0.3.bin
+ i915/skl_guc_49.0.1.bin
+ i915/skl_guc_62.0.0.bin
+ i915/skl_guc_69.0.3.bin
+ i915/skl_guc_ver1.bin
+ i915/skl_guc_ver4.bin
+ i915/skl_guc_ver6_1.bin
+ i915/tgl_dmc_ver2_04.bin
+ i915/tgl_dmc_ver2_06.bin
+ i915/tgl_guc_49.0.1.bin
+ i915/tgl_guc_62.0.0.bin
+ i915/tgl_huc_7.0.12.bin
+ i915/tgl_huc_7.0.3.bin
 # Nothing seems to reference these versions
  intel/dsp_fw_bxtn_v2219.bin
  intel/dsp_fw_glk_v1814.bin
@@ -90,17 +151,95 @@ Files-Excluded:
  intel/ibt-18-1.sfi
  intel/ibt-18-2.ddc
  intel/ibt-18-2.sfi
+# Only referenced by staging atomisp driver, and in different dir
+ intel/ipu/shisp_*
+# No Debian release requires these versions
  iwlwifi-8000C-34.ucode
  iwlwifi-8265-34.ucode
+ iwlwifi-9000-pu-b0-jf-b0-34.ucode
+ iwlwifi-9260-th-b0-jf-b0-34.ucode
+ iwlwifi-Qu-b0-hr-b0-50.ucode
+ iwlwifi-Qu-b0-hr-b0-66.ucode
+ iwlwifi-Qu-b0-hr-b0-73.ucode
+ iwlwifi-Qu-b0-hr-b0-74.ucode
+ iwlwifi-Qu-b0-jf-b0-50.ucode
+ iwlwifi-Qu-b0-jf-b0-66.ucode
+ iwlwifi-Qu-b0-jf-b0-73.ucode
+ iwlwifi-Qu-b0-jf-b0-74.ucode
+ iwlwifi-Qu-c0-hr-b0-50.ucode
+ iwlwifi-Qu-c0-hr-b0-66.ucode
+ iwlwifi-Qu-c0-hr-b0-73.ucode
+ iwlwifi-Qu-c0-hr-b0-74.ucode
+ iwlwifi-Qu-c0-jf-b0-50.ucode
+ iwlwifi-Qu-c0-jf-b0-66.ucode
+ iwlwifi-Qu-c0-jf-b0-73.ucode
+ iwlwifi-Qu-c0-jf-b0-74.ucode
+ iwlwifi-QuZ-a0-hr-b0-50.ucode
+ iwlwifi-QuZ-a0-hr-b0-66.ucode
+ iwlwifi-QuZ-a0-hr-b0-73.ucode
+ iwlwifi-QuZ-a0-hr-b0-74.ucode
+ iwlwifi-QuZ-a0-jf-b0-50.ucode
+ iwlwifi-QuZ-a0-jf-b0-66.ucode
+ iwlwifi-QuZ-a0-jf-b0-73.ucode
+ iwlwifi-QuZ-a0-jf-b0-74.ucode
+ iwlwifi-cc-a0-50.ucode
+ iwlwifi-cc-a0-66.ucode
+ iwlwifi-cc-a0-73.ucode
+ iwlwifi-cc-a0-74.ucode
+ iwlwifi-gl-c0-fm-c0-83.ucode
+ iwlwifi-gl-c0-fm-c0-90.ucode
+ iwlwifi-ma-b0-gf-a0-83.ucode
+ iwlwifi-ma-b0-gf4-a0-83.ucode
+ iwlwifi-ma-b0-hr-b0-83.ucode
+ iwlwifi-so-a0-gf-a0-73.ucode
+ iwlwifi-so-a0-gf-a0-74.ucode
+ iwlwifi-so-a0-gf-a0-77.ucode
+ iwlwifi-so-a0-gf-a0-78.ucode
+ iwlwifi-so-a0-gf-a0-79.ucode
+ iwlwifi-so-a0-gf-a0-81.ucode
+ iwlwifi-so-a0-gf-a0-83.ucode
+ iwlwifi-so-a0-gf-a0-84.ucode
+ iwlwifi-so-a0-gf4-a0-73.ucode
+ iwlwifi-so-a0-gf4-a0-74.ucode
+ iwlwifi-so-a0-gf4-a0-77.ucode
+ iwlwifi-so-a0-gf4-a0-78.ucode
+ iwlwifi-so-a0-gf4-a0-79.ucode
+ iwlwifi-so-a0-gf4-a0-81.ucode
+ iwlwifi-so-a0-gf4-a0-83.ucode
+ iwlwifi-so-a0-gf4-a0-84.ucode
+ iwlwifi-so-a0-hr-b0-73.ucode
+ iwlwifi-so-a0-hr-b0-74.ucode
+ iwlwifi-so-a0-hr-b0-77.ucode
+ iwlwifi-so-a0-hr-b0-79.ucode
+ iwlwifi-so-a0-hr-b0-81.ucode
+ iwlwifi-so-a0-hr-b0-83.ucode
+ iwlwifi-so-a0-hr-b0-84.ucode
+ iwlwifi-so-a0-jf-b0-73.ucode
+ iwlwifi-so-a0-jf-b0-74.ucode
+ iwlwifi-ty-a0-gf-a0-66.ucode
+ iwlwifi-ty-a0-gf-a0-73.ucode
+ iwlwifi-ty-a0-gf-a0-74.ucode
+ iwlwifi-ty-a0-gf-a0-77.ucode
+ iwlwifi-ty-a0-gf-a0-78.ucode
+ iwlwifi-ty-a0-gf-a0-79.ucode
+ iwlwifi-ty-a0-gf-a0-81.ucode
+ iwlwifi-ty-a0-gf-a0-83.ucode
+ iwlwifi-ty-a0-gf-a0-84.ucode
 # No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
+ mrvl/prestera/mvsw_prestera_fw-v3.0.img
  mwl8k/fmimage_8366_ap-1.fw
  mwlwifi/88W8864.bin
  mwlwifi/88W8897.bin
 # This is for hardware only found in Mellanox switch appliances
- mellanox/mlxsw_spectrum-*
+ mellanox/mlxsw*
+# Exclude some large Qualcomm binaries until they're needed
+ qcom/qcm2290/*
+ qcom/qrb4210/*
+ qcom/sdm845/Thundercomm/*
+ qcom/sm8250/Thundercomm/*
 # No Debian release references these versions
  qed/qed_init_values-*.bin
  qed/qed_init_values_zipped-8.4.2.0.bin
@@ -451,7 +590,7 @@ Files: intel/fw_sst_*
 Copyright: 2014, Intel Corporation
 License: binary-redist-Intel-2
 
-Files: intel/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
+Files: intel/ipu/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
 Copyright: 2017, Intel Corporation
 License: binary-redist-Intel-2
 
@@ -712,7 +851,7 @@ Copyright: 2010-2013, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-permissive
 
 Files: rtl_nic/rtl8153*.fw rtl_nic/rtl8156*.fw rtl_bt/*
- RTL8192E/* rtlwifi/* rtw88/* rtw89/*
+ rtlwifi/* rtw88/* rtw89/*
 Copyright: 2009-2010, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-restrictive
 
