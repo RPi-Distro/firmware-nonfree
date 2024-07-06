@@ -256,6 +256,8 @@ Files-Excluded:
  qed/qed_init_values_zipped-8.10.5.0.bin
  qed/qed_init_values_zipped-8.15.3.0.bin
  qed/qed_init_values_zipped-8.20.0.0.bin
+# This was for the unreleased R-Car H3 ES1 SoC
+ r8a779x_usb3_v2.dlmem
 # No Debian release requires these versions
  ti-connectivity/wl1271-fw*.bin
  ti-connectivity/wl128x-fw.bin

@@ -288,6 +288,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/copyright: Exclude more AMD firmware packaged in amd64-microcode
   * d/copyright: Exclude more mlxsw firmware
   * d/copyright: Exclude ixp4xx firmware for no-longer-supported SoCs
+  * d/copyright: Exclude firmware for unreleased R-Car H3 ES1 SoC
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs
