@@ -292,6 +292,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/b/check_upstream.py: Treat .txt files as being source code
   * d/b/check_upstream.py: Match another wording of permission to redistribute
   * atheros: Add ath12k firmware
+  * cirrus: Add snd-soc-cs42l43 firmware
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs

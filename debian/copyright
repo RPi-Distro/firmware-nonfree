@@ -604,8 +604,8 @@ Files: cavium/* liquidio/*
 Copyright: 2015, Cavium, Inc.
 License: binary-redist-Cavium
 
-Files: cirrus/*
-Copyright: CIRRUS LOGIC
+Files: cirrus/* cs42l43.bin
+Copyright: 2022-2024, Cirrus Logic, Inc. and Cirrus Logic International Semiconductor Ltd.
 License: binary-redist-Cirrus
 
 Files: cnm/*
