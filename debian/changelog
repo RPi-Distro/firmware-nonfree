@@ -284,6 +284,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/copyright: Exclude carl9170 firmware (see #1073525)
   * d/copyright: Exclude more undistributable rsi_91x firmware
   * d/copyright: Exclude undistributable ti-tas2563 and ti-tas2781 firmware
+  * d/copyright: Exclude undistributable crypto_safexcel firmware
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs

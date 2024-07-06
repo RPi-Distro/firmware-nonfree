@@ -7,6 +7,7 @@ Files-Excluded:
 # - licence allows redistribution only as part of a kernel
  emi26/*.fw
  emi62/*.fw
+ inside-secure/eip197_minifw/*
  keyspan/mpr.fw
  keyspan/usa*.fw
  rsi/*
