@@ -231,6 +231,8 @@ Files-Excluded:
  iwlwifi-ty-a0-gf-a0-81.ucode
  iwlwifi-ty-a0-gf-a0-83.ucode
  iwlwifi-ty-a0-gf-a0-84.ucode
+# These are for the IXP4xx SoCs that we no longer support
+ ixp4xx/*
 # No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
