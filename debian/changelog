@@ -295,6 +295,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * cirrus: Add snd-soc-cs42l43 firmware
   * intel-graphics: Add intel-ipu6-isys, mei-vsc-hw, and xe firmware
   * misc-nonfree: Add air_en8811h firmware
+  * misc-nonfree: Add powervr firmware
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs

@@ -21,6 +21,7 @@ files:
  mts_cdma.fw
  mts_edge.fw
  mts_gsm.fw
+ powervr/*
  r8a779x_usb3_v1.dlmem
  r8a779x_usb3_v3.dlmem
  rp2.fw
