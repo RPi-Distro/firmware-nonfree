@@ -48,7 +48,9 @@ Files-Excluded:
  yam/*
  yamaha/ds1*.fw
 # Packaged in amd64-microcode
+ amd/amd_sev_*
  amd-ucode/*
+ amdtee/*
 # No Debian release references these; obsoleted by ar9170.fw
  ar9170-?.fw
 # These are said to be related to the hci_uart driver, but it doesn't
