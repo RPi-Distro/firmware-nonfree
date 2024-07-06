@@ -57,6 +57,6 @@ files:
  ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin
  tigon/*
  ueagle-atm/*
- wfx/wfm_wf200_C0.sec
+ wfx/*
 usrmovemitigation:
  ti/vpdma-1b8.bin

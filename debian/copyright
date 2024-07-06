@@ -918,7 +918,7 @@ Files: vntwusb.fw
 Copyright: 1998-2010, VIA Technologies, Inc.
 License: binary-redist-VIA-vt6656
 
-Files: wfx/wfm_wf200_C0.sec
+Files: wfx/*
 Copyright: 2021, Silicon Laboratories, Inc.
 License: binary-redist-Silicon-Labs
 

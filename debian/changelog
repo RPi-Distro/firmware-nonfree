@@ -296,6 +296,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * intel-graphics: Add intel-ipu6-isys, mei-vsc-hw, and xe firmware
   * misc-nonfree: Add air_en8811h firmware
   * misc-nonfree: Add powervr firmware
+  * misc-nonfree: Add more wfx firmware
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs
