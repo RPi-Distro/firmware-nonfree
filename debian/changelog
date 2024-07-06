@@ -286,6 +286,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/copyright: Exclude undistributable ti-tas2563 and ti-tas2781 firmware
   * d/copyright: Exclude undistributable crypto_safexcel firmware
   * d/copyright: Exclude more AMD firmware packaged in amd64-microcode
+  * d/copyright: Exclude more mlxsw firmware
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs
