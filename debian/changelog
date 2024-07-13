@@ -5,7 +5,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/b/release-update: Filter upstream changelog to files that we include
   * d/b/release-update: Strip useless 'linux-firmware:' prefix
   * New upstream version (Closes: #1051892, #1062203, #1064229, #1070647,
-    #1070648):
+    #1070648, #1076151):
     - Add CS35L41 firmware for additional ASUS Zenbook 2023 models
     - Add CS35L41 firmware for Lenovo Legion 7i gen7 laptop (16IAX7)
     - Add CS35L41 HDA Firmware for Asus HN7306
