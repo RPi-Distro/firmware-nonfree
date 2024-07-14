@@ -282,6 +282,21 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * d/b/check_upstream.py: Handle missing Licen[cs]e field
   * d/copyright: Exclude Mediatek MT7996 firmware with unknown licence
   * d/copyright: Exclude carl9170 firmware (see #1073525)
+  * d/copyright: Exclude more undistributable rsi_91x firmware
+  * d/copyright: Exclude undistributable ti-tas2563 and ti-tas2781 firmware
+  * d/copyright: Exclude undistributable crypto_safexcel firmware
+  * d/copyright: Exclude more AMD firmware packaged in amd64-microcode
+  * d/copyright: Exclude more mlxsw firmware
+  * d/copyright: Exclude ixp4xx firmware for no-longer-supported SoCs
+  * d/copyright: Exclude firmware for unreleased R-Car H3 ES1 SoC
+  * d/b/check_upstream.py: Treat .txt files as being source code
+  * d/b/check_upstream.py: Match another wording of permission to redistribute
+  * atheros: Add ath12k firmware
+  * cirrus: Add snd-soc-cs42l43 firmware
+  * intel-graphics: Add intel-ipu6-isys, mei-vsc-hw, and xe firmware
+  * misc-nonfree: Add air_en8811h firmware
+  * misc-nonfree: Add powervr firmware
+  * misc-nonfree: Add more wfx firmware
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs

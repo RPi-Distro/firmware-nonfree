@@ -10,6 +10,7 @@ conflicts: firmware-ti-connectivity (<< 20230625-3~)
 provides: firmware-adi, firmware-ralink
 files:
  agere_*
+ airoha/Eth*
  as102_*
  ctefx.bin
  ctspeq.bin
@@ -20,6 +21,7 @@ files:
  mts_cdma.fw
  mts_edge.fw
  mts_gsm.fw
+ powervr/*
  r8a779x_usb3_v1.dlmem
  r8a779x_usb3_v3.dlmem
  rp2.fw
@@ -55,6 +57,6 @@ files:
  ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin
  tigon/*
  ueagle-atm/*
- wfx/wfm_wf200_C0.sec
+ wfx/*
 usrmovemitigation:
  ti/vpdma-1b8.bin

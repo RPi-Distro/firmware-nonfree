@@ -7,8 +7,10 @@ Files-Excluded:
 # - licence allows redistribution only as part of a kernel
  emi26/*.fw
  emi62/*.fw
+ inside-secure/eip197_minifw/*
  keyspan/mpr.fw
  keyspan/usa*.fw
+ rsi/*
  rsi_91x.fw
  sdd_sagrad_1091_1098.bin
  slicoss/*.sys
@@ -20,6 +22,8 @@ Files-Excluded:
  edgeport/*
  ositech/Xilinx7OD.bin
  sb16/*.csp
+ ti/tas2563/*
+ ti/tas2781/*
  ti_3410.fw
  ti_5052.fw
  whiteheat.fw
@@ -44,7 +48,9 @@ Files-Excluded:
  yam/*
  yamaha/ds1*.fw
 # Packaged in amd64-microcode
+ amd/amd_sev_*
  amd-ucode/*
+ amdtee/*
 # No Debian release references these; obsoleted by ar9170.fw
  ar9170-?.fw
 # These are said to be related to the hci_uart driver, but it doesn't
@@ -225,6 +231,8 @@ Files-Excluded:
  iwlwifi-ty-a0-gf-a0-81.ucode
  iwlwifi-ty-a0-gf-a0-83.ucode
  iwlwifi-ty-a0-gf-a0-84.ucode
+# These are for the IXP4xx SoCs that we no longer support
+ ixp4xx/*
 # No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
@@ -234,6 +242,7 @@ Files-Excluded:
  mwlwifi/88W8864.bin
  mwlwifi/88W8897.bin
 # This is for hardware only found in Mellanox switch appliances
+ mellanox/lc_ini_*
  mellanox/mlxsw*
 # Exclude some large Qualcomm binaries until they're needed
  qcom/qcm2290/*
@@ -247,6 +256,8 @@ Files-Excluded:
  qed/qed_init_values_zipped-8.10.5.0.bin
  qed/qed_init_values_zipped-8.15.3.0.bin
  qed/qed_init_values_zipped-8.20.0.0.bin
+# This was for the unreleased R-Car H3 ES1 SoC
+ r8a779x_usb3_v2.dlmem
 # No Debian release requires these versions
  ti-connectivity/wl1271-fw*.bin
  ti-connectivity/wl128x-fw.bin
@@ -306,6 +317,10 @@ License: binary-redist-EULA-Intel-Pro-Wireless
 Files: debian/config/ivtv/*.fw debian/config/ivtv/v4l-cx2341x-init.mpg
 Copyright: 2003-2006, Hauppauge
 License: binary-redist-EULA-Hauppuage
+
+Files: airoha/Eth*
+Copyright: 2023-2024, Airoha Inc.
+License: binary-redist-Airoha
 
 Files: amdgpu/*.bin radeon/*.bin
 Copyright: 2009-2023, Advanced Micro Devices, Inc.
@@ -529,6 +544,21 @@ Files: ath11k/*/hw*/board-2.bin ath11k/*/hw*/Notice.txt
 Copyright: 2022-2023 Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-Atheros
 
+Files: ath12k/WCN7850/hw2.0/*
+Copyright: 1986, Gary S. Brown
+           1988, 1990-1991, 1993, The Regents of the University of California
+           2000-2001, Aaron D. Gifford
+           2002-2018, Jouni Malinen
+           2002-2004, Sam Leffler, Errno Consulting
+           2002-2021, The Linux Foundation
+           2008, 2012, Atheros Communications Inc.
+           2011, The FreeBSD Foundation
+           2013, Cozybit, Inc.
+           2015, Pali Rohár
+           2015, 2018, The Android Open Source Project
+           2021-2022, Qualcomm Innovation Center, Inc.
+License: binary-redist-Qualcomm-Atheros
+
 Files: qca/crbtfw*.tlv qca/crnv*.bin qca/hpbtfw21.tlv qca/hpnv21*.*
  qca/htbtfw20.tlv qca/htnv20.bin qca/msbtfw11.* qca/msnv11.*
  qca/nvm_*.bin qca/rampatch_*.bin
@@ -578,8 +608,8 @@ Files: cavium/* liquidio/*
 Copyright: 2015, Cavium, Inc.
 License: binary-redist-Cavium
 
-Files: cirrus/*
-Copyright: CIRRUS LOGIC
+Files: cirrus/* cs42l43.bin
+Copyright: 2022-2024, Cirrus Logic, Inc. and Cirrus Logic International Semiconductor Ltd.
 License: binary-redist-Cirrus
 
 Files: cnm/*
@@ -593,6 +623,10 @@ License: binary-redist-Intel
 Files: intel/fw_sst_*
 Copyright: 2014, Intel Corporation
 License: binary-redist-Intel-2
+
+Files: intel/ipu/ipu6* intel/vsc/*
+Copyright: 2023-2024, Intel Corporation
+License: binary-redist-Intel
 
 Files: intel/ipu/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
 Copyright: 2017, Intel Corporation
@@ -776,6 +810,10 @@ Files: nxp/*.bin nxp/*.bin.se
 Copyright: 2018, NXP
 License: binary-redist-NXP-2
 
+Files: powervr/*
+Copyright: 2023, Imagination Technologies Ltd.
+License: binary-redist-Imagination
+
 Files: qat_*.bin
 Copyright: 2014-2023, Intel Corporation.
 License: binary-redist-Intel-1
@@ -880,9 +918,13 @@ Files: vntwusb.fw
 Copyright: 1998-2010, VIA Technologies, Inc.
 License: binary-redist-VIA-vt6656
 
-Files: wfx/wfm_wf200_C0.sec
+Files: wfx/*
 Copyright: 2021, Silicon Laboratories, Inc.
 License: binary-redist-Silicon-Labs
+
+Files: xe/*
+Copyright: 2024, Intel Corporation
+License: binary-redist-Intel
 
 License: binary-redist-Abilis
  Permission to use, copy, modify, and/or distribute this software for
@@ -898,6 +940,17 @@ License: binary-redist-Abilis
  PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
  TORTUOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
  PERFORMANCE OF THIS SOFTWARE.
+
+License: binary-redist-Airoha
+ Airoha Inc. grants permission to use and redistribute aforementioned firmware
+ files for the use with devices containing Airoha chipsets, but not as part of
+ the Linux kernel or in any other form which would require these files themselves
+ to be covered by the terms of the GNU General Public License or the GNU Lesser
+ General Public License.
+ .
+ These firmware files are distributed in the hope that they will be useful, but
+ are provided WITHOUT ANY WARRANTY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTY
+ OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 
 License: binary-redist-AMD-permissive
  All Rights Reserved.
@@ -2534,6 +2587,48 @@ License: binary-redist-firmware
  Permission is hereby granted for the distribution of this firmware
  data in hexadecimal or equivalent format, provided this copyright
  notice is accompanying it.
+
+License: binary-redist-Imagination
+ All rights reserved.
+ .
+ Redistribution.  Redistribution and use in binary form, without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ * Redistributions must reproduce the above copyright notice and the
+   following disclaimer in the documentation and/or other materials
+   provided with the distribution.
+ * Neither the name of Imagination Technologies Ltd nor the names of its
+   suppliers may be used to endorse or promote products derived from this
+   software without specific prior written permission.
+ * No reverse engineering, decompilation, or disassembly of this software
+   is permitted.
+ * This software is only used with products which have been designed and
+   licensed by Imagination Technologies Ltd.
+ .
+ Limited patent license.  Imagination Technologies Ltd grants a
+ world-wide, royalty-free, non-exclusive license under patents it now or
+ hereafter owns or controls to make, have made, use, import, offer to
+ sell and sell ("Utilize") this software, but solely to the extent that
+ any such patent is necessary to Utilize the software alone, or in
+ combination with an operating system licensed under an approved Open
+ Source license as listed by the Open Source Initiative at
+ http://opensource.org/licenses.  The patent license shall not apply to
+ any other combinations which include this software.  No hardware per se
+ is licensed hereunder.
+ .
+ DISCLAIMER.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+ CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+ BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+ OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+ TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+ DAMAGE.
 
 License: binary-redist-Intel
  All rights reserved.
