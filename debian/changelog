@@ -297,6 +297,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * misc-nonfree: Add air_en8811h firmware
   * misc-nonfree: Add powervr firmware
   * misc-nonfree: Add more wfx firmware
+  * ivtv: Remove obsolete Recommends: firmware-linux-nonfree
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs

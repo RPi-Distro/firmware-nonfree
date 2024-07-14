@@ -2,8 +2,6 @@
 desc: iTVC15-family MPEG codecs (ivtv and pvrusb2 drivers)
 longdesc: TV cards with Conexant iTVC15-family MPEG codecs,
  supported by the ivtv and pvrusb2 drivers
-# For v4l-cx25840.fw
-recommends: firmware-linux-nonfree (>= 0.38~)
 license-accept: required
 license-title: Hauppauge End-User Firmware License Agreement
 # ivtvdriver.org is domain-squatted as of July 2018
