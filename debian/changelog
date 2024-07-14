@@ -299,6 +299,7 @@ firmware-nonfree (20240610-1) UNRELEASED; urgency=medium
   * misc-nonfree: Add more wfx firmware
   * ivtv: Remove obsolete Recommends: firmware-linux-nonfree
   * intel-misc: Remove VSC from package description
+  * Update to linux-support-6.9.9
 
   [ Dylan Aïssi ]
   * misc-nonfree: Add firmware for Gen10 Arm Mali GPUs
