@@ -1,6 +1,26 @@
-firmware-nonfree (20240610-2) UNRELEASED; urgency=medium
+firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
 
   * Update to linux-support-6.9.10
+  * New upstream version:
+    - add new cc33xx firmware for cc33xx chips
+    - amdgpu: update DMCUB to v0.0.222.0 for DCN314
+    - amdgpu: update DMCUB to v0.0.224.0 for Various AMDGPU Asics
+    - amdgpu: Update ISP FW for isp v4.1.1
+    - cirrus: cs35l41: Update various firmware for ASUS laptops using CS35L41
+    - cirrus: cs35l56: Update firmware for Cirrus CS35L56 for ASUS UM5606
+      laptop
+    - cirrus: cs35l56: Update firmware for Cirrus CS35L56 for various ASUS
+      laptops
+    - iwlwifi: add ty/So/Ma firmwares for core88-87 release
+    - iwlwifi: update cc/Qu/QuZ firmwares for core88-87 release
+    - mediatek: Update MT8173 VPU firmware to v1.2.0
+    - qcom: Add AIC100 firmware files
+    - rtl_bt: Update RTL8822C BT UART firmware to 0xB5D6_6DCB
+    - rtl_bt: Update RTL8822C BT USB firmware to 0xAED6_6DCB
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel Bluetooth Magnetor core
+    - Update firmware file for Intel Bluetooth Pulsar core
+    - Update firmware file for Intel Bluetooth Solar core
 
  -- Ben Hutchings <benh@debian.org>  Wed, 24 Jul 2024 19:51:53 +0200
 
