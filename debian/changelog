@@ -23,6 +23,7 @@ firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
     - Update firmware file for Intel Bluetooth Solar core
   * WHENCE, d/copyright: Fix license and include ti-tas2563 and ti-tas2781
     firmware
+  * d/copyright: Include firmware for QCM2290 and QRB4210 SoCs
 
  -- Ben Hutchings <benh@debian.org>  Wed, 24 Jul 2024 19:51:53 +0200
 
