@@ -25,6 +25,9 @@ firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
     firmware
   * d/copyright: Include firmware for QCM2290 and QRB4210 SoCs
 
+  [ Stuart Hayhurst ]
+  * misc-nonfree: Include tas2563 and tas2781 DSP firmware
+
  -- Ben Hutchings <benh@debian.org>  Wed, 24 Jul 2024 19:51:53 +0200
 
 firmware-nonfree (20240610-1) unstable; urgency=medium

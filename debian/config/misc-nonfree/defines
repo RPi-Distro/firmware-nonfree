@@ -53,6 +53,8 @@ files:
  nxp/*
  rockchip/dptx.bin
  tehuti/bdx.bin
+ ti/tas2563/*
+ ti/tas2781/*
  ti/vpdma-1b8.bin
  ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin
  tigon/*
