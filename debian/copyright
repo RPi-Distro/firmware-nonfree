@@ -22,8 +22,6 @@ Files-Excluded:
  edgeport/*
  ositech/Xilinx7OD.bin
  sb16/*.csp
- ti/tas2563/*
- ti/tas2781/*
  ti_3410.fw
  ti_5052.fw
  whiteheat.fw
@@ -245,8 +243,6 @@ Files-Excluded:
  mellanox/lc_ini_*
  mellanox/mlxsw*
 # Exclude some large Qualcomm binaries until they're needed
- qcom/qcm2290/*
- qcom/qrb4210/*
  qcom/sdm845/Thundercomm/*
  qcom/sm8250/Thundercomm/*
 # No Debian release references these versions
