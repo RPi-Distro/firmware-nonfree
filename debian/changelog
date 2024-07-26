@@ -25,6 +25,7 @@ firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
   * WHENCE, d/copyright: Fix license and include ti-tas2563 and ti-tas2781
     firmware
   * d/copyright: Include firmware for QCM2290 and QRB4210 SoCs
+  * d/b/update-modinfo: Support reading from multiple kernel directories
 
   [ Stuart Hayhurst ]
   * misc-nonfree: Include tas2563 and tas2781 DSP firmware
