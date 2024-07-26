@@ -1,4 +1,4 @@
-firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
+firmware-nonfree (20240709-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
   * Update to linux-support-6.9.11
@@ -31,7 +31,7 @@ firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
   [ Stuart Hayhurst ]
   * misc-nonfree: Include tas2563 and tas2781 DSP firmware
 
- -- Ben Hutchings <benh@debian.org>  Wed, 24 Jul 2024 19:51:53 +0200
+ -- Ben Hutchings <benh@debian.org>  Fri, 26 Jul 2024 19:43:28 +0200
 
 firmware-nonfree (20240610-1) unstable; urgency=medium
 
