@@ -1,6 +1,7 @@
 firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
 
-  * Update to linux-support-6.9.10
+  [ Ben Hutchings ]
+  * Update to linux-support-6.9.11
   * New upstream version:
     - add new cc33xx firmware for cc33xx chips
     - amdgpu: update DMCUB to v0.0.222.0 for DCN314
