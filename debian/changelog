@@ -26,6 +26,7 @@ firmware-nonfree (20240709-1) UNRELEASED; urgency=medium
     firmware
   * d/copyright: Include firmware for QCM2290 and QRB4210 SoCs
   * d/b/update-modinfo: Support reading from multiple kernel directories
+  * Update module info from linux 6.9.11-1 on amd64 and arm64
 
   [ Stuart Hayhurst ]
   * misc-nonfree: Include tas2563 and tas2781 DSP firmware
