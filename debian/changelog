@@ -1,6 +1,6 @@
-firmware-nonfree (20240709-2~bpo12+1) UNRELEASED; urgency=medium
+firmware-nonfree (20240709-2~bpo12+1) bookworm-backports; urgency=medium
 
-  * Rebuild for bookworm-backports.
+  * Rebuild for bookworm-backports. (Closes: #1063660)
   * Update to linux-support 6.10.6+bpo
 
  -- Dylan Aïssi <daissi@debian.org>  Sun, 01 Sep 2024 16:35:09 +0200
