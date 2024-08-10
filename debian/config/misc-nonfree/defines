@@ -53,6 +53,9 @@ files:
  nxp/*
  rockchip/dptx.bin
  tehuti/bdx.bin
+ TAS*
+ TIAS*
+ INT8866RCA2.bin
  ti/tas2563/*
  ti/tas2781/*
  ti/vpdma-1b8.bin
