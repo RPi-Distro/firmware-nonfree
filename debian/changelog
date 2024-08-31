@@ -3,6 +3,8 @@ firmware-nonfree (20240709-2) UNRELEASED; urgency=medium
   * d/b/gencontrol.py: Stop using unnecessary PackageDescription subclass
   * Use linux-support bundle API to replace much custom logic
   * Update to linux-support-6.10.6
+  * nvidia-graphics: Add versioned Breaks on initramfs-tools to avoid bug
+    #1076539
 
  -- Ben Hutchings <benh@debian.org>  Sat, 31 Aug 2024 21:22:58 +0200
 
