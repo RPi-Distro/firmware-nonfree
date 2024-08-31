@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import dataclasses
 import io
 import itertools
 import json
@@ -8,31 +9,53 @@ import os
 import pathlib
 import re
 import sys
+from typing import Iterable, Optional
 
 sys.path.insert(0, "debian/lib/python")
 sys.path.append(sys.argv[1] + "/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config, pattern_to_re
-from debian_linux.debian import PackageDescription, PackageRelation, _ControlFileDict
+from debian_linux.dataclasses_deb822 import field_deb822, read_deb822, write_deb822
+from debian_linux.debian import BinaryPackage as BinaryPackageBase, PackageDescription, PackageRelation
 import debian_linux.gencontrol
 from debian_linux.gencontrol import MakeFlags
 from debian_linux.utils import Templates as TemplatesBase
-from collections import OrderedDict
 
 
-class Template(_ControlFileDict):
-    _fields = OrderedDict((
-        ('Template', str),
-        ('Type', str),
-        ('Default', str),
-        ('Description', PackageDescription),
-    ))
+# XXX Delete after this field is added in linux-support
+@dataclasses.dataclass
+class BinaryPackage(BinaryPackageBase):
+    homepage: 'Optional[str]' = field_deb822(
+        'Homepage',
+        default=None,
+    )
+
+
+@dataclasses.dataclass
+class Template:
+    template: 'str' = field_deb822('Template')
+    type: 'str' = field_deb822('Type')
+    default: 'Optional[str]' = field_deb822(
+        'Default',
+        default=None,
+    )
+    description: PackageDescription = field_deb822(
+        'Description',
+        default_factory=PackageDescription,
+    )
 
 
 class Templates(TemplatesBase):
-    def get_templates_control(self, key: str, context: dict[str, str] = {}) -> Template:
-        return Template.read_rfc822(io.StringIO(self.get(key, context)))
+    def get_control(
+        self, key: str, context: dict[str, str] = {},
+    ) -> Iterable[BinaryPackage]:
+        return read_deb822(BinaryPackage, io.StringIO(self.get(key, context)))
+
+    def get_templates_control(
+        self, key: str, context: dict[str, str] = {}
+    ) -> Iterable[Template]:
+        return read_deb822(Template, io.StringIO(self.get(key, context)))
 
 
 class GenControl(debian_linux.gencontrol.Gencontrol):
@@ -208,7 +231,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             for alias in sorted(list(modaliases))
         ]
 
-        packages_binary = self.templates.get_control("binary.control", vars)
+        packages_binary = list(self.templates.get_control("binary.control", vars))
 
         scripts = {}
 
@@ -221,17 +244,17 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             preinst = self.templates.get('preinst.license')
             scripts.setdefault("preinst", []).append(self.substitute(preinst, vars))
 
-            templates = self.templates.get_templates_control('templates.license', vars)
-            templates[0]['Description'].append(re.sub('\n\n', '\n.\n', license))
+            templates = list(self.templates.get_templates_control('templates.license', vars))
+            templates[0].description.append(re.sub('\n\n', '\n.\n', license))
             templates_filename = "debian/firmware-%s.templates" % package
-            self.write_rfc822(open(templates_filename, 'w'), templates)
+            write_deb822(templates, open(templates_filename, 'w'))
 
-            desc = packages_binary[0]['Description']
+            desc = packages_binary[0].description
             desc.append(
 """This firmware is covered by the %s.
 You must agree to the terms of this license before it is installed."""
 % vars['license-title'])
-            packages_binary[0]['Pre-Depends'] = PackageRelation('debconf | debconf-2.0')
+            packages_binary[0].pre_depends = PackageRelation('debconf | debconf-2.0')
 
         if config_entry.get('usrmovemitigation', []):
             vars['files'] = ' '.join(config_entry['usrmovemitigation'])
@@ -257,6 +280,21 @@ You must agree to the terms of this license before it is installed."""
         package_meta_temp = self.templates.get("metainfo.xml", {})
         # XXX Might need to escape some characters
         open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))
+
+    # XXX Delete after updating to linux-support-6.11
+    def do_extra(self) -> None:
+        try:
+            packages_extra = self.templates.get_control("extra.control", self.vars)
+        except KeyError:
+            return
+
+        for package in packages_extra:
+            package.meta_rules_target = 'meta'
+            if not package.architecture:
+                raise RuntimeError('Require Architecture in debian/templates/extra.control')
+            for arch in package.architecture:
+                self.bundle.add_packages([package], (arch, ),
+                                         MakeFlags(), arch=arch, check_packages=False)
 
     def process_template(self, in_entry, vars):
         e = Template()
@@ -284,12 +322,6 @@ You must agree to the terms of this license before it is installed."""
             else:
                 return vars[match.group(2)]
         return re.sub(r'@(\??)([-_a-z]+)@', subst, str(s))
-
-    def write_rfc822(self, f, list):
-        for entry in list:
-            for key, value in entry.items():
-                f.write("%s: %s\n" % (key, value))
-            f.write('\n')
 
 if __name__ == '__main__':
     GenControl()()
