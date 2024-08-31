@@ -1,4 +1,5 @@
 Package: firmware-linux
+Meta-Rules-Target: meta
 Section: non-free-firmware/metapackages
 Architecture: all
 Depends: firmware-linux-free, firmware-linux-nonfree (= ${binary:Version}),
@@ -9,6 +10,7 @@ Description: Binary firmware for various drivers in the Linux kernel (metapackag
  be used with drivers in the Linux kernel.
 
 Package: firmware-linux-nonfree
+Meta-Rules-Target: meta
 Section: non-free-firmware/metapackages
 Architecture: all
 Depends: firmware-misc-nonfree (= ${binary:Version}),
@@ -19,6 +21,7 @@ Description: Binary firmware for various drivers in the Linux kernel (metapackag
  in the Linux kernel.
 
 Package: firmware-qcom-media
+Meta-Rules-Target: meta
 Section: non-free-firmware/oldlibs
 Architecture: all
 Depends: firmware-qcom-soc, ${misc:Depends}

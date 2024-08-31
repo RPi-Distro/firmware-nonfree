@@ -1,4 +1,5 @@
 Package: firmware-@package@
+Meta-Rules-Target: generic
 Architecture: all
 Replaces: @replaces@
 Conflicts: @conflicts@
