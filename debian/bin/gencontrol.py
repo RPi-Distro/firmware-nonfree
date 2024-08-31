@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import dataclasses
 import io
 import itertools
 import json
@@ -8,74 +9,58 @@ import os
 import pathlib
 import re
 import sys
+from typing import Iterable, Optional
 
 sys.path.insert(0, "debian/lib/python")
 sys.path.append(sys.argv[1] + "/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config, pattern_to_re
-from debian_linux.debian import BinaryPackage, PackageRelation, _ControlFileDict
-from debian_linux.debian import PackageDescription as PackageDescriptionBase
+from debian_linux.dataclasses_deb822 import field_deb822, read_deb822, write_deb822
+from debian_linux.debian import BinaryPackage as BinaryPackageBase, PackageDescription, PackageRelation
 import debian_linux.gencontrol
-from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
-from debian_linux.utils import TextWrapper
+from debian_linux.gencontrol import MakeFlags
 from debian_linux.utils import Templates as TemplatesBase
-from collections import OrderedDict
 
-class PackageDescription(PackageDescriptionBase):
-    __slots__ = ()
 
-    def __init__(self, value = None):
-        self.short = []
-        self.long = []
-        if value is not None:
-            value = value.split("\n", 1)
-            self.append_short(value[0])
-            if len(value) > 1:
-                self.append(value[1])
+# XXX Delete after this field is added in linux-support
+@dataclasses.dataclass
+class BinaryPackage(BinaryPackageBase):
+    homepage: 'Optional[str]' = field_deb822(
+        'Homepage',
+        default=None,
+    )
 
-    def __str__(self):
-        wrap = TextWrapper(width = 74, fix_sentence_endings = True).wrap
-        short = ', '.join(self.short)
-        long_pars = []
-        for t in self.long:
-            if isinstance(t, str):
-                t = wrap(t)
-            long_pars.append('\n '.join(t))
-        long = '\n .\n '.join(long_pars)
-        return short + '\n ' + long
 
-    def append_pre(self, l):
-        self.long.append(l)
-
-    def extend(self, desc):
-        if isinstance(desc, PackageDescription):
-            self.short.extend(desc.short)
-            self.long.extend(desc.long)
-        elif isinstance(desc, (list, tuple)):
-            for i in desc:
-                self.append(i)
-
-BinaryPackage._fields['Description'] = PackageDescription
-
-class Template(_ControlFileDict):
-    _fields = OrderedDict((
-        ('Template', str),
-        ('Type', str),
-        ('Default', str),
-        ('Description', PackageDescriptionBase),
-    ))
+@dataclasses.dataclass
+class Template:
+    template: 'str' = field_deb822('Template')
+    type: 'str' = field_deb822('Type')
+    default: 'Optional[str]' = field_deb822(
+        'Default',
+        default=None,
+    )
+    description: PackageDescription = field_deb822(
+        'Description',
+        default_factory=PackageDescription,
+    )
 
 
 class Templates(TemplatesBase):
-    def get_templates_control(self, key: str, context: dict[str, str] = {}) -> Template:
-        return Template.read_rfc822(io.StringIO(self.get(key, context)))
+    def get_control(
+        self, key: str, context: dict[str, str] = {},
+    ) -> Iterable[BinaryPackage]:
+        return read_deb822(BinaryPackage, io.StringIO(self.get(key, context)))
+
+    def get_templates_control(
+        self, key: str, context: dict[str, str] = {}
+    ) -> Iterable[Template]:
+        return read_deb822(Template, io.StringIO(self.get(key, context)))
 
 
 class GenControl(debian_linux.gencontrol.Gencontrol):
     def __init__(self):
-        self.config = Config()
-        self.templates = Templates()
+        super().__init__(Config(), Templates())
 
         with open('debian/modinfo.json', 'r') as f:
             self.modinfo = json.load(f)
@@ -87,16 +72,19 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 self.firmware_modules.setdefault(firmware_filename, []) \
                                      .append(name)
 
-    def __call__(self):
-        packages = PackagesList()
-        makefile = Makefile()
+    def do_main(self):
+        config_entry = self.config['base',]
+        vars = {}
+        vars.update(config_entry)
 
-        self.do_source(packages)
-        self.do_extra(packages, makefile)
+        makeflags = MakeFlags()
 
         self.file_errors = False
         self.file_packages = {}
-        self.do_main(packages, makefile)
+
+        for package in config_entry['packages']:
+            self.do_package(package, vars.copy(), makeflags.copy())
+
         for canon_path, package_suffixes in self.file_packages.items():
             if len(package_suffixes) > 1:
                 print(f'E: {canon_path!s} is included in multiple packages:',
@@ -107,41 +95,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         if self.file_errors:
             raise Exception('error(s) found in file lists')
 
-        self.write(packages, makefile)
-
-    def do_source(self, packages):
-        packages['source'] = self.templates.get_source_control("control.source", {})[0]
-
-    def do_extra(self, packages, makefile):
-        config_entry = self.config['base',]
-        vars = {}
-        vars.update(config_entry)
-
-        for package_binary in self.templates.get_control("control.extra", {}):
-            assert package_binary['Package'].startswith('firmware-')
-            package = package_binary['Package'].replace('firmware-', '')
-
-            makeflags = MakeFlags()
-            makeflags['FILES'] = ''
-            makeflags['PACKAGE'] = package
-            makefile.add_cmds('binary-indep', ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
-
-            packages.append(package_binary)
-
-    def do_main(self, packages, makefile):
-        config_entry = self.config['base',]
-        vars = {}
-        vars.update(config_entry)
-
-        makeflags = MakeFlags()
-
-        for i in ('build', 'binary-arch', 'setup'):
-            makefile.add_cmds("%s_%%" % i, ["@true"])
-
-        for package in config_entry['packages']:
-            self.do_package(packages, makefile, package, vars.copy(), makeflags.copy())
-
-    def do_package(self, packages, makefile, package, vars, makeflags):
+    def do_package(self, package, vars, makeflags):
         config_entry = self.config['base', package]
         vars.update(config_entry)
         vars['package'] = package
@@ -247,10 +201,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                   ', '.join(str(path) for path in files_unused),
                   file=sys.stderr)
 
-        makeflags['FILES'] = ' '.join([f'"{source}":"{dest}"'
-                                       for dest, source in sorted(files_real.items())])
-        makeflags['LINKS'] = ' '.join([f'"{link}":"{target}"'
-                                       for link, target in sorted(links.items())])
+        makeflags['FILES'] = \
+            ' '.join([f'"{source}":"{dest}"'
+                      for dest, source in sorted(files_real.items())]) \
+               .replace(',', '[comma]')
+        makeflags['LINKS'] = \
+            ' '.join([f'"{link}":"{target}"'
+                      for link, target in sorted(links.items())]) \
+               .replace(',', '[comma]')
 
         firmware_meta_temp = self.templates.get("metainfo.xml.firmware")
         firmware_meta_list = []
@@ -273,7 +231,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             for alias in sorted(list(modaliases))
         ]
 
-        packages_binary = self.templates.get_control("control.binary", vars)
+        packages_binary = list(self.templates.get_control("binary.control", vars))
 
         scripts = {}
 
@@ -286,17 +244,17 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             preinst = self.templates.get('preinst.license')
             scripts.setdefault("preinst", []).append(self.substitute(preinst, vars))
 
-            templates = self.templates.get_templates_control('templates.license', vars)
-            templates[0]['Description'].append(re.sub('\n\n', '\n.\n', license))
+            templates = list(self.templates.get_templates_control('templates.license', vars))
+            templates[0].description.append(re.sub('\n\n', '\n.\n', license))
             templates_filename = "debian/firmware-%s.templates" % package
-            self.write_rfc822(open(templates_filename, 'w'), templates)
+            write_deb822(templates, open(templates_filename, 'w'))
 
-            desc = packages_binary[0]['Description']
+            desc = packages_binary[0].description
             desc.append(
 """This firmware is covered by the %s.
 You must agree to the terms of this license before it is installed."""
 % vars['license-title'])
-            packages_binary[0]['Pre-Depends'] = PackageRelation('debconf | debconf-2.0')
+            packages_binary[0].pre_depends = PackageRelation('debconf | debconf-2.0')
 
         if config_entry.get('usrmovemitigation', []):
             vars['files'] = ' '.join(config_entry['usrmovemitigation'])
@@ -311,9 +269,7 @@ You must agree to the terms of this license before it is installed."""
             script_contents.append("#DEBHELPER#\n\nexit 0\n")
             open("debian/firmware-%s.%s" % (package, script), "w").write("\n".join(script_contents))
 
-        packages.extend(packages_binary)
-
-        makefile.add_cmds('binary-indep', ["$(MAKE) -f debian/rules.real binary-indep %s" % makeflags])
+        self.bundle.add_packages(packages_binary, (package,), makeflags)
 
         vars['firmware-list'] = ''.join(firmware_meta_list)
         vars['modalias-list'] = ''.join(modalias_meta_list)
@@ -324,6 +280,21 @@ You must agree to the terms of this license before it is installed."""
         package_meta_temp = self.templates.get("metainfo.xml", {})
         # XXX Might need to escape some characters
         open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))
+
+    # XXX Delete after updating to linux-support-6.11
+    def do_extra(self) -> None:
+        try:
+            packages_extra = self.templates.get_control("extra.control", self.vars)
+        except KeyError:
+            return
+
+        for package in packages_extra:
+            package.meta_rules_target = 'meta'
+            if not package.architecture:
+                raise RuntimeError('Require Architecture in debian/templates/extra.control')
+            for arch in package.architecture:
+                self.bundle.add_packages([package], (arch, ),
+                                         MakeFlags(), arch=arch, check_packages=False)
 
     def process_template(self, in_entry, vars):
         e = Template()
@@ -351,24 +322,6 @@ You must agree to the terms of this license before it is installed."""
             else:
                 return vars[match.group(2)]
         return re.sub(r'@(\??)([-_a-z]+)@', subst, str(s))
-
-    def write(self, packages, makefile):
-        self.write_control(packages.values())
-        self.write_makefile(makefile)
-
-    def write_control(self, list):
-        self.write_rfc822(open("debian/control", 'w'), list)
-
-    def write_makefile(self, makefile):
-        f = open("debian/rules.gen", 'w')
-        makefile.write(f)
-        f.close()
-
-    def write_rfc822(self, f, list):
-        for entry in list:
-            for key, value in entry.items():
-                f.write("%s: %s\n" % (key, value))
-            f.write('\n')
 
 if __name__ == '__main__':
     GenControl()()

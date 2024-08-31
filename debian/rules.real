@@ -1,25 +1,22 @@
 SHELL  := sh -e
+comma:=,
 
 export DH_OPTIONS
 
 #
 # Targets
 #
-binary-indep: install
-
-install: PACKAGE_NAME = firmware-$(PACKAGE)
-install: DH_OPTIONS = -p$(PACKAGE_NAME)
-install:
+binary_generic:
 	dh_testdir
 	dh_testroot
 	dh_prep
-	@for i in $(FILES); do \
+	@for i in $(subst [comma],$(comma),$(FILES)); do \
 	  s="$${i%:*}"; \
 	  d=/lib/firmware/"$${i#*:}"; \
 	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
 	done
-	@for i in $(LINKS); do \
+	@for i in $(subst [comma],$(comma),$(LINKS)); do \
 	  link=debian/$(PACKAGE_NAME)/lib/firmware/"$${i%:*}"; \
 	  target="$${i#*:}"; \
 	  install -d "$${link%/*}"; \
@@ -43,3 +40,5 @@ endif
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
+
+binary_meta: binary_generic
