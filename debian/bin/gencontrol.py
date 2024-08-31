@@ -14,56 +14,19 @@ sys.path.append(sys.argv[1] + "/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config, pattern_to_re
-from debian_linux.debian import BinaryPackage, PackageRelation, _ControlFileDict
-from debian_linux.debian import PackageDescription as PackageDescriptionBase
+from debian_linux.debian import PackageDescription, PackageRelation, _ControlFileDict
 import debian_linux.gencontrol
 from debian_linux.gencontrol import Makefile, MakeFlags, PackagesList
-from debian_linux.utils import TextWrapper
 from debian_linux.utils import Templates as TemplatesBase
 from collections import OrderedDict
 
-class PackageDescription(PackageDescriptionBase):
-    __slots__ = ()
-
-    def __init__(self, value = None):
-        self.short = []
-        self.long = []
-        if value is not None:
-            value = value.split("\n", 1)
-            self.append_short(value[0])
-            if len(value) > 1:
-                self.append(value[1])
-
-    def __str__(self):
-        wrap = TextWrapper(width = 74, fix_sentence_endings = True).wrap
-        short = ', '.join(self.short)
-        long_pars = []
-        for t in self.long:
-            if isinstance(t, str):
-                t = wrap(t)
-            long_pars.append('\n '.join(t))
-        long = '\n .\n '.join(long_pars)
-        return short + '\n ' + long
-
-    def append_pre(self, l):
-        self.long.append(l)
-
-    def extend(self, desc):
-        if isinstance(desc, PackageDescription):
-            self.short.extend(desc.short)
-            self.long.extend(desc.long)
-        elif isinstance(desc, (list, tuple)):
-            for i in desc:
-                self.append(i)
-
-BinaryPackage._fields['Description'] = PackageDescription
 
 class Template(_ControlFileDict):
     _fields = OrderedDict((
         ('Template', str),
         ('Type', str),
         ('Default', str),
-        ('Description', PackageDescriptionBase),
+        ('Description', PackageDescription),
     ))
 
 
