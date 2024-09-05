@@ -1,9 +1,10 @@
 firmware-nonfree (20240709-2~bpo12+1) bookworm-backports; urgency=medium
 
+  [ Dylan Aïssi ]
   * Rebuild for bookworm-backports. (Closes: #1063660)
   * Update to linux-support 6.10.6+bpo
 
- -- Dylan Aïssi <daissi@debian.org>  Sun, 01 Sep 2024 16:35:09 +0200
+ -- Ben Hutchings <benh@debian.org>  Thu, 05 Sep 2024 23:30:03 +0200
 
 firmware-nonfree (20240709-2) unstable; urgency=medium
 
