@@ -103,6 +103,7 @@ firmware-nonfree (20240811-1) UNRELEASED; urgency=medium
     - xe: First GuC release v70.29.2 for BMG
   * d/patches: drop tas2781 license fix, applied upstream
   * d/patches/gitignore.patch: refresh
+  * d/bin/check_upstream: allow Apache-2.0 licence
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Fri, 06 Sep 2024 04:40:09 +0300
 
