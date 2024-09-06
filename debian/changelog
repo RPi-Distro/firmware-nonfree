@@ -101,6 +101,7 @@ firmware-nonfree (20240811-1) UNRELEASED; urgency=medium
     - xe: Add GuC v70.29.2 for LNL
     - xe: Add LNL HuC 9.4.13
     - xe: First GuC release v70.29.2 for BMG
+  * d/patches: drop tas2781 license fix, applied upstream
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Fri, 06 Sep 2024 04:40:09 +0300
 
