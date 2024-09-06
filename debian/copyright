@@ -639,6 +639,10 @@ Copyright: 1981-2000, The Regents of the University of California
            1993, 2014-15, Intel Corporation
 License: binary-redist-Intel-3
 
+Files: intel/avs/*-tplg.bin
+Copyright: 20023-2024, Intel Corporation
+License: Apache-2.0
+
 Files: intel/ibt-* iwlwifi-*
 Copyright: 2006-2016, Intel Corporation
 License: binary-redist-Intel
@@ -5997,3 +6001,9 @@ License: permissive-BayCom
  modification, are permitted provided that redistributions of source
  code retain the above copyright notice and this comment without
  modification.
+
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0
+ .
+ On Debian systems, the complete text of the Apache License
+ can be found in /usr/share/common-licenses/Apache-2.0 file.
