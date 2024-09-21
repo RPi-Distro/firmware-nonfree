@@ -6,9 +6,9 @@ Forwarded: not-needed
 --- a/.gitignore
 +++ b/.gitignore
 @@ -3,3 +3,10 @@
- release/
- contrib/*.db
- contrib/*.txt
+ *.orig
+ *.patch
+ *.rej
 +
 +#
 +# Debian packaging: ignore everything at the top level, since it isn't

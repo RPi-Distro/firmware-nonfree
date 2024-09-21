@@ -1,3 +1,114 @@
+firmware-nonfree (20240811-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - add firmware for qat_402xx devices
+    - amdgpu: DMCUB updates for DCN314
+    - amdgpu: update aldebaran firmware
+    - amdgpu: update beige goby firmware
+    - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update DMCUB to v0.0.225.0 for Various AMDGPU Asics
+    - amdgpu: update DMCUB to v0.0.227.0 for DCN35 and DCN351
+    - amdgpu: update GC 11.0.0 firmware
+    - amdgpu: update GC 11.0.1 firmware
+    - amdgpu: update GC 11.0.2 firmware
+    - amdgpu: update GC 11.0.3 firmware
+    - amdgpu: update GC 11.0.4 firmware
+    - amdgpu: update GC 11.5.0 firmware
+    - amdgpu: update GC 11.5.1 firmware
+    - amdgpu: update GC 9.4.3 firmware
+    - amdgpu: update green sardine firmware
+    - amdgpu: Update ISP FW for isp v4.1.1
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update picasso firmware
+    - amdgpu: update PSP 13.0.0 firmware
+    - amdgpu: update PSP 13.0.10 firmware
+    - amdgpu: update PSP 13.0.11 firmware
+    - amdgpu: update PSP 13.0.4 firmware
+    - amdgpu: update PSP 13.0.5 firmware
+    - amdgpu: update PSP 13.0.6 firmware
+    - amdgpu: update PSP 13.0.7 firmware
+    - amdgpu: update PSP 13.0.8 firmware
+    - amdgpu: update PSP 14.0.0 firmware
+    - amdgpu: update PSP 14.0.1 firmware
+    - amdgpu: update raven firmware
+    - amdgpu: update raven2 firmware
+    - amdgpu: update renoir firmware
+    - amdgpu: update SDMA 6.0.0 firmware
+    - amdgpu: update SDMA 6.0.1 firmware
+    - amdgpu: update SDMA 6.0.2 firmware
+    - amdgpu: update SDMA 6.0.3 firmware
+    - amdgpu: update SDMA 6.1.0 firmware
+    - amdgpu: update SDMA 6.1.1 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update SMU 13.0.10 firmware
+    - amdgpu: update SMU 13.0.7 firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update VCN 4.0.0 firmware
+    - amdgpu: update VCN 4.0.2 firmware
+    - amdgpu: update VCN 4.0.4 firmware
+    - amdgpu: update VCN 4.0.5 firmware
+    - amdgpu: update VCN 4.0.6 firmware
+    - amdgpu: update vega10 firmware
+    - amdgpu: update vega12 firmware
+    - amdgpu: update vega20 firmware
+    - amdgpu: update VPE 6.1.1 firmware
+    - amdgpu: update yellow carp firmware
+    - i915: Add GuC v70.29.2 for ADL-P, DG1, DG2, MTL, and TGL
+    - i915: update DG2 HuC to v7.10.16
+    - i915: Update MTL DMC v2.22
+    - i915: update MTL GSC to v102.0.10.1878
+    - i915: Update Xe2LPD DMC to v2.21
+    - intel: avs: Add topology file for Digital Microphone Array
+    - intel: avs: Add topology file for HDAudio codecs
+    - intel: avs: Add topology file for HDMI codecs
+    - intel: avs: Add topology file for I2S Analog Devices 4567
+    - intel: avs: Add topology file for I2S Dialog 7219
+    - intel: avs: Add topology file for I2S Maxim 98357a
+    - intel: avs: Add topology file for I2S Maxim 98373
+    - intel: avs: Add topology file for I2S Maxim 98927
+    - intel: avs: Add topology file for I2S Nuvoton 8825
+    - intel: avs: Add topology file for I2S Realtek 274
+    - intel: avs: Add topology file for I2S Realtek 286
+    - intel: avs: Add topology file for I2S Realtek 298
+    - intel: avs: Add topology file for I2S Realtek 5514
+    - intel: avs: Add topology file for I2S Realtek 5640
+    - intel: avs: Add topology file for I2S Realtek 5663
+    - intel: avs: Update AudioDSP base firmware for APL-based platforms
+    - iwlwifi: add gl FW for core89-58 release
+    - iwlwifi: update cc/Qu/QuZ firmwares for core89-58 release
+    - iwlwifi: update ty/So/Ma firmwares for core89-58 release
+    - mediatek: Update mt8195 SOF firmware
+    - mediatek: Update mt8195 SOF firmware and sof-tplg
+    - QCA: Update Bluetooth QCA2066 firmware to 2.1.0-00641
+    - QCA: Update Bluetooth WCN685x 2.1 firmware to 2.1.0-00642
+    - qcom: add gpu firmwares for x1e80100 chipset
+    - qcom: add video firmware file for vpu-3.0
+    - qcom: move signed x1e80100 signed firmware to the SoC subdir
+    - qcom: update path for video firmware for vpu-1/2/3.0
+    - Revert "iwlwifi: update ty/So/Ma firmwares for core89-58 release"
+    - rtl_bt: Update RTL8852B BT USB FW to 0x048F_4008
+    - rtw89: 8852bt: add firmware 0.29.91.0
+    - rtw89: 8852c: add fw format-1 v0.27.97.0
+    - update firmware for mediatek bluetooth chip (MT7921)
+    - update firmware for mediatek bluetooth chip (MT7922)
+    - update firmware for MT7921 WiFi device
+    - update firmware for MT7922 WiFi device
+    - xe: Add BMG HuC 8.2.10
+    - xe: Add GSC 104.0.0.1161 for LNL
+    - xe: Add GuC v70.29.2 for LNL
+    - xe: Add LNL HuC 9.4.13
+    - xe: First GuC release v70.29.2 for BMG
+  * d/patches: drop tas2781 license fix, applied upstream
+  * d/patches/gitignore.patch: refresh
+  * d/bin/check_upstream: allow Apache-2.0 licence
+  * d/copyright: add Intel AVS topology files
+  * Update to linux-support-6.10.9
+
+ -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Fri, 06 Sep 2024 04:40:09 +0300
+
 firmware-nonfree (20240709-2) unstable; urgency=medium
 
   [ Ben Hutchings ]
