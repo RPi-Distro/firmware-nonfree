@@ -59,7 +59,7 @@ extract-source:
     - upstream_version=$(echo $version | sed 's/-[^-]*$//')
 
     # Merge upstream source
-    - origtargz -dt
+    - USCAN_VCS_EXPORT_UNCOMPRESSED=yes origtargz -dt
     - debian/rules orig
 
     # Fudge source version and suite *before* gencontrol.py
