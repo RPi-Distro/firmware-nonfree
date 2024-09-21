@@ -1,5 +1,38 @@
-firmware-nonfree (20240811-2) UNRELEASED; urgency=medium
+firmware-nonfree (20240909-1) UNRELEASED; urgency=medium
 
+  * New upstream version:
+    - amdgpu: DMCUB updates for various AMDGPU ASICs
+    - amdgpu: DMCUB updates forvarious AMDGPU ASICs
+    - amdgpu: Revert sienna cichlid dmcub firmware update
+    - amdgpu: update DMCUB to v0.0.232.0 for DCN314 and DCN351
+    - ath11k: IPQ5018 hw1.0: update to
+      WLAN.HK.2.6.0.1-01291-QCAHKSWPL_SILICONZ-1
+    - ath11k: QCA2066 hw2.1: add board-2.bin
+    - ath11k: QCA2066 hw2.1: add to
+      WLAN.HSP.1.1-03926.13-QCAHSPSWPL_V2_SILICONZ_CE-2.52297.3
+    - ath11k: WCN6855 hw2.0: update board-2.bin
+    - ath11k: WCN6855 hw2.0: update to
+      WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.41
+    - ath12k: WCN7850 hw2.0: update board-2.bin
+    - cirrus: cs35l56: Add firmware for Cirrus CS35L54 for some HP laptops
+    - i915: Update MTL DMC v2.23
+    - iwlwifi: add Bz FW for core89-58 release
+    - qcom: vpu: add video firmware for sa8775p
+    - qcom: vpu: restore compatibility with kernels before 6.6
+    - rename rtl8723bs_config-OBDA8723.bin -> rtl_bt/rtl8723bs_config.bin
+    - Revert "i915: Update MTL DMC v2.22"
+    - rtl_bt: Add firmware and config files for RTL8922A
+    - rtl_bt: Add firmware file for the the RTL8723CS Bluetooth part
+    - rtl_bt: de-dupe identical config.bin files
+    - rtl_nic: add firmware rtl8126a-3
+    - rtw89: 8922a: add fw format-1 v0.35.41.0
+    - update firmware for mediatek bluetooth chip (MT7921)
+    - update firmware for mediatek bluetooth chip (MT7925)
+    - update firmware for MT7921 WiFi device
+    - update firmware for MT7925 WiFi device
+    - update firmware for MT7996
+
+  [ Ben Hutchings ]
   * d/watch: Tighten tag regexp to work with upstream as a remote
 
  -- Ben Hutchings <benh@debian.org>  Mon, 07 Oct 2024 00:34:25 +0200
