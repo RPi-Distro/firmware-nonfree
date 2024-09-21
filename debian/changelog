@@ -105,6 +105,7 @@ firmware-nonfree (20240811-1) UNRELEASED; urgency=medium
   * d/patches/gitignore.patch: refresh
   * d/bin/check_upstream: allow Apache-2.0 licence
   * d/copyright: add Intel AVS topology files
+  * Update to linux-support-6.10.9
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Fri, 06 Sep 2024 04:40:09 +0300
 
