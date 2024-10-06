@@ -13,7 +13,6 @@ firmware-nonfree (20240909-1) UNRELEASED; urgency=medium
     - ath11k: WCN6855 hw2.0: update board-2.bin
     - ath11k: WCN6855 hw2.0: update to
       WLAN.HSP.1.1-03125-QCAHSPSWPL_V1_V2_SILICONZ_LITE-3.6510.41
-    - ath12k: WCN7850 hw2.0: update board-2.bin
     - cirrus: cs35l56: Add firmware for Cirrus CS35L54 for some HP laptops
     - i915: Update MTL DMC v2.23
     - iwlwifi: add Bz FW for core89-58 release
@@ -35,6 +34,7 @@ firmware-nonfree (20240909-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * d/watch: Tighten tag regexp to work with upstream as a remote
   * d/salsa-ci.yml: Use uscan option to speed up Git export with Files-Excluded
+  * Revert "ath12k: WCN7850 hw2.0: update board-2.bin" due to regression
 
  -- Ben Hutchings <benh@debian.org>  Mon, 07 Oct 2024 00:34:25 +0200
 
