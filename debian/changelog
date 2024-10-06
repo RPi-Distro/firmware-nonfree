@@ -1,4 +1,4 @@
-firmware-nonfree (20240811-1) UNRELEASED; urgency=medium
+firmware-nonfree (20240811-1) unstable; urgency=medium
 
   * New upstream version:
     - add firmware for qat_402xx devices
@@ -112,7 +112,7 @@ firmware-nonfree (20240811-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * Update to linux-support-6.10.12
 
- -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Fri, 06 Sep 2024 04:40:09 +0300
+ -- Ben Hutchings <benh@debian.org>  Mon, 07 Oct 2024 00:03:35 +0200
 
 firmware-nonfree (20240709-2) unstable; urgency=medium
 
