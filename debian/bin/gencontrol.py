@@ -281,21 +281,6 @@ You must agree to the terms of this license before it is installed."""
         # XXX Might need to escape some characters
         open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))
 
-    # XXX Delete after updating to linux-support-6.11
-    def do_extra(self) -> None:
-        try:
-            packages_extra = self.templates.get_control("extra.control", self.vars)
-        except KeyError:
-            return
-
-        for package in packages_extra:
-            package.meta_rules_target = 'meta'
-            if not package.architecture:
-                raise RuntimeError('Require Architecture in debian/templates/extra.control')
-            for arch in package.architecture:
-                self.bundle.add_packages([package], (arch, ),
-                                         MakeFlags(), arch=arch, check_packages=False)
-
     def process_template(self, in_entry, vars):
         e = Template()
         for key, value in in_entry.items():

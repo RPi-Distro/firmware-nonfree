@@ -35,6 +35,7 @@ firmware-nonfree (20240909-1) UNRELEASED; urgency=medium
   * d/watch: Tighten tag regexp to work with upstream as a remote
   * d/salsa-ci.yml: Use uscan option to speed up Git export with Files-Excluded
   * Revert "ath12k: WCN7850 hw2.0: update board-2.bin" due to regression
+  * Update to linux-support-6.11.2
 
  -- Ben Hutchings <benh@debian.org>  Mon, 07 Oct 2024 00:34:25 +0200
 
