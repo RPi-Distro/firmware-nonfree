@@ -1,4 +1,4 @@
-firmware-nonfree (20240909-1) UNRELEASED; urgency=medium
+firmware-nonfree (20240909-1) unstable; urgency=medium
 
   * New upstream version:
     - amdgpu: DMCUB updates for various AMDGPU ASICs
@@ -37,7 +37,7 @@ firmware-nonfree (20240909-1) UNRELEASED; urgency=medium
   * Revert "ath12k: WCN7850 hw2.0: update board-2.bin" due to regression
   * Update to linux-support-6.11.2
 
- -- Ben Hutchings <benh@debian.org>  Mon, 07 Oct 2024 00:34:25 +0200
+ -- Ben Hutchings <benh@debian.org>  Mon, 07 Oct 2024 23:52:47 +0200
 
 firmware-nonfree (20240811-1) unstable; urgency=medium
 
