@@ -2,6 +2,8 @@
 desc: Realtek wired/Wi-Fi/BT adapters
 longdesc: Realtek Ethernet, Wi-Fi and Bluetooth adapters supported by various
  drivers
+conflicts: firmware-realtek-rtl8723cs-bt
+replaces: firmware-realtek-rtl8723cs-bt
 support: initramfs-tools
 files:
  rtl_bt/*
@@ -11,3 +13,6 @@ files:
  rtw89/*
 files-excluded:
  rtw88/README
+usrmovemitigation:
+ rtl_bt/rtl8723cs_xx_config.bin
+ rtl_bt/rtl8723cs_xx_fw.bin

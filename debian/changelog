@@ -1,3 +1,10 @@
+firmware-nonfree (20240909-2) UNRELEASED; urgency=medium
+
+  * realtek: Add Conflicts and Replaces against firmware-realtek-rtl8723cs-bt
+    (Closes: #1084791)
+
+ -- Ben Hutchings <benh@debian.org>  Tue, 15 Oct 2024 01:02:37 +0200
+
 firmware-nonfree (20240909-1) unstable; urgency=medium
 
   * New upstream version:
