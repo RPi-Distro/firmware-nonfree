@@ -15,7 +15,6 @@ Files-Excluded:
  sdd_sagrad_1091_1098.bin
  slicoss/*.sys
  sxg/*.sys
- wsm_22.bin
 # - licence is supposedly GPL, but no source is visible
  adaptec/starfire_??.bin
  cpia2/stv0672_vp4.bin
