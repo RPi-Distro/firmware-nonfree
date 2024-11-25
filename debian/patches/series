@@ -1,1 +1,2 @@
 gitignore.patch
+copy-fimrware-don-t-create-links-to-excluded-files.patch
