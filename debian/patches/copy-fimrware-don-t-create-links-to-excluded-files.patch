@@ -16,12 +16,12 @@ Add a check that the symlink target exists.
 ---
 --- a/copy-firmware.sh
 +++ b/copy-firmware.sh
-@@ -136,7 +136,7 @@ grep -E '^Link:' WHENCE | sed -e 's/^Lin
-         if test -d "$target"; then
-             $verbose "creating link $f -> $d"
-             ln -s "$d" "$destdir/$f"
--        else
-+        elif test -f "$target$compext"; then
-             $verbose "creating link $f$compext -> $d$compext"
-             ln -s "$d$compext" "$destdir/$f$compext"
-         fi
+@@ -90,7 +90,7 @@ grep -E '^Link:' WHENCE | sed -e 's/^Lin
+     if test -e "$target"; then
+         $verbose "creating link $l -> $t"
+         ln -s "$t" "$destdir/$l"
+-    else
++    elif test -f "$target$compext"; then
+         $verbose "creating link $l$compext -> $t$compext"
+         ln -s "$t$compext" "$destdir/$l$compext"
+     fi

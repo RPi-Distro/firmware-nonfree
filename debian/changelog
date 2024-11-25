@@ -1,5 +1,105 @@
-firmware-nonfree (20240909-3) UNRELEASED; urgency=medium
+firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
 
+  * New upstream version:
+    - Add a link from TAS2XXX1EB3.bin -> ti/tas2781/TAS2XXX1EB30.bin
+    - Add firmware for Cirrus CS35L41
+    - amdgpu: add GC 11.5.2 microcode
+    - amdgpu: add SDMA 6.1.2 microcode
+    - amdgpu: Add support for PSP 14.0.4
+    - amdgpu: Add VPE 6.1.3 microcode
+    - amdgpu: DMCUB DCN35 update
+    - amdgpu: DMCUB updates for various AMDGPU ASICs
+    - amdgpu: DMCUB updates forvarious AMDGPU ASICs
+    - amdgpu: update aldebaran firmware
+    - amdgpu: update beige goby firmware
+    - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update DMCUB to v0.0.233.0 DCN351
+    - amdgpu: update DMCUB to v9.0.10.0 for DCN351
+    - amdgpu: update GC 11.0.0 firmware
+    - amdgpu: update GC 11.0.1 firmware
+    - amdgpu: update GC 11.0.2 firmware
+    - amdgpu: update GC 11.0.3 firmware
+    - amdgpu: update GC 11.5.0 firmware
+    - amdgpu: update GC 11.5.1 firmware
+    - amdgpu: update GC 11.5.2 firmware
+    - amdgpu: update GC 9.4.3 firmware
+    - amdgpu: update green sardine firmware
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update picasso firmware
+    - amdgpu: update PSP 13.0.0 firmware
+    - amdgpu: update PSP 13.0.10 firmware
+    - amdgpu: update PSP 13.0.4 firmware
+    - amdgpu: update PSP 13.0.5 firmware
+    - amdgpu: update PSP 13.0.6 firmware
+    - amdgpu: update PSP 13.0.7 firmware
+    - amdgpu: update PSP 13.0.8 firmware
+    - amdgpu: update PSP 14.0.0 firmware
+    - amdgpu: update PSP 14.0.1 firmware
+    - amdgpu: update PSP 14.0.4 firmware
+    - amdgpu: update raven firmware
+    - amdgpu: update renoir firmware
+    - amdgpu: update SDMA 4.4.2 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update SMU 13.0.10 firmware
+    - amdgpu: update SMU 13.0.6 firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update VCN 3.1.2 firmware
+    - amdgpu: update VCN 4.0.0 firmware
+    - amdgpu: update VCN 4.0.2 firmware
+    - amdgpu: update VCN 4.0.4 firmware
+    - amdgpu: update VCN 4.0.5 firmware
+    - amdgpu: update VCN 4.0.6 firmware
+    - amdgpu: update vega10 firmware
+    - amdgpu: update vega12 firmware
+    - amdgpu: update yellow carp firmware
+    - ath11k: move WCN6750 firmware to the device-specific subdir
+    - ath12k: WCN7850 hw2.0: update board-2.bin
+    - brcm: Add BCM4354 NVRAM for Jetson TX1
+    - brcm: Link FriendlyElec NanoPi M4 to AP6356S nvram
+    - brcm: replace NVRAM for Jetson TX1
+    - check_whence.py: ban link-to-a-link
+    - cirrus: cs35l56: Add firmware for Cirrus Amps for some HP laptops
+    - cirrus: cs35l56: Add firmware for Cirrus CS35L56 for a Lenovo Laptop
+    - cirrus: cs35l56: Add firmware for Cirrus CS35L56 for some ASUS laptops
+    - cirrus: cs35l56: Add firmware for Cirrus CS35L56 for various Dell laptops
+    - cirrus: cs35l56: Update firmware for Cirrus Amps for some HP laptops
+    - cnm: update chips&media wave521c firmware.
+    - i915: Add Xe3LPD DMC
+    - i915: Update MTL/ARL GSC to v102.1.15.1926
+    - i915: Update Xe2LPD DMC to v2.23
+    - iwlwifi: add gl/Bz FW for core91-69 release
+    - iwlwifi: update cc/Qu/QuZ firmwares for core91-69 release
+    - iwlwifi: update ty/So/Ma firmwares for core91-69 release
+    - mediatek: Add sof-tolg for mt8195
+    - mtk_wed: add firmware for mt7988 Wireless Ethernet Dispatcher
+    - QCA: Add Bluetooth firmwares for WCN785x with UART transport
+    - qcom: Add link for QCS6490 GPU firmware
+    - qcom: update gpu firmwares for qcm6490 chipset
+    - qcom: update gpu firmwares for qcs615 chipset
+    - Remove execute bit from firmware files
+    - Revert "ath12k: WCN7850 hw2.0: update board-2.bin"
+    - rtl_bt: Update RTL8852B BT USB FW to 0x0447_9301
+    - rtl_bt: Update RTL8852BT/RTL8852BE-VT BT USB FW to 0x04D7_63F7
+    - rtl_nic: add firmware rtl8125d-1
+    - rtlwifi: Add firmware v39.0 for RTL8192DU
+    - rtlwifi: Update firmware for RTL8192FU to v7.3
+    - rtw88: Add firmware v52.14.0 for RTL8812AU
+    - rtw89: 8852a: update fw to v0.13.36.2
+    - rtw89: 8922a: add fw format-2 v0.35.42.1
+    - tas2781: Upload dsp firmware for ASUS laptop 1EB30 & 1EB31
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel Bluetooth Magnetor core
+    - Update firmware file for Intel Bluetooth Solar core
+    - update firmware for en8811h 2.5G ethernet phy
+    - update firmware for mediatek bluetooth chip (MT7925)
+    - update firmware for MT7925 WiFi device
+    - xe: Update LNL GSC to v104.0.0.1263
+
+  [ Ben Hutchings ]
   * Update to linux-support-6.11.10
   * d/copyright: Stop excluding wsm_22.bin, which is distributable
   * atheros: Remove some long-obsolete ath9k firmware files
@@ -8,6 +108,7 @@ firmware-nonfree (20240909-3) UNRELEASED; urgency=medium
   * iwlwifi: Remove firmware version not used in any Debian release
   * d/copyright: Exclude currently unreferenced amlogic/*
   * copy-firmware: Don't create links to excluded files
+  * d/copyright: Exclude some newly added files to limit orig tarball size
 
  -- Ben Hutchings <benh@debian.org>  Mon, 25 Nov 2024 21:21:59 +0100
 
