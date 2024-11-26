@@ -1,2 +1,4 @@
 gitignore.patch
 copy-fimrware-don-t-create-links-to-excluded-files.patch
+revert-copy-firmware.sh-remove-no-longer-reachable-test-f.patch
+revert-copy-firmware.sh-call-.-check_whence.py-before-parsing-the-file.patch
