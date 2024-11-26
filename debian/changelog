@@ -111,6 +111,7 @@ firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
   * d/copyright: Exclude some newly added files to limit orig tarball size
   * Revert "copy-firmware.sh: remove no longer reachable test -f"
   * Revert "copy-firmware.sh: call ./check_whence.py before parsing the file"
+  * d/rules: Run dedup-firmware.sh after copy-firmware.sh
 
  -- Ben Hutchings <benh@debian.org>  Mon, 25 Nov 2024 21:21:59 +0100
 
