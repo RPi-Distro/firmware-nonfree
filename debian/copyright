@@ -15,7 +15,6 @@ Files-Excluded:
  sdd_sagrad_1091_1098.bin
  slicoss/*.sys
  sxg/*.sys
- wsm_22.bin
 # - licence is supposedly GPL, but no source is visible
  adaptec/starfire_??.bin
  cpia2/stv0672_vp4.bin
@@ -31,50 +30,62 @@ Files-Excluded:
  atusb/atusb-*.dfu
  atusb/rzusb-*.bin
  carl9170*
-# - licence is unknown
+# - licence is unknown or unclear
  acenic/tg?.bin
  ess/maestro3_*.fw
  korg/k1212.dsp
  lgs8g75.fw
- mediatek/mt7996/*
  mts_mt9234*.fw
  myricom/lanai.bin
  qlogic/isp1000.bin
  sun/cassini.bin
  ttusb-budget/dspbootcode.bin
+ ueagle-atm/930-fpga.bin
+ ueagle-atm/CMV*.bin
+ ueagle-atm/DSP9?.bin
+ ueagle-atm/DSPe?.bin
+ ueagle-atm/adi930.fw
+ ueagle-atm/eagleI.fw
+ ueagle-atm/eagleII.fw
+ ueagle-atm/eagleIII.fw
  vicam/firmware.fw
  yam/*
  yamaha/ds1*.fw
-# Packaged in amd64-microcode
- amd/amd_sev_*
+# Excluded to limit source and/or binary package size:
+# - packaged separately
  amd-ucode/*
+ amd/amd_sev_*
  amdtee/*
-# No Debian release references these; obsoleted by ar9170.fw
- ar9170-?.fw
-# These are said to be related to the hci_uart driver, but it doesn't
-# request them
- ar3k/*/*
-# wilc1000 driver is "usually found in IoT devices"
- atmel/wilc1000_*.bin
-# ath6k doesn't actually support this hardware
- ath6k/AR6002/*
-# Packaged in src:open-ath9k-htc-firmware (Cf. 837385)
  ath9k_htc/htc_7010-1.4.0.fw
  ath9k_htc/htc_9271-1.4.0.fw
-# This filename is wrong!
+# - never referenced by any upstream driver
+ amlogic/aml_*_bt_uart.bin
+ ar3k/*/*
+ ath6k/AR6002/*
  brcm/bcm4329-fullmac-4.bin
-# No Debian release references this version
+ dpaa2/mc/*
+ intel/dsp_fw_bxtn_v2219.bin
+ intel/dsp_fw_glk_v1814.bin
+ intel/dsp_fw_glk_v2768.bin
+ intel/dsp_fw_glk_v2880.bin
+ intel/dsp_fw_kbl_v1037.bin
+ intel/dsp_fw_kbl_v2042.bin
+ intel/dsp_fw_kbl_v2630.bin
+ intel/dsp_fw_kbl_v3266.bin
+ intel/dsp_fw_kbl_v701.bin
+ intel/dsp_fw_release_v969.bin
+ intel/ipu/shisp_*
+# - not referenced by driver in a supported Debian release
+ ar7010*.fw
+ ar9170-?.fw
+ ar9271.fw
  bnx2x/bnx2x-e*-7.13.11.0.fw
-# No Debian release references these versions
  cxgb3/t3fw-7.0.0.bin
  cxgb3/t3fw-7.1.0.bin
  cxgb4/t4fw-1.14.4.0.bin
  cxgb4/t4fw-1.15.37.0.bin
  cxgb4/t5fw-1.14.4.0.bin
  cxgb4/t5fw-1.15.37.0.bin
-# Nothing seems to reference these
- dpaa2/mc/*
-# No Debian release references these versions
  i915/adlp_dmc_ver2_09.bin
  i915/adlp_dmc_ver2_10.bin
  i915/adlp_dmc_ver2_12.bin
@@ -85,6 +96,8 @@ Files-Excluded:
  i915/bxt_guc_62.0.0.bin
  i915/bxt_guc_69.0.3.bin
  i915/bxt_guc_ver8_7.bin
+ i915/bxt_guc_ver9_29.bin
+ i915/bxt_huc_ver01_07_1398.bin
  i915/bxt_huc_ver01_8_2893.bin
  i915/cml_guc_49.0.1.bin
  i915/cml_guc_62.0.0.bin
@@ -119,6 +132,8 @@ Files-Excluded:
  i915/kbl_guc_62.0.0.bin
  i915/kbl_guc_69.0.3.bin
  i915/kbl_guc_ver9_14.bin
+ i915/kbl_guc_ver9_39.bin
+ i915/kbl_huc_ver02_00_1810.bin
  i915/mtl_dmc_ver2_10.bin
  i915/skl_dmc_ver1_23.bin
  i915/skl_dmc_ver1_26.bin
@@ -129,24 +144,14 @@ Files-Excluded:
  i915/skl_guc_ver1.bin
  i915/skl_guc_ver4.bin
  i915/skl_guc_ver6_1.bin
+ i915/skl_guc_ver9_33.bin
+ i915/skl_huc_ver01_07_1398.bin
  i915/tgl_dmc_ver2_04.bin
  i915/tgl_dmc_ver2_06.bin
  i915/tgl_guc_49.0.1.bin
  i915/tgl_guc_62.0.0.bin
  i915/tgl_huc_7.0.12.bin
  i915/tgl_huc_7.0.3.bin
-# Nothing seems to reference these versions
- intel/dsp_fw_bxtn_v2219.bin
- intel/dsp_fw_glk_v1814.bin
- intel/dsp_fw_glk_v2880.bin
- intel/dsp_fw_glk_v2768.bin
- intel/dsp_fw_kbl_v701.bin
- intel/dsp_fw_kbl_v1037.bin
- intel/dsp_fw_kbl_v2042.bin
- intel/dsp_fw_kbl_v2630.bin
- intel/dsp_fw_kbl_v3266.bin
- intel/dsp_fw_release_v969.bin
-# No Debian release requires these versions
  intel/ibt-17-1.ddc
  intel/ibt-17-1.sfi
  intel/ibt-17-2.ddc
@@ -155,83 +160,22 @@ Files-Excluded:
  intel/ibt-18-1.sfi
  intel/ibt-18-2.ddc
  intel/ibt-18-2.sfi
-# Only referenced by staging atomisp driver, and in different dir
- intel/ipu/shisp_*
-# No Debian release requires these versions
- iwlwifi-8000C-34.ucode
- iwlwifi-8265-34.ucode
- iwlwifi-9000-pu-b0-jf-b0-34.ucode
- iwlwifi-9260-th-b0-jf-b0-34.ucode
- iwlwifi-Qu-b0-hr-b0-50.ucode
- iwlwifi-Qu-b0-hr-b0-66.ucode
- iwlwifi-Qu-b0-hr-b0-73.ucode
- iwlwifi-Qu-b0-hr-b0-74.ucode
- iwlwifi-Qu-b0-jf-b0-50.ucode
- iwlwifi-Qu-b0-jf-b0-66.ucode
- iwlwifi-Qu-b0-jf-b0-73.ucode
- iwlwifi-Qu-b0-jf-b0-74.ucode
- iwlwifi-Qu-c0-hr-b0-50.ucode
- iwlwifi-Qu-c0-hr-b0-66.ucode
- iwlwifi-Qu-c0-hr-b0-73.ucode
- iwlwifi-Qu-c0-hr-b0-74.ucode
- iwlwifi-Qu-c0-jf-b0-50.ucode
- iwlwifi-Qu-c0-jf-b0-66.ucode
- iwlwifi-Qu-c0-jf-b0-73.ucode
- iwlwifi-Qu-c0-jf-b0-74.ucode
- iwlwifi-QuZ-a0-hr-b0-50.ucode
- iwlwifi-QuZ-a0-hr-b0-66.ucode
- iwlwifi-QuZ-a0-hr-b0-73.ucode
- iwlwifi-QuZ-a0-hr-b0-74.ucode
- iwlwifi-QuZ-a0-jf-b0-50.ucode
- iwlwifi-QuZ-a0-jf-b0-66.ucode
- iwlwifi-QuZ-a0-jf-b0-73.ucode
- iwlwifi-QuZ-a0-jf-b0-74.ucode
- iwlwifi-cc-a0-50.ucode
- iwlwifi-cc-a0-66.ucode
- iwlwifi-cc-a0-73.ucode
- iwlwifi-cc-a0-74.ucode
- iwlwifi-gl-c0-fm-c0-83.ucode
- iwlwifi-gl-c0-fm-c0-90.ucode
- iwlwifi-ma-b0-gf-a0-83.ucode
- iwlwifi-ma-b0-gf4-a0-83.ucode
- iwlwifi-ma-b0-hr-b0-83.ucode
- iwlwifi-so-a0-gf-a0-73.ucode
- iwlwifi-so-a0-gf-a0-74.ucode
+ iwlwifi-*-34.ucode
+ iwlwifi-*-50.ucode
+ iwlwifi-*-66.ucode
+ iwlwifi-*-73.ucode
+ iwlwifi-*-74.ucode
+ iwlwifi-*-78.ucode
+ iwlwifi-*-79.ucode
+ iwlwifi-*-81.ucode
+ iwlwifi-*-83.ucode
+ iwlwifi-*-84.ucode
+ iwlwifi-*-86.ucode
+ iwlwifi-*-90.ucode
  iwlwifi-so-a0-gf-a0-77.ucode
- iwlwifi-so-a0-gf-a0-78.ucode
- iwlwifi-so-a0-gf-a0-79.ucode
- iwlwifi-so-a0-gf-a0-81.ucode
- iwlwifi-so-a0-gf-a0-83.ucode
- iwlwifi-so-a0-gf-a0-84.ucode
- iwlwifi-so-a0-gf4-a0-73.ucode
- iwlwifi-so-a0-gf4-a0-74.ucode
  iwlwifi-so-a0-gf4-a0-77.ucode
- iwlwifi-so-a0-gf4-a0-78.ucode
- iwlwifi-so-a0-gf4-a0-79.ucode
- iwlwifi-so-a0-gf4-a0-81.ucode
- iwlwifi-so-a0-gf4-a0-83.ucode
- iwlwifi-so-a0-gf4-a0-84.ucode
- iwlwifi-so-a0-hr-b0-73.ucode
- iwlwifi-so-a0-hr-b0-74.ucode
  iwlwifi-so-a0-hr-b0-77.ucode
- iwlwifi-so-a0-hr-b0-79.ucode
- iwlwifi-so-a0-hr-b0-81.ucode
- iwlwifi-so-a0-hr-b0-83.ucode
- iwlwifi-so-a0-hr-b0-84.ucode
- iwlwifi-so-a0-jf-b0-73.ucode
- iwlwifi-so-a0-jf-b0-74.ucode
- iwlwifi-ty-a0-gf-a0-66.ucode
- iwlwifi-ty-a0-gf-a0-73.ucode
- iwlwifi-ty-a0-gf-a0-74.ucode
  iwlwifi-ty-a0-gf-a0-77.ucode
- iwlwifi-ty-a0-gf-a0-78.ucode
- iwlwifi-ty-a0-gf-a0-79.ucode
- iwlwifi-ty-a0-gf-a0-81.ucode
- iwlwifi-ty-a0-gf-a0-83.ucode
- iwlwifi-ty-a0-gf-a0-84.ucode
-# These are for the IXP4xx SoCs that we no longer support
- ixp4xx/*
-# No Debian release references these versions
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
@@ -239,40 +183,42 @@ Files-Excluded:
  mwl8k/fmimage_8366_ap-1.fw
  mwlwifi/88W8864.bin
  mwlwifi/88W8897.bin
-# This is for hardware only found in Mellanox switch appliances
- mellanox/lc_ini_*
- mellanox/mlxsw*
-# Exclude some large Qualcomm binaries until they're needed
- qcom/sdm845/Thundercomm/*
- qcom/sm8250/Thundercomm/*
-# No Debian release references these versions
  qed/qed_init_values-*.bin
- qed/qed_init_values_zipped-8.4.2.0.bin
- qed/qed_init_values_zipped-8.7.3.0.bin
  qed/qed_init_values_zipped-8.10.5.0.bin
+ qed/qed_init_values_zipped-8.10.10.0.bin
  qed/qed_init_values_zipped-8.15.3.0.bin
  qed/qed_init_values_zipped-8.20.0.0.bin
-# This was for the unreleased R-Car H3 ES1 SoC
- r8a779x_usb3_v2.dlmem
-# No Debian release requires these versions
+ qed/qed_init_values_zipped-8.33.1.0.bin
+ qed/qed_init_values_zipped-8.33.11.0.bin
+ qed/qed_init_values_zipped-8.37.2.0.bin
+ qed/qed_init_values_zipped-8.37.7.0.bin
+ qed/qed_init_values_zipped-8.4.2.0.bin
+ qed/qed_init_values_zipped-8.7.3.0.bin
  ti-connectivity/wl1271-fw*.bin
- ti-connectivity/wl128x-fw.bin
  ti-connectivity/wl128x-fw-ap.bin
+ ti-connectivity/wl128x-fw.bin
  ti-connectivity/wl12?x-fw*-3.bin
  ti-connectivity/wl12?x-fw*-4-*.bin
  ti-connectivity/wl18xx-fw.bin
-# Driver requesting this was removed upstream before we added the firmware
  tlg2300_firmware.bin
-# Licenses for these are very unclear
- ueagle-atm/930-fpga.bin
- ueagle-atm/CMV*.bin
- ueagle-atm/adi930.fw
- ueagle-atm/eagleI.fw
- ueagle-atm/eagleII.fw
- ueagle-atm/eagleIII.fw
- ueagle-atm/DSP9?.bin
- ueagle-atm/DSPe?.bin
-# Xframe hardware has been discontinued and no-one requested these
+# - for hardware never available to the public
+ r8a779x_usb3_v2.dlmem
+# - for hardware unlikely to run Debian
+ atmel/wilc1000_*.bin
+ ixp4xx/*
+ mellanox/lc_ini_*
+ mellanox/mlxsw*
+# - large and not requested for inclusion
+ ath12k/QCN9274/hw2.0/*
+ mediatek/*_MT7961*_1a*.bin
+ mediatek/mt7996/*
+ qcom/a663_gmu.bin
+ qcom/qcm6490/*
+ qcom/sa8775p/*
+ qcom/sdm845/Thundercomm/*
+ qcom/sm8250/Thundercomm/*
+ qcom/x1e80100/adsp*
+ qcom/x1e80100/battmgr.jsn
  vxge/X3fw*.ncf
 
 Files: debian/*

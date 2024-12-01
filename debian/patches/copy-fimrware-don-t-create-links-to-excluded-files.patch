@@ -1,0 +1,27 @@
+From: Ben Hutchings <benh@debian.org>
+Date: Mon, 25 Nov 2024 22:51:12 +0100
+Subject: copy-firmware: Don't create links to excluded files
+Forwarded: not-needed
+
+Currently copy-firmware.sh skips missing files, but it may still
+create symlinks to them.  Specifically, it currently creates the
+follwoing broken symlinks:
+
+- i915/skl_dmc_ver1.bin
+- i915/skl_guc_ver6.bin
+- i915/kbl_dmc_ver1.bin
+
+Add a check that the symlink target exists.
+
+---
+--- a/copy-firmware.sh
++++ b/copy-firmware.sh
+@@ -90,7 +90,7 @@ grep -E '^Link:' WHENCE | sed -e 's/^Lin
+     if test -e "$target"; then
+         $verbose "creating link $l -> $t"
+         ln -s "$t" "$destdir/$l"
+-    else
++    elif test -f "$target$compext"; then
+         $verbose "creating link $l$compext -> $t$compext"
+         ln -s "$t$compext" "$destdir/$l$compext"
+     fi

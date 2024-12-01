@@ -4,8 +4,6 @@ longdesc: USB wireless network and Bluetooth cards supported by the ar5523,
  ath3k, ath6kl_sdio, ath6kl_usb, ath10k, ath11k, or wilc6210 drivers
 files:
  ar5523.bin
- ar7010*
- ar9271.fw
  ath3k-1.fw
  htc_7010.fw
  htc_9271.fw
