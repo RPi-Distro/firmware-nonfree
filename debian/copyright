@@ -234,8 +234,13 @@ Files-Excluded:
  mwlwifi/88W8897.bin
  qed/qed_init_values-*.bin
  qed/qed_init_values_zipped-8.10.5.0.bin
+ qed/qed_init_values_zipped-8.10.10.0.bin
  qed/qed_init_values_zipped-8.15.3.0.bin
  qed/qed_init_values_zipped-8.20.0.0.bin
+ qed/qed_init_values_zipped-8.33.1.0.bin
+ qed/qed_init_values_zipped-8.33.11.0.bin
+ qed/qed_init_values_zipped-8.37.2.0.bin
+ qed/qed_init_values_zipped-8.37.7.0.bin
  qed/qed_init_values_zipped-8.4.2.0.bin
  qed/qed_init_values_zipped-8.7.3.0.bin
  ti-connectivity/wl1271-fw*.bin
