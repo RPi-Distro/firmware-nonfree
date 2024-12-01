@@ -31,7 +31,7 @@ Files-Excluded:
  atusb/atusb-*.dfu
  atusb/rzusb-*.bin
  carl9170*
-# - licence is unknown
+# - licence is unknown or unclear
  acenic/tg?.bin
  ess/maestro3_*.fw
  korg/k1212.dsp
@@ -42,6 +42,14 @@ Files-Excluded:
  qlogic/isp1000.bin
  sun/cassini.bin
  ttusb-budget/dspbootcode.bin
+ ueagle-atm/930-fpga.bin
+ ueagle-atm/CMV*.bin
+ ueagle-atm/DSP9?.bin
+ ueagle-atm/DSPe?.bin
+ ueagle-atm/adi930.fw
+ ueagle-atm/eagleI.fw
+ ueagle-atm/eagleII.fw
+ ueagle-atm/eagleIII.fw
  vicam/firmware.fw
  yam/*
  yamaha/ds1*.fw
@@ -263,15 +271,6 @@ Files-Excluded:
  ti-connectivity/wl18xx-fw.bin
 # Driver requesting this was removed upstream before we added the firmware
  tlg2300_firmware.bin
-# Licenses for these are very unclear
- ueagle-atm/930-fpga.bin
- ueagle-atm/CMV*.bin
- ueagle-atm/adi930.fw
- ueagle-atm/eagleI.fw
- ueagle-atm/eagleII.fw
- ueagle-atm/eagleIII.fw
- ueagle-atm/DSP9?.bin
- ueagle-atm/DSPe?.bin
 # Xframe hardware has been discontinued and no-one requested these
  vxge/X3fw*.ncf
 
