@@ -76,7 +76,9 @@ Files-Excluded:
  intel/dsp_fw_release_v969.bin
  intel/ipu/shisp_*
 # - not referenced by driver in a supported Debian release
+ ar7010*.fw
  ar9170-?.fw
+ ar9271.fw
  bnx2x/bnx2x-e*-7.13.11.0.fw
  cxgb3/t3fw-7.0.0.bin
  cxgb3/t3fw-7.1.0.bin

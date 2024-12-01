@@ -2,6 +2,7 @@ firmware-nonfree (20240909-3) UNRELEASED; urgency=medium
 
   * Update to linux-support-6.11.10
   * d/copyright: Stop excluding wsm_22.bin, which is distributable
+  * atheros: Remove some long-obsolete ath9k firmware files
 
  -- Ben Hutchings <benh@debian.org>  Mon, 25 Nov 2024 21:21:59 +0100
 
