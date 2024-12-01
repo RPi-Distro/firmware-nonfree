@@ -5,6 +5,7 @@ firmware-nonfree (20240909-3) UNRELEASED; urgency=medium
   * atheros: Remove some long-obsolete ath9k firmware files
   * qlogic: Remove qed firmware versions not used in any Debian release
   * intel-graphics: Remove firmware versions not used in any Debian release
+  * iwlwifi: Remove firmware version not used in any Debian release
 
  -- Ben Hutchings <benh@debian.org>  Mon, 25 Nov 2024 21:21:59 +0100
 

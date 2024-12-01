@@ -170,6 +170,7 @@ Files-Excluded:
  iwlwifi-*-81.ucode
  iwlwifi-*-83.ucode
  iwlwifi-*-84.ucode
+ iwlwifi-*-86.ucode
  iwlwifi-*-90.ucode
  iwlwifi-so-a0-gf-a0-77.ucode
  iwlwifi-so-a0-gf4-a0-77.ucode
