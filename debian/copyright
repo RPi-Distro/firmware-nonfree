@@ -60,6 +60,7 @@ Files-Excluded:
  ath9k_htc/htc_7010-1.4.0.fw
  ath9k_htc/htc_9271-1.4.0.fw
 # - never referenced by any upstream driver
+ amlogic/aml_*_bt_uart.bin
  ar3k/*/*
  ath6k/AR6002/*
  brcm/bcm4329-fullmac-4.bin
