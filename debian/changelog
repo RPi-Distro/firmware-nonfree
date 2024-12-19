@@ -1,24 +1,41 @@
-firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
+firmware-nonfree (20241210-1) UNRELEASED; urgency=medium
 
   * New upstream version:
     - Add a link from TAS2XXX1EB3.bin -> ti/tas2781/TAS2XXX1EB30.bin
     - Add firmware for Cirrus CS35L41
     - amdgpu: add GC 11.5.2 microcode
+    - amdgpu: add gc 12.0.0 firmware
+    - amdgpu: add gc 12.0.1 firmware
+    - amdgpu: add gc 9.4.4 firmware
+    - amdgpu: add psp 13.0.14 firmware
+    - amdgpu: add psp 14.0.2 firmware
+    - amdgpu: add psp 14.0.3 firmware
+    - amdgpu: add sdma 4.4.5 firmware
     - amdgpu: add SDMA 6.1.2 microcode
+    - amdgpu: add sdma 7.0.0 firmware
+    - amdgpu: add sdma 7.0.1 firmware
+    - amdgpu: add smu 13.0.14 firmware
+    - amdgpu: add smu 14.0.2 firmware
+    - amdgpu: add smu 14.0.3 firmware
     - amdgpu: Add support for PSP 14.0.4
+    - amdgpu: add vcn 5.0.0 firmware
     - amdgpu: Add VPE 6.1.3 microcode
     - amdgpu: DMCUB DCN35 update
     - amdgpu: DMCUB updates for various AMDGPU ASICs
     - amdgpu: DMCUB updates forvarious AMDGPU ASICs
     - amdgpu: update aldebaran firmware
+    - amdgpu: update arcturus firmware
     - amdgpu: update beige goby firmware
     - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update dmcub 0.0.246.0 firmware
     - amdgpu: update DMCUB to v0.0.233.0 DCN351
+    - amdgpu: update DMCUB to v9.0.10.0 for DCN314
     - amdgpu: update DMCUB to v9.0.10.0 for DCN351
     - amdgpu: update GC 11.0.0 firmware
     - amdgpu: update GC 11.0.1 firmware
     - amdgpu: update GC 11.0.2 firmware
     - amdgpu: update GC 11.0.3 firmware
+    - amdgpu: update gc 11.0.4 firmware
     - amdgpu: update GC 11.5.0 firmware
     - amdgpu: update GC 11.5.1 firmware
     - amdgpu: update GC 11.5.2 firmware
@@ -31,6 +48,8 @@ firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
     - amdgpu: update picasso firmware
     - amdgpu: update PSP 13.0.0 firmware
     - amdgpu: update PSP 13.0.10 firmware
+    - amdgpu: update psp 13.0.11 firmware
+    - amdgpu: update psp 13.0.14 firmware
     - amdgpu: update PSP 13.0.4 firmware
     - amdgpu: update PSP 13.0.5 firmware
     - amdgpu: update PSP 13.0.6 firmware
@@ -41,8 +60,11 @@ firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
     - amdgpu: update PSP 14.0.4 firmware
     - amdgpu: update raven firmware
     - amdgpu: update renoir firmware
+    - amdgpu: update sdma 4.4.2 firmware
     - amdgpu: update SDMA 4.4.2 firmware
+    - amdgpu: update sdma 6.0.3 firmware
     - amdgpu: update sienna cichlid firmware
+    - amdgpu: update smu 13.0.0 firmware
     - amdgpu: update SMU 13.0.10 firmware
     - amdgpu: update SMU 13.0.6 firmware
     - amdgpu: update vangogh firmware
@@ -54,6 +76,9 @@ firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
     - amdgpu: update VCN 4.0.6 firmware
     - amdgpu: update vega10 firmware
     - amdgpu: update vega12 firmware
+    - amdgpu: update vega20 firmware
+    - amdgpu: update vpe 6.1.1 firmware
+    - amdgpu: update vpe 6.1.3 firmware
     - amdgpu: update yellow carp firmware
     - ath11k: move WCN6750 firmware to the device-specific subdir
     - ath12k: WCN7850 hw2.0: update board-2.bin
@@ -68,17 +93,33 @@ firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
     - cirrus: cs35l56: Update firmware for Cirrus Amps for some HP laptops
     - cnm: update chips&media wave521c firmware.
     - i915: Add Xe3LPD DMC
+    - i915: Update GUC to v70.36.0 for ADL-P, DG1, DG2, MTL, TGL
     - i915: Update MTL/ARL GSC to v102.1.15.1926
     - i915: Update Xe2LPD DMC to v2.23
+    - i915: Update Xe2LPD DMC to v2.24
+    - ice: update ice DDP comms package to 1.3.52.0
+    - ice: update ice DDP package to ice-1.3.41.0
+    - ice: update ice DDP wireless_edge package to 1.3.20.0
+    - iwlwifi: add Bz-gf FW for core89-91 release
+    - iwlwifi: add Bz-gf FW for core91-69 release
     - iwlwifi: add gl/Bz FW for core91-69 release
     - iwlwifi: update cc/Qu/QuZ firmwares for core91-69 release
     - iwlwifi: update ty/So/Ma firmwares for core91-69 release
+    - mediatek MT7921: update bluetooth firmware to 20241106151414
+    - mediatek MT7922: update bluetooth firmware to 20241106163512
     - mediatek: Add sof-tolg for mt8195
     - mtk_wed: add firmware for mt7988 Wireless Ethernet Dispatcher
+    - QCA: Add 22 bluetooth firmware nvm files for QCA2066
     - QCA: Add Bluetooth firmwares for WCN785x with UART transport
+    - QCA: Add Bluetooth nvm files for WCN785x
+    - QCA: Update Bluetooth WCN785x firmware to 2.0.0-00515-2
     - qcom: Add link for QCS6490 GPU firmware
+    - qcom: Add QDU100 firmware image files.
+    - qcom: Update aic100 firmware files
     - qcom: update gpu firmwares for qcm6490 chipset
     - qcom: update gpu firmwares for qcs615 chipset
+    - qcom: update venus firmware file for SC7280
+    - qcom: venus-5.4: add venus firmware file for qcs615
     - Remove execute bit from firmware files
     - Revert "ath12k: WCN7850 hw2.0: update board-2.bin"
     - rtl_bt: Update RTL8852B BT USB FW to 0x0447_9301
@@ -96,11 +137,13 @@ firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
     - Update firmware file for Intel Bluetooth Solar core
     - update firmware for en8811h 2.5G ethernet phy
     - update firmware for mediatek bluetooth chip (MT7925)
+    - update firmware for MT7921 WiFi device
+    - update firmware for MT7922 WiFi device
     - update firmware for MT7925 WiFi device
+    - xe: Update GUC to v70.36.0 for BMG, LNL
     - xe: Update LNL GSC to v104.0.0.1263
 
   [ Ben Hutchings ]
-  * Update to linux-support-6.11.10
   * d/copyright: Stop excluding wsm_22.bin, which is distributable
   * atheros: Remove some long-obsolete ath9k firmware files
   * qlogic: Remove qed firmware versions not used in any Debian release
@@ -112,6 +155,7 @@ firmware-nonfree (20241110-1) UNRELEASED; urgency=medium
   * Revert "copy-firmware.sh: remove no longer reachable test -f"
   * Revert "copy-firmware.sh: call ./check_whence.py before parsing the file"
   * d/rules: Run dedup-firmware.sh after copy-firmware.sh
+  * Update to linux-support-6.12.5
 
  -- Ben Hutchings <benh@debian.org>  Mon, 25 Nov 2024 21:21:59 +0100
 
