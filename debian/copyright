@@ -213,7 +213,6 @@ Files-Excluded:
  mediatek/*_MT7961*_1a*.bin
  mediatek/mt7996/*
  qcom/a663_gmu.bin
- qcom/qcm6490/*
  qcom/sa8775p/*
  qcom/sdm845/Thundercomm/*
  qcom/sm8250/Thundercomm/*

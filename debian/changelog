@@ -1,5 +1,6 @@
 firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
 
+  [ Dmitry Baryshkov ]
   * New upstream version:
     - amdgpu: revert dimgrey cavefish VCN firmware
     - amdgpu: revert navy flounder VCN firmware
@@ -17,6 +18,9 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
     - rtl_nic: add firmware rtl8125bp-2
     - rtl_nic: add firmware rtl8125d-2
     - WHENCE: Link the Raspberry Pi CM5 and 500 to the 4B
+
+  [ Loïc Minier ]
+  * d/copyright: qcom: Re-add qcm6490 firmware
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Sun, 09 Feb 2025 18:12:00 +0200
 
