@@ -22,6 +22,7 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
   * d/copyright: qcom: readd X Elite firmware
   * Update to linux-support-6.12.12
   * d/config/amd-graphics: add AMD NPU firmware
+  * d/config/misc-nonfree: actualy include wsm_22.bin
 
   [ Loïc Minier ]
   * d/copyright: qcom: Re-add qcm6490 firmware
