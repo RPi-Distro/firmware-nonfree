@@ -20,6 +20,7 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
     - WHENCE: Link the Raspberry Pi CM5 and 500 to the 4B
   * d/copyright: qcom: readd SA8775p aka QCS9100 firmware
   * d/copyright: qcom: readd X Elite firmware
+  * Update to linux-support-6.12.12
 
   [ Loïc Minier ]
   * d/copyright: qcom: Re-add qcm6490 firmware
