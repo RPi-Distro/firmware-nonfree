@@ -1,3 +1,25 @@
+firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: revert dimgrey cavefish VCN firmware
+    - amdgpu: revert navy flounder VCN firmware
+    - amdgpu: revert sienna cichlid VCN firmware
+    - amdgpu: revert VCN 3.1.2 firmware
+    - amdgpu: revert yellow carp VCN firmware
+    - cirrus: cs35l41: Add Firmware for Ayaneo system 1f660105
+    - cirrus: cs35l56: Add and update firmware for various Cirrus CS35L54 and CS35L56 laptops
+    - cirrus: cs35l56: Correct filenames of SSID 17aa3832
+    - cirrus: cs35l56: Correct SSID order for 103c8d01 103c8d08 10431f43
+    - cnm: update chips&media wave521c firmware.
+    - qcom: venus-5.4: update firmware binary for sc7180 and qcs615
+    - rtl_bt: Add separate config for RLT8723CS Bluetooth part
+    - rtl_bt: Update RTL8852B BT USB FW to 0x04BE_1F5E
+    - rtl_nic: add firmware rtl8125bp-2
+    - rtl_nic: add firmware rtl8125d-2
+    - WHENCE: Link the Raspberry Pi CM5 and 500 to the 4B
+
+ -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Sun, 09 Feb 2025 18:12:00 +0200
+
 firmware-nonfree (20241210-2) UNRELEASED; urgency=medium
 
   * Make firmware-intel-graphics trigger update-initramfs (Closes: #1100097)

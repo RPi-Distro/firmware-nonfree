@@ -17,11 +17,11 @@ Add a check that the symlink target exists.
 --- a/copy-firmware.sh
 +++ b/copy-firmware.sh
 @@ -90,7 +90,7 @@ grep -E '^Link:' WHENCE | sed -e 's/^Lin
-     if test -e "$target"; then
-         $verbose "creating link $l -> $t"
-         ln -s "$t" "$destdir/$l"
+         else
+             ln -s "$t" "$destdir/$l"
+         fi
 -    else
 +    elif test -f "$target$compext"; then
          $verbose "creating link $l$compext -> $t$compext"
-         ln -s "$t$compext" "$destdir/$l$compext"
-     fi
+         if [ "$num_jobs" -gt 1 ]; then
+             echo "ln -s \"$t$compext\" \"$destdir/$l$compext\"" >> "$parallel_args_file"
