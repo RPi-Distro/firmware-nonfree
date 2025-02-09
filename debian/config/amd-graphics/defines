@@ -1,8 +1,9 @@
 [base]
-desc: AMD/ATI graphics chips
-longdesc: AMD/ATI graphics chips supported by the radeon, amdgpu and r128 drivers
+desc: AMD/ATI graphics and NPU chips
+longdesc: AMD/ATI graphics and NPU chips supported by the radeon, amdgpu, amdxdna and r128 drivers
 support: initramfs-tools
 files:
  amdgpu/*
+ amdnpu/*/*
  r128/*
  radeon/*
