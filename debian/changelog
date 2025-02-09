@@ -18,6 +18,7 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
     - rtl_nic: add firmware rtl8125bp-2
     - rtl_nic: add firmware rtl8125d-2
     - WHENCE: Link the Raspberry Pi CM5 and 500 to the 4B
+  * d/copyright: qcom: readd SA8775p aka QCS9100 firmware
 
   [ Loïc Minier ]
   * d/copyright: qcom: Re-add qcm6490 firmware
