@@ -214,8 +214,6 @@ Files-Excluded:
  mediatek/mt7996/*
  qcom/sdm845/Thundercomm/*
  qcom/sm8250/Thundercomm/*
- qcom/x1e80100/adsp*
- qcom/x1e80100/battmgr.jsn
  vxge/X3fw*.ncf
 
 Files: debian/*
