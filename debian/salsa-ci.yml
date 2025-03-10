@@ -2,7 +2,7 @@ include:
   - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/salsa-ci.yml
 
 variables:
-  RELEASE: 'unstable'
+  RELEASE: 'bookworm-backports'
   # We only build arch:all packages
   SALSA_CI_DISABLE_BLHC: 'true'
   SALSA_CI_DISABLE_BUILD_PACKAGE_I386: 'true'
@@ -41,15 +41,17 @@ extract-source:
     # Install dependencies of gencontrol.py and debian/rules orig
     # plus origtargz
     - apt-get update
-    - eatmydata apt-get install --no-install-recommends -y make
+    - eatmydata apt-get install --no-install-recommends -y make dpkg-dev
     - |
       eatmydata apt-get install --no-install-recommends -y \
         debhelper \
         devscripts \
         git \
         python3 \
+        python3-dacite \
         python3-jinja2 \
         quilt \
+        rdfind \
         rsync \
         $(debian/rules linux-support-name)
 

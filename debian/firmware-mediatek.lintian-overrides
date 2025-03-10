@@ -1,0 +1,4 @@
+# These lintian checks/errors are not useful for non-free-firmware
+firmware-mediatek: arch-independent-package-contains-binary-or-object *lib/firmware/mediatek/*/scp.img*
+firmware-mediatek: statically-linked-binary *lib/firmware/mediatek/*/scp.img*
+firmware-mediatek: unstripped-binary-or-object *lib/firmware/mediatek/*/scp.img*

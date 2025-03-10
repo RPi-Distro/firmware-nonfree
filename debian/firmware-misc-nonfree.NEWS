@@ -1,0 +1,20 @@
+firmware-nonfree (20230625-3~exp1) experimental; urgency=medium
+
+  Several firmware files were moved from firmware-misc-nonfree into
+  their own package:
+  - firmware-nvidia-graphics: This package now holds the firmware files for
+    Nvidia GPU hardware.
+  - firmware-intel-graphics: This package now holds the firmware files
+    for Intel Graphics Media Driver chips (mostly i915) as found in
+    'modern' Intel CPUs with integrated graphics in the Broadwell and
+    the various 'Lake' CPU series.
+  - firmware-intel-misc: This package now holds the firmware files for Intel
+    devices and chips which do not belong in one of the other Intel firmware
+    packages. These devices/chips include for example Omni-Path devices,
+    Ethernet/Network chips/devices and QuickAssist Technology crypto
+    accelerators.
+  - firmware-mediatek: This package now holds the firmware files for
+    devices and chips made by MediaTek and Ralink, which is part of
+    MediaTek.
+
+ -- Diederik de Haas <didi.debian@cknow.org>  Thu, 18 Jan 2024 14:00:00 +0100

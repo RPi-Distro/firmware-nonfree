@@ -1,0 +1,6 @@
+firmware-nonfree (20230625-3~exp1) experimental; urgency=medium
+
+  The vpdma-1b8.bin firmware file was moved from firmware-ti-connectivity to
+  firmware-misc-nonfree as it's related to video processing, not connectivity.
+
+ -- Diederik de Haas <didi.debian@cknow.org>  Thu, 18 Jan 2024 14:00:00 +0100

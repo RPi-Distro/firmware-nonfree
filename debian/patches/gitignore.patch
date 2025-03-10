@@ -3,9 +3,13 @@ Date: Mon, 18 Oct 2015 03:29:18 +0200
 Subject: Git ignore everything except the debian dir
 Forwarded: not-needed
 
---- /dev/null
+--- a/.gitignore
 +++ b/.gitignore
-@@ -0,0 +1,6 @@
+@@ -3,3 +3,10 @@
+ release/
+ contrib/*.db
+ contrib/*.txt
++
 +#
 +# Debian packaging: ignore everything at the top level, since it isn't
 +# included in our repository

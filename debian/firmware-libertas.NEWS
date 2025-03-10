@@ -1,0 +1,6 @@
+firmware-nonfree (20230625-3~exp1) experimental; urgency=medium
+
+  The Marvell Prestera firmware files were moved from firmware-libertas into
+  the new firmware-marvell-prestera package.
+
+ -- Diederik de Haas <didi.debian@cknow.org>  Thu, 18 Jan 2024 14:00:00 +0100

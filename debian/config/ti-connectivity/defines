@@ -1,74 +1,7 @@
 [base]
 desc: TI Connectivity Wi-Fi and BT/FM/GPS adapters
-files:
- ti/vpdma-1b8.bin
- ti-connectivity/TIInit_6.2.31.bts
- ti-connectivity/TIInit_6.6.15.bts
- ti-connectivity/TIInit_7.2.31.bts
- ti-connectivity/wl1251-fw.bin
- ti-connectivity/wl1251-nvs.bin
- ti-connectivity/wl1271-nvs.bin
- ti-connectivity/wl127x-fw-5-mr.bin
- ti-connectivity/wl127x-fw-5-plt.bin
- ti-connectivity/wl127x-fw-5-sr.bin
- ti-connectivity/wl127x-nvs.bin
- ti-connectivity/wl128x-fw-5-mr.bin
- ti-connectivity/wl128x-fw-5-plt.bin
- ti-connectivity/wl128x-fw-5-sr.bin
- ti-connectivity/wl128x-nvs.bin
- ti-connectivity/wl12xx-nvs.bin
- ti-connectivity/wl18xx-fw-2.bin
- ti-connectivity/wl18xx-fw-3.bin
- ti-connectivity/wl18xx-fw-4.bin
 longdesc: Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless
  network chips supported by the wl1251, wl12xx and wl18xx drivers and
  BT/FM/GPS chips supported by the st_drv driver
-
-[ti/vpdma-1b8.bin_base]
-desc: TI VPDMA firmare
-
-[ti-connectivity/wl1251-fw.bin_base]
-desc: TI WL1251 firmware
-
-[ti-connectivity/wl1251-nvs.bin_base]
-desc: TI WL1251 reference NVS
-
-[ti-connectivity/wl127x-fw-5-mr.bin_base]
-desc: TI WL127x multi-role firmware
-version: 6.5.7.0.50
-
-[ti-connectivity/wl127x-fw-5-plt.bin_base]
-desc: TI WL127x PLT (calibration) firmware
-version: 6.3.10.0.142
-
-[ti-connectivity/wl127x-fw-5-sr.bin_base]
-desc: TI WL127x single-role firmware
-version: 6.3.10.0.142
-
-[ti-connectivity/wl127x-nvs.bin_base]
-desc: TI WL127x reference NVS
-
-[ti-connectivity/wl128x-fw-5-mr.bin_base]
-desc: TI WL128x multi-role firmware
-version: 7.5.7.0.50
-
-[ti-connectivity/wl128x-fw-5-plt.bin_base]
-desc: TI WL128x PLT (calibration) firmware
-version: 7.3.10.2.142
-
-[ti-connectivity/wl128x-fw-5-sr.bin_base]
-desc: TI WL128x single-role firmware
-version: 7.3.10.0.142
-
-[ti-connectivity/wl128x-nvs.bin_base]
-desc: TI WL128x reference NVS
-
-[ti-connectivity/wl18xx-fw-2.bin_base]
-desc: TI WL18xx firmware, ABI 2
-
-[ti-connectivity/wl18xx-fw-3.bin_base]
-desc: TI WL18xx firmware, ABI 3
-
-[ti-connectivity/wl18xx-fw-4.bin_base]
-desc: TI WL18xx firmware, ABI 4
-version: 8.9.0.0.79
+files:
+ ti-connectivity/*

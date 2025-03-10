@@ -1,0 +1,31 @@
+[base]
+desc: miscellaneous Intel devices and chips
+longdesc: miscellaneous Intel devices and chips, which do not belong in the
+ iwlwifi, ipw2x00, intel-graphics or intel-sound packages.
+ This includes for example Omni-Path, Ethernet/Network chips/devices, and
+ QuickAssist Technology crypto accelerators
+conflicts: firmware-misc-nonfree (<< 20230625-3~)
+files:
+ hfi1_*
+ qat_*
+ e100/*
+ intel/ice/**/*
+files-excluded:
+ qat_4xxx*
+usrmovemitigation:
+ e100/d101m_ucode.bin
+ e100/d101s_ucode.bin
+ e100/d102e_ucode.bin
+ hfi1_dc8051.fw
+ hfi1_fabric.fw
+ hfi1_pcie.fw
+ hfi1_sbus.fw
+ intel/ice/ddp/ice-1.3.30.0.pkg
+ intel/ice/ddp/ice.pkg
+ qat_895xcc.bin
+ qat_895xcc_mmp.bin
+ qat_c3xxx.bin
+ qat_c3xxx_mmp.bin
+ qat_c62x.bin
+ qat_c62x_mmp.bin
+ qat_mmp.bin

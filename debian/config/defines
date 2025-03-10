@@ -1,4 +1,5 @@
 [base]
+uri: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
 packages:
  amd-graphics
  atheros
@@ -6,19 +7,24 @@ packages:
  bnx2x
  brcm80211
  cavium
+ cirrus
+ intel-graphics
+ intel-misc
  intel-sound
  ipw2x00
  ivtv
  iwlwifi
  libertas
+ marvell-prestera
+ mediatek
  misc-nonfree
  myricom
  netronome
  netxen
+ nvidia-graphics
  qcom-soc
  qlogic
  realtek
  samsung
  siano
  ti-connectivity
-uri: https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git

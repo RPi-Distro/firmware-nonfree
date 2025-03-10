@@ -1,101 +1,15 @@
 [base]
 desc: QLogic HBAs
-files:
- cbfw-3.2.5.1.bin
- ct2fw-3.2.5.1.bin
- ctfw-3.2.5.1.bin
- qed/qed_init_values_zipped-8.10.10.0.bin
- qed/qed_init_values_zipped-8.33.1.0.bin
- qed/qed_init_values_zipped-8.33.11.0.bin
- qed/qed_init_values_zipped-8.37.2.0.bin
- qed/qed_init_values_zipped-8.42.2.0.bin
- qed/qed_init_values_zipped-8.59.1.0.bin
- qlogic/1040.bin
- qlogic/1280.bin
- qlogic/12160.bin
- qlogic/sd7220.fw
- ql2100_fw.bin
- ql2200_fw.bin
- ql2300_fw.bin
- ql2322_fw.bin
- ql2400_fw.bin
- ql2500_fw.bin
 longdesc: QLogic Infiniband, SCSI, Fibre Channel/FCoE adapters and
  Converged Network Adapters supported by the bfa, bna, ip_iband, qed, qla1280
  and qla2xxx drivers
 support: initramfs-tools
-
-[cbfw-3.2.5.1.bin_base]
-desc: Brocade 425/825/42B/82B/415/815/41B/81B firmware
-version: 3.2.5.1
-
-[ct2fw-3.2.5.1.bin_base]
-desc: Brocade 1860/1867/1869 firmware
-version: 3.2.5.1
-
-[ctfw-3.2.5.1.bin_base]
-desc: Brocade 1010/1020/1007/1741/804 firmware
-version: 3.2.5.1
-
-[qed/qed_init_values_zipped-8.10.10.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.10.10.0
-
-[qed/qed_init_values_zipped-8.33.1.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.33.1.0
-
-[qed/qed_init_values_zipped-8.33.11.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.33.11.0
-
-[qed/qed_init_values_zipped-8.37.2.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.37.2.0
-
-[qed/qed_init_values_zipped-8.42.2.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.42.2.0
-
-[qed/qed_init_values_zipped-8.59.1.0.bin_base]
-desc: QLogic QL45000 series firmware
-version: 8.59.1.0
-
-[qlogic/1040.bin_base]
-desc: QLogic QLA1040 firmware
-version: 7.65.06
-
-[qlogic/1280.bin_base]
-desc: QLogic QLA1080, 1240, 1280 firmware
-version: 8.15.11
-
-[qlogic/12160.bin_base]
-desc: QLogic QLA10160, 12160 firmware
-version: 10.04.42
-
-[qlogic/sd7220.fw_base]
-desc: QLogic IBA7220 serdes firmware
-
-[ql2100_fw.bin_base]
-desc: QLogic QLA2100 firmware
-version: 1.19.38
-
-[ql2200_fw.bin_base]
-desc: QLogic QLA2200 firmware
-version: 2.02.08
-
-[ql2300_fw.bin_base]
-desc: QLogic QLA2300, ISP2312, SP202 firmware
-version: 3.03.28
-
-[ql2322_fw.bin_base]
-desc: QLogic ISP2322, SP212 firmware
-version: 3.03.28
-
-[ql2400_fw.bin_base]
-desc: QLogic ISP2422, ISP2432[M], SP222, SP232 firmware
-version: 8.07.00
-
-[ql2500_fw.bin_base]
-desc: QLogic ISP2532 firmware
-version: 8.07.00
+files:
+ cbfw-3.2.5.1.bin
+ ct2fw-3.2.5.1.bin
+ ctfw-3.2.5.1.bin
+ ql2*_fw.bin
+ qed/*
+ qlogic/*
+files-excluded:
+ qed/qed_init_values_zipped-8.37.7.0.bin

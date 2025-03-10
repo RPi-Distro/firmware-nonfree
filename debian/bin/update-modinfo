@@ -2,6 +2,7 @@
 
 # Update the module information used to generate related device IDs
 
+import itertools
 import json
 import os.path
 import subprocess
@@ -14,7 +15,9 @@ def iter_modules(base_dir):
     for root, dirs, files in \
         os.walk(os.path.join(base_dir, 'kernel'), onerror=onerror):
         for name in files:
-            if name.endswith('.ko'):
+            if name.endswith('.ko.xz'):
+                yield name[:-6], os.path.join(root, name)
+            elif name.endswith('.ko'):
                 yield name[:-3], os.path.join(root, name)
 
 
@@ -26,34 +29,47 @@ def get_module_info(filename, attr_name):
     return output.rstrip('\n').split('\n')
 
 
-def main(kernel_id=None):
-    if kernel_id is None:
-        kernel_dir = '/lib/modules/' + os.uname().release
-    elif '/' not in kernel_id:
-        kernel_dir = '/lib/modules/' + kernel_id
+class JSONEncoderWithSet(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, set):
+            return sorted(o)
+        return super().default(o)
+
+
+def main(*kernel_ids):
+    if not kernel_ids:
+        kernel_dirs = '/lib/modules/' + os.uname().release
     else:
-        kernel_dir = kernel_id
+        kernel_dirs = [('/lib/modules/' + kernel_id
+                        if '/' not in kernel_id
+                        else kernel_id)
+                       for kernel_id in kernel_ids]
 
     modinfo = {}
-    for name, filename in iter_modules(kernel_dir):
+    for name, filename in itertools.chain.from_iterable(
+            iter_modules(kernel_dir) for kernel_dir in kernel_dirs):
         # We only care about modules that might request firmware
-        firmware = get_module_info(filename, 'firmware')
+        firmware = set(get_module_info(filename, 'firmware'))
         if not firmware:
             continue
 
         # We only care about aliases generated from device IDs, which
         # start with <type> ":"
-        aliases = [alias
-                   for alias in get_module_info(filename, 'alias')
-                   if ':' in alias]
+        aliases = set(alias
+                      for alias in get_module_info(filename, 'alias')
+                      if ':' in alias)
 
-        modinfo[name] = {
-            'alias': aliases,
-            'firmware': firmware,
-        }
+        if name not in modinfo:
+            modinfo[name] = {
+                'alias': aliases,
+                'firmware': firmware,
+            }
+        else:
+            modinfo[name]['alias'] |= aliases
+            modinfo[name]['firmware'] |= firmware
 
     with open('debian/modinfo.json', 'w') as f:
-        json.dump(modinfo, f, indent=2, sort_keys=True)
+        json.dump(modinfo, f, indent=2, sort_keys=True, cls=JSONEncoderWithSet)
 
 
 if __name__ == '__main__':

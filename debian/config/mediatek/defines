@@ -1,0 +1,66 @@
+[base]
+desc: MediaTek and Ralink chips for networking, SoCs and media
+longdesc: MediaTek devices such as ethernet/Wi-Fi/Bluetooth chips, SoCs
+ and other chips and devices made by MediaTek and Ralink
+support: initramfs-tools
+conflicts: firmware-misc-nonfree (<< 20230625-3~)
+files:
+ mt76*
+ rt73.bin
+ rt2561.bin
+ rt2561s.bin
+ rt2661.bin
+ rt2860.bin
+ rt2870.bin
+ rt3070.bin
+ rt3071.bin
+ rt3090.bin
+ rt3290.bin
+ vpu_d.bin
+ vpu_p.bin
+ mediatek/**/*
+usrmovemitigation:
+ mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin
+ mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin
+ mediatek/WIFI_MT7922_patch_mcu_1_1_hdr.bin
+ mediatek/WIFI_MT7961_patch_mcu_1_2_hdr.bin
+ mediatek/WIFI_RAM_CODE_MT7922_1.bin
+ mediatek/WIFI_RAM_CODE_MT7961_1.bin
+ mediatek/mt7610e.bin
+ mediatek/mt7610u.bin
+ mediatek/mt7615_cr4.bin
+ mediatek/mt7615_n9.bin
+ mediatek/mt7615_rom_patch.bin
+ mediatek/mt7622_n9.bin
+ mediatek/mt7622_rom_patch.bin
+ mediatek/mt7622pr2h.bin
+ mediatek/mt7650e.bin
+ mediatek/mt7662u.bin
+ mediatek/mt7662u_rom_patch.bin
+ mediatek/mt7663_n9_rebb.bin
+ mediatek/mt7663_n9_v3.bin
+ mediatek/mt7663pr2h.bin
+ mediatek/mt7663pr2h_rebb.bin
+ mediatek/mt7668pr2h.bin
+ mediatek/mt7915_rom_patch.bin
+ mediatek/mt7915_wa.bin
+ mediatek/mt7915_wm.bin
+ mediatek/mt8173/vpu_d.bin
+ mediatek/mt8173/vpu_p.bin
+ mediatek/mt8183/scp.img
+ mediatek/mt8186/scp.img
+ mediatek/mt8195/scp.img
+ mt7601u.bin
+ mt7650.bin
+ mt7662.bin
+ mt7662_rom_patch.bin
+ rt2561.bin
+ rt2561s.bin
+ rt2661.bin
+ rt2860.bin
+ rt2870.bin
+ rt3070.bin
+ rt3071.bin
+ rt3090.bin
+ rt3290.bin
+ rt73.bin

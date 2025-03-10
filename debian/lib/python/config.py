@@ -1,3 +1,5 @@
+import re
+
 from debian_linux.config import ConfigParser, SchemaItemList
 
 class Config(dict):
@@ -12,7 +14,9 @@ class Config(dict):
     package_schemas = {
         'base': {
             'files': SchemaItemList(),
+            'files-excluded': SchemaItemList(),
             'support': SchemaItemList(),
+            'usrmovemitigation': SchemaItemList(),
         }
     }
 
@@ -44,3 +48,19 @@ class Config(dict):
             s = self.get(real, {})
             s.update(config[section])
             self[real] = s
+
+_wildcard_re = re.compile(r'\*\*/|[*?.^$+{}\\\[\]|()]')
+_wildcard_map = {
+    '**/': r'(?:.+/)?',
+    '*':   r'[^/]*',
+    '?':   r'[^/]',
+}
+
+# pathlib.Path.match() does *not* support '**', so do our own
+# pattern-to-regexp conversion
+def pattern_to_re(pattern):
+    return re.compile(
+        _wildcard_re.sub(
+            lambda match: _wildcard_map.get(match.group(0),
+                                            '\\' + match.group(0)),
+            pattern))
