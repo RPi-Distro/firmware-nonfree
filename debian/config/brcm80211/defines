@@ -29,6 +29,8 @@ files:
  brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.bin
  brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.clm_blob
  brcm/brcmfmac43430b0-sdio.raspberrypi,model-zero-2-w.txt
+ brcm/brcmfmac43430-sdio.raspberrypi,0-compute-module.bin
+ brcm/brcmfmac43430-sdio.raspberrypi,0-compute-module.txt
  brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.bin
  brcm/brcmfmac43430-sdio.raspberrypi,model-zero-2-w.txt
  brcm/brcmfmac43430-sdio.sinovoip,bpi-m2-plus.txt
@@ -78,6 +80,12 @@ files:
  brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.bin
  brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.clm_blob
  brcm/brcmfmac43455-sdio.raspberrypi,5-model-b.txt
+ brcm/brcmfmac43455-sdio.raspberrypi,5-compute-module.bin
+ brcm/brcmfmac43455-sdio.raspberrypi,5-compute-module.clm_blob
+ brcm/brcmfmac43455-sdio.raspberrypi,5-compute-module.txt
+ brcm/brcmfmac43455-sdio.raspberrypi,500.bin
+ brcm/brcmfmac43455-sdio.raspberrypi,500.clm_blob
+ brcm/brcmfmac43455-sdio.raspberrypi,500.txt
  brcm/brcmfmac43455-sdio.txt
  brcm/brcmfmac43436-sdio.bin
  brcm/brcmfmac43436-sdio.clm_blob
@@ -86,6 +94,8 @@ files:
  brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.txt
  brcm/brcmfmac43436-sdio.txt
  brcm/brcmfmac43436s-sdio.bin
+ brcm/brcmfmac43436s-sdio.raspberrypi,0-compute-module.bin
+ brcm/brcmfmac43436s-sdio.raspberrypi,0-compute-module.txt
  brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin
  brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.txt
  brcm/brcmfmac43436s-sdio.txt
