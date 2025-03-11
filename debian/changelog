@@ -1,3 +1,9 @@
+firmware-nonfree (1:20241210-1+rpt2) trixie; urgency=medium
+
+  * Bump epoch on conflicts: lines
+
+ -- Serge Schneider <serge@raspberrypi.com>  Tue, 11 Mar 2025 15:57:05 +0000
+
 firmware-nonfree (1:20241210-1+rpt1) trixie; urgency=medium
 
   * Add/update Raspberry Pi WLAN firmware
