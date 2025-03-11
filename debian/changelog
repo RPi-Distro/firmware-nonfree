@@ -1,3 +1,15 @@
+firmware-nonfree (1:20241210-1+rpt1) trixie; urgency=medium
+
+  * Add/update Raspberry Pi WLAN firmware
+  * Exclude upstream cyfmac43455-sdio.bin
+  * Re-add copyright information
+  * Add update-alternatives for standard and minimal versions of
+    cyfmac43455-sdio.bin
+  * d/rules: remove epoch from VERSION_UPSTREAM
+  * d/: Add gbp.conf
+
+ -- Serge Schneider <serge@raspberrypi.com>  Tue, 11 Mar 2025 14:06:17 +0000
+
 firmware-nonfree (20241210-1) unstable; urgency=medium
 
   * New upstream version:
