@@ -1,3 +1,22 @@
+firmware-nonfree (1:20250410-2+rpt1) trixie; urgency=medium
+
+  [ Phil Elwell ]
+  * Add support for CM0s with CYW43439
+
+  [ Serge Schneider ]
+  * Add brcmfmac module parameters for stability
+  * Bump KERNELVERSION to 6.12.47+rpt
+  * Bump epoch on conflicts: lines
+  * Add/update Raspberry Pi WLAN firmware
+  * Exclude upstream cyfmac43455-sdio.bin
+  * Re-add copyright information
+  * Add update-alternatives for standard and minimal versions of
+    cyfmac43455-sdio.bin
+  * d/rules: remove epoch from VERSION_UPSTREAM
+  * d/: Add gbp.conf
+
+ -- Serge Schneider <serge@raspberrypi.com>  Sat, 21 Mar 2026 17:31:05 +0000
+
 firmware-nonfree (20250410-2) unstable; urgency=medium
 
   * Update upstream URLs to point to repository on gitlab.com
