@@ -6,7 +6,7 @@ longdesc: various drivers in the Linux kernel. This is a collection of
 recommends: firmware-nvidia-graphics, firmware-intel-graphics,
  firmware-intel-misc, firmware-mediatek
 support: initramfs-tools
-conflicts: firmware-ti-connectivity (<< 20230625-3~)
+conflicts: firmware-ti-connectivity (<< 1:20230625-3~)
 provides: firmware-adi, firmware-ralink
 files:
  agere_*
