@@ -84,7 +84,7 @@ maintainerclean:
 	-rm debian/*.hook.*
 	rm -f debian/*.metainfo.xml
 	-rm debian/*.preinst
-	-rm debian/*.postinst
+	-find debian/ -type f -name '*.postinst' ! -name 'firmware-brcm80211.postinst' -delete
 	-rm debian/*.templates
 
 linux-support-name:
