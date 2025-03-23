@@ -15,6 +15,7 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
     - cnm: update chips&media wave521c firmware.
     - qcom: venus-5.4: update firmware binary for sc7180 and qcs615
     - rtl_bt: Add separate config for RLT8723CS Bluetooth part
+      (Closes: #1087326)
     - rtl_bt: Update RTL8852B BT USB FW to 0x04BE_1F5E
     - rtl_nic: add firmware rtl8125bp-2
     - rtl_nic: add firmware rtl8125d-2
