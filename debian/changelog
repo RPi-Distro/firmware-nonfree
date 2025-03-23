@@ -27,6 +27,9 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
   [ Loïc Minier ]
   * d/copyright: qcom: Re-add qcm6490 firmware
 
+  [ Ben Hutchings ]
+  * Update to linux-support-6.12.19
+
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Sun, 09 Feb 2025 18:12:00 +0200
 
 firmware-nonfree (20241210-2) UNRELEASED; urgency=medium
