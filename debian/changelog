@@ -32,6 +32,7 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * Update to linux-support-6.12.19
   * Update module info from linux 6.12.19-1 on amd64 and arm64
+  * d/copyright: Add paragraphs for AMD NPU firmware and wsm_22.bin
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Sun, 09 Feb 2025 18:12:00 +0200
 
