@@ -212,13 +212,8 @@ Files-Excluded:
  ath12k/QCN9274/hw2.0/*
  mediatek/*_MT7961*_1a*.bin
  mediatek/mt7996/*
- qcom/a663_gmu.bin
- qcom/qcm6490/*
- qcom/sa8775p/*
  qcom/sdm845/Thundercomm/*
  qcom/sm8250/Thundercomm/*
- qcom/x1e80100/adsp*
- qcom/x1e80100/battmgr.jsn
  vxge/X3fw*.ncf
 
 Files: debian/*
