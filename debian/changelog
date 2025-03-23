@@ -8,7 +8,8 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
     - amdgpu: revert VCN 3.1.2 firmware
     - amdgpu: revert yellow carp VCN firmware
     - cirrus: cs35l41: Add Firmware for Ayaneo system 1f660105
-    - cirrus: cs35l56: Add and update firmware for various Cirrus CS35L54 and CS35L56 laptops
+    - cirrus: cs35l56: Add and update firmware for various Cirrus CS35L54 and
+      CS35L56 laptops
     - cirrus: cs35l56: Correct filenames of SSID 17aa3832
     - cirrus: cs35l56: Correct SSID order for 103c8d01 103c8d08 10431f43
     - cnm: update chips&media wave521c firmware.
