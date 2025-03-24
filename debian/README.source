@@ -97,9 +97,7 @@ Optional per-file metadata:
 To re-generate debian/control (and other files) based on these
 definitions:
 
-1. Install the current linux-support-<kernelversion> package
-2. Ensure debian/rules.defs has the right value of KERNELVERSION
-3. If the 'orig.tar' archive is not yet available, retrieve it as follows:
+1. If the 'orig.tar' archive is not yet available, retrieve it as follows:
 
    uscan --download-version <upstream-version>
 
@@ -112,13 +110,12 @@ definitions:
 
    uscan --download-version $(head -n1 debian/changelog | sed 's/.*\([[:digit:]]\{8\}\).*/\1/')
 
-4. Run: debian/rules orig
-5. Run: debian/rules debian/control
+2. Run: debian/rules orig
+3. Run: debian/rules debian/control
 
 To update the current package's changelog with the new upstream version:
 
-1. Run: PYTHONPATH=/usr/share/linux-support-<version>/lib/python \
-            debian/bin/release-update /path/to/linux-firmware-repository
+1. Run: debian/bin/release-update /path/to/linux-firmware-repository
 
    This will update debian/changelog with the changes added between
    the commit of the current package version and the HEAD commit found in the
@@ -126,4 +123,4 @@ To update the current package's changelog with the new upstream version:
 
 2. Remove entries regarding firmwares files not packaged
 
- -- Ben Hutchings <benh@debian.org>, Sat, 22 Jan 2022 21:05:51 +0100
+ -- Ben Hutchings <benh@debian.org>, Mon, 24 Mar 2025 17:52:46 +0100
