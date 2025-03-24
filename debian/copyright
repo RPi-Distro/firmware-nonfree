@@ -238,6 +238,11 @@ Copyright: 2006-2009, Bastian Blank <waldi@debian.org>
            2020, Lucas Nussbaum <lucas@debian.org>
 License: GPL-2+
 
+Files: debian/lib/python/debian_linux/*
+Copyright: 2005-2012 Debian kernel team
+           2006-2009 Bastian Blank <waldi@debian.org>
+License: GPL-2
+
 Files: debian/*.metainfo.xml debian/modinfo.json
 Comment:
  This also applies to the package description fields in

@@ -22,6 +22,11 @@ this information, run:
 You can optionally pass a specific kernel release string or directory
 in which to look for modules.
 
+We copy the debian_linux Python package from src:linux.  To update it,
+run:
+
+    debian/bin/update-python-lib <linux-package-dir>
+
 Licences
 --------
 
