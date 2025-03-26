@@ -210,8 +210,6 @@ Files-Excluded:
  mellanox/mlxsw*
 # - large and not requested for inclusion
  ath12k/QCN9274/hw2.0/*
- qcom/sdm845/Thundercomm/*
- qcom/sm8250/Thundercomm/*
  vxge/X3fw*.ncf
 
 Files: debian/*
