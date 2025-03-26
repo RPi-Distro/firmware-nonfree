@@ -1,4 +1,4 @@
-firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250109-1) unstable; urgency=medium
 
   [ Dmitry Baryshkov ]
   * New upstream version:
@@ -43,7 +43,7 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
   * d/copyright: mediatek: Stop excluding '*_MT7961*_1a*.bin' files
   * d/copyright: mediatek: Stop excluding 'mt7996/*' files (Closes: #1096088)
 
- -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Sun, 09 Feb 2025 18:12:00 +0200
+ -- Ben Hutchings <benh@debian.org>  Wed, 26 Mar 2025 02:15:10 +0100
 
 firmware-nonfree (20241210-1) unstable; urgency=medium
 
