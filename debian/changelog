@@ -29,6 +29,9 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
   [ Loïc Minier ]
   * d/copyright: qcom: Re-add qcm6490 firmware
 
+  [ Salvatore Bonaccorso ]
+  * Make firmware-intel-graphics trigger update-initramfs (Closes: #1100097)
+
   [ Ben Hutchings ]
   * Update module info from linux 6.12.19-1 on amd64 and arm64
     (Closes: #1096192)
@@ -41,12 +44,6 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
   * d/copyright: mediatek: Stop excluding 'mt7996/*' files (Closes: #1096088)
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Sun, 09 Feb 2025 18:12:00 +0200
-
-firmware-nonfree (20241210-2) UNRELEASED; urgency=medium
-
-  * Make firmware-intel-graphics trigger update-initramfs (Closes: #1100097)
-
- -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 21 Mar 2025 21:27:53 +0100
 
 firmware-nonfree (20241210-1) unstable; urgency=medium
 
