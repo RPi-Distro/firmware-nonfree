@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -eu
+
+if [ $# -ne 1 ]; then
+    echo >&2 "Usage: $0 <linux-package-dir>"
+    exit 2
+fi
+
+rsync --recursive --delete --verbose --checksum \
+    "$1/debian/lib/python/debian_linux/" debian/lib/python/debian_linux/
