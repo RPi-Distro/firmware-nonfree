@@ -210,8 +210,6 @@ Files-Excluded:
  mellanox/mlxsw*
 # - large and not requested for inclusion
  ath12k/QCN9274/hw2.0/*
- mediatek/*_MT7961*_1a*.bin
- mediatek/mt7996/*
  qcom/sdm845/Thundercomm/*
  qcom/sm8250/Thundercomm/*
  vxge/X3fw*.ncf
@@ -724,7 +722,7 @@ Files: mediatek/BT_RAM_CODE_*.bin mediatek/mt7610*.bin mediatek/mt7615*.bin
  mediatek/mt7622*.bin mediatek/mt7650e.bin mediatek/mt7662u*.bin
  mediatek/mt7663*.bin mediatek/mt7668*.bin mediatek/mt791*.bin
  mediatek/mt798*.bin mediatek/WIFI_MT79*.bin mediatek/WIFI_RAM_CODE_*.bin
- mediatek/mt8173/vpu_*.bin mediatek/mt81*/scp.img
+ mediatek/mt7996/*.bin mediatek/mt8173/vpu_*.bin mediatek/mt81*/scp.img
  mediatek/sof/* mediatek/sof-tplg/*
 Copyright: MediaTek Inc.
 License: binary-redist-MediaTek

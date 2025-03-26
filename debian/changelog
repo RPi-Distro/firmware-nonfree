@@ -36,6 +36,10 @@ firmware-nonfree (20250109-1) UNRELEASED; urgency=medium
   * Copy debian_linux Python package from src:linux
   * Use local copy of debian_linux Python package instead of linux-support
 
+  [ Diederik de Haas ]
+  * d/copyright: mediatek: Stop excluding '*_MT7961*_1a*.bin' files
+  * d/copyright: mediatek: Stop excluding 'mt7996/*' files (Closes: #1096088)
+
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Sun, 09 Feb 2025 18:12:00 +0200
 
 firmware-nonfree (20241210-2) UNRELEASED; urgency=medium
