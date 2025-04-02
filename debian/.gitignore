@@ -15,3 +15,4 @@
 !/*.lintian-overrides
 !/firmware-brcm80211.postinst
 !/firmware-brcm80211.prerm
+!/firmware-brcm80211.install
