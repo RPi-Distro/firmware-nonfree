@@ -1,3 +1,10 @@
+firmware-nonfree (1:20240709-2~bpo12+1+rpt3) bookworm; urgency=medium
+
+  [ Phil Elwell ]
+  * Add brcmfmac module parameters for stability
+
+ -- Serge Schneider <serge@raspberrypi.com>  Tue, 08 Apr 2025 15:35:49 +0100
+
 firmware-nonfree (1:20240709-2~bpo12+1+rpt2) bookworm; urgency=medium
 
   * Bump epoch on conflicts: lines
