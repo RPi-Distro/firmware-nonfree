@@ -30,6 +30,9 @@ Files-Excluded:
  atusb/atusb-*.dfu
  atusb/rzusb-*.bin
  carl9170*
+# - licence requires NDA?!
+ LICENCE.ish
+ intel/ish/*
 # - licence is unknown or unclear
  acenic/tg?.bin
  ess/maestro3_*.fw
@@ -75,6 +78,7 @@ Files-Excluded:
  intel/dsp_fw_kbl_v701.bin
  intel/dsp_fw_release_v969.bin
  intel/ipu/shisp_*
+ tsse_firmware.bin
 # - not referenced by driver in a supported Debian release
  ar7010*.fw
  ar9170-?.fw
@@ -837,6 +841,10 @@ License: binary-redist-QLogic-3
 Files: phanfw.bin
 Copyright: 2003-2010, QLogic Corporation
 License: binary-redist-QLogic-4
+
+Files: realtek/rt1320/*
+Copyright: 2024, Realtek Semiconductor Corporation
+License: binary-redist-Realtek-permissive
 
 Files: rtl_nic/*
 Copyright: 2010-2013, Realtek Semiconductor Corporation

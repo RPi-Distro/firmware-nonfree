@@ -1,5 +1,6 @@
 firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
 
+  [ Dmitry Baryshkov ]
   * New upstream version:
     - amdgpu: DMCUB update for DCN401
     - amdgpu: DMCUB updates for various AMDGPU ASICs
@@ -60,17 +61,23 @@ firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
     - ASoC: tas2781: Add dsp firmware for new projects
     - ASoC: tas2781: Add regbin firmware by index for single device
     - ath11k: add device-specific firmware for QCM6490 boards
-    - ath11k: IPQ6018 hw1.0: update to WLAN.HK.2.7.0.1-02409-QCAHKSWPL_SILICONZ-1
-    - ath11k: IPQ8074 hw2.0: update to WLAN.HK.2.9.0.1-02146-QCAHKSWPL_SILICONZ-1
+    - ath11k: IPQ6018 hw1.0: update to
+      WLAN.HK.2.7.0.1-02409-QCAHKSWPL_SILICONZ-1
+    - ath11k: IPQ8074 hw2.0: update to
+      WLAN.HK.2.9.0.1-02146-QCAHKSWPL_SILICONZ-1
     - ath11k: QCA2066 hw2.1: update board-2.bin
-    - ath11k: QCA2066 hw2.1: update to WLAN.HSP.1.1-03926.13-QCAHSPSWPL_V2_SILICONZ_CE-2.52297.6
+    - ath11k: QCA2066 hw2.1: update to
+      WLAN.HSP.1.1-03926.13-QCAHSPSWPL_V2_SILICONZ_CE-2.52297.6
     - ath11k: QCA6390 hw2.0: update board-2.bin
     - ath11k: QCA6698AQ hw2.1: add board-2.bin
-    - ath11k: QCA6698AQ hw2.1: add to WLAN.HSP.1.1-04479-QCAHSPSWPL_V1_V2_SILICONZ_IOE-1
-    - ath11k: QCN9074 hw1.0: update to WLAN.HK.2.9.0.1-02146-QCAHKSWPL_SILICONZ-1
+    - ath11k: QCA6698AQ hw2.1: add to
+      WLAN.HSP.1.1-04479-QCAHSPSWPL_V1_V2_SILICONZ_IOE-1
+    - ath11k: QCN9074 hw1.0: update to
+      WLAN.HK.2.9.0.1-02146-QCAHKSWPL_SILICONZ-1
     - ath11k: WCN6750 hw1.0: update board-2.bin
     - ath12k: QCN9274 hw2.0: update board-2.bin
-    - ath12k: QCN9274 hw2.0: update to WLAN.WBE.1.4.1-00199-QCAHKSWPL_SILICONZ-1
+    - ath12k: QCN9274 hw2.0: update to
+      WLAN.WBE.1.4.1-00199-QCAHKSWPL_SILICONZ-1
     - ath12k: WCN7850 hw2.0: update board-2.bin
     - cirrus: cs35l56: Correct some links to address the correct amp instance
     - i915: Update Xe2LPD DMC to v2.27
@@ -102,6 +109,13 @@ firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
     - Update firmware file for Intel Bluetooth Solar core
     - update firmware for MT7925 WiFi device
     - Update FW files for MRVL SD8997 chips
+  * d/copyright: re-add Qualcomm SLPI firmware
+
+  [ Ben Hutchings ]
+  * d/copyright: Exclude Intel ISH firmware as undistributable (Closes:
+    #1102999)
+  * d/copyright: Exclude tsse_firmware.bin, only used by OOT driver
+  * realtek: Add rt1320 audio codec firmware
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Wed, 26 Mar 2025 15:31:14 +0200
 
