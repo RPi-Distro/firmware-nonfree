@@ -842,6 +842,10 @@ Files: phanfw.bin
 Copyright: 2003-2010, QLogic Corporation
 License: binary-redist-QLogic-4
 
+Files: realtek/rt1320/*
+Copyright: 2024, Realtek Semiconductor Corporation
+License: binary-redist-Realtek-permissive
+
 Files: rtl_nic/*
 Copyright: 2010-2013, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-permissive
