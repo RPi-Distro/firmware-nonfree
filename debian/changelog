@@ -1,4 +1,4 @@
-firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250211-1) unstable; urgency=medium
 
   [ Dmitry Baryshkov ]
   * New upstream version:
@@ -117,7 +117,7 @@ firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
   * d/copyright: Exclude tsse_firmware.bin, only used by OOT driver
   * realtek: Add rt1320 audio codec firmware
 
- -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Wed, 26 Mar 2025 15:31:14 +0200
+ -- Ben Hutchings <benh@debian.org>  Sun, 13 Apr 2025 23:14:44 +0200
 
 firmware-nonfree (20250109-1) unstable; urgency=medium
 
