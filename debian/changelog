@@ -86,6 +86,7 @@ firmware-nonfree (20250311-1) UNRELEASED; urgency=medium
     - update firmware for MT7920 WiFi device
     - update firmware for MT7925 WiFi device
     - xe: Update GUC to v70.40.2 for BMG, LNL
+  * intel-misc: Add NPU firmware
 
  -- Ben Hutchings <benh@debian.org>  Sun, 13 Apr 2025 17:22:34 +0200
 
