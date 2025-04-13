@@ -30,6 +30,9 @@ Files-Excluded:
  atusb/atusb-*.dfu
  atusb/rzusb-*.bin
  carl9170*
+# - licence requires NDA?!
+ LICENCE.ish
+ intel/ish/*
 # - licence is unknown or unclear
  acenic/tg?.bin
  ess/maestro3_*.fw

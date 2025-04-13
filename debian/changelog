@@ -1,5 +1,6 @@
 firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
 
+  [ Dmitry Baryshkov ]
   * New upstream version:
     - amdgpu: DMCUB update for DCN401
     - amdgpu: DMCUB updates for various AMDGPU ASICs
@@ -109,6 +110,10 @@ firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
     - update firmware for MT7925 WiFi device
     - Update FW files for MRVL SD8997 chips
   * d/copyright: re-add Qualcomm SLPI firmware
+
+  [ Ben Hutchings ]
+  * d/copyright: Exclude Intel ISH firmware as undistributable (Closes:
+    #1102999)
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Wed, 26 Mar 2025 15:31:14 +0200
 
