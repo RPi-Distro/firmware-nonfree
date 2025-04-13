@@ -78,6 +78,7 @@ Files-Excluded:
  intel/dsp_fw_kbl_v701.bin
  intel/dsp_fw_release_v969.bin
  intel/ipu/shisp_*
+ tsse_firmware.bin
 # - not referenced by driver in a supported Debian release
  ar7010*.fw
  ar9170-?.fw

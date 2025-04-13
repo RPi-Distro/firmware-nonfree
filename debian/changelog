@@ -114,6 +114,7 @@ firmware-nonfree (20250211-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * d/copyright: Exclude Intel ISH firmware as undistributable (Closes:
     #1102999)
+  * d/copyright: Exclude tsse_firmware.bin, only used by OOT driver
 
  -- Dmitry Baryshkov <dmitry.baryshkov@linaro.org>  Wed, 26 Mar 2025 15:31:14 +0200
 
