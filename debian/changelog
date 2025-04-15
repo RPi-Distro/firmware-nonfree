@@ -1,4 +1,4 @@
-firmware-nonfree (20250311-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250311-1) unstable; urgency=medium
 
   * New upstream version:
     - add firmware for qat_420xx devices
@@ -88,7 +88,7 @@ firmware-nonfree (20250311-1) UNRELEASED; urgency=medium
     - xe: Update GUC to v70.40.2 for BMG, LNL
   * intel-misc: Add NPU firmware
 
- -- Ben Hutchings <benh@debian.org>  Sun, 13 Apr 2025 17:22:34 +0200
+ -- Ben Hutchings <benh@debian.org>  Tue, 15 Apr 2025 14:18:46 +0200
 
 firmware-nonfree (20250211-1) unstable; urgency=medium
 
