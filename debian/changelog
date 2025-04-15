@@ -1,3 +1,95 @@
+firmware-nonfree (20250311-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - add firmware for qat_420xx devices
+    - amdgpu: DCUB update for DCN401 and DCN315
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: update aldebaran firmware
+    - amdgpu: update beige goby firmware
+    - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update gc 10.3.6 firmware
+    - amdgpu: update gc 10.3.7 firmware
+    - amdgpu: update gc 11.0.0 firmware
+    - amdgpu: update gc 11.0.1 firmware
+    - amdgpu: update gc 11.0.2 firmware
+    - amdgpu: update gc 11.0.3 firmware
+    - amdgpu: update gc 11.0.4 firmware
+    - amdgpu: update gc 11.5.0 firmware
+    - amdgpu: update gc 11.5.1 firmware
+    - amdgpu: update gc 11.5.2 firmware
+    - amdgpu: update gc 12.0.0 firmware
+    - amdgpu: update gc 12.0.1 firmware
+    - amdgpu: update gc 14.0.3 firmware
+    - amdgpu: update gc 9.4.3 firmware
+    - amdgpu: update gc 9.4.4 firmware
+    - amdgpu: Update ISP FW for isp v4.1.1
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update picasso firmware
+    - amdgpu: update psp 13.0.0 firmware
+    - amdgpu: update psp 13.0.10 firmware
+    - amdgpu: update psp 13.0.14 firmware
+    - amdgpu: update psp 13.0.4 firmware
+    - amdgpu: update psp 13.0.6 firmware
+    - amdgpu: update psp 13.0.7 firmware
+    - amdgpu: update psp 14.0.0 firmware
+    - amdgpu: update psp 14.0.1 firmware
+    - amdgpu: update psp 14.0.2 firmware
+    - amdgpu: update sdma 7.0.1 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update smu 14.0.2 firmware
+    - amdgpu: update smu 14.0.3 firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update vcn 3.1.2 firmware
+    - amdgpu: update vcn 4.0.0 firmware
+    - amdgpu: update vcn 4.0.2 firmware
+    - amdgpu: update vcn 4.0.4 firmware
+    - amdgpu: update vcn 5.0.0 firmware
+    - amdgpu: update vega10 firmware
+    - amdgpu: update vega12 firmware
+    - amdgpu: update vega20 firmware
+    - amdgpu: update yellow carp firmware
+    - ASoC: tas2781: Change regbin firmwares for single device
+    - ASoC: tas2781: Update dsp firmware for Gemtree project
+    - ath11k: QCA6698AQ hw2.1: update board-2.bin
+    - ath11k: QCA6698AQ hw2.1: update to
+      WLAN.HSP.1.1-04604-QCAHSPSWPL_V1_V2_SILICONZ_IOE-1
+    - ath11k: QCN9074 hw1.0: update to
+      WLAN.HK.2.9.0.1-02175-QCAHKSWPL_SILICONZ-2
+    - cirrus: cs35l41: Add firmware and tuning for ASUS Consumer laptops
+    - cirrus: cs35l41: Add firmware and tunings for CS35L41 driver for Steam
+      Deck
+    - cirrus: cs35l41: Add Firmware for various ASUS Commercial laptops
+    - cirrus: cs35l56: Add and update firmware for Cirrus CS35L56 for two HP
+      laptops
+    - cirrus: cs35l56: Add and update firmware for Cirrus CS35L56 for various
+      Lenovo laptops
+    - cirrus: cs35l56: Add firmware for Cirrus Amps for some ASUS laptops
+    - cirrus: cs35l56: Update firmware for Cirrus Amps for some Dell laptops
+    - i915: Update Xe3LPD DMC to v2.17
+    - i915: Update Xe3LPD DMC to v2.20
+    - mediatek MT7920: update bluetooth firmware to 20250210151502
+    - mediatek MT7925: update bluetooth firmware to 20250305133215
+    - QCA: Add Bluetooth firmwares for QCA2066 with USB transport
+    - QCA: Add two bluetooth firmware nvm files for QCA2066
+    - QCA: Update Bluetooth QCA2066 firmware to 2.1.0-00653
+    - QCA: Update Bluetooth WCN685x 2.1 firmware to 2.1.0-00653
+    - qca: update WCN3988 firmware
+    - qcom: add firmware for Adreno A225
+    - qcom: Update gpu firmwares for qcs8300 chipset
+    - rtw89: 8852bt: update fw to v0.29.122.0 and BB parameter to 07
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarU core
+    - update firmware for en8811h 2.5G ethernet phy
+    - update firmware for MT7920 WiFi device
+    - update firmware for MT7925 WiFi device
+    - xe: Update GUC to v70.40.2 for BMG, LNL
+  * intel-misc: Add NPU firmware
+
+ -- Ben Hutchings <benh@debian.org>  Sun, 13 Apr 2025 17:22:34 +0200
+
 firmware-nonfree (20250211-1) unstable; urgency=medium
 
   [ Dmitry Baryshkov ]

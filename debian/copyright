@@ -606,6 +606,10 @@ Files: intel/ice/ddp-comms/ice_comms-*.pkg
 Copyright: 2020, Intel Corporation
 License: binary-redist-Intel-Ice-enhanced
 
+Files: intel/vpu/*
+Copyright: 2025, Intel Corporation
+License: binary-redist-Intel
+
 Files: libertas/* mrvl/sd8688*.bin mrvl/cpt0*/*e.out mrvl/prestera/*.img
  mwl8k/*
 Copyright: 2019, Marvell International Ltd.
