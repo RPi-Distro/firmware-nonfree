@@ -32,7 +32,6 @@ Files-Excluded:
  carl9170*
 # - licence requires NDA?!
  LICENCE.ish
- intel/ish/*
 # - licence is unknown or unclear
  acenic/tg?.bin
  ess/maestro3_*.fw
@@ -577,6 +576,10 @@ License: binary-redist-Intel
 Files: intel/ipu/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
 Copyright: 2017, Intel Corporation
 License: binary-redist-Intel-2
+
+Files: intel/ish/*
+Copyright: 1999-2025, Intel Corporation
+License: binary-redist-Intel-1
 
 Files: intel/avs/*
 Copyright: 1981-2000, The Regents of the University of California
@@ -2706,7 +2709,7 @@ License: binary-redist-Intel-1
  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
  DAMAGE.
 Comment:
- This is LICENCE.qat_firmware (since 2023-03-08).
+ This is LICENCE.qat_firmware (since 2023-03-08) and LICENSE.intel.
  Note that its contents (apart from formatting) is the same as
  binary-redist-Intel-2 except that -1 has "shall not apply to any other
  combinations" whereas -2 has "shall not apply to any combinations".
