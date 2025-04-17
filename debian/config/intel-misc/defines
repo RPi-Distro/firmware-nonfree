@@ -10,6 +10,7 @@ files:
  qat_*
  e100/*
  intel/ice/**/*
+ intel/ish/*
  intel/vpu/*
 files-excluded:
  qat_4xxx*
