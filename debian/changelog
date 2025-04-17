@@ -30,6 +30,7 @@ firmware-nonfree (20250410-1) UNRELEASED; urgency=medium
     - rtw89: 8922a: update fw to v0.35.63.0
     - rtw89: 8922a: update fw to v0.35.64.0
     - Update firmware file for Intel BlazarI core
+  * intel: ish: Update license file for ISH
 
  -- Ben Hutchings <benh@debian.org>  Mon, 14 Apr 2025 00:02:24 +0200
 
