@@ -35,6 +35,7 @@ firmware-nonfree (20250410-1) UNRELEASED; urgency=medium
   * d/b/gencontrol.py: Change template substitution to allow for Jinja2
     templates
   * d/templates: Convert metainfo.xml template to Jinja2 format
+  * ipw2x00: Remove bogus Homepage field
 
  -- Ben Hutchings <benh@debian.org>  Mon, 14 Apr 2025 00:02:24 +0200
 
