@@ -275,8 +275,9 @@ You must agree to the terms of this license before it is installed."""
         # Underscores are preferred to hyphens
         vars['package_metainfo'] = package.replace('-', '_')
         # XXX Might need to escape some characters
-        open("debian/firmware-%s.metainfo.xml" % package, 'w').write(
-            self.templates.get("metainfo.xml", vars))
+        open("debian/org.debian.firmware_%(package_metainfo)s.metainfo.xml"
+             % vars, 'w') \
+            .write(self.templates.get("metainfo.xml", vars))
 
     def process_template(self, in_entry, vars):
         e = Template()

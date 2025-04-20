@@ -3,6 +3,7 @@
 
 *~
 .#*
+*.metainfo.xml
 *.pyc
 /.debhelper/
 /build/
