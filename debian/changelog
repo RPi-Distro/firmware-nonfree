@@ -32,6 +32,15 @@ firmware-nonfree (20250410-1) UNRELEASED; urgency=medium
     - Update firmware file for Intel BlazarI core
   * intel: ish: Update license file for ISH
   * intel-misc: Add ISH firmware
+  * d/b/gencontrol.py: Change template substitution to allow for Jinja2
+    templates
+  * d/templates: Convert metainfo.xml template to Jinja2 format
+  * ipw2x00: Remove bogus Homepage field
+  * Fix AppStream metadata issues:
+    - Remove 'package' from component IDs so they are <= 40 chars long
+    - Move short description to <summary> and long description to <description>
+    - Add homepage URL
+    - Change filenames to match component IDs
 
  -- Ben Hutchings <benh@debian.org>  Mon, 14 Apr 2025 00:02:24 +0200
 

@@ -1,15 +1,15 @@
 Template: firmware-@package@/license/accepted
 Type: boolean
 Default: false
-Description: Do you agree to the "@license-title@"?
+Description: Do you agree to the "@license_title@"?
  In order to install this package, you must agree to the following terms,
- the "@license-title@".
+ the "@license_title@".
  If you do not agree, the installation will be canceled.
 
 Template: firmware-@package@/license/error
 Type: error
-Description: Declined @license-title@
- If you do not agree to the "@license-title@" 
+Description: Declined @license_title@
+ If you do not agree to the "@license_title@" 
  license terms you cannot install this software.
  .
  The installation of this package has been canceled.

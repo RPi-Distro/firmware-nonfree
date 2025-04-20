@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="firmware">
+  <id>org.debian.firmware_{{package_metainfo}}</id>
+  <name>firmware-{{package}}</name>
+  <summary>Binary firmware for {{desc}}</summary>
+  <description>
+    <p>Binary firmware for {{longdesc}}.</p>
+  </description>
+{% if uri %}
+  <url type="homepage">{{uri}}</url>
+{% endif %}
+  <metadata_license>CC0-1.0</metadata_license>
+  <provides>
+{{firmware_list}}{{modalias_list}}
+  </provides>
+</component>
