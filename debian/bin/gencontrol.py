@@ -274,8 +274,6 @@ You must agree to the terms of this license before it is installed."""
         vars['modalias_list'] = ''.join(modalias_meta_list)
         # Underscores are preferred to hyphens
         vars['package_metainfo'] = package.replace('-', '_')
-        # Summary must not contain line breaks
-        vars['longdesc_metainfo'] = re.sub(r'\s+', ' ', vars['longdesc'])
         # XXX Might need to escape some characters
         open("debian/firmware-%s.metainfo.xml" % package, 'w').write(
             self.templates.get("metainfo.xml", vars))
