@@ -32,6 +32,8 @@ firmware-nonfree (20250410-1) UNRELEASED; urgency=medium
     - Update firmware file for Intel BlazarI core
   * intel: ish: Update license file for ISH
   * intel-misc: Add ISH firmware
+  * d/b/gencontrol.py: Change template substitution to allow for Jinja2
+    templates
 
  -- Ben Hutchings <benh@debian.org>  Mon, 14 Apr 2025 00:02:24 +0200
 
