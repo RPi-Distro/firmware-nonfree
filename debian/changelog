@@ -39,6 +39,7 @@ firmware-nonfree (20250410-1) UNRELEASED; urgency=medium
   * Fix AppStream metadata issues:
     - Remove 'package' from component IDs so they are <= 40 chars long
     - Move short description to <summary> and long description to <description>
+    - Add homepage URL
 
  -- Ben Hutchings <benh@debian.org>  Mon, 14 Apr 2025 00:02:24 +0200
 
