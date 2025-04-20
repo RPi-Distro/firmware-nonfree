@@ -1,4 +1,4 @@
-firmware-nonfree (20250410-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250410-1) unstable; urgency=medium
 
   * New upstream version:
     - amdgpu: DMCUB updates for various ASICs
@@ -42,7 +42,7 @@ firmware-nonfree (20250410-1) UNRELEASED; urgency=medium
     - Add homepage URL
     - Change filenames to match component IDs
 
- -- Ben Hutchings <benh@debian.org>  Mon, 14 Apr 2025 00:02:24 +0200
+ -- Ben Hutchings <benh@debian.org>  Mon, 21 Apr 2025 00:00:42 +0200
 
 firmware-nonfree (20250311-1) unstable; urgency=medium
 
