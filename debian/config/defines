@@ -1,5 +1,5 @@
 [base]
-uri: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+uri: https://gitlab.com/kernel-firmware/linux-firmware
 packages:
  amd-graphics
  atheros
