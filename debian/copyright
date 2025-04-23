@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: linux-firmware
 Upstream-Contact: linux-firmware@kernel.org
-Source: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+Source: https://gitlab.com/kernel-firmware/linux-firmware.git
 Files-Excluded:
 # Undistributable because:
 # - licence allows redistribution only as part of a kernel
