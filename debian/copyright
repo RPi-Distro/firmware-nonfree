@@ -858,7 +858,7 @@ Copyright: 2010-2013, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-permissive
 
 Files: rtl_nic/rtl8153*.fw rtl_nic/rtl8156*.fw rtl_bt/*
- rtlwifi/* rtw88/* rtw89/*
+ rtlwifi/* rtw88/* rtw89/* debian/config/realtek/rtw89/*
 Copyright: 2009-2010, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-restrictive
 
