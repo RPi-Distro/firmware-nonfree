@@ -1,6 +1,7 @@
 firmware-nonfree (20250410-2) UNRELEASED; urgency=medium
 
   * Update upstream URLs to point to repository on gitlab.com
+  * Revert "rtw89: 8852c: update fw to v0.27.125.0" (Closes: #1103959)
 
  -- Ben Hutchings <benh@debian.org>  Wed, 23 Apr 2025 04:27:51 +0200
 
