@@ -13,7 +13,7 @@ build-indep build-arch build: debian/control
 
 clean: debian/control
 	dh_testdir
-	rm -rf debian/build debian/lib/python/__pycache__
+	rm -rf debian/build debian/lib/python/__pycache__ debian/lib/python/debian_linux/__pycache__
 	dh_clean
 
 binary-indep: build-indep

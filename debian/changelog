@@ -1,3 +1,9 @@
+firmware-nonfree (20250410-3) UNRELEASED; urgency=medium
+
+  * d/rules: Clean debian/lib/python/debian_linux/__pycache__
+
+ -- Ben Hutchings <benh@debian.org>  Wed, 28 May 2025 17:55:21 +0200
+
 firmware-nonfree (20250410-2) unstable; urgency=medium
 
   * Update upstream URLs to point to repository on gitlab.com
