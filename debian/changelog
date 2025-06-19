@@ -1,4 +1,4 @@
-firmware-nonfree (20250509-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250509-1) experimental; urgency=medium
 
   * New upstream version:
     - amdgpu: update aldebaran firmware
@@ -100,7 +100,7 @@ firmware-nonfree (20250509-1) UNRELEASED; urgency=medium
     - xe: Update GUC to v70.44.1 for BMG and LNL
   * d/rules: Clean debian/lib/python/debian_linux/__pycache__
 
- -- Ben Hutchings <benh@debian.org>  Wed, 28 May 2025 17:55:21 +0200
+ -- Ben Hutchings <benh@debian.org>  Thu, 19 Jun 2025 02:01:46 +0200
 
 firmware-nonfree (20250410-2) unstable; urgency=medium
 
