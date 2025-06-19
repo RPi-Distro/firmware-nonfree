@@ -1,4 +1,4 @@
-firmware-nonfree (20250613-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250613-1) experimental; urgency=medium
 
   * New upstream version:
     - amdgpu: DMCUB updates for various ASICs
@@ -53,7 +53,7 @@ firmware-nonfree (20250613-1) UNRELEASED; urgency=medium
     - xe: Update GUC to v70.45.2 for BMG, LNL
     - xe: Update LNL GSC to v104.0.5.1429
 
- -- Ben Hutchings <benh@debian.org>  Thu, 19 Jun 2025 02:02:02 +0200
+ -- Ben Hutchings <benh@debian.org>  Thu, 19 Jun 2025 15:04:00 +0200
 
 firmware-nonfree (20250509-1) experimental; urgency=medium
 
