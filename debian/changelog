@@ -1,3 +1,60 @@
+firmware-nonfree (20250613-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: updates for dcn 3.20 and dcn 4.01 firmware to 0.1.10.0
+    - ath12k: WCN7850 hw2.0: update to
+      WLAN.HMT.1.1.c5-00284.1-QCAHMTSWPL_V1.0_V2.0_SILICONZ-3
+    - brcm: Add symlinks for Khadas VIM SDIO wifi config to AW-CM256SM.txt
+    - brcmfmac: Add a couple of NanoPi devices
+    - cirrus: cs35l41: Add Firmware for ASUS NUC using CS35L41
+    - cirrus: cs35l41: Add Firmware for various ACER Laptops using CS35L41 HDA
+    - cirrus: cs35l41: Add Firmware for various HP Agusta Laptops using
+      CS35L41 HDA
+    - cirrus: cs35l41: Fix firmware links for several ASUS laptops
+    - cnm: update chips&media wave521c firmware.
+    - i915: Update GUC to v70.45.2 for DG2
+    - ice: update comms package to 1.3.55.0
+    - ice: update package to 1.3.43.0
+    - ice: update wireless_edge package to 1.3.23.0
+    - Intel IPU7: Add firmware binary files
+    - intel: avs: Update topology file for Digital Microphone Array
+    - intel_vpu: Update NPU firmware
+    - iwlwifi: update 7265D firmware
+    - iwlwifi: update cc/Qu/QuZ firmwares for core96-76 release
+    - iwlwifi: update firmwares for 8000 series
+    - iwlwifi: update ty/So/Ma firmwares for core96-76 release
+    - mediatek MT7921: update bluetooth firmware to 20250523111333
+    - mediatek MT7922: update bluetooth firmware to 20250523103438
+    - mediatek MT7925: update bluetooth firmware to 20250526153203
+    - mediatek: Add mt8196 VCP firmware
+    - nvidia: add GSP-RM version 570.144 firmware images
+    - powervr: add firmware for Imagination Technologies BXS-4-64 GPU
+    - QCA: Update WCN785x btusb firmware to 2.0.0-00799-5
+    - qcom: add QUPv3 firmware for QCM6490 platform
+    - qcom: add QUPv3 firmware for QCS8300 platform
+    - qcom: sc8280xp: FW blob updates for X13s
+    - qcom: sc8280xp: Updated power FW for X13s
+    - rtl_bt: Update RTL8822C BT USB and UART firmware to 0x7C20
+    - rtl_nic: add firmware rtl8127a-1
+    - rtl_nic: update firmware of RTL8153A
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel Magnetar core
+    - Update firmware file for Intel Pulsar core
+    - Update firmware file for Intel Quasar core
+    - Update firmware file for Intel Solar core
+    - update firmware for MT7916
+    - update firmware for MT7921 WiFi device
+    - update firmware for MT7922 WiFi device
+    - update firmware for MT7925 WiFi device
+    - update firmware for MT7981
+    - update firmware for MT7986
+    - xe: Update GUC to v70.45.2 for BMG, LNL
+    - xe: Update LNL GSC to v104.0.5.1429
+
+ -- Ben Hutchings <benh@debian.org>  Thu, 19 Jun 2025 02:02:02 +0200
+
 firmware-nonfree (20250509-1) experimental; urgency=medium
 
   * New upstream version:
