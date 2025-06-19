@@ -15,4 +15,3 @@ debian/config/iwlwifi/iwlwifi-7260-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-7265-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-7265D-14.ucode-25.30.14.0
 debian/config/iwlwifi/iwlwifi-8000C-14.ucode-25.30.14.0
-debian/config/realtek/rtw89/rtw8852c_fw-1.bin
