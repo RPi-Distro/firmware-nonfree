@@ -1,3 +1,78 @@
+firmware-nonfree (20250627-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: add arcturus IP discovery firmware
+    - amdgpu: add gc 11.0.0 kicker firmware
+    - amdgpu: add gc 9.5.0 firmware
+    - amdgpu: add picasso ip discovery firmware
+    - amdgpu: add psp 13.0.0 kicker firmware
+    - amdgpu: add psp 13.0.12 firmware
+    - amdgpu: add raven ip discovery firmware
+    - amdgpu: add raven2 ip discovery firmware
+    - amdgpu: add sdma 4.4.4 firmware
+    - amdgpu: add smu 13.0.0 kicker firmware
+    - amdgpu: add vcn 5.0.1 firmware
+    - amdgpu: DMCUB updates for DCN401
+    - amdgpu: update aldebaran firmware
+    - amdgpu: update beige_goby firmware
+    - amdgpu: update dimgrey_cavefish firmware
+    - amdgpu: update dmcub fw for dcn32 and dcn401
+    - amdgpu: update dmcub fw for dcn401
+    - amdgpu: Update DMCUB fw for DCN401 & DCN315
+    - amdgpu: update gc 10.3.6 firmware
+    - amdgpu: update gc 11.0.0 firmware
+    - amdgpu: update gc 11.0.1 firmware
+    - amdgpu: update gc 11.0.2 firmware
+    - amdgpu: update gc 11.0.3 firmware
+    - amdgpu: update gc 11.0.4 firmware
+    - amdgpu: update gc 11.5.0 firmware
+    - amdgpu: update gc 11.5.1 firmware
+    - amdgpu: update gc 11.5.2 firmware
+    - amdgpu: update gc 12.0.0 firmware
+    - amdgpu: update gc 12.0.1 firmware
+    - amdgpu: update gc 9.4.3 firmware
+    - amdgpu: update gc 9.4.4 firmware
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update psp 13.0.0 firmware
+    - amdgpu: update psp 13.0.10 firmware
+    - amdgpu: update psp 13.0.11 firmware
+    - amdgpu: update psp 13.0.14 firmware
+    - amdgpu: update psp 13.0.6 firmware
+    - amdgpu: update psp 13.0.7 firmware
+    - amdgpu: update psp 14.0.1 firmware
+    - amdgpu: update psp 14.0.2 firmware
+    - amdgpu: update psp 14.0.3 firmware
+    - amdgpu: update psp 14.0.4 firmware
+    - amdgpu: update renoir firmware
+    - amdgpu: update sdma 7.0.0 firmware
+    - amdgpu: update sdma 7.0.1 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update smu 13.0.0 firmware
+    - amdgpu: update smu 13.0.10 firmware
+    - amdgpu: update smu 13.0.7 firmware
+    - amdgpu: update smu 14.0.2 firmware
+    - amdgpu: update smu 14.0.3 firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update vcn 4.0.0 firmware
+    - amdgpu: update vcn 4.0.2 firmware
+    - amdgpu: update vcn 4.0.4 firmware
+    - amdgpu: update vcn 4.0.5 firmware
+    - amdgpu: update vcn 4.0.6 firmware
+    - amdgpu: update vcn 5.0.0 firmware
+    - amdgpu: update vega10 firmware
+    - amdgpu: update vega12 firmware
+    - amdgpu: update vega20 firmware
+    - brcm: Fix symlinks for Khadas VIM SDIO wifi config
+    - mediatek: Update mt8186 SCP firmware
+    - qcom: add gpu firmwares for X1P42100 chipset
+    - qcom: update firmware binary for SM8550
+    - qcom: venus-5.4: add the firmware binary for qcs615
+
+ -- Ben Hutchings <benh@debian.org>  Tue, 08 Jul 2025 11:30:31 +0200
+
 firmware-nonfree (20250613-1) experimental; urgency=medium
 
   * New upstream version:
