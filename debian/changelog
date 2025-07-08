@@ -70,6 +70,7 @@ firmware-nonfree (20250627-1) UNRELEASED; urgency=medium
     - qcom: add gpu firmwares for X1P42100 chipset
     - qcom: update firmware binary for SM8550
     - qcom: venus-5.4: add the firmware binary for qcs615
+  * d/b/check_upstream.py: Recognise "MIT" licence in WHENCE
 
  -- Ben Hutchings <benh@debian.org>  Tue, 08 Jul 2025 11:30:31 +0200
 

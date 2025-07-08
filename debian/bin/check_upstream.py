@@ -29,6 +29,7 @@ def check_section(section):
     elif re.search(r'^BSD\b'
                    r'|^GPLv2 or OpenIB\.org BSD\b'
                    r'|^Apache-2\.0\b'
+                   r'|^MIT\b'
                    r'|\bPermission\s+is\s+hereby\s+granted\s+for\s+the\s+'
                    r'distribution\s+of\s+this\s+firmware\s+(?:data|image)\b'
                    r'(?!\s+as\s+part\s+of)'
