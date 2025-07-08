@@ -1,4 +1,4 @@
-firmware-nonfree (20250627-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250627-1) experimental; urgency=medium
 
   * New upstream version:
     - amdgpu: add arcturus IP discovery firmware
@@ -72,7 +72,7 @@ firmware-nonfree (20250627-1) UNRELEASED; urgency=medium
     - qcom: venus-5.4: add the firmware binary for qcs615
   * d/b/check_upstream.py: Recognise "MIT" licence in WHENCE
 
- -- Ben Hutchings <benh@debian.org>  Tue, 08 Jul 2025 11:30:31 +0200
+ -- Ben Hutchings <benh@debian.org>  Tue, 08 Jul 2025 17:22:09 +0200
 
 firmware-nonfree (20250613-1) experimental; urgency=medium
 
