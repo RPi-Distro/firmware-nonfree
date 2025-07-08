@@ -1,3 +1,24 @@
+firmware-nonfree (20250708-1) experimental; urgency=medium
+
+  * New upstream version:
+    - amdgpu: Add DCN 3.6
+    - amdgpu: Add GC 11.5.3
+    - amdgpu: Add PSP 14.0.5
+    - amdgpu: Add SDMA 6.1.3
+    - mediatek MT7921: update bluetooth firmware to 20250625154126
+    - qcom: Add sdx61 Foxconn vendor firmware image file
+    - Revert "linux-firmware: Update firmware file for Intel Pulsar core"
+      (regression in 20250613)
+    - rtw89: 8852c: update fw to v0.27.128.0
+    - rtw89: 8852c: update fw to v0.27.129.1
+    - rtw89: 8922a: update fw to v0.35.80.0
+    - update firmware for MT7921 WiFi device
+    - xe: Add fan_control v203.0.0.0 for BMG
+    - xe: First GuC release for Pantherlake
+    - xe: First HuC release for Pantherlake
+
+ -- Ben Hutchings <benh@debian.org>  Tue, 08 Jul 2025 18:22:27 +0200
+
 firmware-nonfree (20250627-1) experimental; urgency=medium
 
   * New upstream version:
