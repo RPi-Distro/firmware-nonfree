@@ -8,23 +8,21 @@ VERSION_SOURCE := $(patsubst %+b$(VERSION_BINNMU),%,$(VERSION))
 
 GENCONTROL = debian/bin/gencontrol.py
 
-# Nothing to build
-build-indep build-arch build: debian/control
+binary binary-arch binary-indep build build-arch build-indep clean: debian/control
+	dh $@
 
-clean: debian/control
-	dh_testdir
+override_dh_auto_test:
+	:
+
+override_dh_auto_clean:
 	rm -rf debian/build debian/lib/python/__pycache__ debian/lib/python/debian_linux/__pycache__
-	dh_clean
 
-binary-indep: build-indep
-	dh_testdir
+override_dh_auto_install:
 	./copy-firmware.sh -v debian/build/install
 	cd debian/build && ../../dedup-firmware.sh install
-	$(MAKE) -f debian/rules.gen binary-indep
 
-binary-arch: build-arch
-
-binary:	binary-indep binary-arch
+override_dh_installdocs:
+	dh_installdocs -XTODO
 
 CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/*.in)
 CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) debian/modinfo.json
@@ -37,7 +35,7 @@ debian/build/version-info: debian/changelog
 	mkdir -p $(@D)
 	printf >$@ 'Source: %s\nVersion: %s\n' $(SOURCE) $(VERSION_SOURCE)
 
-debian/control debian/rules.gen: $(GENCONTROL) $(CONTROL_FILES)
+debian/control: $(GENCONTROL) $(CONTROL_FILES)
 ifeq ($(wildcard debian/control.md5sum),)
 	$(MAKE) -f debian/rules debian/control-real
 else
@@ -77,7 +75,7 @@ else
 endif
 
 maintainerclean:
-	-rm debian/control debian/control.md5sum debian/rules.gen
+	-rm debian/control debian/control.md5sum
 	rm -f debian/*.bug-presubj
 	-rm debian/*.hook.*
 	rm -f debian/*.install

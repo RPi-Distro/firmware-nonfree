@@ -9,8 +9,8 @@
 /build/
 /control
 /control.md5sum
+/debhelper-build-stamp
 /files
 /firmware-*
-/rules.gen
 /stamps/
 !/*.lintian-overrides

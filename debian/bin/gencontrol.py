@@ -70,18 +70,22 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 self.firmware_modules.setdefault(firmware_filename, []) \
                                      .append(name)
 
+    def do_source(self):
+        super().do_source()
+
+        # We don't want to generate a makefile
+        self.bundle.write_makefile = lambda *_: None
+
     def do_main(self):
         config_entry = self.config['base',]
         vars = {}
         vars.update(config_entry)
 
-        makeflags = MakeFlags()
-
         self.file_errors = False
         self.file_packages = {}
 
         for package in config_entry['packages']:
-            self.do_package(package, vars.copy(), makeflags.copy())
+            self.do_package(package, vars.copy())
 
         for canon_path, package_suffixes in self.file_packages.items():
             if len(package_suffixes) > 1:
@@ -93,13 +97,11 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         if self.file_errors:
             raise Exception('error(s) found in file lists')
 
-    def do_package(self, package, vars, makeflags):
+    def do_package(self, package, vars):
         config_entry = self.config['base', package]
         vars.update(config_entry)
         vars['package'] = package
         vars['package_env_prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
-
-        makeflags['PACKAGE'] = package
 
         # Those might be absent, set them to empty string for replacement to work:
         empty_list = ['replaces', 'conflicts', 'breaks', 'provides', 'recommends']
@@ -248,7 +250,7 @@ You must agree to the terms of this license before it is installed."""
             script_contents.append("#DEBHELPER#\n\nexit 0\n")
             open("debian/firmware-%s.%s" % (package, script), "w").write("\n".join(script_contents))
 
-        self.bundle.add_packages(packages_binary, (package,), makeflags)
+        self.bundle.add_packages(packages_binary, (package,), MakeFlags())
 
         vars['firmware_list'] = ''.join(firmware_meta_list)
         vars['modalias_list'] = ''.join(modalias_meta_list)
