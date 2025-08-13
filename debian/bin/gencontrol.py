@@ -253,10 +253,11 @@ You must agree to the terms of this license before it is installed."""
         vars['firmware_list'] = ''.join(firmware_meta_list)
         vars['modalias_list'] = ''.join(modalias_meta_list)
         # Underscores are preferred to hyphens
-        vars['package_metainfo'] = package.replace('-', '_')
+        vars['package_metainfo'] = package_metainfo = package.replace('-', '_')
+        package_metainfo_filename = \
+            f'debian/org.debian.firmware_{package_metainfo}.metainfo.xml'
         # XXX Might need to escape some characters
-        open("debian/org.debian.firmware_%(package_metainfo)s.metainfo.xml"
-             % vars, 'w') \
+        open(package_metainfo_filename, 'w') \
             .write(self.templates.get("metainfo.xml", vars))
 
         def dh_install_escape(name):
@@ -267,6 +268,8 @@ You must agree to the terms of this license before it is installed."""
                 print(dh_install_escape(str(cur_path)),
                       f'/usr/lib/firmware/{dh_install_escape(str(canon_path.parent))}',
                       file=install_fh)
+            print(package_metainfo_filename, '/usr/share/metainfo',
+                  file=install_fh)
 
     def process_template(self, in_entry, vars):
         e = Template()
