@@ -2,7 +2,6 @@
 
 import dataclasses
 import io
-import itertools
 import json
 import locale
 import os
@@ -124,9 +123,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                          for pattern in config_entry.get('files-excluded', [])]
         files_added = set()
         files_unused = set()
-        files_real = {}
-        links = {}
-        links_rev = {}
+        files_selected = {}
 
         # List all additional and replacement files in binary package
         # config so we can:
@@ -165,16 +162,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
                     # Skip if already matched by earlier pattern or in
                     # other directory
-                    if canon_path in files_real or canon_path in links:
+                    if canon_path in files_selected:
                         continue
 
                     matched_more = True
                     if is_added:
                         files_unused.remove(canon_path)
-                    if cur_path.is_symlink():
-                        links[canon_path] = cur_path.readlink()
-                    elif cur_path.is_file():
-                        files_real[canon_path] = cur_path
+                    if cur_path.is_symlink() or cur_path.is_file():
+                        files_selected[canon_path] = cur_path
 
                     self.file_packages.setdefault(canon_path, []) \
                                       .append(package)
@@ -189,30 +184,15 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 print(f'W: {package}: pattern {pattern} is redundant with earlier patterns',
                       file=sys.stderr)
 
-        for canon_path in links:
-            link_target = ((canon_path.parent / links[canon_path])
-                           .resolve(strict=False)
-                           .relative_to(cur_dir))
-            links_rev.setdefault(link_target, []).append(canon_path)
-
         if files_unused:
             print(f'W: {package}: unused files:',
                   ', '.join(str(path) for path in files_unused),
                   file=sys.stderr)
 
-        makeflags['FILES'] = \
-            ' '.join([f'"{source}":"{dest}"'
-                      for dest, source in sorted(files_real.items())]) \
-               .replace(',', '[comma]')
-        makeflags['LINKS'] = \
-            ' '.join([f'"{link}":"{target}"'
-                      for link, target in sorted(links.items())]) \
-               .replace(',', '[comma]')
-
         firmware_meta_list = []
         module_names = set()
 
-        for canon_path in sorted(itertools.chain(files_real, links)):
+        for canon_path in sorted(files_selected):
             canon_name = str(canon_path)
             firmware_meta_list.append(
                 self.templates.get("metainfo.xml.firmware",
@@ -278,6 +258,15 @@ You must agree to the terms of this license before it is installed."""
         open("debian/org.debian.firmware_%(package_metainfo)s.metainfo.xml"
              % vars, 'w') \
             .write(self.templates.get("metainfo.xml", vars))
+
+        def dh_install_escape(name):
+            return name.replace('$', '${}').replace(' ', '${Space}')
+
+        with open(f'debian/firmware-{package}.install', 'w') as install_fh:
+            for canon_path, cur_path in sorted(files_selected.items()):
+                print(dh_install_escape(str(cur_path)),
+                      f'/usr/lib/firmware/{dh_install_escape(str(canon_path.parent))}',
+                      file=install_fh)
 
     def process_template(self, in_entry, vars):
         e = Template()

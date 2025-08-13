@@ -80,6 +80,7 @@ maintainerclean:
 	-rm debian/control debian/control.md5sum debian/rules.gen
 	rm -f debian/*.bug-presubj
 	-rm debian/*.hook.*
+	rm -f debian/*.install
 	rm -f debian/*.metainfo.xml
 	-rm debian/*.preinst
 	-rm debian/*.postinst

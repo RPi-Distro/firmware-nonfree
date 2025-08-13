@@ -10,19 +10,7 @@ binary_generic:
 	dh_testdir
 	dh_testroot
 	dh_prep
-	@for i in $(subst [comma],$(comma),$(FILES)); do \
-	  s="$${i%:*}"; \
-	  d=/usr/lib/firmware/"$${i#*:}"; \
-	  echo install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
-	  install -m644 -D "$$s" debian/$(PACKAGE_NAME)"$$d"; \
-	done
-	@for i in $(subst [comma],$(comma),$(LINKS)); do \
-	  link=debian/$(PACKAGE_NAME)/usr/lib/firmware/"$${i%:*}"; \
-	  target="$${i#*:}"; \
-	  install -d "$${link%/*}"; \
-	  echo ln -s "$$target" "$$link"; \
-	  ln -s "$$target" "$$link"; \
-	done
+	dh_install
 ifneq ($(FILES),)
 	dh_installdirs /usr/share/metainfo
 	dh_install debian/org.debian.$(subst -,_,$(PACKAGE_NAME)).metainfo.xml /usr/share/metainfo
@@ -36,6 +24,7 @@ endif
 	dh_compress
 	dh_fixperms
 	dh_installdeb
+	if command -v dh_movetousr >/dev/null; then dh_movetousr; fi
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
