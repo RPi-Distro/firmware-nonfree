@@ -14,8 +14,10 @@ binary binary-arch binary-indep build build-arch build-indep clean: debian/contr
 override_dh_auto_test:
 	:
 
+CLEAN_PATTERNS := debian/build debian/lib/python/__pycache__ debian/lib/python/debian_linux/__pycache__ $$(find debian -maxdepth 1 -type d -name 'firmware-*') debian/*.substvars
+
 override_dh_auto_clean:
-	rm -rf debian/build debian/lib/python/__pycache__ debian/lib/python/debian_linux/__pycache__
+	rm -rf $(CLEAN_PATTERNS)
 
 override_dh_auto_install:
 	./copy-firmware.sh -v debian/build/install
@@ -74,15 +76,24 @@ else
 	tar -C ../orig -xaf $(TAR_ORIG)
 endif
 
-maintainerclean:
-	-rm debian/control debian/control.md5sum
-	rm -f debian/*.bug-presubj
-	-rm debian/*.hook.*
-	rm -f debian/*.install
-	rm -f debian/*.metainfo.xml
-	-rm debian/*.preinst
-	-rm debian/*.postinst
-	-rm debian/*.templates
+clean-generated:
+	rm -rf $(CLEAN_PATTERNS)
+# We cannot use dh_clean here because it requires debian/control to exist
+	rm -rf debian/.debhelper debian/*.debhelper* debian/debhelper-build-stamp debian/files debian/generated.*
+	rm -f \
+		debian/control \
+		debian/control.md5sum \
+		debian/*.bug-presubj \
+		debian/*.install \
+		debian/*.metainfo.xml \
+		debian/*.postinst \
+		debian/*.postrm \
+		debian/*.preinst \
+		debian/*.prerm \
+		debian/*.templates
+
+maintainerclean: clean-generated
+	rm -rf $(filter-out debian .git, $(wildcard * .[^.]*))
 
 .PHONY: clean build-indep build-arch build binary-indep binary-arch binary \
-	linux-support-name
+	clean-generated maintainerclean
