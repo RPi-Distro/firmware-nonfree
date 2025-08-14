@@ -47,6 +47,7 @@ firmware-nonfree (20250808-1) UNRELEASED; urgency=medium
   * Replace recursive makefiles with dh command
   * d/rules: Fix maintainerclean rule and add clean-generated rule
   * ipw2x00: Override lintian warning for missing homepage in AppStream file
+  * qcom-soc: Override a new false positive warning from lintian
 
  -- Ben Hutchings <benh@debian.org>  Wed, 13 Aug 2025 22:06:26 +0200
 
