@@ -50,6 +50,7 @@ firmware-nonfree (20250808-1) UNRELEASED; urgency=medium
   * qcom-soc: Override a new false positive warning from lintian
   * d/copyright: Delete or update some outdated file patterns
   * d/copyright: Exclude some more unwanted files
+  * d/copyright: Add information for freely licensed firmware and scripts
 
  -- Ben Hutchings <benh@debian.org>  Wed, 13 Aug 2025 22:06:26 +0200
 

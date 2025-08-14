@@ -893,6 +893,65 @@ Files: xe/*
 Copyright: 2024, Intel Corporation
 License: binary-redist-Intel
 
+Files: GPL-2
+Copyright: 1989, 1991, Free Software Foundation, Inc.
+License: verbatim-FSF
+
+Files: GPL-3
+Copyright: 2007, Free Software Foundation, Inc.
+License: verbatim-FSF
+
+Files: av7110/*
+Copyright: 2001, Convergence integrated media GmbH
+           2006, Matthieu CASTET
+License: GPL-2+
+
+Files: cis/src/* cis/3CCFEM556.cis cis/3CXEM556.cis cis/COMpad2.cis
+ cis/COMpad4.cis cis/DP83903.cis cis/LA-PCM.cis cis/MT5634ZLX.cis
+ cis/NE2K.cis cis/PCMLM28.cis cis/PE-200.cis cis/PE520.cis cis/RS-COM-2P.cis
+ cis/tamarack.cis
+Copyright: 1998-2000, David A. Hinds
+License: GPL-2 or MPL-1.1
+
+Files: cis/SW_*_SER.cis
+Copyright: 2002-2005, Sierra Wireless
+License: GPL-3
+Comment: These binary files are understood to be the preferred form for
+ modification.  They follow the PCMCIA Card Information Structure (CIS)
+ format.  The pcmcia-cs project <http://pcmcia-cs.sourceforge.net/>
+ distributes tools for converting between CIS and an unofficial text
+ format.
+
+Files: contrib/templates/debian.*
+Copyright: 2023, Linux Firmware <firmware@kernel.org>
+License: GPL-2+
+
+Files: copy-firmware.sh dedup-firmware.sh
+Copyright: 2019-2024, Linux Firmware <firmware@kernel.org>
+License: GPL-2
+
+Files: dsp56k/*
+Copyright: 1996-1997, Frederik Noring
+License: GPL-2+
+
+Files: isci/*
+Copyright: 2011-2012, Intel
+License: GPL-2
+
+Files: keyspan_pda/*
+Copyright: 1999-2000, Brian Warner <warner@lothar.com>
+           2001, Cristian M. Craciunescu <cristi@dnt.ro>
+License: GPL-2+
+
+Files: usbdux/* usbdux*.bin
+Copyright: 2004, 2009, 2010, 2015, Bernd Porr <mail@berndporr.me.uk>
+License: GPL-2+
+
+Files: av7110/Makefile check_whence.py cis/Makefile dsp56k/Makefile
+       dsp56k/concat-bootstrap.pl keyspan_pda/Makefile
+Copyright: 2011, 2016, Ben Hutchings <ben@decadent.org.uk>
+License: GPL-2+
+
 License: binary-redist-Abilis
  Permission to use, copy, modify, and/or distribute this software for
  any purpose with or without fee is hereby granted, provided that the
@@ -6732,6 +6791,23 @@ License: GPL-2+
  On Debian systems the text of the GPL version 2 can be found in
  /usr/share/common-licenses/GPL-2.
 
+License: GPL-3
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 3.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems the text of the GPL version 3 can be found in
+ /usr/share/common-licenses/GPL-3.
+
+License: verbatim-FSF
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
 License: permissive-Advansys
  All Rights Reserved.
  .
@@ -6751,3 +6827,17 @@ License: Apache-2.0
  .
  On Debian systems, the complete text of the Apache License
  can be found in /usr/share/common-licenses/Apache-2.0 file.
+
+License: MPL-1.1
+ The contents of this file are subject to the Mozilla Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ https://www.mozilla.org/MPL/
+ .
+ Software distributed under the License is distributed on an "AS IS"
+ basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
+ License for the specific language governing rights and limitations
+ under the License.
+ .
+ On Debian systems the text of the MPL version 1.1 can be found in
+ /usr/share/common-licenses/MPL-1.1.
