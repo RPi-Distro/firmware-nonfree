@@ -503,8 +503,7 @@ Copyright: 1986, Gary S. Brown
 License: binary-redist-Qualcomm-Atheros
 
 Files: qca/crbtfw*.tlv qca/crnv*.bin qca/hpbtfw21.tlv qca/hpnv21*.*
- qca/htbtfw20.tlv qca/htnv20.bin qca/msbtfw11.* qca/msnv11.*
- qca/nvm_*.bin qca/rampatch_*.bin
+ qca/msbtfw11.* qca/msnv11.* qca/nvm_*.bin qca/rampatch_*.bin
 Copyright: 1990, The Regents of the University of California
            1998, Todd C. Miller
            1998-2002, The OpenSSL Project
@@ -519,6 +518,19 @@ License: binary-redist-Qualcomm-Atheros
 Files: wil6210.*
 Copyright: 2015-2017, Qualcomm Atheros, Inc
 License: binary-redist-Qualcomm-Atheros
+
+Files: qca/htbtfw20.tlv qca/htnv20.bin
+Copyright: 1990, The Regents of the University of California
+           1998, Todd C. Miller
+           1998-2002 The OpenSSL Project
+           2000-2001, Aaron D. Gifford
+           2001, Dr B. R. Gladman
+           2001-2003 Steven Knight
+           2003, Stichting NLnet Labs
+           2009, Jerome Glisse
+           2009, Red Hat Inc.
+           2020-2021, Qualcomm Technologies, Inc.
+License: binary-redist-Qualcomm-Atheros-2
 
 Files: bnx2/* bnx2x/*
 Copyright: Broadcom Corporation
@@ -4558,6 +4570,646 @@ License: binary-redist-Qualcomm-Atheros
  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: binary-redist-Qualcomm-Atheros-2
+ All rights reserved.
+ .
+ PLEASE READ THIS LICENSE AGREEMENT ("AGREEMENT") CAREFULLY.  THIS AGREEMENT IS
+ A BINDING LEGAL AGREEMENT ENTERED INTO BY AND BETWEEN YOU (OR IF YOU ARE
+ ENTERING INTO THIS AGREEMENT ON BEHALF OF AN ENTITY, THEN THE ENTITY THAT YOU
+ REPRESENT) AND QUALCOMM TECHNOLOGIES, INC. ("QTI" "WE" "OUR" OR "US").  THIS IS
+ THE AGREEMENT THAT APPLIES TO YOUR USE OF THE DESIGNATED AND/OR LINKED
+ APPLICATIONS, THE ENCLOSED QUALCOMM TECHNOLOGIES' MATERIALS, INCLUDING RELATED
+ DOCUMENTATION AND ANY UPDATES OR IMPROVEMENTS THEREOF
+ (COLLECTIVELY, "MATERIALS").  BY USING OR COMPLETING THE INSTALLATION OF THE
+ MATERIALS, YOU ARE ACCEPTING THIS AGREEMENT AND YOU AGREE TO BE BOUND BY ITS
+ TERMS AND CONDITIONS.  IF YOU DO NOT AGREE TO THESE TERMS, QTI IS UNWILLING TO
+ AND DOES NOT LICENSE THE MATERIALS TO YOU. IF YOU DO NOT AGREE TO THESE TERMS
+ YOU MUST DISCONTINUE THE INSTALLATION PROCESS AND YOU MAY NOT USE THE MATERIALS
+ OR RETAIN ANY COPIES OF THE MATERIALS. ANY USE OR POSSESSION OF THE MATERIALS
+ BY YOU IS SUBJECT TO THE TERMS AND CONDITIONS SET FORTH IN THIS AGREEMENT.
+ .
+ 1. RIGHT TO USE DELIVERABLES; RESTRICTIONS.
+ .
+   1.1 License.  Subject to the terms and conditions of this Agreement,
+   including, without limitation, the restrictions, conditions, limitations and
+   exclusions set forth in this Agreement, QTI hereby grants to you a
+   nonexclusive, limited license under QTI's copyrights to:  (i) install and use
+   the Materials; and (ii) to reproduce and redistribute the binary code portions
+   of the Materials (the "Redistributable Binary Code").  You may make and use a
+   reasonable number of copies of any documentation.
+ .
+   1.2 Redistribution Restrictions.  Distribution of the Redistributable Binary
+   Code is subject to the following restrictions: (i) Redistributable Binary Code
+   may only be distributed in binary format and may not be distributed in source
+   code format:; (ii)  the Redistributable Binary Code may only operate in
+   conjunction with platforms incorporating Qualcomm Technologies, Inc. chipsets;
+   (iii) redistribution of the Redistributable Binary Code must include the .txt
+   file setting forth the terms and condition of this Agreement; (iv) you may not
+   use Qualcomm Technologies' or its affiliates or subsidiaries name, logo or
+   trademarks; and (v) copyright, trademark, patent and any other notices that
+   appear on the Materials may not be removed or obscured.
+ .
+   1.3 Additional Restrictions.  Except as expressly permitted by this Agreement,
+   you shall have no right to sublicense, transfer or otherwise disclose the
+   Materials to any third party.  You shall not reverse engineer, reverse
+   assemble, reverse translate, decompile or reduce to source code form any
+   portion of the Materials provided in object code form or executable form.
+   Except for the purposes expressly permitted in this Agreement, You shall not
+   use the Materials for any other purpose.  QTI (or its licensors) shall retain
+   title and all ownership rights in and to the Materials and any alterations,
+   modifications (including all derivative works), translations or adaptations
+   made of the Materials, and all copies thereof, and nothing herein shall be
+   deemed to grant any right to You under any of QTI's or its affiliates'
+   patents.  You shall not subject the Materials to any third party license
+   terms (e.g., open source license terms).  You shall not use the Materials for
+   the purpose of identifying or providing evidence to support any potential
+   patent infringement claim against QTI, its affiliates, or any of QTI's or
+   QTI's affiliates' suppliers and/or direct or indirect customers.  QTI hereby
+   reserves all rights not expressly granted herein.
+ .
+   1.4 Third Party Software and Materials.  The Software may contain or link to
+   certain software and/or materials that are written or owned by third parties.
+   Such third party code and materials may be licensed under separate or
+   different terms and conditions and are not licensed to you under the terms of
+   this Agreement.  You agree to comply with all terms and conditions imposed on
+   you in the applicable third party licenses.  Such terms and conditions may
+   impose certain obligations on you as a condition to the permitted use of such
+   third party code and materials.  QTI does not represent or warrant that such
+   third party licensors have or will continue to license or make available their
+   code and materials to you.
+ .
+   1.5 Feedback.  QTI may from time to time receive suggestions, feedback or
+   other information from You regarding the Materials.  Any suggestions, feedback
+   or other disclosures received from You are and shall be entirely voluntary on
+   the part of You.  Notwithstanding any other term in this Agreement, QTI shall
+   be free to use suggestions, feedback or other information received from You,
+   without obligation of any kind to You.  The Parties agree that all inventions,
+   product improvements, and modifications conceived of or made by QTI that are
+   based, either in whole or in part, on ideas, feedback, suggestions, or
+   recommended improvements received from You are the exclusive property of QTI,
+   and all right, title and interest in and to any such inventions, product
+   improvements, and modifications will vest solely in QTI.
+ .
+   1.6 No Technical Support.  QTI is under no obligation to provide any form of
+   technical support for the Materials, and if QTI, in its sole discretion,
+   chooses to provide any form of support or information relating to the
+   Materials, such support and information shall be deemed confidential and
+   proprietary to QTI.
+ .
+ 2. WARRANTY DISCLAIMER.  YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT THE USE OF
+ THE MATERIALS IS AT YOUR SOLE RISK.  THE MATERIALS AND TECHNICAL SUPPORT, IF
+ ANY, ARE PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS OR
+ IMPLIED.  QTI ITS LICENSORS AND AFFILIATES MAKE NO WARRANTIES, EXPRESS OR
+ IMPLIED, WITH RESPECT TO THE MATERIALS OR ANY OTHER INFORMATION OR DOCUMENTATION
+ PROVIDED UNDER THIS AGREEMENT, INCLUDING BUT NOT LIMITED TO ANY WARRANTY OF
+ MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR AGAINST INFRINGEMENT, OR
+ ANY EXPRESS OR IMPLIED WARRANTY ARISING OUT OF TRADE USAGE OR OUT OF A COURSE OF
+ DEALING OR COURSE OF PERFORMANCE.  NOTHING CONTAINED IN THIS AGREEMENT SHALL BE
+ CONSTRUED AS (I) A WARRANTY OR REPRESENTATION BY QTI, ITS LICENSORS OR
+ AFFILIATES AS TO THE VALIDITY OR SCOPE OF ANY PATENT, COPYRIGHT OR OTHER
+ INTELLECTUAL PROPERTY RIGHT OR (II) A WARRANTY OR REPRESENTATION BY QTI THAT ANY
+ MANUFACTURE OR USE WILL BE FREE FROM INFRINGEMENT OF PATENTS, COPYRIGHTS OR
+ OTHER INTELLECTUAL PROPERTY RIGHTS OF OTHERS, AND IT SHALL BE THE SOLE
+ RESPONSIBILITY OF YOU TO MAKE SUCH DETERMINATION AS IS NECESSARY WITH RESPECT TO
+ THE ACQUISITION OF LICENSES UNDER PATENTS AND OTHER INTELLECTUAL PROPERTY OF
+ THIRD PARTIES.
+ .
+ 3. NO OTHER LICENSES OR INTELLECTUAL PROPERTY RIGHTS. Neither this Agreement,
+ nor any act by QTI or any of its affiliates pursuant to this Agreement or
+ relating to the Materials (including, without limitation, the provision by QTI
+ or its affiliates of the Materials), shall provide to You any license or any
+ other rights whatsoever under any patents, trademarks, trade secrets, copyrights
+ or any other intellectual property of QTI or any of its affiliates, except for
+ the copyright rights expressly licensed under this Agreement. You understand and
+ agree that:
+ .
+   (i) Neither this Agreement, nor delivery of the Materials, grants any right to
+   practice, or any other right at all with respect to, any patent of QTI or any
+   of its affiliates; and
+ .
+   (ii) A separate license agreement from QUALCOMM Incorporated is needed to use
+   or practice any patent of QUALCOMM Incorporated. You agree not to contend in
+   any context that, as a result of the provision or use of the Materials, either
+   QTI or any of its affiliates has any obligation to extend, or You or any other
+   party has obtained any right to, any license, whether express or implied, with
+   respect to any patent of QTI or any of its affiliates for any purpose.
+ .
+ 4. TERMINATION.  This Agreement shall be effective upon acceptance, or access or
+ use of the Materials (whichever occurs first) by You and shall continue until
+ terminated. You may terminate the Agreement at any time by deleting and
+ destroying all copies of the Materials and all related information in Your
+ possession or control. This Agreement terminates immediately and automatically,
+ with or without notice, if You fail to comply with any provision hereof.
+ Additionally, QTI may at any time terminate this Agreement, without cause, upon
+ notice to You. Upon termination You must, to the extent possible, delete or
+ destroy all copies of the Materials in Your possession and the license granted
+ to You in this Agreement shall terminate. Sections 1.2 through 10 shall survive
+ the termination of this Agreement. In the event that any restrictions,
+ conditions, limitations are found to be either invalid or unenforceable, the
+ rights granted to You in Section 1 (License) shall be null, void and ineffective
+ from the Effective Date, and QTI shall also have the right to terminate this
+ Agreement immediately, and with retroactive effect to the effective date.
+ .
+ 5. LIMITATION OF LIABILITY.  IN NO EVENT SHALL QTI, QTI's AFFILIATES OR ITS
+ LICENSORS BE LIABLE TO YOU FOR ANY INCIDENTAL, CONSEQUENTIAL OR SPECIAL DAMAGES,
+ INCLUDING BUT NOT LIMITED TO ANY LOST PROFITS, LOST SAVINGS, OR OTHER INCIDENTAL
+ DAMAGES, ARISING OUT OF THE USE OR INABILITY TO USE, OR THE DELIVERY OR FAILURE
+ TO DELIVER, ANY OF THE DELIVERABLES, OR ANY BREACH OF ANY OBLIGATION UNDER THIS
+ AGREEMENT, EVEN IF QTI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+ THE FOREGOING LIMITATION OF LIABILITY SHALL REMAIN IN FULL FORCE AND EFFECT
+ REGARDLESS OF WHETHER YOUR REMEDIES HEREUNDER ARE DETERMINED TO HAVE FAILED OF
+ THEIR ESSENTIAL PURPOSE.  THE ENTIRE LIABILITY OF QTI, QTI's AFFILIATES AND ITS
+ LICENSORS, AND THE SOLE AND EXCLUSIVE REMEDY OF YOU, FOR ANY CLAIM OR CAUSE OF
+ ACTION ARISING HEREUNDER (WHETHER IN CONTRACT, TORT, OR OTHERWISE) SHALL NOT
+ EXCEED US$50.
+ .
+ 6. INDEMNIFICATION.  You agree to indemnify and hold harmless QTI and its
+ officers, directors, employees and successors and assigns against any and all
+ third party claims, demands, causes of action, losses, liabilities, damages,
+ costs and expenses, incurred by QTI (including but not limited to costs of
+ defense, investigation and reasonable attorney's fees) arising out of, resulting
+ from or related to: (i) any breach of this Agreement by You; and (ii) your acts,
+ omissions, products and services.  If requested by QTI, You agree to defend QTI
+ in connection with any third party claims, demands, or causes of action
+ resulting from, arising out of or in connection with any of the foregoing.
+ .
+ 7. ASSIGNMENT.  You shall not assign this Agreement or any right or interest
+ under this Agreement, nor delegate any obligation to be performed under this
+ Agreement, without QTI's prior written consent.  For purposes of this Section 7,
+ an "assignment" by You under this Section shall be deemed to include, without
+ limitation, any merger, consolidation, sale of all or substantially all of its
+ assets, or any substantial change in the management or control of You.
+ Any attempted assignment in contravention of this Section 9 shall be void.
+ QTI may freely assign this Agreement or delegate any or all of its rights and
+ obligations hereunder to any third party.
+ .
+ 8. COMPLIANCE WITH LAWS; APPLICABLE LAW.  You agree to comply with all
+ applicable local, international and national laws and regulations and with U.S.
+ Export Administration Regulations, as they apply to the subject matter of this
+ Agreement.  This Agreement is governed by the laws of the State of California,
+ excluding California's choice of law rules.
+ .
+ 9. CONTRACTING PARTIES.  If the Materials are downloaded on any computer owned
+ by a corporation or other legal entity, then this Agreement is formed by and
+ between QTI and such entity.  The individual accepting the terms of this
+ Agreement represents and warrants to QTI that they have the authority to bind
+ such entity to the terms and conditions of this Agreement.
+ .
+ 10. MISCELLANEOUS PROVISIONS.  This Agreement, together with all exhibits
+ attached hereto, which are incorporated herein by this reference, constitutes
+ the entire agreement between QTI and You and supersedes all prior negotiations,
+ representations and agreements between the parties with respect to the subject
+ matter hereof.  No addition or modification of this Agreement shall be effective
+ unless made in writing and signed by the respective representatives of QTI and
+ You.  The restrictions, limitations, exclusions and conditions set forth in this
+ Agreement shall apply even if QTI or any of its affiliates becomes aware of or
+ fails to act in a manner to address any violation or failure to comply
+ therewith.  You hereby acknowledge and agree that the restrictions, limitations,
+ conditions and exclusions imposed in this Agreement on the rights granted in
+ this Agreement are not a derogation of the benefits of such rights.  You further
+ acknowledges that, in the absence of such restrictions, limitations, conditions
+ and exclusions, QTI would not have entered into this Agreement with You.  Each
+ party shall be responsible for and shall bear its own expenses in connection
+ with this Agreement.  If any of the provisions of this Agreement are determined
+ to be invalid, illegal, or otherwise unenforceable, the remaining provisions
+ shall remain in full force and effect.  This Agreement is entered into solely
+ in the English language, and if for any reason any other language version is
+ prepared by any party, it shall be solely for convenience and the English
+ version shall govern and control all aspects.  If You are located in the
+ province of Quebec, Canada, the following applies: The Parties hereby confirm
+ they have requested this Agreement and all related documents be prepared
+ in English.
+ .
+ ---
+ .
+ This Notice.txt file contains certain notices of software components included
+ with the software that Qualcomm Atheros, Inc. ("Qualcomm Atheros") is required
+ to provide you. Except where prohibited by the open source license, the content
+ of this notices file is only provided to satisfy Qualcomm Atheros's attribution
+ and notice requirement; your use of these software components together with the
+ Qualcomm Atheros software (Qualcomm Atheros software hereinafter referred to
+ as "Software") is subject to the terms of your agreement from Qualcomm Atheros.
+ Compliance with all copyright laws and software license agreements included in
+ the notice section of this file are the responsibility of the user. Except as
+ may be granted by separate express written agreement, this file provides no
+ license to any patents, trademarks, copyrights, or other intellectual property
+ of Qualcomm Incorporated or any of its subsidiaries.
+ .
+ Qualcomm is a trademark of Qualcomm Incorporated, registered in the United States
+ and other countries. All Qualcomm Incorporated trademarks are used with permission.
+ Other products and brand names may be trademarks or registered trademarks of their
+ respective owners.
+ .
+ NOTICES:
+ .
+ ===============================================================================
+ .
+  1.
+ .
+ /*
+  * FILE:    sha2.c
+  * AUTHOR:    Aaron D. Gifford <me@aarongifford.com>
+  *
+  * Copyright (c) 2000-2001, Aaron D. Gifford
+  * All rights reserved.
+  *
+  * Redistribution and use in source and binary forms, with or without
+  * modification, are permitted provided that the following conditions
+  * are met:
+  * 1. Redistributions of source code must retain the above copyright
+  *    notice, this list of conditions and the following disclaimer.
+  * 2. Redistributions in binary form must reproduce the above copyright
+  *    notice, this list of conditions and the following disclaimer in the
+  *    documentation and/or other materials provided with the distribution.
+  * 3. Neither the name of the copyright holder nor the names of contributors
+  *    may be used to endorse or promote products derived from this software
+  *    without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTOR(S) ``AS IS'' AND
+  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTOR(S) BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+  * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  * SUCH DAMAGE.
+  *
+  * $Id: sha2.c,v 1.1 2001/11/08 00:01:51 adg Exp adg $
+  */
+ File: LLM_sp_sha2.c
+ .
+ .
+ /*
+  * FILE:    sha2.h
+  * AUTHOR:    Aaron D. Gifford <me@aarongifford.com>
+  *
+  * Copyright (c) 2000-2001, Aaron D. Gifford
+  * All rights reserved.
+  *
+  * Redistribution and use in source and binary forms, with or without
+  * modification, are permitted provided that the following conditions
+  * are met:
+  * 1. Redistributions of source code must retain the above copyright
+  *    notice, this list of conditions and the following disclaimer.
+  * 2. Redistributions in binary form must reproduce the above copyright
+  *    notice, this list of conditions and the following disclaimer in the
+  *    documentation and/or other materials provided with the distribution.
+  * 3. Neither the name of the copyright holder nor the names of contributors
+  *    may be used to endorse or promote products derived from this software
+  *    without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTOR(S) ``AS IS'' AND
+  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTOR(S) BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+  * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  * SUCH DAMAGE.
+  *
+  * $Id: sha2.h,v 1.1 2001/11/08 00:02:01 adg Exp adg $
+  */
+ File: LLM_sp_sha2.h
+ .
+ ===============================================================================
+ .
+  2.
+ .
+ /* utility to create the register check tables
+ * this includes inlined list.h safe for userspace.
+ *
+ * Copyright 2009 Jerome Glisse
+ * Copyright 2009 Red Hat Inc.
+ *
+ * Authors:
+ *    Jerome Glisse
+ *    Dave Airlie
+ */
+ /*All rights reserved.
+ Redistribution and use in source and binary forms, with or without modification
+ are permitted provided that the following conditions are met:
+   1. Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+   2. Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+   3. Neither the name of the <ORGANIZATION> nor the names of its contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+ File: comm_lib.h
+ .
+ ===============================================================================
+ .
+  3.
+ .
+ /* crypto/aes/aes.h -*- mode:C; c-file-style: "eay" -*- */
+ /* ====================================================================
+  * Copyright (c) 1998-2002 The OpenSSL Project.  All rights reserved.
+  *
+  * Redistribution and use in source and binary forms, with or without
+  * modification, are permitted provided that the following conditions
+  * are met:
+  *
+  * 1. Redistributions of source code must retain the above copyright
+  *    notice, this list of conditions and the following disclaimer.
+  *
+  * 2. Redistributions in binary form must reproduce the above copyright
+  *    notice, this list of conditions and the following disclaimer in
+  *    the documentation and/or other materials provided with the
+  *    distribution.
+  *
+  * 3. All advertising materials mentioning features or use of this
+  *    software must display the following acknowledgment:
+  *    "This product includes software developed by the OpenSSL Project
+  *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+  *
+  * 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
+  *    endorse or promote products derived from this software without
+  *    prior written permission. For written permission, please contact
+  *    openssl-core@openssl.org.
+  *
+  * 5. Products derived from this software may not be called "OpenSSL"
+  *    nor may "OpenSSL" appear in their names without prior written
+  *    permission of the OpenSSL Project.
+  *
+  * 6. Redistributions of any form whatsoever must retain the following
+  *    acknowledgment:
+  *    "This product includes software developed by the OpenSSL Project
+  *    for use in the OpenSSL Toolkit (http://www.openssl.org/)"
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
+  * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
+  * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+  * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+  * OF THE POSSIBILITY OF SUCH DAMAGE.
+  * ====================================================================
+  *
+  */
+ File Name list: aes.h, aes_locl.h
+ .
+ ===============================================================================
+ .
+  4.
+ .
+ /* crypto/aes/aes_core.c -*- mode:C; c-file-style: "eay" -*- */
+ /**
+  * rijndael-alg-fst.c
+  *
+  * @version 3.0 (December 2000)
+  *
+  * Optimised ANSI C code for the Rijndael cipher (now AES)
+  *
+  * @author Vincent Rijmen <vincent.rijmen@esat.kuleuven.ac.be>
+  * @author Antoon Bosselaers <antoon.bosselaers@esat.kuleuven.ac.be>
+  * @author Paulo Barreto <paulo.barreto@terra.com.br>
+  *
+  * This code is hereby placed in the public domain.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE AUTHORS ''AS IS'' AND ANY EXPRESS
+  * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE
+  * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+  * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  */
+ File: aes_core.c
+ .
+ ===============================================================================
+ .
+  5.
+ .
+ /*===========================================================================
+ .
+                       EDIT HISTORY FOR FILE
+ .
+   $Header: //depot/asic/msmshared/sec/sec/MSM_SEC.03.03.08.xx/aes.h#1 $
+   $DateTime: 2006/12/11 00:43:21 $ $Author: davidf $
+ .
+ when       who     what, where, why
+ --------   ---     ----------------------------------------------------------
+ 11/12/04   rv      changes to correct LINT errors
+ 02/02/04   rwh     Small mods to open source.
+ .
+ ===========================================================================*/
+ .
+  /*
+    I retain copyright in this code but I encourage its free use provided
+    that I don't carry any responsibility for the results. I am especially
+    happy to see it used in free and open source software. If you do use
+    it I would appreciate an acknowledgement of its origin in the code or
+    the product that results and I would also appreciate knowing a liitle
+    about the use to which it is being put.
+ .
+    Dr B. R. Gladman <brg@gladman.uk.net> 1st June 2001.
+ .
+ */
+ File: aes.h
+ .
+ /*===========================================================================
+ .
+                       EDIT HISTORY FOR FILE
+ .
+   $Header: //depot/asic/msmshared/sec/sec/MSM_SEC.03.03.08.xx/aes_tab.h#1 $
+   $DateTime: 2006/12/11 00:43:21 $ $Author: davidf $
+ .
+ when       who     what, where, why
+ --------   ---     ----------------------------------------------------------
+ 11/12/04   rv      changes to correct LINT errors
+ 02/02/04   rwh     Small mods to open source.
+ .
+ ===========================================================================*/
+ /*lint -e146 -e303 */
+ /* 146: Assuming a binary constant */
+ /* 303: String too long (try +macros) */
+ .
+ .
+  /*
+    I retain copyright in this code but I encourage its free use provided
+    that I don't carry any responsibility for the results. I am especially
+    happy to see it used in free and open source software. If you do use
+    it I would appreciate an acknowledgement of its origin in the code or
+    the product that results and I would also appreciate knowing a liitle
+    about the use to which it is being put.
+ .
+    Dr B. R. Gladman <brg@gladman.uk.net> 1st June 2001.
+  */
+ File: aes_tab.h
+ .
+ ===============================================================================
+ 6.
+ ===============================================================================
+ #FILE:Conftest.py
+ # Copyright (c) 2003 Stichting NLnet Labs
+ # Copyright (c) 2001, 2002, 2003 Steven Knight
+ #
+ # Permission is hereby granted, free of charge, to any person obtaining
+ # a copy of this software and associated documentation files (the
+ # "Software"), to deal in the Software without restriction, including
+ # without limitation the rights to use, copy, modify, merge, publish,
+ # distribute, sublicense, and/or sell copies of the Software, and to
+ # permit persons to whom the Software is furnished to do so, subject to
+ # the following conditions:
+ #
+ # The above copyright notice and this permission notice shall be included
+ # in all copies or substantial portions of the Software.
+ #
+ # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ # KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ # WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ # NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ # LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ #
+ #
+ #
+ ===============================================================================
+ File: Conftest.py
+ .
+ ===============================================================================
+ 7.
+ ===============================================================================
+ / ***
+  *
+  * Fowler/Noll/Vo- hash
+  *
+  * The basis of this hash algorithm was taken from an idea sent
+  * as reviewer comments to the IEEE POSIX P1003.2 committee by:
+  *
+  *      Phong Vo (http://www.research.att.com/info/kpv/)
+  *      Glenn Fowler (http://www.research.att.com/~gsf/)
+  *
+  * In a subsequent ballot round:
+  *
+  *      Landon Curt Noll (http://www.isthe.com/chongo/)
+  *
+  * improved on their algorithm.  Some people tried this hash
+  * and found that it worked rather well.  In an EMail message
+  * to Landon, they named it the ``Fowler/Noll/Vo'' or FNV hash.
+  *
+  * FNV hashes are designed to be fast while maintaining a low
+  * collision rate. The FNV speed allows one to quickly hash lots
+  * of data while maintaining a reasonable collision rate.  See:
+  *
+  *      http://www.isthe.com/chongo/tech/comp/fnv/index.html
+  *
+  * for more details as well as other forms of the FNV hash.
+  *
+  *
+  * Please do not copyright this code.  This code is in the public domain.
+  *
+  * LANDON CURT NOLL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+  * INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO
+  * EVENT SHALL LANDON CURT NOLL BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+  * CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+  * USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+  * OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+  * PERFORMANCE OF THIS SOFTWARE.
+  *
+  * By:
+  *      chongo <Landon Curt Noll> /\oo/\
+  *      http://www.isthe.com/chongo/
+  *
+  * Share and Enjoy!     :-)
+  */
+ File: fm_fnv_hash.h, fm_fnv_hash.c
+ .
+ ===============================================================================
+ 8.
+ ===============================================================================
+ .
+ /*
+  *  $Header: //source/qcom/qct/core/api/kernel/main/latest/libstd/stringl/stringl.h#13 $
+  *  $DateTime: 2013/07/24 11:35:54 $
+  */
+ .
+ /*      $OpenBSD: string.h,v 1.17 2006/01/06 18:53:04 millert Exp $     */
+ /*      $NetBSD: string.h,v 1.6 1994/10/26 00:56:30 cgd Exp $   */
+ .
+ /*-
+  * Copyright (c) 1990 The Regents of the University of California.
+  * All rights reserved.
+  *
+  * Redistribution and use in source and binary forms, with or without
+  * modification, are permitted provided that the following conditions
+  * are met:
+  * 1. Redistributions of source code must retain the above copyright
+  *    notice, this list of conditions and the following disclaimer.
+  * 2. Redistributions in binary form must reproduce the above copyright
+  *    notice, this list of conditions and the following disclaimer in the
+  *    documentation and/or other materials provided with the distribution.
+  * 3. Neither the name of the University nor the names of its contributors
+  *    may be used to endorse or promote products derived from this software
+  *    without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+  * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  * SUCH DAMAGE.
+  *
+  *      @(#)string.h    5.10 (Berkeley) 3/9/91
+  */
+ File: stringl.h
+ .
+ ===============================================================================
+ 9.
+ ===============================================================================
+ /*
+  * Copyright (c) 1998 Todd C. Miller <Todd.Miller@courtesan.com>
+  *
+  * Permission to use, copy, modify, and distribute this software for any
+  * purpose with or without fee is hereby granted, provided that the above
+  * copyright notice and this permission notice appear in all copies.
+  *
+  * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+  * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+  * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+  * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+  */
+ File: wcslcpy.c, wcslcat.c, wstrlcpy.c, strlcat.c, strlcpy.c, wstrlcat.c
+Comment:
+ This is LICENSE.qcom concatenated with qca/NOTICE.txt.
 
 License: binary-redist-Qualcomm-media
  All rights reserved.
