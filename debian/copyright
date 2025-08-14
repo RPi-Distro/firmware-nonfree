@@ -257,7 +257,7 @@ Files: debian/config/ivtv/*.fw debian/config/ivtv/v4l-cx2341x-init.mpg
 Copyright: 2003-2006, Hauppauge
 License: binary-redist-EULA-Hauppuage
 
-Files: airoha/Eth*
+Files: airoha/Eth* airoha/en7581_npu_*
 Copyright: 2023-2024, Airoha Inc.
 License: binary-redist-Airoha
 
@@ -382,8 +382,7 @@ Files: ath10k/QCA*/hw*/board*.bin ath10k/QCA*/hw*/notice_ath10k_firmware-*.txt
 Copyright: 2014-2017, Qualcomm Atheros, Inc.
 License: binary-redist-Qualcomm-Atheros
 
-Files: ath11k/IPQ*/hw*.0/m3* ath11k/IPQ*/hw*.0/q6* ath11k/QCN9074/hw1.0/amss.bin
- ath11k/QCN9074/hw1.0/m3.bin
+Files: ath11k/IPQ*/hw*.0/m3* ath11k/IPQ*/hw*.0/q6* ath11k/QCN9074/hw1.0/*
 Copyright: 1986, Gary S. Brown
            1988, 1990-1991, 1993, The Regents of the University of California
            1998, 2010, Todd C. Miller
@@ -492,6 +491,24 @@ Copyright: 2015-2017, Qualcomm Atheros, Inc.
            2022-2023, Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-Atheros
 
+Files: ath11k/QCA2066/hw2.1/* ath11k/QCA6698AQ/hw2.1/*
+Copyright: 1986, Gary S. Brown
+           1988, 1990-1991, 1993, The Regents of the University of California
+           1998, Todd C. Miller
+           2000-2001, Aaron D. Gifford
+           2012, Atheros Communications Inc.
+           2002-2004, Sam Leffler, Errno Consulting
+           2002-2018, Jouni Malinen
+           2007, Open Kernel Labs, Inc.
+           2002-2021, The Linux Foundation
+           2011, The FreeBSD Foundation
+           2013, Cozybit, Inc.
+           2015, Pali Rohár
+           2015-2017, Qualcomm Atheros, Inc.
+           2015, 2018, The Android Open Source Project
+           2021-2022, Qualcomm Innovation Center, Inc.
+License: binary-redist-Qualcomm-Atheros
+
 Files: ath12k/WCN7850/hw2.0/*
 Copyright: 1986, Gary S. Brown
            1988, 1990-1991, 1993, The Regents of the University of California
@@ -509,7 +526,7 @@ Copyright: 1986, Gary S. Brown
 License: binary-redist-Qualcomm-Atheros
 
 Files: qca/crbtfw*.tlv qca/crnv*.bin qca/hpbtfw21.tlv qca/hpnv21*.*
- qca/msbtfw11.* qca/msnv11.* qca/nvm_*.bin qca/rampatch_*.bin
+ qca/msbtfw11.* qca/msnv11.* qca/nvm_*.bin qca/QCA2066/* qca/rampatch_*.bin
 Copyright: 1990, The Regents of the University of California
            1998, Todd C. Miller
            1998-2002, The OpenSSL Project
@@ -526,7 +543,7 @@ Files: wil6210.*
 Copyright: 2015-2017, Qualcomm Atheros, Inc
 License: binary-redist-Qualcomm-Atheros
 
-Files: qca/htbtfw20.tlv qca/htnv20.bin
+Files: qca/ap* qca/cm* qca/hmt* qca/ht*
 Copyright: 1990, The Regents of the University of California
            1998, Todd C. Miller
            1998-2002 The OpenSSL Project
@@ -551,7 +568,8 @@ Files: brcm/BCM-0bb4-0306.hcd
 Copyright: 2018, Cypress Semiconductor Corporation
 License: binary-redist-Cypress
 
-Files: brcm/brcmfmac4373.bin cypress/cyfmac43*.bin cypress/cyfmac43*.clm_blob
+Files: brcm/brcmfmac4354-sdio.nvidia,p2371-2180.txt brcm/brcmfmac4373.bin
+ cypress/cyfmac43*.bin cypress/cyfmac43*.clm_blob
  cypress/cyfmac54591-pcie.bin cypress/cyfmac54591-pcie.clm_blob
 Copyright: Cypress
 License: binary-redist-Cypress
@@ -590,6 +608,10 @@ Files: intel/ipu/ipu6* intel/vsc/*
 Copyright: 2023-2024, Intel Corporation
 License: binary-redist-Intel
 
+Files: intel/ipu/ipu7*
+Copyright: 2025, Intel Corporation
+License: binary-redist-Intel-narrower-patent
+
 Files: intel/ipu/irci_irci_ecr-master_20161208_0213_20170112_1500.bin
 Copyright: 2017, Intel Corporation
 License: binary-redist-Intel-2
@@ -598,7 +620,7 @@ Files: intel/ish/*
 Copyright: 1999-2025, Intel Corporation
 License: binary-redist-Intel-1
 
-Files: intel/avs/*
+Files: intel/avs/* intel/dsp_fw_*.bin
 Copyright: 1981-2000, The Regents of the University of California
            1984, 2000, S.L. Moshier
            1986, Hewlett-Packard Company
@@ -617,7 +639,7 @@ Files: intel/ibt-* iwlwifi-*
 Copyright: 2006-2016, Intel Corporation
 License: binary-redist-Intel
 
-Files: intel/ice/ddp/ice-*.pkg
+Files: intel/ice/ddp/ice-*.pkg intel/ice/ddp-lag/ice_lag-*.pkg
 Copyright: 2019, Intel Corporation
 License: binary-redist-Intel
 
@@ -744,12 +766,7 @@ Files: matrox/*
 Copyright: 1999, Matrox Graphics Inc.
 License: binary-redist-Matrox
 
-Files: mediatek/BT_RAM_CODE_*.bin mediatek/mt7610*.bin mediatek/mt7615*.bin
- mediatek/mt7622*.bin mediatek/mt7650e.bin mediatek/mt7662u*.bin
- mediatek/mt7663*.bin mediatek/mt7668*.bin mediatek/mt791*.bin
- mediatek/mt798*.bin mediatek/WIFI_MT79*.bin mediatek/WIFI_RAM_CODE_*.bin
- mediatek/mt7996/*.bin mediatek/mt8173/vpu_*.bin mediatek/mt81*/scp.img
- mediatek/sof/* mediatek/sof-tplg/*
+Files: mediatek/*
 Copyright: MediaTek Inc.
 License: binary-redist-MediaTek
 
@@ -828,7 +845,8 @@ Files: netronome/*
 Copyright: 2017, Netronome Systems, Inc.
 License: binary-redist-Netronome
 
-Files: qcom/*
+Files: ath10k/WCN3990/hw1.0/qcm2290/* ath11k/WCN6750/hw1.0/qcm6490/*
+ qca/QCA6698/* qcom/*
 Copyright: 1986, Gary S. Brown
            1995-1998, Eric Young
            1995-2005, Jean-loup Gailly
@@ -992,6 +1010,14 @@ Files: av7110/Makefile check_whence.py cis/Makefile dsp56k/Makefile
        dsp56k/concat-bootstrap.pl keyspan_pda/Makefile
 Copyright: 2011, 2016, Ben Hutchings <ben@decadent.org.uk>
 License: GPL-2+
+
+Files: aeonsemi/as21x1x_fw.bin
+Copyright: 2025, AEONSEMI Corporation
+License: binary-redist-Aeonsemi
+
+Files: bmi260-init-data.fw
+Copyright: 2020, Bosch Sensortec GmbH.
+License: BSD-3-clause-Bosch
 
 License: binary-redist-Abilis
  Permission to use, copy, modify, and/or distribute this software for
@@ -3795,6 +3821,8 @@ License: binary-redist-Intel-3
  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  SUCH DAMAGE.
+Comment:
+ This is LICENCE.adsp_sst.
 
 License: binary-redist-Intel-Ice-enhanced
  Redistribution.  Redistribution and use in binary form, without
@@ -3873,6 +3901,8 @@ License: binary-redist-Intel-narrower-patent
  ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Comment:
+ This is LICENSE.intel.
 
 License: binary-redist-ITEtech
  Permission to use, copy, modify, and/or distribute this software for
@@ -7528,3 +7558,52 @@ License: MPL-1.1
  .
  On Debian systems the text of the MPL version 1.1 can be found in
  /usr/share/common-licenses/MPL-1.1.
+
+License: binary-redist-Aeonsemi
+ All rights reserved.
+ .
+ Grants permission to use and redistribute aforementioned firmware
+ files for the use with devices containing AEONSEMI silicon products, but not as part of
+ the Linux kernel or in any other form which would require these files themselves
+ to be covered by the terms of the GNU General Public License or the GNU Lesser
+ General Public License.
+ .
+ These firmware files are distributed in the hope that they will be useful, but
+ are provided WITHOUT ANY WARRANTY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTY
+ OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+Comment:
+ This is LICENSE.aeonsemi.
+
+License: BSD-3-clause-Bosch
+ All rights reserved.
+ .
+ BSD-3-Clause
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ 3. Neither the name of the copyright holder nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+Comment:
+ This is LICENSE.bmi260.
