@@ -1,5 +1,46 @@
-firmware-nonfree (20250708-2) UNRELEASED; urgency=medium
+firmware-nonfree (20250808-1) UNRELEASED; urgency=medium
 
+  * New upstream version:
+    - amdgpu: update dmcub fw for dcn314
+    - amdgpu: update dmcub fw for various DCN version
+    - amdgpu: Update GC 11.5.0 microcode
+    - amdgpu: Update GC 11.5.1 microcode
+    - amdgpu: Update GCN 4.0.5 microcode
+    - amdgpu: Update SDMA 6.1.0 microcode
+    - ath11k: QCA2066 hw2.1: update board-2.bin
+    - ath11k: QCA2066 hw2.1: update to
+      WLAN.HSP.1.1-03926.13-QCAHSPSWPL_V2_SILICONZ_CE-2.52297.9
+    - ath11k: QCA6698AQ hw2.1: update to
+      WLAN.HSP.1.1-04650-QCAHSPSWPL_V1_V2_SILICONZ_IOE-2
+    - ath11k: WCN6855 hw2.0: update board-2.bin
+    - ath12k: QCN9274 hw2.0: update to WLAN.WBE.1.5-01651-QCAHKSWPL_SILICONZ-1
+    - ath12k: WCN7850 hw2.0: update to
+      WLAN.HMT.1.1.c5-00302-QCAHMTSWPL_V1.0_V2.0_SILICONZ-1.115823.3
+    - cirrus: cs35l41: Add Firmware for various ASUS commercial Laptops using
+      CS35L41 HDA
+    - cirrus: cs35l41: Update Firmware for Dell Oasis
+    - cirrus: cs35l56: Add firmware for Cirrus CS35L56 for various Dell laptops
+    - i915: Xe3LPD DMC v2.29
+    - intel_vpu: Update NPU firmware
+    - mediatek MT7925: update bluetooth firmware to 20250721233113
+    - qcom: Add Audio topology for QCS6490 RB3Gen2
+    - qcom: Add firmware binary for SM8750.
+    - qcom: Add QCS6490 symlink for QUPv3 firmware
+    - qcom: Add QDSP firmware file for Qualcomm QDU100 device.
+    - qcom: Add QDU100 firmware image files required for booting.
+    - qcom: Update DSP firmware for qcm6490 platform
+    - qcom: Update gpu firmwares of QCS615 chipset
+    - qcom: update Venus firmware file for v6.0
+    - qcom: Update xbl_config firmware file.
+    - rtw89: 8852b: update fw to v0.29.128.0
+    - rtw89: 8852bt: update fw to v0.29.127.0
+    - rtw89: 8852c: add regd fw element with version R72-R57
+    - rtw89: 8922a: add regd fw element with version R72-R6
+    - rtw89: 8922a: update BB parameter V49
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel Solar core
+    - update firmware for MT7925 WiFi device
   * Unconditionally install firmware under /usr/lib/firmware
   * Refactor firmware installation to use dh_install, avoiding E2BIG
   * Add metainfo.xml files to dh_install file lists
