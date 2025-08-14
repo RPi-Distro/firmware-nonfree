@@ -2,7 +2,6 @@
 
 import dataclasses
 import io
-import itertools
 import json
 import locale
 import os
@@ -71,18 +70,22 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 self.firmware_modules.setdefault(firmware_filename, []) \
                                      .append(name)
 
+    def do_source(self):
+        super().do_source()
+
+        # We don't want to generate a makefile
+        self.bundle.write_makefile = lambda *_: None
+
     def do_main(self):
         config_entry = self.config['base',]
         vars = {}
         vars.update(config_entry)
 
-        makeflags = MakeFlags()
-
         self.file_errors = False
         self.file_packages = {}
 
         for package in config_entry['packages']:
-            self.do_package(package, vars.copy(), makeflags.copy())
+            self.do_package(package, vars.copy())
 
         for canon_path, package_suffixes in self.file_packages.items():
             if len(package_suffixes) > 1:
@@ -94,13 +97,11 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         if self.file_errors:
             raise Exception('error(s) found in file lists')
 
-    def do_package(self, package, vars, makeflags):
+    def do_package(self, package, vars):
         config_entry = self.config['base', package]
         vars.update(config_entry)
         vars['package'] = package
         vars['package_env_prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
-
-        makeflags['PACKAGE'] = package
 
         # Those might be absent, set them to empty string for replacement to work:
         empty_list = ['replaces', 'conflicts', 'breaks', 'provides', 'recommends']
@@ -124,9 +125,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                          for pattern in config_entry.get('files-excluded', [])]
         files_added = set()
         files_unused = set()
-        files_real = {}
-        links = {}
-        links_rev = {}
+        files_selected = {}
 
         # List all additional and replacement files in binary package
         # config so we can:
@@ -165,16 +164,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
                     # Skip if already matched by earlier pattern or in
                     # other directory
-                    if canon_path in files_real or canon_path in links:
+                    if canon_path in files_selected:
                         continue
 
                     matched_more = True
                     if is_added:
                         files_unused.remove(canon_path)
-                    if cur_path.is_symlink():
-                        links[canon_path] = cur_path.readlink()
-                    elif cur_path.is_file():
-                        files_real[canon_path] = cur_path
+                    if cur_path.is_symlink() or cur_path.is_file():
+                        files_selected[canon_path] = cur_path
 
                     self.file_packages.setdefault(canon_path, []) \
                                       .append(package)
@@ -189,30 +186,15 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                 print(f'W: {package}: pattern {pattern} is redundant with earlier patterns',
                       file=sys.stderr)
 
-        for canon_path in links:
-            link_target = ((canon_path.parent / links[canon_path])
-                           .resolve(strict=False)
-                           .relative_to(cur_dir))
-            links_rev.setdefault(link_target, []).append(canon_path)
-
         if files_unused:
             print(f'W: {package}: unused files:',
                   ', '.join(str(path) for path in files_unused),
                   file=sys.stderr)
 
-        makeflags['FILES'] = \
-            ' '.join([f'"{source}":"{dest}"'
-                      for dest, source in sorted(files_real.items())]) \
-               .replace(',', '[comma]')
-        makeflags['LINKS'] = \
-            ' '.join([f'"{link}":"{target}"'
-                      for link, target in sorted(links.items())]) \
-               .replace(',', '[comma]')
-
         firmware_meta_list = []
         module_names = set()
 
-        for canon_path in sorted(itertools.chain(files_real, links)):
+        for canon_path in sorted(files_selected):
             canon_name = str(canon_path)
             firmware_meta_list.append(
                 self.templates.get("metainfo.xml.firmware",
@@ -268,16 +250,28 @@ You must agree to the terms of this license before it is installed."""
             script_contents.append("#DEBHELPER#\n\nexit 0\n")
             open("debian/firmware-%s.%s" % (package, script), "w").write("\n".join(script_contents))
 
-        self.bundle.add_packages(packages_binary, (package,), makeflags)
+        self.bundle.add_packages(packages_binary, (package,), MakeFlags())
 
         vars['firmware_list'] = ''.join(firmware_meta_list)
         vars['modalias_list'] = ''.join(modalias_meta_list)
         # Underscores are preferred to hyphens
-        vars['package_metainfo'] = package.replace('-', '_')
+        vars['package_metainfo'] = package_metainfo = package.replace('-', '_')
+        package_metainfo_filename = \
+            f'debian/org.debian.firmware_{package_metainfo}.metainfo.xml'
         # XXX Might need to escape some characters
-        open("debian/org.debian.firmware_%(package_metainfo)s.metainfo.xml"
-             % vars, 'w') \
+        open(package_metainfo_filename, 'w') \
             .write(self.templates.get("metainfo.xml", vars))
+
+        def dh_install_escape(name):
+            return name.replace('$', '${}').replace(' ', '${Space}')
+
+        with open(f'debian/firmware-{package}.install', 'w') as install_fh:
+            for canon_path, cur_path in sorted(files_selected.items()):
+                print(dh_install_escape(str(cur_path)),
+                      f'/usr/lib/firmware/{dh_install_escape(str(canon_path.parent))}',
+                      file=install_fh)
+            print(package_metainfo_filename, '/usr/share/metainfo',
+                  file=install_fh)
 
     def process_template(self, in_entry, vars):
         e = Template()
