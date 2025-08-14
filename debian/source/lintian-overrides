@@ -11,3 +11,9 @@ firmware-nonfree source: elf-error *
 firmware-nonfree source: binary-with-bad-dynamic-table *
 # ignored by bullseye's lintian when in non-free, not when in non-free-firmware:
 firmware-nonfree source: license-problem-non-free-RFC ath11k/WCN6750/hw1.0/Notice.txt
+# We don't have a way to describe license texts themselves (bug #1111126)
+firmware-nonfree source: file-without-copyright-information Apache-2 [debian/copyright]
+firmware-nonfree source: file-without-copyright-information LICENCE.* [debian/copyright]
+firmware-nonfree source: file-without-copyright-information LICENSE.* [debian/copyright]
+firmware-nonfree source: file-without-copyright-information MIT [debian/copyright]
+firmware-nonfree source: file-without-copyright-information qca/NOTICE.txt [debian/copyright]

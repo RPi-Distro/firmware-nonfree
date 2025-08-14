@@ -51,6 +51,8 @@ firmware-nonfree (20250808-1) UNRELEASED; urgency=medium
   * d/copyright: Delete or update some outdated file patterns
   * d/copyright: Exclude some more unwanted files
   * d/copyright: Add information for freely licensed firmware and scripts
+  * d/s/lintian-overrides: Override file-without-copyright-information warning
+    for license texts
 
  -- Ben Hutchings <benh@debian.org>  Wed, 13 Aug 2025 22:06:26 +0200
 
