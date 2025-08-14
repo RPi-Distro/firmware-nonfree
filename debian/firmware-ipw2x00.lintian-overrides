@@ -1,2 +1,6 @@
 # Can't shorten a licence text
 firmware-ipw2x00: too-long-extended-description-in-templates firmware-ipw2x00/license/accepted *
+
+# There is a url-homepage-missing warning that we cannot fix because
+# there is no single homepage
+firmware-ipw2x00: appstream-metadata-validation-failed Problems reported by "appstreamcli validate-tree".
