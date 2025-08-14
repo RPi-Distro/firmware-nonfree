@@ -398,6 +398,7 @@ Copyright: 1986, Gary S. Brown
            2012, Atheros Communications Inc.
            2013, Cozybit, Inc.
            2015, Pali Rohár
+           2015-2017, Qualcomm Atheros, Inc.
            2015, 2018, The Android Open Source Project
            2021-2022, Qualcomm Innovation Center, Inc.
 License: binary-redist-Qualcomm-Atheros
@@ -420,7 +421,8 @@ Copyright: 1986, Gary S. Brown
            2013, Cozybit, Inc.
            2013, Synopsys
            2015, Daniel Tillett
-           2015, Pali RohÃ¡r
+           2015, Pali Rohár
+           2015-2017, Qualcomm Atheros, Inc.
            2015, 2018, The Android Open Source Project
            2021-2022, Qualcomm Innovation Center, Inc.
 License: binary-redist-Qualcomm-Atheros
@@ -460,6 +462,7 @@ Copyright: 1982, 1986, 1988, 1990-1991, 1993, The Regents of the University of C
            2013, Qualcomm Technologies, Inc.
            2015, Daniel Tillett
            2015, Pali Rohár
+           2015-2017, Qualcomm Atheros, Inc.
            2015, 2018, The Android Open Source Project
            2018 IETF Trust and the persons identified as the document authors
            2021-2022, Qualcomm Innovation Center, Inc.
@@ -477,14 +480,16 @@ Copyright: 1986, Gary S. Brown
            2011, The FreeBSD Foundation
            2012, Atheros Communications Inc.
            2013, Cozybit, Inc.
-           2015, Pali RohÃ¡r
+           2015, Pali Rohár
+           2015-2017, Qualcomm Atheros, Inc.
            2015, 2018, The Android Open Source Project
            2021-2022, Qualcomm Innovation Center, Inc.
 License: binary-redist-Qualcomm-Atheros
 
 Files: ath11k/*/hw*/board-2.bin ath11k/*/hw*/Notice.txt
  ath11k/WCN6855/hw2.0/regdb.bin
-Copyright: 2022-2023 Qualcomm Technologies, Inc.
+Copyright: 2015-2017, Qualcomm Atheros, Inc.
+           2022-2023, Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-Atheros
 
 Files: ath12k/WCN7850/hw2.0/*
@@ -498,6 +503,7 @@ Copyright: 1986, Gary S. Brown
            2011, The FreeBSD Foundation
            2013, Cozybit, Inc.
            2015, Pali Rohár
+           2015-2017, Qualcomm Atheros, Inc.
            2015, 2018, The Android Open Source Project
            2021-2022, Qualcomm Innovation Center, Inc.
 License: binary-redist-Qualcomm-Atheros
@@ -513,6 +519,7 @@ Copyright: 1990, The Regents of the University of California
            2003, Stichting NLnet Labs
            2009, Jerome Glisse
            2009, Red Hat Inc.
+           2015-2017, Qualcomm Atheros, Inc.
 License: binary-redist-Qualcomm-Atheros
 
 Files: wil6210.*
@@ -822,11 +829,33 @@ Copyright: 2017, Netronome Systems, Inc.
 License: binary-redist-Netronome
 
 Files: qcom/*
-Copyright: 2013-2022, Qualcomm Technologies, Inc.
+Copyright: 1986, Gary S. Brown
+           1995-1998, Eric Young
+           1995-2005, Jean-loup Gailly
+           1995-2010, Mark Adler
+           1998, Todd C. Miller
+           1998, 2000-2001, Aaron D. Gifford
+           1998-2011, The OpenSSL Project
+           2000, Aaron D. Gifford
+           2001, Dr B. R. Gladman
+           2003-2005, Jouni Malinen
+           2004-2006, Qualphone, Inc.
+           2013-2022, Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-media
 
 Files: qcom/sa8775p/*dsp*
-Copyright: 2013-2025, Qualcomm Technologies, Inc.
+Copyright: 1986, Gary S. Brown
+           1995-1998, Eric Young
+           1995-2005, Jean-loup Gailly
+           1995-2010, Mark Adler
+           1998, Todd C. Miller
+           1998, 2000-2001, Aaron D. Gifford
+           1998-2011, The OpenSSL Project
+           2000, Aaron D. Gifford
+           2001, Dr B. R. Gladman
+           2003-2005, Jouni Malinen
+           2004-2006, Qualphone, Inc.
+           2013-2025, Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-media-2
 
 Files: qcom/yamato*
