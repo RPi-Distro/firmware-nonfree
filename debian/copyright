@@ -4570,6 +4570,8 @@ License: binary-redist-Qualcomm-Atheros
  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Comment:
+ This is LICENSE.QualcommAtheros_ar3k and LICENSE.QualcommAtheros_ath10k.
 
 License: binary-redist-Qualcomm-Atheros-2
  All rights reserved.
@@ -5913,6 +5915,8 @@ License: binary-redist-Qualcomm-media
   * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
   * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
   */
+Comment:
+ This is LICENSE.qcom concatenated with qcom/NOTICE.txt.
 
 License: binary-redist-Qualcomm-media-2
  All rights reserved.
@@ -6623,6 +6627,8 @@ License: binary-redist-Qualcomm-media-2
   * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
   * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
   */
+Comment:
+ This is LICENSE.qcom-2 concatenated with qcom/NOTICE.txt.
 
 License: binary-redist-Ralink
  All rights reserved.

@@ -54,6 +54,7 @@ firmware-nonfree (20250808-1) UNRELEASED; urgency=medium
   * d/s/lintian-overrides: Override file-without-copyright-information warning
     for license texts
   * d/copyright: Update license of qca/htbtfw20.tlv and qca/htnv20.bin
+  * d/copyright: Comment which files the various Qualcomm licenses come from
 
  -- Ben Hutchings <benh@debian.org>  Wed, 13 Aug 2025 22:06:26 +0200
 
