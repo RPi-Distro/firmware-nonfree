@@ -274,7 +274,7 @@ Files: r128/r128_cce.bin radeon/*_cp.bin radeon/R600_me.bin radeon/R600_pfp.bin
 Copyright: 2000-2009, Advanced Micro Devices, Inc.
 License: binary-redist-AMD-permissive
 
-Files: ar3k/* ar5523.bin ar7010.fw ar7010_1_1.fw ar9271.fw ath3k-1.fw
+Files: ar3k/* ar5523.bin ath3k-1.fw
  ath6k/*/*/* htc_7010.fw htc_9271.fw
 Copyright: 2008-2010, Atheros Communications, Inc.
 License: binary-redist-Atheros
@@ -425,7 +425,7 @@ Copyright: 1986, Gary S. Brown
            2021-2022, Qualcomm Innovation Center, Inc.
 License: binary-redist-Qualcomm-Atheros
 
-Files: ath11k/WCN6750/hw1.0/wpss.*
+Files: ath11k/WCN6750/hw1.0/sc7280/wpss.mbn
 Copyright: 1982, 1986, 1988, 1990-1991, 1993, The Regents of the University of California
            1986, Gary S. Brown
            1991-1992, RSA Data Security, Inc.
@@ -856,7 +856,7 @@ Copyright: 2010-2013, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-permissive
 
 Files: rtl_nic/rtl8153*.fw rtl_nic/rtl8156*.fw rtl_bt/*
- rtlwifi/* rtw88/* rtw89/* debian/config/realtek/rtw89/*
+ rtlwifi/* rtw88/* rtw89/*
 Copyright: 2009-2010, Realtek Semiconductor Corporation
 License: binary-redist-Realtek-restrictive
 
