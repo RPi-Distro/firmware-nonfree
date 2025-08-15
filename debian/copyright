@@ -27,8 +27,7 @@ Files-Excluded:
  whiteheat_loader.fw
  yamaha/yss225_registers.bin
 # - licence is GPL, but source is elsewhere
- atusb/atusb-*.dfu
- atusb/rzusb-*.bin
+ atusb/*
  carl9170*
 # - licence is unknown or unclear
  acenic/tg?.bin
@@ -206,6 +205,7 @@ Files-Excluded:
  r8a779x_usb3_v2.dlmem
 # - for hardware unlikely to run Debian
  atmel/wilc1000_*.bin
+ atmel/wilc3000_*.bin
  ixp4xx/*
  mellanox/lc_ini_*
  mellanox/mlxsw*
