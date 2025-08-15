@@ -1,4 +1,4 @@
-firmware-nonfree (20250808-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250808-1) unstable; urgency=medium
 
   * New upstream version:
     - amdgpu: update dmcub fw for dcn314
@@ -58,7 +58,7 @@ firmware-nonfree (20250808-1) UNRELEASED; urgency=medium
   * d/copyright: Add other copyright holders for some Qualcomm and QCA firmware
   * d/copyright: Add information for remaining firmware files
 
- -- Ben Hutchings <benh@debian.org>  Wed, 13 Aug 2025 22:06:26 +0200
+ -- Ben Hutchings <benh@debian.org>  Fri, 15 Aug 2025 14:51:26 +0200
 
 firmware-nonfree (20250708-1) experimental; urgency=medium
 
