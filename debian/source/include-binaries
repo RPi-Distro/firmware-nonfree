@@ -16,6 +16,8 @@ debian/config/brcm80211/brcm/brcmfmac43436s-sdio.raspberrypi,0-compute-module.bi
 debian/config/brcm80211/brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin
 debian/config/brcm80211/brcm/brcmfmac43439-sdio.bin
 debian/config/brcm80211/brcm/brcmfmac43439-sdio.clm_blob
+debian/config/brcm80211/brcm/brcmfmac43439-sdio.raspberrypi,0-compute-module.bin
+debian/config/brcm80211/brcm/brcmfmac43439-sdio.raspberrypi,0-compute-module.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43455-sdio.raspberrypi,3-model-a-plus.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.clm_blob
 debian/config/brcm80211/brcm/brcmfmac43455-sdio.raspberrypi,4-compute-module.clm_blob
