@@ -1,3 +1,13 @@
+firmware-nonfree (1:20240709-2~bpo12+1+rpt4) bookworm; urgency=medium
+
+  [ Phil Elwell ]
+  * Add support for CM0s with CYW43439
+
+  [ Serge Schneider ]
+  * Bump KERNELVERSION to 6.12.47+rpt
+
+ -- Serge Schneider <serge@raspberrypi.com>  Tue, 30 Sep 2025 07:16:16 +0100
+
 firmware-nonfree (1:20240709-2~bpo12+1+rpt3) bookworm; urgency=medium
 
   [ Phil Elwell ]
