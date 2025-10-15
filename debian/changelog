@@ -2,6 +2,7 @@ firmware-nonfree (20250917-1) UNRELEASED; urgency=medium
 
   [ Ben Hutchings ]
   * d/salsa-ci.yml: Update to work with common pipeline using sbuild
+  * Remove Steve Langasek from Uploaders (RIP)
 
   [ Kathara Sasikumar ]
   * New upstream version:
