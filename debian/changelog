@@ -1,4 +1,4 @@
-firmware-nonfree (20250917-1) UNRELEASED; urgency=medium
+firmware-nonfree (20250917-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
   * d/salsa-ci.yml: Update to work with common pipeline using sbuild
@@ -136,7 +136,7 @@ firmware-nonfree (20250917-1) UNRELEASED; urgency=medium
     - update firmware for MT7925 WiFi device
     - xe: Update GUC to v70.49.4 for BMG, LNL, PTL
 
- -- Ben Hutchings <benh@debian.org>  Mon, 13 Oct 2025 13:13:27 +0200
+ -- Ben Hutchings <benh@debian.org>  Wed, 15 Oct 2025 18:02:57 +0200
 
 firmware-nonfree (20250808-1) unstable; urgency=medium
 
