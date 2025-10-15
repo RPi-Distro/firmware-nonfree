@@ -11,9 +11,11 @@ files:
  e100/*
  intel/ice/**/*
  intel/ish/*
+ intel/qat/*
  intel/vpu/*
 files-excluded:
  qat_4xxx*
+ intel/qat/qat_4xxx*
 usrmovemitigation:
  e100/d101m_ucode.bin
  e100/d101s_ucode.bin

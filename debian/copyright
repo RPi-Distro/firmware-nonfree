@@ -160,22 +160,22 @@ Files-Excluded:
  intel/ibt-18-1.sfi
  intel/ibt-18-2.ddc
  intel/ibt-18-2.sfi
- iwlwifi-*-34.ucode
- iwlwifi-*-50.ucode
- iwlwifi-*-66.ucode
- iwlwifi-*-73.ucode
- iwlwifi-*-74.ucode
- iwlwifi-*-78.ucode
- iwlwifi-*-79.ucode
- iwlwifi-*-81.ucode
- iwlwifi-*-83.ucode
- iwlwifi-*-84.ucode
- iwlwifi-*-86.ucode
- iwlwifi-*-90.ucode
- iwlwifi-so-a0-gf-a0-77.ucode
- iwlwifi-so-a0-gf4-a0-77.ucode
- iwlwifi-so-a0-hr-b0-77.ucode
- iwlwifi-ty-a0-gf-a0-77.ucode
+ intel/iwlwifi/iwlwifi-*-34.ucode
+ intel/iwlwifi/iwlwifi-*-50.ucode
+ intel/iwlwifi/iwlwifi-*-66.ucode
+ intel/iwlwifi/iwlwifi-*-73.ucode
+ intel/iwlwifi/iwlwifi-*-74.ucode
+ intel/iwlwifi/iwlwifi-*-78.ucode
+ intel/iwlwifi/iwlwifi-*-79.ucode
+ intel/iwlwifi/iwlwifi-*-81.ucode
+ intel/iwlwifi/iwlwifi-*-83.ucode
+ intel/iwlwifi/iwlwifi-*-84.ucode
+ intel/iwlwifi/iwlwifi-*-86.ucode
+ intel/iwlwifi/iwlwifi-*-90.ucode
+ intel/iwlwifi/iwlwifi-so-a0-gf-a0-77.ucode
+ intel/iwlwifi/iwlwifi-so-a0-gf4-a0-77.ucode
+ intel/iwlwifi/iwlwifi-so-a0-hr-b0-77.ucode
+ intel/iwlwifi/iwlwifi-ty-a0-gf-a0-77.ucode
  libertas/gspi8682*.bin
  libertas/lbtf_sdio.bin
  libertas/sd8682*.bin
@@ -635,7 +635,7 @@ Files: intel/avs/*-tplg.bin
 Copyright: 20023-2024, Intel Corporation
 License: Apache-2.0
 
-Files: intel/ibt-* iwlwifi-*
+Files: intel/ibt-* intel/iwlwifi/*
 Copyright: 2006-2016, Intel Corporation
 License: binary-redist-Intel
 
@@ -805,7 +805,7 @@ Files: powervr/*
 Copyright: 2023, Imagination Technologies Ltd.
 License: binary-redist-Imagination
 
-Files: qat_*.bin
+Files: intel/qat/*
 Copyright: 2014-2023, Intel Corporation.
 License: binary-redist-Intel-1
 

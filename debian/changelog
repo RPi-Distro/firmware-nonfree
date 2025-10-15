@@ -3,6 +3,7 @@ firmware-nonfree (20250917-1) UNRELEASED; urgency=medium
   [ Ben Hutchings ]
   * d/salsa-ci.yml: Update to work with common pipeline using sbuild
   * Remove Steve Langasek from Uploaders (RIP)
+  * d/copyright, intel-misc, iwlwifi: Update for renaming of Intel firmware
 
   [ Kathara Sasikumar ]
   * New upstream version:
