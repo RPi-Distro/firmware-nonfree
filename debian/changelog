@@ -1,3 +1,10 @@
+firmware-nonfree (20250917-2) UNRELEASED; urgency=medium
+
+  [ Diederik de Haas ]
+  * misc-nonfree: Include all Arm Mali firmware (Closes: #1118195)
+
+ -- Ben Hutchings <benh@debian.org>  Thu, 16 Oct 2025 14:47:00 +0200
+
 firmware-nonfree (20250917-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
