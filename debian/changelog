@@ -1,4 +1,36 @@
-firmware-nonfree (20250917-2) UNRELEASED; urgency=medium
+firmware-nonfree (20251011-1) UNRELEASED; urgency=medium
+
+  [ Kathara Sasikumar ]
+  * New upstream version:
+    - Add Dell ISH firmware for Intel Lunar Lake systems
+    - amdgpu: DMCUB updates for various ASICs
+    - ath12k: WCN7850 hw2.0: update board-2.bin
+    - intel/ish:Add ISH firmware file for Intel Lunar Lake platform
+    - intel_vpu: Update NPU firmware
+    - mediatek: mtk_wed: drop links for mt7988
+    - powervr: update firmware for Imagination Technologies BXS-4-64 GPU
+    - qca: Update Bluetooth WCN6750 1.1.3-00091 firmware to 1.1.3-00100
+    - qcom: Add audio topology and ADSP firmware for qcs6490-radxa-dragon-q6a
+    - qcom: Add Audio topology for HAMOA-EVK
+    - qcom: add CDSP firmware for kaanapali platform
+    - qcom: Add firmwares for Kaanapali GPU
+    - qcom: Fix QCS615 chipset's GPU secure fw
+    - qcom: move LEMANS EVK firmware to correct location
+    - qcom: Update A623 GMU fw
+    - qcom: Update aic100 firmware files
+    - qcom: Update DSP firmware for qcs8300 platform.
+    - qcom: Update DSP firmware for sa8775p platform
+    - qcom: Update DSP firmware for sa8775p platform.
+    - qcom: vpu: add video firmware for Kaanapali
+    - qcom: vpu: update video firmware binary for SM8550
+    - ql2500_fw: update ISP25xx Firmware
+    - Revert "amdgpu: update gc 10.3.6 firmware"
+    - rtl_bt: Update RTL8852BT/RTL8852BE-VT BT USB FW to 0x3BAC_ADBA
+    - Update VCN for Navi1x, Green Sardine and Renoir
+    - WHENCE: remove link for Kaanapali video firmware
+  * intel-misc: Include Dell ISH firmware
+  * intel-misc: Include HP ISH firmware
+  * atheros: Add ath11k WCN6855/NFA765 firmware
 
   [ Diederik de Haas ]
   * misc-nonfree: Include all Arm Mali firmware (Closes: #1118195)
@@ -8,7 +40,7 @@ firmware-nonfree (20250917-2) UNRELEASED; urgency=medium
   * d/rules: Check for broken symlinks among installed firmware
   * intel-misc: Include Lenovo ThinkPad X1 2-in-1 Gen 10 ISH firmware
 
- -- Ben Hutchings <benh@debian.org>  Thu, 16 Oct 2025 14:47:00 +0200
+ -- Kathara Sasikumar <katharasasikumar007@gmail.com>  Thu, 23 Oct 2025 12:27:17 +0000
 
 firmware-nonfree (20250917-1) unstable; urgency=medium
 
