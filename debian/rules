@@ -31,6 +31,11 @@ execute_after_dh_install:
 	for dir in ../firmware-*/usr/lib/firmware; do \
 		../../dedup-firmware.sh "$$dir"; \
 	done
+# Check for any broken symlinks.  This excludes the intentional
+# cross-package symlinks from firmware-qcom-soc to firmware-atheros,
+# which it recommends.
+	! find debian/firmware-*/usr/lib/firmware -xtype l \
+	| grep -Ev '^debian/firmware-qcom-soc/usr/lib/firmware/qcom/.*/w(lanmdsp|pss)\.mbn$$'
 
 CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/*.in)
 CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) debian/modinfo.json

@@ -5,6 +5,7 @@ firmware-nonfree (20250917-2) UNRELEASED; urgency=medium
 
   [ Ben Hutchings ]
   * d/rules: Only deduplicate files that are packaged
+  * d/rules: Check for broken symlinks among installed firmware
 
  -- Ben Hutchings <benh@debian.org>  Thu, 16 Oct 2025 14:47:00 +0200
 
