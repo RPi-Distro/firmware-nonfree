@@ -762,6 +762,10 @@ Files: kaweth/*
 Copyright: 1999, Kawasaki LSI.
 License: BSD-4-clause-Kawasaki-LSI
 
+Files: LENOVO/ish/*
+Copyright: 2025, Lenovo PC HK Ltd ("Lenovo")
+License: binary-redist-Lenovo-PC-HK
+
 Files: matrox/*
 Copyright: 1999, Matrox Graphics Inc.
 License: binary-redist-Matrox
@@ -3933,6 +3937,49 @@ License: binary-redist-Lontium
  PURPOSE.
 Comment:
  This is LICENSE.Lontium, but slightly reformatted
+
+License: binary-redist-Lenovo-PC-HK
+ The code is referred to herein as the “Software” and the terms of
+ this Lenovo Software Code License is referred to herein as the
+ “Agreement”. “You” and “Your” mean you, the licensee, and may refer
+ either to an individual person or to a legal entity.
+ .
+ Lenovo and/or its Affiliate(s) (as defined herein) hereby grants a
+ royalty free license to use and distribute the Software in accordance
+ with the terms of this Agreement. You may not modify the Software’s
+ binary application or libraries or otherwise alter it in any other
+ unapproved manner. Distributions of source code must retain the above
+ copyright notice, the conditions of this Agreement and the following
+ disclaimer.
+ .
+ THE SOFTWARE IS BEING PROVIDED “AS-IS”. SUBJECT TO ANY STATUTORY
+ WARRANTIES WHICH CANNOT BE EXCLUDED, LENOVO MAKES NO WARRANTIES OR
+ REPRESENTATIONS, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ TO THE IMPLIED WARRANTIES OR REPRESENTATIONS OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT, REGARDING THE
+ SOFTWARE PRODUCT, SERVICE OR TECHNICAL SUPPORT, IF ANY. LENOVO MAKES
+ NO REPRESENTATION OR WARRANTY WHATSOEVER REGARDING SECURITY, QUALITY,
+ CONTENT OR ANY OTHER ASPECT OF ANY THIRD PARTY PRODUCTS, INCLUDING
+ BUT NOT LIMITED TO THEIR AVAILABILITY, USE, ACCURACY, RELIABILITY OR
+ COMPLETENESS. THE DOWNLOAD AND/OR USE OF ANY THIRD PARTY PRODUCT IS
+ AT YOUR OWN DISCRETION AND RISK AND WILL BE SOLELY RESPONSIBLE FOR
+ ANY DAMAGES TO ANY DEVICE OR OTHER PROPERTIES OR LOSS OF DATA THAT
+ RESULTS FROM THE DOWNLOAD AND/OR USE OF THE THIRD PARTY PRODUCTS. IT
+ IS YOUR RESPONSIBILITY TO ENSURE THAT ANY THIRD PARTY PRODUCT(S) YOU
+ MAY SELECT FOR USE IS FREE OF SUCH ITEMS AS VIRUSES, WORMS, TROJAN
+ HORSES AND OTHER ITEMS OF A DESTRUCTIVE NATURE, AND LENOVO SHALL NOT
+ BE LIABLE FOR ANY DAMAGE OR INJURY ARISING OUT OF OR RELATING TO THE
+ SOFTWARE OR ANY THIRD PARTY PRODUCT. TO THE FULLEST EXTENT ALLOWED
+ UNDER APPLICABLE LAW, IN NO CIRCUMSTANCES IS LENOVO OR ITS
+ AFFILIATE(S) LIABLE FOR ANY OF THE FOLLOWING EVEN IF INFORMED OF
+ THEIR POSSIBILITY: (1) THIRD-PARTY CLAIMS AGAINST FOR DAMAGES; (2)
+ LOSS OF, OR DAMAGE TO, DATA; OR (3) SPECIAL, INCIDENTAL, PUNITIVE OR
+ INDIRECT DAMAGES OR FOR ANY ECONOMIC CONSEQUENTIAL DAMAGES, INCLUDING
+ LOST PROFITS, BUSINESS REVENUE, GOODWILL, OR ANTICIPATED SAVINGS.
+ .
+ For the purposes of this Agreement “Affiliate” means any entity that
+ directly or indirectly controls, is controlled by or is under common
+ control of Lenovo.
 
 License: binary-redist-Marvell
  All rights reserved.
