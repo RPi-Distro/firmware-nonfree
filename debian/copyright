@@ -279,7 +279,7 @@ Files: ar3k/* ar5523.bin ath3k-1.fw
 Copyright: 2008-2010, Atheros Communications, Inc.
 License: binary-redist-Atheros
 
-Files: arm/mali/arch10.8/mali_csffw.bin
+Files: arm/mali/*
 Copyright: 2023, Arm Ltd.
 License: binary-redist-Arm-CSF
 
