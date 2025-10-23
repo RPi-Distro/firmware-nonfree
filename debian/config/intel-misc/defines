@@ -9,6 +9,7 @@ files:
  hfi1_*
  qat_*
  e100/*
+ dell/ish/*
  intel/ice/**/*
  intel/ish/*
  intel/qat/*

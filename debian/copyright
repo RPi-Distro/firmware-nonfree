@@ -714,6 +714,10 @@ Files: dabusb/*
 Copyright: 1999, BayCom GmbH
 License: permissive-BayCom
 
+Files: dell/ish/*
+Copyright: 2025, Dell Technologies, Inc.
+License: binary-redist-dell
+
 Files: dvb-fe-xc*
 Copyright: 2009, Xceive Corporation <info@xceive.com>
 License: binary-redist-Xceive
@@ -2216,6 +2220,125 @@ License: binary-redist-Cypress
  be deemed effective when actually received and must be sent to Cypress
  Semiconductor Corporation, ATTN: Chief Legal Officer, 198 Champion Court, San
  Jose, CA 95134 USA.
+
+License: binary-redist-dell
+ PLEASE READ THIS LICENSE AGREEMENT ("AGREEMENT") CAREFULLY.  THIS AGREEMENT
+ IS A BINDING LEGAL AGREEMENT ENTERED INTO BY AND BETWEEN YOU (OR IF YOU ARE
+ ENTERING INTO THIS AGREEMENT ON BEHALF OF AN ENTITY, THEN THE ENTITY THAT
+ YOU REPRESENT) AND DELL TECHNOLOGIES, INC. ("DELL" "WE" "OUR" OR "US").
+ THIS IS THE AGREEMENT THAT APPLIES TO YOUR USE OF THE DESIGNATED BINARY
+ FILES (COLLECTIVELY, "BINARIES"). BY DOWNLOADING, INSTALLING OR OTHERWISE
+ USING THE BINARIES, YOU ARE ACCEPTING THIS AGREEMENT AND YOU AGREE TO BE
+ BOUND BY ITS TERMS AND CONDITIONS. IF YOU DO NOT AGREE TO THESE TERMS,
+ DELL IS UNWILLING TO AND DOES NOT LICENSE THE BINARIES TO YOU. IF YOU DO
+ NOT AGREE TO THESE TERMS, YOU MAY NOT DOWNLOAD, INSTALL OR OTHERWISE USE
+ THE BINARIES OR RETAIN ANY COPIES OF THE BINARIES. ANY POSSESSION OR USE OF
+ THE BINARIES BY YOU IS SUBJECT TO THE TERMS AND CONDITIONS SET FORTH IN
+ THIS AGREEMENT.
+ .
+ 1. RIGHT TO USE BINARIES; RESTRICTIONS.
+ .
+ 1.1 License. Subject to the terms and conditions of this Agreement,
+ including, without limitation, the restrictions, conditions, limitations
+ and exclusions set forth in this Agreement, DELL hereby grants to you a
+ non‑exclusive, limited license under DELL's copyrights to, without
+ modification: (i) download, install and use the Binaries; and (ii) to
+ reproduce and redistribute the Binaries.
+ .
+ 1.2 Redistribution Restrictions. Redistribution of the Binaries is subject
+ to the following restrictions: (i) Binaries may only be redistributed
+ without modification in binary format; (ii) redistribution of the Binaries
+ must include the license file setting forth the terms and condition of
+ this Agreement; (iii) you may not use Dell Technologies' or its affiliates
+ or subsidiaries name, logo or trademarks; and (iv) copyright or any other
+ notices that appear on the Binaries may not be removed or obscured.
+ .
+ 1.3 Additional Restrictions. Except as expressly permitted by this
+ Agreement, you shall have no right to sublicense, transfer or otherwise
+ disclose the Binaries to any third party.  You shall not reverse engineer,
+ reverse assemble, reverse translate, decompile or reduce to source code
+ form any portion of the Binaries. Except for the purposes expressly
+ permitted in this Agreement, you shall not use the Binaries for any other
+ purpose. DELL (or its licensors) shall retain title and all ownership
+ rights in and to the Binaries and all copies thereof. You shall not
+ subject the Binaries to any third‑party license terms (e.g., open source
+ license terms). DELL hereby reserves all rights not expressly granted
+ herein.
+ .
+ 1.4 Third Party Software. The Binaries may contain code owned by third
+ parties. Such third‑party code may be licensed under additional terms and
+ conditions if separately included. You agree to comply with all terms and
+ conditions imposed on you in such applicable third‑party licenses, if any.
+ Those terms and conditions may impose additional obligations on you as a
+ condition to the permitted use of such third‑party code.
+ .
+ 1.5 No Technical Support. DELL is under no obligation to provide any form
+ of technical support for the Binaries, and if DELL, in its sole discretion,
+ chooses to provide any form of support or information relating to the
+ Binaries, such support and information shall be at DELL’s full discretion.
+ .
+ 2. WARRANTY DISCLAIMER. YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT THE
+ DOWNLOAD, INSTALLATION OR OTHER USE OF THE BINARIES IS AT YOUR SOLE RISK.
+ THE BINARIES AND TECHNICAL SUPPORT, IF ANY, ARE PROVIDED "AS IS" AND
+ WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS OR IMPLIED. NO WARRANTIES,
+ EXPRESS OR IMPLIED, ARE MADE WITH RESPECT TO THE BINARIES OR ANY OTHER
+ INFORMATION OR DOCUMENTATION PROVIDED UNDER THIS AGREEMENT, INCLUDING BUT
+ NOT LIMITED TO ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+ PURPOSE OR AGAINST INFRINGEMENT, OR ANY EXPRESS OR IMPLIED WARRANTY ARISING
+ OUT OF TRADE USAGE OR OUT OF A COURSE OF DEALING OR COURSE OF PERFORMANCE.
+ .
+ 3. NO OTHER LICENSES OR INTELLECTUAL PROPERTY RIGHTS. Neither this
+ Agreement, nor any act by DELL shall provide to You any license or any
+ other rights, except for the rights expressly licensed under this
+ Agreement.
+ .
+ 4. TERMINATION. This Agreement shall be effective upon acceptance,
+ including any download, installation or other use of the Binaries by you
+ and shall continue until terminated. You may terminate the Agreement at
+ any time by deleting and destroying all copies of the Binaries. This
+ Agreement terminates immediately and automatically, with or without
+ notice, if you fail to comply with any provision hereof.
+ .
+ 5. LIMITATION OF LIABILITY. IN NO EVENT SHALL DELL, DELL'S AFFILIATES OR
+ ITS LICENSORS BE LIABLE TO YOU FOR ANY INCIDENTAL, CONSEQUENTIAL OR
+ SPECIAL DAMAGES, INCLUDING BUT NOT LIMITED TO ANY LOST PROFITS, LOST
+ SAVINGS, OR OTHER INCIDENTAL DAMAGES, ARISING OUT OF THE USE OR INABILITY
+ TO USE, OR THE DELIVERY OR FAILURE TO DELIVER, ANY OF THE DELIVERABLES,
+ OR ANY BREACH OF ANY OBLIGATION UNDER THIS AGREEMENT, EVEN IF DELL HAS
+ BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATION
+ OF LIABILITY SHALL REMAIN IN FULL FORCE AND EFFECT REGARDLESS OF WHETHER
+ YOUR REMEDIES HEREUNDER ARE DETERMINED TO HAVE FAILED OF THEIR ESSENTIAL
+ PURPOSE.
+ .
+ 6. INDEMNIFICATION. You agree to indemnify and hold harmless DELL and its
+ officers, directors, employees and successors and assigns against any
+ and all third‑party claims, demands, causes of action, losses, liabilities,
+ damages, costs and expenses, incurred by DELL (including but not limited
+ to costs of defense, investigation and reasonable attorney's fees) arising
+ out of, resulting from or related to any breach of this Agreement by you.
+ .
+ 7. ASSIGNMENT. You shall not assign this Agreement or any right or
+ interest under this Agreement, nor delegate any obligation to be performed
+ under this Agreement.
+ .
+ 8. COMPLIANCE WITH LAWS; APPLICABLE LAW. You agree to comply with all
+ applicable local, international and national laws and regulations and
+ with U.S. Export Administration Regulations, as they apply to the subject
+ matter of this Agreement. This Agreement is governed by the laws of the
+ State of Texas.
+ .
+ 9. CONTRACTING PARTIES. If the Binaries are downloaded, installed or
+ otherwise used on any platform owned by a corporation or other legal
+ entity, then this Agreement is formed by and between DELL and such
+ entity. By taking any such actions, You represent and warrant to DELL that
+ you have the authority to bind such entity to the terms and conditions of
+ this Agreement.
+ .
+ MISCELLANEOUS PROVISIONS. This Agreement constitutes the entire agreement
+ between DELL and you regarding the subject matter hereof. If any of the
+ provisions of this Agreement are determined to be invalid, illegal, or
+ otherwise unenforceable, the remaining provisions shall remain in full
+ force and effect.
 
 License: binary-redist-DiBcom
  Permission to use, copy, modify, and/or distribute this software for
