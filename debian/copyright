@@ -468,6 +468,7 @@ Copyright: 1982, 1986, 1988, 1990-1991, 1993, The Regents of the University of C
 License: binary-redist-Qualcomm-Atheros
 
 Files: ath11k/WCN6855/hw2.0/amss.bin ath11k/WCN6855/hw2.0/m3.bin
+ ath11k/WCN6855/hw2.0/nfa765/amss.bin ath11k/WCN6855/hw2.0/nfa765/m3.bin
 Copyright: 1986, Gary S. Brown
            1988, 1990-1991, 1993, The Regents of the University of California
            1998, Todd C. Miller
