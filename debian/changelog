@@ -1,4 +1,4 @@
-firmware-nonfree (20251021-1) UNRELEASED; urgency=medium
+firmware-nonfree (20251021-1) unstable; urgency=medium
 
   * New upstream version:
     - Add ISH firmware file for Intel Pather Lake platform
@@ -25,7 +25,7 @@ firmware-nonfree (20251021-1) UNRELEASED; urgency=medium
   * nvidia-graphics: Handle dir-to-symlink change of nvidia/ad10{3,4,6,7}
     (Closes: #1112208)
 
- -- Ben Hutchings <benh@debian.org>  Sun, 02 Nov 2025 15:08:33 +0100
+ -- Ben Hutchings <benh@debian.org>  Mon, 03 Nov 2025 00:01:12 +0100
 
 firmware-nonfree (20251011-1) unstable; urgency=medium
 
