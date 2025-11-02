@@ -22,6 +22,8 @@ firmware-nonfree (20251021-1) UNRELEASED; urgency=medium
     - Update firmware file for Intel BlazarU core
     - Update firmware file for Intel Magnetar core
     - WHENCE: nvidia: rearrange GSP-RM firmware lines
+  * nvidia-graphics: Handle dir-to-symlink change of nvidia/ad10{3,4,6,7}
+    (Closes: #1112208)
 
  -- Ben Hutchings <benh@debian.org>  Sun, 02 Nov 2025 15:08:33 +0100
 
