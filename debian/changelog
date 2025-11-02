@@ -1,3 +1,30 @@
+firmware-nonfree (20251021-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - Add ISH firmware file for Intel Pather Lake platform
+    - amdgpu: DMCUB updates for various ASICs
+    - i915: Xe2LPD DMC v2.29
+    - i915: Xe3LPD DMC v2.32
+    - i915: Xe3LPD_3002 DMC v2.27
+    - Intel IPU7: Update product signed firmware binary
+    - intel: qat: Fix missing link
+    - iwlwifi: add Bz/Fm and gl FW for core98-161 release
+    - iwlwifi: update Bz/Hr and Bz/Gf firmwares for core98-161 release
+    - iwlwifi: update cc/Qu/QuZ firmwares for core98-161 release
+    - iwlwifi: update ty/So/Ma firmwares for core98-161 release
+    - nvidia: add generic bootloader for GSP-enabled systems
+    - QCA: Update Bluetooth WCN6856 firmware 2.1.0-00653 to 2.1.0-00659
+    - qcom: sync audioreach firmwares from v1.0.0 build
+    - qcom: vpu: rename firmware binaries
+    - Revert "linux-firmware: update firmware for MT7922 WiFi device" (Closes:
+      #1118199)
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel Magnetar core
+    - WHENCE: nvidia: rearrange GSP-RM firmware lines
+
+ -- Ben Hutchings <benh@debian.org>  Sun, 02 Nov 2025 15:08:33 +0100
+
 firmware-nonfree (20251011-1) unstable; urgency=medium
 
   [ Kathara Sasikumar ]
