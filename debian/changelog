@@ -1,4 +1,4 @@
-firmware-nonfree (20251011-1) UNRELEASED; urgency=medium
+firmware-nonfree (20251011-1) unstable; urgency=medium
 
   [ Kathara Sasikumar ]
   * New upstream version:
@@ -40,7 +40,7 @@ firmware-nonfree (20251011-1) UNRELEASED; urgency=medium
   * d/rules: Check for broken symlinks among installed firmware
   * intel-misc: Include Lenovo ThinkPad X1 2-in-1 Gen 10 ISH firmware
 
- -- Kathara Sasikumar <katharasasikumar007@gmail.com>  Thu, 23 Oct 2025 12:27:17 +0000
+ -- Ben Hutchings <benh@debian.org>  Sun, 02 Nov 2025 14:24:41 +0100
 
 firmware-nonfree (20250917-1) unstable; urgency=medium
 
