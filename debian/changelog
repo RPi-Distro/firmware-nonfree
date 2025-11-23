@@ -33,6 +33,7 @@ firmware-nonfree (20251111-1) UNRELEASED; urgency=medium
     - update firmware for MT7925 WiFi device
     - xe: Update GUC to v70.53.0 for BMG, LNL, PTL
   * misc-nonfree: Include the new ti/audio dir instead of ti/tas{2563,2781}
+  * d/rules: Clean debian/build/install in the debian/control-real rule
 
  -- Ben Hutchings <benh@debian.org>  Sun, 23 Nov 2025 18:58:11 +0100
 

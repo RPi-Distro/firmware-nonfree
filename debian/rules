@@ -59,6 +59,7 @@ endif
 debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
 # We currently need to run copy-firmware.sh to get a complete list of
 # files to be installed.
+	rm -rf debian/build/install
 	./copy-firmware.sh debian/build/install
 	$(GENCONTROL)
 	md5sum $^ > debian/control.md5sum
