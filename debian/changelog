@@ -1,3 +1,41 @@
+firmware-nonfree (20251111-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - add firmware for mt7987 internal 2.5G ethernet phy
+    - amdgpu: DMCUB updates for various ASICs
+    - ASoC: tas2781: Update dsp firmware for HP and ASUS projects
+    - cirrus: cs35l41: Rename various Asus Laptop firmware files to not have
+      Speaker ID
+    - Create audio folder in ti folder, and move all the audio firmwares into
+      it
+    - i915: Update GUC to v70.53.0 for DG2, MTL
+    - mediatek MT7920: update bluetooth firmware to 20251020151255
+    - mediatek MT7922: update bluetooth firmware to 20251020143443
+    - mediatek MT7925: update bluetooth firmware to 20251015213201
+    - qcom: add ADSP firmware for kaanapali platform
+    - qcom: add SOCCP firmware for kaanapali platform
+    - Renaming the file to cover a wide range of HP Lunar Lake system.
+    - rtl_bt: Add firmware and config files for RTL8761CUV
+    - rtl_bt: Update RTL8922A BT USB firmware to 0x41C0_C905
+    - rtl_nic: add firmware rtl8125k-1
+    - rtw88: 8822b: Update firmware to v30.20.0
+    - rtw89: 8851b: update fw to v0.29.41.5
+    - Revert "rtw89: 8852b: update fw to v0.29.128.0" (regression in 20250808)
+    - rtw89: 8852b: update fw to v0.29.128.0 with format suffix -2
+    - rtw89: 8852b: update fw to v0.29.29.14
+    - rtw89: 8852bt: update fw to v0.29.122.1
+    - Revert "rtw89: 8852bt: update fw to v0.29.127.0" (regression in 20250808)
+    - rtw89: 8852bt: update fw to v0.29.127.0 with format suffix -1
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarU core
+    - update firmware for MT7920 WiFi device
+    - update firmware for MT7922 WiFi device
+    - update firmware for MT7925 WiFi device
+    - xe: Update GUC to v70.53.0 for BMG, LNL, PTL
+  * misc-nonfree: Include the new ti/audio dir instead of ti/tas{2563,2781}
+
+ -- Ben Hutchings <benh@debian.org>  Sun, 23 Nov 2025 18:58:11 +0100
+
 firmware-nonfree (20251021-1) unstable; urgency=medium
 
   * New upstream version:
