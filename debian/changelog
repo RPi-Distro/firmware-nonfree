@@ -1,4 +1,4 @@
-firmware-nonfree (20251111-1) UNRELEASED; urgency=medium
+firmware-nonfree (20251111-1) unstable; urgency=medium
 
   * New upstream version:
     - add firmware for mt7987 internal 2.5G ethernet phy
@@ -35,7 +35,7 @@ firmware-nonfree (20251111-1) UNRELEASED; urgency=medium
   * misc-nonfree: Include the new ti/audio dir instead of ti/tas{2563,2781}
   * d/rules: Clean debian/build/install in the debian/control-real rule
 
- -- Ben Hutchings <benh@debian.org>  Sun, 23 Nov 2025 18:58:11 +0100
+ -- Ben Hutchings <benh@debian.org>  Mon, 24 Nov 2025 14:13:22 +0100
 
 firmware-nonfree (20251021-1) unstable; urgency=medium
 
