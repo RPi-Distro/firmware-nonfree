@@ -5,3 +5,4 @@ longdesc: Intel Wireless cards supported by the iwl3945, iwl4965, and
 files:
  iwlwifi-*
  intel/ibt-*
+ intel/iwlwifi/*

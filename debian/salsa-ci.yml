@@ -7,18 +7,13 @@ variables:
   SALSA_CI_DISABLE_BLHC: 'true'
   SALSA_CI_DISABLE_BUILD_PACKAGE_I386: 'true'
   SALSA_CI_DISABLE_BUILD_PACKAGE_ANY: 'true'
+  # We don't compile anything
+  SALSA_CI_DISABLE_CCACHE: 'true'
   SALSA_CI_DISABLE_CROSSBUILD_ARM64: 'true'
   # We have to bump the version in source preparation, not later
   SALSA_CI_DISABLE_VERSION_BUMP: 'true'
 
-# The common Salsa CI pipeline relies on keeping the unpacked source
-# as an artifact, but in our case this is far too large for the
-# current limits on Salsa (salsa-ci-team/pipeline#195).  So we
-# redefine the source extraction and build steps to use packed source.
-
-# Our modified extract-source and build jobs
-
-extract-source:
+orig:
   stage: provisioning
   image: $SALSA_CI_IMAGES_BASE
   cache:
@@ -38,89 +33,110 @@ extract-source:
           rmdir orig
       fi
 
-    # Install dependencies of gencontrol.py and debian/rules orig
-    # plus origtargz
     - apt-get update
-    - eatmydata apt-get install --no-install-recommends -y make dpkg-dev
-    - |
-      eatmydata apt-get install --no-install-recommends -y \
-        debhelper \
-        devscripts \
-        git \
-        python3 \
-        python3-dacite \
-        python3-jinja2 \
-        quilt \
-        rdfind \
-        rsync
-
-    - version=$(dpkg-parsechangelog -SVersion)
-    - upstream_version=$(echo $version | sed 's/-[^-]*$//')
-
-    # Merge upstream source
+    - eatmydata apt-get install --no-install-recommends -y devscripts git
     - USCAN_VCS_EXPORT_UNCOMPRESSED=yes origtargz -dt
-    - debian/rules orig
-
-    # Fudge source version and suite *before* gencontrol.py
-    - sed -i -e '1 s/) [^;]*/+salsaci) UNRELEASED/' debian/changelog
-    - version=${version}+salsaci
-
-    # Run gencontrol.py
-    # - create temporary log
-    - log="$(mktemp)"
-    # - invoke debian/control-real rule and log output
-    - |
-      rc=0; debian/rules debian/control-real >"$log" 2>&1 || rc=$?
-    - cat "$log"
-    # - check for success message and error code
-    - test $rc = 2
-    - grep -q 'been generated SUCCESSFULLY' "$log"
-
-    # Put packed source in artifacts
-    - dpkg-buildpackage -uc -us -S -sa -d
-    - mkdir -p ${WORKING_DIR}
-    - cp ../firmware-nonfree_${upstream_version}.orig.tar.xz ${WORKING_DIR}
-    - mv ../firmware-nonfree_${version}.dsc ../firmware-nonfree_${version}.debian.tar.xz ../firmware-nonfree_${version}_source.buildinfo ../firmware-nonfree_${version}_source.changes ${WORKING_DIR}
 
     # Move orig tarballs back to where GitLab wants them
     - mkdir orig
     - mv ../*.orig.tar.* orig
 
+.local-build-script-extract-source: &local-build-script-extract-source
+  # Move orig tarball cache
+  - |
+    if [ -d orig ]; then
+        mv orig/* ..
+        rmdir orig
+    fi
+
+  # Install dependencies of gencontrol.py and debian/rules orig
+  - apt-get update
+  - |
+    eatmydata apt-get install --no-install-recommends -y \
+      debhelper \
+      python3 \
+      python3-dacite \
+      python3-jinja2 \
+      quilt \
+      rdfind \
+      rsync
+
+  - version=$(dpkg-parsechangelog -SVersion)
+  - upstream_version=$(echo $version | sed 's/-[^-]*$//')
+
+  # Merge upstream source
+  - debian/rules orig
+
+  # Fudge source version and suite *before* gencontrol.py
+  - sed -i -e '1 s/) [^;]*/+salsaci) UNRELEASED/' debian/changelog
+  - version=${version}+salsaci
+
+  # Run gencontrol.py
+  # - create temporary log
+  - log="$(mktemp)"
+  # - invoke debian/control-real rule and log output
+  - |
+    rc=0; debian/rules debian/control-real >"$log" 2>&1 || rc=$?
+  - cat "$log"
+  # - check for success message and error code
+  - test $rc = 2
+  - grep -q 'been generated SUCCESSFULLY' "$log"
+
+  - dpkg-buildpackage -uc -us -S -sa -d
+  - mkdir -p ${WORKING_DIR}
+  - mv ../firmware-nonfree_${upstream_version}.orig.tar.xz ../firmware-nonfree_${version}.dsc ../firmware-nonfree_${version}.debian.tar.xz ../firmware-nonfree_${version}_source.buildinfo ../firmware-nonfree_${version}_source.changes ${WORKING_DIR}
+
 build:
-  stage: build
-  image: $SALSA_CI_IMAGES_BASE
   cache:
-    key: "build-${BUILD_ARCH}_${HOST_ARCH}"
+    key: "orig-${RELEASE}"
     paths:
-      - .ccache
+      - orig
+    policy: pull
+  artifacts:
+    paths:
+      - ${WORKING_DIR}/
+      - salsa.env
+    exclude:
+      - ${WORKING_DIR}/*.dsc
+      - ${WORKING_DIR}/*.tar.*
+      - ${WORKING_DIR}/*_source.*
+  needs:
+    - job: orig
   extends:
-    - .artifacts-default-expire
+    - .build-definition
   except:
     variables:
       - $CI_COMMIT_TAG != null
-  variables:
-    CCACHE_TMP_DIR: ${CI_PROJECT_DIR}/../.ccache
-    CCACHE_WORK_DIR: ${CI_PROJECT_DIR}/.ccache
-    DB_BUILD_PARAM: ${SALSA_CI_DPKG_BUILDPACKAGE_ARGS}
-    DB_BUILD_TYPE: all
-  artifacts:
-    exclude:
-      - ${WORKING_DIR}/${SOURCE_DIR}/**/*
   script:
-    # Unpack the source
-    - |
-      apt-get update && eatmydata apt-get install --no-install-recommends -y \
-        dpkg-dev
-    - dpkg-source -x ${WORKING_DIR}/*.dsc ${WORKING_DIR}/${SOURCE_DIR}
-
     # Do the same as the common .build-definition script
     - !reference [.build-before-script]
-    - !reference [.build-script]
-    - mv ${CCACHE_TMP_DIR} ${CCACHE_WORK_DIR}
-    # Do not artifact the source package again, we're keeping the one from extract-source
-    - rm -f ${WORKING_DIR}/*.orig.tar.* ${WORKING_DIR}/*.dsc ${WORKING_DIR}/*.debian.tar.* ${WORKING_DIR}/*_source.changes
-  dependencies:
-    - extract-source
+    - !reference [.build-script-setup-environment]
+
+    - *local-build-script-extract-source
+    - chown -R 'salsa-ci:' ${WORKING_DIR}
+
+    - !reference [.build-script-setup-build-command]
+
+    - cd ${WORKING_DIR}
+    - export BUILD_COMMAND="${BUILD_COMMAND} firmware-nonfree_${version}.dsc"
+
+    - !reference [.build-script-run-build-command]
+
+build source:
+  cache:
+    key: "orig-${RELEASE}"
+    paths:
+      - orig
+    policy: pull
+  needs:
+    - job: orig
+  extends:
+    - .build-definition
+  except:
+    variables:
+      - $CI_COMMIT_TAG != null
+  script:
+    - *local-build-script-extract-source
 
 # The folllowing jobs are the standard tests, excluding:
 # - any that require building again
@@ -130,7 +146,7 @@ lintian:
     extends: .test-lintian
     needs:
     - !reference [.test-lintian,needs]
-    - job: extract-source
+    - job: build source
       artifacts: true
 
 piuparts:

@@ -21,10 +21,21 @@ override_dh_auto_clean:
 
 override_dh_auto_install:
 	./copy-firmware.sh -v debian/build/install
-	cd debian/build && ../../dedup-firmware.sh install
 
 override_dh_installdocs:
 	dh_installdocs -XTODO
+
+execute_after_dh_install:
+# Deduplicate firmware files within each binary package
+	cd debian/build && \
+	for dir in ../firmware-*/usr/lib/firmware; do \
+		../../dedup-firmware.sh "$$dir"; \
+	done
+# Check for any broken symlinks.  This excludes the intentional
+# cross-package symlinks from firmware-qcom-soc to firmware-atheros,
+# which it recommends.
+	! find debian/firmware-*/usr/lib/firmware -xtype l \
+	| grep -Ev '^debian/firmware-qcom-soc/usr/lib/firmware/qcom/.*/w(lanmdsp|pss)\.mbn$$'
 
 CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/*.in)
 CONTROL_FILES += debian/bin/gencontrol.py debian/config/defines $(wildcard debian/config/*/defines) debian/modinfo.json
@@ -46,10 +57,9 @@ else
 endif
 
 debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
-# We currently need to run {copy,dedup}-firmware.sh to get a complete
-# list of symlinks to include in package descriptions.
+# We currently need to run copy-firmware.sh to get a complete list of
+# files to be installed.
 	./copy-firmware.sh debian/build/install
-	cd debian/build && ../../dedup-firmware.sh install
 	$(GENCONTROL)
 	md5sum $^ > debian/control.md5sum
 	@echo

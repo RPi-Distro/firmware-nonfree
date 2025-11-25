@@ -1,0 +1,6 @@
+# Upstream change moved symlink up one level; see #1112208.
+# This changed in 20250613 but we didn't fix it until 20251021-1.
+dir_to_symlink /usr/lib/firmware/nvidia/ad103 ad102 20251021-1~ firmware-nvidia-graphics
+dir_to_symlink /usr/lib/firmware/nvidia/ad104 ad102 20251021-1~ firmware-nvidia-graphics
+dir_to_symlink /usr/lib/firmware/nvidia/ad106 ad102 20251021-1~ firmware-nvidia-graphics
+dir_to_symlink /usr/lib/firmware/nvidia/ad107 ad102 20251021-1~ firmware-nvidia-graphics
