@@ -1,3 +1,94 @@
+firmware-nonfree (20251125-1) UNRELEASED; urgency=medium
+
+  * New upstream version:
+    - amdgpu: add vce1 firmware
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: update aldebaran firmware
+    - amdgpu: update beige goby firmware
+    - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update GC 10.3.6 firmware
+    - amdgpu: update GC 11.0.0 firmware
+    - amdgpu: update GC 11.0.1 firmware
+    - amdgpu: update GC 11.0.2 firmware
+    - amdgpu: update GC 11.0.3 firmware
+    - amdgpu: update GC 11.0.4 firmware
+    - amdgpu: update GC 11.5.0 firmware
+    - amdgpu: update GC 11.5.1 firmware
+    - amdgpu: update GC 11.5.2 firmware
+    - amdgpu: update GC 11.5.3 firmware
+    - amdgpu: update GC 12.0.0 firmware
+    - amdgpu: update GC 12.0.1 firmware
+    - amdgpu: update GC 9.4.3 firmware
+    - amdgpu: update GC 9.4.4 firmware
+    - amdgpu: update GC 9.5.0 firmware
+    - amdgpu: update green sardine firmware
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update PSP 13.0.0 firmware
+    - amdgpu: update PSP 13.0.0 kicker firmware
+    - amdgpu: update PSP 13.0.10 firmware
+    - amdgpu: update PSP 13.0.11 firmware
+    - amdgpu: update PSP 13.0.12 firmware
+    - amdgpu: update PSP 13.0.14 firmware
+    - amdgpu: update PSP 13.0.4 firmware
+    - amdgpu: update PSP 13.0.5 firmware
+    - amdgpu: update PSP 13.0.6 firmware
+    - amdgpu: update PSP 13.0.7 firmware
+    - amdgpu: update PSP 14.0.0 firmware
+    - amdgpu: update PSP 14.0.1 firmware
+    - amdgpu: update PSP 14.0.2 firmware
+    - amdgpu: update PSP 14.0.3 firmware
+    - amdgpu: update PSP 14.0.4 firmware
+    - amdgpu: update PSP 14.0.5 firmware
+    - amdgpu: update renoir firmware
+    - amdgpu: update SDMA 4.4.2 firmware
+    - amdgpu: update SDMA 6.0.3 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update SMU 13.0.0 firmware
+    - amdgpu: update smu 13.0.0 kicker firmware
+    - amdgpu: update SMU 13.0.10 firmware
+    - amdgpu: update smu 13.0.7 firmware
+    - amdgpu: update SMU 14.0.2 firmware
+    - amdgpu: update SMU 14.0.3 firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update VCN 3.1.2 firmware
+    - amdgpu: update VCN 4.0.0 firmware
+    - amdgpu: update VCN 4.0.2 firmware
+    - amdgpu: update VCN 4.0.3 firmware
+    - amdgpu: update VCN 4.0.4 firmware
+    - amdgpu: update VCN 4.0.5 firmware
+    - amdgpu: update VCN 4.0.6 firmware
+    - amdgpu: update VCN 5.0.0 firmware
+    - amdgpu: update VCN 5.0.1 firmware
+    - amdgpu: update vega10 firmware
+    - amdgpu: update vega12 firmware
+    - amdgpu: update vega20 firmware
+    - amdgpu: update yellow carp firmware
+    - ASoC: tas2781: Add more symbol links on SPI devices
+    - cirrus: cs35l57: Add firmware for a few Dell products
+    - iwlwifi: add Sc/Wh FW for core98-181 release
+    - mediatek MT7922: update bluetooth firmware to 20251118163447
+    - mt76: add firmware for MT7990
+    - mt76: update firmware for MT7992
+    - mt76: update firmware for MT7996
+    - QCA: Add Bluetooth firmware for WCN685x uart interface
+    - qcom: Add ADSP firmware for qcs6490-thundercomm-rubikpi3
+    - qcom: add ADSP, CDSP firmware for sm8750 platform
+    - qcom: Add sdx35 Foxconn vendor firmware image file
+    - qcom: update ADSP, CDSP firmware for kaanapali
+      platform, change the license
+    - qcom: Update aic100 firmware files
+    - qcom: venus-5.4: remove unused firmware file
+    - qcom: venus-5.4: update firmware binary for v5.4
+    - Revert "amdgpu: update GC 11.0.1 firmware"
+    - rtl_bt: Update RTL8852B BT USB FW to 0x42D3_4E04
+    - rtl_nic: add firmware rtl9151a-1
+    - update firmware for MT7922 WiFi device
+
+ -- Kathara Sasikumar <katharasasikumar007@gmail.com>  Fri, 05 Dec 2025 20:08:57 +0000
+
 firmware-nonfree (20251111-1) unstable; urgency=medium
 
   * New upstream version:
