@@ -1,5 +1,6 @@
 firmware-nonfree (20251125-1) UNRELEASED; urgency=medium
 
+  [ Kathara Sasikumar ]
   * New upstream version:
     - amdgpu: add vce1 firmware
     - amdgpu: DMCUB updates for various ASICs
@@ -86,6 +87,9 @@ firmware-nonfree (20251125-1) UNRELEASED; urgency=medium
     - rtl_bt: Update RTL8852B BT USB FW to 0x42D3_4E04
     - rtl_nic: add firmware rtl9151a-1
     - update firmware for MT7922 WiFi device
+
+  [ Dmitry Baryshkov ]
+  * debian/copyright: drop firmware for Qualcomm QDU100 (Closes: #1126794)
 
  -- Kathara Sasikumar <katharasasikumar007@gmail.com>  Fri, 05 Dec 2025 20:08:57 +0000
 

@@ -209,6 +209,8 @@ Files-Excluded:
  ixp4xx/*
  mellanox/lc_ini_*
  mellanox/mlxsw*
+# - unlikely to run Debian, kernel_boot.elf violates GPL
+ qcom/qdu100/*
 # - large and not requested for inclusion
  ath12k/QCN9274/hw2.0/*
  vxge/X3fw*.ncf
