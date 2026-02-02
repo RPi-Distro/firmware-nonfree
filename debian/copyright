@@ -528,6 +528,7 @@ License: binary-redist-Qualcomm-Atheros
 
 Files: qca/crbtfw*.tlv qca/crnv*.bin qca/hpbtfw21.tlv qca/hpnv21*.*
  qca/msbtfw11.* qca/msnv11.* qca/nvm_*.bin qca/QCA2066/* qca/rampatch_*.bin
+ qca/wcnhp*
 Copyright: 1990, The Regents of the University of California
            1998, Todd C. Miller
            1998-2002, The OpenSSL Project
@@ -834,6 +835,10 @@ Files: rp2.fw
 Copyright: 2013, Comtrol Corporation
 License: binary-redist-Comtrol
 
+Files: sdca/*
+Copyright: 2025, Cirrus Logic, Inc.
+License: binary-redist-Cirrus
+
 Files: tehuti/bdx.bin
 Copyright: 2007, Tehuti Networks Ltd.
 License: binary-redist-firmware
@@ -875,6 +880,9 @@ Copyright: 1986, Gary S. Brown
 License: binary-redist-Qualcomm-media
 
 Files: qcom/sa8775p/*dsp*
+ qcom/sm8750/*
+ qcom/kaanapali/*dsp*
+ qcom/kaanapali/soccp*
 Copyright: 1986, Gary S. Brown
            1995-1998, Eric Young
            1995-2005, Jean-loup Gailly
