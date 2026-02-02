@@ -547,7 +547,7 @@ Files: wil6210.*
 Copyright: 2015-2017, Qualcomm Atheros, Inc
 License: binary-redist-Qualcomm-Atheros
 
-Files: qca/ap* qca/cm* qca/hmt* qca/ht*
+Files: qca/ap* qca/cm* qca/hmt* qca/ht* qca/QCA6698/*
 Copyright: 1990, The Regents of the University of California
            1998, Todd C. Miller
            1998-2002 The OpenSSL Project
@@ -866,7 +866,7 @@ Copyright: 2017, Netronome Systems, Inc.
 License: binary-redist-Netronome
 
 Files: ath10k/WCN3990/hw1.0/qcm2290/* ath11k/WCN6750/hw1.0/qcm6490/*
- qca/QCA6698/* qcom/*
+ qcom/*
 Copyright: 1986, Gary S. Brown
            1995-1998, Eric Young
            1995-2005, Jean-loup Gailly
