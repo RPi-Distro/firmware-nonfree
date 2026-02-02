@@ -885,6 +885,7 @@ Files: qcom/sa8775p/*dsp*
  qcom/sm8750/*
  qcom/kaanapali/*dsp*
  qcom/kaanapali/soccp*
+ qcom/qcs8300/*dsp*
 Copyright: 1986, Gary S. Brown
            1995-1998, Eric Young
            1995-2005, Jean-loup Gailly
