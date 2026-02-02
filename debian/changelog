@@ -90,6 +90,7 @@ firmware-nonfree (20251125-1) UNRELEASED; urgency=medium
 
   [ Dmitry Baryshkov ]
   * debian/copyright: drop firmware for Qualcomm QDU100 (Closes: #1126794)
+  * d/copyright: add entry for Qualcomm audio topologies (Closes: #1126846)
 
  -- Kathara Sasikumar <katharasasikumar007@gmail.com>  Fri, 05 Dec 2025 20:08:57 +0000
 
