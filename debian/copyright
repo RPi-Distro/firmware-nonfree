@@ -209,7 +209,7 @@ Files-Excluded:
  ixp4xx/*
  mellanox/lc_ini_*
  mellanox/mlxsw*
-# - unlikely to run Debian, kernel_boot.elf violates GPL
+# - unlikely to run Debian
  qcom/qdu100/*
 # - large and not requested for inclusion
  ath12k/QCN9274/hw2.0/*
@@ -268,8 +268,8 @@ Files: debian/config/ivtv/*.fw debian/config/ivtv/v4l-cx2341x-init.mpg
 Copyright: 2003-2006, Hauppauge
 License: binary-redist-EULA-Hauppuage
 
-Files: airoha/Eth* airoha/en7581_npu_*
-Copyright: 2023-2024, Airoha Inc.
+Files: airoha/*
+Copyright: 2023-2025, Airoha Inc.
 License: binary-redist-Airoha
 
 Files: amdgpu/*.bin radeon/*.bin
@@ -538,8 +538,8 @@ Copyright: 1986, Gary S. Brown
 License: binary-redist-Qualcomm-Atheros
 
 Files: qca/crbtfw*.tlv qca/crnv*.bin qca/hpbtfw21.tlv qca/hpnv21*.*
- qca/msbtfw11.* qca/msnv11.* qca/nvm_*.bin qca/QCA2066/* qca/rampatch_*.bin
- qca/wcnhp*
+ qca/msbtfw11.* qca/msnv11.* qca/nvm_*.bin qca/orn* qca/QCA2066/*
+ qca/rampatch_*.bin qca/wcnhp*
 Copyright: 1990, The Regents of the University of California
            1998, Todd C. Miller
            1998-2002, The OpenSSL Project
@@ -1052,6 +1052,11 @@ Files: bmi260-init-data.fw
 Copyright: 2020, Bosch Sensortec GmbH.
 License: BSD-3-clause-Bosch
 
+Files: rcar_gen4_pcie.bin
+Copyright: 2025, Synopsys, Inc.
+           2025, Renesas Electronics Corporation
+License: binary-redist-Synopsys-Renesas
+
 License: binary-redist-Abilis
  Permission to use, copy, modify, and/or distribute this software for
  any purpose with or without fee is hereby granted, provided that the
@@ -1077,6 +1082,8 @@ License: binary-redist-Airoha
  These firmware files are distributed in the hope that they will be useful, but
  are provided WITHOUT ANY WARRANTY, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTY
  OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+Comment:
+ This is LICENSE.airoha.
 
 License: binary-redist-AMD-permissive
  All Rights Reserved.
@@ -7748,6 +7755,36 @@ License: binary-redist-STMicro
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Comment:
  This is LICENCE.cw1200.
+
+License: binary-redist-Synopsys-Renesas
+ All rights reserved.
+ .
+ Redistribution and use in binary form, without modification, are permitted
+ provided that the following conditions are met:
+ .
+ 1. Redistribution in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+ 2. The names of Synopsys, Inc. and Renesas Electronics Corporation may not be
+    used to endorse or promote products derived from this software without
+    specific prior written permission.
+ 3. Reverse engineering, decompilation, or disassembly of this software is
+    not permitted.
+ .
+ THIS SOFTWARE IS PROVIDED "AS IS" AND SYNOPSYS, INC. AND RENESAS ELECTRONICS
+ CORPORATION DISCLAIM ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING,
+ BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ IN NO EVENT SHALL SYNOPSYS, INC. OR RENESAS ELECTRONICS CORPORATION BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+Comment:
+ This is LICENCE.r8a779g_pcie_phy.
 
 License: binary-redist-Terratec
  TERRATEC grants permission to use and redistribute these firmware
