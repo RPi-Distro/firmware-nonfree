@@ -93,6 +93,8 @@ firmware-nonfree (20251125-1) UNRELEASED; urgency=medium
   * d/copyright: add entry for Qualcomm audio topologies (Closes: #1126846)
   * d/copyright: correct licence for QCA6698 BT firmware
   * d/copyright: correct licence for qcom/qcs8300 DSP files
+  * d/bin/gencontrol.py: handle Depends in addition to other fields
+  * debian/: skip files picked up by hexagon-dsp-binaries
 
  -- Kathara Sasikumar <katharasasikumar007@gmail.com>  Fri, 05 Dec 2025 20:08:57 +0000
 

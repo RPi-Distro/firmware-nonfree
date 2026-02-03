@@ -214,6 +214,15 @@ Files-Excluded:
 # - large and not requested for inclusion
  ath12k/QCN9274/hw2.0/*
  vxge/X3fw*.ncf
+# - Moved to hexagon-dsp-binaries source package
+ qcom/**/adsp*
+ qcom/**/cdsp*
+ qcom/**/gpdsp*
+ qcom/**/slpi*
+ qcom/**/qcadsp*
+ qcom/**/qccdsp*
+ qcom/**/qcslpi*
+ qcom/**/battmgr.jsn
 
 Files: debian/*
 Copyright: 2006-2009, Bastian Blank <waldi@debian.org>
@@ -881,11 +890,7 @@ Copyright: 1986, Gary S. Brown
            2013-2022, Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-media
 
-Files: qcom/sa8775p/*dsp*
- qcom/sm8750/*
- qcom/kaanapali/*dsp*
- qcom/kaanapali/soccp*
- qcom/qcs8300/*dsp*
+Files: qcom/kaanapali/soccp*
 Copyright: 1986, Gary S. Brown
            1995-1998, Eric Young
            1995-2005, Jean-loup Gailly

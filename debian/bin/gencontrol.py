@@ -104,8 +104,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         vars['package_env_prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
 
         # Those might be absent, set them to empty string for replacement to work:
-        empty_list = ['replaces', 'conflicts', 'breaks', 'provides', 'recommends']
-        for optional in ['replaces', 'conflicts', 'breaks', 'provides', 'recommends']:
+        empty_list = ['replaces', 'conflicts', 'breaks', 'provides', 'recommends', 'depends']
+        for optional in ['replaces', 'conflicts', 'breaks', 'provides', 'recommends', 'depends']:
             if optional not in vars:
                 vars[optional] = ''
 

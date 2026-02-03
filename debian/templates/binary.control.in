@@ -5,7 +5,7 @@ Replaces: @replaces@
 Conflicts: @conflicts@
 Breaks: @breaks@
 Provides: @provides@
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, @depends@
 Recommends: @recommends@
 Suggests: initramfs-tools
 Description: Binary firmware for @desc@
