@@ -96,6 +96,9 @@ firmware-nonfree (20251125-1) UNRELEASED; urgency=medium
   * d/bin/gencontrol.py: handle Depends in addition to other fields
   * debian/: skip files picked up by hexagon-dsp-binaries
 
+  [ Ben Hutchings ]
+  * d/watch: Convert to version 5 format
+
  -- Kathara Sasikumar <katharasasikumar007@gmail.com>  Fri, 05 Dec 2025 20:08:57 +0000
 
 firmware-nonfree (20251111-1) unstable; urgency=medium
