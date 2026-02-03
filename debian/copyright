@@ -899,7 +899,7 @@ Copyright: 1986, Gary S. Brown
            2004-2006, Qualphone, Inc.
            2013-2025, Qualcomm Technologies, Inc.
 License: binary-redist-Qualcomm-media-2
-`
+
 Files: qcom/*/*-tplg.bin qcom/*/*/*/*-tplg.bin
 Copyright: 2023, Linaro Ltd
 License: BSD-3-clause-Linaro
