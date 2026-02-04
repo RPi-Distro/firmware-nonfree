@@ -1,4 +1,4 @@
-firmware-nonfree (20260110-1) UNRELEASED; urgency=medium
+firmware-nonfree (20260110-1) unstable; urgency=medium
 
   * d/copyright: Add more copyright notices for some Qualcomm Atheros firmware
   * New upstream version:
@@ -57,7 +57,7 @@ firmware-nonfree (20260110-1) UNRELEASED; urgency=medium
     - xe: Update GUC to v70.54.0 for BMG, PTL
     - xe: Update GUC to v70.55.3 for BMG, PTL
 
- -- Ben Hutchings <benh@debian.org>  Tue, 03 Feb 2026 21:50:16 +0100
+ -- Ben Hutchings <benh@debian.org>  Wed, 04 Feb 2026 16:43:31 +0100
 
 firmware-nonfree (20251125-1) unstable; urgency=medium
 
