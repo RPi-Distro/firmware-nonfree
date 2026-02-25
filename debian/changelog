@@ -1,9 +1,9 @@
-firmware-nonfree (20251111-1~bpo13+1) UNRELEASED; urgency=medium
+firmware-nonfree (20251111-1~bpo13+1) trixie-backports; urgency=medium
 
   * Rebuild for trixie-backports:
     - d/salsa-ci.yml: Set RELEASE to trixie-backports
 
- -- Ben Hutchings <benh@debian.org>  Thu, 27 Nov 2025 15:23:16 +0100
+ -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 22:25:39 +0100
 
 firmware-nonfree (20251111-1) unstable; urgency=medium
 
