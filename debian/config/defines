@@ -28,3 +28,7 @@ packages:
  samsung
  siano
  ti-connectivity
+# Symlink patterns we want check_upstream.py to ignore
+links-excluded:
+ a300_pfp.fw
+ a300_pm4.fw
