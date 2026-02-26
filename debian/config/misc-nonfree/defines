@@ -56,7 +56,7 @@ files:
  TAS*
  TIAS*
  INT8866RCA2.bin
- ti/audio/**
+ ti/audio/**/*
  ti/vpdma-1b8.bin
  ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin
  tigon/*
