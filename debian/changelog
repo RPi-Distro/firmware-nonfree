@@ -72,6 +72,7 @@ firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
   * Move Python debian_linux.firmware module into debian_firmware package
   * debian_firmware.firmware: Use dataclasses to define Firmware{File,Group}
   * debian_firmware.firmware: Parse Link fields and include in FirmwareGroup
+  * d/b/check_upstream.py: Remove support for encoding file version in filename
 
  -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 23:44:26 +0100
 

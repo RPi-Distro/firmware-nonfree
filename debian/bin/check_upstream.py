@@ -95,12 +95,11 @@ def main(source_dir='.'):
 def update_file(source_dir, over_dirs, filename):
     source_file = os.path.join(source_dir, filename)
     for over_dir in over_dirs:
-        for over_file in ([os.path.join(over_dir, filename)] +
-                          glob.glob(os.path.join(over_dir, filename + '-*'))):
-            if os.path.isfile(over_file):
-                if not filecmp.cmp(source_file, over_file, True):
-                    print('I: %s: changed' % filename)
-                return
+        over_file = os.path.join(over_dir, filename)
+        if os.path.isfile(over_file):
+            if not filecmp.cmp(source_file, over_file, True):
+                print('I: %s: changed' % filename)
+            return
 
 if __name__ == '__main__':
     main(*sys.argv[1:])
