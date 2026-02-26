@@ -7,6 +7,7 @@ conflicts: firmware-misc-nonfree (<< 20230625-3~)
 files:
  i915/*
  intel/ipu/*
+ intel/ipu3-fw.bin
  intel/irci_*
  intel/vsc/*
  xe/*

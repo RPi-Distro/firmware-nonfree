@@ -63,6 +63,7 @@ firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
     - xe: Update GUC to v70.58.0 for LNL, BMG, PTL
   * mediatek: Override lintian warnings for any firmware in ELF format
   * misc-nonfree: Fix wildcard for TI audio firmware (regression in 20251111-1)
+  * intel-graphics: Include ipu3-fw.bin symlink (Closes: #1126797)
 
  -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 23:44:26 +0100
 
