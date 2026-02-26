@@ -60,6 +60,7 @@ def main(source_dir='.'):
                   package in config['base',]['packages']]
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
+    link_exclusions = config['base',]['links-excluded']
 
     package_file_res = []
     for package in config['base',]['packages']:
@@ -73,6 +74,7 @@ def main(source_dir='.'):
 
     for section in FirmwareWhence((source_path / 'WHENCE').open()):
         dist_state = check_section(section)
+
         for file_info in section.files.values():
             # will this file be included in the source package?
             if not any(fnmatch.fnmatch(file_info.binary, exclusion)
@@ -93,6 +95,30 @@ def main(source_dir='.'):
                 elif dist_state == DistState.undistributable:
                     print('W: %s appears to be undistributable' %
                           file_info.binary)
+
+        if dist_state == DistState.non_free:
+            for link, target in section.links.items():
+                link_path = pathlib.Path(link)
+                target_path = ((link_path.parent / target)
+                               .resolve()
+                               .relative_to(pathlib.Path.cwd()))
+                # - Is the target a file?
+                # - Have either the target or the link itself been
+                #   explicitly excluded?
+                # - Will the link not be included in any binary package?
+                if str(target_path) in section.files \
+                   and not any(fnmatch.fnmatch(str(target_path), exclusion)
+                               for exclusion in exclusions) \
+                   and not any(fnmatch.fnmatch(link, exclusion)
+                               for exclusion in link_exclusions) \
+                   and not any(
+                       (any(inc_re.fullmatch(link)
+                            for inc_re in inc_res)
+                        and not any(exc_re.fullmatch(link)
+                                    for exc_re in exc_res))
+                       for inc_res, exc_res in package_file_res
+                   ):
+                    print(f'I: {link} symlink is not included in any binary package')
 
 def update_file(source_path, over_paths, filename):
     source_file = source_path / filename

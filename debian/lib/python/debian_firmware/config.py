@@ -8,6 +8,7 @@ class Config(dict):
     top_schemas = {
         'base': {
             'packages': SchemaItemList(),
+            'links-excluded': SchemaItemList(),
         },
     }
 

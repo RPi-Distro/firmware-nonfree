@@ -75,6 +75,7 @@ firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
   * d/b/check_upstream.py: Remove support for encoding file version in filename
   * d/b/check_upstream.py: Ignore file existence when checking license status
   * d/b/check_upstream.py: Replace use of os.path with pathlib
+  * d/b/check_upstream.py: Check for links not included in binary packages
 
  -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 23:44:26 +0100
 
