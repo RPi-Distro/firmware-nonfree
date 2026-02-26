@@ -10,7 +10,6 @@ import re
 import sys
 from typing import Iterable, Optional
 
-sys.path.insert(0, "debian/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from debian_firmware.config import Config, pattern_to_re

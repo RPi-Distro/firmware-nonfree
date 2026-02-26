@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 import sys
-sys.path.append(sys.path[0] + "/../lib/python")
-
 import os, re, subprocess
 import locale
 
