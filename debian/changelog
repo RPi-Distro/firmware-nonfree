@@ -1,6 +1,67 @@
-firmware-nonfree (20260110-2) UNRELEASED; urgency=medium
+firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
 
   * CI: Update build jobs to work after another common pipeline change
+  * New upstream version:
+    - Add Dell ISH firmware for Intel panther lake systems
+    - Add firmware file for Intel ScorpiusGfp2 core
+    - amdgpu: DMCUB updates for various ASICs
+    - ASoC: tas2783: Add Firmware files for tas2783A
+    - ath10k: WCN3990 hw1.0: update board-2.bin
+    - ath11k: QCA6390 hw2.0: update board-2.bin
+    - ath11k: QCA6698AQ hw2.1: update board-2.bin
+    - ath11k: WCN6855 hw2.0: update board-2.bin
+    - ath12k: QCN9274 hw2.0: update to WLAN.WBE.1.6-01243-QCAHKSWPL_SILICONZ-1
+    - ath12k: WCN7850 hw2.0: update board-2.bin
+    - Bluetooth: Add symbolic links for Intel AX201 firmware variants
+    - Bluetooth: Add symbolic links for Intel Pulsar firmware variants
+    - Bluetooth: Add symbolic links for Intel Solar firmware variants
+    - Bluetooth: Add symbolic links for Intel Solar JfP2/1 firmware variants
+    - cirrus: cs35l41: Add Firmware for ASUS Zenbook Laptop using CS35L41 HDA
+    - cirrus: cs35l56 cs35l57: Add and update firmware for some Dell laptops
+    - cirrus: cs35l56: Add WHENCE links for 17aa233c spkid0 firmware
+    - cirrus: cs35l57 cs35l63: Add firmware for Cirrus Amps for some Lenovo
+      laptops
+    - ice: update DDP LAG package to 1.3.2.0
+    - Intel IPU7: Update firmware binary for Panther Lake
+    - intel/ish: Add Lenovo ISH firmware support for X1 and X9 systems
+    - iwlwifi: add Bz/Sc FW for core102-56 release
+    - iwlwifi: Add Hr/Gf firmware for core102-56 release
+    - iwlwifi: update ty/So/Ma firmwares for core102-56 release
+    - mediatek MT7921: update bluetooth firmware to 20251223091725
+    - mediatek: rename MT8188 SCP firmware
+    - qcom: add ADSP, CDSP firmware for glymur platform
+    - qcom: Add gpu firmwares for Glymur chipset
+    - qcom: add QUPv3 firmware for x1e80100 platform
+    - qcom: Remove ADSP SensorPD json for Radxa Dragon Q6A
+    - qcom: sync audioreach firmwares from v1.0.1 build
+    - qcom: Update ADSP and add CDSP firmware for qcs6490-radxa-dragon-q6a
+    - qcom: Update DSP firmware for QCM6490 platform
+    - qcom: Update DSP firmware for qcs8300 platform
+    - qcom: Update DSP firmware for sa8775p platform
+    - qcom: vpu: add video firmware for Glymur
+    - qcom: vpu: fix SC7280 VPU Gen2 firmware and add compatibility symlink
+    - Revert "rtw89: 8852b: update fw to v0.29.128.0 with format suffix -2"
+    - rtl_bt: Update RTL8822C BT USB and UART firmware to 0x0673
+    - rtl_bt: Update RTL8852BT/RTL8852BE-VT BT USB FW to 0x06EB_C65F
+    - rtl_nic: add firmware rtl8125cp-1 for RTL8125cp
+    - rtw89: 8851b: add format-1 for fw v0.29.41.5 with fw elements
+    - rtw89: 8852a: add format-1 for fw v0.13.36.2 with fw elements
+    - rtw89: 8852b: add format-2 with v0.29.29.15 and fw elements
+    - rtw89: 8852b: update txpwr element to R43
+    - rtw89: 8852bt: add regd and diag_mac and update txpwr to R09
+    - rtw89: 8852c: update REGD R73-R60, txpwr R82 and element of diag MAC
+    - rtw89: 8922a: update REGD R73-R08, txpwr R46 and element of diag MAC
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarIGfP core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel BlazarU-HrPGfP core
+    - Update firmware file for Intel Scorpius core
+    - Update firmware file for Intel Solar core
+    - update firmware for MT7921 WiFi device
+    - Update firmware for NPU PHX, STX and STX HALO
+    - xe: Add GSC 105.0.2.1301 for PTL
+    - xe: Update GUC to v70.58.0 for LNL, BMG, PTL
+  * mediatek: Override lintian warnings for any firmware in ELF format
 
  -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 23:44:26 +0100
 
