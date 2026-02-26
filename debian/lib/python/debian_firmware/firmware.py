@@ -1,19 +1,20 @@
+from dataclasses import dataclass, field
 import re
 
 
-class FirmwareFile(object):
-    def __init__(self, binary, desc=None, source=None, version=None) -> None:
-        self.binary = binary
-        self.desc = desc
-        self.source = source
-        self.version = version
+@dataclass
+class FirmwareFile:
+    binary: str
+    desc: str
+    source: str
+    version: str
 
 
-class FirmwareGroup(object):
-    def __init__(self, driver, files, licence) -> None:
-        self.driver = driver
-        self.files = files
-        self.licence = licence
+@dataclass
+class FirmwareGroup:
+    driver: str
+    files: dict[str, FirmwareFile]
+    licence: str
 
 
 class FirmwareWhence(list):
