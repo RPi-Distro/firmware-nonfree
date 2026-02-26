@@ -7,7 +7,7 @@ from enum import Enum
 sys.path.insert(0, "debian/lib/python")
 
 from debian_linux.firmware import FirmwareWhence
-from config import Config, pattern_to_re
+from debian_firmware.config import Config, pattern_to_re
 
 class DistState(Enum):
     undistributable = 1
