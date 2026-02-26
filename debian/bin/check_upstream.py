@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import errno, filecmp, fnmatch, glob, os.path, re, sys
+import errno, filecmp, fnmatch, glob, pathlib, re, sys
 from debian import deb822
 from enum import Enum
 
@@ -52,9 +52,12 @@ def check_section(section):
         return DistState.undistributable
 
 def main(source_dir='.'):
+    source_path = pathlib.Path(source_dir)
+    config_path = pathlib.Path('debian/config')
+
     config = Config()
-    over_dirs = ['debian/config/' + package for
-                 package in config['base',]['packages']]
+    over_paths = [config_path / package for
+                  package in config['base',]['packages']]
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
 
@@ -68,7 +71,7 @@ def main(source_dir='.'):
               for pattern in config_entry.get('files-exclude', [])])
         )
 
-    for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
+    for section in FirmwareWhence((source_path / 'WHENCE').open()):
         dist_state = check_section(section)
         for file_info in section.files.values():
             # will this file be included in the source package?
@@ -83,7 +86,7 @@ def main(source_dir='.'):
                                     for exc_re in exc_res))
                         for inc_res, exc_res in package_file_res
                     ):
-                        update_file(source_dir, over_dirs, file_info.binary)
+                        update_file(source_path, over_paths, file_info.binary)
                     else:
                         print('I: %s is not included in any binary package' %
                               file_info.binary)
@@ -91,11 +94,11 @@ def main(source_dir='.'):
                     print('W: %s appears to be undistributable' %
                           file_info.binary)
 
-def update_file(source_dir, over_dirs, filename):
-    source_file = os.path.join(source_dir, filename)
-    for over_dir in over_dirs:
-        over_file = os.path.join(over_dir, filename)
-        if os.path.isfile(over_file):
+def update_file(source_path, over_paths, filename):
+    source_file = source_path / filename
+    for over_path in over_paths:
+        over_file = over_path / filename
+        if over_file.is_file():
             if not filecmp.cmp(source_file, over_file, True):
                 print('I: %s: changed' % filename)
             return

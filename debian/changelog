@@ -74,6 +74,7 @@ firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
   * debian_firmware.firmware: Parse Link fields and include in FirmwareGroup
   * d/b/check_upstream.py: Remove support for encoding file version in filename
   * d/b/check_upstream.py: Ignore file existence when checking license status
+  * d/b/check_upstream.py: Replace use of os.path with pathlib
 
  -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 23:44:26 +0100
 
