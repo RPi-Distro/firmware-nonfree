@@ -71,9 +71,11 @@ def main(source_dir='.'):
     for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
         dist_state = check_section(section)
         for file_info in section.files.values():
-            if dist_state == DistState.non_free:
-                if not any(fnmatch.fnmatch(file_info.binary, exclusion)
-                           for exclusion in exclusions):
+            # will this file be included in the source package?
+            if not any(fnmatch.fnmatch(file_info.binary, exclusion)
+                       for exclusion in exclusions):
+                if dist_state == DistState.non_free:
+                    # Will it be included in any binary package?
                     if any(
                         (any(inc_re.fullmatch(file_info.binary)
                              for inc_re in inc_res)
@@ -82,13 +84,10 @@ def main(source_dir='.'):
                         for inc_res, exc_res in package_file_res
                     ):
                         update_file(source_dir, over_dirs, file_info.binary)
-                    elif os.path.isfile(file_info.binary):
+                    else:
                         print('I: %s is not included in any binary package' %
                               file_info.binary)
-                    else:
-                        print('I: %s: could be added' % file_info.binary)
-            elif dist_state == DistState.undistributable:
-                if os.path.isfile(file_info.binary):
+                elif dist_state == DistState.undistributable:
                     print('W: %s appears to be undistributable' %
                           file_info.binary)
 
