@@ -4,7 +4,7 @@ import errno, filecmp, fnmatch, glob, os.path, re, sys
 from debian import deb822
 from enum import Enum
 
-from debian_linux.firmware import FirmwareWhence
+from debian_firmware.firmware import FirmwareWhence
 from debian_firmware.config import Config, pattern_to_re
 
 class DistState(Enum):

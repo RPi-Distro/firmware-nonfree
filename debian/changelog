@@ -69,6 +69,7 @@ firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
   * d/config: Simplify filename patterns ending in '**/*'
   * Move Python config module into a debian_firmware package
   * Replace sys.path manipulation in debian/bin with symlink to debian_firmware
+  * Move Python debian_linux.firmware module into debian_firmware package
 
  -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 23:44:26 +0100
 
