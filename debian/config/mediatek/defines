@@ -18,7 +18,7 @@ files:
  rt3290.bin
  vpu_d.bin
  vpu_p.bin
- mediatek/**/*
+ mediatek/**
 usrmovemitigation:
  mediatek/BT_RAM_CODE_MT7922_1_1_hdr.bin
  mediatek/BT_RAM_CODE_MT7961_1_2_hdr.bin

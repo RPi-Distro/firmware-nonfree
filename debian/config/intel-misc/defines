@@ -11,7 +11,7 @@ files:
  e100/*
  dell/ish/*
  HP/ish/*
- intel/ice/**/*
+ intel/ice/**
  intel/ish/*
  intel/qat/*
  intel/vpu/*

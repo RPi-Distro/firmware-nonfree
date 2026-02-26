@@ -6,7 +6,7 @@ depends: firmware-qcom-dsp (>= 0~20251125-1~)
 breaks: firmware-qcom-media (<< 20200421-1~)
 replaces: firmware-qcom-media (<< 20200421-1~)
 files:
- qcom/**/*
+ qcom/**
 files-excluded:
  qcom/LENOVO/21BX
  qcom/sc8280xp/LENOVO/21BX/21BX

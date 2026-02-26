@@ -37,13 +37,13 @@ files:
  3com/typhoon.bin
  advansys/*
  amphion/vpu/*
- arm/mali/**/*
+ arm/mali/**
  brcm/BCM-0a5c-6410.hcd
  brcm/BCM-0bb4-0306.hcd
  cadence/mhdp8546.bin
  cnm/wave521c_k3_codec_fw.bin
  cxgb3/*
- cxgb4/**/*
+ cxgb4/**
  dabusb/*
  ene-ub6250/*
  go7007/*
@@ -61,7 +61,7 @@ files:
  TAS*
  TIAS*
  INT8866RCA2.bin
- ti/audio/**/*
+ ti/audio/**
  ti/vpdma-1b8.bin
  ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin
  tigon/*

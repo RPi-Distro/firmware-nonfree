@@ -9,11 +9,11 @@ files:
  htc_9271.fw
  wil6210.*
  ar3k/*
- ath6k/**/*
- ath10k/**/*
- ath11k/**/*
- ath12k/**/*
- qca/**/*
+ ath6k/**
+ ath10k/**
+ ath11k/**
+ ath12k/**
+ qca/**
 files-excluded:
  ath10k/**/notice*.txt*
  ath11k/**/Notice.txt
