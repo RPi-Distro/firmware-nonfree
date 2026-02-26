@@ -15,6 +15,7 @@ class FirmwareGroup:
     driver: str
     files: dict[str, FirmwareFile]
     licence: str
+    links: dict[str, str]
 
 
 class FirmwareWhence(list):
@@ -32,6 +33,7 @@ class FirmwareWhence(list):
         driver = None
         files = {}
         licence = None
+        links = {}
         binary = []
         desc = None
         source = []
@@ -44,10 +46,12 @@ class FirmwareWhence(list):
                 else:
                     # Finish old group
                     if driver and files:
-                        self.append(FirmwareGroup(driver, files, licence))
+                        self.append(FirmwareGroup(driver, files, licence,
+                                                  links))
                     driver = None
                     files = {}
                     licence = None
+                    links = {}
                 continue
 
             if in_header:
@@ -68,16 +72,17 @@ class FirmwareWhence(list):
                 continue
 
             match = re.match(
-                r'(Driver|(?:Raw)?File|Info|Licen[cs]e|Source|Version'
+                r'(Driver|(?:Raw)?File|Link|Info|Licen[cs]e|Source|Version'
                 r'|Original licen[cs]e info(?:rmation)?):\s*(.*)\n',
                 line)
             if match:
                 # If we've seen a license for the previous group,
                 # start a new group
                 if licence:
-                    self.append(FirmwareGroup(driver, files, licence))
+                    self.append(FirmwareGroup(driver, files, licence, links))
                     files = {}
                     licence = None
+                    links = {}
                 keyword, value = match.group(1, 2)
                 if keyword == 'Driver':
                     driver = value.split(' ')[0].lower()
@@ -85,6 +90,9 @@ class FirmwareWhence(list):
                     match = re.match(r'("[^"\n]+"|\S+)(?:\s+--\s+(.*))?', value)
                     binary.append(self._unquote(match.group(1)))
                     desc = match.group(2)
+                elif keyword == 'Link':
+                    link, target = value.split(' -> ')
+                    links[link] = target
                 elif keyword in ['Info', 'Version']:
                     version = value
                 elif keyword == 'Source':
@@ -100,4 +108,4 @@ class FirmwareWhence(list):
         for b in binary:
             files[b] = FirmwareFile(b, desc, source, version)
         if driver:
-            self.append(FirmwareGroup(driver, files, licence))
+            self.append(FirmwareGroup(driver, files, licence, links))
