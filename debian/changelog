@@ -1,4 +1,4 @@
-firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
+firmware-nonfree (20260221-1) unstable; urgency=medium
 
   * CI: Update build jobs to work after another common pipeline change
   * New upstream version:
@@ -78,7 +78,7 @@ firmware-nonfree (20260221-1) UNRELEASED; urgency=medium
   * d/b/check_upstream.py: Check for links not included in binary packages
   * d/c/defines: Exclude old compat links for adreno
 
- -- Ben Hutchings <benh@debian.org>  Wed, 25 Feb 2026 23:44:26 +0100
+ -- Ben Hutchings <benh@debian.org>  Wed, 11 Mar 2026 20:07:04 +0100
 
 firmware-nonfree (20260110-1) unstable; urgency=medium
 
