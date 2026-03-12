@@ -1,3 +1,9 @@
+firmware-nonfree (20260221-2) UNRELEASED; urgency=medium
+
+  * d/salsa-ci.yml: Disable piuparts job which fails due to common pipeline bug
+
+ -- Ben Hutchings <benh@debian.org>  Thu, 12 Mar 2026 17:33:44 +0100
+
 firmware-nonfree (20260221-1) unstable; urgency=medium
 
   * CI: Update build jobs to work after another common pipeline change

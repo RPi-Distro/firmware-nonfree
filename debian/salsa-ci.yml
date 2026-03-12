@@ -156,6 +156,9 @@ lintian:
       artifacts: true
 
 piuparts:
+    # Currently disabled due to salsa-ci-team/pipeline#552
+    rules:
+      - when: never
     extends: .test-piuparts
     variables:
       # Skip the EULA questions in these two packages
