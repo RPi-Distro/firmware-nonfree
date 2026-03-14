@@ -1,3 +1,173 @@
+firmware-nonfree (20260110-1~bpo13+1) trixie-backports; urgency=medium
+
+  * Rebuild for trixie-backports
+
+ -- Ben Hutchings <benh@debian.org>  Sat, 14 Mar 2026 15:39:54 +0100
+
+firmware-nonfree (20260110-1) unstable; urgency=medium
+
+  * d/copyright: Add more copyright notices for some Qualcomm Atheros firmware
+  * New upstream version:
+    - Add firmware file for Intel Scorpius core
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: Update dcn314, dcn315 firmware to 0.1.42.0
+    - ath10k: QCA4019 hw1.0: update board-2.bin
+    - ath10k: QCA9888 hw2.0: update board-2.bin
+    - ath10k: WCN3990 hw1.0: update board-2.bin
+    - ath11k: QCA2066 hw2.1: update board-2.bin
+    - ath11k: QCA6698AQ hw2.1: update to
+      WLAN.HSP.1.1-04866-QCAHSPSWPL_V1_V2_SILICONZ_IOE-1
+    - cirrus: cs35l41: Add support for new HP Clipper laptop
+    - cirrus: cs35l41: Add support for new HP laptops
+    - cirrus: cs35l41: Update firmware and tuning for various HP laptops
+    - i915: Xe3LPD DMC v2.33
+    - i915: Xe3LPD_3002 DMC v2.28
+    - i915: Xe3p_LPD DMC v2.33
+    - intel_vpu: Add firmware for 50xx NPUs and update older ones
+    - intel_vpu: Update NPU firmware
+    - iwlwifi: add Bz/Sc FW for core101-82 release
+    - iwlwifi: Add Sc/Gf firmware for core101-82 release
+    - iwlwifi: update cc/Qu/QuZ firmwares for core101-82 release
+    - iwlwifi: update ty/So/Ma firmwares for core101-82 release
+    - mediatek MT7920: update bluetooth firmware to 20260105151350
+    - mediatek MT7922: update bluetooth firmware to 20260106153735
+    - mediatek MT7925: update bluetooth firmware to 20251124093155
+    - mediatek MT7925: update bluetooth firmware to 20251210093205
+    - mediatek MT7925: update bluetooth firmware to 20260106153314
+    - QCA: Add Bluetooth firmware for QCC2072 uart interface
+    - qca: Update Bluetooth WCN6750 1.1.3-00100 firmware to 1.1.3-00105
+    - qcom: Add firmwares for sm8150 GPU
+    - qcom: Add firmwares for sm8450 GPU
+    - qcom: Add firmwares for sm8550 GPU
+    - qcom: Add firmwares for sm8650 GPU
+    - qcom: Add firmwares for sm8750 GPU
+    - qcom: drop compatibility a640_zap.mdt symlink
+    - qcom: Update aic100 firmware files
+    - qcom: venus-5.4: fix ELF segment alignment to 4 bytes
+    - qcom: vpu: update video firmware binary for SM8250
+    - Reapply "amdgpu: update SMU 14.0.3 firmware"
+    - Revert "amdgpu: update GC 10.3.6 firmware"
+    - Revert "amdgpu: update GC 11.5.0 firmware"
+    - Revert "amdgpu: update GC 11.5.1 firmware"
+    - Revert "amdgpu: update SMU 14.0.3 firmware"
+    - rtl_bt: Update RTL8852BT/RTL8852BE-VT BT USB FW to 0x488C_DB55
+    - rtw89: 8852b: update fw to v0.29.29.15
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarIGfP core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel BlazarU-HrPGfP core
+    - Update firmware file for Intel Scorpius core
+    - update firmware for MT7920 WiFi device
+    - update firmware for MT7922 WiFi device
+    - update firmware for MT7925 WiFi device
+    - xe: Update GUC to v70.54.0 for BMG, PTL
+    - xe: Update GUC to v70.55.3 for BMG, PTL
+
+ -- Ben Hutchings <benh@debian.org>  Wed, 04 Feb 2026 16:43:31 +0100
+
+firmware-nonfree (20251125-1) unstable; urgency=medium
+
+  [ Kathara Sasikumar ]
+  * New upstream version:
+    - amdgpu: add vce1 firmware
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: update aldebaran firmware
+    - amdgpu: update beige goby firmware
+    - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update GC 10.3.6 firmware
+    - amdgpu: update GC 11.0.0 firmware
+    - amdgpu: update GC 11.0.1 firmware
+    - amdgpu: update GC 11.0.2 firmware
+    - amdgpu: update GC 11.0.3 firmware
+    - amdgpu: update GC 11.0.4 firmware
+    - amdgpu: update GC 11.5.0 firmware
+    - amdgpu: update GC 11.5.1 firmware
+    - amdgpu: update GC 11.5.2 firmware
+    - amdgpu: update GC 11.5.3 firmware
+    - amdgpu: update GC 12.0.0 firmware
+    - amdgpu: update GC 12.0.1 firmware
+    - amdgpu: update GC 9.4.3 firmware
+    - amdgpu: update GC 9.4.4 firmware
+    - amdgpu: update GC 9.5.0 firmware
+    - amdgpu: update green sardine firmware
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update PSP 13.0.0 firmware
+    - amdgpu: update PSP 13.0.0 kicker firmware
+    - amdgpu: update PSP 13.0.10 firmware
+    - amdgpu: update PSP 13.0.11 firmware
+    - amdgpu: update PSP 13.0.12 firmware
+    - amdgpu: update PSP 13.0.14 firmware
+    - amdgpu: update PSP 13.0.4 firmware
+    - amdgpu: update PSP 13.0.5 firmware
+    - amdgpu: update PSP 13.0.6 firmware
+    - amdgpu: update PSP 13.0.7 firmware
+    - amdgpu: update PSP 14.0.0 firmware
+    - amdgpu: update PSP 14.0.1 firmware
+    - amdgpu: update PSP 14.0.2 firmware
+    - amdgpu: update PSP 14.0.3 firmware
+    - amdgpu: update PSP 14.0.4 firmware
+    - amdgpu: update PSP 14.0.5 firmware
+    - amdgpu: update renoir firmware
+    - amdgpu: update SDMA 4.4.2 firmware
+    - amdgpu: update SDMA 6.0.3 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update SMU 13.0.0 firmware
+    - amdgpu: update smu 13.0.0 kicker firmware
+    - amdgpu: update SMU 13.0.10 firmware
+    - amdgpu: update smu 13.0.7 firmware
+    - amdgpu: update SMU 14.0.2 firmware
+    - amdgpu: update SMU 14.0.3 firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update VCN 3.1.2 firmware
+    - amdgpu: update VCN 4.0.0 firmware
+    - amdgpu: update VCN 4.0.2 firmware
+    - amdgpu: update VCN 4.0.3 firmware
+    - amdgpu: update VCN 4.0.4 firmware
+    - amdgpu: update VCN 4.0.5 firmware
+    - amdgpu: update VCN 4.0.6 firmware
+    - amdgpu: update VCN 5.0.0 firmware
+    - amdgpu: update VCN 5.0.1 firmware
+    - amdgpu: update vega10 firmware
+    - amdgpu: update vega12 firmware
+    - amdgpu: update vega20 firmware
+    - amdgpu: update yellow carp firmware
+    - ASoC: tas2781: Add more symbol links on SPI devices
+    - cirrus: cs35l57: Add firmware for a few Dell products
+    - iwlwifi: add Sc/Wh FW for core98-181 release
+    - mediatek MT7922: update bluetooth firmware to 20251118163447
+    - mt76: add firmware for MT7990
+    - mt76: update firmware for MT7992
+    - mt76: update firmware for MT7996
+    - QCA: Add Bluetooth firmware for WCN685x uart interface
+    - qcom: Add ADSP firmware for qcs6490-thundercomm-rubikpi3
+    - qcom: add ADSP, CDSP firmware for sm8750 platform
+    - qcom: Add sdx35 Foxconn vendor firmware image file
+    - qcom: update ADSP, CDSP firmware for kaanapali
+      platform, change the license
+    - qcom: Update aic100 firmware files
+    - qcom: venus-5.4: remove unused firmware file
+    - qcom: venus-5.4: update firmware binary for v5.4
+    - Revert "amdgpu: update GC 11.0.1 firmware"
+    - rtl_bt: Update RTL8852B BT USB FW to 0x42D3_4E04
+    - rtl_nic: add firmware rtl9151a-1
+    - update firmware for MT7922 WiFi device
+
+  [ Dmitry Baryshkov ]
+  * debian/copyright: drop firmware for Qualcomm QDU100 (Closes: #1126794)
+  * d/copyright: add entry for Qualcomm audio topologies (Closes: #1126846)
+  * d/copyright: correct licence for QCA6698 BT firmware
+  * d/copyright: correct licence for qcom/qcs8300 DSP files
+  * d/bin/gencontrol.py: handle Depends in addition to other fields
+  * debian/: skip files picked up by hexagon-dsp-binaries
+
+  [ Ben Hutchings ]
+  * d/watch: Convert to version 5 format
+
+ -- Ben Hutchings <benh@debian.org>  Tue, 03 Feb 2026 21:33:39 +0100
+
 firmware-nonfree (20251111-1~bpo13+1) trixie-backports; urgency=medium
 
   * Rebuild for trixie-backports:
