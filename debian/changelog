@@ -1,3 +1,9 @@
+firmware-nonfree (20260110-1~bpo13+2) UNRELEASED; urgency=medium
+
+  * Revert "d/watch: Convert to version 5 format" to keep CI working
+
+ -- Ben Hutchings <benh@debian.org>  Sat, 14 Mar 2026 16:01:44 +0100
+
 firmware-nonfree (20260110-1~bpo13+1) trixie-backports; urgency=medium
 
   * Rebuild for trixie-backports

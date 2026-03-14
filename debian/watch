@@ -1,6 +1,4 @@
-Version: 5
-
-Source: https://gitlab.com/kernel-firmware/linux-firmware.git
-Matching-Pattern: refs/tags/([0-9]*)
-Mode: git
-Pgp-Mode: gittag
+version=3
+opts="mode=git, gitmode=shallow, pgpmode=gittag" \
+https://gitlab.com/kernel-firmware/linux-firmware.git \
+refs/tags/([0-9]*) debian
