@@ -79,6 +79,7 @@ firmware-nonfree (20260309-1) UNRELEASED; urgency=medium
     - update firmware for MT7902 WiFi device
     - update firmware for MT7922 WiFi device
   * d/salsa-ci.yml: Disable piuparts job which fails due to common pipeline bug
+  * d/copyright: Tighten filename pattern for Cirrus SDCA firmware
 
  -- Ben Hutchings <benh@debian.org>  Thu, 12 Mar 2026 17:33:44 +0100
 

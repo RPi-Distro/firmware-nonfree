@@ -838,7 +838,7 @@ Files: rp2.fw
 Copyright: 2013, Comtrol Corporation
 License: binary-redist-Comtrol
 
-Files: sdca/*
+Files: sdca/1fa/*
 Copyright: 2025, Cirrus Logic, Inc.
 License: binary-redist-Cirrus
 
