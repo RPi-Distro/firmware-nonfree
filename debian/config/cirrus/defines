@@ -4,3 +4,4 @@ longdesc: Cirrus Logic audio chips like smart amplifiers, converters and DSPs
 files:
  cirrus/**
  cs42l43.bin
+ sdca/1fa/**
