@@ -1,5 +1,83 @@
-firmware-nonfree (20260221-2) UNRELEASED; urgency=medium
+firmware-nonfree (20260309-1) UNRELEASED; urgency=medium
 
+  * New upstream version:
+    - Add firmware file for Intel BlazarIGfp2 core
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: update beige goby firmware
+    - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update GC 10.3.6 firmware
+    - amdgpu: update GC 11.0.0 firmware
+    - amdgpu: update GC 11.0.1 firmware
+    - amdgpu: update GC 11.0.2 firmware
+    - amdgpu: update GC 11.0.3 firmware
+    - amdgpu: update GC 11.0.4 firmware
+    - amdgpu: update GC 11.5.0 firmware
+    - amdgpu: update GC 11.5.1 firmware
+    - amdgpu: update GC 11.5.2 firmware
+    - amdgpu: update GC 11.5.3 firmware
+    - amdgpu: update GC 12.0.0 firmware
+    - amdgpu: update GC 12.0.1 firmware
+    - amdgpu: update GC 9.4.3 firmware
+    - amdgpu: update GC 9.4.4 firmware
+    - amdgpu: update GC 9.5.0 firmware
+    - amdgpu: update green sardine firmware
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update PSP 13.0.0 firmware
+    - amdgpu: update PSP 13.0.0 kicker firmware
+    - amdgpu: update PSP 13.0.10 firmware
+    - amdgpu: update PSP 13.0.11 firmware
+    - amdgpu: update PSP 13.0.12 firmware
+    - amdgpu: update PSP 13.0.14 firmware
+    - amdgpu: update PSP 13.0.4 firmware
+    - amdgpu: update PSP 13.0.5 firmware
+    - amdgpu: update PSP 13.0.6 firmware
+    - amdgpu: update PSP 13.0.7 firmware
+    - amdgpu: update PSP 14.0.0 firmware
+    - amdgpu: update PSP 14.0.1 firmware
+    - amdgpu: update PSP 14.0.2 firmware
+    - amdgpu: update PSP 14.0.3 firmware
+    - amdgpu: update PSP 14.0.4 firmware
+    - amdgpu: update PSP 14.0.5 firmware
+    - amdgpu: update renoir firmware
+    - amdgpu: update SDMA 6.0.1 firmware
+    - amdgpu: update SDMA 6.0.2 firmware
+    - amdgpu: update SDMA 6.1.0 firmware
+    - amdgpu: update SDMA 6.1.1 firmware
+    - amdgpu: update SDMA 6.1.2 firmware
+    - amdgpu: update SDMA 6.1.3 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update SMU 14.0.2 firmware
+    - amdgpu: update SMU 14.0.3 firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update VCN 4.0.0 firmware
+    - amdgpu: update VCN 4.0.2 firmware
+    - amdgpu: update VCN 4.0.3 firmware
+    - amdgpu: update VCN 4.0.4 firmware
+    - amdgpu: update VCN 4.0.5 firmware
+    - amdgpu: update VCN 4.0.6 firmware
+    - amdgpu: update VCN 5.0.0 firmware
+    - amdgpu: update VCN 5.0.1 firmware
+    - amdgpu: update VPE 6.1.0 firmware
+    - amdgpu: update yellow carp firmware
+    - amdnpu: Restore old NPU firmware for compatibility (Closes: #1131751)
+    - cirrus: cs35l63: Add firmware for Cirrus CS35L63 for various Dell laptops
+    - lenovo: remove obsolete ish_lnlm_53c4ffad_2a17559f.bin firmware
+    - mediatek MT7922: update bluetooth firmware to 20260224103448
+    - QCA: Update Bluetooth QCA6698 firmware to 2.1.2-00069
+    - QCA: Update Bluetooth WCN6856 firmware 2.1.0-00659 to 2.1.0-00665
+    - qca: Update Bluetooth WCN6750 1.1.3-00105 firmware to 1.1.3-00106
+    - qcom: sync audioreach firmwares from v1.0.2 build
+    - qcom: update ADSP dtb.mbn for glymur platform
+    - qcom: update ADSP, CDSP firmware for sm8750  platform
+    - qcom: Update CDSP firmware for QCM6490 platform
+    - Remove duplicate fw and Rename Lenovo ISH LNLM firmware files accordingly
+    - Renaming the file back for HP EliteBook X Flip G1i
+    - update firmware for MT7902 BT device
+    - update firmware for MT7902 WiFi device
+    - update firmware for MT7922 WiFi device
   * d/salsa-ci.yml: Disable piuparts job which fails due to common pipeline bug
 
  -- Ben Hutchings <benh@debian.org>  Thu, 12 Mar 2026 17:33:44 +0100
