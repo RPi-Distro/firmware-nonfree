@@ -22,6 +22,11 @@ this information, run:
 You can optionally pass a specific kernel release string or directory
 in which to look for modules.
 
+We copy the debian_linux Python package from src:linux.  To update it,
+run:
+
+    debian/bin/update-python-lib <linux-package-dir>
+
 Licences
 --------
 
@@ -37,7 +42,7 @@ subdirectory.
 
 Some firmware redistribution licences require us to prompt the user to
 accept an EULA.  In this case, put the EULA text in 'LICENSE.install'
-and set the [base] license-accept field to 'required'.  There is no
+and set the [base] license_accept field to 'required'.  There is no
 upstream provision for EULAs.
 
 Binary package definition
@@ -71,9 +76,9 @@ Optional metadata:
 
 [base] uri: Upstream URL, used as Homepage and in copyright file.  Not
             needed if the contents come from linux-firmware.git.
-[base] license-accept: Set to 'required' if we must prompt the user to
+[base] license_accept: Set to 'required' if we must prompt the user to
                        accept a EULA on installation
-[base] license-title: Title of the EULA
+[base] license_title: Title of the EULA
 [base] support: Set to 'initramfs-tools' if update-initramfs should be
                 invoked after installation
 [base] replaces: Used as Replaces field
@@ -92,9 +97,7 @@ Optional per-file metadata:
 To re-generate debian/control (and other files) based on these
 definitions:
 
-1. Install the current linux-support-<kernelversion> package
-2. Ensure debian/rules.defs has the right value of KERNELVERSION
-3. If the 'orig.tar' archive is not yet available, retrieve it as follows:
+1. If the 'orig.tar' archive is not yet available, retrieve it as follows:
 
    uscan --download-version <upstream-version>
 
@@ -107,13 +110,12 @@ definitions:
 
    uscan --download-version $(head -n1 debian/changelog | sed 's/.*\([[:digit:]]\{8\}\).*/\1/')
 
-4. Run: debian/rules orig
-5. Run: debian/rules debian/control
+2. Run: debian/rules orig
+3. Run: debian/rules debian/control
 
 To update the current package's changelog with the new upstream version:
 
-1. Run: PYTHONPATH=/usr/share/linux-support-<version>/lib/python \
-            debian/bin/release-update /path/to/linux-firmware-repository
+1. Run: debian/bin/release-update /path/to/linux-firmware-repository
 
    This will update debian/changelog with the changes added between
    the commit of the current package version and the HEAD commit found in the
@@ -121,4 +123,4 @@ To update the current package's changelog with the new upstream version:
 
 2. Remove entries regarding firmwares files not packaged
 
- -- Ben Hutchings <benh@debian.org>, Sat, 22 Jan 2022 21:05:51 +0100
+ -- Ben Hutchings <benh@debian.org>, Mon, 24 Mar 2025 17:52:46 +0100

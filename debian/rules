@@ -6,8 +6,6 @@ VERSION_UPSTREAM := $(shell echo "$(VERSION)" | sed -e 's,^[^:]*:\?,,;s,-[^-]*$$
 VERSION_BINNMU := $(shell echo "$(VERSION)" | sed -rne 's,.*\+b([0-9]+)$$,\1,p')
 VERSION_SOURCE := $(patsubst %+b$(VERSION_BINNMU),%,$(VERSION))
 
-include debian/rules.defs
-
 GENCONTROL = debian/bin/gencontrol.py
 
 # Nothing to build
@@ -52,7 +50,7 @@ debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
 # list of symlinks to include in package descriptions.
 	./copy-firmware.sh debian/build/install
 	cd debian/build && ../../dedup-firmware.sh install
-	$(GENCONTROL) /usr/src/linux-support-$(KERNELVERSION)
+	$(GENCONTROL)
 	md5sum $^ > debian/control.md5sum
 	@echo
 	@echo This target is made to fail intentionally, to make sure
@@ -86,9 +84,6 @@ maintainerclean:
 	-rm debian/*.preinst
 	-find debian/ -type f -name '*.postinst' ! -name 'firmware-brcm80211.postinst' -delete
 	-rm debian/*.templates
-
-linux-support-name:
-	@echo linux-support-$(KERNELVERSION)
 
 .PHONY: clean build-indep build-arch build binary-indep binary-arch binary \
 	linux-support-name

@@ -5,11 +5,7 @@ from debian import deb822
 from enum import Enum
 
 sys.path.insert(0, "debian/lib/python")
-rules_defs = dict((match.group(1), match.group(2))
-                  for line in open('debian/rules.defs')
-                  for match in [re.match(r'(\w+)\s*:=\s*(.*)\n', line)])
-sys.path.append('/usr/share/linux-support-%s/lib/python' %
-                rules_defs['KERNELVERSION'])
+
 from debian_linux.firmware import FirmwareWhence
 from config import Config, pattern_to_re
 

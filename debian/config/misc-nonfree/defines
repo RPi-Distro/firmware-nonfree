@@ -63,5 +63,6 @@ files:
  tigon/*
  ueagle-atm/*
  wfx/*
+ wsm_22.bin
 usrmovemitigation:
  ti/vpdma-1b8.bin

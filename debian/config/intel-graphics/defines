@@ -2,6 +2,7 @@
 desc: Intel iGPUs and IPUs
 longdesc: Intel integrated GPUs and IPUs supported by the i915,
  intel-ipu6-isys, ipu3-imgu, mei-vsc-hw, and xe drivers
+support: initramfs-tools
 conflicts: firmware-misc-nonfree (<< 1:20230625-3~)
 files:
  i915/*

@@ -12,7 +12,6 @@ import sys
 from typing import Iterable, Optional
 
 sys.path.insert(0, "debian/lib/python")
-sys.path.append(sys.argv[1] + "/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
 from config import Config, pattern_to_re
@@ -99,7 +98,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         config_entry = self.config['base', package]
         vars.update(config_entry)
         vars['package'] = package
-        vars['package-env-prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
+        vars['package_env_prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
 
         makeflags['PACKAGE'] = package
 
@@ -210,14 +209,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                       for link, target in sorted(links.items())]) \
                .replace(',', '[comma]')
 
-        firmware_meta_temp = self.templates.get("metainfo.xml.firmware")
         firmware_meta_list = []
         module_names = set()
 
         for canon_path in sorted(itertools.chain(files_real, links)):
             canon_name = str(canon_path)
-            firmware_meta_list.append(self.substitute(firmware_meta_temp,
-                                                      {'filename': canon_name}))
+            firmware_meta_list.append(
+                self.templates.get("metainfo.xml.firmware",
+                                   {'filename': canon_name}))
             for module_name in self.firmware_modules.get(canon_name, []):
                 module_names.add(module_name)
 
@@ -226,8 +225,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             for modalias in self.modinfo[module_name]['alias']:
                 modaliases.add(modalias)
         modalias_meta_list = [
-            self.substitute(self.templates.get("metainfo.xml.modalias"),
-                            {'alias': alias})
+            self.templates.get("metainfo.xml.modalias",
+                               {'alias': alias})
             for alias in sorted(list(modaliases))
         ]
 
@@ -236,13 +235,13 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         scripts = {}
 
         if 'initramfs-tools' in config_entry.get('support', []):
-            postinst = self.templates.get('postinst.initramfs-tools')
-            scripts.setdefault("postinst", []).append(self.substitute(postinst, vars))
+            scripts.setdefault("postinst", []).append(
+                self.templates.get('postinst.initramfs-tools', vars))
 
-        if 'license-accept' in config_entry:
+        if 'license_accept' in config_entry:
             license = open("%s/LICENSE.install" % package_dir, 'r').read()
-            preinst = self.templates.get('preinst.license')
-            scripts.setdefault("preinst", []).append(self.substitute(preinst, vars))
+            scripts.setdefault("preinst", []).append(
+                self.templates.get('preinst.license', vars))
 
             templates = list(self.templates.get_templates_control('templates.license', vars))
             templates[0].description.append(re.sub('\n\n', '\n.\n', license))
@@ -253,14 +252,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             desc.append(
 """This firmware is covered by the %s.
 You must agree to the terms of this license before it is installed."""
-% vars['license-title'])
+% vars['license_title'])
             packages_binary[0].pre_depends = PackageRelation('debconf | debconf-2.0')
 
         if config_entry.get('usrmovemitigation', []):
             vars['files'] = ' '.join(config_entry['usrmovemitigation'])
             for script in ("preinst", "postinst"):
-                script_template = self.templates.get(script + '.usrmovemitigation')
-                script_content = self.substitute(script_template, vars)
+                script_content = self.templates.get(
+                    script + '.usrmovemitigation', vars)
                 scripts.setdefault(script, []).append(script_content)
             del vars['files']
 
@@ -271,15 +270,14 @@ You must agree to the terms of this license before it is installed."""
 
         self.bundle.add_packages(packages_binary, (package,), makeflags)
 
-        vars['firmware-list'] = ''.join(firmware_meta_list)
-        vars['modalias-list'] = ''.join(modalias_meta_list)
+        vars['firmware_list'] = ''.join(firmware_meta_list)
+        vars['modalias_list'] = ''.join(modalias_meta_list)
         # Underscores are preferred to hyphens
-        vars['package-metainfo'] = package.replace('-', '_')
-        # Summary must not contain line breaks
-        vars['longdesc-metainfo'] = re.sub(r'\s+', ' ', vars['longdesc'])
-        package_meta_temp = self.templates.get("metainfo.xml", {})
+        vars['package_metainfo'] = package.replace('-', '_')
         # XXX Might need to escape some characters
-        open("debian/firmware-%s.metainfo.xml" % package, 'w').write(self.substitute(package_meta_temp, vars))
+        open("debian/org.debian.firmware_%(package_metainfo)s.metainfo.xml"
+             % vars, 'w') \
+            .write(self.templates.get("metainfo.xml", vars))
 
     def process_template(self, in_entry, vars):
         e = Template()
@@ -297,16 +295,6 @@ You must agree to the terms of this license before it is installed."""
         for i in in_entries:
             entries.append(self.process_template(i, vars))
         return entries
-
-    def substitute(self, s, vars):
-        if isinstance(s, (list, tuple)):
-            return [self.substitute(i, vars) for i in s]
-        def subst(match):
-            if match.group(1):
-                return vars.get(match.group(2), '')
-            else:
-                return vars[match.group(2)]
-        return re.sub(r'@(\??)([-_a-z]+)@', subst, str(s))
 
 if __name__ == '__main__':
     GenControl()()

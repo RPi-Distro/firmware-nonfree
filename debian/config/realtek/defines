@@ -1,11 +1,12 @@
 [base]
-desc: Realtek wired/Wi-Fi/BT adapters
-longdesc: Realtek Ethernet, Wi-Fi and Bluetooth adapters supported by various
- drivers
+desc: Realtek network and audio chips
+longdesc: Realtek Ethernet, Wi-Fi, Bluetooth and audio chips supported
+ by various drivers
 conflicts: firmware-realtek-rtl8723cs-bt
 replaces: firmware-realtek-rtl8723cs-bt
 support: initramfs-tools
 files:
+ realtek/rt1320/*
  rtl_bt/*
  rtl_nic/*
  rtlwifi/*
