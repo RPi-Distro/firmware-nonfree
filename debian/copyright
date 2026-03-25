@@ -671,7 +671,7 @@ Files: mrvl/pcie*.bin mrvl/sd87*_uapsta.bin mrvl/sd88*_uapsta.bin
 Copyright: 2019, NXP B.V.
 License: binary-redist-NXP-1
 
-Files: lt9611uxc_fw.bin
+Files: lt8713sx_fw.bin lt9611uxc_fw.bin
 Copyright: Lontium Semiconductor Corp.
 License: binary-redist-Lontium
 
@@ -838,7 +838,7 @@ Files: rp2.fw
 Copyright: 2013, Comtrol Corporation
 License: binary-redist-Comtrol
 
-Files: sdca/*
+Files: sdca/1fa/*
 Copyright: 2025, Cirrus Logic, Inc.
 License: binary-redist-Cirrus
 
