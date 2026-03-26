@@ -1,4 +1,4 @@
-firmware-nonfree (20260309-1) UNRELEASED; urgency=medium
+firmware-nonfree (20260309-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
   * New upstream version:
@@ -91,7 +91,7 @@ firmware-nonfree (20260309-1) UNRELEASED; urgency=medium
     - gencontrol.py: open files with context managers
     - d/rules: remove gencontrol.py from GENCONTROL
 
- -- Ben Hutchings <benh@debian.org>  Thu, 12 Mar 2026 17:33:44 +0100
+ -- Ben Hutchings <benh@debian.org>  Thu, 26 Mar 2026 12:05:50 +0100
 
 firmware-nonfree (20260221-1) unstable; urgency=medium
 
