@@ -9,16 +9,13 @@ GENCONTROL = debian/bin/gencontrol.py
 binary binary-arch binary-indep build build-arch build-indep clean: debian/control
 	dh $@
 
-override_dh_auto_test:
+override_dh_auto_install override_dh_auto_test:
 	:
 
 CLEAN_PATTERNS := debian/build debian/lib/python/__pycache__ debian/lib/python/debian_linux/__pycache__ $$(find debian -maxdepth 1 -type d -name 'firmware-*') debian/*.substvars
 
 override_dh_auto_clean:
 	rm -rf $(CLEAN_PATTERNS)
-
-override_dh_auto_install:
-	./copy-firmware.sh -v debian/build/install
 
 override_dh_installdocs:
 	dh_installdocs -XTODO

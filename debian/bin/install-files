@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+from debian import deb822
+import fnmatch
 import json
 import locale
 import os
@@ -8,17 +10,19 @@ import shutil
 import sys
 
 from debian_firmware.config import Config, pattern_to_re
+from debian_firmware.firmware import FirmwareWhence
 from debian_linux.utils import Templates
 
 
 class FileInstaller:
-    def __init__(self, canon_path, source_path):
+    def __init__(self, canon_path, source_path=None):
         self.canon_path = canon_path
-        self.source_path = source_path
+        self.source_path = source_path or canon_path
 
     def install(self, install_path):
         dest_path = install_path / self.canon_path
         dest_path.parent.mkdir(parents=True, exist_ok=True)
+        print(f'I: Installing {self.source_path} to {dest_path}')
         shutil.copyfile(self.source_path, dest_path)
 
 
@@ -30,6 +34,7 @@ class SymLinkInstaller:
     def install(self, install_path):
         dest_path = install_path / self.canon_path
         dest_path.parent.mkdir(parents=True, exist_ok=True)
+        print(f'I: Creating symlink {dest_path} -> {self.target}')
         dest_path.symlink_to(self.target)
 
 
@@ -39,7 +44,10 @@ def main():
     templates = Templates()
     vars_global = {}
     vars_global.update(config['base',])
-    temp_install_path = pathlib.Path('debian/build/install')
+
+    with open("debian/copyright") as f:
+        exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
+    link_exclusions = config['base',]['links-excluded']
 
     with open('debian/modinfo.json', 'r') as f:
         modinfo = json.load(f)
@@ -52,17 +60,27 @@ def main():
                             .append(name)
 
     installable_upstream = []
-    for root, dir_names, file_names in os.walk(temp_install_path):
-        root = pathlib.Path(root)
-        for name in dir_names + file_names:
-            canon_path = root.relative_to(temp_install_path) / name
-            source_path = root / name
-            if source_path.is_symlink():
-                installable_upstream.append(
-                    SymLinkInstaller(canon_path, source_path.readlink()))
-            elif source_path.is_file():
-                installable_upstream.append(
-                    FileInstaller(canon_path, source_path))
+    with open('WHENCE') as f:
+        for section in FirmwareWhence(f):
+            for file_info in section.files.values():
+                if not any(fnmatch.fnmatch(file_info.binary, exclusion)
+                           for exclusion in exclusions):
+                    path = pathlib.Path(file_info.binary)
+                    installable_upstream.append(FileInstaller(path))
+            for link, target in section.links.items():
+                link_path = pathlib.Path(link)
+                target_path = ((link_path.parent / target)
+                               .resolve()
+                               .relative_to(pathlib.Path.cwd()))
+                # If the target is a file, check that neither the
+                # target nor the link itself have been excluded
+                if str(target_path) not in section.files \
+                   or (not any(fnmatch.fnmatch(str(target_path), exclusion)
+                               for exclusion in exclusions)
+                       and not any(fnmatch.fnmatch(link, exclusion)
+                                   for exclusion in link_exclusions)):
+                    installable_upstream.append(
+                        SymLinkInstaller(link_path, target))
 
     file_packages = {}
     file_errors = False
