@@ -1,9 +1,9 @@
-firmware-nonfree (20260221-1~bpo13+1) UNRELEASED; urgency=medium
+firmware-nonfree (20260221-1~bpo13+1) trixie-backports; urgency=medium
 
   * Rebuild for trixie-backports
   * Revert "d/watch: Convert to version 5 format" to keep CI working
 
- -- Ben Hutchings <benh@debian.org>  Sat, 14 Mar 2026 16:01:44 +0100
+ -- Ben Hutchings <benh@debian.org>  Thu, 26 Mar 2026 16:09:08 +0100
 
 firmware-nonfree (20260221-1) unstable; urgency=medium
 
