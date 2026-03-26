@@ -1,5 +1,6 @@
 firmware-nonfree (20260309-1) UNRELEASED; urgency=medium
 
+  [ Ben Hutchings ]
   * New upstream version:
     - Add firmware file for Intel BlazarIGfp2 core
     - amdgpu: DMCUB updates for various ASICs
@@ -81,6 +82,13 @@ firmware-nonfree (20260309-1) UNRELEASED; urgency=medium
   * d/salsa-ci.yml: Disable piuparts job which fails due to common pipeline bug
   * d/copyright: Tighten filename pattern for Cirrus SDCA firmware
   * cirrus: Include Cirrus SDCA firmware
+
+  [ Nicolas Boulenguez ]
+  * Clean up packaging (Closes: #1064620):
+    - d/rules: include /usr/share/dpkg/pkg-info.mk
+    - gencontrol.py: remove unused process_template methods
+    - gencontrol.py: open files with context managers
+    - d/rules: remove gencontrol.py from GENCONTROL
 
  -- Ben Hutchings <benh@debian.org>  Thu, 12 Mar 2026 17:33:44 +0100
 
