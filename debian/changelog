@@ -82,6 +82,7 @@ firmware-nonfree (20260309-1) UNRELEASED; urgency=medium
   * d/salsa-ci.yml: Disable piuparts job which fails due to common pipeline bug
   * d/copyright: Tighten filename pattern for Cirrus SDCA firmware
   * cirrus: Include Cirrus SDCA firmware
+  * d/README.source: Delete obsolete description of per-file metadata
 
   [ Nicolas Boulenguez ]
   * Clean up packaging (Closes: #1064620):

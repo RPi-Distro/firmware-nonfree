@@ -87,13 +87,6 @@ Optional metadata:
 [base] usrmergemitigation: List of firmware files that require protective
                            diversions
 
-Optional per-file metadata:
-
-[<filename>_base] desc: One-line description for this file, used in
-                        package description
-[<filename>_base] version: Verson number for this file, used in package
-                           description
-
 To re-generate debian/control (and other files) based on these
 definitions:
 
@@ -123,4 +116,4 @@ To update the current package's changelog with the new upstream version:
 
 2. Remove entries regarding firmwares files not packaged
 
- -- Ben Hutchings <benh@debian.org>, Mon, 24 Mar 2025 17:52:46 +0100
+ -- Ben Hutchings <benh@debian.org>, Thu, 26 Mar 2026 11:52:25 +0100
