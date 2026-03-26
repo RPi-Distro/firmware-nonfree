@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
-import errno, filecmp, fnmatch, glob, os.path, re, sys
+import errno, filecmp, fnmatch, glob, pathlib, re, sys
 from debian import deb822
 from enum import Enum
 
-sys.path.insert(0, "debian/lib/python")
-
-from debian_linux.firmware import FirmwareWhence
-from config import Config, pattern_to_re
+from debian_firmware.firmware import FirmwareWhence
+from debian_firmware.config import Config, pattern_to_re
 
 class DistState(Enum):
     undistributable = 1
@@ -54,11 +52,15 @@ def check_section(section):
         return DistState.undistributable
 
 def main(source_dir='.'):
+    source_path = pathlib.Path(source_dir)
+    config_path = pathlib.Path('debian/config')
+
     config = Config()
-    over_dirs = ['debian/config/' + package for
-                 package in config['base',]['packages']]
+    over_paths = [config_path / package for
+                  package in config['base',]['packages']]
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
+    link_exclusions = config['base',]['links-excluded']
 
     package_file_res = []
     for package in config['base',]['packages']:
@@ -70,12 +72,15 @@ def main(source_dir='.'):
               for pattern in config_entry.get('files-exclude', [])])
         )
 
-    for section in FirmwareWhence(open(os.path.join(source_dir, 'WHENCE'))):
+    for section in FirmwareWhence((source_path / 'WHENCE').open()):
         dist_state = check_section(section)
+
         for file_info in section.files.values():
-            if dist_state == DistState.non_free:
-                if not any(fnmatch.fnmatch(file_info.binary, exclusion)
-                           for exclusion in exclusions):
+            # will this file be included in the source package?
+            if not any(fnmatch.fnmatch(file_info.binary, exclusion)
+                       for exclusion in exclusions):
+                if dist_state == DistState.non_free:
+                    # Will it be included in any binary package?
                     if any(
                         (any(inc_re.fullmatch(file_info.binary)
                              for inc_re in inc_res)
@@ -83,26 +88,46 @@ def main(source_dir='.'):
                                     for exc_re in exc_res))
                         for inc_res, exc_res in package_file_res
                     ):
-                        update_file(source_dir, over_dirs, file_info.binary)
-                    elif os.path.isfile(file_info.binary):
+                        update_file(source_path, over_paths, file_info.binary)
+                    else:
                         print('I: %s is not included in any binary package' %
                               file_info.binary)
-                    else:
-                        print('I: %s: could be added' % file_info.binary)
-            elif dist_state == DistState.undistributable:
-                if os.path.isfile(file_info.binary):
+                elif dist_state == DistState.undistributable:
                     print('W: %s appears to be undistributable' %
                           file_info.binary)
 
-def update_file(source_dir, over_dirs, filename):
-    source_file = os.path.join(source_dir, filename)
-    for over_dir in over_dirs:
-        for over_file in ([os.path.join(over_dir, filename)] +
-                          glob.glob(os.path.join(over_dir, filename + '-*'))):
-            if os.path.isfile(over_file):
-                if not filecmp.cmp(source_file, over_file, True):
-                    print('I: %s: changed' % filename)
-                return
+        if dist_state == DistState.non_free:
+            for link, target in section.links.items():
+                link_path = pathlib.Path(link)
+                target_path = ((link_path.parent / target)
+                               .resolve()
+                               .relative_to(pathlib.Path.cwd()))
+                # - Is the target a file?
+                # - Have either the target or the link itself been
+                #   explicitly excluded?
+                # - Will the link not be included in any binary package?
+                if str(target_path) in section.files \
+                   and not any(fnmatch.fnmatch(str(target_path), exclusion)
+                               for exclusion in exclusions) \
+                   and not any(fnmatch.fnmatch(link, exclusion)
+                               for exclusion in link_exclusions) \
+                   and not any(
+                       (any(inc_re.fullmatch(link)
+                            for inc_re in inc_res)
+                        and not any(exc_re.fullmatch(link)
+                                    for exc_re in exc_res))
+                       for inc_res, exc_res in package_file_res
+                   ):
+                    print(f'I: {link} symlink is not included in any binary package')
+
+def update_file(source_path, over_paths, filename):
+    source_file = source_path / filename
+    for over_path in over_paths:
+        over_file = over_path / filename
+        if over_file.is_file():
+            if not filecmp.cmp(source_file, over_file, True):
+                print('I: %s: changed' % filename)
+            return
 
 if __name__ == '__main__':
     main(*sys.argv[1:])

@@ -4,7 +4,7 @@ longdesc: Nvidia graphics chips using the nouveau driver
 conflicts: firmware-misc-nonfree (<< 20230625-3~)
 breaks: initramfs-tools (<< 0.142+deb12u1)
 files:
- nvidia/**/*
+ nvidia/**
 files-excluded:
  nvidia/tegra*/*
 usrmovemitigation:

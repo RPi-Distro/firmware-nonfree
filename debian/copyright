@@ -152,14 +152,6 @@ Files-Excluded:
  i915/tgl_guc_62.0.0.bin
  i915/tgl_huc_7.0.12.bin
  i915/tgl_huc_7.0.3.bin
- intel/ibt-17-1.ddc
- intel/ibt-17-1.sfi
- intel/ibt-17-2.ddc
- intel/ibt-17-2.sfi
- intel/ibt-18-1.ddc
- intel/ibt-18-1.sfi
- intel/ibt-18-2.ddc
- intel/ibt-18-2.sfi
  intel/iwlwifi/iwlwifi-*-34.ucode
  intel/iwlwifi/iwlwifi-*-50.ucode
  intel/iwlwifi/iwlwifi-*-66.ucode

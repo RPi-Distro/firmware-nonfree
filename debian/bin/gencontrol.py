@@ -10,10 +10,9 @@ import re
 import sys
 from typing import Iterable, Optional
 
-sys.path.insert(0, "debian/lib/python")
 locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
 
-from config import Config, pattern_to_re
+from debian_firmware.config import Config, pattern_to_re
 from debian_linux.dataclasses_deb822 import field_deb822, read_deb822, write_deb822
 from debian_linux.debian import BinaryPackage as BinaryPackageBase, PackageDescription, PackageRelation
 import debian_linux.gencontrol

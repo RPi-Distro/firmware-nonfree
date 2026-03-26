@@ -45,7 +45,7 @@ orig:
   # Move orig tarball cache
   - |
     if [ -d orig ]; then
-        mv orig/* ..
+        mv orig/* ${BUILD_DIR}/
         rmdir orig
     fi
 
@@ -63,6 +63,12 @@ orig:
 
   - version=$(dpkg-parsechangelog -SVersion)
   - upstream_version=$(echo $version | sed 's/-[^-]*$//')
+
+  # Export source to build directory
+  - |
+    git archive --format=tar --prefix=${source}-${upstream_version}/ HEAD \
+      | tar -C ${BUILD_DIR} -x
+  - cd ${BUILD_DIR}/${source}-${upstream_version}
 
   # Merge upstream source
   - debian/rules orig
@@ -82,9 +88,8 @@ orig:
   - test $rc = 2
   - grep -q 'been generated SUCCESSFULLY' "$log"
 
+  # Build source package
   - dpkg-buildpackage -uc -us -S -sa -d
-  - mkdir -p ${WORKING_DIR}
-  - mv ../firmware-nonfree_${upstream_version}.orig.tar.xz ../firmware-nonfree_${version}.dsc ../firmware-nonfree_${version}.debian.tar.xz ../firmware-nonfree_${version}_source.buildinfo ../firmware-nonfree_${version}_source.changes ${WORKING_DIR}
 
 build:
   cache:
@@ -113,13 +118,11 @@ build:
     - !reference [.build-script-setup-environment]
 
     - *local-build-script-extract-source
-    - chown -R 'salsa-ci:' ${WORKING_DIR}
+
+    # Make everything accessible to build user
+    - chown -R 'salsa-ci:' ${BUILD_DIR} ${WORKING_DIR}
 
     - !reference [.build-script-setup-build-command]
-
-    - cd ${WORKING_DIR}
-    - export BUILD_COMMAND="${BUILD_COMMAND} firmware-nonfree_${version}.dsc"
-
     - !reference [.build-script-run-build-command]
 
 build source:
@@ -136,7 +139,10 @@ build source:
     variables:
       - $CI_COMMIT_TAG != null
   script:
+    - mkdir -p ${BUILD_DIR}
     - *local-build-script-extract-source
+    - mkdir -p ${WORKING_DIR}
+    - mv ../firmware-nonfree_${upstream_version}.orig.tar.xz ../firmware-nonfree_${version}.dsc ../firmware-nonfree_${version}.debian.tar.xz ../firmware-nonfree_${version}_source.buildinfo ../firmware-nonfree_${version}_source.changes ${WORKING_DIR}
 
 # The folllowing jobs are the standard tests, excluding:
 # - any that require building again

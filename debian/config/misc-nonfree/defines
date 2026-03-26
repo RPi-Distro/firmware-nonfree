@@ -9,6 +9,10 @@ support: initramfs-tools
 conflicts: firmware-ti-connectivity (<< 20230625-3~)
 provides: firmware-adi, firmware-ralink
 files:
+ 8E86-*.bin
+ 8E87-*.bin
+ 8EF5-*.bin
+ 8EF6-*.bin
  agere_*
  airoha/Eth*
  as102_*
@@ -27,18 +31,19 @@ files:
  rp2.fw
  s2250.fw
  s2250_loader.fw
+ TXNW*
  v4l-cx*
  vntwusb.fw
  3com/typhoon.bin
  advansys/*
  amphion/vpu/*
- arm/mali/**/*
+ arm/mali/**
  brcm/BCM-0a5c-6410.hcd
  brcm/BCM-0bb4-0306.hcd
  cadence/mhdp8546.bin
  cnm/wave521c_k3_codec_fw.bin
  cxgb3/*
- cxgb4/**/*
+ cxgb4/**
  dabusb/*
  ene-ub6250/*
  go7007/*

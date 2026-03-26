@@ -2,5 +2,5 @@
 desc: Cirrus Logic audio chips
 longdesc: Cirrus Logic audio chips like smart amplifiers, converters and DSPs
 files:
- cirrus/**/*
+ cirrus/**
  cs42l43.bin

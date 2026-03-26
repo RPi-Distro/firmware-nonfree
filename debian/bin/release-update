@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 
 import sys
-sys.path.append(sys.path[0] + "/../lib/python")
-
 import os, re, subprocess
 import locale
 
 from debian_linux.debian import Changelog, Version
 
-from config import Config, pattern_to_re
+from debian_firmware.config import Config, pattern_to_re
 
 
 # Convert Python glob pattern to Git patterns.  Notable difference is

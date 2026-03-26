@@ -8,6 +8,7 @@ class Config(dict):
     top_schemas = {
         'base': {
             'packages': SchemaItemList(),
+            'links-excluded': SchemaItemList(),
         },
     }
 
@@ -49,9 +50,10 @@ class Config(dict):
             s.update(config[section])
             self[real] = s
 
-_wildcard_re = re.compile(r'\*\*/|[*?.^$+{}\\\[\]|()]')
+_wildcard_re = re.compile(r'\*\*/?|[*?.^$+{}\\\[\]|()]')
 _wildcard_map = {
     '**/': r'(?:.+/)?',
+    '**':  r'.*',
     '*':   r'[^/]*',
     '?':   r'[^/]',
 }
