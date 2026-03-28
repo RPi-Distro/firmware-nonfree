@@ -1,6 +1,7 @@
 firmware-nonfree (20260309-2) UNRELEASED; urgency=medium
 
   * Only install files and generate metainfo.xml at build time
+  * debian_firmware.firmware: Handle file groups with only links
 
  -- Ben Hutchings <benh@debian.org>  Thu, 26 Mar 2026 16:51:35 +0100
 

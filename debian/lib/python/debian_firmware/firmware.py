@@ -45,7 +45,7 @@ class FirmwareWhence(list):
                     in_header = False
                 else:
                     # Finish old group
-                    if driver and files:
+                    if driver and (files or links):
                         self.append(FirmwareGroup(driver, files, licence,
                                                   links))
                     driver = None
