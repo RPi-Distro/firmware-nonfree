@@ -19,6 +19,9 @@ class FirmwareGroup:
 
 
 class FirmwareWhence(list):
+    _escape_re = re.compile(r'\\(.)')
+    _link_sep_re = re.compile(r'\s+-> \s*')
+
     def __init__(self, file) -> None:
         self.read(file)
 
@@ -27,6 +30,10 @@ class FirmwareWhence(list):
         if len(name) >= 3 and name[0] == '"' and name[-1] == '"':
             name = name[1:-1]
         return name
+
+    @staticmethod
+    def _unescape(name):
+        return FirmwareWhence._escape_re.sub(r'\1', name)
 
     def read(self, file) -> None:
         in_header = True
@@ -88,11 +95,11 @@ class FirmwareWhence(list):
                     driver = value.split(' ')[0].lower()
                 elif keyword in ['File', 'RawFile']:
                     match = re.match(r'("[^"\n]+"|\S+)(?:\s+--\s+(.*))?', value)
-                    binary.append(self._unquote(match.group(1)))
+                    binary.append(self._unescape(self._unquote(match.group(1))))
                     desc = match.group(2)
                 elif keyword == 'Link':
-                    link, target = value.split(' -> ')
-                    links[link] = target
+                    link, target = self._link_sep_re.split(value, 1)
+                    links[self._unescape(link)] = self._unescape(target)
                 elif keyword in ['Info', 'Version']:
                     version = value
                 elif keyword == 'Source':
