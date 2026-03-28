@@ -23,7 +23,8 @@ override_dh_auto_install:
 override_dh_installdocs:
 	dh_installdocs -XTODO
 
-execute_after_dh_install:
+override_dh_install:
+	debian/bin/install-files
 # Deduplicate firmware files within each binary package
 	cd debian/build && \
 	for dir in ../firmware-*/usr/lib/firmware; do \
@@ -55,10 +56,6 @@ else
 endif
 
 debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
-# We currently need to run copy-firmware.sh to get a complete list of
-# files to be installed.
-	rm -rf debian/build/install
-	./copy-firmware.sh debian/build/install
 	$(GENCONTROL)
 	md5sum $^ > debian/control.md5sum
 	@echo
