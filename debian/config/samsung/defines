@@ -1,6 +1,0 @@
-[base]
-desc: Samsung MFC video codecs
-longdesc: Samsung MFC video codecs used in Exynos SoCs and supported by the
- s5p-mfc driver
-files:
- s5p-mfc*

@@ -1,6 +1,0 @@
-[base]
-desc: Marvell Prestera ASIC devices
-longdesc: Marvell Switchdev solution Prestera Ethernet switches
-conflicts: firmware-libertas (<< 20230625-3~)
-files:
- mrvl/prestera/*

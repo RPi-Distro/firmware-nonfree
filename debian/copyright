@@ -246,7 +246,7 @@ License: GPL-2
 Files: debian/modinfo.json
 Comment:
  This also applies to the package description fields in
- debian/config/*/defines.
+ debian/config/defines.toml.
 Copyright: 2006-2009, Bastian Blank <waldi@debian.org>
            2007, 2010-2020, Ben Hutchings <benh@debian.org>
            2009-2010, dann frazier <dannf@debian.org>

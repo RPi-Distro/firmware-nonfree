@@ -55,19 +55,19 @@ def main(source_dir='.'):
     source_path = pathlib.Path(source_dir)
     added_path = pathlib.Path('debian/added-firmware')
 
-    config = Config()
+    config = Config.read()
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
-    link_exclusions = config['base',]['links-excluded']
+    link_exclusions = config.base.links_excluded
 
     package_file_res = []
-    for package in config['base',]['packages']:
-        config_entry = config['base', package]
+    for config_entry in config.package:
+        package = config_entry.name
         package_file_res.append(
             ([pattern_to_re(pattern)
-              for pattern in config_entry['files']],
+              for pattern in config_entry.files],
              [pattern_to_re(pattern)
-              for pattern in config_entry.get('files-excluded', [])])
+              for pattern in config_entry.files_excluded])
         )
 
     for section in FirmwareWhence((source_path / 'WHENCE').open()):

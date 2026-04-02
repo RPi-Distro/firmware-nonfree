@@ -42,23 +42,17 @@ subdirectory.
 
 Some firmware redistribution licences require us to prompt the user to
 accept an EULA.  In this case, put the EULA text in 'LICENSE.install'
-and set the [base] license_title field to its title.  There is no
-upstream provision for EULAs.
+and set the license_title field to its title.  There is no upstream
+provision for EULAs.
 
 Binary package definition
 -------------------------
 
-The binary package definitions are placed under 'debian/config' and
-written in a format similar to INI files, parsed using the Python
-ConfigParser module
-<https://docs.python.org/3/library/configparser.html>,
+The binary package definitions are written in TOML format in
+'debian/config/defines.toml'.
 
-The [base] packages field in the top-level 'defines' file lists all
-the binary package names, without the fixed prefix 'firmware-'.
-
-For each binary package, there is a subdirectory with matching name
-(again without the prefix) containing another 'defines' file with
-metadata.
+For each binary package, there is a '[[package]]' section with
+the package name (without the 'firmware-' prefix) and metadata.
 
 The script 'debian/bin/check_upstream.py' will list the upstream
 firmware files that are non-free but not assigned to any binary
@@ -66,22 +60,22 @@ package.
 
 Required metadata:
 
-[base] desc: Short description of related hardware, used in Description
-[base] files: List of files to be included, one per line
-[base] longdesc: Longer description of related hardware and drivers, used in
-                 Description.
+desc: Short description of related hardware, used in Description
+files: List of files to be included, one per line
+longdesc: Longer description of related hardware and drivers, used in
+          Description.
 
 Optional metadata:
 
-[base] uri: Upstream URL, used as Homepage and in copyright file.  Not
-            needed if the contents come from linux-firmware.git.
-[base] license_title: If we must prompt the user to accept a EULA on
-                      installation, the title of the EULA
-[base] support: Set to 'initramfs-tools' if update-initramfs should be
-                invoked after installation
-[base] replaces: Used as Replaces field
-[base] conflicts: Used as Conflicts field
-[base] provides: Used as Provides field
+uri: Upstream URL, used as Homepage and in copyright file.  Not
+     needed if the contents come from linux-firmware.git.
+license_title: If we must prompt the user to accept a EULA on
+               installation, the title of the EULA
+support: List of support features needed.  Include 'initramfs-tools'
+         if update-initramfs should be invoked after installation.
+replaces: Used as Replaces field
+conflicts: Used as Conflicts field
+provides: Used as Provides field
 
 To re-generate debian/control (and other files) based on these
 definitions:

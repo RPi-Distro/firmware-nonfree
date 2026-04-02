@@ -39,15 +39,13 @@ class SymLinkInstaller:
 
 
 def main():
-    config = Config()
+    config = Config.read()
     templates = Templates()
-    vars_global = {}
-    vars_global.update(config['base',])
     added_path = pathlib.Path('debian/added-firmware')
 
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
-    link_exclusions = config['base',]['links-excluded']
+    link_exclusions = config.base.links_excluded
 
     with open('debian/modinfo.json', 'r') as f:
         modinfo = json.load(f)
@@ -103,15 +101,13 @@ def main():
     file_packages = {}
     file_errors = False
 
-    for package in config['base',]['packages']:
-        config_entry = config['base', package]
-        vars = vars_global.copy()
-        vars.update(config_entry)
+    for config_entry in config.package:
+        package = config_entry.name
 
         files_include = [(pattern, pattern_to_re(pattern))
-                         for pattern in config_entry['files']]
+                         for pattern in config_entry.files]
         files_exclude = [pattern_to_re(pattern)
-                         for pattern in config_entry.get('files-excluded', [])]
+                         for pattern in config_entry.files_excluded]
 
         # Select the files/links to install
         installable_selected = {}
@@ -184,12 +180,17 @@ def main():
 
         # Underscores are preferred to hyphens
         package_metainfo = package.replace('-', '_')
-        vars.update({
+        vars = {
+            'desc':             config_entry.desc,
+            'longdesc':         config_entry.longdesc,
+            'uri':              (config_entry.uri
+                                 if config_entry.uri is not None
+                                 else config.base.uri),
             'package':          package,
             'firmware_list':    ''.join(firmware_meta_list),
             'modalias_list':    ''.join(modalias_meta_list),
             'package_metainfo': package_metainfo,
-        })
+        }
         metainfo_install_path = \
             package_install_path \
             / f'usr/share/metainfo/org.debian.firmware_{package_metainfo}.metainfo.xml'
