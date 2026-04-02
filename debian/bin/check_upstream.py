@@ -69,7 +69,7 @@ def main(source_dir='.'):
             ([pattern_to_re(pattern)
               for pattern in config_entry['files']],
              [pattern_to_re(pattern)
-              for pattern in config_entry.get('files-exclude', [])])
+              for pattern in config_entry.get('files-excluded', [])])
         )
 
     for section in FirmwareWhence((source_path / 'WHENCE').open()):
