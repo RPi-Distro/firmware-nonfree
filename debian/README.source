@@ -58,8 +58,7 @@ the binary package names, without the fixed prefix 'firmware-'.
 
 For each binary package, there is a subdirectory with matching name
 (again without the prefix) containing another 'defines' file with
-metadata.  Any non-upstream firmware files are also included in
-these subdirectories.
+metadata.
 
 The script 'debian/bin/check_upstream.py' will list the upstream
 firmware files that are non-free but not assigned to any binary
@@ -114,4 +113,18 @@ To update the current package's changelog with the new upstream version:
 
 2. Remove entries regarding firmwares files not packaged
 
- -- Ben Hutchings <benh@debian.org>, Thu, 26 Mar 2026 11:52:25 +0100
+Additional and replacement files
+--------------------------------
+
+The debian/added-firmware/ directory functions as an overlay for the
+files (and symlinks) provided by upstream.
+
+Occasionally we need to fix a regression by downgrading the firmware.
+Since we cannot patch binaries, the old version should be included in
+this directory.
+
+For historical reasons, we add some files that were never
+included upstream in the firmware-{ipw2x00,ivtv,libertas} packages.
+No more such additions should be made in future.
+
+ -- Ben Hutchings <benh@debian.org> Thu, 02 Apr 2026 20:12:42 +0200

@@ -53,11 +53,9 @@ def check_section(section):
 
 def main(source_dir='.'):
     source_path = pathlib.Path(source_dir)
-    config_path = pathlib.Path('debian/config')
+    added_path = pathlib.Path('debian/added-firmware')
 
     config = Config()
-    over_paths = [config_path / package for
-                  package in config['base',]['packages']]
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
     link_exclusions = config['base',]['links-excluded']
@@ -88,7 +86,7 @@ def main(source_dir='.'):
                                     for exc_re in exc_res))
                         for inc_res, exc_res in package_file_res
                     ):
-                        update_file(source_path, over_paths, file_info.binary)
+                        update_file(source_path, added_path, file_info.binary)
                     else:
                         print('I: %s is not included in any binary package' %
                               file_info.binary)
@@ -120,14 +118,12 @@ def main(source_dir='.'):
                    ):
                     print(f'I: {link} symlink is not included in any binary package')
 
-def update_file(source_path, over_paths, filename):
+def update_file(source_path, added_path, filename):
     source_file = source_path / filename
-    for over_path in over_paths:
-        over_file = over_path / filename
-        if over_file.is_file():
-            if not filecmp.cmp(source_file, over_file, True):
-                print('I: %s: changed' % filename)
-            return
+    over_file = added_path / filename
+    if over_file.is_file():
+        if not filecmp.cmp(source_file, over_file, True):
+            print('I: %s: changed' % filename)
 
 if __name__ == '__main__':
     main(*sys.argv[1:])

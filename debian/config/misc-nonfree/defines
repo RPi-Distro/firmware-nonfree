@@ -68,3 +68,6 @@ files:
  ueagle-atm/*
  wfx/*
  wsm_22.bin
+files-excluded:
+ v4l-cx2341x-*
+ v4l-pvrusb2-*
