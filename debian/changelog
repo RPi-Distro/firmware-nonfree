@@ -1,3 +1,12 @@
+firmware-nonfree (20260309-2) UNRELEASED; urgency=medium
+
+  * Only install files and generate metainfo.xml at build time
+  * debian_firmware.firmware: Handle file groups with only links
+  * debian_firmware.firmware: Handle filename escaping and extra spaces
+  * Replace upstream copy-firmware.sh with our own WHENCE parser
+
+ -- Ben Hutchings <benh@debian.org>  Thu, 26 Mar 2026 16:51:35 +0100
+
 firmware-nonfree (20260309-1) unstable; urgency=medium
 
   [ Ben Hutchings ]

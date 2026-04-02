@@ -2,7 +2,6 @@
 
 import dataclasses
 import io
-import json
 import locale
 import os
 import pathlib
@@ -59,16 +58,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
     def __init__(self):
         super().__init__(Config(), Templates())
 
-        with open('debian/modinfo.json', 'r') as f:
-            self.modinfo = json.load(f)
-
-        # Make another dict keyed by firmware names
-        self.firmware_modules = {}
-        for name, info  in self.modinfo.items():
-            for firmware_filename in info['firmware']:
-                self.firmware_modules.setdefault(firmware_filename, []) \
-                                     .append(name)
-
     def do_source(self):
         super().do_source()
 
@@ -80,21 +69,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         vars = {}
         vars.update(config_entry)
 
-        self.file_errors = False
-        self.file_packages = {}
-
         for package in config_entry['packages']:
             self.do_package(package, vars.copy())
-
-        for canon_path, package_suffixes in self.file_packages.items():
-            if len(package_suffixes) > 1:
-                print(f'E: {canon_path!s} is included in multiple packages:',
-                      ', '.join(f'firmware-{suffix}'
-                                for suffix in package_suffixes),
-                      file=sys.stderr)
-                self.file_errors = True
-        if self.file_errors:
-            raise Exception('error(s) found in file lists')
 
     def do_package(self, package, vars):
         config_entry = self.config['base', package]
@@ -108,8 +84,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             if optional not in vars:
                 vars[optional] = ''
 
-        cur_dir = pathlib.Path.cwd()
-        install_dir = pathlib.Path('debian/build/install')
         package_dir = pathlib.Path('debian/config') / package
 
         try:
@@ -117,99 +91,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         except OSError:
             pass
         os.symlink('bug-presubj', 'debian/firmware-%s.bug-presubj' % package)
-
-        files_include = [(pattern, pattern_to_re(pattern))
-                         for pattern in config_entry['files']]
-        files_exclude = [pattern_to_re(pattern)
-                         for pattern in config_entry.get('files-excluded', [])]
-        files_added = set()
-        files_unused = set()
-        files_selected = {}
-
-        # List all additional and replacement files in binary package
-        # config so we can:
-        # - match dangling symlinks which pathlib.Path.glob() would ignore
-        # - warn if any are unused
-        for root, dir_names, file_names in os.walk(package_dir):
-            root = pathlib.Path(root)
-            for name in file_names:
-                if not (root == package_dir \
-                        and name in ['defines', 'LICENSE.install',
-                                     'update.py', 'update.sh']):
-                    canon_path = root.relative_to(package_dir) / name
-                    files_added.add(canon_path)
-                    files_unused.add(canon_path)
-
-        for pattern, pattern_re in files_include:
-            matched = False
-            matched_more = False
-
-            for paths, is_added in [
-                (((canon_path, package_dir / canon_path)
-                  for canon_path in files_added
-                  if pattern_re.fullmatch(str(canon_path))),
-                 True),
-                (((cur_path.relative_to(install_dir), cur_path)
-                  for cur_path in install_dir.glob(pattern)),
-                 False)
-            ]:
-                for canon_path, cur_path in paths:
-                    canon_name = str(canon_path)
-                    if any(exc_pattern_re.fullmatch(canon_name)
-                           for exc_pattern_re in files_exclude):
-                        continue
-
-                    matched = True
-
-                    # Skip if already matched by earlier pattern or in
-                    # other directory
-                    if canon_path in files_selected:
-                        continue
-
-                    matched_more = True
-                    if is_added:
-                        files_unused.remove(canon_path)
-                    if cur_path.is_symlink() or cur_path.is_file():
-                        files_selected[canon_path] = cur_path
-
-                    self.file_packages.setdefault(canon_path, []) \
-                                      .append(package)
-
-            # Non-matching pattern is an error
-            if not matched:
-                print(f'E: {package}: {pattern} did not match anything',
-                      file=sys.stderr)
-                self.file_errors = True
-            # Redundant pattern deserves a warning
-            elif not matched_more:
-                print(f'W: {package}: pattern {pattern} is redundant with earlier patterns',
-                      file=sys.stderr)
-
-        if files_unused:
-            print(f'W: {package}: unused files:',
-                  ', '.join(str(path) for path in files_unused),
-                  file=sys.stderr)
-
-        firmware_meta_list = []
-        module_names = set()
-
-        for canon_path in sorted(files_selected):
-            canon_name = str(canon_path)
-            firmware_meta_list.append(
-                self.templates.get("metainfo.xml.firmware",
-                                   {'filename': canon_name}))
-            for module_name in self.firmware_modules.get(canon_name, []):
-                module_names.add(module_name)
-
-        modaliases = set()
-        for module_name in module_names:
-            for modalias in self.modinfo[module_name]['alias']:
-                modaliases.add(modalias)
-        modalias_meta_list = [
-            self.templates.get("metainfo.xml.modalias",
-                               {'alias': alias})
-            for alias in sorted(list(modaliases))
-        ]
 
         packages_binary = list(self.templates.get_control("binary.control", vars))
 
@@ -253,27 +134,6 @@ You must agree to the terms of this license before it is installed."""
                 script_fh.write("\n".join(script_contents))
 
         self.bundle.add_packages(packages_binary, (package,), MakeFlags())
-
-        vars['firmware_list'] = ''.join(firmware_meta_list)
-        vars['modalias_list'] = ''.join(modalias_meta_list)
-        # Underscores are preferred to hyphens
-        vars['package_metainfo'] = package_metainfo = package.replace('-', '_')
-        package_metainfo_filename = \
-            f'debian/org.debian.firmware_{package_metainfo}.metainfo.xml'
-        # XXX Might need to escape some characters
-        with open(package_metainfo_filename, 'w') as metainfo_fh:
-            metainfo_fh.write(self.templates.get("metainfo.xml", vars))
-
-        def dh_install_escape(name):
-            return name.replace('$', '${}').replace(' ', '${Space}')
-
-        with open(f'debian/firmware-{package}.install', 'w') as install_fh:
-            for canon_path, cur_path in sorted(files_selected.items()):
-                print(dh_install_escape(str(cur_path)),
-                      f'/usr/lib/firmware/{dh_install_escape(str(canon_path.parent))}',
-                      file=install_fh)
-            print(package_metainfo_filename, '/usr/share/metainfo',
-                  file=install_fh)
 
 
 if __name__ == '__main__':

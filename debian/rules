@@ -9,7 +9,7 @@ GENCONTROL = debian/bin/gencontrol.py
 binary binary-arch binary-indep build build-arch build-indep clean: debian/control
 	dh $@
 
-override_dh_auto_test:
+override_dh_auto_install override_dh_auto_test:
 	:
 
 CLEAN_PATTERNS := debian/build debian/lib/python/__pycache__ debian/lib/python/debian_linux/__pycache__ $$(find debian -maxdepth 1 -type d -name 'firmware-*') debian/*.substvars
@@ -17,13 +17,11 @@ CLEAN_PATTERNS := debian/build debian/lib/python/__pycache__ debian/lib/python/d
 override_dh_auto_clean:
 	rm -rf $(CLEAN_PATTERNS)
 
-override_dh_auto_install:
-	./copy-firmware.sh -v debian/build/install
-
 override_dh_installdocs:
 	dh_installdocs -XTODO
 
-execute_after_dh_install:
+override_dh_install:
+	debian/bin/install-files
 # Deduplicate firmware files within each binary package
 	cd debian/build && \
 	for dir in ../firmware-*/usr/lib/firmware; do \
@@ -55,10 +53,6 @@ else
 endif
 
 debian/control-real: $(GENCONTROL) $(CONTROL_FILES)
-# We currently need to run copy-firmware.sh to get a complete list of
-# files to be installed.
-	rm -rf debian/build/install
-	./copy-firmware.sh debian/build/install
 	$(GENCONTROL)
 	md5sum $^ > debian/control.md5sum
 	@echo
