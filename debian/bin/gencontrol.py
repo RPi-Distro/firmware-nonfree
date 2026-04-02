@@ -72,8 +72,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         package = config_entry.name
         vars = {}
         for field_name in ['desc', 'longdesc', 'recommends', 'depends',
-                           'conflicts', 'breaks', 'replaces', 'provides',
-                           'license_title']:
+                           'conflicts', 'breaks', 'replaces', 'provides']:
             field_value = getattr(config_entry, field_name)
             vars[field_name] = str(field_value) if field_value else ''
         vars['uri'] = (config_entry.uri
@@ -81,8 +80,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
                        else self.config.base.uri)
         vars['package'] = package
         vars['package_env_prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
-
-        package_dir = pathlib.Path('debian/config') / package
 
         try:
             os.unlink('debian/firmware-%s.bug-presubj' % package)
@@ -98,14 +95,14 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             scripts.setdefault("postinst", []).append(
                 self.templates.get('postinst.initramfs-tools', vars))
 
-        if config_entry.license_title:
-            with open("%s/LICENSE.install" % package_dir, 'r') as license_fh:
-                license = license_fh.read()
+        if config_entry.eula:
+            vars['license_title'] = config_entry.eula.title
+
             scripts.setdefault("preinst", []).append(
                 self.templates.get('preinst.license', vars))
 
             templates = list(self.templates.get_templates_control('templates.license', vars))
-            templates[0].description.append(re.sub('\n\n', '\n.\n', license))
+            templates[0].description.append(re.sub('\n\n', '\n.\n', config_entry.eula.text))
             templates_filename = "debian/firmware-%s.templates" % package
             with open(templates_filename, 'w') as templates_fh:
                 write_deb822(templates, templates_fh)
@@ -114,7 +111,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             desc.append(
 """This firmware is covered by the %s.
 You must agree to the terms of this license before it is installed."""
-% vars['license_title'])
+% config_entry.eula.title)
             packages_binary[0].pre_depends = PackageRelation('debconf | debconf-2.0')
 
         for script, script_contents in scripts.items():

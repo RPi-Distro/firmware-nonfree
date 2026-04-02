@@ -41,9 +41,8 @@ installed 'copyright' file is taken from the 'LICENSE' file in its
 subdirectory.
 
 Some firmware redistribution licences require us to prompt the user to
-accept an EULA.  In this case, put the EULA text in 'LICENSE.install'
-and set the license_title field to its title.  There is no upstream
-provision for EULAs.
+accept an EULA.  In this case, add a '[package.eula]' subsection as
+described below.
 
 Binary package definition
 -------------------------
@@ -69,13 +68,17 @@ Optional metadata:
 
 uri: Upstream URL, used as Homepage and in copyright file.  Not
      needed if the contents come from linux-firmware.git.
-license_title: If we must prompt the user to accept a EULA on
-               installation, the title of the EULA
 support: List of support features needed.  Include 'initramfs-tools'
          if update-initramfs should be invoked after installation.
 replaces: Used as Replaces field
 conflicts: Used as Conflicts field
 provides: Used as Provides field
+
+If a EULA applies, there is an additional '[package.eula]' subsection
+with the following required metadata:
+
+title: Title of the EULA
+text: Full text of the EULA
 
 To re-generate debian/control (and other files) based on these
 definitions:

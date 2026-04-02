@@ -22,6 +22,12 @@ class ConfigBase:
 
 
 @dataclasses.dataclass
+class ConfigEula:
+    title: str
+    text: str
+
+
+@dataclasses.dataclass
 class ConfigPackage:
     name: str
     desc: str
@@ -33,7 +39,7 @@ class ConfigPackage:
     breaks: PackageRelation = dataclasses.field(default_factory=PackageRelation)
     replaces: PackageRelation = dataclasses.field(default_factory=PackageRelation)
     provides: PackageRelation = dataclasses.field(default_factory=PackageRelation)
-    license_title: Optional[str] = None
+    eula: Optional[ConfigEula] = None
     uri: Optional[str] = None
     files: list[str] = dataclasses.field(default_factory=list)
     files_excluded: list[str] = dataclasses.field(default_factory=list)
