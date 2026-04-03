@@ -2,7 +2,6 @@
 desc: iTVC15-family MPEG codecs (ivtv and pvrusb2 drivers)
 longdesc: TV cards with Conexant iTVC15-family MPEG codecs,
  supported by the ivtv and pvrusb2 drivers
-license_accept: required
 license_title: Hauppauge End-User Firmware License Agreement
 # ivtvdriver.org is domain-squatted as of July 2018
 #uri: http://dl.ivtvdriver.org/ivtv/firmware/

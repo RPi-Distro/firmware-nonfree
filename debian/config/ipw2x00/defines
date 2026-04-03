@@ -2,7 +2,6 @@
 desc: Intel Pro Wireless 2100, 2200 and 2915
 longdesc: Intel Pro Wireless 2100, 2200 and 2915 cards supported by the
  ipw2100 and ipw2200 drivers
-license_accept: required
 license_title: Intel Pro Wireless 2100 and 2200/2915 License
 # There is no meaningful upstream homepage for this package, which is
 # sourced from 2 separate Sourceforge projects.

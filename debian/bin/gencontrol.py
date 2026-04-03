@@ -100,7 +100,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             scripts.setdefault("postinst", []).append(
                 self.templates.get('postinst.initramfs-tools', vars))
 
-        if 'license_accept' in config_entry:
+        if 'license_title' in config_entry:
             with open("%s/LICENSE.install" % package_dir, 'r') as license_fh:
                 license = license_fh.read()
             scripts.setdefault("preinst", []).append(

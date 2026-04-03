@@ -8,6 +8,7 @@ firmware-nonfree (20260309-2) UNRELEASED; urgency=medium
   * d/copyright: Correct information for reverted QCA9377 rev 1.0 firmware
   * Remove usr-move mitigation, only needed for the trixie upgrade
   * Move added/replacement firmware to debian/added-firmware/
+  * Remove 'license_accept' package config field
 
  -- Ben Hutchings <benh@debian.org>  Thu, 26 Mar 2026 16:51:35 +0100
 

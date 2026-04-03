@@ -42,7 +42,7 @@ subdirectory.
 
 Some firmware redistribution licences require us to prompt the user to
 accept an EULA.  In this case, put the EULA text in 'LICENSE.install'
-and set the [base] license_accept field to 'required'.  There is no
+and set the [base] license_title field to its title.  There is no
 upstream provision for EULAs.
 
 Binary package definition
@@ -75,9 +75,8 @@ Optional metadata:
 
 [base] uri: Upstream URL, used as Homepage and in copyright file.  Not
             needed if the contents come from linux-firmware.git.
-[base] license_accept: Set to 'required' if we must prompt the user to
-                       accept a EULA on installation
-[base] license_title: Title of the EULA
+[base] license_title: If we must prompt the user to accept a EULA on
+                      installation, the title of the EULA
 [base] support: Set to 'initramfs-tools' if update-initramfs should be
                 invoked after installation
 [base] replaces: Used as Replaces field
