@@ -119,14 +119,6 @@ You must agree to the terms of this license before it is installed."""
 % vars['license_title'])
             packages_binary[0].pre_depends = PackageRelation('debconf | debconf-2.0')
 
-        if config_entry.get('usrmovemitigation', []):
-            vars['files'] = ' '.join(config_entry['usrmovemitigation'])
-            for script in ("preinst", "postinst"):
-                script_content = self.templates.get(
-                    script + '.usrmovemitigation', vars)
-                scripts.setdefault(script, []).append(script_content)
-            del vars['files']
-
         for script, script_contents in scripts.items():
             script_contents.insert(0, "#!/bin/sh\n\nset -e\n")
             script_contents.append("#DEBHELPER#\n\nexit 0\n")

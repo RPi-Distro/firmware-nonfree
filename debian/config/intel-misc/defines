@@ -19,20 +19,3 @@ files:
 files-excluded:
  qat_4xxx*
  intel/qat/qat_4xxx*
-usrmovemitigation:
- e100/d101m_ucode.bin
- e100/d101s_ucode.bin
- e100/d102e_ucode.bin
- hfi1_dc8051.fw
- hfi1_fabric.fw
- hfi1_pcie.fw
- hfi1_sbus.fw
- intel/ice/ddp/ice-1.3.30.0.pkg
- intel/ice/ddp/ice.pkg
- qat_895xcc.bin
- qat_895xcc_mmp.bin
- qat_c3xxx.bin
- qat_c3xxx_mmp.bin
- qat_c62x.bin
- qat_c62x_mmp.bin
- qat_mmp.bin
