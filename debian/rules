@@ -34,7 +34,7 @@ override_dh_install:
 	| grep -Ev '^debian/firmware-qcom-soc/usr/lib/firmware/qcom/.*/w(lanmdsp|pss)\.mbn$$'
 
 CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/*.in)
-CONTROL_FILES += debian/config/defines $(wildcard debian/config/*/defines) debian/modinfo.json
+CONTROL_FILES += debian/config/defines.toml debian/modinfo.json
 
 # debian/bin/gencontrol.py uses debian/changelog as input, but the
 # output only depends on the source name and version.  To avoid

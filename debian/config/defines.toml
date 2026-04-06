@@ -1,0 +1,709 @@
+[base]
+uri = "https://gitlab.com/kernel-firmware/linux-firmware"
+# Symlink patterns we want check_upstream.py to ignore
+links_excluded = [
+  "a300_pfp.fw",
+  "a300_pm4.fw",
+]
+
+[[package]]
+name = "amd-graphics"
+desc = "AMD/ATI graphics and NPU chips"
+longdesc = "AMD/ATI graphics and NPU chips supported by the radeon, amdgpu, amdxdna and r128 drivers"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "amdgpu/*",
+  "amdnpu/*/*",
+  "r128/*",
+  "radeon/*",
+]
+
+[[package]]
+name = "atheros"
+desc = "Qualcomm Atheros wireless cards"
+longdesc = "USB wireless network and Bluetooth cards supported by the ar5523, ath3k, ath6kl_sdio, ath6kl_usb, ath10k, ath11k, or wilc6210 drivers"
+files = [
+  "ar5523.bin",
+  "ath3k-1.fw",
+  "htc_7010.fw",
+  "htc_9271.fw",
+  "wil6210.*",
+  "ar3k/*",
+  "ath6k/**",
+  "ath10k/**",
+  "ath11k/**",
+  "ath12k/**",
+  "qca/**",
+]
+files_excluded = [
+  "ath10k/**/notice*.txt*",
+  "ath11k/**/Notice.txt",
+  "ath12k/**/Notice.txt",
+]
+
+[[package]]
+name = "bnx2"
+desc = "Broadcom NetXtremeII"
+longdesc = "Broadcom NetXtremeII network adapters supported by the bnx2 driver"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "bnx2/*",
+]
+
+[[package]]
+name = "bnx2x"
+desc = "Broadcom NetXtreme II 10Gb"
+longdesc = "Broadcom NetXtreme II 10Gb network adapters supported by the bnx2x driver"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "bnx2x/*",
+]
+
+[[package]]
+name = "brcm80211"
+desc = "Broadcom/Cypress 802.11 wireless cards"
+longdesc = "wireless network cards supported by the brcmsmac or brcmfmac driver"
+files = [
+  "brcm/bcm43xx*",
+  "brcm/brcmfmac*",
+  "cypress/cyfmac*",
+]
+
+[[package]]
+name = "cavium"
+desc = "Cavium Ethernet adapters"
+longdesc = "Cavium crypto and Ethernet adapters supported by the nitrox and liquidio drivers"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "cavium/*",
+  "liquidio/*",
+]
+
+[[package]]
+name = "cirrus"
+desc = "Cirrus Logic audio chips"
+longdesc = "Cirrus Logic audio chips like smart amplifiers, converters and DSPs"
+files = [
+  "cirrus/**",
+  "cs42l43.bin",
+  "sdca/1fa/**",
+]
+
+[[package]]
+name = "intel-graphics"
+desc = "Intel iGPUs and IPUs"
+longdesc = "Intel integrated GPUs and IPUs supported by the i915, intel-ipu6-isys, ipu3-imgu, mei-vsc-hw, and xe drivers"
+support = [
+  "initramfs-tools"
+]
+conflicts = [
+  "firmware-misc-nonfree (<< 20230625-3~)"
+]
+files = [
+  "i915/*",
+  "intel/ipu/*",
+  "intel/ipu3-fw.bin",
+  "intel/irci_*",
+  "intel/vsc/*",
+  "xe/*",
+]
+
+[[package]]
+name = "intel-misc"
+desc = "miscellaneous Intel devices and chips"
+longdesc = "miscellaneous Intel devices and chips, which do not belong in the iwlwifi, ipw2x00, intel-graphics or intel-sound packages. This includes for example Omni-Path, Ethernet/Network chips/devices, and QuickAssist Technology crypto accelerators"
+conflicts = [
+  "firmware-misc-nonfree (<< 20230625-3~)",
+]
+files = [
+  "hfi1_*",
+  "qat_*",
+  "e100/*",
+  "dell/ish/*",
+  "HP/ish/*",
+  "intel/ice/**",
+  "intel/ish/*",
+  "intel/qat/*",
+  "intel/vpu/*",
+  "LENOVO/ish/*",
+]
+files_excluded = [
+  "qat_4xxx*",
+  "intel/qat/qat_4xxx*",
+]
+
+[[package]]
+name = "intel-sound"
+desc = "Intel sound DSPs"
+longdesc = "Intel SST sound DSPs supported by the snd-soc-sst-acpi or snd-intel-sst-acpi driver"
+files = [
+  "intel/dsp_fw_*",
+  "intel/fw_sst_*",
+  "intel/IntcSST2.bin",
+  "intel/avs/**",
+  "intel/catpt/bdw/dsp_basefw.bin",
+]
+files_excluded = [
+  "intel/dsp_fw_*_v*.bin",
+]
+
+[[package]]
+name = "ipw2x00"
+desc = "Intel Pro Wireless 2100, 2200 and 2915"
+longdesc = "Intel Pro Wireless 2100, 2200 and 2915 cards supported by the ipw2100 and ipw2200 drivers"
+# There is no meaningful upstream homepage for this package, which is
+# sourced from 2 separate Sourceforge projects.
+uri = ""
+files = [
+  "ipw2100-1.3.fw",
+  "ipw2100-1.3-i.fw",
+  "ipw2100-1.3-p.fw",
+  "ipw2200-bss.fw",
+  "ipw2200-ibss.fw",
+  "ipw2200-sniffer.fw",
+]
+
+[package.eula]
+title = "Intel Pro Wireless 2100 and 2200/2915 License"
+text = """
+SOFTWARE LICENSE AGREEMENT (Final, Single User)
+
+Do not use or load this firmware image (the "Software") until you have carefully
+read the following terms and conditions. By loading or using the Software, you
+agree to the terms of this Agreement. If you do not wish to so agree, do not
+install or use the Software.
+
+LICENSE. You may copy and use the Software, subject to these conditions: 
+
+1. This Software is licensed for use only in conjunction with Intel component
+products. Use of the Software in conjunction with non-Intel component 
+products is not licensed hereunder. 
+
+2. You may not copy, modify, rent, sell, distribute or transfer any part of the
+Software except as provided in this Agreement, and you agree to prevent
+unauthorized copying of the Software. 
+
+3. You may not reverse engineer, decompile, or disassemble the Software. 
+
+4. You may not sublicense the Software. 
+
+5. The Software may contain the software or other property of third party
+suppliers. 
+
+OWNERSHIP OF SOFTWARE AND COPYRIGHTS. Title to all copies of the Software
+remains with Intel or its suppliers. The Software is copyrighted and protected
+by the laws of the United States and other countries, and international treaty
+provisions. You may not remove any copyright notices from the Software. Intel
+may make changes to the Software, or items referenced therein, at any time
+without notice, but is not obligated to support or update the Software. Except
+as otherwise expressly provided, Intel grants no express or implied right under
+Intel patents, copyrights, trademarks, or other intellectual property rights.
+You may transfer the Software only if a copy of this license accompanies the 
+Software and the recipient agrees to be fully bound by these terms.
+
+EXCLUSION OF OTHER WARRANTIES EXCEPT AS PROVIDED ABOVE, THE SOFTWARE IS PROVIDED
+"AS IS" WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND INCLUDING
+WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT, OR FITNESS FOR A PARTICULAR
+PURPOSE. Intel does not warrant or assume responsibility for the accuracy or
+completeness of any information, text, graphics, links or other items contained
+within the Software.
+
+LIMITATION OF LIABILITY. IN NO EVENT SHALL INTEL OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, LOST PROFITS, BUSINESS
+INTERRUPTION, OR LOST INFORMATION) ARISING OUT OF THE USE OF OR INABILITY TO
+USE THE SOFTWARE, EVEN IF INTEL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES. SOME JURISDICTIONS PROHIBIT EXCLUSION OR LIMITATION OF LIABILITY FOR
+IMPLIED WARRANTIES OR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE
+LIMITATION MAY NOT APPLY TO YOU. YOU MAY ALSO HAVE OTHER LEGAL RIGHTS THAT VARY
+BETWEEN JURISDICTIONS.
+
+TERMINATION OF THIS AGREEMENT. Intel may terminate this Agreement at any time if
+you violate its terms. Upon termination, you will immediately destroy the
+Software.
+
+APPLICABLE LAWS. Claims arising under this Agreement shall be governed by the
+laws of California, excluding its principles of conflict of laws and the United
+Nations Convention on Contracts for the Sale of Goods. You may not export the
+Software in violation of applicable export laws and regulations. Intel is not
+obligated under any other agreements unless they are in writing and signed by
+an authorized representative 
+of Intel.
+
+GOVERNMENT RESTRICTED RIGHTS. The Software is provided with "RESTRICTED RIGHTS."
+Use, duplication, or disclosure by the Government is subject to restrictions as
+set forth in FAR52.227-14 and DFAR252.227-7013 et seq. or their successors. Use
+of the Software by the Government constitutes acknowledgment of Intel's
+proprietary rights therein. Contractor or Manufacturer is Intel Corporation,
+2200 Mission College Blvd., Santa Clara, CA 95052.
+"""
+
+[[package]]
+name = "ivtv"
+desc = "iTVC15-family MPEG codecs (ivtv and pvrusb2 drivers)"
+longdesc = "TV cards with Conexant iTVC15-family MPEG codecs, supported by the ivtv and pvrusb2 drivers"
+# ivtvdriver.org is domain-squatted as of July 2018
+#uri = "http://dl.ivtvdriver.org/ivtv/firmware/"
+uri = "https://web.archive.org/web/20150508162618/http://dl.ivtvdriver.org:80/ivtv/firmware/"
+files = [
+  "v4l-cx2341x-dec.fw",
+  "v4l-cx2341x-enc.fw",
+  "v4l-cx2341x-init.mpg",
+  "v4l-pvrusb2-24xxx-01.fw",
+  "v4l-pvrusb2-29xxx-01.fw",
+]
+
+[package.eula]
+title = "Hauppauge End-User Firmware License Agreement"
+text = """
+END-USER FIRMWARE LICENSE AGREEMENT
+
+IMPORTANT - PLEASE READ BEFORE COPYING, INSTALLING OR USING.
+
+Do not use or load this firmware image (the "Firmware") until you have
+carefully read the following terms and conditions. By loading or using
+the Firmware, you agree to the terms of this Agreement. If you do not
+wish to so agree, do not install or use the Firmware.
+
+LICENSEES: Please note:
+
+* If you are an End-User, only the END-USER FIRMWARE LICENSE AGREEMENT
+  applies (this license).
+
+* If you are an Original Equipment Manufacturer (OEM), Independent
+  Hardware Vendor (IHV), or Independent Firmware Vendor (ISV), the
+  OEM/IHV/ISVFIRMWARE LICENSE AGREEMENT applies, as well as the
+  END-USER FIRMWARE LICENSE AGREEMENT (this license).
+
+LICENSE. You may copy and use the Firmware, subject to these conditions:
+
+1. This Firmware is licensed for use only in conjunction with
+   Hauppauge component products. Use of the Firmware in conjunction
+   with non-Hauppauge component products is not licensed hereunder.
+
+2. You may not copy, modify, rent, sell, distribute or transfer any
+   part of the Firmware except as provided in this Agreement, and you
+   agree to prevent unauthorized copying of the Firmware.
+
+3. You may not reverse engineer, decompile, or disassemble the Firmware.
+
+4. You may not sublicense the Firmware.
+
+5. The Firmware may contain the firmware or other property of third party
+   suppliers.
+
+TRADEMARKS. Except as expressly provided herein, you shall not use
+Hauppauge's name in any publications, advertisements, or other
+announcements without Hauppauge's prior written consent. You do not
+have any rights to use any Hauppauge trademarks or logos.
+
+OWNERSHIP OF FIRMWARE AND COPYRIGHTS. Title to all copies of the
+Firmware remains with Hauppauge or its suppliers. The Firmware is
+copyrighted and protected by the laws of the United States and other
+countries, and international treaty provisions. You may not remove any
+copyright notices from the Firmware. Hauppauge may make changes to the
+Firmware, or items referenced therein, at any time without notice, but
+is not obligated to support or update the Firmware. Except as
+otherwise expressly provided, Hauppauge grants no express or implied
+right under Hauppauge patents, copyrights, trademarks, or other
+intellectual property rights. You may transfer the Firmware only if a
+copy of this license accompanies the Firmware and the recipient agrees
+to be fully bound by these terms.
+
+EXCLUSION OF WARRANTIES.
+THE FIRMWARE IS PROVIDED "AS IS" AND POSSIBLY WITH FAULTS. UNLESS
+EXPRESSLY AGREED OTHERWISE, HAUPPAUGE AND ITS SUPPLIERS AND LICENSORS
+DISCLAIM ANY AND ALL WARRANTIES AND GUARANTEES, EXPRESS, IMPLIED OR
+OTHERWISE, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, NONINFRINGEMENT, OR FITNESS FOR A PARTICULAR PURPOSE.
+Hauppauge does not warrant or assume responsibility for the accuracy
+or completeness of any information, text, graphics, links or other
+items contained within the Firmware. You assume all liability,
+financial or otherwise, associated with Your use or disposition of the
+Firmware.
+
+LIMITATION OF LIABILITY. IN NO EVENT SHALL HAUPPAUGE OR ITS SUPPLIERS
+AND LICENSORS BE LIABLE FOR ANY DAMAGES WHATSOEVER FROM ANY CAUSE OF
+ACTION OF ANY KIND (INCLUDING, WITHOUT LIMITATION, LOST PROFITS,
+BUSINESS INTERRUPTION, OR LOST INFORMATION) ARISING OUT OF THE USE,
+MODIFICATION, OR INABILITY TO USE THE FIRMWARE, OR OTHERWISE, NOR FOR
+PUNITIVE, INCIDENTAL, CONSEQUENTIAL, OR SPECIAL DAMAGES OF ANY KIND,
+EVEN IF HAUPPAUGE OR ITS SUPPLIERS AND LICENSORS HAVE BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS PROHIBIT EXCLUSION
+OR LIMITATION OF LIABILITY FOR IMPLIED WARRANTIES OR CONSEQUENTIAL OR
+INCIDENTAL DAMAGES, SO CERTAIN LIMITATIONS MAY NOT APPLY. YOU MAY ALSO
+HAVE OTHER LEGAL RIGHTS THAT VARY BETWEEN JURISDICTIONS.
+
+WAIVER AND AMENDMENT. No modification, amendment or waiver of any
+provision of this Agreement shall be effective unless in writing and
+signed by an officer of Hauppauge. No failure or delay in exercising
+any right, power, or remedy under this Agreement shall operate as a
+waiver of any such right, power or remedy. Without limiting the
+foregoing, terms and conditions on any purchase orders or similar
+materials submitted by you to Hauppauge, and any terms contained in
+Hauppauges standard acknowledgment form that are in conflict with
+these terms, shall be of no force or effect.
+
+SEVERABILITY. If any provision of this Agreement is held by a court of
+competent jurisdiction to be contrary to law, such provision shall be
+changed and interpreted so as to best accomplish the objectives of the
+original provision to the fullest extent allowed by law and the
+remaining provisions of this Agreement shall remain in full force and
+effect.
+
+EXPORT RESTRICTIONS. Each party acknowledges that the Firmware is
+subject to applicable import and export regulations of the United
+States and of the countries in which each party transacts business,
+specifically including U.S. Export Administration Act and Export
+Administration Regulations. Each party shall comply with such laws and
+regulations, as well as all other laws and regulations applicable to
+the Firmware. Without limiting the generality of the foregoing, each
+party agrees that it will not export, re-export, transfer or divert
+any of the Firmware or the direct programs thereof to any restricted
+place or party in accordance with U.S. export regulations. Note that
+Firmware containing encryption may be subject to additional
+restrictions.
+
+APPLICABLE LAWS. Claims arising under this Agreement shall be governed
+by the laws of New York, excluding its principles of conflict of laws
+and the United Nations Convention on Contracts for the Sale of
+Goods. You may not export the Firmware in violation of applicable
+export laws and regulations. Hauppauge is not obligated under any
+other agreements unless they are in writing and signed by an
+authorized representative of Hauppauge.
+
+GOVERNMENT RESTRICTED RIGHTS. The Firmware is provided with
+"RESTRICTED RIGHTS." Use, duplication, or disclosure by the Government
+is subject to restrictions as set forth in FAR52.227-14 and
+DFAR252.227-7013 et seq. or their successors. Use of the Firmware by
+the Government constitutes acknowledgment of Hauppauge's proprietary
+rights therein. Contractor or Manufacturer is Hauppauge Computer
+Works, Inc.  91 Cabot Court Hauppauge, NY 11788
+
+TERMINATION OF THIS AGREEMENT. Hauppauge may terminate this Agreement
+at any time if you violate its terms. Upon termination, you will
+immediately destroy the Firmware or return all copies of the Firmware
+to Hauppauge.
+"""
+
+[[package]]
+name = "iwlwifi"
+desc = "Intel Wireless cards"
+longdesc = "Intel Wireless cards supported by the iwl3945, iwl4965, and iwlwifi drivers"
+files = [
+  "iwlwifi-*",
+  "intel/ibt-*",
+  "intel/iwlwifi/*",
+]
+
+[[package]]
+name = "libertas"
+desc = "Marvell wireless cards"
+longdesc = "wireless network cards with Marvell and NXP 88W8xxx chips supported by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb, mwifiex_pcie, mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers"
+recommends = [
+  "firmware-marvell-prestera",
+]
+replaces = [
+  "libertas-firmware",
+]
+provides = [
+  "libertas-firmware",
+]
+files = [
+  "lbtf_usb.bin",
+  "libertas_cs*",
+  "sd8385*.bin",
+  "sd8686*.bin",
+  "sd8688*.bin",
+  "usb8388.bin",
+  "libertas/*",
+  "mrvl/*",
+  "mwl8k/*",
+]
+files_excluded = [
+  "mrvl/cpt*/*",
+  "mrvl/prestera/*",
+]
+
+[[package]]
+name = "marvell-prestera"
+desc = "Marvell Prestera ASIC devices"
+longdesc = "Marvell Switchdev solution Prestera Ethernet switches"
+conflicts = [
+  "firmware-libertas (<< 20230625-3~)",
+]
+files = [
+  "mrvl/prestera/*",
+]
+
+[[package]]
+name = "mediatek"
+desc = "MediaTek and Ralink chips for networking, SoCs and media"
+longdesc = "MediaTek devices such as ethernet/Wi-Fi/Bluetooth chips, SoCs and other chips and devices made by MediaTek and Ralink"
+support = [
+  "initramfs-tools"
+]
+conflicts = [
+  "firmware-misc-nonfree (<< 20230625-3~)",
+]
+files = [
+  "mt76*",
+  "rt73.bin",
+  "rt2561.bin",
+  "rt2561s.bin",
+  "rt2661.bin",
+  "rt2860.bin",
+  "rt2870.bin",
+  "rt3070.bin",
+  "rt3071.bin",
+  "rt3090.bin",
+  "rt3290.bin",
+  "vpu_d.bin",
+  "vpu_p.bin",
+  "mediatek/**",
+]
+
+[[package]]
+name = "misc-nonfree"
+desc = "various drivers in the Linux kernel"
+longdesc = "various drivers in the Linux kernel. This is a collection of firmware blobs which are not individually large enough to warrant a standalone package"
+recommends = [
+  "firmware-nvidia-graphics",
+  "firmware-intel-graphics",
+  "firmware-intel-misc",
+  "firmware-mediatek",
+]
+support = [
+  "initramfs-tools"
+]
+conflicts = [
+  "firmware-ti-connectivity (<< 20230625-3~)",
+]
+provides = [
+  "firmware-adi",
+  "firmware-ralink",
+]
+files = [
+  "8E86-*.bin",
+  "8E87-*.bin",
+  "8EF5-*.bin",
+  "8EF6-*.bin",
+  "agere_*",
+  "airoha/Eth*",
+  "as102_*",
+  "ctefx.bin",
+  "ctspeq.bin",
+  "dvb-fe-*",
+  "dvb-usb-*",
+  "f2255usb.bin",
+  "lt9611uxc_fw.bin",
+  "mts_cdma.fw",
+  "mts_edge.fw",
+  "mts_gsm.fw",
+  "powervr/*",
+  "r8a779x_usb3_v1.dlmem",
+  "r8a779x_usb3_v3.dlmem",
+  "rp2.fw",
+  "s2250.fw",
+  "s2250_loader.fw",
+  "TXNW*",
+  "v4l-cx*",
+  "vntwusb.fw",
+  "3com/typhoon.bin",
+  "advansys/*",
+  "amphion/vpu/*",
+  "arm/mali/**",
+  "brcm/BCM-0a5c-6410.hcd",
+  "brcm/BCM-0bb4-0306.hcd",
+  "cadence/mhdp8546.bin",
+  "cnm/wave521c_k3_codec_fw.bin",
+  "cxgb3/*",
+  "cxgb4/**",
+  "dabusb/*",
+  "ene-ub6250/*",
+  "go7007/*",
+  "imx/sdma/*",
+  "kaweth/*",
+  "matrox/*",
+  "meson/vdec/*",
+  "microchip/*",
+  "moxa/*",
+  "mrvl/cpt*/*",
+  "nvidia/tegra*/*",
+  "nxp/*",
+  "rockchip/dptx.bin",
+  "tehuti/bdx.bin",
+  "TAS*",
+  "TIAS*",
+  "INT8866RCA2.bin",
+  "ti/audio/**",
+  "ti/vpdma-1b8.bin",
+  "ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin",
+  "tigon/*",
+  "ueagle-atm/*",
+  "wfx/*",
+  "wsm_22.bin",
+]
+files_excluded = [
+  "v4l-cx2341x-*",
+  "v4l-pvrusb2-*",
+]
+
+[[package]]
+name = "myricom"
+desc = "Myri-10G Ethernet adapters"
+longdesc = "Myricom Myri-10G Ethernet adapters supported by the myri10ge driver"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "myri10ge_*",
+]
+
+[[package]]
+name = "netronome"
+desc = "Netronome network adapters"
+longdesc = "Netronome network adapters supported by the nfp driver"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "netronome/**",
+]
+files_excluded = [
+  "netronome/nic_AMDA0058-0011_2x40.nffw",
+  "netronome/nic_AMDA0058-0012_2x40.nffw",
+  "netronome/nic_AMDA0078-0011_1x100.nffw",
+  "netronome/nic_AMDA0099-0001_1x10_1x25.nffw",
+]
+
+[[package]]
+name = "netxen"
+desc = "QLogic Intelligent Ethernet (3000 and 3100 Series)"
+longdesc = "QLogic (formerly NetXen) Intelligent network adapters supported by the netxen_nic and qlcnic drivers"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "phanfw.bin",
+]
+
+[[package]]
+name = "nvidia-graphics"
+desc = "Nvidia GPU chips"
+longdesc = "Nvidia graphics chips using the nouveau driver"
+conflicts = [
+  "firmware-misc-nonfree (<< 20230625-3~)",
+]
+breaks = [
+  "initramfs-tools (<< 0.142+deb12u1)",
+]
+files = [
+  "nvidia/**",
+]
+files_excluded = [
+  "nvidia/tegra*/*",
+]
+
+[[package]]
+name = "qcom-soc"
+desc = "Qualcomm SoCs"
+longdesc = "Qualcomm Snapdragon SoCs"
+recommends = [
+  "firmware-atheros",
+]
+depends = [
+  "firmware-qcom-dsp (>= 0~20251125-1~)",
+]
+breaks = [
+  "firmware-qcom-media (<< 20200421-1~)",
+]
+replaces = [
+  "firmware-qcom-media (<< 20200421-1~)",
+]
+files = [
+  "qcom/**",
+]
+files_excluded = [
+  "qcom/LENOVO/21BX",
+  "qcom/sc8280xp/LENOVO/21BX/21BX",
+]
+
+[[package]]
+name = "qlogic"
+desc = "QLogic HBAs"
+longdesc = "QLogic Infiniband, SCSI, Fibre Channel/FCoE adapters and Converged Network Adapters supported by the bfa, bna, ip_iband, qed, qla1280 and qla2xxx drivers"
+support = [
+  "initramfs-tools"
+]
+files = [
+  "cbfw-3.2.5.1.bin",
+  "ct2fw-3.2.5.1.bin",
+  "ctfw-3.2.5.1.bin",
+  "ql2*_fw.bin",
+  "qed/*",
+  "qlogic/*",
+]
+files_excluded = [
+  "qed/qed_init_values_zipped-8.37.7.0.bin",
+]
+
+[[package]]
+name = "realtek"
+desc = "Realtek network and audio chips"
+longdesc = "Realtek Ethernet, Wi-Fi, Bluetooth and audio chips supported by various drivers"
+conflicts = [
+  "firmware-realtek-rtl8723cs-bt",
+]
+replaces = [
+  "firmware-realtek-rtl8723cs-bt",
+]
+support = [
+  "initramfs-tools"
+]
+files = [
+  "realtek/rt1320/*",
+  "rtl_bt/*",
+  "rtl_nic/*",
+  "rtlwifi/*",
+  "rtw88/*",
+  "rtw89/*",
+]
+files_excluded = [
+  "rtw88/README",
+]
+
+[[package]]
+name = "samsung"
+desc = "Samsung MFC video codecs"
+longdesc = "Samsung MFC video codecs used in Exynos SoCs and supported by the s5p-mfc driver"
+files = [
+  "s5p-mfc*",
+]
+
+[[package]]
+name = "siano"
+desc = "Siano MDTV receivers"
+longdesc = "Siano Mobile Digital TV receivers supported by the smsmdtv driver"
+files = [
+  "cmmb_*.inp",
+  "dvb_nova_*.inp",
+  "isdbt_*",
+  "sms1xxx-*",
+  "tdmb_nova_*.inp",
+]
+
+[[package]]
+name = "ti-connectivity"
+desc = "TI Connectivity Wi-Fi and BT/FM/GPS adapters"
+longdesc = "Texas Instruments WL1251, WL127x, WL128x and WL18xx wireless network chips supported by the wl1251, wl12xx and wl18xx drivers and BT/FM/GPS chips supported by the st_drv driver"
+files = [
+  "ti-connectivity/*",
+]

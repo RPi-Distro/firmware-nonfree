@@ -1,6 +1,0 @@
-[base]
-desc: Myri-10G Ethernet adapters
-longdesc: Myricom Myri-10G Ethernet adapters supported by the myri10ge driver
-support: initramfs-tools
-files:
- myri10ge_*

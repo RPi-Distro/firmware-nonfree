@@ -1,7 +1,0 @@
-[base]
-desc: QLogic Intelligent Ethernet (3000 and 3100 Series)
-longdesc: QLogic (formerly NetXen) Intelligent network adapters supported by
- the netxen_nic and qlcnic drivers
-support: initramfs-tools
-files:
- phanfw.bin

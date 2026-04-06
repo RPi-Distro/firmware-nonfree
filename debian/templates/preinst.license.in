@@ -2,9 +2,6 @@
 db_version 2.0
 db_capb backup
 
-#Valid values are "required" and "no-preseed"
-license_accept=@license_accept@
-
 errmsg()
 {
     echo >&2 ''
@@ -25,7 +22,7 @@ ask()
             ;;   
         1)  # present license
             db_get firmware-@package@/license/accepted
-            if [ "$RET" != true -o "${license_accept}" = "no-preseed" ]; then
+            if [ "$RET" != true ]; then
                 db_fset firmware-@package@/license/accepted seen false
                 if ! db_input critical firmware-@package@/license/accepted ; then
                     errmsg "firmware-@package@ agree question could not be asked"

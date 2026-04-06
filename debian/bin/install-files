@@ -39,15 +39,13 @@ class SymLinkInstaller:
 
 
 def main():
-    config = Config()
-    config_path = pathlib.Path('debian/config')
+    config = Config.read()
     templates = Templates()
-    vars_global = {}
-    vars_global.update(config['base',])
+    added_path = pathlib.Path('debian/added-firmware')
 
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
-    link_exclusions = config['base',]['links-excluded']
+    link_exclusions = config.base.links_excluded
 
     with open('debian/modinfo.json', 'r') as f:
         modinfo = json.load(f)
@@ -82,42 +80,34 @@ def main():
                     installable_upstream.append(
                         SymLinkInstaller(link_path, target))
 
+    # List all additional and replacement files so we can:
+    # - match dangling symlinks which pathlib.Path.glob() would ignore
+    # - warn if any are unused
+    installable_added = []
+    files_unused = set()
+    for root, dir_names, file_names in os.walk(added_path):
+        root = pathlib.Path(root)
+        for name in file_names:
+            canon_path = root.relative_to(added_path) / name
+            source_path = root / name
+            if source_path.is_symlink():
+                installable_added.append(
+                    SymLinkInstaller(canon_path, source_path.readlink()))
+            else:
+                installable_added.append(
+                    FileInstaller(canon_path, source_path))
+            files_unused.add(canon_path)
+
     file_packages = {}
     file_errors = False
 
-    for package in config['base',]['packages']:
-        config_entry = config['base', package]
-        vars = vars_global.copy()
-        vars.update(config_entry)
-        config_package_path = config_path / package
+    for config_entry in config.package:
+        package = config_entry.name
 
         files_include = [(pattern, pattern_to_re(pattern))
-                         for pattern in config_entry['files']]
+                         for pattern in config_entry.files]
         files_exclude = [pattern_to_re(pattern)
-                         for pattern in config_entry.get('files-excluded', [])]
-
-        # List all additional and replacement files in binary package
-        # config so we can:
-        # - match dangling symlinks which pathlib.Path.glob() would ignore
-        # - warn if any are unused
-        installable_added = []
-        files_unused = set()
-        for root, dir_names, file_names in os.walk(config_package_path):
-            root = pathlib.Path(root)
-            for name in file_names:
-                if not (root == config_package_path
-                        and name in ['defines', 'LICENSE.install',
-                                     'update.py', 'update.sh']):
-                    canon_path = root.relative_to(config_package_path) / name
-                    source_path = root / name
-                    if source_path.is_symlink():
-                        installable_added.append(
-                            SymLinkInstaller(canon_path,
-                                             source_path.readlink()))
-                    else:
-                        installable_added.append(
-                            FileInstaller(canon_path, source_path))
-                    files_unused.add(canon_path)
+                         for pattern in config_entry.files_excluded]
 
         # Select the files/links to install
         installable_selected = {}
@@ -143,7 +133,7 @@ def main():
 
                     matched_more = True
                     if is_added:
-                        files_unused.remove(i.canon_path)
+                        files_unused.discard(i.canon_path)
                     installable_selected[i.canon_path] = i
 
                     file_packages.setdefault(i.canon_path, []) \
@@ -158,11 +148,6 @@ def main():
             elif not matched_more:
                 print(f'W: {package}: pattern {pattern} is redundant with earlier patterns',
                       file=sys.stderr)
-
-        if files_unused:
-            print(f'W: {package}: unused files:',
-                  ', '.join(str(path) for path in files_unused),
-                  file=sys.stderr)
 
         # Install selected items
         package_install_path = pathlib.Path(f'debian/firmware-{package}')
@@ -195,12 +180,17 @@ def main():
 
         # Underscores are preferred to hyphens
         package_metainfo = package.replace('-', '_')
-        vars.update({
+        vars = {
+            'desc':             config_entry.desc,
+            'longdesc':         config_entry.longdesc,
+            'uri':              (config_entry.uri
+                                 if config_entry.uri is not None
+                                 else config.base.uri),
             'package':          package,
             'firmware_list':    ''.join(firmware_meta_list),
             'modalias_list':    ''.join(modalias_meta_list),
             'package_metainfo': package_metainfo,
-        })
+        }
         metainfo_install_path = \
             package_install_path \
             / f'usr/share/metainfo/org.debian.firmware_{package_metainfo}.metainfo.xml'
@@ -208,6 +198,11 @@ def main():
         # XXX Might need to escape some characters
         with metainfo_install_path.open('w') as metainfo_fh:
             metainfo_fh.write(templates.get("metainfo.xml", vars))
+
+    if files_unused:
+        print('W: unused files:',
+              ', '.join(str(path) for path in files_unused),
+              file=sys.stderr)
 
     # Check for file conflicts
     for canon_path, package_suffixes in file_packages.items():

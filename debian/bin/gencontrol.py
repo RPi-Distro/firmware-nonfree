@@ -56,7 +56,7 @@ class Templates(TemplatesBase):
 
 class GenControl(debian_linux.gencontrol.Gencontrol):
     def __init__(self):
-        super().__init__(Config(), Templates())
+        super().__init__(Config.read(), Templates())
 
     def do_source(self):
         super().do_source()
@@ -65,26 +65,21 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
         self.bundle.write_makefile = lambda *_: None
 
     def do_main(self):
-        config_entry = self.config['base',]
+        for config_entry in self.config.package:
+            self.do_package(config_entry)
+
+    def do_package(self, config_entry):
+        package = config_entry.name
         vars = {}
-        vars.update(config_entry)
-
-        for package in config_entry['packages']:
-            self.do_package(package, vars.copy())
-
-    def do_package(self, package, vars):
-        config_entry = self.config['base', package]
-        vars.update(config_entry)
+        for field_name in ['desc', 'longdesc', 'recommends', 'depends',
+                           'conflicts', 'breaks', 'replaces', 'provides']:
+            field_value = getattr(config_entry, field_name)
+            vars[field_name] = str(field_value) if field_value else ''
+        vars['uri'] = (config_entry.uri
+                       if config_entry.uri is not None
+                       else self.config.base.uri)
         vars['package'] = package
         vars['package_env_prefix'] = 'FIRMWARE_' + package.upper().replace('-', '_')
-
-        # Those might be absent, set them to empty string for replacement to work:
-        empty_list = ['replaces', 'conflicts', 'breaks', 'provides', 'recommends', 'depends']
-        for optional in ['replaces', 'conflicts', 'breaks', 'provides', 'recommends', 'depends']:
-            if optional not in vars:
-                vars[optional] = ''
-
-        package_dir = pathlib.Path('debian/config') / package
 
         try:
             os.unlink('debian/firmware-%s.bug-presubj' % package)
@@ -96,18 +91,18 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         scripts = {}
 
-        if 'initramfs-tools' in config_entry.get('support', []):
+        if 'initramfs-tools' in config_entry.support:
             scripts.setdefault("postinst", []).append(
                 self.templates.get('postinst.initramfs-tools', vars))
 
-        if 'license_accept' in config_entry:
-            with open("%s/LICENSE.install" % package_dir, 'r') as license_fh:
-                license = license_fh.read()
+        if config_entry.eula:
+            vars['license_title'] = config_entry.eula.title
+
             scripts.setdefault("preinst", []).append(
                 self.templates.get('preinst.license', vars))
 
             templates = list(self.templates.get_templates_control('templates.license', vars))
-            templates[0].description.append(re.sub('\n\n', '\n.\n', license))
+            templates[0].description.append(re.sub('\n\n', '\n.\n', config_entry.eula.text))
             templates_filename = "debian/firmware-%s.templates" % package
             with open(templates_filename, 'w') as templates_fh:
                 write_deb822(templates, templates_fh)
@@ -116,7 +111,7 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
             desc.append(
 """This firmware is covered by the %s.
 You must agree to the terms of this license before it is installed."""
-% vars['license_title'])
+% config_entry.eula.title)
             packages_binary[0].pre_depends = PackageRelation('debconf | debconf-2.0')
 
         for script, script_contents in scripts.items():

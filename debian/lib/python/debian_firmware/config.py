@@ -1,53 +1,70 @@
+import dataclasses
+import pathlib
 import re
+import tomllib
+from typing import Optional, Self
 
-from debian_linux.config import ConfigParser, SchemaItemList
+import dacite
 
-class Config(dict):
-    config_name = "defines"
+from debian_linux.debian import PackageRelation
 
-    top_schemas = {
-        'base': {
-            'packages': SchemaItemList(),
-            'links-excluded': SchemaItemList(),
-        },
-    }
 
-    package_schemas = {
-        'base': {
-            'files': SchemaItemList(),
-            'files-excluded': SchemaItemList(),
-            'support': SchemaItemList(),
-        }
-    }
+_dacite_config = dacite.Config(
+    cast=[PackageRelation],
+    strict=True,
+)
 
-    def __init__(self):
-        self._read_base()
 
-    def _read_base(self):
-        config = ConfigParser(self.top_schemas)
-        config.read("debian/config/%s" % self.config_name)
+@dataclasses.dataclass
+class ConfigBase:
+    uri: str
+    links_excluded: list[str]
 
-        packages = config['base',]['packages']
 
-        for section in iter(config):
-            real = (section[-1],) + section[:-1]
-            self[real] = config[section]
+@dataclasses.dataclass
+class ConfigEula:
+    title: str
+    text: str
 
-        for package in packages:
-            self._read_package(package)
 
-    def _read_package(self, package):
-        config = ConfigParser(self.package_schemas)
-        config.read("debian/config/%s/%s" % (package, self.config_name))
+@dataclasses.dataclass
+class ConfigPackage:
+    name: str
+    desc: str
+    longdesc: str
+    support: list[str] = dataclasses.field(default_factory=list)
+    recommends: PackageRelation = dataclasses.field(default_factory=PackageRelation)
+    depends: PackageRelation = dataclasses.field(default_factory=PackageRelation)
+    conflicts: PackageRelation = dataclasses.field(default_factory=PackageRelation)
+    breaks: PackageRelation = dataclasses.field(default_factory=PackageRelation)
+    replaces: PackageRelation = dataclasses.field(default_factory=PackageRelation)
+    provides: PackageRelation = dataclasses.field(default_factory=PackageRelation)
+    eula: Optional[ConfigEula] = None
+    uri: Optional[str] = None
+    files: list[str] = dataclasses.field(default_factory=list)
+    files_excluded: list[str] = dataclasses.field(default_factory=list)
 
-        for section in iter(config):
-            if len(section) > 1:
-                real = (section[-1], package, '_'.join(section[:-1]))
-            else:
-                real = (section[-1], package)
-            s = self.get(real, {})
-            s.update(config[section])
-            self[real] = s
+
+@dataclasses.dataclass
+class Config:
+    # Disable basic fields
+    name: str = dataclasses.field(init=False, repr=False, default='')
+    enable: bool = dataclasses.field(init=False, repr=False, default=True)
+
+    base: ConfigBase
+    package: list[ConfigPackage]
+
+    @classmethod
+    def read(cls) -> Self:
+        with open('debian/config/defines.toml', 'rb') as f:
+            data = tomllib.load(f)
+
+        return dacite.from_dict(
+            data_class=cls,
+            data=data,
+            config=_dacite_config,
+        )
+
 
 _wildcard_re = re.compile(r'\*\*/?|[*?.^$+{}\\\[\]|()]')
 _wildcard_map = {

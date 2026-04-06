@@ -6,6 +6,7 @@ Uploaders: Bastian Blank <waldi@debian.org>, maximilian attems <maks@debian.org>
 Build-Depends:
  debhelper-compat (= 13),
  python3,
+ python3-dacite,
  python3-debian,
  python3-jinja2,
  rdfind
