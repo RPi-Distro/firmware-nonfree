@@ -58,12 +58,6 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
     def __init__(self):
         super().__init__(Config.read(), Templates())
 
-    def do_source(self):
-        super().do_source()
-
-        # We don't want to generate a makefile
-        self.bundle.write_makefile = lambda *_: None
-
     def do_main(self):
         for config_entry in self.config.package:
             self.do_package(config_entry)
@@ -121,6 +115,10 @@ You must agree to the terms of this license before it is installed."""
                 script_fh.write("\n".join(script_contents))
 
         self.bundle.add_packages(packages_binary, (package,), MakeFlags())
+
+    def write(self):
+        # We don't want to generate a makefile
+        self.bundle.write_control()
 
 
 if __name__ == '__main__':
