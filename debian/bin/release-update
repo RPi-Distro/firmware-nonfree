@@ -79,10 +79,8 @@ def main(repo, new_ver):
     # so they can be included in another, and I don't think we can
     # construct a single pattern list that exactly matches our include/
     # exclude behaviour.
-    config = Config()
-    files_include = sum((config['base', package]['files']
-                         for package in config['base',]['packages']),
-                        [])
+    config = Config.read()
+    files_include = sum((package.files for package in config.package), [])
 
     new_pkg_ver = new_ver + '-1'
 
