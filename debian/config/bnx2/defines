@@ -1,6 +1,0 @@
-[base]
-desc: Broadcom NetXtremeII
-longdesc: Broadcom NetXtremeII network adapters supported by the bnx2 driver
-support: initramfs-tools
-files:
- bnx2/*

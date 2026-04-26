@@ -1,9 +1,0 @@
-[base]
-desc: Siano MDTV receivers
-longdesc: Siano Mobile Digital TV receivers supported by the smsmdtv driver
-files:
- cmmb_*.inp
- dvb_nova_*.inp
- isdbt_*
- sms1xxx-*
- tdmb_nova_*.inp

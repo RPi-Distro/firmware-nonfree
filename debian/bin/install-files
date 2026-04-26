@@ -1,0 +1,221 @@
+#!/usr/bin/python3
+
+from debian import deb822
+import fnmatch
+import json
+import locale
+import os
+import pathlib
+import shutil
+import sys
+
+from debian_firmware.config import Config, pattern_to_re
+from debian_firmware.firmware import FirmwareWhence
+from debian_linux.utils import Templates
+
+
+class FileInstaller:
+    def __init__(self, canon_path, source_path=None):
+        self.canon_path = canon_path
+        self.source_path = source_path or canon_path
+
+    def install(self, install_path):
+        dest_path = install_path / self.canon_path
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        print(f'I: Installing {self.source_path} to {dest_path}')
+        shutil.copyfile(self.source_path, dest_path)
+
+
+class SymLinkInstaller:
+    def __init__(self, canon_path, target):
+        self.canon_path = canon_path
+        self.target = target
+
+    def install(self, install_path):
+        dest_path = install_path / self.canon_path
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        print(f'I: Creating symlink {dest_path} -> {self.target}')
+        dest_path.symlink_to(self.target)
+
+
+def main():
+    config = Config.read()
+    templates = Templates()
+    added_path = pathlib.Path('debian/added-firmware')
+
+    with open("debian/copyright") as f:
+        exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
+    link_exclusions = config.base.links_excluded
+
+    with open('debian/modinfo.json', 'r') as f:
+        modinfo = json.load(f)
+
+    # Make another dict keyed by firmware names
+    firmware_modules = {}
+    for name, info in modinfo.items():
+        for firmware_filename in info['firmware']:
+            firmware_modules.setdefault(firmware_filename, []) \
+                            .append(name)
+
+    installable_upstream = []
+    with open('WHENCE') as f:
+        for section in FirmwareWhence(f):
+            for file_info in section.files.values():
+                if not any(fnmatch.fnmatch(file_info.binary, exclusion)
+                           for exclusion in exclusions):
+                    path = pathlib.Path(file_info.binary)
+                    installable_upstream.append(FileInstaller(path))
+            for link, target in section.links.items():
+                link_path = pathlib.Path(link)
+                target_path = ((link_path.parent / target)
+                               .resolve()
+                               .relative_to(pathlib.Path.cwd()))
+                # If the target is a file, check that neither the
+                # target nor the link itself have been excluded
+                if str(target_path) not in section.files \
+                   or (not any(fnmatch.fnmatch(str(target_path), exclusion)
+                               for exclusion in exclusions)
+                       and not any(fnmatch.fnmatch(link, exclusion)
+                                   for exclusion in link_exclusions)):
+                    installable_upstream.append(
+                        SymLinkInstaller(link_path, target))
+
+    # List all additional and replacement files so we can:
+    # - match dangling symlinks which pathlib.Path.glob() would ignore
+    # - warn if any are unused
+    installable_added = []
+    files_unused = set()
+    for root, dir_names, file_names in os.walk(added_path):
+        root = pathlib.Path(root)
+        for name in file_names:
+            canon_path = root.relative_to(added_path) / name
+            source_path = root / name
+            if source_path.is_symlink():
+                installable_added.append(
+                    SymLinkInstaller(canon_path, source_path.readlink()))
+            else:
+                installable_added.append(
+                    FileInstaller(canon_path, source_path))
+            files_unused.add(canon_path)
+
+    file_packages = {}
+    file_errors = False
+
+    for config_entry in config.package:
+        package = config_entry.name
+
+        files_include = [(pattern, pattern_to_re(pattern))
+                         for pattern in config_entry.files]
+        files_exclude = [pattern_to_re(pattern)
+                         for pattern in config_entry.files_excluded]
+
+        # Select the files/links to install
+        installable_selected = {}
+        for pattern, pattern_re in files_include:
+            matched = False
+            matched_more = False
+
+            for installable, is_added in [(installable_added,    True),
+                                          (installable_upstream, False)]:
+                for i in installable:
+                    canon_name = str(i.canon_path)
+                    if not pattern_re.fullmatch(canon_name) \
+                       or any(exc_pattern_re.fullmatch(canon_name)
+                              for exc_pattern_re in files_exclude):
+                        continue
+
+                    matched = True
+
+                    # Skip if already matched by earlier pattern or in
+                    # other directory
+                    if i.canon_path in installable_selected:
+                        continue
+
+                    matched_more = True
+                    if is_added:
+                        files_unused.discard(i.canon_path)
+                    installable_selected[i.canon_path] = i
+
+                    file_packages.setdefault(i.canon_path, []) \
+                                 .append(package)
+
+            # Non-matching pattern is an error
+            if not matched:
+                print(f'E: {package}: {pattern} did not match anything',
+                      file=sys.stderr)
+                file_errors = True
+            # Redundant pattern deserves a warning
+            elif not matched_more:
+                print(f'W: {package}: pattern {pattern} is redundant with earlier patterns',
+                      file=sys.stderr)
+
+        # Install selected items
+        package_install_path = pathlib.Path(f'debian/firmware-{package}')
+        firmware_install_path = package_install_path / 'usr/lib/firmware'
+        for i in installable_selected.values():
+            i.install(firmware_install_path)
+
+        # Write metainfo.xml for this package
+
+        firmware_meta_list = []
+        module_names = set()
+
+        for canon_path in sorted(installable_selected):
+            canon_name = str(canon_path)
+            firmware_meta_list.append(
+                templates.get("metainfo.xml.firmware",
+                              {'filename': canon_name}))
+            for module_name in firmware_modules.get(canon_name, []):
+                module_names.add(module_name)
+
+        modaliases = set()
+        for module_name in module_names:
+            for modalias in modinfo[module_name]['alias']:
+                modaliases.add(modalias)
+        modalias_meta_list = [
+            templates.get("metainfo.xml.modalias",
+                          {'alias': alias})
+            for alias in sorted(list(modaliases))
+        ]
+
+        # Underscores are preferred to hyphens
+        package_metainfo = package.replace('-', '_')
+        vars = {
+            'desc':             config_entry.desc,
+            'longdesc':         config_entry.longdesc,
+            'uri':              (config_entry.uri
+                                 if config_entry.uri is not None
+                                 else config.base.uri),
+            'package':          package,
+            'firmware_list':    ''.join(firmware_meta_list),
+            'modalias_list':    ''.join(modalias_meta_list),
+            'package_metainfo': package_metainfo,
+        }
+        metainfo_install_path = \
+            package_install_path \
+            / f'usr/share/metainfo/org.debian.firmware_{package_metainfo}.metainfo.xml'
+        metainfo_install_path.parent.mkdir(parents=True, exist_ok=True)
+        # XXX Might need to escape some characters
+        with metainfo_install_path.open('w') as metainfo_fh:
+            metainfo_fh.write(templates.get("metainfo.xml", vars))
+
+    if files_unused:
+        print('W: unused files:',
+              ', '.join(str(path) for path in files_unused),
+              file=sys.stderr)
+
+    # Check for file conflicts
+    for canon_path, package_suffixes in file_packages.items():
+        if len(package_suffixes) > 1:
+            print(f'E: {canon_path!s} is included in multiple packages:',
+                  ', '.join(f'firmware-{suffix}'
+                            for suffix in package_suffixes),
+                  file=sys.stderr)
+            file_errors = True
+
+    sys.exit(file_errors)
+
+
+if __name__ == '__main__':
+    locale.setlocale(locale.LC_CTYPE, "C.UTF-8")
+    main()

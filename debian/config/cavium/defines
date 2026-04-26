@@ -1,8 +1,0 @@
-[base]
-desc: Cavium Ethernet adapters
-longdesc: Cavium crypto and Ethernet adapters supported by the nitrox and
- liquidio drivers
-support: initramfs-tools
-files:
- cavium/*
- liquidio/*

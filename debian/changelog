@@ -1,3 +1,80 @@
+firmware-nonfree (20260410-1~bpo13+1) trixie-backports; urgency=medium
+
+  * Rebuild for trixie-backports
+
+ -- Ben Hutchings <benh@debian.org>  Sun, 26 Apr 2026 21:20:44 +0200
+
+firmware-nonfree (20260410-1) unstable; urgency=medium
+
+  * New upstream version:
+    - Add firmware file for Intel BlazarIGfp2 core
+    - Add firmware file for Intel BlazarIW
+    - Add firmware file for Intel ScorpiusGfp2 core
+    - add firmware for Moxa mux50u devices
+    - Add ISH firmware file for Intel Wildcat Lake platform
+    - Add LENOVO ISH firmware v5.8.0.7720 for X9-15 2025
+    - Add LENOVO ISH firmware v5.8.1.7720 for X1 Carbon (Gen 14) and X1 2-in-1
+      (Gen 11)
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: Revert Yellow Carp DMUB fw to 0x4000045
+    - ath11k: QCA6698AQ hw2.1: update to
+      WLAN.HSP.1.1-04866.5-QCAHSPSWPL_V1_V2_SILICONZ_IOE-1
+    - ath11k: WCN6855 hw2.0@nfa765: update to
+      WLAN.HSP.1.1-04866.5-QCAHSPSWPL_V1_V2_SILICONZ_IOE-1
+    - ath12k: WCN7850 hw2.0: update to
+      WLAN.HMT.1.1.c7-00108-QCAHMTSWPL_V1.0_V2.0_SILICONZ_UPSTREAM-3
+    - cirrus: cs35l41: Add support for ASUS GZ302EAC and add 15.5dB bincfg
+    - cirrus: cs35l41: Add support for new ASUS laptops
+    - cirrus: cs35l41: Add support for new HP laptops
+    - cirrus: cs35l56: Add firmware for Cirrus Amps for some ASUS laptops
+    - cirrus: cs35l56: Add firmware for Cirrus Amps for some Lenovo laptops
+    - cirrus: cs35l63: Fix Cirrus Amp firmware links for some Dell laptops
+    - cirrus: cs35l63: Update firmware for Cirrus Amps for some Dell laptops
+    - Intel Bluetooth: Update firmware file for Intel Bluetooth AX201
+    - intel_vpu: Update NPU firmware
+    - iwlwifi: add Bz/Sc FW for core103-40 release
+    - iwlwifi: add Bz/Wh FW for core102-56 release
+    - iwlwifi: Add Hr/Gf firmware for core103-40 release
+    - iwlwifi: update ty/So/Ma firmwares for core103-40 release
+    - mediatek MT7920: update bluetooth firmware to 20260224111231
+    - mediatek MT7921: update bluetooth firmware to 20260224111243
+    - nvidia: add acr/bl symlink for booting GSP-RM on GA100
+    - qcom: Add FW blobs for DELL XPS13 9345
+    - qcom: add QUPv3 firmware for QCS615 platform
+    - qcom: add QUPv3 firmware for shikra
+    - qcom: sync audioreach firmwares from v1.0.3 build
+    - qcom: vpu: add video firmware for SM8450
+    - Revert "rtl_bt: Update RTL8822C BT USB and UART firmware to 0x0673"
+    - rtl_bt: Update RTL8852B BT USB FW to 0x127C_FD78
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarIGfP core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel BlazarU-HrPGfP core
+    - Update firmware file for Intel Quasar core
+    - Update firmware file for Intel Scorpius core
+    - update firmware for MT7920 WiFi device
+    - update firmware for MT7921 WiFi device
+    - update firmware for qat_402xx devices
+    - update firmware for qat_420xx devices
+    - update firmware for qat_4xxx devices
+    - WHENCE: Fix ISH firmware symlink prefix for Lenovo PTL systems
+    - xe: Update GUC to v70.60.0 for LNL, BMG, PTL
+    - xe: Update PTL GSC to v105.0.2.1397
+  * Only install files and generate metainfo.xml at build time
+  * debian_firmware.firmware: Handle file groups with only links
+  * debian_firmware.firmware: Handle filename escaping and extra spaces
+  * Replace upstream copy-firmware.sh with our own WHENCE parser
+  * d/b/check_upstream.py: Fix name of 'files-excluded' config field
+  * d/copyright: Correct information for reverted QCA9377 rev 1.0 firmware
+  * Remove usr-move mitigation, only needed for the trixie upgrade
+  * Move added/replacement firmware to debian/added-firmware/
+  * Remove 'license_accept' package config field
+  * Change configuration handling to use TOML format and dacite
+  * Move EULA text into configuration file
+  * d/b/gencontrol.py: Disable makefile generation more cleanly
+
+ -- Ben Hutchings <benh@debian.org>  Mon, 20 Apr 2026 10:47:18 +0200
+
 firmware-nonfree (20260309-1~bpo13+1) trixie-backports; urgency=medium
 
   * Rebuild for trixie-backports
