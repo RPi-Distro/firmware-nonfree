@@ -68,7 +68,7 @@ Optional metadata:
 
 uri: Upstream URL, used as Homepage and in copyright file.  Not
      needed if the contents come from linux-firmware.git.
-support: List of support features needed.  Include 'initramfs-tools'
+support: List of support features needed.  Include 'update-initramfs'
          if update-initramfs should be invoked after installation.
 replaces: Used as Replaces field
 conflicts: Used as Conflicts field
