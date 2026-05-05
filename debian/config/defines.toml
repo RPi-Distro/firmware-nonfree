@@ -11,7 +11,7 @@ name = "amd-graphics"
 desc = "AMD/ATI graphics and NPU chips"
 longdesc = "AMD/ATI graphics and NPU chips supported by the radeon, amdgpu, amdxdna and r128 drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "amdgpu/*",
@@ -48,7 +48,7 @@ name = "bnx2"
 desc = "Broadcom NetXtremeII"
 longdesc = "Broadcom NetXtremeII network adapters supported by the bnx2 driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "bnx2/*",
@@ -59,7 +59,7 @@ name = "bnx2x"
 desc = "Broadcom NetXtreme II 10Gb"
 longdesc = "Broadcom NetXtreme II 10Gb network adapters supported by the bnx2x driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "bnx2x/*",
@@ -80,7 +80,7 @@ name = "cavium"
 desc = "Cavium Ethernet adapters"
 longdesc = "Cavium crypto and Ethernet adapters supported by the nitrox and liquidio drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "cavium/*",
@@ -102,7 +102,7 @@ name = "intel-graphics"
 desc = "Intel iGPUs and IPUs"
 longdesc = "Intel integrated GPUs and IPUs supported by the i915, intel-ipu6-isys, ipu3-imgu, mei-vsc-hw, and xe drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 conflicts = [
   "firmware-misc-nonfree (<< 20230625-3~)"
@@ -448,7 +448,7 @@ name = "mediatek"
 desc = "MediaTek and Ralink chips for networking, SoCs and media"
 longdesc = "MediaTek devices such as ethernet/Wi-Fi/Bluetooth chips, SoCs and other chips and devices made by MediaTek and Ralink"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 conflicts = [
   "firmware-misc-nonfree (<< 20230625-3~)",
@@ -481,7 +481,7 @@ recommends = [
   "firmware-mediatek",
 ]
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 conflicts = [
   "firmware-ti-connectivity (<< 20230625-3~)",
@@ -561,7 +561,7 @@ name = "myricom"
 desc = "Myri-10G Ethernet adapters"
 longdesc = "Myricom Myri-10G Ethernet adapters supported by the myri10ge driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "myri10ge_*",
@@ -572,7 +572,7 @@ name = "netronome"
 desc = "Netronome network adapters"
 longdesc = "Netronome network adapters supported by the nfp driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "netronome/**",
@@ -589,7 +589,7 @@ name = "netxen"
 desc = "QLogic Intelligent Ethernet (3000 and 3100 Series)"
 longdesc = "QLogic (formerly NetXen) Intelligent network adapters supported by the netxen_nic and qlcnic drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "phanfw.bin",
@@ -603,7 +603,7 @@ conflicts = [
   "firmware-misc-nonfree (<< 20230625-3~)",
 ]
 breaks = [
-  "initramfs-tools (<< 0.142+deb12u1)",
+  "update-initramfs (<< 0.142+deb12u1)",
 ]
 files = [
   "nvidia/**",
@@ -641,7 +641,7 @@ name = "qlogic"
 desc = "QLogic HBAs"
 longdesc = "QLogic Infiniband, SCSI, Fibre Channel/FCoE adapters and Converged Network Adapters supported by the bfa, bna, ip_iband, qed, qla1280 and qla2xxx drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "cbfw-3.2.5.1.bin",
@@ -666,7 +666,7 @@ replaces = [
   "firmware-realtek-rtl8723cs-bt",
 ]
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "realtek/rt1320/*",
