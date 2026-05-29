@@ -63,16 +63,7 @@ Files-Excluded:
  ath6k/AR6002/*
  brcm/bcm4329-fullmac-4.bin
  dpaa2/mc/*
- intel/dsp_fw_bxtn_v2219.bin
- intel/dsp_fw_glk_v1814.bin
- intel/dsp_fw_glk_v2768.bin
- intel/dsp_fw_glk_v2880.bin
- intel/dsp_fw_kbl_v1037.bin
- intel/dsp_fw_kbl_v2042.bin
- intel/dsp_fw_kbl_v2630.bin
- intel/dsp_fw_kbl_v3266.bin
- intel/dsp_fw_kbl_v701.bin
- intel/dsp_fw_release_v969.bin
+ intel/dsp_fw_*_v*.bin
  intel/ipu/shisp_*
  tsse_firmware.bin
 # - not referenced by driver in a supported Debian release

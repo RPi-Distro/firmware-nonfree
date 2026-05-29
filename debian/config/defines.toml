@@ -161,9 +161,6 @@ files = [
   "intel/fw_sst_*",
   "intel/IntcSST2.bin",
 ]
-files_excluded = [
-  "intel/dsp_fw_*_v*.bin",
-]
 
 [[package]]
 name = "ipw2x00"
