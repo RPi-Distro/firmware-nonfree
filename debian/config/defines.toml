@@ -510,6 +510,7 @@ files = [
   "as102_*",
   "brcm/BCM-0a5c-6410.hcd",
   "brcm/BCM-0bb4-0306.hcd",
+  "bmi260-init-data.fw",
   "cadence/mhdp8546.bin",
   "cnm/wave521c_k3_codec_fw.bin",
   "cnm/wave633c_imx9_codec_fw.bin",
