@@ -149,10 +149,6 @@ files = [
   "LENOVO/ish/*",
   "qat_*",
 ]
-files_excluded = [
-  "intel/qat/qat_4xxx*",
-  "qat_4xxx*",
-]
 
 [[package]]
 name = "intel-sound"
