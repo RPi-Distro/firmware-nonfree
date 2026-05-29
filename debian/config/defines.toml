@@ -1,6 +1,8 @@
 [base]
 uri = "https://gitlab.com/kernel-firmware/linux-firmware"
-# Symlink patterns we want check_upstream.py to ignore
+# Patterns for Link: entries in WHENCE that install-files should
+# exclude and check_upstream.py should ignore.  This overrides any
+# inclusion patterns defined below.
 links_excluded = [
   "a300_pfp.fw",
   "a300_pm4.fw",
