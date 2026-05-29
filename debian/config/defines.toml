@@ -511,7 +511,7 @@ files = [
   "advansys/*",
   "aeonsemi/**",
   "agere_*",
-  "airoha/Eth*",
+  "airoha/**",
   "amphion/vpu/*",
   "arm/mali/**",
   "as102_*",
