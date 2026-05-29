@@ -552,6 +552,7 @@ files = [
   "tehuti/bdx.bin",
   "ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin",
   "ti/audio/**",
+  "ti/pcm6240/pcm6240-i2c-1-2dev.bin",
   "ti/vpdma-1b8.bin",
   "TIAS*",
   "tigon/*",
