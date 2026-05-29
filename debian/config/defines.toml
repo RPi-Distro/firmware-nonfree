@@ -543,6 +543,7 @@ files = [
   "powervr/*",
   "r8a779x_usb3_v1.dlmem",
   "r8a779x_usb3_v3.dlmem",
+  "rcar_gen4_pcie.bin",
   "rockchip/dptx.bin",
   "rp2.fw",
   "s2250.fw",
