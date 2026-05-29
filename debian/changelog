@@ -112,6 +112,7 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
     - update firmware for MT7925 WiFi device
     - xe: Update GUC to v70.65.0 for LNL, BMG, PTL
   * d/copyright: Update for new upstream version
+  * Add config field for files that check_upstream.py should ignore
 
   [ Agathe Porte ]
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)

@@ -7,6 +7,18 @@ links_excluded = [
   "a300_pfp.fw",
   "a300_pm4.fw",
 ]
+# Patterns for File: entries in WHENCE that check_upstream.py should
+# ignore.  These files are included in the source package but don't
+# need to be included in any binary.  They are mostly legal notices
+# that we incorporate into debian/copyright.  This does *not* override
+# inclusion patterns defined below.
+files_unpackaged = [
+  "ath*k/*/*/*/Notice.txt",
+  "ath*k/*/*/Notice.txt",
+  "ath10k/*/*/notice_*.txt",
+  "ath10k/WCN3990/hw1.0/notice.txt_wlanmdsp",
+  "rtw88/README",
+]
 
 [[package]]
 name = "amd-graphics"

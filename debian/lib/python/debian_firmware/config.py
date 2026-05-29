@@ -19,6 +19,7 @@ _dacite_config = dacite.Config(
 class ConfigBase:
     uri: str
     links_excluded: list[str]
+    files_unpackaged: list[str]
 
 
 @dataclasses.dataclass
