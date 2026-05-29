@@ -118,6 +118,7 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
   * intel-misc: Add QAT 4xxx firmware
   * d/copyright, d/c/defines.toml: Fully exclude obsolete Intel sound firmware
   * netronome: Include all firmware symlinks
+  * misc-nonfree: Add more Lontium video converter firmware
 
   [ Agathe Porte ]
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)
