@@ -509,6 +509,7 @@ files = [
   "8EF5-*.bin",
   "8EF6-*.bin",
   "advansys/*",
+  "aeonsemi/**",
   "agere_*",
   "airoha/Eth*",
   "amphion/vpu/*",

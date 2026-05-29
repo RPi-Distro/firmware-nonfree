@@ -113,6 +113,7 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
     - xe: Update GUC to v70.65.0 for LNL, BMG, PTL
   * d/copyright: Update for new upstream version
   * Add config field for files that check_upstream.py should ignore
+  * misc-nonfree: Add Aeonsemi PHY firmware
 
   [ Agathe Porte ]
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)
