@@ -514,7 +514,7 @@ Copyright: 1986, Gary S. Brown
            2021-2022, Qualcomm Innovation Center, Inc.
 License: binary-redist-Qualcomm-Atheros
 
-Files: ath12k/WCN7850/hw2.0/*
+Files: ath12k/WCN7850/hw2.0/* ath12k/QCC2072/hw1.0/*
 Copyright: 1986, Gary S. Brown
            1988, 1990-1991, 1993, The Regents of the University of California
            2000-2001, Aaron D. Gifford
@@ -528,6 +528,25 @@ Copyright: 1986, Gary S. Brown
            2015-2017, Qualcomm Atheros, Inc.
            2015, 2018, The Android Open Source Project
            2021-2022, Qualcomm Innovation Center, Inc.
+License: binary-redist-Qualcomm-Atheros
+
+Files: ath12k/IPQ5424/hw1.0/*
+Copyright: 1986 Gary S. Brown
+           1988, 1990-1991, 1993 The Regents of the University of California
+           1998 Todd C. Miller
+           2000-2001, Aaron D. Gifford
+           2002-2004 Sam Leffler, Errno Consulting
+           2002-2018, Jouni Malinen
+           2002-2021 The Linux Foundation
+           2007, Open Kernel Labs, Inc.
+           2011 Qualcomm Atheros, Inc.
+           2011 Qualcomm Technologies, Inc.
+           2011 The FreeBSD Foundation
+           2012, Atheros Communications Inc.
+           2013 Cozybit, Inc.
+           2015, 2018, The Android Open Source Project
+           2015, Pali Rohár
+           2021-2022 Qualcomm Innovation Center, Inc.
 License: binary-redist-Qualcomm-Atheros
 
 Files: qca/crbtfw*.tlv qca/crnv*.bin qca/hpbtfw21.tlv qca/hpnv21*.*
@@ -672,7 +691,7 @@ Files: mrvl/pcie*.bin mrvl/sd87*_uapsta.bin mrvl/sd88*_uapsta.bin
 Copyright: 2019, NXP B.V.
 License: binary-redist-NXP-1
 
-Files: lt8713sx_fw.bin lt9611uxc_fw.bin
+Files: Lontium/*
 Copyright: Lontium Semiconductor Corp.
 License: binary-redist-Lontium
 

@@ -111,6 +111,7 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
     - Update firmware file for Intel Scorpius core
     - update firmware for MT7925 WiFi device
     - xe: Update GUC to v70.65.0 for LNL, BMG, PTL
+  * d/copyright: Update for new upstream version
 
   [ Agathe Porte ]
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)
