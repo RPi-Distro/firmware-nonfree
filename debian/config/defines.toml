@@ -465,8 +465,6 @@ files = [
   "rt3071.bin",
   "rt3090.bin",
   "rt3290.bin",
-  "vpu_d.bin",
-  "vpu_p.bin",
   "mediatek/**",
 ]
 
@@ -503,6 +501,7 @@ files = [
   "dvb-fe-*",
   "dvb-usb-*",
   "f2255usb.bin",
+  "Lontium/lt9611uxc_fw.bin",
   "lt9611uxc_fw.bin",
   "mts_cdma.fw",
   "mts_edge.fw",
