@@ -414,12 +414,6 @@ files = [
 name = "libertas"
 desc = "Marvell wireless cards"
 longdesc = "wireless network cards with Marvell and NXP 88W8xxx chips supported by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb, mwifiex_pcie, mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers"
-replaces = [
-  "libertas-firmware",
-]
-provides = [
-  "libertas-firmware",
-]
 files = [
   "lbtf_usb.bin",
   "libertas/*",
