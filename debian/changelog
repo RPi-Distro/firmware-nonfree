@@ -127,6 +127,7 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
   * misc-nonfree: Move all packages from Recommends to Suggests
     (Closes: #1137651)
   * libertas: Remove firmware-marvell-prestera from Recommends
+  * Remove remains of the firmware-qcom-media to firmware-qcom-soc transition
 
   [ Agathe Porte ]
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)

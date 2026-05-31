@@ -625,12 +625,6 @@ recommends = [
 depends = [
   "firmware-qcom-dsp (>= 0~20251125-1~)",
 ]
-breaks = [
-  "firmware-qcom-media (<< 20200421-1~)",
-]
-replaces = [
-  "firmware-qcom-media (<< 20200421-1~)",
-]
 files = [
   "qcom/**",
 ]
