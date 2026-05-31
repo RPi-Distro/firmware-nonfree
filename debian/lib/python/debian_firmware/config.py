@@ -34,6 +34,7 @@ class ConfigPackage:
     desc: str
     longdesc: str
     support: list[str] = dataclasses.field(default_factory=list)
+    suggests: PackageRelation = dataclasses.field(default_factory=PackageRelation)
     recommends: PackageRelation = dataclasses.field(default_factory=PackageRelation)
     depends: PackageRelation = dataclasses.field(default_factory=PackageRelation)
     conflicts: PackageRelation = dataclasses.field(default_factory=PackageRelation)
