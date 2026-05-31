@@ -124,6 +124,8 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
   * misc-nonfree: Add Renesas R-Car Gen4 PCIe controller firmware
   * misc-nonfree: Add TI PCM6240 family audio ADC/DAC firmware
   * Add support for per-package Suggests control field
+  * misc-nonfree: Move all packages from Recommends to Suggests
+    (Closes: #1137651)
 
   [ Agathe Porte ]
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)
