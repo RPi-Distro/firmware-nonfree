@@ -482,10 +482,6 @@ support = [
 conflicts = [
   "firmware-ti-connectivity (<< 20230625-3~)",
 ]
-provides = [
-  "firmware-adi",
-  "firmware-ralink",
-]
 files = [
   "3com/typhoon.bin",
   "8E86-*.bin",

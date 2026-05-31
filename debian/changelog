@@ -129,6 +129,7 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
   * libertas: Remove firmware-marvell-prestera from Recommends
   * Remove remains of the firmware-qcom-media to firmware-qcom-soc transition
   * libertas: Remove Replaces/Provides relations to libertas-firmware
+  * misc-nonfree: Remove Provides relation to firmware-{adi,ralink}
 
   [ Agathe Porte ]
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)
