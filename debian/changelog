@@ -1,4 +1,4 @@
-firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
+firmware-nonfree (20260519-1) unstable; urgency=medium
 
   [ Ben Hutchings ]
   * New upstream version:
@@ -136,7 +136,7 @@ firmware-nonfree (20260519-1) UNRELEASED; urgency=medium
   * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)
   * control: stop suggesting initramfs-tools (Closes: #1135736)
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Tue, 05 May 2026 13:29:33 +0200
+ -- Ben Hutchings <benh@debian.org>  Fri, 05 Jun 2026 17:05:11 +0200
 
 firmware-nonfree (20260410-1) unstable; urgency=medium
 
