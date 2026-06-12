@@ -59,6 +59,7 @@ def main(source_dir='.'):
     with open("debian/copyright") as f:
         exclusions = deb822.Deb822(f).get("Files-Excluded", '').strip().split()
     link_exclusions = config.base.links_excluded
+    unpackaged = config.base.files_unpackaged
 
     package_file_res = []
     for config_entry in config.package:
@@ -87,6 +88,9 @@ def main(source_dir='.'):
                         for inc_res, exc_res in package_file_res
                     ):
                         update_file(source_path, added_path, file_info.binary)
+                    elif any(fnmatch.fnmatch(file_info.binary, ignore_patt)
+                             for ignore_patt in unpackaged):
+                        pass
                     else:
                         print('I: %s is not included in any binary package' %
                               file_info.binary)

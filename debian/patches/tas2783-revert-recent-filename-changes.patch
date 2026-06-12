@@ -1,0 +1,75 @@
+From: Ben Hutchings <benh@debian.org>
+Date: Fri, 05 Jun 2026 16:57:51 +0200
+Subject: tas2783: Revert recent filename changes
+
+Upstream commit 2f90f4fe5c67 "ASoC: tas2783: Add Firmware files for
+tas2783A projects" changed a lot of existing firmware filenames so
+that they no longer match what the upstream will request.
+
+Revert this change for the files that are currently included in
+firmware-misc-nonfree.
+
+---
+ WHENCE |   44 ++++++++++++++++++++++----------------------
+ 1 file changed, 22 insertions(+), 22 deletions(-)
+
+--- a/WHENCE
++++ b/WHENCE
+@@ -9990,22 +9990,22 @@ Link: 36A1-1-0x9.bin -> ti/audio/tas2783
+ Link: 36A1-1-0xC.bin -> ti/audio/tas2783/36A1-1-0xC.bin
+ Link: 36B1-1-0x9.bin -> ti/audio/tas2783/36B1-1-0x9.bin
+ Link: 36B1-1-0xC.bin -> ti/audio/tas2783/36B1-1-0xC.bin
+-Link: 8E86-1-0x9.bin -> ti/audio/tas2783/8E86-1-0x9.bin
+-Link: 8E86-1-0xA.bin -> ti/audio/tas2783/8E86-1-0xA.bin
+-Link: 8E86-1-0xC.bin -> ti/audio/tas2783/8E86-1-0xC.bin
+-Link: 8E86-1-0xD.bin -> ti/audio/tas2783/8E86-1-0xD.bin
+-Link: 8E86-2-0x9.bin -> ti/audio/tas2783/8E86-2-0x9.bin
+-Link: 8E86-2-0xA.bin -> ti/audio/tas2783/8E86-2-0xA.bin
+-Link: 8E86-2-0xC.bin -> ti/audio/tas2783/8E86-2-0xC.bin
+-Link: 8E86-2-0xD.bin -> ti/audio/tas2783/8E86-2-0xD.bin
+-Link: 8E87-1-0x9.bin -> ti/audio/tas2783/8E87-1-0x9.bin
+-Link: 8E87-1-0xA.bin -> ti/audio/tas2783/8E87-1-0xA.bin
+-Link: 8E87-1-0xC.bin -> ti/audio/tas2783/8E87-1-0xC.bin
+-Link: 8E87-1-0xD.bin -> ti/audio/tas2783/8E87-1-0xD.bin
+-Link: 8E87-2-0x9.bin -> ti/audio/tas2783/8E87-2-0x9.bin
+-Link: 8E87-2-0xA.bin -> ti/audio/tas2783/8E87-2-0xA.bin
+-Link: 8E87-2-0xC.bin -> ti/audio/tas2783/8E87-2-0xC.bin
+-Link: 8E87-2-0xD.bin -> ti/audio/tas2783/8E87-2-0xD.bin
++Link: 8E86-1-9.bin -> ti/audio/tas2783/8E86-1-0x9.bin
++Link: 8E86-1-A.bin -> ti/audio/tas2783/8E86-1-0xA.bin
++Link: 8E86-1-C.bin -> ti/audio/tas2783/8E86-1-0xC.bin
++Link: 8E86-1-D.bin -> ti/audio/tas2783/8E86-1-0xD.bin
++Link: 8E86-2-9.bin -> ti/audio/tas2783/8E86-2-0x9.bin
++Link: 8E86-2-A.bin -> ti/audio/tas2783/8E86-2-0xA.bin
++Link: 8E86-2-C.bin -> ti/audio/tas2783/8E86-2-0xC.bin
++Link: 8E86-2-D.bin -> ti/audio/tas2783/8E86-2-0xD.bin
++Link: 8E87-1-9.bin -> ti/audio/tas2783/8E87-1-0x9.bin
++Link: 8E87-1-A.bin -> ti/audio/tas2783/8E87-1-0xA.bin
++Link: 8E87-1-C.bin -> ti/audio/tas2783/8E87-1-0xC.bin
++Link: 8E87-1-D.bin -> ti/audio/tas2783/8E87-1-0xD.bin
++Link: 8E87-2-9.bin -> ti/audio/tas2783/8E87-2-0x9.bin
++Link: 8E87-2-A.bin -> ti/audio/tas2783/8E87-2-0xA.bin
++Link: 8E87-2-C.bin -> ti/audio/tas2783/8E87-2-0xC.bin
++Link: 8E87-2-D.bin -> ti/audio/tas2783/8E87-2-0xD.bin
+ Link: 8EA1-0-0-0x9.bin -> ti/audio/tas2783/8EA1-0-0-0x9.bin
+ Link: 8EA1-0-0-0xC.bin -> ti/audio/tas2783/8EA1-0-0-0xC.bin
+ Link: 8EA1-1-0-0x9.bin -> ti/audio/tas2783/8EA1-1-0-0x9.bin
+@@ -10040,12 +10040,12 @@ Link: 8EB4-2-0x9.bin -> ti/audio/tas2783
+ Link: 8EB4-2-0xC.bin -> ti/audio/tas2783/8EB4-2-0xC.bin
+ Link: 8ED0-1-0xC.bin -> ti/audio/tas2783/8ED0-1-0xC.bin
+ Link: 8ED0-2-0x9.bin -> ti/audio/tas2783/8ED0-2-0x9.bin
+-Link: 8EF5-0-0x9.bin -> ti/audio/tas2783/8EF5-0-0x9.bin
+-Link: 8EF5-0-0xA.bin -> ti/audio/tas2783/8EF5-0-0xA.bin
+-Link: 8EF5-0-0xC.bin -> ti/audio/tas2783/8EF5-0-0xC.bin
+-Link: 8EF5-0-0xD.bin -> ti/audio/tas2783/8EF5-0-0xD.bin
+-Link: 8EF6-2-0x9.bin -> ti/audio/tas2783/8EF6-2-0x9.bin
+-Link: 8EF6-2-0xC.bin -> ti/audio/tas2783/8EF6-2-0xC.bin
++Link: 8EF5-0-9.bin -> ti/audio/tas2783/8EF5-0-0x9.bin
++Link: 8EF5-0-A.bin -> ti/audio/tas2783/8EF5-0-0xA.bin
++Link: 8EF5-0-C.bin -> ti/audio/tas2783/8EF5-0-0xC.bin
++Link: 8EF5-0-D.bin -> ti/audio/tas2783/8EF5-0-0xD.bin
++Link: 8EF6-2-9.bin -> ti/audio/tas2783/8EF6-2-0x9.bin
++Link: 8EF6-2-C.bin -> ti/audio/tas2783/8EF6-2-0xC.bin
+ Link: 8F6D-0-0x9.bin -> ti/audio/tas2783/8F6D-0-0x9.bin
+ Link: 8F6D-0-0xA.bin -> ti/audio/tas2783/8F6D-0-0xA.bin
+ Link: 8F6D-0-0xC.bin -> ti/audio/tas2783/8F6D-0-0xC.bin

@@ -1,3 +1,149 @@
+firmware-nonfree (20260519-1~bpo13+1) trixie-backports; urgency=medium
+
+  * Rebuild for trixie-backports
+
+ -- Ben Hutchings <benh@debian.org>  Fri, 12 Jun 2026 22:06:04 +0200
+
+firmware-nonfree (20260519-1) unstable; urgency=medium
+
+  [ Ben Hutchings ]
+  * New upstream version:
+    - Add Dell ISH firmware 581.7783.0 for Intel Panther Lake systems.
+    - Add firmware file for Intel BlazarIGfp2 core
+    - Add firmware file for Intel BlazarIW
+    - Add firmware file for Intel ScorpiusGfp2 core
+    - add firmware for MT7927 WiFi device
+    - Add HP ISH firmware for Intel Panther Lake systems
+    - amdgpu: DMCUB updates for DCN36
+    - amdgpu: DMCUB updates for various ASICs
+    - amdgpu: rembrandt DMCUB v4.0.74.0
+    - amdgpu: update aldebaran firmware
+    - amdgpu: update beige goby firmware
+    - amdgpu: update dimgrey cavefish firmware
+    - amdgpu: update GC 10.3.6 firmware
+    - amdgpu: update GC 11.0.0 firmware
+    - amdgpu: update GC 11.0.1 firmware
+    - amdgpu: update GC 11.0.2 firmware
+    - amdgpu: update GC 11.0.3 firmware
+    - amdgpu: update GC 11.0.4 firmware
+    - amdgpu: update GC 11.5.0 firmware
+    - amdgpu: update GC 11.5.1 firmware
+    - amdgpu: update GC 11.5.2 firmware
+    - amdgpu: update GC 11.5.3 firmware
+    - amdgpu: update GC 12.0.0 firmware
+    - amdgpu: update GC 12.0.1 firmware
+    - amdgpu: update GC 9.4.3 firmware
+    - amdgpu: update GC 9.5.0 firmware
+    - amdgpu: update green sardine firmware
+    - amdgpu: update navi10 firmware
+    - amdgpu: update navi12 firmware
+    - amdgpu: update navi14 firmware
+    - amdgpu: update navy flounder firmware
+    - amdgpu: update PSP 13.0.0 firmware
+    - amdgpu: update PSP 13.0.0 kicker firmware
+    - amdgpu: update PSP 13.0.10 firmware
+    - amdgpu: update PSP 13.0.11 firmware
+    - amdgpu: update PSP 13.0.12 firmware
+    - amdgpu: update PSP 13.0.14 firmware
+    - amdgpu: update PSP 13.0.4 firmware
+    - amdgpu: update PSP 13.0.5 firmware
+    - amdgpu: update PSP 13.0.6 firmware
+    - amdgpu: update PSP 13.0.7 firmware
+    - amdgpu: update PSP 14.0.0 firmware
+    - amdgpu: update PSP 14.0.1 firmware
+    - amdgpu: update PSP 14.0.2 firmware
+    - amdgpu: update PSP 14.0.3 firmware
+    - amdgpu: update PSP 14.0.4 firmware
+    - amdgpu: update PSP 14.0.5 firmware
+    - amdgpu: update renoir firmware
+    - amdgpu: update SDMA 4.4.2 firmware
+    - amdgpu: update SDMA 4.4.4 firmware
+    - amdgpu: update SDMA 4.4.5 firmware
+    - amdgpu: update SDMA 6.0.0 firmware
+    - amdgpu: update SDMA 6.0.1 firmware
+    - amdgpu: update SDMA 6.0.2 firmware
+    - amdgpu: update SDMA 6.0.3 firmware
+    - amdgpu: update SDMA 6.1.0 firmware
+    - amdgpu: update SDMA 6.1.1 firmware
+    - amdgpu: update SDMA 6.1.2 firmware
+    - amdgpu: update SDMA 6.1.3 firmware
+    - amdgpu: update sienna cichlid firmware
+    - amdgpu: update SMU 14.0.3 kicker firmware
+    - amdgpu: update vangogh firmware
+    - amdgpu: update VCN 3.1.2 firmware
+    - amdgpu: update VCN 4.0.0 firmware
+    - amdgpu: update VCN 4.0.2 firmware
+    - amdgpu: update VCN 4.0.3 firmware
+    - amdgpu: update VCN 4.0.4 firmware
+    - amdgpu: update VCN 4.0.5 firmware
+    - amdgpu: update VCN 4.0.6 firmware
+    - amdgpu: update VCN 5.0.0 firmware
+    - amdgpu: update VCN 5.0.1 firmware
+    - amdgpu: update VPE 6.1.0 firmware
+    - amdgpu: update VPE 6.1.1 firmware
+    - amdgpu: update VPE 6.1.3 firmware
+    - amdgpu: update yellow carp firmware
+    - ASoC: tas2783: Add Firmware files for tas2783A projects
+    - ath12k: IPQ5424 hw1.0: add board-2.bin
+    - ath12k: IPQ5424 hw1.0: add to WLAN.WBE.1.6-01275-QCAHKSWPL_SILICONZ-1
+    - ath12k: QCC2072 hw1.0: add board-2.bin
+    - ath12k: QCC2072 hw1.0: add to
+      WLAN.COL.1.0.c2-00074-QCACOLSWPL_V1_TO_SILICONZ-1
+    - cirrus: cs35l56: Add firmware for Cirrus Amps for some Lenovo laptops
+    - cirrus: cs35l56: Add firmware for Cirrus Amps for some Lenovo laptops
+      (17aa235c 17aa235d)
+    - firmware/amdgpu: Update DMCUB fw to Release 0.1.55.0
+    - i915: Xe3LPD DMC v2.34
+    - i915: Xe3LPD_3002 DMC v2.29
+    - lt*_fw.bin: move to Lontium subdir
+    - mediatek MT7925: update bluetooth firmware to 20260414153243
+    - mediatek: vpu: drop old sym link
+    - powervr: update Imagination Rogue firmware images
+    - QCA: Update Bluetooth WCN6856 firmware 2.1.0-00665 to 2.1.0-00666
+    - qcom: add CDSP firmware for shikra platform
+    - qcom: Add cdsp1r.jsn for sa8775p platform
+    - qcom: Add gpdspr.jsn for qcs8300 platform
+    - qcom: Update ADSP firmware for Glymur platform
+    - qcom: Update ADSP firmware for Kaanapali platform
+    - qcom: Update ADSP firmware for QCM6490 platform
+    - qcom: update ADSP firmware for x1e80100 platform
+    - qcom: Update CDSP firmware for Kaanapali platform
+    - qcom: vpu: add Gen2 firmware binary for Agatti
+    - Revert "Update firmware file for Intel Quasar core"
+    - rtl_bt: Add missing rtl8761a_config.bin for RTL8761AU
+    - Update firmware file for Intel BlazarI core
+    - Update firmware file for Intel BlazarU core
+    - Update firmware file for Intel BlazarU-HrPGfP core
+    - Update firmware file for Intel Scorpius core
+    - update firmware for MT7925 WiFi device
+    - xe: Update GUC to v70.65.0 for LNL, BMG, PTL
+  * d/copyright: Update for new upstream version
+  * Add config field for files that check_upstream.py should ignore
+  * misc-nonfree: Add Aeonsemi PHY firmware
+  * misc-nonfree: Add more Airoha firmware
+  * intel-misc: Add QAT 4xxx firmware
+  * d/copyright, d/c/defines.toml: Fully exclude obsolete Intel sound firmware
+  * netronome: Include all firmware symlinks
+  * misc-nonfree: Add more Lontium video converter firmware
+  * misc-nonfree: Add Chips&Media Wave6 video codec firmware
+  * misc-nonfree: Add Bosch BMI270 IMU firmware
+  * misc-nonfree: Add Renesas R-Car Gen4 PCIe controller firmware
+  * misc-nonfree: Add TI PCM6240 family audio ADC/DAC firmware
+  * Add support for per-package Suggests control field
+  * misc-nonfree: Move all packages from Recommends to Suggests
+    (Closes: #1137651)
+  * libertas: Remove firmware-marvell-prestera from Recommends
+  * Remove remains of the firmware-qcom-media to firmware-qcom-soc transition
+  * libertas: Remove Replaces/Provides relations to libertas-firmware
+  * misc-nonfree: Remove Provides relation to firmware-{adi,ralink}
+  * misc-nonfree: tas2783: Revert recent upstream filename changes
+
+  [ Agathe Porte ]
+  * gencontrol: s/initramfs-tools/update-initramfs/ (Closes: #1135723)
+  * control: stop suggesting initramfs-tools (Closes: #1135736)
+
+ -- Ben Hutchings <benh@debian.org>  Fri, 05 Jun 2026 17:05:11 +0200
+
 firmware-nonfree (20260410-1~bpo13+1) trixie-backports; urgency=medium
 
   * Rebuild for trixie-backports

@@ -65,7 +65,8 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
     def do_package(self, config_entry):
         package = config_entry.name
         vars = {}
-        for field_name in ['desc', 'longdesc', 'recommends', 'depends',
+        for field_name in ['desc', 'longdesc',
+                           'suggests','recommends', 'depends',
                            'conflicts', 'breaks', 'replaces', 'provides']:
             field_value = getattr(config_entry, field_name)
             vars[field_name] = str(field_value) if field_value else ''
@@ -85,9 +86,9 @@ class GenControl(debian_linux.gencontrol.Gencontrol):
 
         scripts = {}
 
-        if 'initramfs-tools' in config_entry.support:
+        if 'update-initramfs' in config_entry.support:
             scripts.setdefault("postinst", []).append(
-                self.templates.get('postinst.initramfs-tools', vars))
+                self.templates.get('postinst.update-initramfs', vars))
 
         if config_entry.eula:
             vars['license_title'] = config_entry.eula.title

@@ -1,9 +1,23 @@
 [base]
 uri = "https://gitlab.com/kernel-firmware/linux-firmware"
-# Symlink patterns we want check_upstream.py to ignore
+# Patterns for Link: entries in WHENCE that install-files should
+# exclude and check_upstream.py should ignore.  This overrides any
+# inclusion patterns defined below.
 links_excluded = [
   "a300_pfp.fw",
   "a300_pm4.fw",
+]
+# Patterns for File: entries in WHENCE that check_upstream.py should
+# ignore.  These files are included in the source package but don't
+# need to be included in any binary.  They are mostly legal notices
+# that we incorporate into debian/copyright.  This does *not* override
+# inclusion patterns defined below.
+files_unpackaged = [
+  "ath*k/*/*/*/Notice.txt",
+  "ath*k/*/*/Notice.txt",
+  "ath10k/*/*/notice_*.txt",
+  "ath10k/WCN3990/hw1.0/notice.txt_wlanmdsp",
+  "rtw88/README",
 ]
 
 [[package]]
@@ -11,7 +25,7 @@ name = "amd-graphics"
 desc = "AMD/ATI graphics and NPU chips"
 longdesc = "AMD/ATI graphics and NPU chips supported by the radeon, amdgpu, amdxdna and r128 drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "amdgpu/*",
@@ -25,17 +39,17 @@ name = "atheros"
 desc = "Qualcomm Atheros wireless cards"
 longdesc = "USB wireless network and Bluetooth cards supported by the ar5523, ath3k, ath6kl_sdio, ath6kl_usb, ath10k, ath11k, or wilc6210 drivers"
 files = [
-  "ar5523.bin",
-  "ath3k-1.fw",
-  "htc_7010.fw",
-  "htc_9271.fw",
-  "wil6210.*",
   "ar3k/*",
-  "ath6k/**",
+  "ar5523.bin",
   "ath10k/**",
   "ath11k/**",
   "ath12k/**",
+  "ath3k-1.fw",
+  "ath6k/**",
+  "htc_7010.fw",
+  "htc_9271.fw",
   "qca/**",
+  "wil6210.*",
 ]
 files_excluded = [
   "ath10k/**/notice*.txt*",
@@ -48,7 +62,7 @@ name = "bnx2"
 desc = "Broadcom NetXtremeII"
 longdesc = "Broadcom NetXtremeII network adapters supported by the bnx2 driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "bnx2/*",
@@ -59,7 +73,7 @@ name = "bnx2x"
 desc = "Broadcom NetXtreme II 10Gb"
 longdesc = "Broadcom NetXtreme II 10Gb network adapters supported by the bnx2x driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "bnx2x/*",
@@ -80,7 +94,7 @@ name = "cavium"
 desc = "Cavium Ethernet adapters"
 longdesc = "Cavium crypto and Ethernet adapters supported by the nitrox and liquidio drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "cavium/*",
@@ -102,7 +116,7 @@ name = "intel-graphics"
 desc = "Intel iGPUs and IPUs"
 longdesc = "Intel integrated GPUs and IPUs supported by the i915, intel-ipu6-isys, ipu3-imgu, mei-vsc-hw, and xe drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 conflicts = [
   "firmware-misc-nonfree (<< 20230625-3~)"
@@ -124,20 +138,16 @@ conflicts = [
   "firmware-misc-nonfree (<< 20230625-3~)",
 ]
 files = [
-  "hfi1_*",
-  "qat_*",
-  "e100/*",
   "dell/ish/*",
+  "e100/*",
+  "hfi1_*",
   "HP/ish/*",
   "intel/ice/**",
   "intel/ish/*",
   "intel/qat/*",
   "intel/vpu/*",
   "LENOVO/ish/*",
-]
-files_excluded = [
-  "qat_4xxx*",
-  "intel/qat/qat_4xxx*",
+  "qat_*",
 ]
 
 [[package]]
@@ -145,14 +155,11 @@ name = "intel-sound"
 desc = "Intel sound DSPs"
 longdesc = "Intel SST sound DSPs supported by the snd-soc-sst-acpi or snd-intel-sst-acpi driver"
 files = [
+  "intel/avs/**",
+  "intel/catpt/bdw/dsp_basefw.bin",
   "intel/dsp_fw_*",
   "intel/fw_sst_*",
   "intel/IntcSST2.bin",
-  "intel/avs/**",
-  "intel/catpt/bdw/dsp_basefw.bin",
-]
-files_excluded = [
-  "intel/dsp_fw_*_v*.bin",
 ]
 
 [[package]]
@@ -163,9 +170,9 @@ longdesc = "Intel Pro Wireless 2100, 2200 and 2915 cards supported by the ipw210
 # sourced from 2 separate Sourceforge projects.
 uri = ""
 files = [
-  "ipw2100-1.3.fw",
   "ipw2100-1.3-i.fw",
   "ipw2100-1.3-p.fw",
+  "ipw2100-1.3.fw",
   "ipw2200-bss.fw",
   "ipw2200-ibss.fw",
   "ipw2200-sniffer.fw",
@@ -398,34 +405,25 @@ name = "iwlwifi"
 desc = "Intel Wireless cards"
 longdesc = "Intel Wireless cards supported by the iwl3945, iwl4965, and iwlwifi drivers"
 files = [
-  "iwlwifi-*",
   "intel/ibt-*",
   "intel/iwlwifi/*",
+  "iwlwifi-*",
 ]
 
 [[package]]
 name = "libertas"
 desc = "Marvell wireless cards"
 longdesc = "wireless network cards with Marvell and NXP 88W8xxx chips supported by the libertas_cs, libertas_sdio, libertas_spi, libertas_tf_usb, mwifiex_pcie, mwifiex_sdio, mwifiex_usb, mwl8k and usb8xxx drivers"
-recommends = [
-  "firmware-marvell-prestera",
-]
-replaces = [
-  "libertas-firmware",
-]
-provides = [
-  "libertas-firmware",
-]
 files = [
   "lbtf_usb.bin",
+  "libertas/*",
   "libertas_cs*",
+  "mrvl/*",
+  "mwl8k/*",
   "sd8385*.bin",
   "sd8686*.bin",
   "sd8688*.bin",
   "usb8388.bin",
-  "libertas/*",
-  "mrvl/*",
-  "mwl8k/*",
 ]
 files_excluded = [
   "mrvl/cpt*/*",
@@ -448,14 +446,14 @@ name = "mediatek"
 desc = "MediaTek and Ralink chips for networking, SoCs and media"
 longdesc = "MediaTek devices such as ethernet/Wi-Fi/Bluetooth chips, SoCs and other chips and devices made by MediaTek and Ralink"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 conflicts = [
   "firmware-misc-nonfree (<< 20230625-3~)",
 ]
 files = [
+  "mediatek/**",
   "mt76*",
-  "rt73.bin",
   "rt2561.bin",
   "rt2561s.bin",
   "rt2661.bin",
@@ -465,89 +463,90 @@ files = [
   "rt3071.bin",
   "rt3090.bin",
   "rt3290.bin",
-  "vpu_d.bin",
-  "vpu_p.bin",
-  "mediatek/**",
+  "rt73.bin",
 ]
 
 [[package]]
 name = "misc-nonfree"
 desc = "various drivers in the Linux kernel"
 longdesc = "various drivers in the Linux kernel. This is a collection of firmware blobs which are not individually large enough to warrant a standalone package"
-recommends = [
+suggests = [
   "firmware-nvidia-graphics",
   "firmware-intel-graphics",
   "firmware-intel-misc",
   "firmware-mediatek",
 ]
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 conflicts = [
   "firmware-ti-connectivity (<< 20230625-3~)",
 ]
-provides = [
-  "firmware-adi",
-  "firmware-ralink",
-]
 files = [
+  "3com/typhoon.bin",
   "8E86-*.bin",
   "8E87-*.bin",
   "8EF5-*.bin",
   "8EF6-*.bin",
-  "agere_*",
-  "airoha/Eth*",
-  "as102_*",
-  "ctefx.bin",
-  "ctspeq.bin",
-  "dvb-fe-*",
-  "dvb-usb-*",
-  "f2255usb.bin",
-  "lt9611uxc_fw.bin",
-  "mts_cdma.fw",
-  "mts_edge.fw",
-  "mts_gsm.fw",
-  "powervr/*",
-  "r8a779x_usb3_v1.dlmem",
-  "r8a779x_usb3_v3.dlmem",
-  "rp2.fw",
-  "s2250.fw",
-  "s2250_loader.fw",
-  "TXNW*",
-  "v4l-cx*",
-  "vntwusb.fw",
-  "3com/typhoon.bin",
   "advansys/*",
+  "aeonsemi/**",
+  "agere_*",
+  "airoha/**",
   "amphion/vpu/*",
   "arm/mali/**",
+  "as102_*",
   "brcm/BCM-0a5c-6410.hcd",
   "brcm/BCM-0bb4-0306.hcd",
+  "bmi260-init-data.fw",
   "cadence/mhdp8546.bin",
   "cnm/wave521c_k3_codec_fw.bin",
+  "cnm/wave633c_imx9_codec_fw.bin",
+  "ctefx.bin",
+  "ctspeq.bin",
   "cxgb3/*",
   "cxgb4/**",
   "dabusb/*",
+  "dvb-fe-*",
+  "dvb-usb-*",
   "ene-ub6250/*",
+  "f2255usb.bin",
   "go7007/*",
   "imx/sdma/*",
+  "INT8866RCA2.bin",
   "kaweth/*",
+  "Lontium/*",
+  "lt8713sx_fw.bin",
+  "lt9611uxc_fw.bin",
   "matrox/*",
   "meson/vdec/*",
   "microchip/*",
   "moxa/*",
   "mrvl/cpt*/*",
+  "mts_cdma.fw",
+  "mts_edge.fw",
+  "mts_gsm.fw",
   "nvidia/tegra*/*",
   "nxp/*",
+  "powervr/*",
+  "r8a779x_usb3_v1.dlmem",
+  "r8a779x_usb3_v3.dlmem",
+  "rcar_gen4_pcie.bin",
   "rockchip/dptx.bin",
-  "tehuti/bdx.bin",
+  "rp2.fw",
+  "s2250.fw",
+  "s2250_loader.fw",
   "TAS*",
-  "TIAS*",
-  "INT8866RCA2.bin",
-  "ti/audio/**",
-  "ti/vpdma-1b8.bin",
+  "tehuti/bdx.bin",
   "ti-keystone/ks2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin",
+  "ti/audio/**",
+  "ti/pcm6240/pcm6240-i2c-1-2dev.bin",
+  "ti/vpdma-1b8.bin",
+  "TIAS*",
   "tigon/*",
+  "TXNW*",
   "ueagle-atm/*",
+  "v4l-cx*",
+  "vntwusb.fw",
   "wfx/*",
   "wsm_22.bin",
 ]
@@ -561,7 +560,7 @@ name = "myricom"
 desc = "Myri-10G Ethernet adapters"
 longdesc = "Myricom Myri-10G Ethernet adapters supported by the myri10ge driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "myri10ge_*",
@@ -572,16 +571,10 @@ name = "netronome"
 desc = "Netronome network adapters"
 longdesc = "Netronome network adapters supported by the nfp driver"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "netronome/**",
-]
-files_excluded = [
-  "netronome/nic_AMDA0058-0011_2x40.nffw",
-  "netronome/nic_AMDA0058-0012_2x40.nffw",
-  "netronome/nic_AMDA0078-0011_1x100.nffw",
-  "netronome/nic_AMDA0099-0001_1x10_1x25.nffw",
 ]
 
 [[package]]
@@ -589,7 +582,7 @@ name = "netxen"
 desc = "QLogic Intelligent Ethernet (3000 and 3100 Series)"
 longdesc = "QLogic (formerly NetXen) Intelligent network adapters supported by the netxen_nic and qlcnic drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "phanfw.bin",
@@ -603,7 +596,7 @@ conflicts = [
   "firmware-misc-nonfree (<< 20230625-3~)",
 ]
 breaks = [
-  "initramfs-tools (<< 0.142+deb12u1)",
+  "update-initramfs (<< 0.142+deb12u1)",
 ]
 files = [
   "nvidia/**",
@@ -622,12 +615,6 @@ recommends = [
 depends = [
   "firmware-qcom-dsp (>= 0~20251125-1~)",
 ]
-breaks = [
-  "firmware-qcom-media (<< 20200421-1~)",
-]
-replaces = [
-  "firmware-qcom-media (<< 20200421-1~)",
-]
 files = [
   "qcom/**",
 ]
@@ -641,14 +628,14 @@ name = "qlogic"
 desc = "QLogic HBAs"
 longdesc = "QLogic Infiniband, SCSI, Fibre Channel/FCoE adapters and Converged Network Adapters supported by the bfa, bna, ip_iband, qed, qla1280 and qla2xxx drivers"
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "cbfw-3.2.5.1.bin",
   "ct2fw-3.2.5.1.bin",
   "ctfw-3.2.5.1.bin",
-  "ql2*_fw.bin",
   "qed/*",
+  "ql2*_fw.bin",
   "qlogic/*",
 ]
 files_excluded = [
@@ -666,7 +653,7 @@ replaces = [
   "firmware-realtek-rtl8723cs-bt",
 ]
 support = [
-  "initramfs-tools"
+  "update-initramfs"
 ]
 files = [
   "realtek/rt1320/*",
