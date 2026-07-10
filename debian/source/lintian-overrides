@@ -17,3 +17,10 @@ firmware-nonfree source: file-without-copyright-information LICENCE.* [debian/co
 firmware-nonfree source: file-without-copyright-information LICENSE.* [debian/copyright]
 firmware-nonfree source: file-without-copyright-information MIT [debian/copyright]
 firmware-nonfree source: file-without-copyright-information qca/NOTICE.txt [debian/copyright]
+
+# Raspberry Pi downstream versioning: we carry an epoch and a +rptN suffix on
+# top of the Debian version.  These are deliberate, not NMUs or version errors.
+firmware-nonfree source: epoch-changed-but-upstream-version-did-not-go-backwards
+firmware-nonfree source: epoch-change-without-comment
+firmware-nonfree source: no-nmu-in-changelog
+firmware-nonfree source: source-nmu-has-incorrect-version-number

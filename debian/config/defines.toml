@@ -119,7 +119,7 @@ support = [
   "update-initramfs"
 ]
 conflicts = [
-  "firmware-misc-nonfree (<< 20230625-3~)"
+  "firmware-misc-nonfree (<< 1:20230625-3~)"
 ]
 files = [
   "i915/*",
@@ -135,7 +135,7 @@ name = "intel-misc"
 desc = "miscellaneous Intel devices and chips"
 longdesc = "miscellaneous Intel devices and chips, which do not belong in the iwlwifi, ipw2x00, intel-graphics or intel-sound packages. This includes for example Omni-Path, Ethernet/Network chips/devices, and QuickAssist Technology crypto accelerators"
 conflicts = [
-  "firmware-misc-nonfree (<< 20230625-3~)",
+  "firmware-misc-nonfree (<< 1:20230625-3~)",
 ]
 files = [
   "dell/ish/*",
@@ -435,7 +435,7 @@ name = "marvell-prestera"
 desc = "Marvell Prestera ASIC devices"
 longdesc = "Marvell Switchdev solution Prestera Ethernet switches"
 conflicts = [
-  "firmware-libertas (<< 20230625-3~)",
+  "firmware-libertas (<< 1:20230625-3~)",
 ]
 files = [
   "mrvl/prestera/*",
@@ -449,7 +449,7 @@ support = [
   "update-initramfs"
 ]
 conflicts = [
-  "firmware-misc-nonfree (<< 20230625-3~)",
+  "firmware-misc-nonfree (<< 1:20230625-3~)",
 ]
 files = [
   "mediatek/**",
@@ -480,7 +480,7 @@ support = [
   "update-initramfs"
 ]
 conflicts = [
-  "firmware-ti-connectivity (<< 20230625-3~)",
+  "firmware-ti-connectivity (<< 1:20230625-3~)",
 ]
 files = [
   "3com/typhoon.bin",
@@ -593,7 +593,7 @@ name = "nvidia-graphics"
 desc = "Nvidia GPU chips"
 longdesc = "Nvidia graphics chips using the nouveau driver"
 conflicts = [
-  "firmware-misc-nonfree (<< 20230625-3~)",
+  "firmware-misc-nonfree (<< 1:20230625-3~)",
 ]
 breaks = [
   "update-initramfs (<< 0.142+deb12u1)",
