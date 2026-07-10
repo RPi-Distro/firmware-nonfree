@@ -94,6 +94,11 @@ files = [
 files_excluded = [
   "cypress/cyfmac43455-sdio.bin",
 ]
+# Raspberry Pi brcmfmac module parameters for WLAN stability.
+extra_files = [
+  { source = "debian/rpi-brcmfmac.conf", dest = "usr/lib/modprobe.d/rpi-brcmfmac.conf" },
+]
+
 [package.scripts]
 postinst = '''
 case "$1" in
