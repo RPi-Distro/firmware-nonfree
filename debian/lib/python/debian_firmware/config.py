@@ -39,6 +39,14 @@ class ConfigScripts:
 
 
 @dataclasses.dataclass
+class ConfigExtraFile:
+    # A non-firmware file to install into the binary package.  source is
+    # relative to the source tree; dest is relative to the package root.
+    source: str
+    dest: str
+
+
+@dataclasses.dataclass
 class ConfigPackage:
     name: str
     desc: str
@@ -56,6 +64,7 @@ class ConfigPackage:
     uri: Optional[str] = None
     files: list[str] = dataclasses.field(default_factory=list)
     files_excluded: list[str] = dataclasses.field(default_factory=list)
+    extra_files: list[ConfigExtraFile] = dataclasses.field(default_factory=list)
 
 
 @dataclasses.dataclass
