@@ -29,6 +29,16 @@ class ConfigEula:
 
 
 @dataclasses.dataclass
+class ConfigScripts:
+    # Verbatim maintainer-script snippets, inserted between the shebang
+    # and the #DEBHELPER# token by gencontrol.py.
+    preinst: Optional[str] = None
+    postinst: Optional[str] = None
+    prerm: Optional[str] = None
+    postrm: Optional[str] = None
+
+
+@dataclasses.dataclass
 class ConfigPackage:
     name: str
     desc: str
@@ -42,6 +52,7 @@ class ConfigPackage:
     replaces: PackageRelation = dataclasses.field(default_factory=PackageRelation)
     provides: PackageRelation = dataclasses.field(default_factory=PackageRelation)
     eula: Optional[ConfigEula] = None
+    scripts: Optional[ConfigScripts] = None
     uri: Optional[str] = None
     files: list[str] = dataclasses.field(default_factory=list)
     files_excluded: list[str] = dataclasses.field(default_factory=list)

@@ -109,6 +109,12 @@ You must agree to the terms of this license before it is installed."""
 % config_entry.eula.title)
             packages_binary[0].pre_depends = PackageRelation('debconf | debconf-2.0')
 
+        if config_entry.scripts:
+            for script_name in ('preinst', 'postinst', 'prerm', 'postrm'):
+                snippet = getattr(config_entry.scripts, script_name)
+                if snippet:
+                    scripts.setdefault(script_name, []).append(snippet)
+
         for script, script_contents in scripts.items():
             script_contents.insert(0, "#!/bin/sh\n\nset -e\n")
             script_contents.append("#DEBHELPER#\n\nexit 0\n")
