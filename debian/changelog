@@ -1,3 +1,20 @@
+firmware-nonfree (1:20260519-1~bpo13+1+rpt1) trixie; urgency=medium
+
+  * Add gbp.conf
+  * config: support per-package maintainer-script snippets
+  * config: support installing extra (non-firmware) files
+  * Bump epoch on conflicts and override versioning lintian tags
+  * Add Raspberry Pi 43430 WLAN firmware (Pi 3B, Zero W)
+  * Add Raspberry Pi 43436/43436s WLAN firmware (Zero 2 W)
+  * Add support for CM0s with CYW43439
+  * Add Raspberry Pi 43455 WLAN firmware with standard/minimal update-
+    alternatives
+  * Add Raspberry Pi 43456 WLAN firmware (Pi 400, CM4)
+  * Update copyright for the added Raspberry Pi WLAN firmware
+  * Add brcmfmac module parameters for stability
+
+ -- Serge Schneider <serge@raspberrypi.com>  Fri, 10 Jul 2026 20:44:33 +0100
+
 firmware-nonfree (20260519-1~bpo13+1) trixie-backports; urgency=medium
 
   * Rebuild for trixie-backports
