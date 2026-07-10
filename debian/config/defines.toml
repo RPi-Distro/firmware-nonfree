@@ -88,6 +88,45 @@ files = [
   "brcm/brcmfmac*",
   "cypress/cyfmac*",
 ]
+# We ship standard and minimal variants of the Pi 3B+/4B (43455) firmware
+# and select between them with update-alternatives (see [package.scripts]),
+# so exclude the single upstream file it would otherwise install.
+files_excluded = [
+  "cypress/cyfmac43455-sdio.bin",
+]
+[package.scripts]
+postinst = '''
+case "$1" in
+    configure)
+        update-alternatives --quiet --install /usr/lib/firmware/cypress/cyfmac43455-sdio.bin cyfmac43455-sdio.bin /usr/lib/firmware/cypress/cyfmac43455-sdio-standard.bin 50
+        update-alternatives --quiet --install /usr/lib/firmware/cypress/cyfmac43455-sdio.bin cyfmac43455-sdio.bin /usr/lib/firmware/cypress/cyfmac43455-sdio-minimal.bin 10
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+'''
+prerm = '''
+case "$1" in
+    remove)
+        update-alternatives --quiet --remove cyfmac43455-sdio.bin /usr/lib/firmware/cypress/cyfmac43455-sdio-minimal.bin
+        update-alternatives --quiet --remove cyfmac43455-sdio.bin /usr/lib/firmware/cypress/cyfmac43455-sdio-standard.bin
+    ;;
+
+    failed-upgrade|upgrade|deconfigure)
+    ;;
+
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+'''
 
 [[package]]
 name = "cavium"

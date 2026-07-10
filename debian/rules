@@ -29,9 +29,11 @@ override_dh_install:
 	done
 # Check for any broken symlinks.  This excludes the intentional
 # cross-package symlinks from firmware-qcom-soc to firmware-atheros,
-# which it recommends.
+# which it recommends, and the brcmfmac 43455 symlinks whose target
+# (cypress/cyfmac43455-sdio.bin) is provided at install time by
+# update-alternatives (standard/minimal variants).
 	! find debian/firmware-*/usr/lib/firmware -xtype l \
-	| grep -Ev '^debian/firmware-qcom-soc/usr/lib/firmware/qcom/.*/w(lanmdsp|pss)\.mbn$$'
+	| grep -Ev '^debian/firmware-qcom-soc/usr/lib/firmware/qcom/.*/w(lanmdsp|pss)\.mbn$$|^debian/firmware-brcm80211/usr/lib/firmware/brcm/brcmfmac43455-sdio.*\.bin$$'
 
 CONTROL_FILES = debian/build/version-info $(wildcard debian/templates/*.in)
 CONTROL_FILES += debian/config/defines.toml debian/modinfo.json
