@@ -32,3 +32,10 @@ debian/added-firmware/brcm/brcmfmac43436-sdio.raspberrypi,model-zero-2-w.clm_blo
 debian/added-firmware/brcm/brcmfmac43436s-sdio.bin
 debian/added-firmware/brcm/brcmfmac43436s-sdio.raspberrypi,0-compute-module.bin
 debian/added-firmware/brcm/brcmfmac43436s-sdio.raspberrypi,model-zero-2-w.bin
+debian/added-firmware/brcm/brcmfmac43439-sdio.bin
+debian/added-firmware/brcm/brcmfmac43439-sdio.clm_blob
+debian/added-firmware/brcm/brcmfmac43439-sdio.raspberrypi,0-compute-module.bin
+debian/added-firmware/brcm/brcmfmac43439-sdio.raspberrypi,0-compute-module.clm_blob
+debian/added-firmware/cypress/43439A0-7.95.49.00.combined
+debian/added-firmware/cypress/cyfmac43439-sdio.bin
+debian/added-firmware/cypress/cyfmac43439-sdio.clm_blob
