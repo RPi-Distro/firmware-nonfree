@@ -16,11 +16,10 @@ its current working directory set to ../brcm:
     sudo ln -sf ./cypress/cyfmac43455-sdio-minimal.bin brcmfmac43455-sdio.bin
 
 Another alternative firmware cyfmac43455-sdio-wpa3.bin is available that enables
-long-term correct WPA3 function for both STA and AP mode. It is an unofficial
-patched version based on a newer official firmware version released by the vendor:
+long-term correct WPA3 function for AP mode. It is an unofficial patched version based
+on a newer official firmware version released by the vendor:
 BCM4345/6 wl0: Oct 28 2024 23:27:00 version 7.45.286 (be70ab3 CY) FWID 01-95efe7fa.
-It is not needed if you plan running in WPA2 mode (but may improve stability anyway
-given it's based on a newer version). More details of the fix it provides here:
+It is not needed if you plan running in WPA2 mode. More details of the fix it provides here:
 https://github.com/raspberrypi/linux/issues/7528
 
 In order to use this firmware, follow the same process as for the minimal version:
