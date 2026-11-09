@@ -1,3 +1,10 @@
+firmware-nonfree (1:20260519-1~bpo13+1+rpt2) trixie; urgency=medium
+
+  [ Phil Elwell ]
+  * Add support for Pi 4A and Zero 3 W
+
+ -- Serge Schneider <serge@raspberrypi.com>  Mon, 09 Nov 2026 13:29:55 +0000
+
 firmware-nonfree (1:20260519-1~bpo13+1+rpt1) trixie; urgency=medium
 
   * Add gbp.conf
