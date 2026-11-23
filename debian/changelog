@@ -1,3 +1,11 @@
+firmware-nonfree (1:20260519-1~bpo13+1+rpt3) trixie; urgency=medium
+
+  [ Phil Elwell ]
+  * Add WPA3 support for 3B, Zero W, Zero 2 W, Pi 400
+  * Update 43455 (Pi 5, 4B, 3B+) firmware to 7.45.286
+
+ -- Serge Schneider <serge@raspberrypi.com>  Mon, 23 Nov 2026 13:56:58 +0000
+
 firmware-nonfree (1:20260519-1~bpo13+1+rpt2) trixie; urgency=medium
 
   [ Phil Elwell ]
